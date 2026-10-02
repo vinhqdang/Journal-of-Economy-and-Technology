@@ -18,12 +18,12 @@ Design decisions taken so far:
 
 - **Scale:** as many economies as data allow, in the hundreds if possible, not three case studies. Realistically about 150–190 economies for the main variables.
 - **Mechanisms:** all plausible factors are put in together (human capital, digital and electric infrastructure, compute access, sector structure, institutions and regulation, trade integration, language), and the data decide which matter.
-- **Outcomes:** not yet fixed. Proposed default: output per capita growth and total factor productivity as primary, poverty and inequality as secondary. Open to change.
+- **Outcomes:** many, not only growth. A single "up or down" result on output is too thin for an analytical paper. The paper measures six families of outcomes (section 4A) and reports timing, thresholds, distribution and trade-offs, not only a sign.
 
 ## 2. Research questions
 
 - **RQ1 (similarity of waves).** How does the relationship between income and technology penetration evolve in the years after each wave starts? Is AI's adoption gradient closer to mobile phones, to the internet and broadband, or to crypto-assets?
-- **RQ2 (payoffs).** Historically, for a given amount of adoption, were growth, productivity, poverty and inequality outcomes better in high-, middle- or low-income economies?
+- **RQ2 (payoffs).** Historically, for a given amount of adoption, how did each family of outcomes (output and productivity, structural change, labour markets, poverty and distribution, living standards beyond income, resource costs) respond in high-, middle- and low-income economies? How large, how fast, and with what trade-offs between outcomes?
 - **RQ3 (mechanisms).** Which country characteristics explain the differences in RQ1 and RQ2, and how stable is that ranking across methods and periods?
 - **RQ4 (AI).** Applying the estimated patterns, which types of economies are predicted to gain most from generative AI, and do the early adoption data (2023–2026) agree? Present United States, Vietnam and Cambodia as worked examples, not as the basis of the claim.
 
@@ -55,17 +55,41 @@ What looks open from this scan: a single method applied to several waves (mobile
 
 Crypto and deep learning are included as contrasts on purpose. They test whether the pattern in the results is about technologies that raise productivity throughout the economy, or about any new technology.
 
+## 4A. Outcome framework
+
+Six families, each with one pre-specified primary indicator and a few secondary ones. Primary indicators are fixed before estimation to avoid choosing results after the fact.
+
+| Family | What it captures | Candidate indicators (coverage to be checked for each) |
+|---|---|---|
+| 1. Output and productivity | Size of the gain | GDP per capita growth, total factor productivity, labour productivity (Penn World Table, WDI; sector productivity from GGDC where available) |
+| 2. Structural change | Where the economy moves | Employment and value-added shares of agriculture, manufacturing and services; digitally delivered services exports; premature deindustrialisation measures |
+| 3. Labour market | Who works and for how much | Employment rate, informality, youth unemployment, labour share of income, skill premium (ILOSTAT, Penn World Table) |
+| 4. Poverty and distribution | Who gains within a country | Poverty headcount at several lines, Gini, income shares of the top 10% and bottom 40% (World Bank Poverty and Inequality Platform, WIID, World Inequality Database) |
+| 5. Living standards beyond income | Welfare not captured by GDP | Household consumption per capita, life expectancy, schooling, access to finance and mobile payments (Global Findex rounds), price levels |
+| 6. Resource cost | What the technology uses up | Electricity use per capita, carbon intensity of output, trade and external balance effects |
+
+Summary indices within each family (standardised and averaged) cut the number of tests. Multiple-testing corrections apply across families.
+
+A seventh, world-level outcome comes from combining the others: **global inequality**. Decompose world income inequality into the between-country and the within-country part and track how each wave moved them. This answers the rich-versus-poor question at the level of the whole world and not only country by country.
+
 ## 5. Data
 
 1. **Diffusion:** ITU and WDI for mobile, internet and broadband. The Comin–Hobijn cross-country adoption dataset for long histories, after checking which recent technologies it covers. Published AI-usage data and independent proxies such as Google Trends interest by country.
-2. **Outcomes:** Penn World Table (output, productivity, human capital), WDI, World Bank Poverty and Inequality Platform, WIID, and sector data (GGDC and UNIDO) for the subset of countries that have them.
+2. **Outcomes:** the six families in section 4A. Sources: Penn World Table, WDI, ILOSTAT, World Bank Poverty and Inequality Platform, WIID, World Inequality Database, Global Findex, UN and UNCTAD trade data, and sector data (GGDC and UNIDO) for the subset of countries that have them. Coverage differs a lot by family, so each analysis reports its own sample.
 3. **Mechanisms:** IMF AI Preparedness Index components, electricity access, schooling attainment, governance indicators, trade openness, economic complexity, English proficiency, mobile and broadband prices, compute access measures if available.
 4. **Sample:** all economies with usable data for at least a core set of variables, reporting the number of countries per analysis. Missingness is patterned (poorer countries have less data), so results are reported on the full unbalanced sample and on a balanced subsample.
 
 ## 6. Method
 
 1. **Adoption gradients (RQ1).** For each wave and each year since launch, estimate the cross-country slope of log penetration on log income, and a dispersion measure. Plot the gradient against years since launch for all waves on one axis. Compare AI's early path with the early paths of the others.
-2. **Payoffs (RQ2).** Country-year panel of growth, productivity, poverty and inequality on adoption intensity, with country and year fixed effects, and interactions between adoption and income group and between adoption and each mechanism. For identification, use instruments that predate the adoption decision, such as distance to submarine-cable landing points and pre-existing fixed-line stock interacted with the global fall in technology prices. A sector-level design of the Rajan–Zingales type (sectors that depend more on the technology, in countries with better enabling conditions) wherever sector data exist.
+2. **Payoffs (RQ2).** Country-year panel of each outcome family on adoption intensity, with country and year fixed effects, and interactions between adoption and income group and between adoption and each mechanism. For identification, use instruments that predate the adoption decision, such as distance to submarine-cable landing points and pre-existing fixed-line stock interacted with the global fall in technology prices. A sector-level design of the Rajan–Zingales type (sectors that depend more on the technology, in countries with better enabling conditions) wherever sector data exist.
+   **What is reported besides a sign** (five result types, for every family and wave):
+   - **Timing.** Local-projection impulse responses over 0–15 years after adoption takes off, to show lags and any initial dip before gains (a J-curve), since earlier general-purpose technologies were slow to show in the data.
+   - **Thresholds.** Panel threshold models: does the payoff appear only above a minimum level of skills, electricity access or connectivity? Where are the cut-offs?
+   - **Distribution across countries.** Quantile effects, so that the effect on the weakest performers can differ from the average.
+   - **Distribution within countries.** Effects on the bottom 40% versus the top 10%, and on labour versus capital income.
+   - **Trade-offs.** A winners-and-losers matrix across the six families: for each type of economy, which outcomes rise, which fall, and which come together.
+
 3. **Mechanism ranking (RQ3).** With many candidate factors and limited waves, use several methods and report agreement: Bayesian model averaging (posterior inclusion probabilities), post-double-selection LASSO, causal forests for heterogeneous effects, and stability selection. These rank candidate mechanisms. They do not establish causation on their own.
 4. **Forecast and back-test (RQ4).** Estimate on the early waves, predict the heterogeneity in a later wave (for example the smartphone and broadband era) and score the forecast. Only a method that passes the back-test is applied to AI. Report prediction intervals, not point forecasts. Compare with early AI adoption and exposure data.
 5. **Falsification.** Check that crypto adoption does not show productivity payoffs similar to the productivity-enhancing waves. If it did, something is wrong with the design.
@@ -74,6 +98,8 @@ Crypto and deep learning are included as contrasts on purpose. They test whether
 
 - A common-metric comparison of successive technology waves, extended to the AI era and to non-productive contrasts.
 - Evidence on whether the historical pattern, where arrival converges but intensity diverges, repeats with AI.
+- A multi-dimensional account of what technology waves did to economies: output, structure, jobs, distribution, living standards and resource use, with timing, thresholds and trade-offs, in place of a single growth coefficient.
+- A decomposition of how each wave moved world inequality between and within countries.
 - A ranked and stress-tested list of country characteristics behind unequal gains, from many candidates, not a few assumed ones.
 - A back-tested, uncertainty-aware statement about which kinds of economy are positioned to gain from AI, with Vietnam, Cambodia and the United States as examples.
 
@@ -85,6 +111,7 @@ Crypto and deep learning are included as contrasts on purpose. They test whether
 | AI outcomes are not observable yet (2022 onward) | RQ4 is a conditional forecast, labelled as such. Causal claims limited to earlier waves |
 | Only a handful of technology waves | Treat waves as the unit for RQ1 and avoid strong generalisation. Use country-level variation for RQ2–RQ3 |
 | AI adoption data come from few sources with different methods | Use several sources, check agreement, report results by source |
+| Many outcomes invite cherry-picking and false positives | Pre-specify one primary indicator per family, use summary indices, apply multiple-testing corrections, publish the full list of outcomes tested |
 | Missing data for the poorest countries | Report coverage, balanced and unbalanced results, bounds for selection |
 | Machine-learning rankings can be unstable | Stability selection, agreement across methods, back-testing |
 | Crypto and deep learning are not like the others | Used as contrasts with their own measures, not forced into one metric |
