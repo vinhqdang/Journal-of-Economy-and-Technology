@@ -13,3 +13,7 @@ Candidate ideas for submission to the Journal of Economy and Technology. The the
 | [C: When does AI pay?](proposals/archive/C_cost_effectiveness_threshold_growth.md) | Archived | At what AI cost does task substitution become worthwhile, by wage level and country? |
 
 B and C were set aside as too narrow or too close to a calculation. Their literature notes are kept in the archive folder.
+
+## Systematic review
+
+[review/protocol.md](review/protocol.md): PRISMA-P protocol for the evidence-synthesis stage of proposal D. Status: draft awaiting the author's confirmation and OSF registration. No search has been run.
