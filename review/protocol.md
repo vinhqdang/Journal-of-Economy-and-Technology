@@ -13,7 +13,15 @@
 | 1 | Quang-Vinh Dang | British University Vietnam, Hung Yen, Vietnam | Guarantor and lead reviewer | vinh.dq4@buv.edu.vn, ORCID 0000-0002-3877-8024 |
 | 2 | To be recruited | | Second reviewer (strongly recommended, see section "Study records") | |
 
-**Amendments:** none yet. Every later change is logged with date, section and reason.
+**Amendments** (each logged with date, section and reason):
+
+| # | Date | Section | Change | Reason |
+|---|---|---|---|---|
+| 1 | 2026-10-02 | Search strategy | Boolean query written with explicit phrase variants (OpenAlex does not allow wildcards inside quoted phrases) and restricted to the Economics, Econometrics and Finance field | Unrestricted query returned about 7,600 records, too many for one screener. Content of the four blocks is unchanged |
+| 2 | 2026-10-02 | Study records | Four holding categories added at abstract stage: context (diffusion, adoption determinants, models; supports RQ1), environmental-outcome-only (low priority), review (for backward citation search), supplementary micro evidence | Many relevant records are not eligible payoff studies but are needed for RQ1 and for citation chasing |
+| 3 | 2026-10-02 | Information sources | arXiv attempted but not completed. Scopus, Web of Science and EconLit not yet searched | Service time-out; institutional access needed |
+| 4 | 2026-10-02 | Study records | Automated stage-1 rules added before manual reading. Single assisted screener, verification sample of 90 for the author | No second screener available |
+| 5 | 2026-10-02 | Full-text stage | Included records ranked into tier A (80) and tier B (167) for the order in which full texts are requested | 227 papers are not openly available and must be downloaded by hand |
 **Support:** no external funding declared. **Role of funder:** none.
 **Use of AI tools:** screening and extraction are planned with automated assistance. The exact wording of the disclosure, required by the journal's policy on generative AI, is to be completed by the author before submission.
 

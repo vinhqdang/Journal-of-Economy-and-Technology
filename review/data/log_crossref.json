@@ -1,0 +1,674 @@
+[
+ {
+  "source": "crossref",
+  "query": "internet cross-country panel economic growth",
+  "total_hits": 2700982,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:28Z"
+ },
+ {
+  "source": "crossref",
+  "query": "internet developing countries income groups",
+  "total_hits": 919670,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:29Z"
+ },
+ {
+  "source": "crossref",
+  "query": "internet digital divide",
+  "total_hits": 931023,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:30Z"
+ },
+ {
+  "source": "crossref",
+  "query": "internet poverty and inequality countries",
+  "total_hits": 538547,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:34Z"
+ },
+ {
+  "source": "crossref",
+  "query": "internet productivity emerging economies",
+  "total_hits": 652634,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:35Z"
+ },
+ {
+  "source": "crossref",
+  "query": "internet employment and wages across countries",
+  "total_hits": 735913,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:36Z"
+ },
+ {
+  "source": "crossref",
+  "query": "internet absorptive capacity human capital",
+  "total_hits": 2316430,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:37Z"
+ },
+ {
+  "source": "crossref",
+  "query": "internet financial inclusion",
+  "total_hits": 669735,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:38Z"
+ },
+ {
+  "source": "crossref",
+  "query": "broadband cross-country panel economic growth",
+  "total_hits": 2516066,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:39Z"
+ },
+ {
+  "source": "crossref",
+  "query": "broadband developing countries income groups",
+  "total_hits": 731811,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:40Z"
+ },
+ {
+  "source": "crossref",
+  "query": "broadband digital divide",
+  "total_hits": 748707,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:41Z"
+ },
+ {
+  "source": "crossref",
+  "query": "broadband poverty and inequality countries",
+  "total_hits": 349454,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:42Z"
+ },
+ {
+  "source": "crossref",
+  "query": "broadband productivity emerging economies",
+  "total_hits": 464069,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:43Z"
+ },
+ {
+  "source": "crossref",
+  "query": "broadband employment and wages across countries",
+  "total_hits": 547220,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:44Z"
+ },
+ {
+  "source": "crossref",
+  "query": "broadband absorptive capacity human capital",
+  "total_hits": 2130126,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:46Z"
+ },
+ {
+  "source": "crossref",
+  "query": "broadband financial inclusion",
+  "total_hits": 481934,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:47Z"
+ },
+ {
+  "source": "crossref",
+  "query": "mobile phones cross-country panel economic growth",
+  "total_hits": 2697543,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:48Z"
+ },
+ {
+  "source": "crossref",
+  "query": "mobile phones developing countries income groups",
+  "total_hits": 913934,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:49Z"
+ },
+ {
+  "source": "crossref",
+  "query": "mobile phones digital divide",
+  "total_hits": 927831,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:50Z"
+ },
+ {
+  "source": "crossref",
+  "query": "mobile phones poverty and inequality countries",
+  "total_hits": 533287,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:51Z"
+ },
+ {
+  "source": "crossref",
+  "query": "mobile phones productivity emerging economies",
+  "total_hits": 647162,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:51Z"
+ },
+ {
+  "source": "crossref",
+  "query": "mobile phones employment and wages across countries",
+  "total_hits": 730648,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:53Z"
+ },
+ {
+  "source": "crossref",
+  "query": "mobile phones absorptive capacity human capital",
+  "total_hits": 2309555,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:55Z"
+ },
+ {
+  "source": "crossref",
+  "query": "mobile phones financial inclusion",
+  "total_hits": 664911,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:56Z"
+ },
+ {
+  "source": "crossref",
+  "query": "information and communication technology cross-country panel economic growth",
+  "total_hits": 6598719,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:57Z"
+ },
+ {
+  "source": "crossref",
+  "query": "information and communication technology developing countries income groups",
+  "total_hits": 4874450,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:58Z"
+ },
+ {
+  "source": "crossref",
+  "query": "information and communication technology digital divide",
+  "total_hits": 4832100,
+  "retrieved": 30,
+  "time": "2026-10-02T06:55:59Z"
+ },
+ {
+  "source": "crossref",
+  "query": "information and communication technology poverty and inequality countries",
+  "total_hits": 4513441,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:00Z"
+ },
+ {
+  "source": "crossref",
+  "query": "information and communication technology productivity emerging economies",
+  "total_hits": 4611183,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:02Z"
+ },
+ {
+  "source": "crossref",
+  "query": "information and communication technology employment and wages across countries",
+  "total_hits": 4702564,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:03Z"
+ },
+ {
+  "source": "crossref",
+  "query": "information and communication technology absorptive capacity human capital",
+  "total_hits": 6234616,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:04Z"
+ },
+ {
+  "source": "crossref",
+  "query": "information and communication technology financial inclusion",
+  "total_hits": 4629309,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:05Z"
+ },
+ {
+  "source": "crossref",
+  "query": "digital technology cross-country panel economic growth",
+  "total_hits": 5698345,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:07Z"
+ },
+ {
+  "source": "crossref",
+  "query": "digital technology developing countries income groups",
+  "total_hits": 3968486,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:08Z"
+ },
+ {
+  "source": "crossref",
+  "query": "digital technology digital divide",
+  "total_hits": 3317696,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:11Z"
+ },
+ {
+  "source": "crossref",
+  "query": "digital technology poverty and inequality countries",
+  "total_hits": 3603159,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:12Z"
+ },
+ {
+  "source": "crossref",
+  "query": "digital technology productivity emerging economies",
+  "total_hits": 3700552,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:13Z"
+ },
+ {
+  "source": "crossref",
+  "query": "digital technology employment and wages across countries",
+  "total_hits": 3794681,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:14Z"
+ },
+ {
+  "source": "crossref",
+  "query": "digital technology absorptive capacity human capital",
+  "total_hits": 5340074,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:15Z"
+ },
+ {
+  "source": "crossref",
+  "query": "digital technology financial inclusion",
+  "total_hits": 3717468,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:16Z"
+ },
+ {
+  "source": "crossref",
+  "query": "artificial intelligence cross-country panel economic growth",
+  "total_hits": 3085679,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:17Z"
+ },
+ {
+  "source": "crossref",
+  "query": "artificial intelligence developing countries income groups",
+  "total_hits": 1309553,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:18Z"
+ },
+ {
+  "source": "crossref",
+  "query": "artificial intelligence digital divide",
+  "total_hits": 1305375,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:19Z"
+ },
+ {
+  "source": "crossref",
+  "query": "artificial intelligence poverty and inequality countries",
+  "total_hits": 930406,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:20Z"
+ },
+ {
+  "source": "crossref",
+  "query": "artificial intelligence productivity emerging economies",
+  "total_hits": 1039106,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:21Z"
+ },
+ {
+  "source": "crossref",
+  "query": "artificial intelligence employment and wages across countries",
+  "total_hits": 1126173,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:22Z"
+ },
+ {
+  "source": "crossref",
+  "query": "artificial intelligence absorptive capacity human capital",
+  "total_hits": 2689229,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:26Z"
+ },
+ {
+  "source": "crossref",
+  "query": "artificial intelligence financial inclusion",
+  "total_hits": 1059029,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:27Z"
+ },
+ {
+  "source": "crossref",
+  "query": "generative AI cross-country panel economic growth",
+  "total_hits": 2772297,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:30Z"
+ },
+ {
+  "source": "crossref",
+  "query": "generative AI developing countries income groups",
+  "total_hits": 991573,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:31Z"
+ },
+ {
+  "source": "crossref",
+  "query": "generative AI digital divide",
+  "total_hits": 997143,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:32Z"
+ },
+ {
+  "source": "crossref",
+  "query": "generative AI poverty and inequality countries",
+  "total_hits": 611071,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:33Z"
+ },
+ {
+  "source": "crossref",
+  "query": "generative AI productivity emerging economies",
+  "total_hits": 722395,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:34Z"
+ },
+ {
+  "source": "crossref",
+  "query": "generative AI employment and wages across countries",
+  "total_hits": 807225,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:35Z"
+ },
+ {
+  "source": "crossref",
+  "query": "generative AI absorptive capacity human capital",
+  "total_hits": 2377317,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:36Z"
+ },
+ {
+  "source": "crossref",
+  "query": "generative AI financial inclusion",
+  "total_hits": 740877,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:37Z"
+ },
+ {
+  "source": "crossref",
+  "query": "machine learning cross-country panel economic growth",
+  "total_hits": 4090035,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:38Z"
+ },
+ {
+  "source": "crossref",
+  "query": "machine learning developing countries income groups",
+  "total_hits": 2310817,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:39Z"
+ },
+ {
+  "source": "crossref",
+  "query": "machine learning digital divide",
+  "total_hits": 2309535,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:41Z"
+ },
+ {
+  "source": "crossref",
+  "query": "machine learning poverty and inequality countries",
+  "total_hits": 1945061,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:42Z"
+ },
+ {
+  "source": "crossref",
+  "query": "machine learning productivity emerging economies",
+  "total_hits": 2051365,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:43Z"
+ },
+ {
+  "source": "crossref",
+  "query": "machine learning employment and wages across countries",
+  "total_hits": 2136310,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:44Z"
+ },
+ {
+  "source": "crossref",
+  "query": "machine learning absorptive capacity human capital",
+  "total_hits": 3690219,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:45Z"
+ },
+ {
+  "source": "crossref",
+  "query": "machine learning financial inclusion",
+  "total_hits": 2073122,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:46Z"
+ },
+ {
+  "source": "crossref",
+  "query": "cryptocurrency cross-country panel economic growth",
+  "total_hits": 2480594,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:47Z"
+ },
+ {
+  "source": "crossref",
+  "query": "cryptocurrency developing countries income groups",
+  "total_hits": 696009,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:48Z"
+ },
+ {
+  "source": "crossref",
+  "query": "cryptocurrency digital divide",
+  "total_hits": 713120,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:49Z"
+ },
+ {
+  "source": "crossref",
+  "query": "cryptocurrency poverty and inequality countries",
+  "total_hits": 313668,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:50Z"
+ },
+ {
+  "source": "crossref",
+  "query": "cryptocurrency productivity emerging economies",
+  "total_hits": 428252,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:52Z"
+ },
+ {
+  "source": "crossref",
+  "query": "cryptocurrency employment and wages across countries",
+  "total_hits": 511453,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:53Z"
+ },
+ {
+  "source": "crossref",
+  "query": "cryptocurrency absorptive capacity human capital",
+  "total_hits": 2094489,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:54Z"
+ },
+ {
+  "source": "crossref",
+  "query": "cryptocurrency financial inclusion",
+  "total_hits": 445327,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:55Z"
+ },
+ {
+  "source": "crossref",
+  "query": "bitcoin cross-country panel economic growth",
+  "total_hits": 2479438,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:56Z"
+ },
+ {
+  "source": "crossref",
+  "query": "bitcoin developing countries income groups",
+  "total_hits": 694720,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:57Z"
+ },
+ {
+  "source": "crossref",
+  "query": "bitcoin digital divide",
+  "total_hits": 711970,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:59Z"
+ },
+ {
+  "source": "crossref",
+  "query": "bitcoin poverty and inequality countries",
+  "total_hits": 312338,
+  "retrieved": 30,
+  "time": "2026-10-02T06:56:59Z"
+ },
+ {
+  "source": "crossref",
+  "query": "bitcoin productivity emerging economies",
+  "total_hits": 426963,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:01Z"
+ },
+ {
+  "source": "crossref",
+  "query": "bitcoin employment and wages across countries",
+  "total_hits": 510143,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:02Z"
+ },
+ {
+  "source": "crossref",
+  "query": "bitcoin absorptive capacity human capital",
+  "total_hits": 2093158,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:03Z"
+ },
+ {
+  "source": "crossref",
+  "query": "bitcoin financial inclusion",
+  "total_hits": 444303,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:04Z"
+ },
+ {
+  "source": "crossref",
+  "query": "technology diffusion cross-country panel economic growth",
+  "total_hits": 5274200,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:05Z"
+ },
+ {
+  "source": "crossref",
+  "query": "technology diffusion developing countries income groups",
+  "total_hits": 3537523,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:06Z"
+ },
+ {
+  "source": "crossref",
+  "query": "technology diffusion digital divide",
+  "total_hits": 3518958,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:07Z"
+ },
+ {
+  "source": "crossref",
+  "query": "technology diffusion poverty and inequality countries",
+  "total_hits": 3167541,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:08Z"
+ },
+ {
+  "source": "crossref",
+  "query": "technology diffusion productivity emerging economies",
+  "total_hits": 3267370,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:09Z"
+ },
+ {
+  "source": "crossref",
+  "query": "technology diffusion employment and wages across countries",
+  "total_hits": 3359747,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:10Z"
+ },
+ {
+  "source": "crossref",
+  "query": "technology diffusion absorptive capacity human capital",
+  "total_hits": 4911298,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:11Z"
+ },
+ {
+  "source": "crossref",
+  "query": "technology diffusion financial inclusion",
+  "total_hits": 3290080,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:13Z"
+ },
+ {
+  "source": "crossref",
+  "query": "general purpose technology cross-country panel economic growth",
+  "total_hits": 5539301,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:14Z"
+ },
+ {
+  "source": "crossref",
+  "query": "general purpose technology developing countries income groups",
+  "total_hits": 3807497,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:15Z"
+ },
+ {
+  "source": "crossref",
+  "query": "general purpose technology digital divide",
+  "total_hits": 3791111,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:16Z"
+ },
+ {
+  "source": "crossref",
+  "query": "general purpose technology poverty and inequality countries",
+  "total_hits": 3439908,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:16Z"
+ },
+ {
+  "source": "crossref",
+  "query": "general purpose technology productivity emerging economies",
+  "total_hits": 3540126,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:17Z"
+ },
+ {
+  "source": "crossref",
+  "query": "general purpose technology employment and wages across countries",
+  "total_hits": 3631966,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:19Z"
+ },
+ {
+  "source": "crossref",
+  "query": "general purpose technology absorptive capacity human capital",
+  "total_hits": 5179478,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:20Z"
+ },
+ {
+  "source": "crossref",
+  "query": "general purpose technology financial inclusion",
+  "total_hits": 3561864,
+  "retrieved": 30,
+  "time": "2026-10-02T06:57:21Z"
+ }
+]

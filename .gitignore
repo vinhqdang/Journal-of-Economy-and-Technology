@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# review pipeline: raw exports with abstracts, regenerate with review/scripts
+review/data/raw_*.csv
+review/data/records_dedup.csv
+review/data/abstract_stage_input.json
+review/data/abstract_fill.csv
+review/fulltext/*.pdf

@@ -1,0 +1,22 @@
+{
+ "records_identified_per_source_rows": {
+  "openalex": 1841,
+  "crossref": 2880,
+  "nber": 2671
+ },
+ "distinct_per_source": {
+  "openalex": 1840,
+  "crossref": 1285,
+  "nber": 579
+ },
+ "distinct_total_before_cross_source_dedup": 3704,
+ "duplicates_removed_across_sources": 92,
+ "records_after_deduplication": 3612,
+ "stage1": {
+  "no_abstract": 365,
+  "auto_excluded_no_tech": 897,
+  "auto_excluded_no_econ_outcome": 474,
+  "auto_excluded_no_multi_or_het": 174,
+  "candidate": 1702
+ }
+}

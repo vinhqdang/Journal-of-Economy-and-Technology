@@ -16,4 +16,4 @@ B and C were set aside as too narrow or too close to a calculation. Their litera
 
 ## Systematic review
 
-[review/protocol.md](review/protocol.md): PRISMA-P protocol for the evidence-synthesis stage of proposal D. Status: draft awaiting the author's confirmation and OSF registration. No search has been run.
+[review/protocol.md](review/protocol.md): PRISMA-P protocol for the evidence-synthesis stage of proposal D. Status: protocol confirmed by the author, OSF registration pending. A pilot search and screening have been run (see [review/prisma_flow.md](review/prisma_flow.md)). No study is included yet: 247 records await full-text assessment ([tier A requests](review/fulltext_requests.md), [tier B requests](review/fulltext_requests_tierB.md)).

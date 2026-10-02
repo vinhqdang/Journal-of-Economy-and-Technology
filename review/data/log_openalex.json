@@ -1,0 +1,9 @@
+[
+ {
+  "source": "openalex",
+  "query": "protocol-boolean (see openalex_query.txt)",
+  "total_hits": 1840,
+  "retrieved": 1841,
+  "time": "2026-10-02T06:55:28Z"
+ }
+]
