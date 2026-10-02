@@ -7,6 +7,7 @@ Candidate ideas for submission to the Journal of Economy and Technology. The the
 
 | Proposal | Status | Core question |
 |---|---|---|
+| [D: Is AI another internet?](proposals/D_technology_waves_and_unequal_gains.md) | Active, main candidate | How do successive technology waves, AI included, spread and pay off across 150+ economies, and why do gains differ? |
 | [A: Regional pricing and generative AI adoption](proposals/A_regional_pricing_causal_effects.md) | Active | What do localized low-price tiers and free promotions do to adoption in lower-income countries? |
 | [B: Who pays for proof?](proposals/archive/B_verifiable_billing_market.md) | Archived | Which institutions make honest billing of hidden LLM usage an equilibrium? |
 | [C: When does AI pay?](proposals/archive/C_cost_effectiveness_threshold_growth.md) | Archived | At what AI cost does task substitution become worthwhile, by wage level and country? |
