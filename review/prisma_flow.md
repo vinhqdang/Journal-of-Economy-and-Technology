@@ -32,3 +32,12 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 - One assisted screener (automated rules plus a single reader). **No independent second screener, so no agreement statistic yet.** A random verification sample of 90 decisions is in `data/verification_sample.csv` for the author to check. Agreement will be reported once it is returned.
 - Title screening was generous (the aim was not to lose relevant records). Abstract screening applied the eligibility table in the protocol.
 - Source tiers: a few open-access links point to journals that have not been checked against predatory-journal lists. That check belongs to the full-text stage.
+
+## Full-text stage (updated)
+
+| Stage | n | Note |
+|---|---|---|
+| Full texts read | 71 | 72 retrieved; 1 was the wrong document (idx 242) and needs re-retrieval |
+| Excluded at full text | 26 | E1 8, E2 2, E4 16 |
+| **Included, preliminary** | **45** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 15 are flagged for human check |
+| Still to read | 185 | 26 requested from the author, 159 at abstract level only |

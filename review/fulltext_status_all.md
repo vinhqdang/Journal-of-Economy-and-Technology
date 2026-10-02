@@ -37,7 +37,7 @@
 | 216 | 2024 | Does the digital economy promote or inhibit income inequality? | included for assessment | abstract level only |
 | 217 | 2021 | Does digital financial inclusion moderate or exacerbate output volatility? | included for assessment | requested from author |
 | 239 | 2018 | What drives labor market polarization in advanced countries? The role of China and technology | included for assessment | retrieved |
-| 242 | 2023 | The unequal implications of Industry 4.0 adoption: evidence on productivity growth and convergence a | included for assessment | retrieved |
+| 242 | 2023 | The unequal implications of Industry 4.0 adoption: evidence on productivity growth and convergence a | included for assessment | requested from author |
 | 245 | 2023 | The impact of the digital economy on green total factor productivity in Belt and Road countries: the | included for assessment | retrieved |
 | 260 | 2025 | Promoting Economic Development Through Digitalisation: Impacts on Human Development, Economic Comple | included for assessment | retrieved |
 | 261 | 2019 | ICT and transport infrastructure development: an empirical analysis of complementarity | included for assessment | abstract level only |
