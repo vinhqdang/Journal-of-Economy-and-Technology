@@ -138,9 +138,9 @@
   "tried": []
  },
  "108": {
-  "status": "none",
-  "source": null,
-  "tried": []
+  "status": "found_s2",
+  "source": "https://doi.org/10.3386/w31357",
+  "tried": null
  },
  "117": {
   "status": "none",
@@ -318,12 +318,9 @@
   "tried": null
  },
  "320": {
-  "status": "none",
-  "source": null,
-  "tried": [
-   "https://www.ejbmr.org/index.php/ejbmr/article/download/1314/735",
-   "https://doi.org/10.24018/ejbmr.2022.7.2.1314"
-  ]
+  "status": "found_publisher",
+  "source": "https://eu-opensci.org/index.php/ejbmr/article/download/51314/7399",
+  "tried": null
  },
  "321": {
   "status": "none",
@@ -411,11 +408,9 @@
   "tried": null
  },
  "407": {
-  "status": "none",
-  "source": null,
-  "tried": [
-   "http://rabida.uhu.es/dspace/bitstream/10272/10704/2/The_role_of_ICT.pdf"
-  ]
+  "status": "found_s2",
+  "source": "https://www.uhu.es/publicaciones/ojs/index.php/REM/article/download/3987/3978",
+  "tried": null
  },
  "408": {
   "status": "none",
@@ -713,11 +708,9 @@
   ]
  },
  "881": {
-  "status": "none",
-  "source": null,
-  "tried": [
-   "https://doi.org/10.5281/zenodo.19481733"
-  ]
+  "status": "found_publisher",
+  "source": "https://zenodo.org/api/records/19481734/files/Deutsche%20internationale%20Zeitschrift%20f%C3%BCr%20zeitgen%C3%B6ssische%20Wissenschaft%20%E2%84%96125%202026.-6-11.pdf/content",
+  "tried": null
  },
  "882": {
   "status": "none",
@@ -728,11 +721,9 @@
   ]
  },
  "886": {
-  "status": "none",
-  "source": null,
-  "tried": [
-   "https://doi.org/10.5281/zenodo.20925134"
-  ]
+  "status": "found_publisher",
+  "source": "https://zenodo.org/api/records/20925134/files/3875-3892.pdf/content",
+  "tried": null
  },
  "892": {
   "status": "none",
@@ -750,11 +741,9 @@
   ]
  },
  "903": {
-  "status": "none",
-  "source": null,
-  "tried": [
-   "https://doi.org/10.5281/zenodo.18897896"
-  ]
+  "status": "found_publisher",
+  "source": "https://zenodo.org/api/records/18897896/files/A070525.pdf/content",
+  "tried": null
  },
  "905": {
   "status": "none",
@@ -764,11 +753,9 @@
   ]
  },
  "911": {
-  "status": "none",
-  "source": null,
-  "tried": [
-   "https://doi.org/10.5281/zenodo.22827113"
-  ]
+  "status": "found_publisher",
+  "source": "https://zenodo.org/api/records/22827114/files/The-Macroeconomic-Impact-of-Generative-AI-Evidence-and-Projections.pdf/content",
+  "tried": null
  },
  "913": {
   "status": "have",
@@ -1271,9 +1258,9 @@
   ]
  },
  "1679": {
-  "status": "none",
-  "source": null,
-  "tried": []
+  "status": "found_s2",
+  "source": "https://doi.org/10.3386/w30741",
+  "tried": null
  },
  "1681": {
   "status": "none",

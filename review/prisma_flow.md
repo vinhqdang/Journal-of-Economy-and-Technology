@@ -22,9 +22,10 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 | Set aside, environmental outcome only (low priority) | 22 | New category, amendment 2 |
 | Set aside as reviews, for backward citation search | 9 | New category, amendment 2 |
 | Set aside as supplementary micro evidence (field experiments, firm studies) | 3 | New category, amendment 2 |
-| **Sent to full-text assessment** | **247** | 80 in tier A (priority), 167 in tier B. 44 of the 247 were judged on title only |
-| Full texts retrieved automatically | 29 of 256 (included plus reviews) | Open-access links only |
-| Full texts still needed from the author | 227 | See the request lists |
+| **Sent to full-text assessment** | **247** | 80 ranked as tier A for priority, 167 as tier B. 44 of the 247 were judged on title only |
+| Full texts retrieved automatically and verified against title | 72 of 256 (included plus reviews) | Open-access links, repository copies, preprints, publisher pages |
+| Full texts requested from the author | 25 | Short list in `fulltext_requests.md` |
+| Without full text, kept at abstract level only | 151 | Flagged, not pooled, no bias rating (amendment 6) |
 
 ## Screening method and its limits
 
