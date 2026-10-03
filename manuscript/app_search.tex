@@ -1,0 +1,34 @@
+\subsection*{Search blocks (protocol)}
+Four concept blocks were combined with AND and searched in title and abstract. The OpenAlex query below is the exact string that was run (restricted to the economics, econometrics and finance field), and the Crossref and NBER searches used 96 combinations of a technology term and a context term.
+
+{\footnotesize\begin{itemize}[leftmargin=1.2em,itemsep=2pt]
+\item \textbf{Block A (technology):} information and communication technolog*, ICT, internet, broadband, mobile phone*, mobile telephon*, smartphone*, digital technolog*, digital economy, artificial intelligence, machine learning, deep learning, generative AI, large language model*, general purpose technolog*, cryptocurrenc*, bitcoin, crypto-asset*, blockchain.
+\item \textbf{Block B (economy level):} countr*, cross-country, nation*, developing econom*, emerging econom*, low-income, middle-income, high-income, income group*, developed econom*, advanced econom*.
+\item \textbf{Block C (outcomes):} growth, productivity, GDP, poverty, inequality, employment, wage*, labor or labour share, structural transformation, financial inclusion, welfare, living standard*, human development.
+\item \textbf{Block D (heterogeneity):} heterogene*, absorptive capacity, complementar*, threshold*, human capital, digital divide, convergence, divergence, technology diffusion, technology adoption, leapfrog*.
+\end{itemize}}
+
+\subsection*{OpenAlex query as run (2 October 2026)}
+{\scriptsize\begin{verbatim}
+title_and_abstract.search.exact:("information and communication technology" OR "information and communication
+technologies" OR ICT OR internet OR broadband OR "mobile phone" OR "mobile phones" OR "mobile telephony" OR
+"mobile telephone" OR smartphone* OR "digital technology" OR "digital technologies" OR "digital economy" OR
+"artificial intelligence" OR "machine learning" OR "deep learning" OR "generative AI" OR "large language
+model" OR "large language models" OR "general purpose technology" OR "general-purpose technology" OR "general
+purpose technologies" OR cryptocurrenc* OR bitcoin OR "crypto-asset" OR "crypto-assets" OR blockchain) AND
+(countr* OR "cross-country" OR "cross country" OR nation* OR "developing economy" OR "developing economies" OR
+"emerging economy" OR "emerging economies" OR low-income OR middle-income OR high-income OR "income group" OR
+"income groups" OR "developed economy" OR "developed economies" OR "advanced economy" OR "advanced economies")
+AND (growth OR productivity OR GDP OR poverty OR inequality OR employment OR wage* OR "labor share" OR "labour
+share" OR "structural transformation" OR "financial inclusion" OR welfare OR "living standard" OR "living
+standards" OR "human development") AND (heterogene* OR "absorptive capacity" OR complementar* OR threshold* OR
+"human capital" OR "digital divide" OR convergence OR divergence OR "technology diffusion" OR "technology
+adoption" OR
+leapfrog*),from_publication_date:1995-01-01,type:article|preprint,language:en,primary_topic.field.id:20
+\end{verbatim}}
+
+\subsection*{Crossref and NBER searches}
+Technology terms: internet; broadband; mobile phones; information and communication technology; digital technology; artificial intelligence; generative AI; machine learning; cryptocurrency; bitcoin; technology diffusion; general purpose technology. Context terms: cross-country panel economic growth; developing countries income groups; digital divide; poverty and inequality countries; productivity emerging economies; employment and wages across countries; absorptive capacity human capital; financial inclusion. All pairs (12 by 8 = 96) were run from 1995.
+
+\subsection*{Records by source}
+\begin{tabular}{@{}lr@{}}\toprule Source & Distinct records\\\midrule OpenAlex & 1,840\\ Crossref & 1,285\\ NBER working papers & 579\\ arXiv & 0 (attempted, not completed)\\ Scopus, Web of Science, EconLit & 0 (not run)\\\bottomrule\end{tabular}

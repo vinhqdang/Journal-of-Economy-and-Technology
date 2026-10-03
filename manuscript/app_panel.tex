@@ -1,0 +1,97 @@
+\subsection*{Variables}
+\begin{table}[H]\centering\footnotesize\caption{World Bank WDI indicators used.}\label{tab:wdi}\begin{tabular}{@{}lll@{}}\toprule Role & Variable & WDI code\\\midrule
+Technology & Mobile cellular subscriptions per 100 people & IT.CEL.SETS.P2\\
+Technology & Individuals using the internet, \% of population & IT.NET.USER.ZS\\
+Technology & Fixed broadband subscriptions per 100 people & IT.NET.BBND.P2\\
+Outcome & GDP per capita, constant 2015 US\$ & NY.GDP.PCAP.KD\\
+Outcome & Life expectancy at birth & SP.DYN.LE00.IN\\
+Outcome & Under-5 mortality rate & SH.DYN.MORT\\
+Outcome & Unemployment, \% of labour force & SL.UEM.TOTL.ZS\\
+Outcome & Agriculture, value added \% of GDP & NV.AGR.TOTL.ZS\\
+Outcome & Electric power consumption per capita & EG.USE.ELEC.KH.PC\\
+Control or moderator & School enrolment, secondary, gross & SE.SEC.ENRR\\
+Control & Trade, \% of GDP & NE.TRD.GNFS.ZS\\
+Moderator & Domestic credit to private sector, \% of GDP & FS.AST.PRVT.GD.ZS\\
+Moderator & Access to electricity, \% of population & EG.ELC.ACCS.ZS\\
+Other & Population, total & SP.POP.TOTL\\
+\bottomrule\end{tabular}\end{table}
+
+Income groups follow the World Bank's current classification of 217 economies (25 low, 47 lower-middle, 59 upper-middle and 86 high income; the analysis sample is smaller because of missing data). Aggregates were removed. CO$_2$ emissions per capita could not be retrieved from the API and are not analysed.
+
+\begin{table}[H]\centering\footnotesize
+\caption{Internet use and growth, same period (A1): change in annual growth (pp) per +10 points of users.}\label{tab:a1net}
+\begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
+Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
+Low & 18 & 53 & -0.916 [-3.241, 1.409] (p=0.44) \\
+Lower-middle & 42 & 158 & 1.185 [0.348, 2.023] (p=0.01) \\
+Upper-middle & 51 & 184 & 0.370 [-0.040, 0.779] (p=0.08) \\
+High & 60 & 223 & -0.089 [-0.340, 0.162] (p=0.49) \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[H]\centering\footnotesize
+\caption{Internet use and growth, previous period (A2).}\label{tab:a2net}
+\begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
+Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
+Low & 19 & 43 & -3.861 [-7.810, 0.088] (p=0.06) \\
+Lower-middle & 41 & 127 & -0.399 [-1.202, 0.405] (p=0.33) \\
+Upper-middle & 49 & 150 & -0.209 [-0.582, 0.165] (p=0.27) \\
+High & 60 & 210 & -0.306 [-0.509, -0.102] (p=0.00) \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[H]\centering\footnotesize
+\caption{Fixed broadband and growth, same period (A1). Not interpreted: extrapolation from few observations.}\label{tab:a1bb}
+\begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
+Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
+Low & 17 & 34 & -21.426 [-27.860, -14.993] (p=0.00) \\
+Lower-middle & 40 & 99 & 5.846 [2.454, 9.237] (p=0.00) \\
+Upper-middle & 47 & 122 & 1.830 [0.623, 3.036] (p=0.00) \\
+High & 62 & 192 & -0.057 [-0.589, 0.474] (p=0.83) \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[H]\centering\footnotesize
+\caption{Sensitivity: mobile adoption and growth, same period (A1), sample extended to 2023 (last period 2015--23).}\label{tab:a1m23}
+\begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
+Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
+Low & 20 & 60 & 0.329 [-0.123, 0.782] (p=0.15) \\
+Lower-middle & 42 & 166 & 0.344 [0.168, 0.521] (p=0.00) \\
+Upper-middle & 51 & 186 & 0.053 [-0.048, 0.154] (p=0.31) \\
+High & 61 & 227 & 0.134 [0.031, 0.238] (p=0.01) \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[H]\centering\footnotesize
+\caption{Sensitivity: previous-period specification (A2), sample extended to 2023.}\label{tab:a2m23}
+\begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
+Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
+Low & 19 & 54 & -0.408 [-0.870, 0.054] (p=0.08) \\
+Lower-middle & 42 & 143 & 0.164 [-0.016, 0.344] (p=0.07) \\
+Upper-middle & 51 & 160 & -0.047 [-0.195, 0.101] (p=0.53) \\
+High & 62 & 217 & -0.187 [-0.302, -0.072] (p=0.00) \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[H]\centering\footnotesize
+\caption{Dose-response (A3): change in annual growth (pp) per +10 mobile subscriptions per 100, by baseline adoption level.}\label{tab:a3}
+\begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
+Sample & Baseline bin & Obs & Effect of +10 on annual growth (pp) \\ \midrule
+All economies & <10 & 186 & 0.405 [0.249, 0.561] (p=0.00) \\
+All economies & 10-40 & 97 & 0.281 [0.167, 0.395] (p=0.00) \\
+All economies & 40-80 & 123 & 0.179 [0.059, 0.298] (p=0.00) \\
+All economies & >80 & 249 & 0.271 [0.119, 0.423] (p=0.00) \\
+Low and lower-middle income & <10 & 109 & 0.509 [0.171, 0.846] (p=0.00) \\
+Low and lower-middle income & 10-40 & 36 & 0.359 [0.106, 0.612] (p=0.01) \\
+Low and lower-middle income & 40-80 & 53 & 0.453 [0.080, 0.826] (p=0.02) \\
+Low and lower-middle income & >80 & 35 & 1.367 [-0.005, 2.739] (p=0.05) \\
+Upper-middle and high income & <10 & 77 & 0.234 [0.013, 0.455] (p=0.04) \\
+Upper-middle and high income & 10-40 & 61 & 0.233 [0.093, 0.372] (p=0.00) \\
+Upper-middle and high income & 40-80 & 70 & 0.120 [-0.008, 0.247] (p=0.07) \\
+Upper-middle and high income & >80 & 214 & 0.159 [0.052, 0.266] (p=0.00) \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[H]\centering\footnotesize
+\caption{Differences inside low and lower-middle income economies (A6).}\label{tab:a6}
+\begin{tabular}{@{}lll@{}}\toprule
+Moderator (at start of period) & Interaction with +10 mobile (pp growth per SD) & Obs \\ \midrule
+secondary enrolment & 0.136 [-0.205, 0.478] (p=0.43) & 233 \\
+electricity access & 0.024 [-0.301, 0.348] (p=0.89) & 224 \\
+private credit & -0.074 [-0.295, 0.147] (p=0.51) & 204 \\
+log GDP per capita & 0.237 [-0.128, 0.602] (p=0.20) & 233 \\
+\bottomrule\end{tabular}\end{table}

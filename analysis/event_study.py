@@ -132,7 +132,7 @@ for iso in LY.index:
         if pd.isna(m0) or pd.isna(m3) or pd.isna(y_t) or pd.isna(y_t3):
             continue
         row = dict(iso=iso, year=t, grp=grp[iso], shock=(m0 - m3) / 10, past=y_t - y_t3, y0=y_t)
-        for h in range(0, 9):
+        for h in range(1, 9):
             yh = LY.loc[iso].get(t + h) if t + h <= END else np.nan
             row[f"c{h}"] = yh - y_t if pd.notna(yh) else np.nan
         mf, yp = M.loc[iso].get(t + 3) if t + 3 <= END else np.nan, LY.loc[iso].get(t - 6)
@@ -140,9 +140,9 @@ for iso in LY.index:
         row["placebo_y"] = (y_t3 - yp) if pd.notna(yp) else np.nan
         rows.append(row)
 D = pd.DataFrame(rows)
-L += ["## A7 local projections: cumulative growth of GDP per capita h years after a +10 change in mobile subscriptions per 100 over the previous three years", "", "Percentage points of cumulative growth; country and year fixed effects; standard errors clustered by country.", "", "| Group | Economies | h=0 | h=2 | h=4 | h=6 | h=8 |", "|---|---|---|---|---|---|---|"]
+L += ["## A7 local projections: cumulative growth of GDP per capita h years after a +10 change in mobile subscriptions per 100 over the previous three years", "", "Percentage points of cumulative growth; country and year fixed effects; standard errors clustered by country.", "", "| Group | Economies | h=1 | h=2 | h=4 | h=6 | h=8 |", "|---|---|---|---|---|---|---|"]
 lp = {}
-for h in range(0, 9):
+for h in range(1, 9):
     d = D.dropna(subset=[f"c{h}", "shock", "past"])
     r = smf.ols(f"c{h} ~ shock:C(grp) + past + y0 + C(iso) + C(year)", d).fit(cov_type="cluster", cov_kwds={"groups": pd.factorize(d["iso"])[0]})
     for g in GR.values():
@@ -150,10 +150,10 @@ for h in range(0, 9):
         lp[(g, h)] = (r.params[k], *r.conf_int().loc[k], d[d["grp"] == g]["iso"].nunique())
 for g in GR.values():
     cells = []
-    for h in (0, 2, 4, 6, 8):
+    for h in (1, 2, 4, 6, 8):
         b, lo, hi, n = lp[(g, h)]
         cells.append(f"{b:.2f} [{lo:.2f}, {hi:.2f}]")
-    L.append(f"| {g} | {lp[(g, 0)][3]} | " + " | ".join(cells) + " |")
+    L.append(f"| {g} | {lp[(g, 1)][3]} | " + " | ".join(cells) + " |")
 dp = D.dropna(subset=["placebo_shock", "placebo_y", "past", "y0"])
 rp = smf.ols("placebo_y ~ placebo_shock:C(grp) + y0 + C(iso) + C(year)", dp).fit(cov_type="cluster", cov_kwds={"groups": pd.factorize(dp["iso"])[0]})
 L += ["", "Placebo (adoption change in the following three years against growth in the preceding three years; should be near zero if the dynamic profile is not driven by anticipation or trends):", "", "| Group | Placebo coefficient [95% CI] |", "|---|---|"]
@@ -164,7 +164,7 @@ for g in GR.values():
 L.append("")
 fig, ax = plt.subplots(1, 1, figsize=(5.2, 3.4))
 for g in GR.values():
-    hs = list(range(9)); b = [lp[(g, h)][0] for h in hs]
+    hs = list(range(1, 9)); b = [lp[(g, h)][0] for h in hs]
     ax.plot(hs, b, marker="o", ms=3, label=g)
 ax.axhline(0, color="grey", lw=0.8); ax.set_xlabel("Years after the adoption change"); ax.set_ylabel("Cumulative growth, pp per +10"); ax.legend(fontsize=7)
 plt.tight_layout(); plt.savefig(os.path.join(HERE, "figures", "lp.png"), dpi=140)
