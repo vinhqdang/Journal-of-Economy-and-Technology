@@ -1,0 +1,205 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs,longtable,array,graphicx,url,setspace,caption,enumitem}
+\usepackage[hidelinks]{hyperref}
+\setstretch{1.12}
+\captionsetup{font=small,labelfont=bf}
+\newcommand{\todo}[1]{\textbf{[#1]}}
+\makeatletter\g@addto@macro\UrlBreaks{\do\.\do\-\do\_\do\(\do\)\do\;}\makeatother
+
+\title{Do the gains from digital technology waves differ by income level?\\ A systematic review with a pilot meta-regression}
+\author{Quang-Vinh Dang\thanks{British University Vietnam, Hung Yen, Vietnam. Email: vinh.dq4@buv.edu.vn. ORCID: 0000-0002-3877-8024.}}
+\date{Draft of 3 October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}\fbox{\parbox{0.92\textwidth}{\small\textbf{Draft status (remove before submission).} All study data in this draft were extracted by machine from the full texts. Every printed number used in the meta-regression was checked against the text twice, and 64 of the 67 study records were re-read once by a separate model run, but \emph{no human has verified any extraction}. Screening used one assisted reviewer and no second screener. The protocol was not registered before the search was run. Scopus and Web of Science have not been searched. Sections marked \todo{author} need the author's input. Numbers in this draft come from the files in the project repository, and the repository is the reference if text and data disagree.}}\end{center}
+
+\begin{abstract}
+\noindent\textbf{Background.} Mobile telephony, the internet and, more recently, artificial intelligence (AI) are often expected to widen or narrow income gaps between countries, but the empirical cross-country evidence has not been synthesised across outcomes. \textbf{Methods.} We ran a systematic review following PRISMA 2020, searching OpenAlex, Crossref and NBER for 1995 to 2026, and assessed 107 full texts. We extracted effects on six outcome families, rated risk of bias with an adapted ROBINS-I tool, synthesised results narratively, and ran a pilot meta-regression of partial correlations for ICT-type adoption and output or productivity. \textbf{Results.} Sixty-seven studies met the criteria (54 on ICT, mobile, internet and broadband; 11 on AI; 2 on both). None was rated at low risk of bias (moderate 8, serious 50, critical 9). Most studies report a positive association between ICT-type adoption and output, but the pooled partial correlation across 16 studies is 0.19 (95\% CI 0.10 to 0.27) with I$^2$ of 93\%, and falls to between 0.005 and 0.06 after correcting for small-study bias. Estimates from GMM are on average 0.16 lower than those from other estimators. Twenty-six studies compare income groups or regions: eight find larger effects in richer economies, six in poorer ones, and three find no difference, mostly without a formal test. Returns are conditional on human capital, financial depth, governance and infrastructure. Evidence on AI comes from 13 studies, mostly short and using proxies. \textbf{Conclusions.} The evidence does not establish that rich or poor economies gain more, and it cannot support causal statements. Credible identification for low- and middle-income economies is the main gap.
+\par\medskip\noindent\textbf{Keywords:} digital technology; ICT; artificial intelligence; income level; systematic review; meta-regression.\\
+\textbf{JEL codes:} O33, O47, O11, L96.
+\end{abstract}
+
+\section{Introduction}
+
+Whether new technologies narrow or widen income gaps between countries is a long-standing question, and it has returned with artificial intelligence. Early empirical work found sizeable output effects of telecommunications infrastructure \cite{roller2001}. Later work on the long-run diffusion of technologies finds that technologies arrive at similar times in rich and poor countries, but that the intensity of their use diverges \cite{comin2010,comin2018}. If so, gains from a new technology should depend on a country's conditions at the time of adoption, and not only on whether the technology has arrived.
+
+Evidence on this is scattered. Studies use different technologies (mobile subscriptions, internet users, composite ICT indices, ICT capital, robots, AI readiness indices), different outcomes (growth, productivity, employment, inequality, human development, emissions), different samples and different estimators. Individual studies often report an average effect and one or two interaction terms. A reader who wants to know whether a low-income economy can expect the same payoff as a high-income one has no single place to look.
+
+We therefore ask: \emph{in empirical cross-country studies of digital and general-purpose technology waves, do effects on output, structural change, labour markets, distribution, living standards and resource use differ by income level and by country characteristics, how large are the differences, and how credible is the evidence?} We keep studies of historical waves (ICT, mobile, internet, broadband, crypto-assets) separate from studies of AI, because AI evidence is younger and thinner.
+
+The contribution is a structured map of the evidence with a quality rating of each study, a transparent count of where income-group comparisons exist, and a pilot meta-regression of effect sizes for the best-covered question (ICT-type adoption and output). We are explicit about what the data cannot show. All data and code are in the project repository.
+
+\section{Methods}
+
+\subsection{Protocol and registration}
+The review follows PRISMA 2020 \cite{prisma2020} and the structure of PRISMA-P \cite{prismap}. The protocol (version 1.0, 2 October 2026) is in the repository. It was intended to be registered on the Open Science Framework before the search, but registration had not been completed when the search was run. This is a deviation from good practice, and we log the amendments made after the search in Appendix~\ref{app:amend}. \todo{author: register the protocol on OSF and state the registration number or explain}
+
+\subsection{Eligibility}
+We included quantitative empirical studies with their own estimation (panel regression, instrumental variables, growth accounting, event studies, structural estimation) that relate adoption, diffusion, investment or capability of ICT in general, mobile telephony, internet or broadband, crypto-assets or AI to at least one outcome in six families: (1) output and productivity, (2) structural change, (3) labour market, (4) poverty and distribution, (5) living standards beyond income (consumption, health, schooling, financial inclusion) and (6) resource cost (electricity use, carbon intensity). Historical-wave studies needed at least 10 economies or an explicit income-group comparison; AI studies needed at least 3 economies or an income-level comparison. Studies from 1995 onward in English were eligible. Purely conceptual papers, reviews and studies whose only outcome was adoption itself were not synthesised.
+
+\subsection{Search and screening}
+We searched OpenAlex (a Boolean query restricted to the economics field), Crossref (96 technology-by-context queries) and the NBER working-paper series, covering 1995 to the search date of 2 October 2026. arXiv was attempted but did not respond in usable time. Scopus, Web of Science and EconLit were not searched. After removing duplicates, 3,612 records remained. Screening was done by one assisted reviewer: automated rules removed records with no eligible technology term, no outcome term or no multi-economy cue (stage 1), then title and abstract screening applied the eligibility table. No second screener was available, so we report no agreement statistic. A random verification sample of 90 decisions is in the repository awaiting an independent check.
+
+Full texts were obtained from open-access sources, repositories and the author. Records without a free full text, and those the author judged to come from unreliable venues after visiting the journal site, were not read and are not used as evidence. This creates a selection mechanism that favours open-access studies, discussed in Section~\ref{sec:limits}.
+
+\subsection{Data extraction and risk of bias}
+For each included study we extracted technology, exposure measure, sample, estimator, identification strategy, results by outcome family with printed estimates and uncertainty, heterogeneity findings, and group-specific results, using a fixed form. Extraction was done by a language-model agent working from converted full texts, with a locator and a short verbatim quote for every result. An automatic check matched 403 of 586 quotes verbatim across all 107 records read (the rest are affected by table layout and paraphrase). A second, separate model run then re-read each of 64 included records and each of 203 regression estimates against the text and classified every item as confirmed, corrected or unverifiable. Three studies added late (71, 278 and 341) were not given this second pass; we checked their key printed numbers by text search.
+
+Risk of bias used a six-domain tool adapted from ROBINS-I \cite{robinsi}: confounding and reverse causation, exposure measurement, selection of countries and years, outcome measurement, specification and researcher degrees of freedom, and selective reporting. Overall ratings were low, moderate, serious or critical.
+
+\subsection{Synthesis}
+We synthesised results narratively, following the SWiM reporting guideline \cite{swim}, by outcome family and by technology stream. Counts of study directions are descriptive; they are not weighted and are not effect sizes.
+
+For ICT-type adoption and output or productivity we ran a pilot meta-regression in the tradition of Stanley and Doucouliagos \cite{stanley2012}. Each estimate was converted to a partial correlation coefficient, $PCC = t/\sqrt{t^2 + df}$, with $df$ equal to the number of observations minus 10 regressors (a sensitivity check uses 0, 5 and 20). The $t$-statistic came from the printed coefficient and standard error, or from a printed $t$-statistic. Estimates reported with $p$-values or intervals only were not converted. We excluded interaction terms, crypto and AI exposures, estimates without a usable number of observations, and five estimates judged not poolable on the second pass (a fintech-credit exposure, a growth outcome mixed with level outcomes, and a TFP index in levels). We pooled one headline estimate per paper by random effects \cite{dersimonian1986}, ran a weighted moderator regression with standard errors clustered by paper, and tested for publication selection with FAT-PET and PEESE \cite{stanley2014}. With 18 papers, the clustered standard errors are optimistic and p-values are indicative.
+
+\section{Results}
+
+\subsection{Study selection}
+Table~\ref{tab:prisma} gives the flow. Of 247 records sent to full-text assessment, 106 full texts were obtained and read, together with one review. After the second pass, 67 studies are included, 39 were excluded at full text (12 for too few economies, 5 for an ineligible exposure, 1 for an ineligible outcome, 21 for being conceptual or lacking their own estimation) and one was kept as context. Three studies (298, 878 and 1495) were moved from include to exclude after the second pass on eligibility grounds; this should be confirmed by a human reviewer. About 140 of the 247 records have not been read because no free full text was available.
+
+\begin{table}[ht]\centering\small
+\caption{Study selection (PRISMA 2020 flow, counts from the project repository).}\label{tab:prisma}
+\begin{tabular}{@{}p{12.2cm}r@{}}\toprule
+Stage & n\\\midrule
+Records identified (OpenAlex 1,840; Crossref 1,285; NBER 579; before cross-source deduplication 3,704) & 3,704\\
+Duplicates removed across sources & 92\\
+Records after deduplication & 3,612\\
+Excluded by automated stage-1 rules & 1,545\\
+Read at title level / excluded at title level & 2,067 / 1,611\\
+Assessed at abstract level / excluded at abstract level & 456 / 121\\
+Held as duplicates, context, environmental-only, reviews, supplementary & 88\\
+Sent to full-text assessment & 247\\
+Full texts read (106 of the 247 plus one review) & 107\\
+Excluded at full text & 39\\
+Kept as context only & 1\\
+\textbf{Included} & \textbf{67}\\\bottomrule
+\end{tabular}\end{table}
+
+\subsection{Characteristics of included studies}
+The 67 included studies were published between 2003 and 2026, and 52 of them from 2020 onward. Fifty-four study ICT, mobile, internet or broadband; 11 study AI; 2 cover both. Most use country-year panels (48), with a few at industry-country level. In a rough classification of the main estimator, 25 use system or difference GMM, 24 use fixed-effects, random-effects or pooled OLS, 11 use ARDL, cointegration or heterogeneous-panel estimators and 7 use growth accounting, data envelopment or other methods. Thirty-six studies have no identification strategy beyond controls and fixed effects. Twenty-six include at least one low-income economy. Outcome families, with a study able to contribute to several, are: output and productivity 37, labour market 14, living standards beyond income 12, poverty and distribution 11, structural change 5, resource cost 4. Appendix~\ref{app:studies} lists all studies.
+
+\subsection{Risk of bias}
+No study was rated at low risk of bias. The first-pass ratings were moderate for 8 studies, serious for 50 and critical for 9. In the second pass, the separate reader agreed with the overall rating for 55 of 64 studies, found six too harsh (268, 302, 323, 408, 707 and 1469) and three too lenient (57, 957 and 1031). We did not change any rating, and these differences should be settled by a human reviewer. The commonest weaknesses are adoption treated as exogenous, indices whose scope does not match the technology, and many specifications with no stated preferred one.
+
+\subsection{Accuracy of the extraction}
+Across 372 result entries in the 64 re-read records, 348 were confirmed, 19 corrected and 5 could not be verified; 13 of 133 heterogeneity entries were corrected. Of 203 regression estimates, 202 matched the printed tables and one needed a corrected income label. Corrections were mostly misread labels, counts, and claims that the source text does not make. These were applied or flagged in the repository. Because both passes used the same family of model reading the same machine-converted text, a human check of a sample remains necessary.
+
+\subsection{Output and productivity}
+Thirty-seven studies cover output or productivity (4 on AI). Most report a positive association, but the sign is not uniform: current and lagged mobile effects have opposite signs in one 41-economy GMM study (study 10); ten high-income countries show no significant effect of any ICT indicator (study 1448); and in 27 EU states the digitalisation coefficient loses significance once economic freedom is added (study 988). Interaction terms are the most repeated finding: ICT pays more where human capital is higher in two Asian GMM studies (302 and 323, which share authors, panel and index), a developing-country productivity study, and in Africa, where the effect of the digital economy is negative below a human-capital index of about 2.35 and the average country is below it. Financial development, trade openness, governance, electricity and the diffusion level of ICT also appear as moderators. These are conditional associations from single-equation panels and do not show that raising a moderator would change the return. A non-parametric study of 24 OECD economies finds that ICT capital change has no contemporaneous effect on the production frontier and a positive effect five years later.
+
+\subsection{Structural change, labour markets, distribution, living standards and resource cost}
+\emph{Structural change} (5 studies). Internet penetration is associated with faster structural change in a 51-economy panel, more so in low and lower-middle income and agrarian economies. A study of about 100 developing economies finds that ICT lowers export concentration, with a larger effect in the low and lower-middle income group ($-0.155$ on the concentration index) than in the high and upper-middle group ($-0.020$), but no formal test of the difference.
+
+\emph{Labour market} (14 studies, 5 on AI). In advanced economies ICT is linked to routine-task decline and polarisation, and capital-skill complementarity raises skill premia. No included study measures routinisation in low-income economies. Third-generation mobile coverage raises women's labour-force participation but not men's in 14 low- and middle-income countries, in one of the few studies that uses an instrument. AI exposure is positively associated with employment growth, concentrated in high-education occupations and younger workers, in European samples; in Southeast Asia the pattern differs by country, though the country-level estimates could not be checked in the source figure.
+
+\emph{Poverty and distribution} (11 studies, 2 on AI). Results split. A threshold model for 45 developing countries finds that ICT raises the Gini coefficient below a digital-maturity score of 0.48 and lowers it above. In 48 African economies ICT is positively associated with a composite inclusive-growth index. Robots raise carbon inequality between countries, less so in open economies. The thresholds rest on single studies.
+
+\emph{Living standards} (12 studies, 3 on AI). Mobile subscriptions are positively associated with the Human Development Index in high-income and lower-middle-income groups and not in low-income countries, in a large panel. In low and lower-middle income countries ICT narrows gender education gaps up to about 100 mobile subscriptions per 100 people, after which the gap widens. Internet effects on financial inclusion rise with governance quality in sub-Saharan Africa.
+
+\emph{Resource cost} (4 studies, 2 on AI). Digitisation is associated with higher carbon productivity, and the effect falls with income (0.085 for high-income, 0.058 for middle-income, 0.041 for low-income countries), while a digital-economy index lowers green total factor productivity in Belt and Road economies. Four studies are too few to generalise.
+
+\subsection{Do gains differ by income level?}
+Twenty-six studies compare income groups or regions, formally or descriptively (Table~\ref{tab:income}). Eight find larger effects in richer or OECD economies, six in poorer or less productive ones, and three find no clear difference; one finds a negative effect in all groups. Several of the first group have no test of the difference, and the studies finding larger effects in poorer economies include one single cross-section rated critical. The remaining studies compare groups without a directional finding, and study 268 appears in both of the first two groups because its direct and moderating effects point in different directions. We therefore treat the evidence as inconclusive. Studies of richer economies mostly use OLS or fixed effects, test the difference informally, and rarely include low-income economies, so the lean toward larger measured gains in richer samples may reflect study design.
+
+\begin{table}[ht]\centering\small
+\caption{Studies that compare income groups or regions (study IDs in Appendix~\ref{app:studies}).}\label{tab:income}
+\begin{tabular}{@{}p{4.2cm}p{4.3cm}p{6.2cm}@{}}\toprule
+Finding & Studies & Notes\\\midrule
+Larger in richer or OECD & 88, 138, 162, 268 (direct effect), 276, 535, 750, 957 & Several lack a test of the difference; 535 rated critical and its figures look illustrative; 957 compares OECD with MENA\\
+Larger in poorer or less productive & 268 (informality moderation), 341, 407, 707, 952, 1192 & 407 compares Central and Eastern with Western Europe; 1192 is a single cross-section rated critical; 952 flips sign between pooled and subgroup models\\
+No clear difference & 29, 320, 879 & 879 compares low with lower-middle income only\\
+Negative in all groups & 245 & Green total factor productivity outcome\\\bottomrule
+\end{tabular}\end{table}
+
+\subsection{Evidence on AI}
+The 13 studies on AI (11 AI only, 2 both streams) are mostly short panels of 3 to 78 economies, typically starting in 2012 or later, with exposure measured by occupational exposure indices, national readiness indices, patent-based measures or industrial robot density. None measures realised use of generative AI at country level. Where AI studies show an effect, it tends to be larger in richer economies and in high-skill occupations. The evidence from low-income economies is one productivity study of 63 low and lower-middle income economies and two studies rated critical. AI cannot be compared with earlier waves on equal terms.
+
+\subsection{Pilot meta-regression: ICT-type adoption and output}
+Of 206 estimates from 26 papers, 103 from 18 papers were usable. For the 16 papers with a convertible headline estimate, the random-effects pooled partial correlation is 0.189 (95\% CI 0.104 to 0.274), with $\tau^2 = 0.027$, $I^2 = 93\%$ and a 95\% prediction interval from $-0.141$ to 0.519. A partial correlation of 0.19 corresponds to about 3.6\% of residual variance. Of the headline estimates, 88\% are positive and 75\% are positive and statistically significant.
+
+\begin{table}[ht]\centering\small
+\caption{Moderator meta-regression of partial correlations (103 estimates, 18 papers, standard errors clustered by paper).}\label{tab:mra}
+\begin{tabular}{@{}lrrr@{}}\toprule
+Moderator & Coefficient & Clustered SE & p\\\midrule
+Constant & 0.087 & 0.056 & 0.12\\
+Low- or middle-income sample & $-0.038$ & 0.045 & 0.40\\
+System or difference GMM & $-0.163$ & 0.048 & $<0.01$\\
+Mobile (relative to general ICT) & 0.053 & 0.052 & 0.31\\
+Internet or broadband (relative to general ICT) & 0.135 & 0.079 & 0.09\\\bottomrule
+\end{tabular}\end{table}
+
+Table~\ref{tab:mra} shows that GMM estimates are on average 0.16 lower in partial correlation than estimates from other methods. This is consistent with reverse causation inflating simpler estimates, though it cannot prove it. The low- or middle-income indicator is not significant, but only 5 papers (11 estimates) come from such samples, against 16 papers and 92 estimates for high-income or mixed samples (mean partial correlation 0.031 against 0.123, unweighted). The FAT-PET slope on the standard error is 1.91 (p = 0.06) with a bias-corrected intercept of 0.005 (p = 0.83), and the PEESE intercept is 0.064 (p = 0.04), so the pooled value may be substantially inflated by selective reporting (Figure~\ref{fig:funnel}). The pooled estimate is stable to the degrees-of-freedom assumption (0.186 to 0.193 for 0, 5 and 20 regressors).
+
+\begin{figure}[ht]\centering
+\includegraphics[width=0.62\textwidth]{../review/figures/funnel.png}
+\caption{Funnel plot of main estimates (partial correlation against its standard error).}\label{fig:funnel}
+\end{figure}
+
+\section{Discussion}
+
+Three points stand out. First, the central estimate of the association between ICT-type adoption and output is positive but modest and very heterogeneous across studies, and it shrinks when we allow for small-study bias and for estimators that deal with reverse causation. Second, returns look conditional on human capital, financial depth, governance and infrastructure. This agrees with the long-run diffusion evidence that intensity of use, rather than arrival, drives divergence \cite{comin2018}, although the studies we synthesise cannot show that changing a moderator would change the return. Third, the question of whether poorer or richer economies gain more cannot be answered from this evidence. The comparisons that exist are few, mostly informal and often from weak designs, and low-income economies are rarely sampled.
+
+For policy, the safest reading is that digital investment is unlikely to pay off equally everywhere and that complementary capabilities matter. The review does not support statements of the form that a given income group should expect a given payoff. For research, the main need is identification for developing and low-income economies, with instruments or timing designs, and for AI, measures of realised use rather than readiness.
+
+\section{Limitations}\label{sec:limits}
+
+\begin{itemize}[leftmargin=1.4em,itemsep=2pt]
+\item \textbf{Selection.} Only studies with a free or supplied full text were read: about 140 of the 247 records sent to full-text assessment are unread, and paywalled studies are over-represented among them. Records from four venues the author judged unreliable were skipped. Search covered OpenAlex, Crossref and NBER only; Scopus, Web of Science and EconLit were not run.
+\item \textbf{Single reviewer.} Screening used one assisted reviewer, so no agreement statistic exists. Extraction was by machine with a second machine pass; no human has verified the data.
+\item \textbf{Registration.} The protocol was not registered before the search.
+\item \textbf{Design quality.} No study has low risk of bias; most treat adoption as exogenous. We report associations, not causal effects. First-pass risk-of-bias ratings are used; nine ratings would change under the second pass.
+\item \textbf{Counting.} Direction counts are not weighted by size or quality and are not effect sizes. Study-level income comparisons mix World Bank income groups, regions and developed-developing splits.
+\item \textbf{Meta-regression.} Eighteen papers; the clustered standard errors are optimistic. Partial correlations rely on an assumed degrees of freedom. Composite indices, levels and growth outcomes, and conditional main effects are mixed in one analysis despite exclusions. Two Asian studies (302 and 323) share authors, panel and index and are not independent. The sample is not a census, and the low- and middle-income group is small.
+\item \textbf{Language and period.} English only, 1995 onward.
+\end{itemize}
+
+\section{Conclusion}
+
+Across 67 studies, ICT-type adoption is usually associated with higher output, but the association is modest, strongly heterogeneous, shrinks under bias corrections and estimators that address reverse causation, and is conditional on human capital, financial depth, governance and infrastructure. Whether rich or poor economies gain more is not established, and the evidence on AI is too thin to compare with earlier waves. Credible identification for low- and middle-income economies and realised-use measures for AI are the main gaps.
+
+\section*{Declarations}
+\small
+\noindent\textbf{Data and code availability.} The protocol, search and screening logs, extraction database, second-pass verification files, meta-regression inputs and code are in the project repository: \url{https://github.com/vinhqdang/Journal-of-Economy-and-Technology}. Full-text PDFs are not shared for copyright reasons.\\
+\textbf{Ethics.} Not applicable; the review uses published studies only.\\
+\textbf{Author contributions (CRediT).} \todo{author to complete}\\
+\textbf{Conflict of interest.} \todo{author to complete}\\
+\textbf{Funding.} No external funding was declared in the protocol. \todo{author to confirm}\\
+\textbf{Use of AI tools.} \todo{author to complete the disclosure required by the journal's policy on generative AI. Screening and extraction used automated assistance; the wording and the level of detail are the author's decision.}\\
+\textbf{Registration.} \todo{OSF registration pending}
+
+\begin{thebibliography}{99}\small
+\bibitem{roller2001} L.-H. R\"oller and L. Waverman (2001). Telecommunications infrastructure and economic development: a simultaneous approach. \emph{American Economic Review} 91(4), 909--923. doi:10.1257/aer.91.4.909.
+\bibitem{comin2010} D. Comin and B. Hobijn (2010). An exploration of technology diffusion. \emph{American Economic Review} 100(5), 2031--2059. doi:10.1257/aer.100.5.2031.
+\bibitem{comin2018} D. Comin and M. Mestieri (2018). If technology has arrived everywhere, why has income diverged? \emph{American Economic Journal: Macroeconomics} 10(3), 137--178. doi:10.1257/mac.20150175.
+\bibitem{prisma2020} M. J. Page et al. (2021). The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. \emph{BMJ} 372, n71. doi:10.1136/bmj.n71.
+\bibitem{prismap} D. Moher et al. (2015). Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement. \emph{Systematic Reviews} 4, 1. doi:10.1186/2046-4053-4-1.
+\bibitem{swim} M. Campbell et al. (2020). Synthesis without meta-analysis (SWiM) in systematic reviews: reporting guideline. \emph{BMJ} 368, l6890. doi:10.1136/bmj.l6890.
+\bibitem{robinsi} J. A. C. Sterne et al. (2016). ROBINS-I: a tool for assessing risk of bias in non-randomised studies of interventions. \emph{BMJ} 355, i4919. doi:10.1136/bmj.i4919.
+\bibitem{stanley2012} T. D. Stanley and H. Doucouliagos (2012). \emph{Meta-Regression Analysis in Economics and Business}. Routledge. doi:10.4324/9780203111710.
+\bibitem{stanley2014} T. D. Stanley and H. Doucouliagos (2014). Meta-regression approximations to reduce publication selection bias. \emph{Research Synthesis Methods} 5(1), 60--78. doi:10.1002/jrsm.1095.
+\bibitem{dersimonian1986} R. DerSimonian and N. Laird (1986). Meta-analysis in clinical trials. \emph{Controlled Clinical Trials} 7(3), 177--188. doi:10.1016/0197-2456(86)90046-2.
+\end{thebibliography}
+
+\appendix
+\section{Included studies}\label{app:studies}
+\input{appendix_studies.tex}
+
+\section{Protocol amendments}\label{app:amend}
+\small
+\begin{enumerate}[leftmargin=1.6em,itemsep=2pt]
+\item (2 Oct 2026) The OpenAlex query was written with explicit phrase variants and restricted to the economics field, because an unrestricted query returned about 7,600 records, too many for one screener.
+\item (2 Oct) Four holding categories were added at the abstract stage: context, environmental outcome only, reviews for backward citation search, and supplementary micro evidence.
+\item (2 Oct) arXiv was attempted but not completed. Scopus, Web of Science and EconLit were not searched.
+\item (2 Oct) Automated stage-1 rules were added before manual reading, with a single assisted screener and a verification sample of 90 decisions.
+\item (2 Oct) Included records were ranked in two tiers to decide which paywalled studies to request first.
+\item (2 Oct) Records with no free full text and not on the short request list were kept as an abstract-level evidence map, excluded from pooled estimates and from risk-of-bias ratings.
+\item (3 Oct) Studies whose only available venue the author judged unreliable were not read and not used.
+\item (3 Oct) Three studies (298, 878 and 1495) were moved from include to exclude after a second-pass check. Five regression estimates were excluded from the meta-regression after the same check.
+\end{enumerate}
+\end{document}
