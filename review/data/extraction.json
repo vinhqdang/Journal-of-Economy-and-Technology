@@ -1389,6 +1389,124 @@
   }
  },
  {
+  "idx": "89",
+  "title": "Impact of institutions and ICT services in avoiding resource curse: lessons from the successful economies",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E1",
+  "decision_rationale": "Quantitative panel study of ICT investment and GDP per capita growth, but the sample is only nine economies (4 resource-successful, 5 resource-cursed), below the 10-economy minimum for non-AI technologies, and groups are defined by resource outcome, not by an explicit income-group comparison.",
+  "stream": "H",
+  "technology": [
+   "ICT (ICT capital/infrastructure investment)"
+  ],
+  "exposure_measure": "Log of ICT capital/infrastructure investment (million US$ per year), interacted with institutional quality (property rights index)",
+  "sample": {
+   "n_economies": "9",
+   "economies_or_groups": "Botswana, Chile, Canada, Norway (successful); Congo Rep., Cote d'Ivoire, Russia, Saudi Arabia, Venezuela (unsuccessful)",
+   "income_groups_covered": "mixed (groups defined by resource-curse status, not income; no income-group comparison)",
+   "years": "1995-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Country fixed effects panel (Hausman-selected) by group; 3SLS as endogeneity check",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Log initial per capita income, resource rent, institutional quality, non-ICT capital, labour, domestic credit, openness, inflation, regional dummies"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Real GDP per capita growth rate vs ICT infrastructure investment (FE, pooled 9 economies)",
+    "direction": "positive",
+    "estimate": ".0562 (t=3.31)***",
+    "uncertainty": "t-value 3.31, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, row ICT infrastructure investment, Model 3, p.8: '.0562 (3.31)***'"
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP growth vs ICT investment, successful economies (FE)",
+    "direction": "positive",
+    "estimate": ".0603",
+    "uncertainty": "t=2.25, p<0.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, Model 1, p.8: '.0603 (2.25)**'"
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP growth vs ICT investment, unsuccessful economies (FE)",
+    "direction": "positive",
+    "estimate": ".7890",
+    "uncertainty": "t=1.98, p<0.10",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, Model 2, p.8: '.7890 (1.98)*'; text p.12 says insignificant"
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP growth vs ICT investment, 3SLS (instrument: English/French official language)",
+    "direction": "mixed",
+    "estimate": "Successful .2605**; unsuccessful .5646; pooled .0296**",
+    "uncertainty": "t=2.45; 1.56; 2.51",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, row ICT services investment, p.10"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "institutions",
+    "finding": "ICT x institutional quality interaction positive and significant in successful and unsuccessful groups, insignificant in pooled sample; authors derive an ICT investment threshold of 526 million US$ per year in the unsuccessful group.",
+    "threshold_value": "526 million US$ per year",
+    "evidence": "p.9: 'ICT service investment threshold level ... is 526 million US dollars per year'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported separately (Chile, Canada, Norway, Saudi Arabia pooled in groups by resource status)",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "6 (3 FE models, 3 3SLS models)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "none",
+  "notes": "Excluded on sample size (9 economies). Several reporting oddities: growth coefficients interpreted as percent effects (e.g. 24.6 percent for .2465) though log/level units are mixed; Model 1 FE with 25 years x 4 countries; 'Number of obs' 225 pooled; Table 4 reports no N or uncertainty-free fit stats; estimated 'growth rate' of 35.47 percent in text is implausible. Mixed-sign claim: text says ICT effect positive for all groups though Model 2 significant only at 10 percent in Table 3 but called insignificant in text. No instructions to the reader found in the text.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 1
+  },
+  "quote_flag": "needs human check"
+ },
+ {
   "idx": "108",
   "title": "New technologies and jobs in Europe",
   "fulltext_decision": "include",
