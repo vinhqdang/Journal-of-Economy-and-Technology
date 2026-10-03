@@ -1,0 +1,218 @@
+[
+ {
+  "idx": "10",
+  "paper_verdict": {
+   "estimator_family": "system GMM (two-step, Blundell-Bond type; internal instruments)",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Outcome is annual % growth of GDP per capita (not productivity or output level). Exposure enters in levels (per 100 people) with current and one-year lag having opposite signs, so single coefficients do not give net effects. Many rows are interaction main effects or interaction terms (conditional effects). Same 41-country sample reused across columns. Sargan p-values of about 0.99-1.00 suggest instrument proliferation. Working paper (MSE WP 165/2017); mixed-income 41-country sample, years 2004-2015. Fixed telephony and ICT goods imports are not mobile/internet adoption measures."
+  },
+  "estimates": [
+   {
+    "estimate_id": "10-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "mobile 0.209*** (0.0359)",
+    "note": "Obs 395, Number of ID 41 in column (1); note: GMM two-step standard errors in parentheses."
+   },
+   {
+    "estimate_id": "10-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "L.mobile -0.247*** (0.0331)",
+    "note": "Lagged term of same regression as 10-1; current and lag have opposite signs, so net effect is not the single coefficient."
+   },
+   {
+    "estimate_id": "10-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Internet 0.242*** (0.0732)",
+    "note": "Column (2); Observations 392, Number of ID 41."
+   },
+   {
+    "estimate_id": "10-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "L.internet -0.334*** (0.0759)",
+    "note": "Column (2); lagged term of same regression as 10-3."
+   },
+   {
+    "estimate_id": "10-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Fixed -0.0211 (0.138)",
+    "note": "Column (3); Observations 397. Fixed telephone lines; confirm only if fixed telephony counts as focal technology."
+   },
+   {
+    "estimate_id": "10-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTimp -0.0204 (0.0564)",
+    "note": "Column (4); Observations 396. ICT goods imports share of total imports is a trade measure rather than technology adoption; focal-technology status is a coding choice."
+   },
+   {
+    "estimate_id": "10-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Mobile 0.116*** (0.0358)",
+    "note": "Table 5B column (1); Observations 390, ID 41. Main effect in a model with mobile x internet interaction, so not comparable to an unconditional effect."
+   },
+   {
+    "estimate_id": "10-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Mbinternet 0.00180*** (0.000615)",
+    "note": "Table 5B column (1); interaction term."
+   },
+   {
+    "estimate_id": "10-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "L.mbinternet -0.00176*** (0.000414)",
+    "note": "Table 5B column (1); lagged interaction term."
+   },
+   {
+    "estimate_id": "10-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Internet 0.802** (0.335)",
+    "note": "Table 5B (contd) layout garbled: value sits at the column (2) horizontal position (as Constant 2.412 and Observations 392); the column (3) Internet cell appears to hold only '(0.00634)' / '(0.348)'. Column (2) assignment is consistent with obs 392 and with text on education interaction. Main effect in model with internet x education interaction."
+   },
+   {
+    "estimate_id": "10-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Netedu -0.00761* (0.00405)",
+    "note": "Table 5B column (2); Observations 392."
+   },
+   {
+    "estimate_id": "10-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "-0.0377*** (0.00511)",
+    "note": "Layout garbled: coefficient printed between Netservice and L.netservice lines, SE '(0.00511)' on L.netservice line, L.netservice 0.0356*** with '(0.00634)' later. Pairing coefficient then SE follows the table pattern and text says Netservice is negative and significant. Column (3), Observations 391."
+   },
+   {
+    "estimate_id": "10-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Mobile 0.168*** (0.0215)",
+    "note": "Table 6 column (2); Observations 443, ID 41. Main effect in model with mobile x branches interaction."
+   },
+   {
+    "estimate_id": "10-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "mobilebranch 0.000811*** (6.35e-05)",
+    "note": "Table 6 column (2); interaction term."
+   }
+  ]
+ },
+ {
+  "idx": "29",
+  "paper_verdict": {
+   "estimator_family": "OLS in first (and three-year) differences with year dummies and cluster-robust SE (fixed-effects-equivalent); rreg robust regression in appendix Tables A3/A4",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Authors acknowledge possible endogeneity but find no instrument and cannot use GMM, so no identification strategy. Exposure is log change in cellular licensed IoT connections per inhabitant (a proxy, not IoT capital); coefficient is a TFP-growth spillover elasticity in log differences, and rounding to 2 decimals in appendix tables. Outcome is TFP growth (productivity). Rows are overlapping specifications on the same 82-country, 2010-2017 sample (with/without MBB, first vs three-year differences, labor definitions, rreg with different outlier-inclusive samples); not independent. Three-year differences are overlapping windows. The paper also contains a separate growth-accounting simulation (Section 6) which is not among these estimates."
+  },
+  "estimates": [
+   {
+    "estimate_id": "29-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.023** (0.009)",
+    "note": "Table 4 column 2 (with MBB control); 574 obs; text and Table 3 give 82 countries. Cluster robust SE per table note."
+   },
+   {
+    "estimate_id": "29-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.026** (0.010)",
+    "note": "Table 4 column 1 (no MBB control); 574 obs."
+   },
+   {
+    "estimate_id": "29-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.036** (0.015)",
+    "note": "Table 4 column 3 (three-year differences, no MBB); 410 obs."
+   },
+   {
+    "estimate_id": "29-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.031** (0.014)",
+    "note": "Table 4 column 4 (three-year differences, with MBB); 410 obs."
+   },
+   {
+    "estimate_id": "29-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.021* (0.011)",
+    "note": "Table 5 OECD column 1 (no MBB); 252 obs; Table 2 note: 36 OECD countries."
+   },
+   {
+    "estimate_id": "29-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.017* (0.010)",
+    "note": "Table 5 OECD column 2 (with MBB); 252 obs."
+   },
+   {
+    "estimate_id": "29-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.023* (0.012)",
+    "note": "Table 5 Non-OECD column 1; 322 obs; 46 non-OECD countries per Table 2 note. Group is mixed income (includes Singapore, Qatar, India, Uganda), so 'not stated' is appropriate."
+   },
+   {
+    "estimate_id": "29-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.023* (0.012)",
+    "note": "Table 5 Non-OECD column 2 (with MBB); 322 obs."
+   },
+   {
+    "estimate_id": "29-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.02*** (0.004)",
+    "note": "Table A3 column 2 (first differences, with MBB); 630 obs. Country count not printed (outlier-inclusive sample larger than 82). Note to Table A3 does not say what parentheses contain; presumed SE as in main tables."
+   },
+   {
+    "estimate_id": "29-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.03*** (0.005)",
+    "note": "Table A3 column 4 (three-year differences, with MBB); 450 obs. Parentheses type not stated in note; presumed SE."
+   },
+   {
+    "estimate_id": "29-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.02*** (0.006)",
+    "note": "Table A4 OECD column 2 (with MBB); 252 obs. Parentheses type not stated in note; presumed SE."
+   },
+   {
+    "estimate_id": "29-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.02*** (0.007)",
+    "note": "Table A4 Non-OECD column 2 (with MBB; MBB coefficient 0.01*** (0.004)); 378 obs; country count not printed. Parentheses type not stated; presumed SE."
+   },
+   {
+    "estimate_id": "29-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.02** (0.009)",
+    "note": "Table A1 column 2 (labor quantity only, with MBB); 574 obs."
+   },
+   {
+    "estimate_id": "29-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.02** (0.009)",
+    "note": "Table A2 column 2 (labor quantity and quality separately, with MBB); 574 obs."
+   }
+  ]
+ }
+]

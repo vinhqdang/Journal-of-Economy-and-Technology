@@ -1,0 +1,134 @@
+[
+ {
+  "idx": "952",
+  "paper_verdict": {
+   "estimator_family": "dynamic panel fixed effects (two-way FE with lagged dependent variable, country-clustered SE; not GMM)",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Exposure DIGI_std is a PCA composite standardized to mean 0/SD 1 and the outcome LAP_level is in thousands of PPP$ per worker (level), so units differ from growth or log specifications. Only 17 Asia-Pacific economies. The DIGI_std coefficient in model 5 is conditional on the DIGI x GREEN interaction in the same model (marginal effect of DIGI at GREEN=0). Authors state DIGI and GREEN are treated as exogenous and results are conditional associations; Nickell bias acknowledged and not corrected."
+  },
+  "estimates": [
+   {
+    "estimate_id": "952-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DIGI_std 0.356 0.515 0.714 0.752 0.985 * (0.578)",
+    "note": "Table 4 col (5) LAP. Note states robust SE clustered by country in parentheses, so SE type is right. Observations 198, Countries 17. Text: beta = 0.985, p = 0.090. Coefficient is conditional on the interaction term being in the model."
+   },
+   {
+    "estimate_id": "952-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DIGI \u00d7 GREEN - 0.591 - 0.230 1.685 *** (0.633)",
+    "note": "Table 4 col (5) LAP, 1.685 *** with SE 0.633, N=198, 17 countries. This is the interaction coefficient, not the marginal effect of digital technology alone; consider excluding or treating separately from main-effect estimates."
+   }
+  ]
+ },
+ {
+  "idx": "957",
+  "paper_verdict": {
+   "estimator_family": "system GMM (Blundell-Bond, xtbond2)",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Coefficients are System GMM (xtbond2) levels of ICT indicators on real GDP growth rate (TX_PIB) in percent. Estimates are measured in raw units of heterogeneous ICT indicators (internet use, mobile and fixed subscriptions, ICT goods import share). Small samples (OECD 147-156 obs, MENA 73 obs; 18 OECD and 14 MENA countries listed in footnotes, but the number of countries actually used is not reported). Several MENA specifications show AR2 p < 0.10 and Sargan p near 0.05-0.07, and a MENA L.log_PIB of 1.64 in Table 8 spec 2 suggests instability. Text defines the lagged dependent as TX_PIB(t-1) while tables label it L.log_PIB; unit ambiguity. MENA is a mixed-income group (Gulf high-income plus middle/low income), so income group is not homogeneous. Interaction rows are product-term coefficients whose own main effects are in the same column."
+  },
+  "estimates": [
+   {
+    "estimate_id": "957-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "TELEPH 0.00464410*** (0.000)",
+    "note": "Table 5 Spec 1 OECD, obs 156. Note: values in parentheses are p-values. n_countries not printed; footnote 2 lists 18 OECD countries."
+   },
+   {
+    "estimate_id": "957-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICT_import 0.04059132*** (0.000)",
+    "note": "Table 5 Spec 2 OECD, obs 156. p-value in parentheses. ICT goods import share is a trade measure, not a direct technology adoption measure."
+   },
+   {
+    "estimate_id": "957-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "MOBILE -0.00133189 (0.393)",
+    "note": "Table 5 Spec 3 OECD, obs 156; text confirms p = 0.393."
+   },
+   {
+    "estimate_id": "957-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "INTERNET 0.00027806 (0.766)",
+    "note": "Table 6 Spec 1 MENA, obs 73. Footnote 1 lists 14 MENA countries; income group is mixed (Gulf high-income plus middle/low-income), not 'not stated' per se."
+   },
+   {
+    "estimate_id": "957-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "MOBILE 0.00001576 (0.954)",
+    "note": "Table 6 Spec 2 MENA, obs 73."
+   },
+   {
+    "estimate_id": "957-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICT_import 0.00404449* (0.064)",
+    "note": "Table 6 Spec 3 MENA, obs 73; text confirms p-value = 0.064."
+   },
+   {
+    "estimate_id": "957-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "TELEPH -0.00023511 (0.890)",
+    "note": "Table 6 Spec 4 MENA, obs 73."
+   },
+   {
+    "estimate_id": "957-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "INTERNET_CAPH 0.0014415*** (0.000)",
+    "note": "Table 7 Spec 4 OECD, obs 147. Interaction term; INTERNET main term 0.01659737*** (0.000) in same column."
+   },
+   {
+    "estimate_id": "957-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICT_import_ CAPH 0.00073392** (0.017)",
+    "note": "Table 7 Spec 2 OECD, obs 156. Interaction term; ICT_import main 0.10633362*** (0.003)."
+   },
+   {
+    "estimate_id": "957-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "INTERNET_ CAPH -0.00066018 (0.155)",
+    "note": "Table 8 Spec 1 MENA, obs 73. Interaction term; INTERNET main 0.06657191 (0.155) as printed."
+   },
+   {
+    "estimate_id": "957-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DF_INTERNET 0.00007605** (0.042)",
+    "note": "Table 9 Spec 3 OECD, obs 147. Interaction with financial development; INTERNET main 0.00759160* (0.068)."
+   },
+   {
+    "estimate_id": "957-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DF_INTERNET 0.00010789** (0.048)",
+    "note": "Table 10 Spec 1 MENA, obs 73. Interaction term; INTERNET main 0.00318467 (0.188)."
+   },
+   {
+    "estimate_id": "957-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DF_MOBILE 0.00006651*** (0.002)",
+    "note": "Table 9 Spec 4 OECD, obs 156. Interaction term; MOBILE main 0.00742333*** (0.001)."
+   },
+   {
+    "estimate_id": "957-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DF_MOBILE 0.00004504* (0.068)",
+    "note": "Table 10 Spec 2 MENA, obs 73. Interaction term; MOBILE main 0.00348263* (0.052)."
+   }
+  ]
+ }
+]

@@ -1,0 +1,19 @@
+[
+ {"idx":"45",
+  "paper_verdict":{"estimator_family":"Panel fixed effects (robust SE), Hansen panel threshold regression, and 2SLS (internet penetration as instrument)","reverse_causality_addressed":"partly","pooling_concerns":"Exposure is an author-built composite DFI index (digital plus traditional financial inclusion, PCA, in percent), not a direct technology adoption measure; coefficients are semi-elasticities on log GDP per capita. Very short panel (3 years: 2014, 2017, 2021; N=90, 30 countries). Threshold regime coefficients are conditional on a single estimated threshold (71.87), not full-sample effects. The 2SLS coefficient (0.034) is about 7 times the FE estimate, with a possibly weak or questionable instrument (internet penetration). Estimates 45-1 and 45-4 are near duplicates (same specification, extra controls)."},
+  "estimates":[
+   {"estimate_id":"45-1","verdict":"confirmed","corrections":{},"quote":"DFI index 0.005*** (0.001)","note":"Table 4 col (1); notes: standard errors are in parentheses; N=90; 30 countries (Table 3); years 2014, 2017, 2021. Technology is a composite financial-inclusion index; kept as other, flag for pooling."},
+   {"estimate_id":"45-2","verdict":"confirmed","corrections":{},"quote":"DFI index (<71.87) 0.007*** (0.001)","note":"Table 4 col (2), threshold regression; SE in parentheses; N=90. Regime estimate."},
+   {"estimate_id":"45-3","verdict":"confirmed","corrections":{},"quote":"DFI index (>71.87) 0.004*** (0.001)","note":"Table 4 col (2), threshold regression; SE in parentheses; N=90. Regime estimate."},
+   {"estimate_id":"45-4","verdict":"confirmed","corrections":{},"quote":"DFI index 0.005*** (0.001)","note":"Table 5 col (1), additional controls (trade openness, FDI, government expenditure, gross domestic savings); N=90; notes: standard errors in parentheses."},
+   {"estimate_id":"45-5","verdict":"confirmed","corrections":{},"quote":"DFI index 0.005*** 0.034*** (0.001) (0.011)","note":"Table 5 col (2) 2SLS; N=90; text: Cragg-Donald Wald F-test ... is 18.67 (table lists it as LM-Statistics 18.67). Instrument is internet penetration."}
+  ]},
+ {"idx":"57",
+  "paper_verdict":{"estimator_family":"Panel cointegration estimators: FMOLS and DOLS (long-run elasticities); also country-wise AMG","reverse_causality_addressed":"partly","pooling_concerns":"Outcome is log of GDP in current US dollars (aggregate level, not per capita or productivity); mobile subscriptions are in absolute numbers (not per capita) while internet users are in percent of population, so the elasticities are not comparable in units. Cointegration (FMOLS/DOLS) long-run elasticities with no reported n_obs (implied 10 x 17 = 170 but not printed); 10 emerging Asian countries chosen by highest GDP. Negative internet coefficient is likely a specification artifact (energy and income controls, GNI per capita IN also included). Reverse causality only examined via Dumitrescu-Hurlin Granger non-causality tests, not in the estimators."},
+  "estimates":[
+   {"estimate_id":"57-1","verdict":"confirmed","corrections":{},"quote":"lnMO 0.719506*** 0.062101 0.754067*** 0.080889","note":"Table 7 FMOLS Coef./Std. Err.; column header Std. Err.; 10 countries, 2000 to 2017; n_obs not printed."},
+   {"estimate_id":"57-2","verdict":"confirmed","corrections":{},"quote":"lnIT −0.59107*** 0.102232 −0.56155*** 0.136219","note":"Table 7 FMOLS; negative sign printed as unicode minus; Std. Err. column. lnIT is internet users in percent of population."},
+   {"estimate_id":"57-3","verdict":"confirmed","corrections":{},"quote":"lnMO 0.719506*** 0.062101 0.754067*** 0.080889","note":"Table 7 DOLS Coef./Std. Err."},
+   {"estimate_id":"57-4","verdict":"confirmed","corrections":{},"quote":"lnIT −0.59107*** 0.102232 −0.56155*** 0.136219","note":"Table 7 DOLS Coef./Std. Err."}
+  ]}
+]

@@ -1,0 +1,125 @@
+[
+ {
+  "idx": "1192",
+  "eligibility_ok": true,
+  "eligibility_note": "Own cross-sectional OLS on 121 economies with an explicit developing vs developed split; exposure is the Network Readiness Index (ICT in general); outcome is real GDP per capita growth. All criteria met, although the exposure is a composite index.",
+  "sample_corrections": {"unit": "country (single 2023 cross-section; not country-year)"},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "Normalized Network Readiness (NRIT) 1.106 *** (0.0027)", "locator": "Table 4, p.10 (R2 0.2185 adjusted, N = 76)"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "Normalized Network Readiness (NRIT) ... −0.734 * (0.0895)", "locator": "Table 4, p.10 (adj R2 0.0161, F p = 0.3072)"},
+   {"n": 3, "verdict": "confirmed", "correction": "Direction 'null' is a fair reading (negative point estimate, p = 0.1166, N = 43, adj R2 0.0103). The authors themselves call it 'firmly negative' but statistically insignificant.", "quote": "Normalized Network Readiness (NRIT) −0.734 * (0.0895) −0.693 (0.1166)", "locator": "Table 6, p.13"},
+   {"n": 4, "verdict": "confirmed", "correction": "Developing 0.246 (p = 0.0116), developed 0.036 (p = 0.6724), N = 43 -0.050 (p = 0.5433) all match. Entry is a control, as the record says.", "quote": "Transformed Foreign Direct Investment (IHSFDI) 0.246 ** (0.0116) 0.036 (0.6724)", "locator": "Table 4, p.10; Table 6, p.13"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Chow F = 11.91, p < 0.01 at observation 77 is correct; no endogenous threshold is estimated (the authors list threshold regression only as future work).", "quote": "Chow Breakpoint Test (CBPT) at the high-income transition boundary (Observation 77)", "locator": "Section 4.3.4, p.13"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Only a binary developing (N=76) vs developed (N=45) split is reported (2023 World Bank classification); low, lower-middle and upper-middle are not separated, as the record states. The developed-cohort values and the N=43 robustness values are correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: one year of growth on a contemporaneous composite readiness index with only FDI and trade as controls and no income level, human capital or institutions, plus causal wording ('growth multiplier', policy prescriptions); critical is defensible, borderline serious.",
+   "exposure_measurement": "agree: the NRI is a composite of technology, people, governance and impact pillars rather than an adoption or investment measure, and min-max rescaling makes the coefficient hard to read.",
+   "selection_of_countries_years": "agree: a single 2023 observation per country, the sample is set by NRI availability, and the developed cohort has an unusual mean growth of -0.37%.",
+   "outcome_measurement": "agree: WDI real GDP per capita growth is standard but is one year's rate and is IHS-transformed, which is near identity for small values and muddies the 'elasticity' reading.",
+   "specification": "agree: median-imputed trade data, a sample split at the group boundary that is then 'validated' by a Chow test at the same boundary, outliers dropped after diagnostics, and an adj R2 of 0.016 in the developed cohort.",
+   "selective_reporting": "agree: few specifications, all shown, but the interpretation overstates weak evidence ('mathematically proves', 'conclusive empirical weight') and the abstract headlines a 10%-level coefficient.",
+   "why": "Single-year cross-section with minimal controls and strong causal and policy claims from a result significant only at 10% in one cohort; the record's critical rating is at the harsh end but consistent with the guide because the headline conclusions cannot be trusted."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers found. Minor: the record's unit 'country-year' is a single cross-section. The FDI row (result 4) is a control, not an ICT exposure, and should not be used as an ICT result."
+ },
+ {
+  "idx": "1372",
+  "eligibility_ok": true,
+  "eligibility_note": "Own Tobit estimation; exposure is internet (survey indices of virtual social network use and internet use in schools); 57 named developing economies; outcome is poverty headcount. Criteria met, although the exposure is a perception-based survey index and the effective number of distinct countries in the 43 regression observations is not reported.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "All numbers match Table 1 Models 1-2: -33.506 (p 0.004), -32.607 (p 0.002), Gini 118.022 (p 0.024) / 114.855 (p 0.016), threshold 3.5224, Fisher 3.87***. Sample mean 4.828 matches Appendix 2.", "quote": "[Social Network] × Gini -33.506*** -32.607***", "locator": "Table 1, p.12; Appendix 2, p.15"},
+   {"n": 2, "verdict": "confirmed", "correction": "All numbers match Table 1 Models 3-4: -54.278 (p 0.027), -52.841 (p 0.018), Gini 132.410 (p 0.080) / 128.906 (p 0.067), threshold 2.4394, Fisher 3.11**. Sample mean 3.240 matches.", "quote": "[Internet in Schools] × Gini -54.278** -52.841**", "locator": "Table 1, p.12"},
+   {"n": 3, "verdict": "confirmed", "correction": "Coefficients and p-values match (18.257 p 0.006; 17.767 p 0.003; 28.820 p 0.022; 28.058 p 0.014). The 'reviewer calculation' is arithmetically right (18.257 - 33.506 x 0.501 = 1.47; 28.820 - 54.278 x 0.501 = 1.63). Note the main effect is evaluated at Gini = 0, outside the observed range (min 0.257).", "quote": "the unconditional effects of the technology adoption variables are positive on poverty", "locator": "Table 1, p.12; text p.11"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Thresholds 3.5224 (range 2.571 to 6.234) and 2.4394 (range 1.339 to 5.050) are correct and are ratios of coefficients without confidence intervals. Text gives 2.439 for schools.", "quote": "virtual social network thresholds of 3.5224 (118.022/33.506) and 3.5224 (114.855/32.607) are within the statistical virtual social network range", "locator": "Section 4, p.10-11"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis is reported; the record's 'not reported separately' entries are right. Its remark that the sample is 'predominantly low and lower-middle income' is the record's own inference, since the paper gives no income classification (only non-OECD status and a country list).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: pooled Tobit with four controls, no country or time effects and no instruments, causal 'mitigating' framing, and the authors concede reverse causality is unaddressed.",
+   "exposure_measurement": "agree: executive-opinion scores of how widely social networks and school internet are used do not measure adoption or access; the stated rule that zero is assigned when data are missing is a further concern, though the reported minimum (2.571) suggests no zeros in the sample.",
+   "selection_of_countries_years": "agree: 57 countries are named but only 43 observations enter Table 1 (poverty has 84 observations over five years), so the estimation sample and the countries in it are unclear.",
+   "outcome_measurement": "agree: national-poverty-line headcounts are not comparable across countries and years and are sparse; Gini is described as 'distribution of wealth' although it is an income measure.",
+   "specification": "agree: double-censored Tobit at 0 and 100 although observed poverty ranges only 0.4 to 66.5, about 43 observations for seven regressors plus an interaction, and thresholds as ratios with no uncertainty.",
+   "selective_reporting": "agree: only two models and no robustness checks; the positive unconditional technology effects are set aside as 'not relevant' while the abstract stresses the mitigating role.",
+   "why": "Small pooled sample, no identification strategy, a weak survey-based exposure and an unwarranted estimator, with causal wording, give serious bias but not an untrustworthy design."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers found. The record is faithful to Table 1 and the appendices. Only the income composition remark is unsupported by the text. Interaction interpretation: the technology marginal effect is 18.257 - 33.506 x Gini, so it turns negative only above a Gini of about 0.545, above the sample mean of 0.501."
+ },
+ {
+  "idx": "1419",
+  "eligibility_ok": true,
+  "eligibility_note": "Own OLS and quantile regressions on 93 developing countries (73/67 used); exposure is mobile phone use for bill payment and money transfer (mobile); outcomes are quality of growth, Gini and poverty. Criteria met.",
+  "sample_corrections": {"unit": "country (single cross-section: mobile banking 2011; outcomes and controls 2005-2011 average; not country-year)"},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "OLS -0.005 (p 0.090), Q90 -0.006 (p 0.000) with quadratic 0.0002 (p 0.000), threshold 15; other quantiles not significant. The text says use 'increases growth quality at the 90th decile' only above the 15 threshold.", "quote": "Mobile.Pay -0.005* ... -0.006***", "locator": "Table 1 Panel A, p.12; text p.12"},
+   {"n": 2, "verdict": "confirmed", "correction": "OLS -0.002 (p 0.068); Q10 -0.008 (p 0.006), quadratic 0.0001 (p 0.008), threshold 40; Q75 -0.003 (p 0.014), quadratic 0.00003 (p 0.088, 10% only), threshold 50.", "quote": "Mobile.SR -0.002* -0.008*** -0.001 -0.001 -0.003** 0.0001", "locator": "Table 1 Panel B, p.13"},
+   {"n": 3, "verdict": "confirmed", "correction": "OLS 0.550 (p 0.437) and -0.030 (p 0.305); Q90 quadratic -0.049 (p 0.044). The paper notes the constitutive term (0.399) is not significant.", "quote": "a constitutive term (0.399) from which the negative threshold is computed is not significant", "locator": "Table 2 Panel A, p.14; text p.13"},
+   {"n": 4, "verdict": "confirmed", "correction": "OLS 0.327 (p 0.187); Q75 0.708 (p 0.075) and -0.011 (p 0.093), threshold 32.18; Q90 quadratic -0.006 (p 0.035); Q10 quadratic +0.006 (p 0.000).", "quote": "Mobile.SR× Mobile.SR -0.005 0.006*** 0.001 -0.004 -0.011* -0.006**", "locator": "Table 2 Panel B, p.15"},
+   {"n": 5, "verdict": "confirmed", "correction": "OLS 0.006 (p 0.441); no significant mobile term at any quantile; the text states no threshold evidence.", "quote": "evidence of threshold in the independent variable of interest is not apparent", "locator": "Table 3 Panel A, p.15; text p.14"},
+   {"n": 6, "verdict": "confirmed", "correction": "Numbers match (OLS -0.001 p 0.465; Q10 -0.0005 and Q25 -0.0007, both p 0.000; quadratics +0.00002). Small omission: the Q50 quadratic (+0.00003, p 0.007) is also significant, and the Q50 threshold of 16.66 rests on an insignificant linear term (0.001).", "quote": "Mobile.SR -0.001 -0.0005*** -0.0007*** 0.001 -0.002 -0.003", "locator": "Table 3 Panel B, p.16"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Thresholds 15, 40, 50, 32.18, 12.5, 17.5 and 16.66 match the text. Omitted by the record: Gini Mobile.Pay 4.071 (Q90) and Gini Mobile.SR 12.91 (Q90), both resting on insignificant constitutive terms, as do the poverty Q50 threshold and the authors' own caveats.", "quote": "thresholds of 12.5 (0.0005/[0.00002×2]) , 17.50 (0.0007/[0.00002×2]) and 16.66 (0.001/[0.00003×2])", "locator": "Section 4.1, p.14"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis; the sample is all 'developing countries' with no country list, as the record says.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: single cross-section, no instrument or timing strategy, explicit 'we can only infer correlations and not causality', yet policy claims follow.",
+   "exposure_measurement": "agree: direct share of adults using mobile for payments, but one year only, many zeros, and a 0.865 correlation between the two measures.",
+   "selection_of_countries_years": "agree: 93 countries stated but 73 or 67 used, no country list, and one year of exposure data.",
+   "outcome_measurement": "too_lenient: the poverty series looks corrupted (mean 0.062 yet maximum 28.127, which equals the inequality minimum of 28.127), so the poverty estimates (coefficients near 0.0005) are probably on mixed scales and the rating should be serious for that outcome.",
+   "specification": "agree: quadratic interactions at five quantiles and two exposures for three outcomes with n of about 70 and seven covariates, thresholds from ratios that sometimes rest on insignificant terms, many sign flips against OLS.",
+   "selective_reporting": "agree: the abstract highlights the few significant quantile estimates while most of the many coefficients are null and OLS quality-of-growth effects are negative; no multiplicity correction.",
+   "why": "Cross-sectional correlations with no identification, a small sample with unexplained drops, a doubtful poverty variable, and multiplicity-prone quantile interactions; serious is right and the exploratory nature is admitted by the authors."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers found. Unsupported detail: the record says the exposure data are 'World Bank/Findex-based'; the text only says Mohseni-Cheraghlou (2013), published by the World Bank, and never mentions Findex. The record's note on the odd poverty summary statistics (max 28.127 equals the inequality minimum) is correct and bears on the poverty results, which should be treated as unreliable. The authors disclaim causality ('we can only infer correlations') yet say mobile banking 'would increase (decrease)' outcomes, hence mixed causal language."
+ },
+ {
+  "idx": "1428",
+  "eligibility_ok": false,
+  "eligibility_note": "Own panel cointegration (AMG) and Granger estimation, 11 economies, mobile and internet exposure: those criteria hold. The outcomes, though, are the IMF financial institutions access index (bank branches and ATMs per 100,000 adults) and financial markets access index (market capitalisation outside the top 10 firms, number of debt issuers). These are financial-sector supply and depth measures, not output, labour, poverty or distribution, or living standards beyond income; poverty is only mentioned as a motivation and never estimated. Judgement call: exclude unless financial inclusion is accepted under 'living standards beyond income'.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "Panel 0.0015297** (MOBILE column)", "locator": "Table 7a, p.733; text p.733"},
+   {"n": 2, "verdict": "confirmed", "correction": "Internet to FIA panel coefficient -0.0011916 has no stars.", "quote": "Panel 0.0015297** -0.0011916", "locator": "Table 7a, p.733"},
+   {"n": 3, "verdict": "confirmed", "correction": "Mobile to FMA panel 0.0000845, no stars.", "quote": "Panel 0.0000845 0.0025709*", "locator": "Table 7b, p.733"},
+   {"n": 4, "verdict": "confirmed", "correction": "Internet to FMA panel 0.0025709 with one star (10%).", "quote": "Internet usage positively influenced financial markets access", "locator": "Table 7b and text, p.733"},
+   {"n": 5, "verdict": "corrected", "correction": "Stated FIA numbers are right (Mobile to FIA: Hungary 0.000899, Latvia 0.0070361, Lithuania, Poland, Slovenia positive; Czech Republic -0.0014063; Internet to FIA: Latvia -0.015668). But the entry claims 11 countries x 2 outcomes x 2 exposures and omits the FMA country results: Mobile to FMA positive in Bulgaria, Croatia (10%), Hungary and negative in Czech Republic and Poland (10%); Internet to FMA positive in Latvia (5%) and Slovenia (0.0168589, 1%).", "quote": "mobile cellular subscriptions positively affect financial markets access in Bulgaria, Croatia, and Hungary and negatively in the Czech Republic and Poland", "locator": "p.734; Table 7b"},
+   {"n": 6, "verdict": "corrected", "correction": "Statistics and p-values are right (DMOBILE to DFIA W 4.77462, Zbar 2.93274, p 0.0034; DINTERNET to DFIA Zbar 2.07345, p 0.0381; DFIA to DINTERNET Zbar 1.97332, p 0.0485; FMA links p 0.2617 to 0.9447). However, a Dumitrescu-Hurlin test has no sign, so direction 'positive' is unsupported; it should be 'not signed (Granger predictive causality in first differences)'. Horizon is short-run (differences), not contemporaneous.", "quote": "one-way causality mobile cellular subscriptions to financial institutions access and a two-way interaction between rate of individuals using the Internet and financial institutions access", "locator": "Table 8 and text, p.734"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Country sign patterns match Tables 7a/7b and the text. The Central Europe vs South-East Europe/Baltic grouping is only mentioned in the introduction (Caporale et al.) and not tested.", "quote": "countries from Central Europe (the Czech Republic, Hungary, Poland, Slovakia and Slovenia) and the Southeastern European and Baltic countries", "locator": "Introduction, p.724-725"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis; all 11 are EU post-communist members. The record's 'not reported' entries are right.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: no controls at all, 'impact' wording, no identification, and the Granger test itself shows feedback from FIA to Internet use (p = 0.0485).",
+   "exposure_measurement": "agree: standard World Bank subscriptions per 100 people and Internet users, with the known SIM-versus-user problem and both exposures entered together.",
+   "selection_of_countries_years": "agree: 11 countries selected by post-communist status, T = 22, which limits panel-test power as the authors admit.",
+   "outcome_measurement": "agree: FIA counts outlets and FMA measures market depth, neither captures household account ownership or use, and the authors concede no single indicator captures inclusion.",
+   "specification": "too_lenient: besides weak cointegration evidence (Zf p = 0.091 with no break; level break not rejected), the CIPS table shows first-difference statistics (e.g. D(FIA) -0.413**) that cannot be significant against usual critical values yet is used to claim all series are I(1), and AMG panel coefficients have no standard errors or t-statistics; serious is more apt.",
+   "selective_reporting": "agree: conclusions claim a 'significant positive influence' on both indices 'in both the short and long run' although panel Internet to FIA is negative and insignificant, panel mobile to FMA is insignificant, and no short-run causality involves FMA.",
+   "why": "Bivariate-style models without controls, with causal wording and overstated conclusions, so serious overall; the specification issues strengthen rather than change that rating."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers found. Eligibility is doubtful because the outcomes are financial-sector indices (see note). Record corrections: direction 'positive' for the Granger entry has no basis, and the country-level entry omits the FMA results. The record's statement that cointegration is 'rejected only weakly' in Model 1 is correct (Zf p = 0.091, Zt p = 0.009 for no break)."
+ }
+]

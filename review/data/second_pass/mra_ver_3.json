@@ -1,0 +1,141 @@
+[
+ {
+  "idx": "88",
+  "paper_verdict": {
+   "estimator_family": "Cross-section OLS (MRW-augmented, bootstrap SEs), panel fixed effects, and G2SLS with fixed effects (lagged ICT instruments); growth regressions are cross-section OLS",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Mixed outcome units: Tables 1-2 use ln GDP per working-age person (level), Table 3 uses log difference 1985-97 (growth), so Table 3 estimates should not be pooled with level estimates. ICT exposure differs across rows: composite index vs single indicators (phones, mobile, PCs), log initial level vs average growth rate gICT (semi-elasticity). Overlapping samples (1983-97 vs 1991-97, same countries) and many specifications from the same data. Working paper; reverse causality handled only by lagging (initial ICT level) and G2SLS with lagged internal instruments."
+  },
+  "estimates": [
+   {
+    "estimate_id": "88-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.302 [8.48] **",
+    "note": "Table 1 last column (1983-97 composite); Countries 99; T-stats in square brackets per note; dependent variable end-of-period ln GDP per working-age person."
+   },
+   {
+    "estimate_id": "88-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.299 [8.03] **",
+    "note": "Table 1 gICTt row, same column; t-stat; Countries 99."
+   },
+   {
+    "estimate_id": "88-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.388 [9.970] **",
+    "note": "Table 1 1991-97 composite column; Countries 94."
+   },
+   {
+    "estimate_id": "88-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.451 [10.180] *",
+    "note": "Table 1 ICT1 column; Countries 88 (column order 94,88,47,47,94,100,99 checked)."
+   },
+   {
+    "estimate_id": "88-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.301 [10.050] **",
+    "note": "Table 1 ICT3 column; Countries 47."
+   },
+   {
+    "estimate_id": "88-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.438 [12.690] **",
+    "note": "Table 1 ICT4 column; Countries 47."
+   },
+   {
+    "estimate_id": "88-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.027 [2.150]",
+    "note": "Table 2 panel FE, C. index column; Obs 465, Countries 97. t-stat in brackets (per Table 1 note; Table 2 itself has no note)."
+   },
+   {
+    "estimate_id": "88-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.138 [14.290]",
+    "note": "Table 2 panel FE ICT4 column; Obs 293, Countries 70."
+   },
+   {
+    "estimate_id": "88-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.120 [1.920]",
+    "note": "Table 2 G2SLS C. index column; Obs 465, Countries 97."
+   },
+   {
+    "estimate_id": "88-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.212 [13.190]",
+    "note": "Table 2 G2SLS ICT4 column; Obs 181, Countries 51."
+   },
+   {
+    "estimate_id": "88-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.102 [4.500]",
+    "note": "Table 3 last column; no stars printed on this coefficient; Countries 94. Outcome is log difference of GDP per working-age person (growth), not level."
+   },
+   {
+    "estimate_id": "88-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.124 [5.500] **",
+    "note": "Table 3 gICT row, last column; Countries 94. Growth outcome."
+   },
+   {
+    "estimate_id": "88-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.063 [4.590] **",
+    "note": "Table 3 1991-97 composite column; Countries 94. Growth outcome."
+   },
+   {
+    "estimate_id": "88-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.121 [4.199] **",
+    "note": "Table 3 ICT4 column; Countries 47. Growth outcome."
+   }
+  ]
+ },
+ {
+  "idx": "140",
+  "paper_verdict": {
+   "estimator_family": "DOLS (dynamic OLS with leads and lags of first differences) panel with country and sector fixed effects, year dummies or time trend",
+   "reverse_causality_addressed": "yes",
+   "pooling_concerns": "Outcome is estimated ln TFP level (generated dependent variable from AMG production-function estimation), not output per worker. ICT exposure is ln of the contribution of ICT capital services to value added growth (EU KLEMS), a growth-accounting contribution not an ICT stock or intensity, so the coefficient is not a standard elasticity. The 3 estimates are one regression (two FE variants plus a standardized beta, which has different units). Sector-level manufacturing data, 17 EU countries, 1995-2007. Coefficients on a different scale from output elasticities of ICT capital."
+  },
+  "estimates": [
+   {
+    "estimate_id": "140-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ln ICT 0.06 0.07 (2.40) (3.19)",
+    "note": "Table 2 second column (country and sector FE with time trend): 0.07 (3.19); N 451; notes: t-values in parentheses. 17 countries, 13 sectors, 1995-2007 per text."
+   },
+   {
+    "estimate_id": "140-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ln ICT 0.06 0.07 (2.40) (3.19)",
+    "note": "Table 2 first column (year dummies): 0.06 (2.40); N 451."
+   },
+   {
+    "estimate_id": "140-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "The standardized beta coefficient is 0.07.",
+    "note": "Table 2 third column prints 0.07*** (no t-value). Standardized beta, not comparable in units with the other columns and from the same regression as 140-1, so exclude from pooling."
+   }
+  ]
+ }
+]

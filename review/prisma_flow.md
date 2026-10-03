@@ -38,7 +38,7 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 | Stage | n | Note |
 |---|---|---|
 | Full texts read | 103 | 103 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
-| Excluded at full text | 35 | E1 10, E2 5, E4 20 |
+| Excluded at full text | 38 | E1 11, E2 5, E3 1, E4 21 |
 | Context only (no payoff outcome estimated) | 1 | |
-| **Included, preliminary** | **67** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 27 are flagged for human check |
-| Still to read | 148 | Abstract level only. 14 round 2 requests remain optional in `fulltext_requests.md` (growth and productivity meta-regression sample) |
+| **Included, preliminary** | **64** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 27 are flagged for human check |
+

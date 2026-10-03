@@ -1,0 +1,353 @@
+[
+ {
+  "idx": "217",
+  "eligibility_ok": true,
+  "eligibility_note": "Panel of about 40 EMDEs with own FE and system-GMM estimation; exposure is mobile-money usage (text says digital financial inclusion 'driven by mobile communications and internet access'), so it is a narrow but acceptable mobile proxy; outcome is output volatility (3-yr rolling SD of GDP per capita growth), which is borderline under 'output/productivity' (volatility, not level or growth). No income-group comparison, but >=10 economies is met. Eligible with scope caveats on both exposure and outcome.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 1 col MM1 (header '(1) (3) (4)'). Matches record.",
+    "quote": "MM1 0.119** (0.0442); Observations 158; Number of countries 38"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Matches record.",
+    "quote": "MM2 0.318** (0.135); Observations 100; Number of countries 26"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table 2 col (1). Matches.",
+    "quote": "MM1 0.177** (0.0809); Observations 120; Number of countries 32"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Table 2 col (2). Matches.",
+    "quote": "MM2 0.582*** (0.211); Observations 75; Number of countries 24"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Table 3 cols (3) and (6). Matches.",
+    "quote": "MM1 0.139** (0.0651) Lo Conc; MM2 0.448** (0.192) Lo Conc; Observations 109 / 61"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Table 3 cols (2) and (5). Matches; 'mixed' label is defensible (one marginally negative, one null), both point estimates are negative.",
+    "quote": "MM1 -0.109* (0.0628) Hi Conc; MM2 -0.150 (0.238) Hi Conc; Observations 47 / 38"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Split-sample, not interaction; threshold 60% correct (Section III, p.1808).",
+    "quote": "we take the median concentration value in our sample (60%) and split the sample"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 4 col (1); col (2) is 2.661 (4.808), both insignificant. This is a robustness check rather than heterogeneity; 'no income-group moderation tested' is correct.",
+    "quote": "Fin Dev Index 1.546 (4.567)"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group results; paper says only 'EMDEs' and gives no country list or income classification. Record's 'not reported' entries are correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): causal wording ('exacerbates', 'amplifies', 'impact') with only 1-year lags of controls (the MM variables are contemporaneous) and system-GMM without any reported AR/Hansen diagnostics.",
+   "exposure_measurement": "agree (moderate): mobile-money transactions/accounts are direct but narrow, mobile-money-specific measures (author concedes 'rather narrow definition of fintech').",
+   "selection_of_countries_years": "too_harsh (moderate would fit): sample is chosen 'solely' on data availability and is small, but this is common for mobile-money data; the real weakness (country list not reported) is a transparency issue.",
+   "outcome_measurement": "agree (moderate): 3-year rolling SD of growth in a 9-year panel creates overlapping windows and serial correlation.",
+   "specification": "agree (serious is defensible): post hoc median split ('we conjecture'), quadratic concentration term 'not shown', Table 1 columns numbered (1),(3),(4), unstable coefficients across columns (e.g. VIX 4.379/4.867 vs 0.401).",
+   "selective_reporting": "agree (moderate): quadratic concentration result is 'not shown but available on request' (footnote 3) and alternative MM measures are only asserted in footnote 2.",
+   "why": "Serious overall is appropriate: causal language, no credible handling of reverse causation (volatile economies adopting mobile money), tiny samples (75-158 obs) and a flexible, post hoc sub-sample design."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No fabrication in numbers. Unsupported statement in record: exposure 'well-known to be dominated by a few countries such as Kenya' is not in the paper text (external claim). Record's reading of p.1805 ('lag all covariates by 1 year to tackle joint endogeneity concerns') is right; lagged DV is only in GMM. Record's 'about 40' sample statement is as the paper states (abstract '40 EMDEs'; actual N countries 24-38)."
+ },
+ {
+  "idx": "239",
+  "eligibility_ok": true,
+  "eligibility_note": "Industry-country panel for 18-19 European OECD economies, own weighted OLS/FE estimation; exposure ICT capital services per hour (EU KLEMS); outcomes are employment polarization (labour market) and industry employment growth. All criteria met. Income-group comparison absent (all high-income/advanced).",
+  "sample_corrections": {
+   "economies_or_groups": "Norway also appears in the Table 7 note (Scandinavian & Anglo-Saxon group), not only the Table 1 note; Table 7 groups name only 16 countries (Greece, Portugal, Slovakia are not assigned to a group). Footnote 5 lists 18 and Table 1 note lists 19 (adds Norway), as the record says."
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 5 col (3) top; text p.13 'A ten percent increase in ICT-induced technological change causes a 1.28% increase'. SE clustered by country. Note: text calls cols (3)-(4) 'country-specific time trend' while table header says Country x Year FEs.",
+    "quote": "ICT 0.128** (0.054)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 5 col (1).",
+    "quote": "ICT 0.250*** (0.040)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table 5, bottom/low-paid ratio. Matches.",
+    "quote": "ICT 0.113 (0.094) col 2; 0.003 (0.077) col 4"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Table 6 cols (1)-(4). Matches; 'all significance is lost' with country x year FE (p.15).",
+    "quote": "ICT 0.185*** (0.032), 0.133*** (0.038), -0.049 (0.105), 0.008 (0.127)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "p.14-15: 33% ICT, 4% China, 37% together, 5% Slovenia to 76% Germany; Hungary, Czech Republic, Netherlands excluded (fn 20). Matches. Counterfactual, no uncertainty reported.",
+    "quote": "explains on average around 33 percent of the high-paid employment polarization in manufacturing"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Table 8 (manufacturing). Matches. Locator note: the quoted 'no proof that technological change played any role' is in the Conclusion on paper p.25, not p.22.",
+    "quote": "Δ ln ICT -0.057 (0.076) col 1; -0.030 (0.091) col 3"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "Table 9 cols (1),(3),(5). Matches.",
+    "quote": "Δ ln ICT 0.156 (0.104); 0.140 (0.105); 0.144 (0.129); N 59"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 7 col (1) ICT*Central Europe -0.267**; col (2) ICT*Southern Europe -0.444**, ICT*Central Europe -0.646*; text says not robust to country-specific trend. Reference group is core Western Europe, and Scandinavian/Anglo-Saxon is a further group (ICT interaction ns).",
+    "quote": "ICT*Central Europe -0.267** ... In Central- and Southern-European countries the correlation ... is often weaker"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Tables 5 vs 6 cols (3)-(4); supported.",
+    "quote": "We find that all significance is lost."
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Supported. Tables B1/B2 are in the text (the record says appendix not read in full): B2 ICT x Institutions -0.40*** (low-paid, manufacturing), Net Imp.pen x Institutions 1.87*** (high-paid), B1 Net Imp.pen x Union Density 0.08**; authors call these mixed.",
+    "quote": "industries in different countries seem to show differing degrees of sensitivity to globalization and technological forces independent of the type"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "All sample countries are advanced European OECD economies; no income-group comparison. The record's 'high' entry is only a restatement of the main result, not an income-group result.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): ICT is not instrumented, authors write 'causes' and 'we can state with a sufficient degree of certainty that these relations are causal' based only on country x year FE, while conceding endogeneity for the employment regressions.",
+   "exposure_measurement": "agree (moderate): EU KLEMS ICT capital services per hour is a sensible industry-level input measure but ICT data end in 2007 and R&D/offshoring proxies are weak or interpolated.",
+   "selection_of_countries_years": "agree (moderate): 18-19 high-income European economies, years 1996-2007 for ICT, three countries dropped from the counterfactual.",
+   "outcome_measurement": "agree (moderate): employment-share polarization from ISCO groups ranked by average wage; no wage data (stated on p.4).",
+   "specification": "agree (moderate): many sub-samples and column variants, though the demanding industry x country and country x year FE headline is reasonable.",
+   "selective_reporting": "agree (moderate): nulls are reported, but fn 25 decomposition is 'not reported here' and counterfactual drops countries.",
+   "why": "Serious is justified by explicit causal claims resting only on fixed effects with no strategy for reverse causation; the rest is a reasonably careful descriptive-econometric panel."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers found. Minor: record says Table 1 note is the only place Norway appears (Table 7 note also lists it); record says the appendix tables were not available (B1-B5 are in the text); locator for the conclusion quote is p.25. Authors' text refers to 'country-specific time trend' for the columns the table labels as Country x Year FEs (paper-internal inconsistency not noted in record)."
+ },
+ {
+  "idx": "245",
+  "eligibility_ok": true,
+  "eligibility_note": "40 Belt and Road economies, 2006-2021, own OLS/FMOLS/PCSE/DOLS/spatial estimation; exposure is a PCA digital economy index built mainly from ICT indicators (broadband, telephones, internet, cellphone, ICT trade) but also including medium/high-tech manufacturing value added and per-capita services value added; outcomes GTFP (productivity) and renewable energy (resource). Eligible, with the exposure-contamination caveat; income-group split present (Table 16).",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 9 cols (1),(2),(3),(5): t = -1.97, -1.90, -4.112, -5.17. Matches. Text wording is 'a 0.1 decrease in DE will cause GTFP to decline by approximately 0.04' (sign-inconsistent with the negative coefficient); the record paraphrases it as a rise, which flips the authors' words.",
+    "quote": "DE -0.423** -0.425* -0.339*** ... -0.425***"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 9 cols (4),(6): t = -5.903/5.135 and -7.56/5.53. Turning point 0.6 per text (p.11); record's 0.5-0.65 is my arithmetic from the coefficients, consistent.",
+    "quote": "DE -1.602*** 1.567*** ... -1.017*** 0.782***"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table 10: t = -6.12, -1.76, 2.31; N 604/570/534. Matches.",
+    "quote": "L1.DE -0.506*** L2.DE -0.142* L3.DE 0.189**"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Table 11 (t 2.79, 3.31, -5.32, -5.31, 2.80, 2.77). Matches; no Sobel/bootstrap test (correct).",
+    "quote": "DE 0.136*** 20.29*** -0.404*** -0.408*** ... REC 0.157*** REG 0.001***"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Table 14 direct/indirect/total; SDM col (3) of Table 13 DE -0.963**, DE2 0.963**, R2 0.027. Text p.14 says total effect negative, contradicting Table 14. Matches record.",
+    "quote": "DE -0.962** (-2.48) 4.803** (2.12) 3.841* (1.73)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Table 17 t-values -4.09, -5.14, -5.10, -5.74, -2.043, -3.361, 2.837. Matches. Note Table 17 prints '**' on -0.204 although t = -5.14.",
+    "quote": "Online -0.161*** -0.204** ... DE -0.374*** -0.463*** -0.266** -1.299*** DE2 1.182***"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 16. Matches; middle-income pools lower- and upper-middle.",
+    "quote": "Low-income -6.305 (-1.66); Middle-income -1.240*** (-3.55); High-income -0.860*** (-4.45); N 16/373/239"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 15 values match the record. Paper text (p.15) contradicts its own table, saying the effect is significantly negative in EU and ASEAN and positive insignificant in other Asia; table is followed here (N 306/94/205).",
+    "quote": "EU -0.662*** (-3.25) ASEAN 0.212 (1.56) ASIA -0.287** (-2.23)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "p.11; threshold 0.6 correct. 'Energy transition partly offsets' is the authors' claim from Table 11 and is not formally tested (as record states).",
+    "quote": "the turning point nearly occurs at DE equal to 0.6"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Table 16 and Table A1 support the record (low-income N=16: Cambodia 2006-2014, India 2006, Kyrgyzstan 2006-2012, Pakistan 2006-07; middle pools lower/upper-middle; classification changes by year).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): causal wording ('will cause a decline') with FE/FMOLS/PCSE and lags only, no instrument, and a DE index that overlaps with GDP per capita and services controls.",
+   "exposure_measurement": "agree (moderate): PCA composite mixes ICT with non-ICT structural items (manufacturing value added, services value added), weights not reported, rescaled 0-1.",
+   "selection_of_countries_years": "agree (moderate): 40 BRI countries selected by data availability, interpolation of missing data, 16 low-income observations.",
+   "outcome_measurement": "agree (moderate): DEA-based GTFP with a single undesirable output; Malmquist-Luenberger is a growth index (mean 1.118) yet the paper also reads it as a level, and the text calls it 'growth rate of GTFP'.",
+   "specification": "agree (serious is defensible): mixed I(0)/I(1) variables (Table 7) while text says all are order-one, tiny within R2 (0.216 FMOLS, 0.006-0.027 SDM), wrong table cross-references (mediation 'Table 6', DOLS 'Table 15'), and sign flips across lags.",
+   "selective_reporting": "agree (moderate): text says total spatial effect is negative while Table 14 total is +3.841; 'mediation' claimed though DE coefficient barely changes (-0.425 to -0.404).",
+   "why": "Serious is appropriate: causal language with no credible strategy, a contaminated composite exposure, and multiple internally inconsistent statements."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers. Record's paraphrase of the 0.1 change reverses the paper's wording ('decrease ... decline'); paper's text itself is inconsistent with its Table 15 (region labels) and Table 14 (total effect sign). Record correctly flags these."
+ },
+ {
+  "idx": "268",
+  "eligibility_ok": true,
+  "eligibility_note": "118 economies (38 advanced, 80 emerging/developing), 1997-2017, own FE estimation with informality x ICT interactions; ICT capital deepening and internet penetration are exposures (ICT also acts as moderator); outcome is aggregate labour productivity growth; explicit advanced vs emerging/developing comparison. All criteria met.",
+  "sample_corrections": {
+   "economies_or_groups": "Record is correct (38 advanced + 80 EDE, 13 TED countries dropped, 11 start later). Note: the later-start list also includes Bangladesh, Cameroon, Cambodia, Chad (1998), Kyrgyz Rep. (1999), Tajikistan (2000), Angola (2001), UAE (2002).",
+   "n_economies": "118 (confirmed); observations 2411 in Table 4, 2374 in Tables 5 and A1, 1583 EDE, 791 advanced."
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 5 global; order VA, vulnerable, agricultural, self-employment. Matches.",
+    "quote": "ΔINF × ln kIT .383 (.331); .144* (.082); .087 (.058); .179* (.091)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 6 EDE. Matches.",
+    "quote": "ΔINF × ln kIT .183 (.347); .183* (.104); .117* (.067); .205* (.116)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table 6 EDE. Matches.",
+    "quote": "ΔINF × Δln kIT .028 (.021); .013 (.009); .005 (.01); .017* (.01)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Tables 5-7. Matches.",
+    "quote": "ΔINF × ΔINT -.076 (.099) .008 .025 -.008 (global); -.048 .015 .024 -.008 (EDE); -.175 .035 .072* (.036) .043 (advanced)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Table 5 and Table 7 (advanced SE .028, .024, .026, .025). Matches.",
+    "quote": "Δln kIT .042*** (.013) .026** (.011) .026** (.012) .029*** (.01); advanced .061** .064** .055** .065**"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Table 5. Matches; text overstates ('significant in all the employment share models' while self-employment is p<.10).",
+    "quote": "ln kIT -.449 (.293) -.651** (.307) -.625** (.31) -.595* (.308)"
+   },
+   {
+    "n": 7,
+    "verdict": "corrected",
+    "correction": "Advanced sample: ΔINT is positive and significant in all three employment-share models (.031* SE .016; .038** SE .017; .03* SE .016), not two; only the VA model is null (-.001, SE .025). Global/EDE SEs range .021-.038, not up to .042 (.042 does not appear). Table 7 text is misaligned in the PDF extraction, so the advanced row assignment rests on the order of values (ΔINT SE row (.025)(.016)(.017)(.016)).",
+    "quote": "ΔINT -.001 .031* .038** .03* (.025) (.016) (.017) (.016)"
+   },
+   {
+    "n": 8,
+    "verdict": "confirmed",
+    "correction": "Table 7 advanced. Matches.",
+    "quote": "ΔINF × Δln kIT -.144 (.088) -.027* (.015) -.034** (.014) -.024 (.018)"
+   },
+   {
+    "n": 9,
+    "verdict": "confirmed",
+    "correction": "Table A1 global; Table A2 EDE .499*** (.187) .488** (.186) .559*** (.197), VA .351 (.225). Numbers match, but see problems on dummy coding.",
+    "quote": "ΔINF D × ln kIT .472*** (.119) .375*** (.133) .533*** (.136); .199 (.154)"
+   },
+   {
+    "n": 10,
+    "verdict": "confirmed",
+    "correction": "Table 4. Matches.",
+    "quote": "ΔINF .933* (0.53) -.545*** (0.11) -.407*** (0.10) -.518*** (0.12)"
+   },
+   {
+    "n": 11,
+    "verdict": "confirmed",
+    "correction": "Tables 6-7. Matches; EDE VA SE is 1.801 (record omitted it).",
+    "quote": "ΔINF -.633 (1.801) -1.755** (.669) -1.139*** (.392) -1.848** (.767); advanced 7.422 (6.524) .032 .148 -.755"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Supported by Tables 6-7 (EDE .117-.205, advanced insignificant, growth interaction -.027/-.034 in two models).",
+    "quote": "The positive interaction effect of ICT appears to be unique to the emerging & developing economy sample."
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Supported; slight overstatement in record: employment-proxy level interactions are significant in global only for vulnerable and self-employment (agricultural .087 ns), in EDE for all three.",
+    "quote": "the value added measure also gains a negative, albeit insignificant, coefficient"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Supported: advanced .055-.065 (Table 7) vs global .026-.042 and EDE .019-.032 (Tables 5-6).",
+    "quote": "the coefficient of ICT capital deepening growth is slightly higher in the advanced economies sample"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Advanced (38) vs emerging & developing (80) split by Conference Board classification, not World Bank income groups (the paper says so; Gulf high-income states are in EDE). Record's entries match Tables 6-7.",
+  "risk_of_bias": {
+   "overall": "too_harsh",
+   "confounding_reverse_causation": "too_harsh (moderate): growth-rate/first-difference models with country and year FE and controls, an explicit discussion of reverse causality (fn 9) and hedged conclusions ('some evidence', modest effect); no instrument, so exogeneity is not established.",
+   "exposure_measurement": "agree (moderate): ICT capital services use US hedonic deflators and steady-state initial stocks; internet use is mostly consumer use; informality proxies (modelled VA, agricultural share) are indirect.",
+   "selection_of_countries_years": "agree (moderate): 118 of 131 TED countries, 11 late starters, unbalanced panel, 13 dropped for missing data.",
+   "outcome_measurement": "agree (moderate): GDP per person engaged (not hours), partly imputed labour quality, uneven national accounts in developing countries.",
+   "specification": "too_harsh (moderate): 4 informality proxies x 3 ICT moderators x 3 samples are all reported in full, and the author states the evidence is limited; remaining concern is p<.10 significance across many tests.",
+   "selective_reporting": "agree (moderate): lagged-level results 'not reported' (fn 18) and conclusion foregrounds significant level interactions over null VA and negative advanced results.",
+   "why": "Standard panel FE in first differences with reasonable controls and cautious claims fits moderate; serious would need stronger causal language than the paper uses."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "Numbers match tables except result 7. Possible mislabel in the paper that the record does not flag: the dummy ΔINF D is described as 1 for declines in informality yet its coefficients are negative (-4.8, -3.3, -5.3), the same sign as continuous ΔINF, suggesting the coding is reversed or the note is wrong; interpretation of the 'stronger moderation' robustness (Tables A1-A2, fn 20) is therefore uncertain. Record states exposure as 'ICT capital services per worker'; the level variable ln kIT is described as ICT capital stock per worker (Fig. 3, Eq. 2), so exposure definition is slightly mixed. Record says the author 'argues first differences mitigate reverse causality (fn 9)': correct."
+ }
+]

@@ -173,7 +173,33 @@
    "verified": 13,
    "checked": 15
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 7,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 4
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (FE/RE and two-step system GMM), 41 economies, 2004-2015, exposure = mobile, internet, fixed telephone, ICT imports; outcome = GDP per capita growth (output). Eligible on the output family. The financial-inclusion outcome (deposit accounts per 1,000) is a supply-side banking measure, so it fits 'living standards beyond income' only loosely; eligibility does not depend on it.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "income_groups_covered": "Paper only labels countries 'Developed'/'Developing' (Table A1). The record's statement that Burundi, Uganda, Rwanda, Mozambique are low-income is the extractor's own classification, not the paper's.",
+    "years": "2004-2015 confirmed (12 years; text p.12-13). 'periods 2004-1015' is a typo in the introduction. Growth variable has 492 obs = 41 x 12 (Table A2); unbalance comes from other variables (Table A2 and p.14)."
+   },
+   "corrections": [
+    {
+     "n": 7,
+     "verdict": "corrected",
+     "correction": "All coefficients match Table 4. The top of the SE range is 0.0463 (L.credit), not 0.0462. Outstanding deposits are significant only at p<0.05 and p<0.1 (lag), not p<0.01.",
+     "quote": "L.credit -0.190*** (0.0463)",
+     "locator": "Table 4 col 4, p.27"
+    }
+   ],
+   "problems": "No invented numbers found. Minor: SE range in result 7 (0.0463 not 0.0462). The record's low-income labels for individual countries come from outside the paper. The record's note that the introduction has 'periods 2004-1015' is accurate. The paper is a working paper (Madras School of Economics WP 165/2017), not peer reviewed."
+  }
  },
  {
   "idx": "29",
@@ -335,7 +361,23 @@
    "verified": 9,
    "checked": 10
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 8
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own OLS estimation on 82 economies (36 OECD, 46 non-OECD), 2010-2017, outcome TFP growth (productivity). Exposure is licensed cellular IoT connections per inhabitant (machine-to-machine mobile connectivity) with mobile broadband as a control. IoT is not itself on the listed exposures; it qualifies only as a mobile/ICT connectivity measure, so flag as borderline for adjudication. The growth-accounting simulation (Table 6) is not an estimate and must not count towards eligibility.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "2010-2017 confirmed; 574 obs in one-year differences = 82 x 7 and 410 in three-year differences = 82 x 5 (Table 4). The rreg robustness sample retains the 8 dropped countries (630 and 450 obs, Table A3)."
+   },
+   "corrections": [],
+   "problems": "No invented numbers. Minor: the record cites p.270 for the connections-versus-devices discussion, which is on p.271. Not in the record: the research was co-financed by Ericsson and the lead author is at Ericsson Research (Acknowledgements and affiliation), a possible conflict of interest. Result 8 is a simulation, not an estimate, and the record flags that correctly."
+  }
  },
  {
   "idx": "38",
@@ -539,7 +581,24 @@
    "verified": 3,
    "checked": 9
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own FE, Hansen threshold and 2SLS estimates, 30 economies, outcome log GDP per capita (output). Borderline on exposure: the DFI index is a PCA composite in which half (the traditional sub-index: branches, ATMs, accounts, credit cards, borrowing) is not ICT; only the digital access (internet, mobile broadband, mobile cellular subscriptions) and digital usage (digital payments, mobile utility payments, mobile wages) parts are ICT/mobile. The digital sub-index is never used alone. Kept as eligible but flag for adjudication.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "economies_or_groups": "Table A2 lists exactly 30 economies in five sub-regions (4 + 8 + 9 + 7 + 2), which matches the 30 retained; it does not list 38 candidates. List: China, Republic of Korea, Japan, Mongolia, Armenia, Azerbaijan, Georgia, Kazakhstan, Kyrgyzstan, Russia, Tajikistan, Uzbekistan, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Vietnam, Bangladesh, India, Iran, Nepal, Pakistan, Sri Lanka, Turkiye, Australia, New Zealand. Sample selection (Table 3): 60 UNESCAP economies, 27 dropped for limited data, 3 for one year of data.",
+    "income_groups_covered": "Paper's descriptive figures use high, upper-middle and lower-middle only; it does not state an income class per economy and does not label any economy low-income. Estimation is pooled, no income split."
+   },
+   "corrections": [],
+   "problems": "Record error: it says Table A2 lists 38 candidates and the retained list is not stated; Table A2 lists 30 (see sample_corrections). Record error: it says the threshold bootstrap details are in an appendix 'not in the text read'; Appendix Table A11 is in the text (F 31.34, p 0.01, critical values 16.57/20.69/31.19). The record's remark that missing economies are mostly 'low-income' goes beyond the text, which names Pacific islands, Bhutan and Maldives. Other numbers and quotes are accurate."
+  }
  },
  {
   "idx": "57",
@@ -683,7 +742,33 @@
    "verified": 7,
    "checked": 11
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 5,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (FMOLS, DOLS, AMG, Dumitrescu-Hurlin) on exactly 10 Asian economies, 2000-2017; exposure internet users and mobile subscriptions; outcome GDP (output), though measured in current US dollars. Meets the 10-economy minimum with no margin.",
+   "risk_of_bias_overall_opinion": "too_lenient",
+   "sample_corrections": {
+    "economies_or_groups": "Countries appear only in Table 8 (Bangladesh, Cambodia, China, India, Indonesia, Malaysia, Nepal, Philippines, Sri Lanka, Thailand); text calls them variously 'emerging Asian', 'South Asian' and 'top 10 emerging South Asian'. Selection criterion in the text is 'highest current GDP price (in US dollars)', i.e. selection on the outcome level.",
+    "years": "2000-2017 confirmed. The paper says '17 years', but 2000-2017 is 18 annual points per country."
+   },
+   "corrections": [
+    {
+     "n": 6,
+     "verdict": "corrected",
+     "correction": "W-bar values and p = .0000 are right, but the Granger test has no sign, so direction 'positive' should be 'not applicable'/not coded as an effect. It is a rejection of non-causality from each regressor to GDP only; the reverse direction is not tabulated although the abstract claims bidirectional causality.",
+     "quote": "Dumitrescu and Hurlin (2012) Granger non-causality test (ln_GDP as dependent variable)",
+     "locator": "Table 6, p.9"
+    }
+   ],
+   "problems": "No invented numbers in the record. Text-table inconsistency for Nepal and Thailand in the AMG discussion (text p.8) is not noted by the record. The record's direction code for the Granger result is not an effect direction (corrected). Income index (lnIN) is a coefficient the record omits: FMOLS -0.81856 (1.853447), DOLS -0.43353 (2.316709), both insignificant."
+  }
  },
  {
   "idx": "63",
@@ -1010,7 +1095,33 @@
    "verified": 4,
    "checked": 6
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 7,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own IV-GMM panel estimation, 79 economies (Appendix Table 1), 1990-2018; exposures are broadband, internet, mobile and fixed telephone (ICT goods imports and transport are extra exposures); outcomes are HDI, human capital, life expectancy, child and maternal mortality (living standards beyond income). Meets all criteria.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "sample.economies_or_groups": "South Asia 7, sub-Saharan Africa 45 (not 'about 44'), Latin America-Caribbean 27, total 79 (counted from Appendix Table 1 list, p.22)",
+    "results[8] N": "Table 2E N for the ICT columns (5-9) is 148, 175, 150, 173, 172, i.e. 148-175, not 120-175; 54 and 120 are the rail and port-connectivity columns",
+    "exposure_measure locator": "Indicators are entered one at a time in Tables 2A-2E (cols 5-9), not 'Table 1' (Table 1 only defines variables)"
+   },
+   "corrections": [
+    {
+     "n": 8,
+     "verdict": "corrected",
+     "correction": "Coefficients and SEs are right (broadband -0.070** (0.028), telephone -0.278*** (0.089), internet -0.077** (0.036), mobile -0.033 (0.033), ICT goods 0.085 (0.095)). Sample size is wrong: N for these columns is 148, 175, 150, 173, 172 (148-175), not 120-175.",
+     "quote": "N 142 54 120 127 148 175 150 173 172  [Table 2E, p.9]"
+    }
+   ],
+   "problems": "No invented or mixed-up results. Errors: SSA count given as 'about 44' (45 in Appendix Table 1); LAC 'about 27' is exactly 27; maternal-mortality N range 120-175 should be 148-175 (record's RoB says 54-175 for all maternal models, which only holds across all nine columns); exposure-measure locator should be Tables 2A-2E. The selective_reporting rationale contains a self-contradictory sentence. Also note direction coding for under-five deaths follows 'beneficial' not coefficient sign."
+  }
  },
  {
   "idx": "88",
@@ -1147,7 +1258,33 @@
    "verified": 6,
    "checked": 7
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 1,
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own cross-section, panel FE and G2SLS estimation; exposures are fixed telephone lines, mobile phones, internet hosts (composite only), PCs; 88-99 economies in cross-section (47 for mobile and PC), 97 in panel; outcome is GDP per working-age person and its growth (output/productivity). Meets all criteria.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "Cross-section country counts are 88 (phone lines), 47 (mobile, PCs), 94 (composite 1991-97, MRW 1991-97 and growth), 99 (composite 1983-97, Table 1) and 100 for the 1983-97 MRW column; so '94-99' omits 88 for the phone-line column. Growth equations: 94, 88, 47, 47, 94, 95, 94 (Table 3).",
+    "text_vs_appendix": "Text (3.1) says data for 115 countries; the Data Appendix lists 116 (record's 116 matches the appendix)",
+    "internet_hosts": "Internet hosts are never estimated on their own, only inside the composite index, although the abstract names them"
+   },
+   "corrections": [
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "Ln(sh) falls from 0.025 [18.24]** (MRW) to 0.004 [1.82] (phone), 0.004 [1.75]* (mobile), 0.002 [0.88] (PCs), 0.007 [3.38]** (composite). So significance is lost only for PCs; with mobile phones it stays significant at 10% (starred), though the text says ICT 'cast[s] doubts' for mobile and PCs. Physical capital: sk becomes insignificant with the composite (0.003 [0.54]; 0.086 [0.63] for 1983-97), but is still starred with PCs (0.008 [1.61]*).",
+     "quote": "also on that of human capital when we specify the ICT variable with mobile phones or personal computers  [p.13]"
+    }
+   ],
+   "problems": "Record is largely accurate. Corrections: phone-line column has 88 economies (not within 94-99); human-capital significance claim for mobile phones overstated (still 10% significant). Additional inconsistencies in the paper not in the record: text gives implied beta .23 while Table 1 shows 0.242; Table 3 labels initial stock as 1985 for 1991-97 columns while footnote 18 says A_ICT(0) is the first sample year (cannot be checked)."
+  }
  },
  {
   "idx": "108",
@@ -1309,7 +1446,29 @@
    "verified": 7,
    "checked": 7
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 4,
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own weighted OLS on sector-occupation cells in 16 European countries (at least 3 for AI); exposure is AI (Webb patent score, Felten et al. AIOI) plus software; outcomes are employment-share and relative-wage changes (labour market). Exposure is a US-based potential-exposure index, not adoption, but qualifies as AI capability.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "All coefficients are right (Webb younger 0.212***, Felten younger 0.219***, software younger 0.107***, core -0.083*, older -0.117**), but 'about double the core/older groups' only holds for Webb vs core (0.212 vs 0.106); Webb older is 0.015 and Felten core/older are 0.132/0.144, so the ratio is about 1.5-1.7 for Felten. The record repeats the authors' wording.",
+     "quote": "the magnitude of the coefficient estimated for the younger group doubles that of the rest of the groups  [p.20]"
+    }
+   ],
+   "problems": "No invented numbers or mixed-up papers found; all six pooled results and the Table 5 correlations match. Minor: 'about double' overstatement for age pattern; Table B1 notes list column 3 as Software and column 4 as Robots while the rows show Robot in col 3 and Software in col 4 (record's reading of the rows is correct); text says weights are average employment, table notes say average labour supply. The authors also use 'impact' wording in places (conclusion: 'positive impact of AI-enabled automation on employment holds across countries') despite stating the results are statistical associations."
+  }
  },
  {
   "idx": "117",
@@ -1522,7 +1681,23 @@
    "verified": 3,
    "checked": 10
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation on 27 EU countries, 1995-2019; exposure is ICT investment stock (hardware, telecom equipment, software and databases); outcome is total employment growth (labour market). Meets all criteria.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "1995-2019 is the data span; estimation sample is 594 = 27 x 22 country-years (24 growth observations per country would be expected from first differences; the paper does not explain the 22)"
+   },
+   "corrections": [],
+   "problems": "No invented or mixed-up numbers; all reported coefficients, SEs and job counts match the tables. One misreading in the record: Table C1 does not show that the instruments used are correlated with employment growth; it shows the differenced lag is, while the log-level lags used in Table C2 are 'Uncorrelated'. The authors' claim that instruments 'are valid' rests on Table C2 first-stage fit and an error-term correlation of 0.0074 (p = 0.8564), which is weak evidence. Note also the footnote-8 statement that Granger causality is unidirectional is not shown in the paper (online Table S1)."
+  }
  },
  {
   "idx": "138",
@@ -1699,7 +1874,29 @@
    "verified": 9,
    "checked": 10
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 9
+   },
+   "heterogeneity": {
+    "confirmed": 2,
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (PSCC-FE, IV-GMM, SQREG); mobile and fixed telephone subscriptions (ICT/mobile); stated 193 countries (152/151 groups estimated) with explicit income-group comparison (Tables 8-9); outcome HDI (living standards beyond income).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "Sign pattern of IQI holds for IV-GMM (Table 9: high +0.0828***, LM -0.132***, UM +0.125***; low mobile +0.133 ns) but NOT for PSCC-FE (Table 8 mobile: high +0.0605***, low +0.0589**, LM -0.0608**, UM -0.0525***; fixed: UM -0.0151 ns). The paper's text claim (positive in high/UM, negative in low/LM) contradicts Table 8. ICT x IQI interaction signs (IV-GMM: high -0.00373, UM -0.00692, LM +0.0106) are correct; low-income is -0.00939 ns (mobile) but +0.289*** (fixed), so 'narrows institution gap in poorer groups' is not uniform.",
+     "quote": "IQI 0.0605*** 0.0589** -0.0608** -0.0525*** (Table 8, mobile, High/Low/LM/UM)"
+    }
+   ],
+   "problems": "Record is accurate on all numbers checked. Only substantive error: heterogeneity item 2 repeats the authors' text on IQI signs by income group, which contradicts Table 8 (see correction). Minor: Table 5 col 4 lnICT (0.0112, t 3.646) and Table 7 fixed-telephone SQREG not recorded. Record's stated Hansen values, group counts and Congo duplicate are correct."
+  }
  },
  {
   "idx": "140",
@@ -1790,7 +1987,23 @@
    "verified": 6,
    "checked": 6
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 1
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own estimation (AMG then DOLS) on 17 EU countries x 13 manufacturing sectors, 1995-2007; exposure is sectoral ICT capital services (ICT in general, narrow measure); outcome TFP (output/productivity). Meets >=10 economies.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "income_groups_covered": "Not reported in the paper; the 'high-income and some upper-middle-income' statement is the extractor's inference (paper only groups EU core/South/East)."
+   },
+   "corrections": [],
+   "problems": "No invented numbers. Corrections: income-group coverage statement is not in the text; ICT quote locator p.416. Table 2 N=451 confirmed (unexplained). Std. beta 0.07 is the smallest of the significant effects (HC 0.69, EF -0.11, ext. openness -0.25), consistent with the record."
+  }
  },
  {
   "idx": "162",
@@ -1939,7 +2152,21 @@
    "verified": 4,
    "checked": 4
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation on 136 countries 2000-2020 (N=2856, balanced); exposure internet users share (mobile as robustness); outcomes carbon productivity (GDP per unit CO2: productivity/resource cost) and top-10% income share (distribution); income-group split high/middle/low.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers found. Record's 'seven columns' stepwise description is loose (cols 1-2 are OLS/FE without controls, col 7 is RE). Table 1 (variable sources) is not in extracted text, so the 'World Bank territorial CO2' claim is unverifiable."
+  }
  },
  {
   "idx": "174",
@@ -2135,7 +2362,35 @@
    "verified": 3,
    "checked": 13
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 10
+   },
+   "heterogeneity": {
+    "corrected": 2,
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own estimation, 67 countries 1995-2019 (>=3 for AI). Borderline on two criteria: exposure is industrial robot stock per capita, labelled AI by authors who concede it is 'far from being a comprehensive indicator of AI'; outcome is carbon inequality (distribution of CO2 per capita between and within countries), a distribution/resource-cost outcome rather than income distribution. Kept as eligible on the authors' framing; flag as weak fit.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Coefficients confirmed (Table 10 col 1 -0.0163, t -14.804; Table 11 col 1 c=4.7370, b_LNAI 0.0225, d_LNAI -0.0665, net -0.0440). The 114% level is the extractor's exp() conversion. Text gives 4.5% as the share of COUNTRIES above the threshold in 2019 (20.9% in 2014), not 'country-years'.",
+     "quote": "In 2014, 20.9% of countries exceeded the threshold, but by 2019, this figure had fallen dramatically to 4.5%"
+    },
+    {
+     "n": 3,
+     "verdict": "corrected",
+     "correction": "Coefficients confirmed (Table 10 col 3 -0.0064, t -6.118; Table 11 col 3 c=2.9072, b 0.0031, d -0.0078, net -0.0047). 'About 50% above' is not in the text; text says only that 'most samples exceed the threshold' for governance variables (figure data not extractable).",
+     "quote": "For the two governance variables, most samples exceed the threshold."
+    }
+   ],
+   "problems": "All numbers in record match tables. Real defects in paper confirmed by text: 0.00016% vs 0.0016; Sec 5.6 text describes the TRADE column with GOV numbers (d -0.0078, net -0.0047; table col 1 d_LNAI is -0.0665) and the GOV column with the TRADE value (0.0031-0.0665); Table 11 d_Cons equals b_LNAI in every column; Table 8 L.Y t-statistics negative. Record correction: Tables 9 and 11 lack an N row (Table 10 does report N), so 'Tables 9-11 lack N' is slightly overstated. Result 3 duplicates results 1-2."
+  }
  },
  {
   "idx": "217",
@@ -2277,7 +2532,21 @@
    "verified": 1,
    "checked": 8
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Panel of about 40 EMDEs with own FE and system-GMM estimation; exposure is mobile-money usage (text says digital financial inclusion 'driven by mobile communications and internet access'), so it is a narrow but acceptable mobile proxy; outcome is output volatility (3-yr rolling SD of GDP per capita growth), which is borderline under 'output/productivity' (volatility, not level or growth). No income-group comparison, but >=10 economies is met. Eligible with scope caveats on both exposure and outcome.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No fabrication in numbers. Unsupported statement in record: exposure 'well-known to be dominated by a few countries such as Kenya' is not in the paper text (external claim). Record's reading of p.1805 ('lag all covariates by 1 year to tackle joint endogeneity concerns') is right; lagged DV is only in GMM. Record's 'about 40' sample statement is as the paper states (abstract '40 EMDEs'; actual N countries 24-38)."
+  }
  },
  {
   "idx": "239",
@@ -2434,7 +2703,23 @@
    "verified": 10,
    "checked": 11
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 7
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Industry-country panel for 18-19 European OECD economies, own weighted OLS/FE estimation; exposure ICT capital services per hour (EU KLEMS); outcomes are employment polarization (labour market) and industry employment growth. All criteria met. Income-group comparison absent (all high-income/advanced).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "economies_or_groups": "Norway also appears in the Table 7 note (Scandinavian & Anglo-Saxon group), not only the Table 1 note; Table 7 groups name only 16 countries (Greece, Portugal, Slovakia are not assigned to a group). Footnote 5 lists 18 and Table 1 note lists 19 (adds Norway), as the record says."
+   },
+   "corrections": [],
+   "problems": "No invented numbers found. Minor: record says Table 1 note is the only place Norway appears (Table 7 note also lists it); record says the appendix tables were not available (B1-B5 are in the text); locator for the conclusion quote is p.25. Authors' text refers to 'country-specific time trend' for the columns the table labels as Country x Year FEs (paper-internal inconsistency not noted in record)."
+  }
  },
  {
   "idx": "242",
@@ -2622,7 +2907,21 @@
    "verified": 3,
    "checked": 8
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "40 Belt and Road economies, 2006-2021, own OLS/FMOLS/PCSE/DOLS/spatial estimation; exposure is a PCA digital economy index built mainly from ICT indicators (broadband, telephones, internet, cellphone, ICT trade) but also including medium/high-tech manufacturing value added and per-capita services value added; outcomes GTFP (productivity) and renewable energy (resource). Eligible, with the exposure-contamination caveat; income-group split present (Table 16).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers. Record's paraphrase of the 0.1 change reverses the paper's wording ('decrease ... decline'); paper's text itself is inconsistent with its Table 15 (region labels) and Table 14 (total effect sign). Record correctly flags these."
+  }
  },
  {
   "idx": "260",
@@ -2890,7 +3189,32 @@
    "verified": 14,
    "checked": 16
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 10,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "118 economies (38 advanced, 80 emerging/developing), 1997-2017, own FE estimation with informality x ICT interactions; ICT capital deepening and internet penetration are exposures (ICT also acts as moderator); outcome is aggregate labour productivity growth; explicit advanced vs emerging/developing comparison. All criteria met.",
+   "risk_of_bias_overall_opinion": "too_harsh",
+   "sample_corrections": {
+    "economies_or_groups": "Record is correct (38 advanced + 80 EDE, 13 TED countries dropped, 11 start later). Note: the later-start list also includes Bangladesh, Cameroon, Cambodia, Chad (1998), Kyrgyz Rep. (1999), Tajikistan (2000), Angola (2001), UAE (2002).",
+    "n_economies": "118 (confirmed); observations 2411 in Table 4, 2374 in Tables 5 and A1, 1583 EDE, 791 advanced."
+   },
+   "corrections": [
+    {
+     "n": 7,
+     "verdict": "corrected",
+     "correction": "Advanced sample: ΔINT is positive and significant in all three employment-share models (.031* SE .016; .038** SE .017; .03* SE .016), not two; only the VA model is null (-.001, SE .025). Global/EDE SEs range .021-.038, not up to .042 (.042 does not appear). Table 7 text is misaligned in the PDF extraction, so the advanced row assignment rests on the order of values (ΔINT SE row (.025)(.016)(.017)(.016)).",
+     "quote": "ΔINT -.001 .031* .038** .03* (.025) (.016) (.017) (.016)"
+    }
+   ],
+   "problems": "Numbers match tables except result 7. Possible mislabel in the paper that the record does not flag: the dummy ΔINF D is described as 1 for declines in informality yet its coefficients are negative (-4.8, -3.3, -5.3), the same sign as continuous ΔINF, suggesting the coding is reversed or the note is wrong; interpretation of the 'stronger moderation' robustness (Tables A1-A2, fn 20) is therefore uncertain. Record states exposure as 'ICT capital services per worker'; the level variable ln kIT is described as ICT capital stock per worker (Fig. 3, Eq. 2), so exposure definition is slightly mixed. Record says the author 'argues first differences mitigate reverse causality (fn 9)': correct."
+  }
  },
  {
   "idx": "269",
@@ -2999,7 +3323,25 @@
    "verified": 8,
    "checked": 11
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (CD tests, CIPS, Pesaran-Yamagata, Pedroni/Westerlund, Dumitrescu-Hurlin Granger tests) of an ICT index (broadband, internet, mobile) against GDP per capita for 41 Sub-Saharan African economies, 2000-2019. Meets exposure, sample (>=10) and output criteria. No coefficients are estimated, only causality test statistics, which is a weak form of 'own estimation' but acceptable.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "41 (Table A3 lists 41 countries and Table 1 has 820 obs = 41 x 20). The '42 African economies' in the abstract, introduction and conclusion is an inconsistency in the paper; the data section says '41 Sub-Saharan African economies'.",
+    "economies_or_groups": "The Appendix Table A3 list is complete in the text (21 + 20 = 41 names, e.g. Angola ... Zimbabwe, incl. Mauritius, Botswana, Gabon, Equatorial Guinea, South Africa, Namibia, Sudan); it is not truncated. Seychelles is not in the list.",
+    "income_groups_covered": "mixed (low, lower-middle and upper-middle income SSA economies by name; no income-group analysis)"
+   },
+   "corrections": [],
+   "problems": "No invented numbers found. Record errors: (1) Table A3 country list is complete, not truncated, and shows 41 economies, no Seychelles; (2) income-group note should not speculate on Seychelles. Paper-internal inconsistencies correctly flagged (41 vs 42, Z-bar 20.08). Minor: the paper reports no lag length ('findings were robust for different lag lengths') - record is right."
+  }
  },
  {
   "idx": "276",
@@ -3210,7 +3552,26 @@
    "verified": 5,
    "checked": 12
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 13
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel FE/2SLS/mediation estimation of Stanford AI Vibrancy score on an education development index (HCBED) for 29 countries (>=3 for AI), with a developed/developing split. Outcome is education/human capital (living standards beyond income) with an inequality mediator. Meets criteria.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "2017-2021 (60 monthly observations per country created by quadratic interpolation of annual data; 29 x 60 = 1740 country-months, 1734 in regressions). Underlying data are about 5 annual observations per country.",
+    "economies_or_groups": "29 countries 'primarily drawn from OECD and BRICS economies'; Fig. 1 note: most white-background countries are OECD, Brazil, China, India, Russia are BRIC. The paper claims 'a balanced mix of developed and developing countries' but gives no developed/developing list in text.",
+    "income_groups_covered": "mixed, no World Bank income classification used; low-income countries absent (authors: many less-developed countries lack data)",
+    "unit": "country-month after interpolation (Table 2 N=1740); Table 5 uses N=1182"
+   },
+   "corrections": [],
+   "problems": "No invented numbers. Record notes that need nuance: (1) 'about 6 countries' for the developed subsample is inference, not a paper statement; (2) text claims average VIF below 4 whereas Table 2 shows VIF 8.43 for LnGDP and 6.8 for education sub-indices (record reports VIF 8.4 correctly); (3) Table 4 Infrastructure 0.001 and Table A.2 gender equality 0.000* are marginal; (4) text says 'within the specified 20 months' and 'from 2017 to 2023' for pillar figures, minor internal inconsistencies, not in record."
+  }
  },
  {
   "idx": "285",
@@ -3352,14 +3713,32 @@
    "verified": 9,
    "checked": 11
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel FE/RE/FGLS/IV estimation of ICT capital-services elasticity on GDP growth for 27 European economies, 1996-2016. Meets exposure, sample (>=10) and output criteria.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_obs": "The record says N=558 or 567 'reported inconsistently'; they are consistent: Table 2 notes give balanced N=567 (27 x 21) and unbalanced N=558 (T=19-21), i.e. 567 minus the nine removed outliers (Table A.1). Subperiods: N=238 (1996-2004) and N=320 (2005-2016).",
+    "economies_or_groups": "Text says 'all European countries for the period 1996-2016, with the exception of Malta (hereinafter EU-27)'; 'EU-27' is the paper's label, membership list not given in text.",
+    "income_groups_covered": "not reported (EU/European economies; paper gives no income classification)"
+   },
+   "corrections": [],
+   "problems": "Record error: the 558 vs 567 'inconsistency' is not one (567 full balanced sample, 558 after removing nine outliers). Text typo not in record: IV results said to be in 'Table 1' (actually Table 2). Otherwise no invented numbers."
+  }
  },
  {
   "idx": "298",
   "title": "ICT and Productivity Growth in Transition Economies: Two-Phase Convergence and Structural Reforms",
-  "fulltext_decision": "include",
-  "exclusion_reason": "none",
-  "decision_rationale": "Quantitative growth-accounting and shift-share study of ICT capital, ICT production and ICT use on labour productivity growth for about 23 economies (8 CEE/Russia, 14 EU-15, US), so it meets exposure, sample and outcome rules. It is purely descriptive and largely reuses estimates from Van Ark and Piatkowski (2004), so own estimation is limited.",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E4",
+  "decision_rationale": "Descriptive growth-accounting and shift-share decomposition with tables reproduced from earlier work; no own statistical estimation. Reclassified from include after the second-pass check against the text. Reversible: a human reviewer should confirm.",
   "stream": "H",
   "technology": [
    "ICT in general (ICT capital, ICT-producing and ICT-using industries)"
@@ -3482,7 +3861,32 @@
    "verified": 7,
    "checked": 8
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {
+    "corrected": 1,
+    "confirmed": 2
+   },
+   "eligibility_ok": false,
+   "eligibility_note": "Borderline, lean exclude. The paper is a descriptive growth-accounting and shift-share decomposition (an accounting identity, no statistical estimation, no standard errors or uncertainty) whose numbers are taken from Van Ark and Piatkowski (2004) and Piatkowski (2004) (source lines of Tables 1, 2, 5, 6), so the 'own estimation' criterion is not clearly met. It is not a regression-based estimate of an ICT effect. If the caller treats growth-accounting contributions of the authors' own earlier work as eligible, the other criteria (23 economies, ICT capital, labour productivity) are met.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "23 in Table 1 (8 CEE/Russia + 14 EU-15 members listed, Luxembourg absent + US) - correct; industry tables cover only 4 CEE countries (Czech, Hungary, Poland, Slovakia) plus Russia, EU-15 aggregate and US.",
+    "years": "1995-2001 (Tables 1, 6 for EU-15/US/Russia 1996-2000 in Table 2/6); CEE industry data 1993-2001 (Hungary 1993-2000 in Tables 5-6); the record's '1993/1995-2001' is fine."
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Partly supported. Czech Rep and Hungary (A1 rank 2 and 3) have the largest ICT capital contributions (0.8, 0.7) and Romania and Russia (A1 rank 7 and 8) the smallest (0.3, 0.1). But Slovenia (A1 rank 1, 0.5) is no larger than Bulgaria (A1 rank 6, 0.5), and Hungary has A2 rank 7 with only 0.07 ICT-using services. The paper states no statistical test and says there are insufficient observations.",
+     "quote": "'At present there are insufficient observations to carry out a comprehensive statistical analysis' (Section 6, p.27)"
+    }
+   ],
+   "problems": "No invented numbers. Record problems: (1) income-group EU range should be 0.2-0.8 pp; (2) heterogeneity item 1 overstates the reform-ICT link (Slovenia and Hungary do not fit); (3) paper-internal inconsistencies not noted in the record: Russia ICT-producing contribution 0.08 (Table 2) vs 0.06 (Table 6), Russia ICT-using manufacturing 0.2 (text) vs 0.06 (Table 6); footnote 12 refers to 'Table 4' for ICT capital share (it is Table 1 column 5); (4) eligibility questionable as above."
+  }
  },
  {
   "idx": "302",
@@ -3597,7 +4001,21 @@
    "verified": 3,
    "checked": 12
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own system-GMM estimation, 24 Asian economies (>=10), composite ICT index (telephony, mobile, broadband, internet) as exposure, income per capita/convergence as output outcome. Eligible.",
+   "risk_of_bias_overall_opinion": "too_harsh",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Core numbers in the record match Table 4. Minor: (a) 'Windmeijer-type robust errors implied' is not stated in the paper (it says two-step SGMM with 'small'); (b) page locators slightly off (Table 1 rows 10-11 and the sample paragraph are on pp.10-11, not p.9/p.10); (c) same authors, same 24-country 2000-2010 panel, same ICTMI/ICTSERT specification as paper 323, so 302 and 323 are not independent evidence (possible double counting); (d) paper text says i=1..11 and 11 years while Table 4 shows 216 obs (24 x 9), which the record already notes."
+  }
  },
  {
   "idx": "308",
@@ -3809,7 +4227,28 @@
    "verified": 0,
    "checked": 1
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel regressions on 20 countries (>=10); internet users and mobile subscriptions are listed exposures. Outcome is financial inclusion (bank depositors per 1,000 adults), which is not one of the listed outcomes by name; eligible only if the protocol's 'living standards beyond income' family covers financial inclusion (the paper links it to poverty reduction but does not estimate poverty). Borderline but accepted. ATMs are not a listed technology (supplementary).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "The paper has no income-group analysis. It contrasts China and Nigeria with 18 other countries by country dummies and frames them as 'developed and emerging' economies; the 'upper-middle' and 'lower-middle' labels are the extractor's, not in the text. The remaining content (insignificant FGLS differences, several significant FE differences, authors misread insignificant interactions as 'insignificant positive effects') is supported.",
+     "quote": "A significant β*c means a difference between China and the rest of the sample"
+    }
+   ],
+   "problems": "Numerical entries in the record match Tables III-V. Items to flag: (a) outcome eligibility is borderline (see note); (b) text p.8 gives Wald chi2(8)=26.98 for Table V while the table shows 526.54; (c) text states the Wooldridge F p-value of 0.000 'is greater than 0.05'; (d) abstract says Pooled OLS and FGLS, Section III.C says FE and RE; (e) the baseline internet and mobile coefficients differ across Tables III-V (2.33/2.32/2.25 and 0.70/0.66/0.71) although they are the same variable in the same sample; (f) result 6 is a mix of three FE coefficients from different models, not one estimate."
+  }
  },
  {
   "idx": "321",
@@ -3960,7 +4399,29 @@
    "verified": 10,
    "checked": 10
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own DEA/Malmquist decomposition and regressions on 24 OECD economies (>=10), ICT capital stock as exposure, labour productivity as output outcome. Eligible, though the main result is an accounting decomposition without standard errors.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 7,
+     "verdict": "corrected",
+     "correction": "Numbers are right (Tn=0.772, bootstrap p=0.108), but the direction should be null/inconclusive rather than positive: it is a non-rejection of equality between the 2019 distribution and the 1995 distribution scaled by DACC, not a positive estimate. Non-rejection also occurs for EFF alone (p=0.093) and for several other combinations, so the test does not isolate ICT. The authors' 'ICT capital contributes to convergence' is an interpretation of the counterfactual and Fig. 3.",
+     "quote": "f(y2019) = g(y1995) × DACC 0.772 0.108"
+    }
+   ],
+   "problems": "No invented numbers found. Points to correct: (a) result 7 direction; (b) the record's claim that regressions 'use few observations' cannot be verified, since the paper reports no N or SE for the Fig. 1-2 regressions; (c) the abstract's 'positive impact' and 'contributes to convergence' go beyond what a non-causal decomposition and a non-rejection test support; (d) record exposure description 'ICT capital stock per hour worked' matches the paper's d = D/L normalisation."
+  }
  },
  {
   "idx": "323",
@@ -4066,7 +4527,21 @@
    "verified": 2,
    "checked": 3
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 2
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own system-GMM estimation, 24 Asian economies (>=10), composite ICT index exposure, TFP outcome (productivity). Eligible.",
+   "risk_of_bias_overall_opinion": "too_harsh",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Record matches the text and Table 5; its inconsistency list (HDI, 10% vs p=0.000, C-test 0.222 vs 0.822, 240 vs 216) is correct, as are the missing-table observation (tables numbered 2, 3, 5). Additional points: (a) same authors, same 24-country 2000-2010 sample and same ICTMI/ICTSERT setup as paper 302, so not independent evidence; (b) the text calls the AR(1) p=0.077 acceptable but AR(1) is expected to reject; (c) the Fig. 1 'ICT Augmented Convergence Hypothesis' diagram is carried over from 302 and does not match this paper's TFP model."
+  }
  },
  {
   "idx": "358",
@@ -4231,7 +4706,38 @@
    "verified": 5,
    "checked": 8
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "corrected": 2,
+    "confirmed": 7
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Meets all criteria: own panel/cross-section regressions, internet/mobile payments exposure, 62-155 economies, outcomes in poverty/distribution and labour market. Fintech credit and e-payments are context exposures, but internet use alone qualifies.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "Correct as recorded (148 stated; Table 7 70, Table 8 62, Table 9 64, Table 10 147, Table 11 148, Table 12 95, Tables 13-14 155). Text says 148 countries but cross-section tables report 155, an inconsistency in the paper.",
+    "years": "Correct as recorded (text: 'pooled data of 148 countries for 14 years (from 2008 to 2021)'; Table 7 and 12 2013-2019; Table 8 2008-2019; Table 9 and 11 2008-2020; Table 10 2008-2019; Tables 13-14 year 2021)."
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Option labels are off by one. In Table 7 the INTRNT row is blank in option I: -0.17*** (t=-4.32) is option II, -0.13** (t=-2.30) is option III, -0.22*** (t=-5.67) option IV, -0.22*** (t=-5.68) option V. Direction (negative) and magnitudes are right.",
+     "quote": "Table 7 INTRNT: II -0.17*** (-4.32); III -0.13** (-2.30); IV -0.22*** (-5.67); V -0.22*** (-5.68)"
+    },
+    {
+     "n": 8,
+     "verdict": "corrected",
+     "correction": "Numbers and t-values match Table 12 (0.99** (2.13), 0.99*** (3.11), 1.15*** (3.71), 0.86*** (2.68)), but only options I-II are per-capita income growth; options IV-V are GDP growth (header 'Per Capita Income Growth' I-III, 'GDP Growth' IV-V). Option III has no FINTCBIG coefficient.",
+     "quote": "Table 12 header: 'Per Capita Income Growth' (I-III), 'GDP Growth' (IV-V); FINTCBIG 0.99**, 0.99***, 1.15***, 0.86***"
+    }
+   ],
+   "problems": "No invention or paper mix-up found. Minor errors: Table 7 option labels for INTRNT (I vs II, II vs III); Table 12 dependent variable differs between options (per-capita income growth vs GDP growth). Record omits the 30PSBL40 (bottom-40%) estimates in Table 13. Record's claim 'mobile payment lowers Gini' as contradicted by Table 8 is slightly loose: text only says MBLPMT was tested on Gini and Table 8 shows no MBLPMT, which is right."
+  }
  },
  {
   "idx": "392",
@@ -4349,7 +4855,33 @@
    "verified": 4,
    "checked": 4
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 3,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Borderline but acceptable: own growth-accounting and calibrated equilibrium decompositions (own computation of ICT-specific technical change from quality-adjusted prices), 10 high-income economies, outcome output/productivity. No regression and no uncertainty measures; exposure is ICT investment-specific technical change, not adoption.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "unit": "Country-level period averages 1980-2010 (Tables 1-7 report one value per country), not a country-year panel.",
+    "n_economies": "10 confirmed (AUT, DEN, FIN, GER, ITA, NLD, SPA, SWE, U.K., U.S.)",
+    "years": "1980-2010 confirmed"
+   },
+   "corrections": [
+    {
+     "n": 4,
+     "verdict": "corrected",
+     "correction": "Direction should be 'mixed', not 'null': no cross-country dependence of TFP on ICT intensity, but a strong negative time-series correlation between ICT growth and TFP growth in high-ICT-growth countries (no coefficient given). Also note TFP is a residual in an accounting identity, not an estimated effect.",
+     "quote": "'we do find an ordinate pattern between TFP and ICT when looking at the time dimension... strong negative correlation' (Section 3, p.1196)"
+    }
+   ],
+   "problems": "No invention found. Record unit should be country-period averages, and result 4 direction should be mixed. The paper's own Hulten ISTC range is stated inconsistently (text 0.86-1.23 pp vs 0.68-1.25 in Section 3; Table 6 gives 0.84-1.23), but the record does not use these figures."
+  }
  },
  {
   "idx": "393",
@@ -4467,7 +4999,25 @@
    "verified": 6,
    "checked": 11
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Meets all: own AMG/MG estimation, ICT investment exposure, 17 EU economies, TFP outcome. Manufacturing only, all high income or near (mostly EU members).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "17 confirmed. Hungary appears in text (p.8-9) and in the sector figures but not in the list of 17 or the EU-12 Figure 1.",
+    "years": "1995-2007 confirmed",
+    "unit": "industry-country-year (13 manufacturing sectors); Table 1 N=1322 (MG) and 1106 (AMG), Table 2 N=1158"
+   },
+   "corrections": [],
+   "problems": "No invention found. Minor: record says Hungary appears in 'text and figures' (verified). The record's selective-reporting point about human capital should note Table 2 shows a significant first-difference coefficient."
+  }
  },
  {
   "idx": "407",
@@ -4616,7 +5166,25 @@
    "verified": 6,
    "checked": 7
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Meets all: LSDV panel regressions, ICT spending and internet users, 21 EU economies, labour productivity outcome, CEE vs WE comparison.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "21 confirmed (7 CEE + 14 WE); excluded CY, EE, LV, LT, LU, MT",
+    "years": "1993-2011 confirmed; N=399 (21), 133 (CEE), 266 (WE)",
+    "income_groups_covered": "Paper gives no World Bank income classification; CEE vs WE only"
+   },
+   "corrections": [],
+   "problems": "No invention found. Record statements verified, including the conflicts between text and tables on R&D (log(RDS) CEE 0.046/0.043/0.029 not starred). The note that Bulgaria and Romania were upper-middle is external to the paper."
+  }
  },
  {
   "idx": "408",
@@ -4767,7 +5335,26 @@
    "verified": 9,
    "checked": 12
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own system-GMM estimation; ICT/mobile/internet/broadband exposure (PCA index plus three components); 41 African countries in Table 2 (54 stated); outcome is real GDP per capita (output). All criteria hold.",
+   "risk_of_bias_overall_opinion": "too_harsh",
+   "sample_corrections": {
+    "n_economies": "41 in the estimation sample (Table 2: 'Number of countries 41'); the text states 54 countries (T=22, N=54, Conclusion). The record already reports both, correct.",
+    "observations": "779 observations in Table 2 (not in the record); Table 1 shows 1188 obs for cell phone, 820 for human capital",
+    "years": "2000-2021 confirmed",
+    "income_coverage": "Text gives no income classification; record's 'mixed' is the extractor's gloss from named countries"
+   },
+   "corrections": [],
+   "problems": "Two statements in the record are wrong: (1) specification rationale says 'Equation 4.8 text uses a different human capital coefficient from the table column' - eq. 4.8 uses -0.0522, identical to column (3), eq. 4.6 uses -0.056 (column 2), eq. 4.4 uses -0.0495 (column 1), all consistent; (2) 'TFP ... about 135% growth' - Table 3 units look like percentage points (DlnY 1.4285 close to mean growth 1.528% in Table 1; text says 'average percentage value'). Also, the record's result 6 is an accounting residual rather than an estimated effect. The paper's own inconsistency that no country reaches 120% mobile while Table 1 max is 185.6% is not noted in the record. Nothing invented otherwise; no paper mix-ups."
+  }
  },
  {
   "idx": "422",
@@ -4921,7 +5508,35 @@
    "verified": 2,
    "checked": 2
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 5,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 4
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own two-step system GMM and dynamic panel quantile estimates; ICT (fixed telephone, mobile, internet subscriptions) as exposure; 84 developing countries (46 upper-middle, 38 lower-middle); outcome labour productivity. All criteria hold.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "84 confirmed",
+    "years": "2000-2019 confirmed",
+    "observations": "1,219 observations (Table 3) out of 84 x 20 = 1,680 possible; unbalanced",
+    "income_coverage": "46 upper-middle and 38 lower-middle by World Bank Atlas 2016 classification; no low or high income - confirmed"
+   },
+   "corrections": [
+    {
+     "n": 6,
+     "verdict": "corrected",
+     "correction": "Numbers confirmed (q10 0.00859 SE 0.00208; q20 0.00604; q30 0.0071; q40 0.000240 SE 0.000182 no stars; q50 0.00854; q60 0.00515 ** SE 0.00204; q70 0.00644; q80 0.00583; q90 0.00195 SE 0.000463). Direction label should be 'positive at all quantiles, null at q40' rather than 'mixed': every point estimate is positive and eight of nine are significant (q60 at 5%, others 1%). Magnitude pattern is not monotone (q50 about equal to q10, q70 above q20).",
+     "quote": "significant at a one percent significance level at all quantiles except for the 40th quantile",
+     "locator": "Section 4.2, p.37; Table 4 p.39"
+    }
+   ],
+   "problems": "Minor: record states Sargan p-values 0.11-0.17; Table 3 range is 0.1084-0.1468 and Table 5 up to 0.1653, so 0.11-0.17 holds across both tables. Record's key control description is accurate. Result 6 direction label 'mixed' should read positive with one null quantile. Table 4 header reads 'D.var LP' (differenced outcome?), not mentioned in the record; the paper does not explain it. Nothing invented and no paper mix-up."
+  }
  },
  {
   "idx": "441",
@@ -5057,7 +5672,25 @@
    "verified": 4,
    "checked": 5
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel least squares estimates, 78 countries (AI stream needs 3), labour-market outcome (employment of highly educated workers). Borderline only on exposure: the Oxford Insights AI Readiness Index measures government/sector/data readiness, not AI use or exposure; accepted as an AI measure but flagged.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "78 stated (312 obs = 78 x 4), but the country list printed on pp.63-64 contains 77 names by my count; use 78 as stated and note the discrepancy",
+    "years": "2019-2022 confirmed",
+    "income_coverage": "Text claims 'all types of economies: developed countries, emerging countries, less developed countries'; no income classification or group results given"
+   },
+   "corrections": [],
+   "problems": "Record is accurate. Additional text/table contradictions it does not list: Table 7 says AI Size is inverse and significant for total, male and female, but Table 5 shows total +0.00021 (p 0.042) and male/female p 0.101/0.276 (starred); Table 7 says AI Human Capital is inverse for total, male and female but Table 5 female is +0.0005; Table 7 says AI Digital Capacity is inverse and significant for total and female while text says male is positive (p 0.665). The text says the male effect is more pronounced although Table 2 male p=0.141. Printed country list has 77 names against 78 stated."
+  }
  },
  {
   "idx": "442",
@@ -5167,7 +5800,49 @@
    "verified": 2,
    "checked": 2
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "unverifiable": 1,
+    "corrected": 2
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own econometric estimation (IPS, Pesaran/Friedman, Swamy, Westerlund cointegration, Dumitrescu-Hurlin) on 22 countries; exposure mobile and internet; outcome female labour force participation. Meets the letter of every criterion, but no coefficient, elasticity or marginal effect is reported, so the paper yields no usable effect estimate; flag as marginal.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "22 confirmed (list of 22 on p.69)",
+    "years": "2000-2021 confirmed; Conclusion's '2022-2022' is a typo",
+    "observations": "264 per variable in Table 2 (about 12 years x 22 countries, not 22 x 22 = 484); not explained",
+    "income_coverage": "Text calls them 'OECD nations'; the list includes Argentina, Brazil, India, Indonesia, Russia and South Africa. No income classification or comparison in the text."
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "unverifiable",
+     "correction": "Westerlund p-values confirmed (Gt 0.003, G 0.004, Pt 0.032, Pa 0.010) but the test is of cointegration and has no sign: the direction 'positive' rests only on the authors' assertion; no coefficient exists in the text. The paper bases rejection on Pt and Pa alone although Gt and G are also below 0.05.",
+     "quote": "mobile cellular subscriptions (mb) have a positive and significant impact on women's empowerment in the long term",
+     "locator": "Conclusion, p.77; Table 6 p.75"
+    },
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "Statistics confirmed (mb->w W 5.6610, Z-bar 8.5858; w->mb W 4.1382, Z-bar 5.0146; both p 0.0000). Direction should be 'bidirectional, unsigned' rather than 'mixed': Granger causality gives no effect sign or size.",
+     "quote": "there is a reciprocal association between women's employment and mobile cellular subscriptions",
+     "locator": "p.76; Table 7 p.76"
+    },
+    {
+     "n": 3,
+     "verdict": "corrected",
+     "correction": "Statistics confirmed (web->w W 4.6323, Z-bar 6.1733, p 0.0000; w->web W 4.5904, Z-bar 6.0750, p 0.4289), but direction 'positive' is wrong for a Granger test: it is unsigned. The p=0.4289 is inconsistent with Z-bar 6.0750, so the 'one-way' conclusion (web to w) rests on an internally inconsistent row.",
+     "quote": "𝒘 𝒊𝒔 𝒏𝒐𝒕 𝒕𝒉𝒆 𝒄𝒂𝒖𝒔𝒆 𝒐𝒇 𝒘𝒆𝒃 4.5904 6.0750 0.4289",
+     "locator": "Table 7, p.76"
+    }
+   ],
+   "problems": "One error in the record: it says the cross-sectional dependence test p-value is inconsistent (specification rationale and 'Pesaran CD' label); Table 3 gives LM adj. (Pesaran 2004) 1.794 with 'Average' 0.0728 and Friedman 19.664 with 0.5426, so the p-value is consistent and the test is labelled LM adj., not Pesaran CD. Granger rows are treated as signed ('positive', 'mixed') in the record; they are not. Also the abstract says 'greatly increased' and the conclusion says 'prove the positive effect', which the paper cannot support. Other record statements (22 countries, years, 264 obs, Westerlund p-values, missing coefficients) match the text; nothing invented."
+  }
  },
  {
   "idx": "534",
@@ -5396,7 +6071,25 @@
    "verified": 12,
    "checked": 13
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 8
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Quantitative panel estimation of an AI adoption index on firm productivity and GDP growth for 10 economies (above the 3-economy AI threshold), with an explicit developed vs emerging comparison; outcomes are productivity and growth. Eligibility holds on paper, but the numbers have the look of illustrative rather than estimated values (see problems).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "10 (confirmed: five developed, five emerging; Section 3, p.31)",
+    "years": "2015-2024 stated, but Table 1 shows only 2024 values; no other year's data are shown",
+    "unit": "Number of firms, observations and firm data source are not stated in the text (the Enterprise Surveys are only named in the abstract and Section 3 as a general source)"
+   },
+   "corrections": [],
+   "problems": "No invention found in the record; extracted values match the text. Minor: record cites 'control variables help mitigate potential endogeneity' to p.32; the sentence is on p.33. Additional cautions: (1) Table 1 only has 2024 rows for 10 countries yet the paper claims a 2015-2024 panel with firm-level data; (2) Tables 3-8 report no N, no R-squared, and every t-stat equals coefficient/SE at two decimals, which together with the Table 1 inconsistency suggests the figures are illustrative rather than estimated; (3) record's remark that the Developed dummy cannot enter a country-FE model is the extractor's inference but is correct."
+  }
  },
  {
   "idx": "542",
@@ -5586,7 +6279,33 @@
    "verified": 6,
    "checked": 6
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 2
+   },
+   "heterogeneity": {
+    "corrected": 1,
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own cross-sectional SURE estimation (126 economies, year 2000) of internet hosts on log real GDP; exposure is internet; output outcome; income-group comparison is only descriptive (box plot), but the 126-economy sample meets the 10-economy rule. Note this is a draft working paper that asks not to be cited.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "205 states in the descriptive data (129 large, 76 small); the box plots in Figures 2 and 3 use 161 states (113 large, 48 small; income groups 54+44+28+35); 126 in the SURE regressions (93 large, 33 small)",
+    "years": "2000 (single cross-section) confirmed",
+    "income_groups_covered": "All four World Bank groups appear in Figure 3 (descriptive only); regressions do not use income groups"
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "The income-group comparison is a box plot of hosts only (Fig 3). For the small/large contrast, the text speaks of a 'much more strongly positive' relationship (R-sq 0.7852 for large states in Fig 4b vs 0.2402 for small in Fig 4a), not a steeper slope; no slopes are reported. No formal test.",
+     "quote": "the extent of the ‘digital divide’ is greater between income groups than it is between small and large states"
+    }
+   ],
+   "problems": "No invented numbers; the record's coefficients match Table 3. Issues: (1) record says 'slope is steeper' for large vs small states, but the text and figures give R-squared values, not slopes; (2) the 'n=205' descriptive sample overstates what the box plots use (161); (3) 'not peer reviewed' in the record is an inference from the draft note ('should not be cited or quoted without prior discussion with the authors'), not stated outright; (4) the record's description of Table 3 blocks (first and second block of each specification) is correct but the table's headings are duplicated in the source."
+  }
  },
  {
   "idx": "618",
@@ -5982,7 +6701,32 @@
    "verified": 8,
    "checked": 8
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 7
+   },
+   "heterogeneity": {
+    "confirmed": 3,
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Panel of 51 economies, own FE, FE-IV and system GMM estimation; exposure is internet (and mobile) penetration; outcomes are structural change and manufacturing employment share (structural change and labour market); explicit income-group interaction.",
+   "risk_of_bias_overall_opinion": "too_harsh",
+   "sample_corrections": {
+    "n_economies": "51 stated in text; Table A2 note adds to 50 (6 high + 9 low + 19 lower-middle + 16 upper-middle). Country counts by table: Table 2 47-49; Table 3 46-47; Table 4 46-47; Table 5 47-49; Table 6 37-45; Table A3 47; Table A4 36 (low and middle income), 5 (South Asia), 13 (SSA)",
+    "key_controls_fixed_effects": "Table 5 labels the exposure 'Internet penetration' (no log), whereas Tables 2-4 use 'Log (internet pen)'; units of the Table 5 coefficients therefore differ from the record's 'logs in the SC equation'"
+   },
+   "corrections": [
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "Internet result is supported (Model 3: 0.0463**, -0.0448***, -0.0499***; Model 4: 0.0528**, -0.0520**, -0.0577**); the net effect for developing/developed groups is about zero (e.g. 0.0463-0.0448 = 0.0015, reviewer arithmetic), not merely 'smaller'. The mobile 'same pattern' is weaker than stated: mobile main effect is -0.00131 (SE 0.00621, insignificant), 'developing' interaction -0.00932*, 'developed' -0.00846 (insignificant), so no higher effect in underdeveloped economies is shown for mobile. Group sizes 19/19/12 sum to 50, not 51.",
+     "quote": "we confirm a higher effect of digitalisation on structurally underdeveloped economies than for structurally developing economies"
+    }
+   ],
+   "problems": "No invented numbers. Corrections: (1) mobile-penetration heterogeneity is overstated in the record (main effect negative and insignificant); (2) country counts for the manufacturing models are 37-45 in Table 6 (36 in Table A4), not 36-42; (3) Table 5 exposure is labelled without 'Log', unlike Tables 2-4. The record's remark that the A2 note sums to 50 and that the text and Table A1 cite different data sources (ITU vs WDI) are correct. Record's rating of both confounding and specification as serious is harsher than the guide supports."
+  }
  },
  {
   "idx": "722",
@@ -6257,7 +7001,33 @@
    "verified": 1,
    "checked": 3
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 2,
+    "unverifiable": 1
+   },
+   "heterogeneity": {
+    "confirmed": 4
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own weighted regressions of AI exposure (Webb patent measure) on employment-share and wage-percentile changes for ASEAN economies (at least 8 country dummies in Table 1 plus Brunei in the data section, above the 3-economy AI threshold); labour market outcome.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "Not stated. Table 1 lists eight country dummies (Cambodia, Myanmar, Vietnam, Indonesia, Singapore, Philippines, Thailand, Malaysia), including Dummy_Singapore (0.004***, and NA in the wage column), although the text calls Singapore the reference country; Brunei is named only in the data section. So 8 to 9 economies; the record lists seven dummies plus Singapore as reference, which does not match Table 1.",
+    "years": "Text: 2015-2020 (Brunei 2014-2020, Philippines 2017-2020); Table 1 notes say 'the period of 2014-2020'",
+    "unit": "Occupation (ISCO two-digit) by country cells, weighted by average cell employment; SEs clustered by sector"
+   },
+   "corrections": [
+    {
+     "n": 3,
+     "verdict": "unverifiable",
+     "correction": "Coefficients appear only in Figure 2, which is not in the extracted text. The text is internally inconsistent on Malaysia: it first lists Malaysia among reinstatement countries with positive wages and negative employment, then says 'in Malaysia, AI has a negative impact on relative wages' and 'a positive effect on employment shares'. The record reproduces only the first version. The Figure 2 note also describes complementarity as 'wage increases without major employment shifts', whereas the text and conclusion say both employment and wages rise for Singapore.",
+     "quote": "Notably, Malaysia experiences a positive effect on employment shares"
+    }
+   ],
+   "problems": "No invented numbers. Corrections: (1) record says Table 1 has seven dummies with Singapore as reference, but Table 1 also lists Dummy_Singapore (0.004*** employment, NA wage), contradicting the text's statement that Singapore is the reference; (2) record's Malaysia classification (reinstatement, wage positive and employment negative) conflicts with the later text on Malaysia; (3) record's remark that Singapore wage data are missing is an inference from the NA entry (it could also reflect collinearity of dummies with the intercept); (4) Table 1 notes say 2014-2020 while the text says 2015-2020."
+  }
  },
  {
   "idx": "802",
@@ -6396,7 +7166,34 @@
    "verified": 5,
    "checked": 5
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 2,
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Quantitative worker-level regressions and RIF/Oaxaca-Ransom decompositions on PIAAC for 22 countries (19 for wages). Exposure is worker-level ICT use at work (ICT in general); outcomes are task content (labour market) and wages/wage inequality (distribution). Meets the 10-economy rule. Caveat: the exposure is a worker-level questionnaire index, not a national adoption measure, and the data are a single cross-section.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "PIAAC data collection Aug 2011 to Mar 2012 (Canada Nov 2011-Jun 2012, France Sep-Nov 2012); 2011-2012 is acceptable",
+    "n_economies": "22 confirmed (19 in wage analysis; Canada, Sweden, US excluded because continuous earnings are not public)",
+    "economies_or_groups": "Wage groups: Low-wage group is five countries INCLUDING Russia (Estonia, Poland, Czech Republic, Slovakia, Russian Federation), not 'five Eastern European countries and Russia'"
+   },
+   "corrections": [
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "Low-wage group is five countries including Russia (Estonia, Poland, Czech Republic, Slovakia, Russian Federation), not five plus Russia. High = Norway, Denmark, Belgium, Netherlands, Ireland; Medium = nine countries. Statement that the ICT composition effect is proportionally similar in all three pairwise comparisons is a general text statement read off Fig 6; the text gives numbers only for the total composition effect (35% High-Low, 28% High-Middle, 18% to 44% Middle-Low).",
+     "quote": "At some distance we group Eastern European countries (Estonia, Poland, Czech Republic Slovakia and Russian Federation) into the Low Wage countries",
+     "locator": "Section V p.26; Fig 6 p.29"
+    }
+   ],
+   "problems": "None invented. Only issues: Russia coefficient column (above), the 'five Eastern European countries and Russia' wording, and unverifiable 'all three comparisons' detail read from a figure. Paper is a draft version (Nov 2015, FEDEA working paper)."
+  }
  },
  {
   "idx": "803",
@@ -6562,14 +7359,42 @@
    "verified": 6,
    "checked": 6
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 7,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Structural CES model estimated by GMM/IV with its own data (EU KLEMS, 11 OECD economies, 1980-2005, four non-primary sectors); exposure is ICT capital (ICCT) and its falling price; outcomes are gender/skill wage gaps and labour income shares (labour market, distribution). Meets 10-economy rule. All economies high income, no income-group comparison. Headline effects are model-based counterfactuals.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "title": "The supplied text is arXiv v9 (Oct 2025) titled 'The Race between Technology and Woman: Changes in Relative Wages and Labor Shares in OECD Countries'; the record title is from a different version (flag, not an error in content)",
+    "n_economies": "11 confirmed (258 country-year observations per sector)",
+    "years": "1980-2005 confirmed (EU KLEMS March 2008 version)",
+    "income_groups_covered": "high income only confirmed (advanced OECD economies)"
+   },
+   "corrections": [
+    {
+     "n": 7,
+     "verdict": "corrected",
+     "correction": "Estimates are right (-0.001, -0.009, -0.013, SE 0.004 each; observed -0.075 in Table 6) but direction 'null' is only right for the exogenous case. With unit-elastic labour supply -0.009/0.004 (z about 2.3) and elasticity 2 -0.013/0.004 (z about 3.3) are negative at conventional levels; direction is better coded 'mixed' or 'negative, small, increasing in labour supply elasticity'. The authors say the effect is obscured by aggregation across labour types.",
+     "quote": "becomes more visible as the labor supply elasticity increases, although it is obscured when aggregated across different types of labor",
+     "locator": "Table 7 last row, p.34; text p.35"
+    }
+   ],
+   "problems": "No invented numbers found. Flag: record title is another version's title; direction for aggregate labour share should not be a flat 'null'. Pagination refers to arXiv v9."
+  }
  },
  {
   "idx": "878",
   "title": "Artificial Intelligence, Trade Convergence and Deglobalisation: A Cross-country Analysis",
-  "fulltext_decision": "include",
-  "exclusion_reason": "none",
-  "decision_rationale": "Quantitative panel study with its own estimation (FE regressions, beta/sigma convergence, GE inequality) of a government AI readiness index on trade ratios for 28 economies (12 advanced, 16 EMDE), with an explicit AE vs EMDE comparison. Borderline on outcome family: the outcomes are Trade/GDP, merchandise trade/GDP and digital service trade/GDP, which are not a listed outcome as such; they are included only because the paper frames digital-service versus merchandise trade as a shift in trade structure (family 2). A reviewer may prefer E3.",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E3",
+  "decision_rationale": "Outcomes are trade-to-GDP ratios and cross-country dispersion of those ratios, which belong to none of the six outcome families. Reclassified from include after the second-pass check. Reversible: a human reviewer should confirm.",
   "stream": "AI",
   "technology": [
    "artificial intelligence (government AI readiness)"
@@ -6740,7 +7565,24 @@
    "verified": 11,
    "checked": 13
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 10
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": false,
+   "eligibility_note": "Quantitative with own FE and convergence estimation, AI exposure (government AI readiness), 28 economies with explicit AE vs EMDE comparison, so the economy-count and design criteria hold. The outcome criterion fails: the dependent variables are Trade/GDP, merchandise trade/GDP and digital-service trade/GDP, which are not output/productivity, labour-market, poverty/distribution, living-standard or resource-cost outcomes. Digital versus merchandise trade composition is not structural change of the economy (no sectoral output or employment shares), and the GE measures are cross-country dispersion of trade ratios, not income distribution. Recommend exclusion (at most borderline).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "income_groups_covered": "Groups are AE vs EMDE as defined by the authors; the paper gives no income classification. Outside the paper, some EMDEs listed (e.g. Chile, Hungary) are high-income by World Bank classification; the paper does not say so",
+    "years": "2020-2023 (112 observations = 28 x 4; beta-convergence 84 observations = 28 x 3 intervals); GE inequality 2005-2023 without AIRI - confirmed"
+   },
+   "corrections": [],
+   "problems": "Record is faithful to the tables. Main problem is eligibility (outcome not in the listed families). Also note inconsistency between Table A2 column order and text order, and the unsupported claim in the abstract that inequality in digital trade is rising in EMDEs (true only after 2020)."
+  }
  },
  {
   "idx": "879",
@@ -6907,7 +7749,34 @@
    "verified": 8,
    "checked": 21
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 7,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Quantitative panel (TWFE, system GMM, lags) on 63 low/middle-income economies 2005-2019; exposure is an AI Capability Index (AI-related hardware imports plus ICT/electricity/finance indicators), outcome is labour productivity; income-group comparison (low vs lower-middle) included. Eligible under AI (3+ economies) and under ICT in general, since five of six index components are general ICT or infrastructure indicators.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "63 confirmed (80 in initial panel, effective sample 63; N=871 country-years, Table 2 shows 1200 observations for imputed readiness variables and 1093 for labour productivity)",
+    "income_groups_covered": "Paper says 'low- and middle-income countries' and splits only low-income vs lower-middle-income; it does not list countries or state whether upper-middle economies are included",
+    "years": "2005-2019 confirmed"
+   },
+   "corrections": [
+    {
+     "n": 5,
+     "verdict": "corrected",
+     "correction": "Range is wrong at the low end: Table 11 flow-based coefficients are 0.0693, 0.0654, 0.0684, 0.0708, 0.0716, 0.0681, so the range is 0.0654 to 0.0716 (not 0.0681 to 0.0716). Col 6 0.0681** (z 1.971), AR(2) p 0.250, Hansen p 0.179, N=810, 35 instruments, lagged DV 0.914-0.933 are correct.",
+     "quote": "L.AI Capability Index (Flow-based) 0.0693*** 0.0654*** 0.0684*** 0.0708** 0.0716** 0.0681**",
+     "locator": "Table 11, p.15"
+    }
+   ],
+   "problems": "One correction (GMM flow range). Record's '(about 80 specs)' count is not found in the text. Narrow-index description 'AI-hardware-only' may overstate how narrow it is. Otherwise faithful to the text."
+  }
  },
  {
   "idx": "881",
@@ -7404,7 +8273,21 @@
    "verified": 9,
    "checked": 10
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 8
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Eligible only on the author's label: own OLS/FGLS/HDFE estimation, 10 SSA economies (AI needs 3), outcomes labour productivity growth and sales growth. The 'AI index' is an MCA index of four innovation items (new products, organisational structure, time for ideas, R&D funds), not an AI measure, so the paper is borderline on the 'exposure is AI' criterion; keep it in only with the exposure flagged as a proxy and consider a sensitivity exclusion.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers found; every table value cited in the record matches the text. Points to carry: (1) The Table 4 caption says robust OLS while the text says column (1) is FGLS. (2) The converted text loses minus signs, so the record's directions for country and size results rest on the narrative text, not the tables; the text contradicts the tables in places (Kenya, Ethiopia, South Africa, micro HDFE). (3) The record says Table 1 'minimums/signs unclear'; this is right (AI index min 1.441 and IA min 1.622 are printed unsigned). (4) Table 13 cols (1)-(2) vs Table 4 col (1) give very different AI coefficients on the same N, which the record notes only as 'not comparable'. (5) Reviewers do ask for justification of the AI index and for formulas, as the record says; the record's page range for reviewer reports (pp.18-21) is right."
+  }
  },
  {
   "idx": "925",
@@ -7809,7 +8692,21 @@
    "verified": 8,
    "checked": 12
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 10
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation, 17 economies across four income groups with an explicit income-group comparison, ICT exposure (internet, broadband, ICT exports index) and outcomes labour informality (labour market) and labour productivity (output). The green index and DIGI x GREEN interaction are not eligible exposures, but the DIGI main effect is.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers. The text contains revision-round residue ('requested in Round 3', 'the reviewer's concern'), which does not change the numbers. The Conclusions' wording ('holds specifically and strongly', 'robustly and positively synergistic') is stronger than the results and Section 5.4, as the record says. The record's 'DIGI x GREEN lower-middle subgroup uses 60 obs, entity FE only' is correct (Table 6 note). Labour productivity in Model 5 is a level, not growth, as recorded."
+  }
  },
  {
   "idx": "954",
@@ -8054,7 +8951,32 @@
    "verified": 8,
    "checked": 8
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 7,
+    "unverifiable": 1
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own system-GMM estimation, 32 economies (18 OECD, 14 MENA), exposures internet, mobile, fixed telephone and ICT imports, outcome GDP growth (output). Eligible, although the dependent variable is inconsistently defined (see problems).",
+   "risk_of_bias_overall_opinion": "too_lenient",
+   "sample_corrections": {
+    "income_groups_covered": "The paper gives no World Bank income classification and no income-group results; comparison is by region only. The record's 'no low-income' is not supported by the text (Syria is on the MENA list and is World Bank low-income by external classification), and its remark on OECD members being 'high/upper-middle' is not from the paper."
+   },
+   "corrections": [
+    {
+     "n": 8,
+     "verdict": "unverifiable",
+     "correction": "The OECD direct internet coefficient is not in Table 5 (blank INTERNET row, three columns) while the text says all OECD ICT effects but mobile are positive and significant. Direction should be recorded as not reported / unverifiable, not 'mixed'. Table 7 spec 4 INTERNET 0.01659737*** is the coefficient at CAPH=0 in an interaction model and is not a direct effect; Table 9 spec 3 INTERNET 0.00759160* (p=0.068) is likewise conditional.",
+     "quote": "the effect of all the variables mapping information and communication technologies (ICTs) is positive and significant, with the exception of the variable of mobile telephony",
+     "locator": "Section 3.1 p.21; Table 5 p.22"
+    }
+   ],
+   "problems": "No invented numbers. Issues to carry: (1) 'two-step' in the record's estimator cannot be confirmed because the Table 5 note is truncated ('stage Generalized Method of Moments'). (2) The record's country lists, years and observation counts (156, 73) are right; the text says the model includes both country and year effects, with no coefficients shown. (3) The record places OECD under 'high income' and states no low-income economies; the paper does not classify income. (4) Direction 'mixed' for result 8 should be 'not reported'. (5) Text claim 'OECD fixed telephone, internet, mobile all positive in interaction with credit' is true only at 10 percent for fixed telephone (p=0.091)."
+  }
  },
  {
   "idx": "988",
@@ -8163,7 +9085,31 @@
    "verified": 4,
    "checked": 7
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation, 27 EU members plus the EU aggregate (28 units), ICT exposure via the DESI composite, outcome TFP (productivity). Meets the at-least-10-economies rule; no income-group comparison is needed.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "income_groups_covered": "The paper gives no income classification; the record's 'high' is the extractor's inference (EU members, mostly high-income by external classification)."
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Numbers are right (0.093 in col 3 to 0.040 in col 4, institutions 0.033, t 1.95, 10 percent), but this is a control-sensitivity result, not heterogeneity: there is no interaction, subgroup or threshold. Reclassify as sensitivity to adding the Economic Freedom index.",
+     "quote": "the coefficient of institutional index has a small economic value (0.033) and the minimum acceptable value of statistical significance",
+     "locator": "Section 5 p.12; Table 2 col (4)"
+    }
+   ],
+   "problems": "The record's statement 'Some table inconsistencies (Table 1 vs Table 2 constants)' is not supported: Table 1 lnTFP column and Table 2 col (1) give identical coefficients and constant (4.941). The only different constant is for the TFP_ind column in Table 1 (-1.373), which has a different dependent variable. Other facts check out: 168 observations, 28 units, 140 observations in FE-AR models, rho_ar values. The Table 3 col (1) header says Durbin-Watson test but it reports rho_ar, so it is an AR(1) FE estimator."
+  }
  },
  {
   "idx": "1013",
@@ -8272,7 +9218,21 @@
    "verified": 1,
    "checked": 2
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own CS-ARDL estimation; exposure is AI (VC investment in AI); 8 economies meets the 3-economy AI threshold; outcome is HDI (living standards beyond income). Eligible, though the AI measure is internally inconsistent (see problems).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Internal inconsistencies in the paper rather than in the record: (a) methodology says robot installations are the AI indicator but Table I says VC investment in AI (OECD); (b) conclusion says 'G7 countries' but lists China, India, South Korea; (c) Table IV caption repeats 'Cross-sectional Dependency Test' and its star legend is reversed ('*, ** and *** represent 1%, %5 and 10%'); (d) abstract says short-run relationships analysed but only long-run is in Table V; (e) in Equation 2 and 3 the PCI/INF terms are inconsistently included (Model 3 has no PCI). Record is otherwise accurate; no invented content found."
+  }
  },
  {
   "idx": "1025",
@@ -8390,7 +9350,23 @@
    "verified": 1,
    "checked": 1
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Borderline but acceptable: ICT-capital contributions are taken from Timmer et al. (2003), but the author performs own kernel-density, Li bootstrap and Silverman tests on 15 developed economies; outcome is labour productivity. No regression estimate of an ICT effect.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "15 (US plus 14 EU countries; Table 1 also prints an 'European Union' aggregate row that is not a country). Printed unweighted averages recompute to the 14 non-US rows (non-ICT about 0.79, TFP about 1.07, GDP per hour about 2.18), not the 15-country mean, so the record's description of the average as a 15-country mean is not supported by the table."
+   },
+   "corrections": [],
+   "problems": "No invented content. Minor points: the Table 1 'unweighted average' row does not recompute as a 15-country mean (see sample_corrections); the 'European Union' row in Table 1 is an aggregate; the text sentence about Li-test power at p=0.2480 is garbled and contradicts the surrounding 'not significant' reading; footnote 5 on the rule-of-thumb bandwidth is on p.29 as the record says."
+  }
  },
  {
   "idx": "1026",
@@ -8529,7 +9505,32 @@
    "verified": 1,
    "checked": 12
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 4,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Borderline on exposure: the AI measure is industrial robot stock per million employees, and the author states findings are about industrial automation rather than AI broadly (AI-patent stock only in a robustness row). Kept because it is framed and tested as AI; 64 economies, own FE/GMM estimation, outcome energy poverty (living standards/resource cost). Reviewer may wish to flag as robot-proxy.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "income_groups_covered": "Paper states high (28), upper-middle (24), lower-middle (12), no low-income. However, by usual World Bank classification the Appendix A list appears to contain well over 28 high-income economies (e.g. about 38 by my count of Belgium, Canada, Chile, ..., US); the 28/24/12 split cannot be reconciled from the printed list, so treat the income counts as unverified."
+   },
+   "corrections": [
+    {
+     "n": 3,
+     "verdict": "corrected",
+     "correction": "Table 10 lists seven alternative specifications (patent stock, electricity access, excluding oil exporters, excluding 2008-10, 2SLS, Bartik, spatial lag) plus the baseline row, not eight separate checks; the text nevertheless says eight. Ranges 0.0420 to 0.0552, -0.0034 to -0.0048 and TP 5.75 to 6.18 are correct for the seven. Significance for patent stock (*) and spatial lag (*) is only 10%, while the table note says the Lind-Mehlum test rejects at 5% for all rows and no test statistics are shown.",
+     "quote": "We subject our findings to eight robustness tests, each addressing a specific econometric concern.",
+     "locator": "Section 4.5 p.16; Table 10 p.17"
+    }
+   ],
+   "problems": "Record is accurate on all checked numbers. Additional issues in the paper: Table 7 text marginal effects do not reproduce from the table (record already notes this); Table 10 note says the inverted-U is confirmed at 5% for all rows although several coefficients are only significant at 10% and no Lind-Mehlum statistics are shown; the introduction describes the index as three components while Table 4 lists four; Appendix A says fewer than 10 SSA countries but the list has only South Africa; and the income-group counts (28/24/12) look inconsistent with the printed list. The record's statement 'all eight reported checks' should read seven alternative specifications plus baseline."
+  }
  },
  {
   "idx": "1031",
@@ -8710,7 +9711,38 @@
    "verified": 6,
    "checked": 9
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 9,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 1,
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "26 SSA economies, own PMG/ARDL estimation, ICT (internet, mobile, fixed line, index) as exposure, sector value-added shares as outcomes (structural change/output). Eligible, although the ICT index is not a reliable measure of exposure.",
+   "risk_of_bias_overall_opinion": "too_lenient",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 10,
+     "verdict": "corrected",
+     "correction": "Agriculture short-run LNTO in Table 9 is 0.0940, 0.1066, 0.0768, 0.1232* so the range is 0.0768 to 0.1232 (record says 0.0940 to 0.1232); SE 0.0701 to 0.1445 is right. Not all insignificant: col 4 LNTO is significant at 10%, services short-run TO -0.0814* (Table 11 col 1), and control variables (FDI, labour) are significant in places. Overall 'largely insignificant' for ICT and interactions holds.",
+     "quote": "trade openness, ICT variables, and their interactions are largely insignificant",
+     "locator": "text p.115 (record cites p.114); Tables 9-11 short-run rows"
+    },
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "Negative significant interactions are TO_IUI, TO_MCS, TO_ICTINF only; TO_FTS in Tables 10-11 is +0.0026 {0.0019}, insignificant, although the text says all four are negative and significant. In agriculture interactions are insignificant or positive (TO_FTS). No ICT-level or openness-level threshold is computed.",
+     "quote": "each 1% increase in openness lowers ICT's contribution to service growth by 0.03%-0.06%",
+     "locator": "p.117; Tables 10-11"
+    }
+   ],
+   "problems": "Record is accurate on printed values. Issues beyond the record: (a) Table 10/11 columns 2-4 duplication and the identical control blocks in columns 2 and 4 of Tables 9-11 indicate copy-paste or generation errors, so sector attribution of printed results is unreliable; (b) text says all four interactions are negative and significant but TO_FTS is not; (c) text says 0.13-0.18 for agriculture LNTO while the table range is 0.09-0.18; (d) record locators: the 'largely insignificant' sentence is on p.115 and the ICT_INF 0.26 text is on p.115 (industry) and p.116 (services), not p.114 and p.116/117; (e) mixed I(0)/I(1) variables are not by themselves a problem for PMG/ARDL, so the record's point is weaker than stated, but I(0) dependent variables with ln of non-positive minima (Table 3) are."
+  }
  },
  {
   "idx": "1090",
@@ -8979,7 +10011,23 @@
    "verified": 5,
    "checked": 6
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own cross-sectional OLS on 121 economies with an explicit developing vs developed split; exposure is the Network Readiness Index (ICT in general); outcome is real GDP per capita growth. All criteria met, although the exposure is a composite index.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "unit": "country (single 2023 cross-section; not country-year)"
+   },
+   "corrections": [],
+   "problems": "No invented numbers found. Minor: the record's unit 'country-year' is a single cross-section. The FDI row (result 4) is a control, not an ICT exposure, and should not be used as an ICT result."
+  }
  },
  {
   "idx": "1354",
@@ -9163,7 +10211,21 @@
    "verified": 2,
    "checked": 2
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own Tobit estimation; exposure is internet (survey indices of virtual social network use and internet use in schools); 57 named developing economies; outcome is poverty headcount. Criteria met, although the exposure is a perception-based survey index and the effective number of distinct countries in the 43 regression observations is not reported.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers found. The record is faithful to Table 1 and the appendices. Only the income composition remark is unsupported by the text. Interaction interpretation: the technology marginal effect is 18.257 - 33.506 x Gini, so it turns negative only above a Gini of about 0.545, above the sample mean of 0.501."
+  }
  },
  {
   "idx": "1419",
@@ -9299,7 +10361,23 @@
    "verified": 8,
    "checked": 8
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own OLS and quantile regressions on 93 developing countries (73/67 used); exposure is mobile phone use for bill payment and money transfer (mobile); outcomes are quality of growth, Gini and poverty. Criteria met.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "unit": "country (single cross-section: mobile banking 2011; outcomes and controls 2005-2011 average; not country-year)"
+   },
+   "corrections": [],
+   "problems": "No invented numbers found. Unsupported detail: the record says the exposure data are 'World Bank/Findex-based'; the text only says Mohseni-Cheraghlou (2013), published by the World Bank, and never mentions Findex. The record's note on the odd poverty summary statistics (max 28.127 equals the inequality minimum) is correct and bears on the poverty results, which should be treated as unreliable. The authors disclaim causality ('we can only infer correlations') yet say mobile banking 'would increase (decrease)' outcomes, hence mixed causal language."
+  }
  },
  {
   "idx": "1428",
@@ -9436,7 +10514,37 @@
    "verified": 5,
    "checked": 5
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 4,
+    "corrected": 2
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": false,
+   "eligibility_note": "Own panel cointegration (AMG) and Granger estimation, 11 economies, mobile and internet exposure: those criteria hold. The outcomes, though, are the IMF financial institutions access index (bank branches and ATMs per 100,000 adults) and financial markets access index (market capitalisation outside the top 10 firms, number of debt issuers). These are financial-sector supply and depth measures, not output, labour, poverty or distribution, or living standards beyond income; poverty is only mentioned as a motivation and never estimated. Judgement call: exclude unless financial inclusion is accepted under 'living standards beyond income'.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 5,
+     "verdict": "corrected",
+     "correction": "Stated FIA numbers are right (Mobile to FIA: Hungary 0.000899, Latvia 0.0070361, Lithuania, Poland, Slovenia positive; Czech Republic -0.0014063; Internet to FIA: Latvia -0.015668). But the entry claims 11 countries x 2 outcomes x 2 exposures and omits the FMA country results: Mobile to FMA positive in Bulgaria, Croatia (10%), Hungary and negative in Czech Republic and Poland (10%); Internet to FMA positive in Latvia (5%) and Slovenia (0.0168589, 1%).",
+     "quote": "mobile cellular subscriptions positively affect financial markets access in Bulgaria, Croatia, and Hungary and negatively in the Czech Republic and Poland",
+     "locator": "p.734; Table 7b"
+    },
+    {
+     "n": 6,
+     "verdict": "corrected",
+     "correction": "Statistics and p-values are right (DMOBILE to DFIA W 4.77462, Zbar 2.93274, p 0.0034; DINTERNET to DFIA Zbar 2.07345, p 0.0381; DFIA to DINTERNET Zbar 1.97332, p 0.0485; FMA links p 0.2617 to 0.9447). However, a Dumitrescu-Hurlin test has no sign, so direction 'positive' is unsupported; it should be 'not signed (Granger predictive causality in first differences)'. Horizon is short-run (differences), not contemporaneous.",
+     "quote": "one-way causality mobile cellular subscriptions to financial institutions access and a two-way interaction between rate of individuals using the Internet and financial institutions access",
+     "locator": "Table 8 and text, p.734"
+    }
+   ],
+   "problems": "No invented numbers found. Eligibility is doubtful because the outcomes are financial-sector indices (see note). Record corrections: direction 'positive' for the Granger entry has no basis, and the country-level entry omits the FMA results. The record's statement that cointegration is 'rejected only weakly' in Model 1 is correct (Zf p = 0.091, Zt p = 0.009 for no break)."
+  }
  },
  {
   "idx": "1438",
@@ -9561,7 +10669,21 @@
    "verified": 2,
    "checked": 3
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own dynamic panel GMM estimation; internet users and mobile subscriptions as ICT exposure; 27 EU economies (>=10); outcome is log GDP per capita (output). All criteria hold.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers found. Record matches the text on all coefficients, t-stats, diagnostics and instrument counts. Minor: the record says Table 2 lnIU/lnMS scales look inconsistent with per-hundred variables (true: lnIU max 1.99, lnMS mean 6.90). Text itself says GMM is 'Two-Step Difference GMM' (Table 4 note) while Sec. 3 cites Blundell-Bond; record follows Table 4. Authors' conclusion that ICT positively affects growth rests on Models 1 and 3 only; the Model 4 conditional mobile effect at mean trade is negative (derived)."
+  }
  },
  {
   "idx": "1448",
@@ -9682,7 +10804,21 @@
    "verified": 5,
    "checked": 5
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own random-effects panel estimation; ICT exposure (fixed telephone, mobile, internet, fixed broadband); exactly 10 economies, which meets the >=10 threshold; outcome is GDP growth (output).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers. Additional text inconsistencies the record only partly covers: Sec. 4.2 states the fixed telephone coefficient is -0.8696 while Table 6 and Eq. 3 give -0.028045; the broadband paragraph says growth 'will increase by -0.023510'; the discussion says each ICT variable 'has a negative effect' (including broadband, whose coefficient is positive) and then that it will 'not have an impact'. Authors treat 'no significant effect' as the finding (abstract and conclusion). Table 6 row labelled 'Economic growth (EG) 8.421' is the constant. Record observation counts are inference only."
+  }
  },
  {
   "idx": "1469",
@@ -9856,7 +10992,21 @@
    "verified": 5,
    "checked": 13
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 8
+   },
+   "heterogeneity": {
+    "confirmed": 4
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own estimation (Driscoll-Kraay FE, quantile, system GMM); mobile and internet exposure; 64 economies; outcome is male/female gross enrolment ratio (education, living standards beyond income). No explicit income-group comparison but the economy threshold is met.",
+   "risk_of_bias_overall_opinion": "too_harsh",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers; all 8 results and 4 heterogeneity items match the tables. Items the record does not mention: (1) Figures 2-5 label countries (e.g. AFG, LBR, MWI, SOM, PNG, PRK, STP, LBN) that are absent from the Appendix A list, so the sample composition is not fully consistent with the stated 64. (2) Table 7 AR(1) p-values (0.099, 0.084) are not significant at 5% for the primary-education columns. (3) The text reports GDP growth minimum as -0.46% while Table 1 gives -46.082 (record notes this). (4) Record's 'Section 3 p.4' and 'Table 1 p.5' locators are correct."
+  }
  },
  {
   "idx": "1485",
@@ -10065,14 +11215,40 @@
    "verified": 4,
    "checked": 8
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "corrected": 1,
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own dynamic panel threshold / system GMM estimation; exposure is a composite digital index built from internet, mobile, digital payments, secure servers plus tertiary enrolment and years of schooling (ICT in general, though it partly mixes in human capital); 45 economies; outcome is Gini and Theil (distribution).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "economies_or_groups": "Appendix A lists China (East Asia and Pacific: China, Indonesia, Malaysia, Mongolia, Philippines, Thailand, Vietnam); the record wrongly says China is absent. India is absent. Regional counts 12/7/14/12 are correct.",
+    "years": "2000-2023 stated, but 1,035 observations = 45 x 23 (Table 4), not 45 x 24; unexplained."
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Threshold 0.48 (Gini) and about 0.50 (Theil) are right, but the claim that 'roughly half the sample-years are in each regime' is the extractor's inference: regime counts are not reported, and a mean DIG of 0.458 (Table 4) would put somewhat more than half below 0.48 if the distribution were symmetric. Remove that sentence.",
+     "quote": "at low-to-moderate levels of digitalization (index <= 0.48), technological advancement exacerbates income disparity",
+     "locator": "Abstract; Table 5 p.59"
+    }
+   ],
+   "problems": "Record error: it says China is absent from the sample, but China is listed in Appendix A (India is the one missing). Record phrase 'Mean years of schooling is 15+ in Table 1 and 25+ in Appendix B' refers to the population age group (aged 15+ vs aged 25+), not the schooling values; Table 4 gives CAP mean 7.82, max 13.00. The signs of Table 6 and 7 coefficients are lost in the converted text; record correctly flags that signs come from the prose. The record's claim that Schutz (1951) does not support the 'sensitive to middle/tails' statement cannot be verified from the paper text. Record locators for regime results cite p.60; Sec. 4.3.1 itself is on p.59. Otherwise numbers (Table 4 obs 1,035; Hansen 0.281/0.315, AR(2) 0.654/0.589; Theil Hansen 0.258 to 0.315) match."
+  }
  },
  {
   "idx": "1495",
   "title": "Modelling the Effect of Digital Financial Inclusion on Income Inequality in Developing Countries",
-  "fulltext_decision": "include",
-  "exclusion_reason": "none",
-  "decision_rationale": "Provisional include: panel regression of Gini on mobile banking, e-wallet and digital credit in developing countries (family 4). Eligibility is uncertain because the number of economies is not reported (Table 1 shows 30 rows only) and e-wallet/digital credit are fintech rather than clearly ICT/mobile telephony.",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E1",
+  "decision_rationale": "Number of economies never stated (only 'several developing countries'); no income-group comparison, so the sample criterion is not shown to be met. Reclassified from include after the second-pass check. Reversible: a human reviewer should confirm.",
   "stream": "H",
   "technology": [
    "mobile banking / digital financial services (mobile banking users, e-wallet transactions, digital credit)"
@@ -10180,7 +11356,21 @@
    "verified": 10,
    "checked": 10
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": false,
+   "eligibility_note": "Eligibility not established. The text never gives the number of economies (only 'several developing countries'; Table 1 is a 30-row country-year excerpt showing India, Indonesia, Kenya), so the 10-economy threshold cannot be shown, and 'developing countries' pooled is not an income-group comparison. Table 1 shows only illustrative rows and no data appendix, so it is also doubtful that the regressions were run on a documented sample. Mobile banking can count as mobile, but e-wallet value and digital credit are fintech. Recommend exclusion or, at most, a flagged borderline include.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "(1) The record's selective-reporting argument that the significance column is inconsistent with coefficient/SE ratios is not supported: -0.25/0.08 (t about 3.1), -0.19/0.07 (about 2.7) and -0.22/0.06 (about 3.7) are all consistent with significance at the printed 0.05 or 0.01 levels if that column is a threshold; the column is simply unlabelled. (2) Record omits an internal contradiction in the text: it says mobile banking and e-wallets play a bigger role than digital credit, but Table 4 gives e-wallet -0.19, smaller in magnitude than digital credit -0.22. (3) The record is otherwise faithful: n_economies, years 2015-2023, controls and estimator are correctly described as unreported or inconsistent."
+  }
  },
  {
   "idx": "1497",
@@ -10554,7 +11744,25 @@
    "verified": 2,
    "checked": 14
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 7
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own OLS estimation; AI exposure (task-based, potential not actual adoption); 23 OECD countries (>=3 for AI); labour-market outcomes (employment, hours, part-time share). Eligible. Income coverage is almost all high income with Mexico; no income-group comparison.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "unit": "country x 2-digit ISCO-08 occupation cells (record's 'industry-country' label is wrong; text says 'country-occupation cell'); 36 occupations after excluding IT professionals and technicians (footnote 24); 822 cells in Table 2 (a few cells missing, footnote 25)",
+    "years": "Outcomes 2012-2019; exposure measured in 2012, but PIAAC-based task data are from 2012 except Hungary (2017), Lithuania (2014), Mexico (2017) (footnote 53); AI progress 2010-2015",
+    "n_economies": "23 for employment; 22 for hours and part-time (Mexico excluded, Table 4 note)"
+   },
+   "corrections": [],
+   "problems": "Minor: record labels the unit 'industry-country' in the sample field though it later says occupation cells. The statement that employment counts are not adjusted for sampling error is not found in footnote 37 (it only describes sources and ISCO mapping) and is unverifiable. The record's direction 'mixed' for result 1 and 'positive' for result 4 reflect different samples (all occupations versus high computer use), which is consistent with the text. No invented numbers found."
+  }
  },
  {
   "idx": "1551",
@@ -10821,7 +12029,24 @@
    "verified": 5,
    "checked": 6
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own System-GMM estimation; AI Index exposure; 29 countries (>=3 for AI); employment-to-population ratio is a labour-market outcome. Eligible. Table A1 lists 29 countries; no income-group comparison.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "2017-2021 (balanced 145 observations; 116 used in GMM, Table 5)",
+    "income_groups_covered": "Text says 23 developed and 6 developing; Table A1 includes Brazil, China, India, Malaysia, Russia, Turkiye; no low-income country"
+   },
+   "corrections": [],
+   "problems": "None invented; all numbers match Table 5, Table 3 and Table A1. Record's description of AI index as 'composite of 23 indicators' is consistent with Table A2 (16 R&D, 7 economy, including per capita variants), though the paper does not explain how the index is aggregated. Record's remark that the 'Hansen test is not reported' is correct; the paper justifies using Sargan instead."
+  }
  },
  {
   "idx": "1595",
@@ -10995,7 +12220,24 @@
    "verified": 4,
    "checked": 4
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 2
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own correlation/regression on a 300-firm survey in 3 economies (India, Nigeria, Egypt), meeting the 3-economy AI threshold; outcomes are productivity improvement and revenue growth (output/productivity). Formally eligible but evidence quality is very poor. No income-group comparison; income class is not stated in the paper.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "not reported; survey date not given (paper received 28 Oct 2025)",
+    "n_economies": "3 (India, Nigeria, Egypt, at least 100 firms each; Sec 3.2); Sec 1.4 separately refers to Sub-Saharan Africa, Southeast Asia and Latin America"
+   },
+   "corrections": [],
+   "problems": "None invented. Additional inconsistency not in the record: the text's 60%/65% 'variance explained' is inconsistent with the reported Pearson r (0.85 and 0.88 give r-squared of 0.72 and 0.77). Also, Table 1 (n=10, mean revenue growth 10.30, min 2, max 22) looks like a 10-row table rather than the 300-firm sample. Customer engagement results (r=0.82, 70%) exist in the text but are not extracted; that is acceptable since the outcome is not among the eligible families."
+  }
  },
  {
   "idx": "1645",
@@ -11093,7 +12335,21 @@
    "verified": 7,
    "checked": 7
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 1
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Marginal pass. Crypto exposure, 15 economies and a financial-inclusion outcome (living standards beyond income) are stated, and the paper claims own regression/SEM estimation (Python, lavaan) with R2/MSE/AIC in Table 1. But the whole Methodology is written in future tense ('will be used'), no sample size, country list or coefficient is shown, so whether any estimation is actually reported rests only on Table 1 fit statistics. Keep as included-with-critical-risk, flag as possibly non-extractable.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Nothing invented or contradicting the text; the record is faithful and already flags the weaknesses. Extra points: Table 1 compares model fit while the text says R2 0.85 refers to adoption (Eq.1) and 0.88 to inclusion (Eq.2), so the two columns are not comparable on one outcome as the paper implies; SEM and regression R2 are in-sample; 'World Reports' (p.54) is given as a source in Data Collection but 'World Bank, IMF and CoinGecko' in Results."
+  }
  },
  {
   "idx": "1646",
@@ -11288,7 +12544,30 @@
    "verified": 7,
    "checked": 8
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 4,
+    "corrected": 1
+   },
+   "heterogeneity": {},
+   "eligibility_ok": true,
+   "eligibility_note": "Meets criteria: crypto exposure (Bitcoin/Ethereum returns and volume), 14 economies, own GM-FMOLS/Pedroni/Dumitrescu-Hurlin estimation, output (real GDP growth) outcome. Caveat: exposure is a global market series common to all countries, not country-level adoption.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "2015Q3-2023Q3. The paper says '32 quarters' (Section 3 and Table 5 note: T = 32, N = 14, 448 obs) but Q3 2015 to Q3 2023 is 33 quarters and Table 2 reports 462 observations (14 x 33). The paper is internally inconsistent; use 33 quarters/462 obs for the descriptive and regression sample.",
+    "economies_or_groups": "14 countries; text names Australia, Canada, China, Colombia, Indonesia, South Africa, United States, Saudi Arabia (pp.411); remaining six not listed in main text - record is correct."
+   },
+   "corrections": [
+    {
+     "n": 5,
+     "verdict": "corrected",
+     "correction": "Directions are right but the record says no statistics are available; Appendix A (p.421, after references) does give Dumitrescu-Hurlin W-bar/Z-bar/p: BTCV not-> GDP W=2.8560, Z=4.1476, p=0.0000; GDP not-> BTCV W=43.0501, Z=97.7028, p=0.0000 (bidirectional); GDP not-> ETHR W=0.1131, Z=-2.2369, p=0.0253 (GDP -> ETHR); GDP not-> ETHV W=18.6639, Z=40.9420, p=0.0000. Two lags. No BTCR-GDP or ETHR/ETHV-to-GDP link appears in Appendix A, so the abstract's 'strong bi- and unidirectional causality ... for all cryptocurrency proxies' overstates it: the only crypto-to-GDP direction is BTCV. Several 'significant' links (e.g. GDP -> ETHR) rest on W-bar below 1 and a negative Z-bar, which is not a standard upper-tail rejection.",
+     "quote": "BTCV ⇏ GDP 2.8560 4.1476 0.0000* BTCV ↔ GDP"
+    }
+   ],
+   "problems": "Record is accurate on numbers. Only issues: (a) '32 quarters' repeats a paper inconsistency (33 quarters, 462 obs per Table 2); (b) Granger statistics are available in Appendix A, so 'no statistics' is wrong; (c) the paper claims GM-FMOLS includes 'common time dummies' (p.414) while the equations and Table 7 show only country intercepts - the record's 'no year effects' reading is consistent with the equations."
+  }
  },
  {
   "idx": "1670",
@@ -11408,7 +12687,33 @@
    "verified": 0,
    "checked": 10
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "unverifiable": 2,
+    "confirmed": 3
+   },
+   "heterogeneity": {},
+   "eligibility_ok": true,
+   "eligibility_note": "Meets criteria: mobile phone subscriptions (ITU), 32 African countries, own SEM estimation, GDP per capita growth outcome. Caveat: the headline exposure is financial inclusion; mobile is a mediator, and the text reports only significance of the MOBILE -> GDPPCGR path, with coefficients only in Figure 2 (image, not in the text).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "unverifiable",
+     "correction": "Text states only that the path is significant; no sign, coefficient or SE appears in the text (Figure 2 is an image). The direction label 'mixed' is a placeholder and should read 'positive/negative not stated'. Table 2 simple correlation MOBILE-GDPPCGR is -0.219798 (record's -0.2198 is right), which if anything points negative.",
+     "quote": "we found mobile diffusion influences economic growth given that the path MOBILE → GDPPCGR is significant"
+    },
+    {
+     "n": 3,
+     "verdict": "unverifiable",
+     "correction": "Text says the indirect path is significant but gives no sign or size; 'positive' is inferred by the record (and acknowledged in its own evidence field). FII -> MOBILE is described as a 'significant positive effect' in the Discussion, but the MOBILE -> growth sign is unstated, so the product sign is unknown.",
+     "quote": "an indirect relationship from financial inclusion through mobile diffusion to economic growth with the significant path"
+    }
+   ],
+   "problems": "Record faithful. The two flagged 'positive'/'mixed' labels in results 1 and 3 are not supported by any sign in the text and should not feed a pooled direction count. Abstract says the results show 'financial inclusion affects economic growth via mobile phones' while the text says the direct path is insignificant and the indirect sign is unstated."
+  }
  },
  {
   "idx": "1679",
@@ -11605,7 +12910,24 @@
    "verified": 5,
    "checked": 6
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 12
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Meets criteria: 3G mobile internet coverage, 14 developing economies (Table C3) spanning low to upper-middle income, own IV/OLS estimation, labour-market and sectoral-structure outcomes.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "Final sample runs 2000-2015 (33 country-year rounds listed in Table C3 across 14 countries; Mexico 2005, South Africa 2011 and 2016 have no regions in the final sample, so 30 country-years enter). 3G maps cover 2006-2017 (Section 2.2), intro says 2006-2015. Record's year text is acceptable.",
+    "income_groups_covered": "Low, lower-middle and upper-middle are asserted in the text (p.7); text cites Rwanda as a low-income example but Rwanda is not in Table C3, so the country-based claim is only partly traceable. Table C3 gives 2015 GDP per capita (Uganda 847 to Costa Rica 11,643), no group labels; no high-income country."
+   },
+   "corrections": [],
+   "problems": "No invented or mismatched content found; all 12 results match Tables 2, 3, B1 and B2. Minor text inconsistencies in the paper not mentioned in the record: Appendix C.1 says the sample is restricted to ages 18-24 whereas Section 2.1 says 18-65; the text names Rwanda among low-income countries but Rwanda is absent from Table C3; Section 2.2 gives 3G maps for 2006-2017 while the Introduction says 2006-2015."
+  }
  },
  {
   "idx": "1706",
@@ -11816,7 +13138,33 @@
    "verified": 4,
    "checked": 4
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own quantitative estimation (DEA Kumar-Russell decomposition, Simar-Wilson bootstrap, Maasoumi-Racine entropy test) on 14 OECD economies; exposure is ICT capital stock (EU KLEMS); outcome is labour productivity growth. Meets the 10-economy rule. Descriptive/non-regression design but still own estimation, so eligible.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "14 (confirmed)",
+    "years": "1995-2005 (confirmed; two end-point comparison)",
+    "income_groups_covered": "Not reported by the paper; all OECD members incl. Korea, Czech Republic, Portugal (record's 'mostly high-income' is the reviewer's inference, not in the text)",
+    "economies_or_groups": "Record's list of 14 is consistent with the countries named in Sec 4.1 (Fig. 1 holds the full set); no correction"
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Supported as descriptive remarks, but the Finland +20% TFP figure is from the m1 (aggregate capital) decomposition, not from the ICT-separated model m2; the Korea/Japan ICT-producing vs ICT-usage remark is from the m2 EFF discussion (p.16); the US 'marginally' hit by negative TECH is m2 (p.14, p.17).",
+     "quote": "Finland showed the highest TFP growth (+20%) (Sec 4.1, p.12); The USA is the only national economy that marginally suffered from the negative effect of TECH (p.14)"
+    }
+   ],
+   "problems": "No invented numbers found. Minor: (a) heterogeneity item 1 mixes m1 and m2 results (see above); (b) record omits the internal inconsistency between text ('Spearman coefficients ... above 0.53') and Table 2 (0.43, 0.47, 0.47, 0.49); (c) the text file still contains a leftover author draft note after Eq. (1); (d) record states Table 3 evidence at 'p.26', which is correct (printed page 26)."
+  }
  },
  {
   "idx": "1734",
@@ -12064,7 +13412,26 @@
    "verified": 6,
    "checked": 7
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own GMM estimation of a four-factor nested CES production function on 14 OECD economies; exposure is ICT equipment capital and its rental price (EU KLEMS); outcome is the skill premium (distribution/labour market). Meets the 10-economy rule.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "14 (confirmed)",
+    "years": "1970-2005, unbalanced (confirmed); estimation uses five-year differences",
+    "unit": "Record says 'industry-country'; the text aggregates to two sectors per country (goods and services, 17 and 13 industries aggregated), so the unit is country-sector-year (682 obs, Sec 4.1). Footnote 7 lists 5 and 9 broad categories, inconsistent with the 17/13 industries in the main text.",
+    "income_groups_covered": "Paper gives no income classification; all 14 are OECD (record's 'high only' is a reasonable inference)"
+   },
+   "corrections": [],
+   "problems": "No invented numbers found. Minor: unit mislabelled 'industry-country' (data are country x two sectors); record says no first-stage or overidentification statistics 'in the main text', in fact none appear anywhere in the paper; R3 omits the three partially aligned service sectors; abstract's 'most of the changes' claim rests on fit that the paper itself says is obtained by choosing trend orders to fit the data (p.12, fn 9)."
+  }
  },
  {
   "idx": "1773",
@@ -12247,7 +13614,34 @@
    "verified": 9,
    "checked": 9
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "corrected": 1,
+    "confirmed": 2
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own system-GMM estimation on 42 sub-Saharan African countries; exposure is internet users (% of population); outcome is a supply-side financial inclusion index (bank branches and ATMs per km2 and per 100,000 adults). Meets the 10-economy rule. Borderline on outcome: branch/ATM density is a financial-access measure and fits 'living standards beyond income' only loosely; accepted as family 5 on the record's classification.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "economies_or_groups": "Country list IS given: Table A1 in the Appendix lists the 42 countries (Angola ... Zimbabwe). Record said the list is not given.",
+    "years": "Text conflicts: Sec 3.3 says 2004-2019; abstract and conclusion say 2004-2020. Table A3 reports 714 observations for governance and control variables, which equals 42 x 17 (2004-2020), not 42 x 16 = 672.",
+    "observations": "Estimation sample 426-435 observations (Tables 1-2); Table A3 non-missing counts: IFI 558, internet 686, education 671, capital 676 of 714.",
+    "income_groups_covered": "Not reported by the paper; no income-group split (record correct)"
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Table 1 internet coefficients are -0.0003 (political stability), -0.0003 (voice), 4.17e-06 (regulatory quality, p=0.979), -0.0003 (government effectiveness, p=0.021), -0.0002 (rule of law, p=0.007), -0.0005 (corruption control). Range of significant coefficients is -0.0002 to -0.0005, not -0.0003 to -0.0005. Table 2: -0.0002 (political governance, p=0.860), -0.001 (economic, institutional, general). All p-values in the record are otherwise correct.",
+     "quote": "Internet (INTERNET) -0.0003*** -0.0003*** 4.17e-06 -0.0003** -0.0002*** -0.0005*** (Table 1)"
+    }
+   ],
+   "problems": "Record errors: (1) says country list not in text, but Table A1 lists all 42; (2) Table 1 internet coefficient range misstated (rule of law is -0.0002); (3) '672 possible' observations should be 714 (Table A3), consistent with 2004-2020; (4) '2.5 at the edge of the WGI range' is wrong because economic governance is a PCA composite; (5) Sargan p near 1 described as overfitting while Hansen p-values (0.37-0.75) are in the acceptable range. Direct effect coefficients are conditional on governance equal to zero, and mean governance is negative (about -0.65 to -0.76), which the paper's 1 person/'increase in internet users' wording obscures. No invented numbers found in the results."
+  }
  },
  {
   "idx": "2061",

@@ -4,8 +4,8 @@
 
 ## Full-text assessment outcome (n = 103 read)
 
-- Included: 67  |  excluded: 35  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
-- Reasons for exclusion: E1 10, E2 5, E4 20 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
+- Included: 64  |  excluded: 38  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
+- Reasons for exclusion: E1 11, E2 5, E3 1, E4 21 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
 - Post-merge adjustments are listed with reasons in `data/adjustments.json`.
 - About a third of the papers that looked eligible on the abstract failed at full text. The same attrition should be expected for the papers not yet read.
 
@@ -32,7 +32,6 @@
 | 269 | 2024 | H | ICT in general | 41 or 42 (text sta | 2000-2019 | serious | needs human check |
 | 276 | 2025 | AI | artificial intelligence | 29 | 2017-2021 (annua | serious | needs human check |
 | 285 | 2022 | H | ICT in general | 27 | 1996-2016 (subpe | moderate | ok |
-| 298 | 2005 | H | ICT in general | 23 in Table 1 (8 C | 1993/1995-2001 | serious | ok |
 | 302 | 2013 | H | ICT in general | 24 | 2000-2010 per te | serious | needs human check |
 | 320 | 2022 | H | internet; mobile telephony | 20 | 2005-2020 (16 ye | serious | needs human check |
 | 321 | 2024 | H | ICT in general | 24 | 1995-2019 | serious | ok |
@@ -51,7 +50,6 @@
 | 750 | 2025 | AI | artificial intelligence | not reported (Tabl | 2015-2020 (Brune | serious | needs human check |
 | 802 | 2015 | H | ICT in general | 22 (19 in the wage | 2011-2012 (singl | serious | ok |
 | 803 | 2020 | H | ICT capital | 11 | 1980-2005 (EU KL | moderate | ok |
-| 878 | 2025 | AI | artificial intelligence | 28 | 2020-2023 for re | serious | ok |
 | 879 | 2026 | both | artificial intelligence; ICT in general | 63 | 2005-2019 | serious | needs human check |
 | 913 | 2026 | AI | artificial intelligence | 10 | 2007-2024 (World | critical | ok |
 | 952 | 2026 | H | internet; fixed broadband | 17 (16 in pooled i | 2005-2022 | serious | needs human check |
@@ -69,7 +67,6 @@
 | 1448 | 2023 | H | mobile telephony; internet | 10 | 2001-2020 | serious | ok |
 | 1469 | 2026 | H | mobile telephony; internet | 64 | 2001-2022 (unbal | serious | needs human check |
 | 1494 | 2026 | H | ICT in general | 45 | 2000-2023 | serious | needs human check |
-| 1495 | 2025 | H | mobile banking / digital financial services | not reported (Tabl | 2015-2023 | critical | ok |
 | 1526 | 2022 | AI | artificial intelligence | 23 | 2012-2019 (chang | moderate | needs human check |
 | 1564 | 2025 | AI | artificial intelligence | 29 | 2017-2021 (balan | serious | ok |
 | 1596 | 2026 | AI | generative AI | 3 | not reported (cr | critical | ok |
@@ -87,10 +84,10 @@ Counts of reported results (a paper can contribute several), not of papers, and 
 
 | Family | Positive | Mixed | Null | Negative |
 |---|---|---|---|---|
-| 1. Output and productivity | 103 | 32 | 30 | 14 |
-| 2. Structural change | 16 | 0 | 6 | 9 |
+| 1. Output and productivity | 100 | 31 | 30 | 14 |
+| 2. Structural change | 9 | 0 | 5 | 8 |
 | 3. Labour market | 31 | 9 | 14 | 14 |
-| 4. Poverty and distribution | 16 | 8 | 5 | 12 |
+| 4. Poverty and distribution | 16 | 7 | 5 | 9 |
 | 5. Living standards beyond income | 28 | 13 | 7 | 12 |
 | 6. Resource cost | 6 | 2 | 0 | 1 |
 
@@ -98,22 +95,22 @@ Counts of reported results (a paper can contribute several), not of papers, and 
 
 | Domain | Low | Moderate | Serious | Critical |
 |---|---|---|---|---|
-| confounding reverse causation | 0 | 12 | 48 | 7 |
-| exposure measurement | 5 | 41 | 19 | 2 |
-| selection of countries years | 1 | 40 | 25 | 1 |
-| outcome measurement | 16 | 38 | 12 | 1 |
-| specification and researcher degrees of freedom | 0 | 28 | 37 | 2 |
-| selective reporting | 7 | 43 | 14 | 3 |
+| confounding reverse causation | 0 | 12 | 46 | 6 |
+| exposure measurement | 5 | 40 | 17 | 2 |
+| selection of countries years | 1 | 40 | 23 | 0 |
+| outcome measurement | 16 | 35 | 12 | 1 |
+| specification and researcher degrees of freedom | 0 | 27 | 35 | 2 |
+| selective reporting | 7 | 41 | 13 | 3 |
 
-Overall: low 0, moderate 7, serious 50, critical 10. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
+Overall: low 0, moderate 7, serious 48, critical 9. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
 
-Venue check: 32 of 67 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
+Venue check: 30 of 64 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
 
 ## Heterogeneity reported
 
-Moderators examined (counts of findings): other 69, income group 26, human capital 14, institutions 12, infrastructure 10, sector structure 9.
+Moderators examined (counts of findings): other 66, income group 25, human capital 14, institutions 12, sector structure 8, infrastructure 8.
 
-33 of 67 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
+32 of 64 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
 
 ## Papers flagged for human check
 

@@ -1,0 +1,139 @@
+[
+ {
+  "idx": "913",
+  "eligibility_ok": true,
+  "eligibility_note": "Eligible only on the author's label: own OLS/FGLS/HDFE estimation, 10 SSA economies (AI needs 3), outcomes labour productivity growth and sales growth. The 'AI index' is an MCA index of four innovation items (new products, organisational structure, time for ideas, R&D funds), not an AI measure, so the paper is borderline on the 'exposure is AI' criterion; keep it in only with the exposure flagged as a proxy and consider a sensitivity exclusion.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Coefficient 0.00702 and SE 0.00427 match Table 4 col (1) (one star, p<0.1). Note the table is titled robust OLS but the text says col (1) is FGLS.", "quote": "Table 4 column (1) presents that there is a significant positive relationship between labour productivity growth and AI.", "locator": "Section 3 p.6; Table 4 p.7"},
+   {"n": 2, "verdict": "confirmed", "correction": "0.0245 (SE 0.0316), no stars, N=11,837, matches Table 6 col (1).", "quote": "Table 6 column (1) presents that AI has an insignificant positive impact on labour productivity growth.", "locator": "p.7; Table 6 p.8"},
+   {"n": 3, "verdict": "confirmed", "correction": "0.0420*** (SE 0.0125), N=11,889 matches Table 5 col (1).", "quote": "AI 0.0420*** (0.0125)", "locator": "Table 5 col (1), p.8"},
+   {"n": 4, "verdict": "confirmed", "correction": "0.0420*** (SE 0.0108), R2 0.141 matches Table 7 col (1). The coefficient, R2, firm age (0.00116), IA index (0.0172) and foreign ownership (0.0717) are identical to Table 5 col (1); only the SEs and constant differ.", "quote": "AI 0.0420*** (0.0108)", "locator": "Table 7 col (1), p.9"},
+   {"n": 5, "verdict": "confirmed", "correction": "All four coefficients and SEs match; none carries a star. The converted text drops minus signs, so the direction of each coefficient cannot be read from the tables; the text calls large firms 'insignificant positive'.", "quote": "AI 0.0163 (0.0784) 0.0235 (0.0285) 0.0170 (0.0208) 0.0261 (0.0280)", "locator": "Table 4 cols (2)-(5), p.7"},
+   {"n": 6, "verdict": "confirmed", "correction": "Table values and significance match (Ethiopia 0.00981***, Kenya 0.00189***, Lesotho 4.36e-05**, Nigeria 0.0146***, South Africa 0.00194***; Ghana, CAR, Rwanda, Sierra Leone, Tanzania insignificant). Text gives Kenya as negative, Ethiopia 'unlikely to increase', Lesotho, Nigeria and South Africa positive, so 'mixed' is supported; signs are not readable in the tables.", "quote": "Column (4) presents that the AI has a significant negative relationship with labour productivity growth for Kenya.", "locator": "Table 8 and text p.10; Table 9 p.11"},
+   {"n": 7, "verdict": "confirmed", "correction": "Table 11 and Table 10 values match. Lesotho (5.84e-05, SE 3.49e-05) is only p<0.1 and the text is internally contradictory for Lesotho ('likely to increase' and 'may reduce'). South Africa is 0.00264** and the text says negative.", "quote": "Column (4) presents that AI has a significant negative relationship with sales growth in South Africa.", "locator": "Section 3 p.10; Tables 10-11 pp.11-12"},
+   {"n": 8, "verdict": "confirmed", "correction": "Sixteen AI coefficients (Table 12 six, Table 13 five, Table 14 five) range 0.0418 to 0.139, SE 0.0142 to 0.0474; 11 are starred. Table 13 cols (1)-(2) use N=11,837, the same N as Table 4 col (1), yet give AI 0.0418 and 0.0453 against 0.00702, which is an unexplained inconsistency in the paper.", "quote": "Table 12 AI 0.102*** (0.0206); Table 13 col (1) AI 0.0418 (0.0363)", "locator": "Tables 12-14, pp.13-15"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Sales growth: small firms 0.0769*** (OLS) and 0.0916*** (HDFE); micro, medium insignificant; large 0.0684* in HDFE; matches Tables 5 and 7. Labour productivity: only micro HDFE 0.151* is starred. The text calls this micro coefficient 'significant negative' although it is a 10 percent result; sign not recoverable from the tables.", "quote": "the AI has a significant negative impact on labour productivity growth for micro-business enterprises", "locator": "Section 3 p.7; Table 6 p.8"},
+   {"n": 2, "verdict": "confirmed", "correction": "Country results differ as described; the attribution to technological readiness is stated in the abstract and is not tested. Nigeria N=5,500 of 11,837 labour productivity observations, and the limitation sentence is as quoted. The industry results (Tables 12-14) are dummy-at-a-time controls, not heterogeneity tests, and the record rightly does not list them as such.", "quote": "some countries with a large number of observations might determine the outcomes", "locator": "Conclusion p.15; Table 9 p.11"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "The paper does not classify countries by income or compare income groups. The record's 'not reported' entries are consistent with this; the upper-middle parenthetical on South Africa is the extractor's own mapping, not a paper result.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree - serious: contemporaneous firm-level OLS with no lags, no instrument and an author admission that none was found.",
+   "exposure_measurement": "agree - critical: the 'AI' variable is built only from innovation items and the text calls it a 'proxy of innovation-related variables', so it cannot capture AI adoption (a measure that misses the exposure is at least serious; here it is total).",
+   "selection_of_countries_years": "agree - serious: ten countries chosen as 'growing economies in terms of GDP' with no rule, panel structure and years per country unstated (reviewer 1 asks how firms are tracked), Nigeria about 46 percent of observations.",
+   "outcome_measurement": "agree - serious: growth formulas are garbled in the text and Table 1 (min 0.927, max 195.32; sales growth range 1 to 36.283), and sales growth is a regressor for labour productivity growth, which is built from sales.",
+   "specification": "agree - serious: controls vary by table, the FGLS/OLS labelling is inconsistent, HDFE absorbed dimension is not stated, and many size, country and industry models are run without multiple-testing handling.",
+   "selective_reporting": "agree - serious: abstract and conclusion state positive AI effects while the HDFE pooled labour productivity effect is insignificant, text signs contradict or cannot be matched to tables, and Table 7 col (1) duplicates Table 5 col (1).",
+   "why": "Critical overall is defensible because the exposure is not AI, there is no identification, and the reporting has internal inconsistencies that prevent trusting even the associations."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers found; every table value cited in the record matches the text. Points to carry: (1) The Table 4 caption says robust OLS while the text says column (1) is FGLS. (2) The converted text loses minus signs, so the record's directions for country and size results rest on the narrative text, not the tables; the text contradicts the tables in places (Kenya, Ethiopia, South Africa, micro HDFE). (3) The record says Table 1 'minimums/signs unclear'; this is right (AI index min 1.441 and IA min 1.622 are printed unsigned). (4) Table 13 cols (1)-(2) vs Table 4 col (1) give very different AI coefficients on the same N, which the record notes only as 'not comparable'. (5) Reviewers do ask for justification of the AI index and for formulas, as the record says; the record's page range for reviewer reports (pp.18-21) is right."
+ },
+ {
+  "idx": "952",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation, 17 economies across four income groups with an explicit income-group comparison, ICT exposure (internet, broadband, ICT exports index) and outcomes labour informality (labour market) and labour productivity (output). The green index and DIGI x GREEN interaction are not eligible exposures, but the DIGI main effect is.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Coefficients 0.356, 0.515, 0.714, 0.752 and SEs 1.788, 1.913, 1.431, 1.469 match Table 4; p-range 0.61 to 0.84 is as stated in the text.", "quote": "DIGI_std shows a small, positive, and statistically insignificant coefficient in every specification (β = 0.36 to 0.75, p = 0.61–0.84).", "locator": "Section 4.3, Table 4 p.15"},
+   {"n": 2, "verdict": "confirmed", "correction": "0.591 (SE 1.924) and 0.230 (SE 1.502); p 0.76 to 0.88 per text.", "quote": "No average synergistic effect is detected across the pooled sample of 17 economies.", "locator": "Section 4.3, Table 4 p.15-16"},
+   {"n": 3, "verdict": "confirmed", "correction": "0.985* (SE 0.578), N=198, p=0.090.", "quote": "DIGI_std alone is also positive and marginally significant (β = 0.985, p = 0.090).", "locator": "Section 4.4, Table 4 Model 5"},
+   {"n": 4, "verdict": "confirmed", "correction": "1.685*** (SE 0.633).", "quote": "the DIGI × GREEN interaction is positive and highly significant (β = 1.685, p < 0.01)", "locator": "Section 4.4, Table 4 Model 5"},
+   {"n": 5, "verdict": "confirmed", "correction": "Regime coefficients, SEs, p-values, SSR 1397.31 vs 1483.79, F=11.20, N=191 match Table 5. The paper reports no p-value for F and no threshold CI, as the record says.", "quote": "above the threshold, the coefficient turns negative (−1.63, not individually significant", "locator": "Section 4.5, Table 5 p.16"},
+   {"n": 6, "verdict": "confirmed", "correction": "-8.685*** (SE 2.087), WCB p=0.011, N=60, 6 countries.", "quote": "DIGI × GREEN −8.685 *** (2.087) ... WCB p-value 0.011", "locator": "Table 6 p.17"},
+   {"n": 7, "verdict": "confirmed", "correction": "1.243** (SE 0.601), conventional p=0.044, WCB p=0.078, N=61.", "quote": "The bootstrap p-value rises to 0.078", "locator": "Section 4.6 p.18; Table 6"},
+   {"n": 8, "verdict": "confirmed", "correction": "-2.635 (SE 5.272), WCB p=0.760, N=61, 4 countries.", "quote": "wild cluster bootstrap p = 0.760 for the interaction term", "locator": "Section 4.6 p.18; Table 6"},
+   {"n": 9, "verdict": "confirmed", "correction": "All Table 8 values and the implied +6.660 match. The record omits two further statements: implied upper-middle coefficient -6.385, and a Wald comparison of lower-middle vs upper-middle differentials that is significant (chi2 5.374, p=0.020), while the joint test is chi2 5.388, p=0.068.", "quote": "the implied lower-middle-income coefficient in the pooled model is +6.660, whereas the separate subgroup estimate is −8.685", "locator": "Section 5.4 p.21; Table 8 p.22"},
+   {"n": 10, "verdict": "confirmed", "correction": "GREEN_std 11.828***, 12.422***, 7.321*, 7.504** with SEs 3.600, 3.242, 4.053, 3.603 match Table 4. This is a non-eligible exposure, kept only as context.", "quote": "GREEN_std is positive and statistically significant in three of four specifications (β = 7.3 to 12.4, p < 0.05)", "locator": "Section 4.3 p.15, Table 4"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Subgroup pattern, pooled sign reversal and the authors' own caveat are accurately stated. The high-income coefficient is significant only under cluster-robust SEs (p=0.044), not under WCB (0.078).", "quote": "the evidence points to a specification-sensitive heterogeneity pattern", "locator": "Section 5.4 p.21; Tables 6 and 8"},
+   {"n": 2, "verdict": "confirmed", "correction": "Threshold 47.5 percent, regime coefficients and the limitations (no CI, no lagged dependent variable) are as in the text.", "quote": "The 47.5% threshold is a point estimate from grid search, not a value with a formally derived confidence interval", "locator": "Section 4.5 p.16"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "High, upper-middle, lower-middle entries match Table 6 (including DIGI_std 0.150, -1.537, 10.127*** and GREEN_std 19.456***; high-income mean informality 14.5 percent) and Table 8. Low is Cambodia only and is excluded from all income-group models.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "too_harsh - moderate: the authors disclaim causal interpretation ('conditional associations rather than causal effects') and state the exogeneity and Nickell issues openly, though no strategy is applied.",
+   "exposure_measurement": "agree - moderate: PCA of internet, broadband and ICT exports is a sensible ICT index; the green half of the interaction is contaminated by biomass.",
+   "selection_of_countries_years": "too_harsh - moderate: the 17 economies come from a stated, pre-estimation rule (at least 10 years of survey data, no gap over 3 years); the real limits are small subgroup N and the Asia-Pacific focus.",
+   "outcome_measurement": "agree - serious: informality is own-account plus contributing family workers, excluding informal wage work; productivity is an ILO modelled estimate.",
+   "specification": "agree - serious: Nickell bias uncorrected, subgroup models have no year FE while the pooled model reverses the sign, 4 to 6 clusters, static threshold model, no leave-one-out.",
+   "selective_reporting": "agree - moderate: nulls and the sign reversal are reported, but the Conclusions still say the synergy 'holds specifically and strongly' and productivity synergy is 'robustly' positive.",
+   "why": "Serious overall holds because the informality proxy is narrow, the central subgroup result does not survive the authors' own pooled test and the inference rests on 4 to 6 clusters; the transparency of the authors keeps it from critical."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers. The text contains revision-round residue ('requested in Round 3', 'the reviewer's concern'), which does not change the numbers. The Conclusions' wording ('holds specifically and strongly', 'robustly and positively synergistic') is stronger than the results and Section 5.4, as the record says. The record's 'DIGI x GREEN lower-middle subgroup uses 60 obs, entity FE only' is correct (Table 6 note). Labour productivity in Model 5 is a level, not growth, as recorded."
+ },
+ {
+  "idx": "957",
+  "eligibility_ok": true,
+  "eligibility_note": "Own system-GMM estimation, 32 economies (18 OECD, 14 MENA), exposures internet, mobile, fixed telephone and ICT imports, outcome GDP growth (output). Eligible, although the dependent variable is inconsistently defined (see problems).",
+  "sample_corrections": {"income_groups_covered": "The paper gives no World Bank income classification and no income-group results; comparison is by region only. The record's 'no low-income' is not supported by the text (Syria is on the MENA list and is World Bank low-income by external classification), and its remark on OECD members being 'high/upper-middle' is not from the paper."},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "0.00027806, p=0.766 (Table 6 spec 1). Table gives p-values, not SEs.", "quote": "INTERNET 0.00027806 (0.766)", "locator": "Table 6 p.24"},
+   {"n": 2, "verdict": "confirmed", "correction": "0.00001576, p=0.954.", "quote": "MOBILE 0.00001576 (0.954)", "locator": "Table 6 spec 2 p.24"},
+   {"n": 3, "verdict": "confirmed", "correction": "0.00404449*, p=0.064.", "quote": "positive and statistically significant effect of approximately 10% (Specification 3, p-value = 0.064)", "locator": "Section 3.1 p.20; Table 6"},
+   {"n": 4, "verdict": "confirmed", "correction": "-0.00023511, p=0.890.", "quote": "TELEPH -0.00023511 (0.890)", "locator": "Table 6 spec 4 p.24"},
+   {"n": 5, "verdict": "confirmed", "correction": "0.00464410***, p=0.000.", "quote": "TELEPH 0.00464410*** (0.000)", "locator": "Table 5 spec 1 p.22"},
+   {"n": 6, "verdict": "confirmed", "correction": "0.04059132***, p=0.000.", "quote": "ICT_import 0.04059132*** (0.000)", "locator": "Table 5 spec 2 p.22"},
+   {"n": 7, "verdict": "confirmed", "correction": "-0.00133189, p=0.393.", "quote": "The results indicate a negative and insignificant effect (Table 5, scenario 3, p-value = 0.393).", "locator": "Section 3.1 p.21; Table 5"},
+   {"n": 8, "verdict": "unverifiable", "correction": "The OECD direct internet coefficient is not in Table 5 (blank INTERNET row, three columns) while the text says all OECD ICT effects but mobile are positive and significant. Direction should be recorded as not reported / unverifiable, not 'mixed'. Table 7 spec 4 INTERNET 0.01659737*** is the coefficient at CAPH=0 in an interaction model and is not a direct effect; Table 9 spec 3 INTERNET 0.00759160* (p=0.068) is likewise conditional.", "quote": "the effect of all the variables mapping information and communication technologies (ICTs) is positive and significant, with the exception of the variable of mobile telephony", "locator": "Section 3.1 p.21; Table 5 p.22"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Direct-effect contrast matches Tables 5 and 6. The paper never tests the OECD-MENA difference formally; it is a comparison of separate regressions, as the record says.", "quote": "OECD countries have been more proactive and effective than MENA countries in embracing ICT to foster economic growth.", "locator": "Abstract; Tables 5-6"},
+   {"n": 2, "verdict": "confirmed", "correction": "ICT_import_CAPH 0.00073392** (p=0.017) and INTERNET_CAPH 0.0014415*** in OECD (Table 7); no MENA interaction has p below 0.15 (Table 8). Author's threshold condition not met in either region.", "quote": "This is not the case for the two regions under consideration, and thus the impact of ICT on economic growth cannot be demonstrated.", "locator": "Section 3.2 p.25; Tables 7-8 pp.26-27"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table 9: DF_TELEPH 0.00005126* (p=0.091), DF_INTERNET 0.00007605**, DF_MOBILE 0.00006651***, DF_ICT_import insignificant. Table 10: DF_INTERNET 0.00010789**, DF_MOBILE 0.00004504*, DF_TELEPH 0.00017465**, DF_ICT_import insignificant. The footnote ratio -0.01515413/0.00017465 is about 86.8 (record is right); the text says 88 percent.", "quote": "contingent upon the attainment of a financial development threshold of 88%", "locator": "Section 3.3 p.28 and footnote 3; Tables 9-10 pp.29-30"}
+  ],
+  "income_group_results": "corrected",
+  "income_group_note": "The paper reports no income-group results; OECD vs MENA is a region split. Filling 'high' with OECD results is the extractor's mapping, and the 'none in sample' for low income is unsupported (see sample correction). Better to record all four income groups as not reported and keep the region contrast under heterogeneity.",
+  "risk_of_bias": {
+   "overall": "too_lenient",
+   "confounding_reverse_causation": "agree - serious: system GMM with internal instruments is the only strategy, diagnostics are weak (Sargan p up to 1.000, AR2 p of 0.06 to 0.10 in all four MENA models and 0.0172 in Table 10 spec 1, 0.0803 in Table 9 spec 4), causal language throughout. Also missing from the record: OECD models use 19 instruments for 18 countries.",
+   "exposure_measurement": "agree - moderate: coarse penetration and import-share indicators, one ICT variable per model.",
+   "selection_of_countries_years": "agree - serious: unexplained selection of 18 of 38 OECD members and 14 MENA economies including conflict cases, very unbalanced (156 and 73 observations), short window including COVID.",
+   "outcome_measurement": "agree - serious: equation says growth of real GDP but tables carry L.log_PIB and the text says 'output per capita lagged'. The OECD mean of TX_PIB is -0.374 (min -16.78, max 13.07), implausible for real GDP growth of 18 OECD members over 2010-2023. The record's remark that MENA max 121.78 is implausible is weaker: conflict economies can show such values, but the definition is still unclear.",
+   "specification": "agree - serious: four ICT variables entered separately across six tables, text misreports significance in places (e.g. 'four scenarios' for OECD but only three columns), threshold rule contradicted by the author's own results.",
+   "selective_reporting": "agree - serious: Table 5 omits the OECD internet specification, abstract and conclusion state ICT promotes growth although most MENA ICT coefficients are null.",
+   "why": "The cumulative problems (outcome not reconcilable with its definition, an omitted headline specification, instrument count above group count in OECD models, text contradicting tables) mean the OECD-vs-MENA conclusion cannot be relied on, which fits critical rather than serious."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers. Issues to carry: (1) 'two-step' in the record's estimator cannot be confirmed because the Table 5 note is truncated ('stage Generalized Method of Moments'). (2) The record's country lists, years and observation counts (156, 73) are right; the text says the model includes both country and year effects, with no coefficients shown. (3) The record places OECD under 'high income' and states no low-income economies; the paper does not classify income. (4) Direction 'mixed' for result 8 should be 'not reported'. (5) Text claim 'OECD fixed telephone, internet, mobile all positive in interaction with credit' is true only at 10 percent for fixed telephone (p=0.091)."
+ },
+ {
+  "idx": "988",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation, 27 EU members plus the EU aggregate (28 units), ICT exposure via the DESI composite, outcome TFP (productivity). Meets the at-least-10-economies rule; no income-group comparison is needed.",
+  "sample_corrections": {"income_groups_covered": "The paper gives no income classification; the record's 'high' is the extractor's inference (EU members, mostly high-income by external classification)."},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "0.099*** with |t| 4.00 (Table 2 col 1 and Table 1 give identical values). The table prints absolute t-statistics, not SEs.", "quote": "lnDigital 0,099*** (4,00)", "locator": "Table 2 col (1), p.11"},
+   {"n": 2, "verdict": "confirmed", "correction": "0.040, |t| 1.43, no stars; text says significance falls to 1.43. Note that exports (0.779 to 0.540) and imports (-0.627 to -0.386) also change in this column.", "quote": "the statistical significance of the digitalisation index decreases to 1.43", "locator": "Section 5 p.11; Table 2 col (4)"},
+   {"n": 3, "verdict": "confirmed", "correction": "0.111** (t 2.40, 140 obs), 0.106*** (t 2.93, 140 obs), 0.102*** (t 4.08, 168 obs). Column (1) is starred ** not ***; the record gives only t-values, which is consistent.", "quote": "lnDigital 0,111** (2,40) 0,106*** (2,93) 0,102*** (4,08)", "locator": "Table 3, p.12"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "corrected", "correction": "Numbers are right (0.093 in col 3 to 0.040 in col 4, institutions 0.033, t 1.95, 10 percent), but this is a control-sensitivity result, not heterogeneity: there is no interaction, subgroup or threshold. Reclassify as sensitivity to adding the Economic Freedom index.", "quote": "the coefficient of institutional index has a small economic value (0.033) and the minimum acceptable value of statistical significance", "locator": "Section 5 p.12; Table 2 col (4)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "Paper has no income-group analysis; the record already says income groups are not separated, so only the empty 'high' note is an inference.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree - serious: causal language ('It can be assumed that the model proves the causal effect'), country FE only, no lags or instruments, no year effects, so common shocks and trends are uncontrolled.",
+   "exposure_measurement": "agree - moderate: DESI is a broad composite with human capital and public services, plausible ICT index for EU.",
+   "selection_of_countries_years": "too_harsh - moderate: the sample is the full EU-27 for the whole period DESI exists, not a selected set; the real defects are only six years and the EU aggregate entered as a unit alongside its members.",
+   "outcome_measurement": "agree - moderate: TFP is an author-built Cobb-Douglas residual with alpha and capital series not reported; the text calls it labour productivity growth.",
+   "specification": "too_lenient - serious: no year effects in a 2017-2022 panel with a trending index and the COVID shock, conventional (apparently unclustered) t-statistics despite rho_ar of 0.28 to 0.51, only six time points, headline loses significance in the fullest model.",
+   "selective_reporting": "agree - moderate: the abstract and conclusion state 0.1 percent as 'proved' without noting the null in col (4), though the null is disclosed in the body.",
+   "why": "Serious overall is right: causal claim from a two-way-less FE regression on 28 units over six years, with the headline coefficient not robust to adding institutions."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "The record's statement 'Some table inconsistencies (Table 1 vs Table 2 constants)' is not supported: Table 1 lnTFP column and Table 2 col (1) give identical coefficients and constant (4.941). The only different constant is for the TFP_ind column in Table 1 (-1.373), which has a different dependent variable. Other facts check out: 168 observations, 28 units, 140 observations in FE-AR models, rho_ar values. The Table 3 col (1) header says Durbin-Watson test but it reports rho_ar, so it is an AR(1) FE estimator."
+ }
+]

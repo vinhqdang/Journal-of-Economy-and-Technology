@@ -1,0 +1,169 @@
+[
+ {
+  "idx": "408",
+  "paper_verdict": {
+   "estimator_family": "system GMM (Blundell-Bond), collapsed instruments, robust SE",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "All main-effect coefficients (DE, cell phone, internet user, broadband) are conditional on interaction with ln human capital (effect at H=0), so they are negative while interactions are positive; not comparable to unconditional effects. DE is a PCA index (unit-free) and component variables are ratios, with very different scales (broadband -4.796). Text says N=54 countries but tables use 41 countries, 779 obs. Estimates from the same sample are not independent. Reverse causality: authors cite mutual causation as motive for system GMM, but give no further tests (Hansen and AR tests only)."
+  },
+  "estimates": [
+   {
+    "estimate_id": "408-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Digital economy \u22120,127 (0,0413)",
+    "note": "Table 2 col (4); note says robust standard errors in brackets. Main DE term in a model with DE x ln H interaction, so it is the effect at H=0 (conditional), not an average effect. Dependent var is lnGDP per capita with lagged term."
+   },
+   {
+    "estimate_id": "408-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Digital economyhuman capital 0,0540 (0,0189)",
+    "note": "Table 2 col (4); interaction coefficient, not a marginal effect."
+   },
+   {
+    "estimate_id": "408-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Cell phone \u22120,0947 (0,0318)",
+    "note": "Table 2 col (1); conditional on interaction with human capital."
+   },
+   {
+    "estimate_id": "408-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Cell phonehuman Capital 0,0413 (0,0150)",
+    "note": "Table 2 col (1)."
+   },
+   {
+    "estimate_id": "408-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Internet user \u22120,257 (0,120)",
+    "note": "Table 2 col (2); conditional on interaction."
+   },
+   {
+    "estimate_id": "408-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Internet userhuman Capital 0,107 (0,0499)",
+    "note": "Table 2 col (2)."
+   },
+   {
+    "estimate_id": "408-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Internet access \u22124,796 (2,381)",
+    "note": "Table 2 col (3); fixed broadband; coefficient scale differs greatly (variable entered as ratio, per paper's extraction), so not poolable with per-100 or index measures without rescaling."
+   },
+   {
+    "estimate_id": "408-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Internet accesshuman Capital 1,847 (0,915)",
+    "note": "Table 2 col (3)."
+   }
+  ]
+ },
+ {
+  "idx": "422",
+  "paper_verdict": {
+   "estimator_family": "two-step system GMM (Tables 3, 5); dynamic panel quantile regression, Powell 2016 (Table 4)",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "ICT is a sum of fixed telephone, mobile and internet subscriptions per 100 people (logged), a composite measure. Models 2-4 and 6-8 give ICT main effects conditional on interactions. Table 3 and Table 5 estimates and the Table 4 quantile estimates come from the same sample (1,219 obs, 84 countries) so are not independent; Table 5 repeats Table 3 with population growth. Table 4 outcome is labelled 'D.var LP' and its coefficients (about 0.002-0.009) are on a different scale from GMM (about 0.015) so mixing estimator types needs care. Reverse causality is addressed only through GMM internal instruments (no specific discussion). Income group is middle-income (46 upper-middle, 38 lower-middle)."
+  },
+  "estimates": [
+   {
+    "estimate_id": "422-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTsit 0.0144*** (0.00107)",
+    "note": "Table 3 Model 1; note: standard errors in parentheses. Obs 1,219, 84 countries (46 upper-middle, 38 lower-middle income). Income group printed as 'developing' (mixed middle-income)."
+   },
+   {
+    "estimate_id": "422-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTsit 0.0175*** (0.00112)",
+    "note": "Table 3 Model 2; conditional on ICT x HC interaction."
+   },
+   {
+    "estimate_id": "422-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTit*HCit 0.123*** (0.00887)",
+    "note": "Table 3 Model 2."
+   },
+   {
+    "estimate_id": "422-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTit*FDit 0.0748*** (0.00352)",
+    "note": "Table 3 Model 3."
+   },
+   {
+    "estimate_id": "422-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTit* TOit 0.122*** (0.00754)",
+    "note": "Table 3 Model 4."
+   },
+   {
+    "estimate_id": "422-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICT 0.0148*** (0.00109)",
+    "note": "Table 5 Model 5; note: standard errors in parentheses."
+   },
+   {
+    "estimate_id": "422-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICT*HC 0.0893*** (0.00906)",
+    "note": "Table 5 Model 6."
+   },
+   {
+    "estimate_id": "422-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICT*FD 0.0590*** (0.00403)",
+    "note": "Table 5 Model 7."
+   },
+   {
+    "estimate_id": "422-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICT* TO 0.108*** (0.00811)",
+    "note": "Table 5 Model 8."
+   },
+   {
+    "estimate_id": "422-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTsit 0.00859*** (0.00208)",
+    "note": "Table 4 10th quantile. Table 4 note gives no statement of what parentheses hold; SE assumed (Table 3/5 notes say SE). Dependent var labelled 'D.var LP' while lag coefficient ~0.93-0.99, so the exact outcome transformation is unclear. Observations 1,219 printed; 84 countries from text, not in Table 4."
+   },
+   {
+    "estimate_id": "422-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTsit ... 0.000240 (0.000182)",
+    "note": "Table 4 40th quantile; insignificant (text confirms 40th is the exception)."
+   },
+   {
+    "estimate_id": "422-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTsit ... 0.00854*** (0.00196)",
+    "note": "Table 4 50th quantile."
+   },
+   {
+    "estimate_id": "422-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTsit ... 0.00195*** (0.000463)",
+    "note": "Table 4 90th quantile."
+   }
+  ]
+ }
+]

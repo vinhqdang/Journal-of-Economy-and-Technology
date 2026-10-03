@@ -1,0 +1,120 @@
+[
+ {
+  "idx": "285",
+  "paper_verdict": {
+   "estimator_family": "Panel FE/RE/FGLS growth-accounting (Cobb-Douglas in growth rates) with IV-2SLS (lagged ICT) as robustness; headline is FE with robust Newey-West SEs",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Outcome is GDP growth (ΔlnY) and exposure is growth of ICT capital services, so coefficients are output elasticities in growth-rate form, not level elasticities or per-capita measures. Sub-period and full-sample/without-outlier estimates overlap the same data (not independent). Table 3 significance codes differ from Table 2. Text refers to IV results as 'Table 1' (typo). IV lags only mitigate simultaneity; authors conclude no indication of bias."
+  },
+  "estimates": [
+   {
+    "estimate_id": "285-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ΔlnKICT 0.092*** 0.100*** 0.092*** 0.114*** 0.095** 0.116*** 0.124*** 0.139***",
+    "note": "Table 2 col 1 (FE, without outliers). Unbalanced n = 27, N = 558. Outcome is GDP growth (ΔlnY); ICT = growth of ICT capital services."
+   },
+   {
+    "estimate_id": "285-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Balanced: n = 27, T = 21, N = 567",
+    "note": "Table 2 col 6 (FE, full sample): 0.116*** (0.02); N=567 matches note."
+   },
+   {
+    "estimate_id": "285-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ΔlnKICT 0.092*** 0.100*** 0.092***",
+    "note": "Table 2 col 2 (RE, without outliers): 0.100*** (0.014); N=558."
+   },
+   {
+    "estimate_id": "285-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ΔlnKICT 0.092*** 0.100*** 0.092***",
+    "note": "Table 2 col 3 (FGLS, without outliers): 0.092*** (0.016); N=558."
+   },
+   {
+    "estimate_id": "285-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.114*** 0.095**",
+    "note": "Table 2 col 4 (IV-2lags): 0.114*** (0.034); N=558 per Table 2 note. Text says first-stage F around 30."
+   },
+   {
+    "estimate_id": "285-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.114*** 0.095**",
+    "note": "Table 2 col 5 (IV-4lags): 0.095** (0.036); N=558 per Table 2 note (note applies to without-outliers sample)."
+   },
+   {
+    "estimate_id": "285-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.116*** 0.124*** 0.139***",
+    "note": "Table 2 col 7 (RE, full sample): 0.124*** (0.019); N=567."
+   },
+   {
+    "estimate_id": "285-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.116*** 0.124*** 0.139***",
+    "note": "Table 2 col 8 (FGLS, full sample): 0.139*** (0.028); N=567."
+   },
+   {
+    "estimate_id": "285-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "1996–2004 FE RE ΔlnKICT 0.09*** 0.111***",
+    "note": "Table 3 col 1996-2004 FE: 0.09*** (0.019); N=238 (n=27, T=7-9)."
+   },
+   {
+    "estimate_id": "285-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ΔlnKICT 0.09*** 0.111*** 0.087** 0.094*",
+    "note": "Table 3 col 1996-2004 RE: 0.111*** (0.017); N=238."
+   },
+   {
+    "estimate_id": "285-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ΔlnKICT 0.09*** 0.111*** 0.087** 0.094*",
+    "note": "Table 3 col 2005-2016 FE: 0.087** (0.026); N=320 (n=27, T=10-12)."
+   },
+   {
+    "estimate_id": "285-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ΔlnKICT 0.09*** 0.111*** 0.087** 0.094*",
+    "note": "Table 3 col 2005-2016 RE: 0.094* (0.029); N=320. Printed star level (*) is inconsistent with t about 3.2 under the table's own codes, but the coefficient and SE are as printed."
+   }
+  ]
+ },
+ {
+  "idx": "302",
+  "paper_verdict": {
+   "estimator_family": "Dynamic panel two-step system GMM (xtabond2, small) with ICT goods imports as external instrument",
+   "reverse_causality_addressed": "yes",
+   "pooling_concerns": "Dynamic model with lagged dependent variable 0.9617, so coefficients are short-run effects with long-run multiplier about 26x; ICTMI is a composite index (fixed phone + 0.2 x mobile, broadband, fixed internet, users) in levels, not a log capital measure; ICTMI coefficient is conditional on an ICTMI x SERT interaction in the same model; outcome is log GDP per capita (labelled GNI in Table 4 header); 24 Asian countries of mixed income, only one specification reported. Text misreads coefficient magnitudes (e.g. 0.119% for 10% increase) and describes model with i=1..11. Instrument count 30 vs 24 countries exceeds the rule of thumb the authors cite."
+  },
+  "estimates": [
+   {
+    "estimate_id": "302-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTMIi,t 0.0119 0.0052 2.29 0.023",
+    "note": "Table 4 has separate Coefficients, Standard Errors, t-statistics, p-values columns; SE type correct. Obs. = 216, Countries = 24. Sample is Asian countries 2000-2010 (abstract says 2001-2010), mixed income (Japan, Korea, Israel with Bangladesh, Tajikistan, Yemen). Specification includes ICTMI x SERT interaction, so the ICTMI coefficient is the effect at zero tertiary enrolment, not an average effect; exposure is a level index (not log) and outcome is log GDP per capita in a dynamic model with lagged YPC coefficient 0.9617 (short-run effect). Table header calls the dependent variable Gross National Income, text defines YPC as log GDP per capita PPP."
+   },
+   {
+    "estimate_id": "302-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTSERTi,t 0.0028 0.0010 2.84 0.005",
+    "note": "Matches Table 4 row. This is the coefficient on the ICT x tertiary-enrolment interaction, not a main ICT effect; Obs. = 216, Countries = 24. Not poolable with main-effect elasticities."
+   }
+  ]
+ }
+]

@@ -1,0 +1,332 @@
+[
+ {
+  "idx": "138",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (PSCC-FE, IV-GMM, SQREG); mobile and fixed telephone subscriptions (ICT/mobile); stated 193 countries (152/151 groups estimated) with explicit income-group comparison (Tables 8-9); outcome HDI (living standards beyond income).",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnMOB exerts a positive and statistical effect at the 1% level"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "that of lnFTEL is negative"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Direction and numbers match Table 6 (cols 3-4 0.00708, 0.00673; col 2 -0.860, t -1.059; Hansen 0.319). Note col 2 sign is negative and insignificant, so 'positive' holds only when IQI is in the model.",
+    "quote": "lnICT -0.860 / 0.00708*** / 0.00673***; Hansen p-value 0.319 (Table 6)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Numbers match Table 6 cols 5-7 (0.0659, 0.0194, 0.0193; t 6.686, 12.23, 12.28). Sign opposite to Table 5 col 5-7 is real.",
+    "quote": "lnICT 0.0659*** 0.0194*** 0.0193*** (6.686) (12.23) (12.28)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Matches Table 7 mobile panel; fixed-telephone SQREG (0.0236, 0.0188, 0.0183 at Q25/50/75 w/o IQI) is not recorded.",
+    "quote": "lnMOB 0.00763*** 0.00665*** 0.00624***; 0.00713*** 0.00540*** 0.00933***"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Matches Table 8 mobile model; all four coefficients positive, only high (1%) and lower-middle (10%) significant.",
+    "quote": "lnICT 0.0137*** 0.00147 0.0143* 0.00534 (3.837) (0.181) (1.875) (0.871)"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnICT 0.00758** -0.0108*** 0.0116*** -0.00638 (2.026) (-4.542) (3.513) (-1.350)"
+   },
+   {
+    "n": 8,
+    "verdict": "confirmed",
+    "correction": "Matches Table 9 mobile model; 'seven of eight models positive' is the authors' own count.",
+    "quote": "lnICT 0.0200*** -0.00211 0.0174*** 0.00343* (8.971) (-0.0774) (4.933) (1.953)"
+   },
+   {
+    "n": 9,
+    "verdict": "confirmed",
+    "correction": "Matches Tables 5-6 (cols 4 and 7).",
+    "quote": "IQI*lnICT 0.000561 0.00150**; 0.00128* -0.000983* (Tables 5-6)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "high- and lower-middle-income countries show significant positive outcomes, while the effect is negative for low-income countries regarding fixed telephones"
+   },
+   {
+    "n": 2,
+    "verdict": "corrected",
+    "correction": "Sign pattern of IQI holds for IV-GMM (Table 9: high +0.0828***, LM -0.132***, UM +0.125***; low mobile +0.133 ns) but NOT for PSCC-FE (Table 8 mobile: high +0.0605***, low +0.0589**, LM -0.0608**, UM -0.0525***; fixed: UM -0.0151 ns). The paper's text claim (positive in high/UM, negative in low/LM) contradicts Table 8. ICT x IQI interaction signs (IV-GMM: high -0.00373, UM -0.00692, LM +0.0106) are correct; low-income is -0.00939 ns (mobile) but +0.289*** (fixed), so 'narrows institution gap in poorer groups' is not uniform.",
+    "quote": "IQI 0.0605*** 0.0589** -0.0608** -0.0525*** (Table 8, mobile, High/Low/LM/UM)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Matches Table 7; 0.0062-0.0076 is the no-interaction specification, with interaction the Q75 estimate is 0.00933 (Q50 0.00540).",
+    "quote": "lnMOB 0.00763*** 0.00665*** 0.00624*** (2.848) (3.048) (3.598)"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "All listed high/UM/LM/low coefficients and significance levels match Tables 8-9 (incl. low-income fixed IV-GMM 0.886***, R2 -7.735, no year dummies). Sample counts per group (47/25/39/41) match Table 8.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal language, only one-period lags and an IV-GMM whose instruments are never described; Hansen p near 0.05 in some groups.",
+   "exposure_measurement": "agree: logs of absolute subscription counts (mean 35.4 million, max 1.75e9) track population, not penetration; telephony is narrow ICT.",
+   "selection_of_countries_years": "agree: ~150 of 193 countries used, unbalanced, 10 years; duplicate Congo, Dem. Rep. rows 39-40 in Table A1.",
+   "outcome_measurement": "agree: HDI is a slow-moving composite and a loose proxy for 'inclusive growth', but fits living standards beyond income.",
+   "specification": "agree: many specifications, sign flip for fixed telephones across estimators, implausible low-income IV-GMM estimates and F-statistics of 10^6.",
+   "selective_reporting": "agree: all models are tabulated but text overstates consistency (e.g. says Table 6 aligns with Table 5; text on IQI signs contradicts Table 8).",
+   "why": "Panel associations with year dummies and lags, no credible reverse-causality strategy and a count-based exposure; serious is appropriate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record is accurate on all numbers checked. Only substantive error: heterogeneity item 2 repeats the authors' text on IQI signs by income group, which contradicts Table 8 (see correction). Minor: Table 5 col 4 lnICT (0.0112, t 3.646) and Table 7 fixed-telephone SQREG not recorded. Record's stated Hansen values, group counts and Congo duplicate are correct."
+ },
+ {
+  "idx": "140",
+  "eligibility_ok": true,
+  "eligibility_note": "Own estimation (AMG then DOLS) on 17 EU countries x 13 manufacturing sectors, 1995-2007; exposure is sectoral ICT capital services (ICT in general, narrow measure); outcome TFP (output/productivity). Meets >=10 economies.",
+  "sample_corrections": {
+   "income_groups_covered": "Not reported in the paper; the 'high-income and some upper-middle-income' statement is the extractor's inference (paper only groups EU core/South/East)."
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Estimates and t-values match Table 2 (0.06 (2.40), 0.07 (3.19), std. beta 0.07***). Text locator is p.416, not p.415 (sentence follows Table 2).",
+    "quote": "ln ICT 0.06 (2.40) 0.07 (3.19) 0.07***; 'a more intensive use of ICT leads to an improvement in TFP'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "our sample is not sufficiently large and hence we do not have enough degrees of freedom for this approach"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "Paper reports no income-group results; core/South/East groups are used descriptively for TFP levels only. Record's 'not reported' entries are correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: DOLS leads/lags only; the claim that cointegration means 'omitted variables cannot impact TFP' is not valid, no instrument.",
+   "exposure_measurement": "agree: ICT capital services contribution to VA growth is a sensible sectoral proxy, though a growth contribution entered in logs and compared with TFP levels is unusual.",
+   "selection_of_countries_years": "agree: data-availability sample; Hungary/Czech anomaly kept (note 21 says exclusion run but not shown); Portugal appears in the South group text but not in Table 1.",
+   "outcome_measurement": "too_harsh: TFP as an AMG production-function residual is a standard (if generated) outcome; the generated-regressor and unexplained N=451 concerns justify moderate rather than serious.",
+   "specification": "agree: two columns only, lead/lag length not reported; moderate.",
+   "selective_reporting": "agree: differenced terms unreported and robustness without Hungary/Czech Republic mentioned but not shown.",
+   "why": "Overall serious is right because identification rests on DOLS with an invalid omitted-variable argument, even if the outcome domain is a little harsh."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers. Corrections: income-group coverage statement is not in the text; ICT quote locator p.416. Table 2 N=451 confirmed (unexplained). Std. beta 0.07 is the smallest of the significant effects (HC 0.69, EF -0.11, ext. openness -0.25), consistent with the record."
+ },
+ {
+  "idx": "162",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation on 136 countries 2000-2020 (N=2856, balanced); exposure internet users share (mobile as robustness); outcomes carbon productivity (GDP per unit CO2: productivity/resource cost) and top-10% income share (distribution); income-group split high/middle/low.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "For every 1% increase in digitization level, CP increases by 0.0687%"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnDIG 0.0930*** (0.0112) (Table 9 col 1)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Matches Table 9 col 2: 0.0211 (0.0027), AR(2) 0.543, Hansen 1.000, N 2720.",
+    "quote": "lnDIG 0.0211*** (0.0027); AR(2) 0.543; Hansen test 1.000"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnDIG 0.0528*** 0.0633*** 0.0705*** 0.0773*** 0.0802*** (Table 11)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Matches Table 10 col 2. Mediation shares 22.36% (R&D) and 26.34% (inequality) recompute correctly from the table.",
+    "quote": "lnDIG -0.0707*** (0.0012) (Table 10 col 2)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Directions as stated in text; coefficients appear only in Fig. 5 (not in text), so magnitudes cannot be checked; Oceania significance not stated in text.",
+    "quote": "In African countries, the impact of digitization on CP is not significant. In Oceanian countries, digitization has a negative effect on CP."
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "coefficients of digitization in high-income, middle-income, and low-income countries are 0.0849, 0.0579, and 0.0408 respectively, all significant at the 1% level"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "countries with high human capital levels, middle human capital levels, and low human capital levels are 0.0907, 0.0694, and 0.0429, respectively"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Region and quantile statements supported by text and Table 11.",
+    "quote": "the promoting effect of digitization on CP is strongest in European countries"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "High 0.0849, middle 0.0579, low 0.0408, all p<0.01 per text; coefficients and SEs shown only in Fig. 6 (not extractable). Middle income is not split.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal 'impact' language, country FE only (no year effects in Eq. 1), system GMM with Hansen p=1.000 and no instrument details.",
+   "exposure_measurement": "agree: internet users share is a coarse proxy for 'digitization'; mobile penetration robustness is useful.",
+   "selection_of_countries_years": "agree: 136 countries chosen for data completeness; intro says 163 countries once (inconsistency).",
+   "outcome_measurement": "agree: GDP per CO2 is a ratio that moves with GDP; top-10% income share is standard; Table 1 not extractable to check sources.",
+   "specification": "agree: coefficient rises from 0.0210 to 0.0687 with controls (cols 3-6), SE clustering unstated, preliminary tests not reflected in estimator choice.",
+   "selective_reporting": "agree: heterogeneity shown only in figures; GMM estimate (about one third of FE) described as confirming robustness.",
+   "why": "Fixed-effects associations with causal framing and a weak GMM check; serious is appropriate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers found. Record's 'seven columns' stepwise description is loose (cols 1-2 are OLS/FE without controls, col 7 is RE). Table 1 (variable sources) is not in extracted text, so the 'World Bank territorial CO2' claim is unverifiable."
+ },
+ {
+  "idx": "174",
+  "eligibility_ok": true,
+  "eligibility_note": "Own estimation, 67 countries 1995-2019 (>=3 for AI). Borderline on two criteria: exposure is industrial robot stock per capita, labelled AI by authors who concede it is 'far from being a comprehensive indicator of AI'; outcome is carbon inequality (distribution of CO2 per capita between and within countries), a distribution/resource-cost outcome rather than income distribution. Kept as eligible on the authors' framing; flag as weak fit.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Matches Table 6 (SYS-GMM 0.0016 t 5.178; POLS 0.1708 t 14.788). Text '0.00016%' really contradicts the table coefficient 0.0016.",
+    "quote": "Each 1% increase in AI applications enlarges the inter-country carbon inequality by 0.00016%"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "the carbon inequality within countries is boosted by 0.0130%"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Not an independent result: reuses Table 6 coefficients; the paper estimates no direct effect on emissions or energy use.",
+    "quote": "AI significantly amplifies CI both between and within countries due to its energy requirements"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "LNAI 0.0071*** (12.836) 0.0122*** (21.450); Sargan P value 1.0000 1.0000 (Table 9)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "LNAI 0.0145*** (84.038) 0.0222*** (35.54) (Table 9 cols 3-4)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "LNAI2 0.0059*** (27.414) 0.0175*** (65.356) (Table 9 cols 5-6)"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "Matches Table 7 cols 1-5 (t 7.560, 10.080, 10.540, 8.583, 7.422).",
+    "quote": "LNAI 0.1648*** 0.1489*** 0.1835*** 0.1477*** 0.1400***"
+   },
+   {
+    "n": 8,
+    "verdict": "confirmed",
+    "correction": "Matches Table 7 cols 6-10 (t 7.550, 6.539, 4.702, 7.383, 5.503); U-shape with minimum 0.0081 at Q50 stated in text.",
+    "quote": "LNAI 0.0132*** 0.0125*** 0.0081*** 0.0138*** 0.0194***"
+   },
+   {
+    "n": 9,
+    "verdict": "confirmed",
+    "correction": "Matches Table 8 col 1; sum 0.0050+0.0164-0.0447 = -0.0233 is the extractor's own computation, not reported by authors.",
+    "quote": "LNAI 0.0050*** (13.419); LNAI*Q50 0.0164*** (21.585); LNAI*Q75 -0.0447*** (-17.305)"
+   },
+   {
+    "n": 10,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "LNAI 0.0126*** (37.272); LNAI*Q50 -0.0015*** (-3.779); LNAI*Q75 0.0013** (2.208)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "corrected",
+    "correction": "Coefficients confirmed (Table 10 col 1 -0.0163, t -14.804; Table 11 col 1 c=4.7370, b_LNAI 0.0225, d_LNAI -0.0665, net -0.0440). The 114% level is the extractor's exp() conversion. Text gives 4.5% as the share of COUNTRIES above the threshold in 2019 (20.9% in 2014), not 'country-years'.",
+    "quote": "In 2014, 20.9% of countries exceeded the threshold, but by 2019, this figure had fallen dramatically to 4.5%"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Matches Table 10 col 2 (-0.0176, t -12.271; main LNAI -0.0233) and Table 11 col 2 (c -1.0710, b 0.0067, d -0.1332, N=56). Text also reports only about 4.4% of sample countries reach the GVCP threshold.",
+    "quote": "changes to \u22120.1265, with a decrease of \u22120.1332"
+   },
+   {
+    "n": 3,
+    "verdict": "corrected",
+    "correction": "Coefficients confirmed (Table 10 col 3 -0.0064, t -6.118; Table 11 col 3 c=2.9072, b 0.0031, d -0.0078, net -0.0047). 'About 50% above' is not in the text; text says only that 'most samples exceed the threshold' for governance variables (figure data not extractable).",
+    "quote": "For the two governance variables, most samples exceed the threshold."
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Matches Table 10 col 4 and Table 11 col 4 (c -0.2166*, t -1.842; b 0.0096, d -0.0098). '85% above' not stated in text (figure only; consistent with 'most').",
+    "quote": "c 4.7370*** ... \u22120.2166* (\u22121.842)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "the impact of AI can significantly decline and become negative"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group results; paper lists income comparison as future work.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal language, internal-lag SYS-GMM and lagged-AI IV-GMM, Sargan p of 0.95-1.0000; authors admit reverse causality cannot be ruled out.",
+   "exposure_measurement": "agree: industrial robot stock is automation in manufacturing, not AI generally.",
+   "selection_of_countries_years": "agree: 67 (56 for GVC) countries chosen on IFR robot data, mainly 'countries with comparative advantages in AI development'.",
+   "outcome_measurement": "agree: author-constructed CI_INTER (relative to 67-country mean) and WID-based CI_INTRA; dependent on sample composition.",
+   "specification": "agree: effect sizes vary 100-fold across estimators, mixed I(0)/I(1) series (Table 4), implausible t-statistics (L.Y t = 1876.54, 1279.80).",
+   "selective_reporting": "too_harsh: inconsistencies (0.00016% vs 0.0016; TRADE and GOV threshold numbers swapped in Sec 5.6 text; Table 8 L.Y negative t with positive coefficient; Eq. 6 lags CI_INTER; Sec 5.5 says 'inter-country' for governance) are real but look like reporting errors; all estimated models are tabulated, so moderate is fairer.",
+   "why": "Dynamic-panel associations with a weak AI proxy and no credible exogeneity; serious holds even if reporting-errors domain is slightly harsh."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "All numbers in record match tables. Real defects in paper confirmed by text: 0.00016% vs 0.0016; Sec 5.6 text describes the TRADE column with GOV numbers (d -0.0078, net -0.0047; table col 1 d_LNAI is -0.0665) and the GOV column with the TRADE value (0.0031-0.0665); Table 11 d_Cons equals b_LNAI in every column; Table 8 L.Y t-statistics negative. Record correction: Tables 9 and 11 lack an N row (Table 10 does report N), so 'Tables 9-11 lack N' is slightly overstated. Result 3 duplicates results 1-2."
+ }
+]

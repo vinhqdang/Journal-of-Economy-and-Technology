@@ -1,0 +1,133 @@
+[
+ {
+  "idx": "1645",
+  "eligibility_ok": true,
+  "eligibility_note": "Marginal pass. Crypto exposure, 15 economies and a financial-inclusion outcome (living standards beyond income) are stated, and the paper claims own regression/SEM estimation (Python, lavaan) with R2/MSE/AIC in Table 1. But the whole Methodology is written in future tense ('will be used'), no sample size, country list or coefficient is shown, so whether any estimation is actually reported rests only on Table 1 fit statistics. Keep as included-with-critical-risk, flag as possibly non-extractable.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Direction 'positive' and 'not reported' for estimate/uncertainty are right: Table 1 (p.57) gives only R2 0.85/0.88, MSE 0.025/0.020, RMSE 0.158/0.141, MAE 0.120/0.110, AIC 125.23/121.65. 'Positive' is the authors' verbal claim, not a signed coefficient, so it should be treated as asserted not estimated. Note R2 0.88 is the abstract's 'financial inclusivity' variance explained by adoption 'and other related factors'.", "quote": "the use of cryptocurrency has a positive influence on financial inclusion with an R2 value of 0.88"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Supported only as a qualitative statement in the Discussion (p.58); no interaction, subgroup or threshold is estimated. The Conclusion says 'statistical analysis revealed' this but shows none.", "quote": "nations with greater penetration of mobile phones and internet are more likely to see the rates of adoption of financial inclusiveness increase"},
+   {"n": 2, "verdict": "confirmed", "correction": "Supported as verbal claim in Discussion/Conclusion (p.58); abstract only says success 'depends on favourable regulatory policies, increased digital literacy, and infrastructure'. Latin America/Southeast Asia lead adoption is in the abstract. No test.", "quote": "especially in those nations that have good technology infrastructure and regulations"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No results by income group. Design section says developed and developing areas will be compared but only emerging economies are described; record's 'not reported' is correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: no identification, cross-sectional design stated (p.53), strong causal wording ('tremendous positive impact'), reverse direction (inclusion driving crypto use) never considered; critical is defensible because R2 is not an effect of crypto.",
+   "exposure_measurement": "agree: adoption rate is only described as 'percentage of people using cryptocurrency' from World Bank/IMF/CoinGecko with no definition or construction; serious fits.",
+   "selection_of_countries_years": "agree: 15 countries never named, selection described as 'stratified random sampling' on adoption, development and infrastructure (p.55), so selection can depend on the exposure; 2018-2023 labelled '5 years'.",
+   "outcome_measurement": "agree: financial inclusion index components only listed loosely (digital financial services, bank accounts, mobile money); SEM indicators unnamed.",
+   "specification": "agree: no coefficients, SEs or n; Eq. 1 explains adoption but Table 1/Fig. 2 compare fit for the inclusion index; machine-learning style regularisation/learning-rate settings in a regression paper; methodology reads as a proposal.",
+   "selective_reporting": "agree: only in-sample fit metrics reported; promised cross-validation and robustness checks (p.55) never shown.",
+   "why": "The paper reports no estimate that can be interpreted as an effect, gives no sample or variable definitions, and uses causal language, so conclusions cannot be trusted; critical is right."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "Nothing invented or contradicting the text; the record is faithful and already flags the weaknesses. Extra points: Table 1 compares model fit while the text says R2 0.85 refers to adoption (Eq.1) and 0.88 to inclusion (Eq.2), so the two columns are not comparable on one outcome as the paper implies; SEM and regression R2 are in-sample; 'World Reports' (p.54) is given as a source in Data Collection but 'World Bank, IMF and CoinGecko' in Results."
+ },
+ {
+  "idx": "1652",
+  "eligibility_ok": true,
+  "eligibility_note": "Meets criteria: crypto exposure (Bitcoin/Ethereum returns and volume), 14 economies, own GM-FMOLS/Pedroni/Dumitrescu-Hurlin estimation, output (real GDP growth) outcome. Caveat: exposure is a global market series common to all countries, not country-level adoption.",
+  "sample_corrections": {
+   "years": "2015Q3-2023Q3. The paper says '32 quarters' (Section 3 and Table 5 note: T = 32, N = 14, 448 obs) but Q3 2015 to Q3 2023 is 33 quarters and Table 2 reports 462 observations (14 x 33). The paper is internally inconsistent; use 33 quarters/462 obs for the descriptive and regression sample.",
+   "economies_or_groups": "14 countries; text names Australia, Canada, China, Colombia, Indonesia, South Africa, United States, Saudi Arabia (pp.411); remaining six not listed in main text - record is correct."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Model 1 BTCR 0.0252, p-value 0.0000 (* = p<0.01); no SE printed. R2 0.3430.", "quote": "BTCR 0.0252* ... (0.0000)"},
+   {"n": 2, "verdict": "confirmed", "correction": "Model 3 ETHR 0.0088, p-value 0.0000. In Model 5 (both returns) BTCR 0.0203, ETHR 0.0057 (p=0.0073), not extracted but consistent.", "quote": "ETHR ... 0.0088* (0.0000)"},
+   {"n": 3, "verdict": "confirmed", "correction": "Model 2 BTCV -0.0005 (p=0.3221, insignificant); Model 6 BTCV -0.0027 (p=0.0000). Record is right that the text sentence 'In Models 2 and 6 ... negatively and significantly' contradicts Table 7 for Model 2. 'Mixed' is an acceptable label.", "quote": "In Models 2 and 6, BTCV negatively and significantly affects growth"},
+   {"n": 4, "verdict": "confirmed", "correction": "Model 4 ETHV 0.0008 (p=0.0002); Model 6 ETHV 0.0016 (p=0.0000). Text calls the effect positive and significant; the Discussion (p.419) then calls ETHV 'associated with higher volatility and potential downside risk', which contradicts Table 7.", "quote": "Ethereum trading volume shows a positive and significant effect on growth in Models 4 and 6"},
+   {"n": 5, "verdict": "corrected", "correction": "Directions are right but the record says no statistics are available; Appendix A (p.421, after references) does give Dumitrescu-Hurlin W-bar/Z-bar/p: BTCV not-> GDP W=2.8560, Z=4.1476, p=0.0000; GDP not-> BTCV W=43.0501, Z=97.7028, p=0.0000 (bidirectional); GDP not-> ETHR W=0.1131, Z=-2.2369, p=0.0253 (GDP -> ETHR); GDP not-> ETHV W=18.6639, Z=40.9420, p=0.0000. Two lags. No BTCR-GDP or ETHR/ETHV-to-GDP link appears in Appendix A, so the abstract's 'strong bi- and unidirectional causality ... for all cryptocurrency proxies' overstates it: the only crypto-to-GDP direction is BTCV. Several 'significant' links (e.g. GDP -> ETHR) rest on W-bar below 1 and a negative Z-bar, which is not a standard upper-tail rejection.", "quote": "BTCV ⇏ GDP 2.8560 4.1476 0.0000* BTCV ↔ GDP"}
+  ],
+  "heterogeneity": [],
+  "income_group_results": "none",
+  "income_group_note": "No income-group breakdown. The Swamy S test (Table 6) rejects slope homogeneity but no country-group or income-group estimates are reported; record's 'not reported' is correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: one global crypto series is applied to all countries, so identification is time-series co-movement with the global cycle; the paper's own Granger results show GDP -> ETHR/ETHV and BTCV <-> GDP; causal wording ('impact', 'effect', 'crypto-driven growth') unsupported.",
+   "exposure_measurement": "too_harsh: global BTC/ETH returns and volume change are identical across countries and do not capture national adoption, but they do measure the crypto market conditions the paper tests; by the guide this is 'serious' (measure only partly captures exposure) rather than critical.",
+   "selection_of_countries_years": "agree: 14 countries 'informed by prior studies', only 8 named, COVID period (GDP growth range -0.2255 to 0.2256) may dominate common variation.",
+   "outcome_measurement": "agree: seasonally adjusted OECD quarterly real GDP growth is standard; kurtosis 21.9 and Jarque-Bera 6893 contradict the text claim that variables are normal except gold.",
+   "specification": "agree: FMOLS assumes I(1) regressors while Section 3.3 concludes variables are I(0) or borderline; Pedroni panel v is p=1.0 and panel/group rho statistics fail in Models 5-6; six models with different crypto proxies; no SEs.",
+   "selective_reporting": "agree: all six models shown, but the narrative contradicts Table 7 (BTCV Model 2, ETHV described as downside risk) and abstract says positive impact 'except for Bitcoin's trading volume'; no SEs or country-level FMOLS estimates.",
+   "why": "Global crypto series regressed on country GDP growth with causal wording, own Granger results showing reverse links, and a questionable unit-root/cointegration setup; conclusions about crypto effects on growth cannot be trusted, so critical is defensible overall even though the exposure domain alone is closer to serious."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record is accurate on numbers. Only issues: (a) '32 quarters' repeats a paper inconsistency (33 quarters, 462 obs per Table 2); (b) Granger statistics are available in Appendix A, so 'no statistics' is wrong; (c) the paper claims GM-FMOLS includes 'common time dummies' (p.414) while the equations and Table 7 show only country intercepts - the record's 'no year effects' reading is consistent with the equations."
+ },
+ {
+  "idx": "1670",
+  "eligibility_ok": true,
+  "eligibility_note": "Meets criteria: mobile phone subscriptions (ITU), 32 African countries, own SEM estimation, GDP per capita growth outcome. Caveat: the headline exposure is financial inclusion; mobile is a mediator, and the text reports only significance of the MOBILE -> GDPPCGR path, with coefficients only in Figure 2 (image, not in the text).",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "unverifiable", "correction": "Text states only that the path is significant; no sign, coefficient or SE appears in the text (Figure 2 is an image). The direction label 'mixed' is a placeholder and should read 'positive/negative not stated'. Table 2 simple correlation MOBILE-GDPPCGR is -0.219798 (record's -0.2198 is right), which if anything points negative.", "quote": "we found mobile diffusion influences economic growth given that the path MOBILE → GDPPCGR is significant"},
+   {"n": 2, "verdict": "confirmed", "correction": "Text calls the direct FII -> GDPPCGR path insignificant and negative; null is right.", "quote": "The insignificant negative impact of financial inclusion on economic growth obtained in our study"},
+   {"n": 3, "verdict": "unverifiable", "correction": "Text says the indirect path is significant but gives no sign or size; 'positive' is inferred by the record (and acknowledged in its own evidence field). FII -> MOBILE is described as a 'significant positive effect' in the Discussion, but the MOBILE -> growth sign is unstated, so the product sign is unknown.", "quote": "an indirect relationship from financial inclusion through mobile diffusion to economic growth with the significant path"},
+   {"n": 4, "verdict": "confirmed", "correction": "Boone -> GDPPCGR significant and inverse (higher Boone = less competition, lower growth); no coefficient given in the text. Text calls it the only significant path from the competition block, which sits oddly with the MOBILE -> GDPPCGR path also being significant.", "quote": "only the path running from Boone → GDPPCGR is significant indicating an inverse relationship"},
+   {"n": 5, "verdict": "confirmed", "correction": "ZSCORE -> GDPPCGR path insignificant, as stated.", "quote": "ZSCORE → GDPPCGR path is insignificant"}
+  ],
+  "heterogeneity": [],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis; all 32 African countries are pooled and the country list is not given.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: serious. Causal mediation wording, no controls or instrument, reverse direction acknowledged in Section 2.4 but the model imposes FII -> MOBILE -> growth.",
+   "exposure_measurement": "agree: moderate. Subscriptions per 100 adults (max 176.69 in Table 1) are not users; FII (PCA index including loans/GDP) is a financial-depth proxy.",
+   "selection_of_countries_years": "agree: moderate. Selection by data availability, 394 observations versus 416 for a balanced 32 x 13 panel, countries unnamed.",
+   "outcome_measurement": "agree: low. GDP per capita growth from WDI is standard, though Table 1 minimum of -62.2% suggests extreme observations under a normality-based ML estimator.",
+   "specification": "agree: serious. One SEM with no controls or fixed effects, Jarque-Bera p=0.000 read as normality, odd fit indices (TLI 0.990 > CFI 0.955, SRMR 0.005).",
+   "selective_reporting": "agree: serious in practice because the text gives only significance; caveat that coefficients exist in Figure 2, which I cannot see in the extracted text.",
+   "why": "Single uncontrolled SEM on a panel with causal language and no strategy for reverse causality, and results that cannot be checked in the text; serious fits the guide."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "Record faithful. The two flagged 'positive'/'mixed' labels in results 1 and 3 are not supported by any sign in the text and should not feed a pooled direction count. Abstract says the results show 'financial inclusion affects economic growth via mobile phones' while the text says the direct path is insignificant and the indirect sign is unstated."
+ },
+ {
+  "idx": "1679",
+  "eligibility_ok": true,
+  "eligibility_note": "Meets criteria: 3G mobile internet coverage, 14 developing economies (Table C3) spanning low to upper-middle income, own IV/OLS estimation, labour-market and sectoral-structure outcomes.",
+  "sample_corrections": {
+   "years": "Final sample runs 2000-2015 (33 country-year rounds listed in Table C3 across 14 countries; Mexico 2005, South Africa 2011 and 2016 have no regions in the final sample, so 30 country-years enter). 3G maps cover 2006-2017 (Section 2.2), intro says 2006-2015. Record's year text is acceptable.",
+   "income_groups_covered": "Low, lower-middle and upper-middle are asserted in the text (p.7); text cites Rwanda as a low-income example but Rwanda is not in Table C3, so the country-based claim is only partly traceable. Table C3 gives 2015 GDP per capita (Uganda 847 to Costa Rica 11,643), no group labels; no high-income country."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 2 Panel A col 2: IV 0.284 (SE 0.026), p 0.000, q 0.001; col 1 OLS 0.066. KP F 142.89.", "quote": "areas with 10 pp higher 3G coverage have 2.8 pp higher labor force participation rates"},
+   {"n": 2, "verdict": "confirmed", "correction": "Panel C col 2: IV 0.492 (SE 0.218), p 0.024, q 0.017; OLS 0.022. KP F 5.98 (weak instrument for the LFP columns by sex).", "quote": "a 10 pp increase in 3G coverage increases FLFPR by 4.9 pp"},
+   {"n": 3, "verdict": "confirmed", "correction": "Panel B col 2: IV -0.168 (SE 0.133), p 0.204, q 0.086; OLS 0.039. Null correct.", "quote": "negative (-1.7 pp) but statistically insignificant from zero at conventional levels"},
+   {"n": 4, "verdict": "confirmed", "correction": "Panel A col 4: IV 0.213 (SE 0.023), p 0.000; OLS 0.086.", "quote": "a 10 pp increase in 3G coverage increases the fraction of individuals who are employed by 2.1 pp"},
+   {"n": 5, "verdict": "confirmed", "correction": "Panel B col 4 men IV 0.310 (SE 0.030); Panel C col 4 women IV 0.132 (SE 0.024); both p 0.000.", "quote": "these effects range from 3.1 pp for men to 1.3 pp for women"},
+   {"n": 6, "verdict": "confirmed", "correction": "Col 8: whole IV 0.224 (SE 0.022), men 0.369 (SE 0.036), women 0.090 (SE 0.015), all p 0.000.", "quote": "A 10 pp increase in 3G coverage increases the probability of operating an OAE by 2.2 pp"},
+   {"n": 7, "verdict": "confirmed", "correction": "Col 6 whole IV -0.021 (SE 0.004), OLS -0.001; men -0.027, women -0.015. Table B1 col 6 ANCOVA IV 0.013 (SE 0.005, p 0.014), sign reversal acknowledged on p.31.", "quote": "show slightly positive effects"},
+   {"n": 8, "verdict": "confirmed", "correction": "Col 10 whole IV 0.069 (SE 0.014), men 0.159 (SE 0.022), women -0.014 (SE 0.012, p 0.230). Table B1 col 10 whole -0.025 (SE 0.029, p 0.399). The placebo (Table B4) also rejects for whole-sample and female wage employment, so this result is the weakest.", "quote": "the effects of 3G on wage employment are now statistically insignificant"},
+   {"n": 9, "verdict": "confirmed", "correction": "Col 12: whole IV -0.086 (SE 0.014), men -0.238 (SE 0.026), women +0.060 (SE 0.011), all p 0.000; OLS whole 0.001 (n.s.). Mixed is right.", "quote": "men are significantly less likely to work in unpaid jobs (by 2.4 pp), while women are more likely to work in them (by 0.6 pp)"},
+   {"n": 10, "verdict": "confirmed", "correction": "Table 3 Panel A col 2: IV 0.088 (SE 0.017), p 0.000; col 1 OLS 0.023. Table B2 col 2 ANCOVA IV 0.035 (SE 0.036, p 0.335); note ANCOVA OLS is -0.015.", "quote": "the share of labor employed in agriculture and services increased slightly (0.6-0.9 pp)"},
+   {"n": 11, "verdict": "confirmed", "correction": "Table 3 Panel A col 4: IV -0.003 (SE 0.008), p 0.701; OLS -0.007. Table B2 col 4 ANCOVA IV 0.053 (SE 0.022, p 0.016), a significant positive that the record correctly reports.", "quote": "the estimate for manufacturing is small and statistically insignificant"},
+   {"n": 12, "verdict": "confirmed", "correction": "Table 3 Panel A col 6: IV 0.060 (SE 0.010), p 0.000; OLS 0.031. Table B2 col 6 ANCOVA IV 0.052 (SE 0.028, p 0.068).", "quote": "there does not seem to be any strong evidence of major sectoral reallocation"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Gender split supported by Table 2 Panels B and C and Tables A2-A4; no formal test of the male-female difference is reported, only separate regressions.", "quote": "this effect is entirely driven by women (4.9 pp) as opposed to men"},
+   {"n": 2, "verdict": "confirmed", "correction": "Broadly supported, with a small refinement: manufacturing effects are not all insignificant at sector level (Table A3 IV wage employment women -0.037, men +0.018, both p<0.05), but are small; Table 3 manufacturing shares are insignificant for the whole sample and men. Agriculture/services concentration and absence of reallocation confirmed.", "quote": "access to mobile internet affects the type of jobs (i.e., self-, vs. wage-, vs. unpaid employment) rather than the sector of employment"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group estimates; pooled across countries. Record's 'not applicable'/'not reported separately' is correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: moderate. Region and year FE, 2G control and lightning IV address reverse causality, but exclusion not established (lightning related to rainfall, elevation, agricultural conditions), IV several times OLS, KP F 5.98 for LFP by sex, placebo rejects for wage and unpaid outcomes.",
+   "exposure_measurement": "agree: moderate. Operator-reported network coverage, not use; 3G set to zero before 2006 or national adoption year; population weights fixed at 2001.",
+   "selection_of_countries_years": "agree: moderate. 14 countries with IPUMS data and 3G maps, mostly two or three rounds, no high-income countries, lightning only within +/-38 degrees.",
+   "outcome_measurement": "agree: moderate. Harmonised IPUMS data but changing survey instruments, LFP in a smaller subsample, no wages or hours (authors say so).",
+   "specification": "agree: moderate. One main specification plus ANCOVA, aggregation, placebo and full-sample checks; q-values for many outcomes; wage and employer results not robust to ANCOVA.",
+   "selective_reporting": "agree: low. Full OLS and IV tables by gender and sector, non-robust results and placebo exceptions acknowledged in text.",
+   "why": "Credible IV panel design with transparent reporting, but exogeneity of lightning is unproven and key columns have weak first stages; moderate is the right overall rating."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "yes",
+  "problems": "No invented or mismatched content found; all 12 results match Tables 2, 3, B1 and B2. Minor text inconsistencies in the paper not mentioned in the record: Appendix C.1 says the sample is restricted to ages 18-24 whereas Section 2.1 says 18-65; the text names Rwanda among low-income countries but Rwanda is absent from Table C3; Section 2.2 gives 3G maps for 2006-2017 while the Introduction says 2006-2015."
+ }
+]

@@ -1,0 +1,160 @@
+[
+ {
+  "idx": "802",
+  "eligibility_ok": true,
+  "eligibility_note": "Quantitative worker-level regressions and RIF/Oaxaca-Ransom decompositions on PIAAC for 22 countries (19 for wages). Exposure is worker-level ICT use at work (ICT in general); outcomes are task content (labour market) and wages/wage inequality (distribution). Meets the 10-economy rule. Caveat: the exposure is a worker-level questionnaire index, not a national adoption measure, and the data are a single cross-section.",
+  "sample_corrections": {
+   "years": "PIAAC data collection Aug 2011 to Mar 2012 (Canada Nov 2011-Jun 2012, France Sep-Nov 2012); 2011-2012 is acceptable",
+   "n_economies": "22 confirmed (19 in wage analysis; Canada, Sweden, US excluded because continuous earnings are not public)",
+   "economies_or_groups": "Wage groups: Low-wage group is five countries INCLUDING Russia (Estonia, Poland, Czech Republic, Slovakia, Russian Federation), not 'five Eastern European countries and Russia'"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 7 col 2 ICT Use -0.620*** (SE 0.00737), col 3 -0.642*** (SE 0.0179); R2 0.050 to 0.414/0.417; all as recorded. Note that the dependent variable is RTI without manual tasks (as defined in the paper's main index).", "quote": "an increase of a standard deviation in ICT use at work implying a decrease of 0.62 standard deviations of RTI", "locator": "Table 7 p.19; text p.20"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table 8 col 6 ICT Use -0.424*** (0.00865), col 7 -0.437*** (0.0167); R2 0.500 / 0.503. Minor internal inconsistency in the paper: Table A.2 'All sectors' conditional prints -0.423 (0.008).", "quote": "ICT Use -0.424*** -0.437*** (0.00865) (0.0167)", "locator": "Table 8, p.21"},
+   {"n": 3, "verdict": "confirmed", "correction": "SD of country FE 0.231 to 0.138 (almost 41%) unconditional, 0.168 to 0.125 (25%) conditional, close to 10% with Autor-Dorn RTI. No inference on the SD reduction, as recorded.", "quote": "the standard deviation falls from 0.231 to 0.138, which represents almost 41%", "locator": "Section IV p.22-23, Fig 3-4"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table A.5 col 6 ICT Use 0.0991*** (0.00583), dependent variable log hourly wage USD PPP, N=55,481, 19 countries.", "quote": "an increase of a standard deviation in ICT use associated with a 10% increase of wages", "locator": "Table A.5 p.39; text p.25"},
+   {"n": 5, "verdict": "confirmed", "correction": "Finding is graphical (Fig 6) with no formal test. Paper says ICT differences explain an important and significant part of the wage gap but in constant proportion across deciles, so no inequality effect is found. Total composition effect for Middle vs Low rises from 18% to 44% across deciles (not constant), but the ICT part is described as constant.", "quote": "the proportion explained is relatively constant in the wage distribution", "locator": "Section V p.30"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table A.2: unconditional/conditional manufacturing -0.679/-0.483, services -0.603/-0.425, construction -0.504/-0.317; all match.", "quote": "very similar in manufacturing and services (and similar to the aggregate impact), and smaller in construction", "locator": "Table A.2 p.35; text p.22"},
+   {"n": 2, "verdict": "corrected", "correction": "Low-wage group is five countries including Russia (Estonia, Poland, Czech Republic, Slovakia, Russian Federation), not five plus Russia. High = Norway, Denmark, Belgium, Netherlands, Ireland; Medium = nine countries. Statement that the ICT composition effect is proportionally similar in all three pairwise comparisons is a general text statement read off Fig 6; the text gives numbers only for the total composition effect (35% High-Low, 28% High-Middle, 18% to 44% Middle-Low).", "quote": "At some distance we group Eastern European countries (Estonia, Poland, Czech Republic Slovakia and Russian Federation) into the Low Wage countries", "locator": "Section V p.26; Fig 6 p.29"},
+   {"n": 3, "verdict": "confirmed", "correction": "Footnote 20: ICT x country interactions do not change results qualitatively; Table 7 col 3 -0.642 vs -0.620 and Table 8 col 7 -0.437 vs -0.424.", "quote": "do not vary qualitatively when compared with a homogenous effect ICT use at work for all countries", "locator": "Footnote 20 p.23"}
+  ],
+  "income_group_results": "corrected",
+  "income_group_note": "No income-group analysis exists, so the entries are not income-group results (record says so). Number to fix: Russian Federation country effect in Table 7 is 0.297*** (col 1), 0.0140 (col 2, ICT added), 0.0125 (col 3, ICT x country). Record gives 0.0125 for 'once ICT use is added', which is col 3, not col 2. Treat the paper as having no income-group result.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: single cross-section, no instrument or timing, ICT use and task content from the same respondent, yet the abstract says computer adoption 'leads to' the differences and ICT is a 'key significant driver'.",
+   "exposure_measurement": "agree: worker-level PCA index from a self-chosen item subset, not a national adoption measure, and partly mechanically related to abstract task content; moderate is defensible (could be argued serious for the country-level claim).",
+   "selection_of_countries_years": "agree: all PIAAC 2011-12 countries with usable data, rich-country heavy, three countries dropped for wages, arbitrary three wage groups.",
+   "outcome_measurement": "agree: self-reported task frequencies, manual tasks cannot be split into routine/non-routine, and the effect falls to about 10% when manual tasks are included.",
+   "specification": "agree: several RTI definitions and item subsets; both RTI versions are shown. The statement that the headline uses 'the definition with the stronger ICT result' is the record's characterisation (the paper explains the exclusion of manual tasks by measurement problems).",
+   "selective_reporting": "agree: both RTI definitions are reported, but the abstract features the 41%/25% figures from the manual-excluded index and the wage-inequality conclusion rests on graphs without tests.",
+   "why": "Cross-sectional associations with causal wording and no strategy for reverse causation or unobservables; serious fits the guide."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "None invented. Only issues: Russia coefficient column (above), the 'five Eastern European countries and Russia' wording, and unverifiable 'all three comparisons' detail read from a figure. Paper is a draft version (Nov 2015, FEDEA working paper)."
+ },
+ {
+  "idx": "803",
+  "eligibility_ok": true,
+  "eligibility_note": "Structural CES model estimated by GMM/IV with its own data (EU KLEMS, 11 OECD economies, 1980-2005, four non-primary sectors); exposure is ICT capital (ICCT) and its falling price; outcomes are gender/skill wage gaps and labour income shares (labour market, distribution). Meets 10-economy rule. All economies high income, no income-group comparison. Headline effects are model-based counterfactuals.",
+  "sample_corrections": {
+   "title": "The supplied text is arXiv v9 (Oct 2025) titled 'The Race between Technology and Woman: Changes in Relative Wages and Labor Shares in OECD Countries'; the record title is from a different version (flag, not an error in content)",
+   "n_economies": "11 confirmed (258 country-year observations per sector)",
+   "years": "1980-2005 confirmed (EU KLEMS March 2008 version)",
+   "income_groups_covered": "high income only confirmed (advanced OECD economies)"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 7 first and fifth columns: -0.886 (0.052) exogenous labour supply; -0.486 (0.036) unit elastic. Table 5 observed log change in skilled gender gap is 0.012. Intro/text '49 percentage points' refers to the unit-elastic case.", "quote": "would have reduced the skilled (unskilled) gender wage gap by 49 (10) percentage points", "locator": "Table 7 p.34; text p.34"},
+   {"n": 2, "verdict": "confirmed", "correction": "-0.074 (0.006) and -0.096 (0.010).", "quote": "reduced the skilled (unskilled) gender wage gap by 49 (10) percentage points", "locator": "Table 7 row Delta(w_mu/w_fu), p.34"},
+   {"n": 3, "verdict": "confirmed", "correction": "+0.262 (0.014) and +0.264 (0.013); 26 percentage points in text.", "quote": "raised the male (female) skill wage gap by 26 (77) percentage points", "locator": "Table 7 p.34; text p.34-35"},
+   {"n": 4, "verdict": "confirmed", "correction": "+1.283 (0.053) and +0.767 (0.039); 77 percentage points in text for unit-elastic case.", "quote": "raised the male (female) skill wage gap by 26 (77) percentage points", "locator": "Table 7 p.34; text p.34-35"},
+   {"n": 5, "verdict": "confirmed", "correction": "-0.039 (0.002) and -0.070 (0.005); text: reduced male unskilled share by 7.0 pp, 53 percent of the decline.", "quote": "reduced the income share of male (female) unskilled labor by 7.0 (0.7) percentage points", "locator": "Table 7 p.34; text p.35"},
+   {"n": 6, "verdict": "confirmed", "correction": "Male skilled +0.006/+0.014, female skilled +0.017/+0.020, SE 0.001 each.", "quote": "raised the income share of male (female) skilled labor by 1.4 (2.0) percentage points", "locator": "Table 7 p.34; text p.35"},
+   {"n": 7, "verdict": "corrected", "correction": "Estimates are right (-0.001, -0.009, -0.013, SE 0.004 each; observed -0.075 in Table 6) but direction 'null' is only right for the exogenous case. With unit-elastic labour supply -0.009/0.004 (z about 2.3) and elasticity 2 -0.013/0.004 (z about 3.3) are negative at conventional levels; direction is better coded 'mixed' or 'negative, small, increasing in labour supply elasticity'. The authors say the effect is obscured by aggregation across labour types.", "quote": "becomes more visible as the labor supply elasticity increases, although it is obscured when aggregated across different types of labor", "locator": "Table 7 last row, p.34; text p.35"},
+   {"n": 8, "verdict": "confirmed", "correction": "Table 4 column k_i: production version male unskilled 1.07 (0.05), female unskilled 1.05 (0.05), male skilled 0.99 (0.04), female skilled 0.76 (0.04); cost version 1.67, 1.31, 1.12, 0.75. All match.", "quote": "ICCT capital is consistently more substitutable with male unskilled labor than with the other three types of labor", "locator": "Table 4 and text p.29"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Construction restricted to equal parameters, not rejected 'at the 39 percent significance level'. Equality across the three sectors rejected at 2 percent is a joint test; pairwise tests are rejected only at 10% (mfg-utilities), 3% (utilities-services) and 13% (mfg-services).", "quote": "because the null hypothesis cannot be rejected at the 39 percent significance level", "locator": "Section 6.1.1 p.26, footnotes 13-14"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table A3: skilled gender-gap effect -3.325 Denmark, -0.264 Finland, all-sample -0.886. Sign same in all countries in text; one exception in Table A3 is the female unskilled income share in the Netherlands (+0.001, unit-elastic case). 1990-2005 substitution with unskilled labour smaller than 1980-1995 per Table 1 text.", "quote": "for all countries, technological change embodied in ICCT capital narrows the gender wage gap and widens the skill wage gap", "locator": "Appendix F p.35; Table A3 p.68"},
+   {"n": 3, "verdict": "confirmed", "correction": "All 11 economies are OECD advanced economies; no income-group heterogeneity.", "quote": "Our sample comprises 11 OECD countries", "locator": "Section 4.1 p.16"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "High-income only; the aggregate-labour-share statement (not distinguishable from zero in the exogenous case, but negative with elastic supply) should be qualified as in result 7.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: first differences remove country effects and IV (lagged group population, lagged ICCT price) address simultaneity, but exclusion is untested and effects are counterfactuals from a maintained nested-CES structure; note the second instrument is the ICT price itself, so identification of the substitution parameters relies on ICT price variation being exogenous.",
+   "exposure_measurement": "agree: EU KLEMS ICT capital and investment price are direct measures; rental prices are constructed.",
+   "selection_of_countries_years": "agree: 11 high-income countries, 1980-2005, all countries with data, outside the smartphone/broadband/AI period.",
+   "outcome_measurement": "agree: wages from compensation per hour adjusted for age/education composition; skill defined by college completion.",
+   "specification": "agree: results depend on nesting order, consumption elasticity 0.9 and instrument choice (lagged population chosen because 'more precise'); robustness shown.",
+   "selective_reporting": "agree: robustness, country results and null results reported; headline in introduction uses unit-elastic scenario and the abstract says 'declining labor shares' although the aggregate effect is small in the exogenous case.",
+   "why": "Structural IV design with extensive robustness and bootstrap SEs; counterfactuals rely on model structure, so moderate is appropriate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers found. Flag: record title is another version's title; direction for aggregate labour share should not be a flat 'null'. Pagination refers to arXiv v9."
+ },
+ {
+  "idx": "878",
+  "eligibility_ok": false,
+  "eligibility_note": "Quantitative with own FE and convergence estimation, AI exposure (government AI readiness), 28 economies with explicit AE vs EMDE comparison, so the economy-count and design criteria hold. The outcome criterion fails: the dependent variables are Trade/GDP, merchandise trade/GDP and digital-service trade/GDP, which are not output/productivity, labour-market, poverty/distribution, living-standard or resource-cost outcomes. Digital versus merchandise trade composition is not structural change of the economy (no sectoral output or employment shares), and the GE measures are cross-country dispersion of trade ratios, not income distribution. Recommend exclusion (at most borderline).",
+  "sample_corrections": {
+   "income_groups_covered": "Groups are AE vs EMDE as defined by the authors; the paper gives no income classification. Outside the paper, some EMDEs listed (e.g. Chile, Hungary) are high-income by World Bank classification; the paper does not say so",
+   "years": "2020-2023 (112 observations = 28 x 4; beta-convergence 84 observations = 28 x 3 intervals); GE inequality 2005-2023 without AIRI - confirmed"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table A2 col 1: 0.9158*** (SE 0.08846). Note: dependent variable is ln(Trade/GDP) and the column header in the extracted text is blank for column 1.", "quote": "LNAIRI × (Group_AEs) 0.9158*** 0.4451*** 0.5584***", "locator": "Table A2, p.19"},
+   {"n": 2, "verdict": "confirmed", "correction": "0.8534*** (0.0691).", "quote": "LNAIRI × (Group_EMDEs) 0.8534*** 0.3032* 0.3644**", "locator": "Table A2, p.19"},
+   {"n": 3, "verdict": "confirmed", "correction": "0.4451*** (0.1661) in the column headed Digital Service Trade/GDP. The text lists outcomes in a different order (Trade, Merchandise, Digital); column assignment follows the table header as the record did.", "quote": "LNAIRI × (Group_AEs) 0.9158*** 0.4451*** 0.5584***", "locator": "Table A2, p.19"},
+   {"n": 4, "verdict": "confirmed", "correction": "0.3032* (0.1596).", "quote": "LNAIRI × (Group_EMDEs) 0.8534*** 0.3032* 0.3644**", "locator": "Table A2, p.19"},
+   {"n": 5, "verdict": "confirmed", "correction": "0.5584*** (0.1979) in the column headed Merchandise Trade/GDP.", "quote": "LNAIRI × (Group_AEs) 0.9158*** 0.4451*** 0.5584***", "locator": "Table A2, p.19"},
+   {"n": 6, "verdict": "confirmed", "correction": "0.3644** (0.1537).", "quote": "LNAIRI × (Group_EMDEs) 0.8534*** 0.3032* 0.3644**", "locator": "Table A2, p.19"},
+   {"n": 7, "verdict": "confirmed", "correction": "Table A3 digital service trade, EMDEs: absolute 0.0116 (0.009), conditional initial Y 0.007 (0.0056), ln AIRI 0.198*** (0.0513). Both convergence coefficients positive and insignificant.", "quote": "convergence (absolute and conditional) is not achieved in EMDEs in Digital_Service_Trade/GDP", "locator": "Table A3 p.21; text p.11"},
+   {"n": 8, "verdict": "confirmed", "correction": "Global Trade/GDP: absolute -0.249*** (0.0315); conditional initial Y -0.345*** (0.0043), ln AIRI 0.278*** (0.0048); N=84, within R2 0.9926. SEs and R2 look implausible, as the record notes.", "quote": "Initial Y −0.249*** −0.212*** −0.281*** −0.345*** −0.351*** −0.344***", "locator": "Table A3, p.21"},
+   {"n": 9, "verdict": "confirmed", "correction": "Digital service trade SD: EMDEs 7.34 to 9.42, AEs 17.87 to 16.94, Global 13.51 to 13.81 (Table A4). Paper inconsistency: Global SD for digital trade rose, yet the text says sigma-convergence is achieved for Global across all three indicators.", "quote": "But in the case of EMDEs, σ-divergence is apparent as standard deviation has risen over time", "locator": "Table A4 p.22; text p.11"},
+   {"n": 10, "verdict": "confirmed", "correction": "Table A5 total MLD 0.52664 (2005) to 0.53663 (2023), Theil 0.55067 to 0.47692, between MLD 0.02171 to 0.08777; Table A6 EMDE MLD 0.68737 to 0.57279 (0.4788 in 2020), AE MLD 0.26166 to 0.2836. All match. Note the abstract says inequality is rising in EMDEs for digital trade, whereas EMDE MLD over 2005-2023 fell; the rise holds only after 2020/2021.", "quote": "2005 0.52664 0.55067 0.88566 0.50492 0.52884 0.86355 0.02171", "locator": "Tables A5-A6, pp.22-23"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Coefficients 0.916 vs 0.853, 0.445 vs 0.303, 0.558 vs 0.364 match Table A2; no equality test; approximate CIs in record (0.74-1.09, 0.72-0.99) are the record's own computation from the SEs and are correct. Beta-convergence AEs digital -0.187*** (absolute), -0.224*** (conditional).", "quote": "The impact of AIRI is found to be stronger for AEs than EMDEs, as the associated coefficients are greater in magnitude", "locator": "Text p.11; Table A2-A3"},
+   {"n": 2, "verdict": "confirmed", "correction": "Narrative interpretation without estimates by AIRI level within EMDEs, as the record says.", "quote": "low growth in AIRI spells low growth (or even negative) in trade flows among EMDEs", "locator": "pp.13-14"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "The paper only splits AE vs EMDE; entries in the record are correctly marked as not separated by income group. AE sigma-convergence and beta-convergence for all three ratios are supported by Tables A3-A4.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: FE regression of trade ratios on a readiness index with causal wording ('AI can accelerate trade'), no instrument, four years, plausible reverse causation.",
+   "exposure_measurement": "agree: AIRI measures government readiness to deliver AI public services; only 2023 scores shown, so within-country variation 2020-2023 is not documented.",
+   "selection_of_countries_years": "agree: 28 hand-picked 'representative' countries, 4 COVID-era years, extrapolated trade values (Japan, USA, Viet Nam 2023; Lao PDR whole period).",
+   "outcome_measurement": "agree: trade ratios are standard but are not productivity or welfare outcomes, GDP also a control, extrapolated values included.",
+   "specification": "agree: controls differ across columns, stars inconsistent with SEs (ln REER -0.0832, SE 0.0712 marked *), convergence regressions with SE 0.0043 and within R2 about 0.99 on 36-84 observations; serious is right.",
+   "selective_reporting": "agree: control results 'not discussed', robustness not shown, near-zero between R2 not discussed, column order inconsistent with text.",
+   "why": "Thin identification, mismeasured exposure and small hand-picked sample; serious (the convergence regressions border on critical)."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "Record is faithful to the tables. Main problem is eligibility (outcome not in the listed families). Also note inconsistency between Table A2 column order and text order, and the unsupported claim in the abstract that inequality in digital trade is rising in EMDEs (true only after 2020)."
+ },
+ {
+  "idx": "879",
+  "eligibility_ok": true,
+  "eligibility_note": "Quantitative panel (TWFE, system GMM, lags) on 63 low/middle-income economies 2005-2019; exposure is an AI Capability Index (AI-related hardware imports plus ICT/electricity/finance indicators), outcome is labour productivity; income-group comparison (low vs lower-middle) included. Eligible under AI (3+ economies) and under ICT in general, since five of six index components are general ICT or infrastructure indicators.",
+  "sample_corrections": {
+   "n_economies": "63 confirmed (80 in initial panel, effective sample 63; N=871 country-years, Table 2 shows 1200 observations for imputed readiness variables and 1093 for labour productivity)",
+   "income_groups_covered": "Paper says 'low- and middle-income countries' and splits only low-income vs lower-middle-income; it does not list countries or state whether upper-middle economies are included",
+   "years": "2005-2019 confirmed"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 4: pooled OLS 0.450*** (t 9.823), RE 0.115*** (7.662), FE 0.0920*** (5.771), N=871, 63 countries.", "quote": "AI Capability Index 0.450*** 0.115*** 0.0920*** (Flow-based)", "locator": "Table 4, p.10"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table 5: 0.449*** (9.889), 0.118*** (7.612), 0.0937*** (5.920).", "quote": "AI Capability Index 0.449*** 0.118*** 0.0937*** (Stock-based)", "locator": "Table 5, p.10"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table 6 col 2: log AI imports 0.0497*** (t 3.100), interaction 0.0108** (t 2.106); col 4 narrow interaction 0.00952* (t 1.812).", "quote": "the interaction coefficient is positive and significant at the 5% level for broad AI imports and at the 10% level for narrow AI imports", "locator": "Table 6 and text p.11"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table 7 col 2 interaction 0.00986* (t 1.736), col 4 narrow 0.00901 (t 1.386). Note the text calls the broad stock interaction 'statistically significant' although the table shows only 10%.", "quote": "while it is not statistically significant for the narrow stock-based measure", "locator": "Table 7 p.12; text p.11"},
+   {"n": 5, "verdict": "corrected", "correction": "Range is wrong at the low end: Table 11 flow-based coefficients are 0.0693, 0.0654, 0.0684, 0.0708, 0.0716, 0.0681, so the range is 0.0654 to 0.0716 (not 0.0681 to 0.0716). Col 6 0.0681** (z 1.971), AR(2) p 0.250, Hansen p 0.179, N=810, 35 instruments, lagged DV 0.914-0.933 are correct.", "quote": "L.AI Capability Index (Flow-based) 0.0693*** 0.0654*** 0.0684*** 0.0708** 0.0716** 0.0681**", "locator": "Table 11, p.15"},
+   {"n": 6, "verdict": "confirmed", "correction": "Table 12: range 0.0655 to 0.0733; col 6 0.0655* (z 1.810), AR(2) 0.214, Hansen 0.140.", "quote": "L.AI Capability Index (Stock-based) 0.0733*** 0.0706** 0.0718** 0.0725** 0.0714** 0.0655*", "locator": "Table 12, p.16"},
+   {"n": 7, "verdict": "confirmed", "correction": "Table 13 coefficients 0.0885, 0.0804, 0.0623, 0.0540, 0.0489, 0.0526 and N 810 to 503 correct. The t range quoted (5.423 to 3.821) is lag 1 to lag 6; the smallest t is 3.026 at lag 4. 62 countries at lag 6.", "quote": "remains positive and highly statistically significant across all lags from one to six years", "locator": "Table 13, p.16"},
+   {"n": 8, "verdict": "confirmed", "correction": "Table D.5 col 6 0.0859*** (t 6.091), Table D.6 col 6 0.0859*** (t 5.827); N=870. Caution: the text says the narrow index is 'based exclusively on AI-specific hardware imports' but says it follows the same construction procedure, so it very likely still mixes in the readiness variables; the paper is not explicit.", "quote": "AI Capability Index (Flow-based) 0.0911*** 0.0889*** 0.0866*** 0.0856*** 0.0857*** 0.0859***", "locator": "Tables D.5-D.6, pp.23-24"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 10: FE interaction 0.00413 (t 0.223); pooled -0.00959 (-0.200); RE 0.00439 (0.245). Authors conclude no differential returns.", "quote": "The interaction term between LMI status and AI capability is statistically insignificant in every specification", "locator": "Table 10 p.14; text p.14"},
+   {"n": 2, "verdict": "confirmed", "correction": "Domestic readiness interaction 0.0108** (t 2.106) in Table 6 col 2 (about 0.01, as recorded).", "quote": "the interaction coefficient is positive and significant at the 5% level for broad AI imports", "locator": "Table 6, p.11"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table 8 col 4: AI x FDI -0.00126** (t -2.044), AI x GFCF 0.00114* (t 1.710), AI main 0.0655. Table 9: FDI threshold 73.6 (within sample range -37 to 103), GFCF threshold -52.2 (outside 1.4-78), net effect 0.0868.", "quote": "0.0655 + 0.00114(23.97) − 0.00126(4.74) ≈ 0.0868", "locator": "Table 8 p.12; Table 9 p.14; text p.13"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Low-income reference 0.0913 (t 5.898) and LMI interaction 0.00413 (t 0.223) are in Table 10 col 5; the lower-middle implied effect 0.0954 is the record's own sum and not printed in the paper. Upper-middle inclusion is not stated.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: TWFE, GMM with internal instruments and 1-6 year lags are used and the authors disclaim causality, but reverse causation and time-varying omitted factors are not excluded (paper says GMM 'does not fully address' these); moderate.",
+   "exposure_measurement": "agree: first principal component of six variables of which one is AI-related imports; loadings are similar (about 0.33-0.48), so the index is largely general digital/infrastructure development, imports include laptops, phones and monitors, and the authors state it does not capture realised AI use.",
+   "selection_of_countries_years": "agree: 63 of 80 LMICs retained for data completeness, readiness variables come from a MICE-imputed dataset, country list not given in the main text, pre-generative-AI period.",
+   "outcome_measurement": "agree: labour productivity is defined inconsistently (GDP/total labour force in Table 1; GDP per capita divided by total employment in Sec 4.3; real GDP per worker in Sec 5.1).",
+   "specification": "agree: flow vs stock, broad vs narrow lists, many control sets and estimators; headline TWFE stable across controls. The record's 'about 80 specs' is not stated in the text (unverifiable count).",
+   "selective_reporting": "agree: non-significant interactions and controls are reported; a single outcome; no pre-registration.",
+   "why": "The exposure measure largely does not capture AI, which makes 'serious' appropriate under the guide even though the design is otherwise a standard panel with GMM robustness."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "One correction (GMM flow range). Record's '(about 80 specs)' count is not found in the text. Narrow-index description 'AI-hardware-only' may overstate how narrow it is. Otherwise faithful to the text."
+ }
+]

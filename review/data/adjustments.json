@@ -13,5 +13,20 @@
   "decision": "context",
   "reason": "none",
   "note": "Maps AI occupational exposure descriptively and estimates no outcome from the six families. Moved from include to context after merge."
+ },
+ "298": {
+  "decision": "exclude",
+  "reason": "E4",
+  "note": "Descriptive growth-accounting and shift-share decomposition with tables reproduced from earlier work; no own statistical estimation. Reclassified from include after the second-pass check against the text. Reversible: a human reviewer should confirm."
+ },
+ "1495": {
+  "decision": "exclude",
+  "reason": "E1",
+  "note": "Number of economies never stated (only 'several developing countries'); no income-group comparison, so the sample criterion is not shown to be met. Reclassified from include after the second-pass check. Reversible: a human reviewer should confirm."
+ },
+ "878": {
+  "decision": "exclude",
+  "reason": "E3",
+  "note": "Outcomes are trade-to-GDP ratios and cross-country dispersion of those ratios, which belong to none of the six outcome families. Reclassified from include after the second-pass check. Reversible: a human reviewer should confirm."
  }
 }

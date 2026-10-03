@@ -1,0 +1,148 @@
+[
+ {
+  "idx": "535",
+  "eligibility_ok": true,
+  "eligibility_note": "Quantitative panel estimation of an AI adoption index on firm productivity and GDP growth for 10 economies (above the 3-economy AI threshold), with an explicit developed vs emerging comparison; outcomes are productivity and growth. Eligibility holds on paper, but the numbers have the look of illustrative rather than estimated values (see problems).",
+  "sample_corrections": {
+    "n_economies": "10 (confirmed: five developed, five emerging; Section 3, p.31)",
+    "years": "2015-2024 stated, but Table 1 shows only 2024 values; no other year's data are shown",
+    "unit": "Number of firms, observations and firm data source are not stated in the text (the Enterprise Surveys are only named in the abstract and Section 3 as a general source)"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Values match Table 3. Table 3 title is 'Effect of Agentic AI on Firm-Level Productivity'; dependent variable is revenue per employee per Section 3.", "quote": "AI Adoption 0.18 0.05 3.60 ***"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 4 gives only coefficients with stars; no SE and no test of the difference, although the text says the effect is 'significantly stronger' in developed economies (p.35).", "quote": "Developed 0.24*** ... Emerging 0.11**"},
+    {"n": 3, "verdict": "confirmed", "correction": "ROA is defined in Section 3 and announced as an outcome (abstract, objectives, p.35 text) but no ROA table or result exists. 'not reported' is correct.", "quote": "financial performance was proxied using return on assets"},
+    {"n": 4, "verdict": "confirmed", "correction": "Values match Table 5 (Stage 1). Text describes the dependent variable as output per worker; Section 3 defines it as GDP per person employed.", "quote": "AI Adoption Index 0.27 0.06 4.50 ***"},
+    {"n": 5, "verdict": "confirmed", "correction": "Values match Table 6. Note 0.35/0.08 = 4.375, printed as 4.38. Dependent variable is GDP growth (annual %).", "quote": "Productivity 0.35 0.08 4.38 ***"},
+    {"n": 6, "verdict": "confirmed", "correction": "Table 6 direct effect 0.09, SE 0.05, t 1.80, 10% level. The indirect effect (0.27 x 0.35) is the reviewer's arithmetic; the paper states the formula but never reports it or tests it.", "quote": "AI Adoption Index 0.09 0.05 1.80 *"},
+    {"n": 7, "verdict": "confirmed", "correction": "Table 7 values match. The 0.33 total effect for developed economies is quoted in the abstract; the paper reports no SE for the sum.", "quote": "AI × Developed Dummy 0.18 0.06 3.00 ***"},
+    {"n": 8, "verdict": "confirmed", "correction": "Table 8 values and stars match (developed 0.12**, 0.26***, 0.42***; emerging 0.04 with no star, 0.10**, 0.17**). No SEs reported; the text only says effects are stronger at higher quantiles.", "quote": "25th 0.12** 0.04"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Group figures (0.24 vs 0.11 productivity; 0.33 vs 0.15 growth; rising quantile effects) match Tables 4, 7, 8 and the abstract. Structural explanations are asserted in the discussion and conclusion without any moderator being tested. Group split is 5 vs 5 countries.", "quote": "developed economies experiencing substantially stronger growth impacts (approximately 0.33) than emerging economies (approximately 0.15)"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Paper has only a developed/emerging dichotomy; the record's high / upper-middle / lower-middle mapping is the extractor's own mapping of the 10 named countries and is correctly flagged as pooled. No low-income economy in sample.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree: causal wording with country or firm FE only, no strategy for reverse causality, authors concede it 'cannot be fully eliminated'; no time effects mentioned.",
+    "exposure_measurement": "agree: composite index of unnamed series, not specific to agentic AI by the authors' own admission, and Table 1 values are inconsistent with the stated min-max scaling (Nigeria is lowest on all three components yet has an index of 0.49, South Korea highest on all three yet 0.96).",
+    "selection_of_countries_years": "agree: 10 countries chosen on data availability, 5 vs 5 comparison, no low-income economy, and only 2024 data are displayed. Could be rated moderate on size alone, but the serious rating is defensible given the group claims.",
+    "outcome_measurement": "agree: revenue per employee, GDP per person employed and GDP growth are standard, but the firm data source, N and units are not reported.",
+    "specification": "agree: no N, R-squared, clustering level or time effects; time-invariant Developed dummy in a country-FE model; quantile regression with FE not explained; claimed robustness checks not shown.",
+    "selective_reporting": "agree: ROA announced but absent, no SEs in Tables 4 and 8, indirect effect never computed. The record's remark that 'every estimate is significant' is slightly overstated (emerging 25th quantile 0.04 has no star; direct effect only at 10%), which does not change the rating.",
+    "why": "Critical is defensible: the AI index does not measure the stated exposure, every table reports round coefficients with SEs and t-stats that reconcile exactly, there is no N, no robustness output, and Table 1 contradicts the stated index construction, so the estimates cannot be treated as reliable evidence."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invention found in the record; extracted values match the text. Minor: record cites 'control variables help mitigate potential endogeneity' to p.32; the sentence is on p.33. Additional cautions: (1) Table 1 only has 2024 rows for 10 countries yet the paper claims a 2015-2024 panel with firm-level data; (2) Tables 3-8 report no N, no R-squared, and every t-stat equals coefficient/SE at two decimals, which together with the Table 1 inconsistency suggests the figures are illustrative rather than estimated; (3) record's remark that the Developed dummy cannot enter a country-FE model is the extractor's inference but is correct."
+ },
+ {
+  "idx": "617",
+  "eligibility_ok": true,
+  "eligibility_note": "Own cross-sectional SURE estimation (126 economies, year 2000) of internet hosts on log real GDP; exposure is internet; output outcome; income-group comparison is only descriptive (box plot), but the 126-economy sample meets the 10-economy rule. Note this is a draft working paper that asks not to be cited.",
+  "sample_corrections": {
+    "n_economies": "205 states in the descriptive data (129 large, 76 small); the box plots in Figures 2 and 3 use 161 states (113 large, 48 small; income groups 54+44+28+35); 126 in the SURE regressions (93 large, 33 small)",
+    "years": "2000 (single cross-section) confirmed",
+    "income_groups_covered": "All four World Bank groups appear in Figure 3 (descriptive only); regressions do not use income groups"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Table 3, GDP equation: LHOSTS 0.423 (SE 0.066, t 6.425) in the CMI-only specification and 0.395 (SE 0.064, t 6.196) in the specification with the small-state dummy. Dependent variable is log real GDP level (Table 1), not growth.", "quote": "LHOSTS 0.423 0.066 6.425"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 3, hosts equation: LGGDP 0.396 (SE 0.062, t 6.425) without dummy; 0.399 (SE 0.064, t 6.196) with dummy. The same t-ratios (6.425, 6.196) appear in both equations, as the record notes.", "quote": "LGGDP 0.396 0.062 6.425"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "corrected", "correction": "The income-group comparison is a box plot of hosts only (Fig 3). For the small/large contrast, the text speaks of a 'much more strongly positive' relationship (R-sq 0.7852 for large states in Fig 4b vs 0.2402 for small in Fig 4a), not a steeper slope; no slopes are reported. No formal test.", "quote": "the extent of the ‘digital divide’ is greater between income groups than it is between small and large states"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 3 values match: hosts equation 6.814 (SE 47.011) and -76.790 (SE 49.069, t -1.565); GDP equation -209.499 (SE 48.835) and -179.145 (SE 45.085). The text calls the -76.790 coefficient 'very weakly significant', although t = -1.565 is not significant at 10%. No threshold is estimated.", "quote": "The size dummy is negative in accord with a priori expectations but only very weakly significant."}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "The paper gives no income-group estimates, only a box plot of internet hosts by World Bank group (Fig 3); 'not reported' for all four groups is correct.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree: single cross-section, authors state GDP and hosts are endogenous, SURE gives no exogenous variation, and no controls for institutions or geography.",
+    "exposure_measurement": "agree: internet hosts per 10,000 are a biased proxy for e-commerce, as the authors say; e-commerce itself is not measured.",
+    "selection_of_countries_years": "agree: one year, sample falls from 205 to 126 for data reasons; moderate is fair.",
+    "outcome_measurement": "agree: outcome is the level of log real GDP while the paper speaks of growth, and reported magnitudes (small dummy -209, constants 23 to 82) are implausible for a log outcome.",
+    "specification": "agree: unusual SURE set-up with each equation's dependent variable as a regressor of the other, repeated table headings, and identical t-ratios across equations; the authors concede the dummy result may reflect 'data specification and other statistical problems'.",
+    "selective_reporting": "agree: moderate is fair; all four simulations are shown but there are no diagnostics or robustness checks.",
+    "why": "Critical is defensible: levels regression on a single year with admitted endogeneity, a weak exposure proxy, and table values that look mechanically duplicated, so the estimates cannot be trusted as evidence on growth effects."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers; the record's coefficients match Table 3. Issues: (1) record says 'slope is steeper' for large vs small states, but the text and figures give R-squared values, not slopes; (2) the 'n=205' descriptive sample overstates what the box plots use (161); (3) 'not peer reviewed' in the record is an inference from the draft note ('should not be cited or quoted without prior discussion with the authors'), not stated outright; (4) the record's description of Table 3 blocks (first and second block of each specification) is correct but the table's headings are duplicated in the source."
+ },
+ {
+  "idx": "707",
+  "eligibility_ok": true,
+  "eligibility_note": "Panel of 51 economies, own FE, FE-IV and system GMM estimation; exposure is internet (and mobile) penetration; outcomes are structural change and manufacturing employment share (structural change and labour market); explicit income-group interaction.",
+  "sample_corrections": {
+    "n_economies": "51 stated in text; Table A2 note adds to 50 (6 high + 9 low + 19 lower-middle + 16 upper-middle). Country counts by table: Table 2 47-49; Table 3 46-47; Table 4 46-47; Table 5 47-49; Table 6 37-45; Table A3 47; Table A4 36 (low and middle income), 5 (South Asia), 13 (SSA)",
+    "key_controls_fixed_effects": "Table 5 labels the exposure 'Internet penetration' (no log), whereas Tables 2-4 use 'Log (internet pen)'; units of the Table 5 coefficients therefore differ from the record's 'logs in the SC equation'"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Table 2 Models 1-4 are 0.129, 0.133, 0.126, 0.137 (all significant at 10% only); Table 3 Models 5, 6, 8 are 0.180**, 0.171**, 0.175** (SE 0.0722, 0.0770, 0.0794). Record's ranges are right. The text's 'doubling' reading of a log coefficient is not exact (0.137 x ln 2 is about 0.095).", "quote": "Log (internet pen) 0.129* 0.133* 0.126* 0.137*"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 4 coefficients 0.217*, 0.204*, 0.273**, 0.258**, 0.341***, 0.329** with SE 0.123, 0.119, 0.121, 0.116, 0.131, 0.157; K-P p 0.00; Hansen p 0.11, 0.15, 0.24, 0.33, 0.19, 0.12.", "quote": "Log (internet pen) _IV 0.217* 0.204* 0.273** 0.258** 0.341*** 0.329**"},
+    {"n": 3, "verdict": "confirmed", "correction": "Table A3 coefficients 0.118*, 0.186**, 0.118*, 0.185**, 0.119* (SE 0.0693 to 0.0944); AR(2) p 0.232 to 0.51; Hansen p 0.58 to 0.80. Models 1 and 3 are identical in the table.", "quote": "System GMM results confirm that internet penetration has a positive and significant impact on SC"},
+    {"n": 4, "verdict": "confirmed", "correction": "Table 3 Model 7: Log (mob penetration) 0.177**, SE 0.0873; Model 7 contains no internet term.", "quote": "Log (mob penetration) 0.177** (0.0873)"},
+    {"n": 5, "verdict": "confirmed", "correction": "Table 6 Models 1-4: -0.0782***, -0.0753***, -0.0762***, -0.0596*** (SE 0.0226, 0.0217, 0.0220, 0.0220).", "quote": "Internet penetration − 0.0782*** − 0.0753*** − 0.0762*** − 0.0596***"},
+    {"n": 6, "verdict": "confirmed", "correction": "Table 6 Models 5-7: -0.0430*** (0.0103), -0.0626*** (0.0236), -0.0413* (0.0247); Model 5 has no year FE; no instrument test statistics reported (notes list instruments only).", "quote": "The average regional internet penetration and lagged internet penetration are used as instruments."},
+    {"n": 7, "verdict": "confirmed", "correction": "Table A4 Model 1 -0.0707*** (0.0242), Model 2 server penetration -0.116*** (0.0364); 36 countries; Model 2 has 324 observations versus 947 in Model 1.", "quote": "Even after removing the six high-income countries from our sample, we find that digitalisation has a negative and significant impact"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Table 5 Model 1: UMIC-HIC# internet pen -0.0147** (0.00556); internet pen 0.00660 (0.00966). The main term is insignificant, so the low/lower-middle effect itself is not shown to be positive and significant; the implied sum for upper-middle/high is 0.00660 - 0.0147 = -0.0081 (reviewer arithmetic).", "quote": "UMIC-HIC# internet pen − 0.0147** (0.00556)"},
+    {"n": 2, "verdict": "corrected", "correction": "Internet result is supported (Model 3: 0.0463**, -0.0448***, -0.0499***; Model 4: 0.0528**, -0.0520**, -0.0577**); the net effect for developing/developed groups is about zero (e.g. 0.0463-0.0448 = 0.0015, reviewer arithmetic), not merely 'smaller'. The mobile 'same pattern' is weaker than stated: mobile main effect is -0.00131 (SE 0.00621, insignificant), 'developing' interaction -0.00932*, 'developed' -0.00846 (insignificant), so no higher effect in underdeveloped economies is shown for mobile. Group sizes 19/19/12 sum to 50, not 51.", "quote": "we confirm a higher effect of digitalisation on structurally underdeveloped economies than for structurally developing economies"},
+    {"n": 3, "verdict": "confirmed", "correction": "Table 5 Model 2: L.logFL# internet pen 0.0105** (0.00515); internet pen main term 0.00603 (insignificant).", "quote": "L.logFL# internet pen 0.0105** (0.00515)"},
+    {"n": 4, "verdict": "confirmed", "correction": "Table A4 Model 3 South Asia -0.301*** (0.0626), 5 countries; Model 4 SSA 0.000309 (0.0637), 13 countries.", "quote": "While a negative and significant coefficient is noted for internet penetration for the South Asia sample"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Income groups are only handled through a UMIC-HIC vs LIC-LMIC interaction (Model 1) and one low-and-middle-income subsample (Table A4); the record correctly says no group is estimated separately.",
+  "risk_of_bias": {
+    "overall": "too_harsh",
+    "confounding_reverse_causation": "too_harsh: causal language ('isolate the causal effect') but the paper does use a strategy (FE-IV with regional average and lagged internet penetration, K-P and Hansen tests, system GMM with collapsed instruments); exogeneity is not established, which matches 'moderate' rather than 'serious'. Footnote 3 on reverse causality is weak, and Table 6 FE-IV reports no tests.",
+    "exposure_measurement": "agree: internet penetration is a reasonable access proxy for internet exposure; source inconsistency (ITU vs WDI) and zeros are minor.",
+    "selection_of_countries_years": "agree: ETD sample of 51 (mostly developing, 6 high-income), unbalanced panel, window set by data availability.",
+    "outcome_measurement": "agree: McMillan-Rodrik decomposition and manufacturing employment share are standard and directly measured.",
+    "specification": "too_harsh: many specifications mostly reflect robustness variants with consistent signs; real weaknesses are the unexplained size differences in controls between FE and FE-IV, the misstated 'doubling' interpretation and the 10% headline FE significance, which fit moderate.",
+    "selective_reporting": "agree: abstract gives FE range and omits FE-IV and GMM ranges; the text's 'robust' claim sits uneasily with Table 3 Model 5, where FL (0.0958, SE 0.0627) and BL (-0.589, SE 1.513) are insignificant.",
+    "why": "Standard panel with reasonable controls and a documented, if imperfect, IV and GMM strategy; exogeneity not established and causal wording is strong, so moderate is the better overall rating."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers. Corrections: (1) mobile-penetration heterogeneity is overstated in the record (main effect negative and insignificant); (2) country counts for the manufacturing models are 37-45 in Table 6 (36 in Table A4), not 36-42; (3) Table 5 exposure is labelled without 'Log', unlike Tables 2-4. The record's remark that the A2 note sums to 50 and that the text and Table A1 cite different data sources (ITU vs WDI) are correct. Record's rating of both confounding and specification as serious is harsher than the guide supports."
+ },
+ {
+  "idx": "750",
+  "eligibility_ok": true,
+  "eligibility_note": "Own weighted regressions of AI exposure (Webb patent measure) on employment-share and wage-percentile changes for ASEAN economies (at least 8 country dummies in Table 1 plus Brunei in the data section, above the 3-economy AI threshold); labour market outcome.",
+  "sample_corrections": {
+    "n_economies": "Not stated. Table 1 lists eight country dummies (Cambodia, Myanmar, Vietnam, Indonesia, Singapore, Philippines, Thailand, Malaysia), including Dummy_Singapore (0.004***, and NA in the wage column), although the text calls Singapore the reference country; Brunei is named only in the data section. So 8 to 9 economies; the record lists seven dummies plus Singapore as reference, which does not match Table 1.",
+    "years": "Text: 2015-2020 (Brunei 2014-2020, Philippines 2017-2020); Table 1 notes say 'the period of 2014-2020'",
+    "unit": "Occupation (ISCO two-digit) by country cells, weighted by average cell employment; SEs clustered by sector"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Table 1: AI score -0.102*** (t = -4.406), R-sq 0.140, N = 295; the table gives t-statistics, not SEs.", "quote": "AI score -0.102*** (-4.406)"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 1: AI score -0.459* (t = -1.842), R-sq 0.254, N = 254.", "quote": "AI score -0.459* (-1.842)"},
+    {"n": 3, "verdict": "unverifiable", "correction": "Coefficients appear only in Figure 2, which is not in the extracted text. The text is internally inconsistent on Malaysia: it first lists Malaysia among reinstatement countries with positive wages and negative employment, then says 'in Malaysia, AI has a negative impact on relative wages' and 'a positive effect on employment shares'. The record reproduces only the first version. The Figure 2 note also describes complementarity as 'wage increases without major employment shifts', whereas the text and conclusion say both employment and wages rise for Singapore.", "quote": "Notably, Malaysia experiences a positive effect on employment shares"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Text supports Singapore as the sole complementarity case and Indonesia and Thailand as displacement; the paper never groups countries by income, so 'highest-income' is the extractor's outside knowledge. Singapore wage entry in Table 1 is NA.", "quote": "Singapore uniquely demonstrates a complementarity effect"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 2 PISA mathematics 0.787 (employment) and 0.457 (wages); reading 0.679 and 0.464; science 0.604 and 0.435. Correlations over a handful of country estimates, no p-values.", "quote": "Mathematics showing the highest correlations (0.787 and 0.457, respectively)"},
+    {"n": 3, "verdict": "confirmed", "correction": "Table 2 WGI: Rule of Law 0.860 and Control of Corruption 0.843 with employment; wage correlations mostly negative (Voice and Accountability -0.595, but Political Stability +0.088).", "quote": "The “Rule of Law” dimension shows the strongest positive correlation with employment (0.860)"},
+    {"n": 4, "verdict": "confirmed", "correction": "Table 2: Cisco pillars 0.557 to 0.917 with employment, ASEAN pillars 0.636 to 0.825; wage correlations from -0.616 to +0.052. Ease of Doing Business 0.917 vs -0.556 matches.", "quote": "strongly correlates positively with employment (0.917)"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "The paper has no income grouping. Record's Singapore entry is supported by the text (complementarity) but the coefficients are only in Figure 2; 'not reported' for the other groups is correct.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree: pooled occupation-level regression with only country dummies and causal 'impact' language; predetermined US-based exposure limits reverse causation but confounding by occupation skill, sector and other automation is untreated.",
+    "exposure_measurement": "agree: US-patent, US-SOC exposure assumed identical in Southeast Asia and time-invariant, measuring potential overlap rather than adoption.",
+    "selection_of_countries_years": "agree: six-year window, country-specific start years, and missing wage data for some cells (254 vs 295 observations).",
+    "outcome_measurement": "agree: two-digit ISCO employment shares and wage percentiles from ILO and national sources; coarse and wage data incomplete.",
+    "specification": "too_lenient: the regression equation is not rendered, Table 1 shows country dummies (including Singapore, despite being called the reference) rather than country-specific slopes, and the effect typology (displacement, reinstatement, complementarity) rests on coefficient signs with no significance reported; the Malaysia description contradicts itself. Serious would fit.",
+    "selective_reporting": "agree: country-level coefficients and SEs are not tabulated in the text and the Table 2 correlations carry no p-values, but Figure 2 may contain them, so moderate is acceptable.",
+    "why": "Descriptive occupation-level regressions with causal wording, no controls, and an exposure measure imported from the US; serious overall is fair."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers. Corrections: (1) record says Table 1 has seven dummies with Singapore as reference, but Table 1 also lists Dummy_Singapore (0.004*** employment, NA wage), contradicting the text's statement that Singapore is the reference; (2) record's Malaysia classification (reinstatement, wage positive and employment negative) conflicts with the later text on Malaysia; (3) record's remark that Singapore wage data are missing is an inference from the NA entry (it could also reflect collinearity of dummies with the intercept); (4) Table 1 notes say 2014-2020 while the text says 2015-2020."
+ }
+]

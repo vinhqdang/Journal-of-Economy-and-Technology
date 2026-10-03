@@ -1,0 +1,155 @@
+[
+ {
+  "idx": "393",
+  "paper_verdict": {
+   "estimator_family": "AMG (augmented mean group) / heterogeneous-panel with common factors; MG baseline; pooled first-difference OLS with year dummies for Table 2",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Outcome is the authors' own estimated ln TFP (sector-level, AMG-derived), not labour productivity; ICT exposure is log ICT investment, coefficients are small elasticities. Table 2 estimates are first-differences (short run), not comparable with the level estimates in Table 1; MG/MG robust/AMG robust rows share the same data and are not independent. Endogeneity handled only via common-factor augmentation, no explicit reverse-causality test."
+  },
+  "estimates": [
+   {
+    "estimate_id": "393-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 1 row Ln ITC: '.00707  .00908***  .00817**' with SEs '(.00516) (.00306) (.00414)'; N 1322 1322 1106",
+    "note": "Column order MG, MG Robust, AMG Robust checked. Table 2 note says robust standard errors. ITC is ICT investment (log). Outcome is estimated TFP level, sector-by-country panel (17 countries, 13 sectors); income group not stated (EU)."
+   },
+   {
+    "estimate_id": "393-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 1 row Ln ITC: '.00707  .00908***  .00817**' with SEs '(.00516) (.00306) (.00414)'; N 1322 1322 1106",
+    "note": "MG column; N 1322 matches."
+   },
+   {
+    "estimate_id": "393-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 1 row Ln ITC: '.00707  .00908***  .00817**' with SEs '(.00516) (.00306) (.00414)'; N 1322 1322 1106",
+    "note": "MG Robust column; N 1322 matches."
+   },
+   {
+    "estimate_id": "393-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 2: 'D.ln ITC .00194 .00386**' with '(.00129) (.00163)'; N 1158 1158; 'robust standard errors in brackets'",
+    "note": "Second column is 'TFP estimated'; first step of pooled first-difference model, short-run effect, not comparable to level estimates."
+   },
+   {
+    "estimate_id": "393-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 2: 'D.ln ITC .00194 .00386**' with '(.00129) (.00163)'; N 1158 1158",
+    "note": "First column is 'TFP' (calculated by accounting method per text); first-difference specification."
+   }
+  ]
+ },
+ {
+  "idx": "407",
+  "paper_verdict": {
+   "estimator_family": "Panel fixed effects (LSDV), no IV",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Outcome is labour productivity per hour (2012 US$, 2005 EKS PPP); table does not print the dependent variable and it is unclear whether it is logged, so log(ICTS) coefficients may or may not be elasticities. ICT exposure is ICT spending as % of GDP (logged); Internet users per 100 people is a level semi-elasticity. Full sample, CEE/WE subsamples and sub-period estimates overlap in data (not independent). Very small samples in sub-period regressions (N 28-112) with many regressors; no endogeneity treatment."
+  },
+  "estimates": [
+   {
+    "estimate_id": "407-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4: log(ICTS) 0.192*** / 0.150*** / 0.058* with SEs (0.015) (0.020) (0.026); Num. obs. 399 133 266",
+    "note": "Dependent variable header not printed in table; text says 'labour productivity' (LP per hour). Whether LP is logged is not visible (equation 4 garbled). Note: '***p<0.001... Standard errors are in parenthesis.' 21 EU countries, mixed income."
+   },
+   {
+    "estimate_id": "407-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4: log(ICTS) 0.192*** / 0.150*** / 0.058* with SEs (0.015) (0.020) (0.026); Num. obs. 399 133 266",
+    "note": "Dependent variable header not printed in table; text says 'labour productivity' (LP per hour). Whether LP is logged is not visible (equation 4 garbled)."
+   },
+   {
+    "estimate_id": "407-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4: log(ICTS) 0.192*** / 0.150*** / 0.058* with SEs (0.015) (0.020) (0.026); Num. obs. 399 133 266",
+    "note": "Dependent variable header not printed in table; text says 'labour productivity' (LP per hour). Whether LP is logged is not visible (equation 4 garbled)."
+   },
+   {
+    "estimate_id": "407-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4: INTuse 0.003*** / 0.005*** / 0.002*** with SEs (0.000) (0.001) (0.000)",
+    "note": "Internet users per 100 people (level), semi-elasticity; Dependent variable header not printed in table; text says 'labour productivity' (LP per hour). Whether LP is logged is not visible (equation 4 garbled)."
+   },
+   {
+    "estimate_id": "407-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4: INTuse 0.003*** / 0.005*** / 0.002*** with SEs (0.000) (0.001) (0.000)",
+    "note": "Internet users per 100 people (level)."
+   },
+   {
+    "estimate_id": "407-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4: INTuse 0.003*** / 0.005*** / 0.002*** with SEs (0.000) (0.001) (0.000)",
+    "note": "Internet users per 100 people (level)."
+   },
+   {
+    "estimate_id": "407-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5: log(ICTS) 0.045 0.117*** 0.017 | 0.003 -0.038 \u22120.141, SEs (0.055) (0.023) (0.141) (0.035) (0.019) (0.093); Num. obs. 49 56 28 98 112 56",
+    "note": "Column order CEE 1993-99, 2000-07, 2008-11, WE 1993-99, 2000-07, 2008-11 checked; N consistent with countries x years."
+   },
+   {
+    "estimate_id": "407-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5: log(ICTS) 0.045 0.117*** 0.017 | 0.003 -0.038 \u22120.141, SEs (0.055) (0.023) (0.141) (0.035) (0.019) (0.093); Num. obs. 49 56 28 98 112 56",
+    "note": "Column order CEE 1993-99, 2000-07, 2008-11, WE 1993-99, 2000-07, 2008-11 checked; N consistent with countries x years."
+   },
+   {
+    "estimate_id": "407-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5: log(ICTS) 0.045 0.117*** 0.017 | 0.003 -0.038 \u22120.141, SEs (0.055) (0.023) (0.141) (0.035) (0.019) (0.093); Num. obs. 49 56 28 98 112 56",
+    "note": "Column order CEE 1993-99, 2000-07, 2008-11, WE 1993-99, 2000-07, 2008-11 checked; N consistent with countries x years."
+   },
+   {
+    "estimate_id": "407-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5: log(ICTS) 0.045 0.117*** 0.017 | 0.003 -0.038 \u22120.141, SEs (0.055) (0.023) (0.141) (0.035) (0.019) (0.093); Num. obs. 49 56 28 98 112 56",
+    "note": "Column order CEE 1993-99, 2000-07, 2008-11, WE 1993-99, 2000-07, 2008-11 checked; N consistent with countries x years."
+   },
+   {
+    "estimate_id": "407-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5: log(ICTS) 0.045 0.117*** 0.017 | 0.003 -0.038 \u22120.141, SEs (0.055) (0.023) (0.141) (0.035) (0.019) (0.093); Num. obs. 49 56 28 98 112 56",
+    "note": "Column order CEE 1993-99, 2000-07, 2008-11, WE 1993-99, 2000-07, 2008-11 checked; N consistent with countries x years. Coefficient -0.038 has no star though SE 0.019 (printed as such)."
+   },
+   {
+    "estimate_id": "407-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5: log(ICTS) 0.045 0.117*** 0.017 | 0.003 -0.038 \u22120.141, SEs (0.055) (0.023) (0.141) (0.035) (0.019) (0.093); Num. obs. 49 56 28 98 112 56",
+    "note": "Column order CEE 1993-99, 2000-07, 2008-11, WE 1993-99, 2000-07, 2008-11 checked; N consistent with countries x years."
+   },
+   {
+    "estimate_id": "407-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5: INTuse 0.011 0.003*** \u22120.001 | 0.002** 0.002*** 0.001; SEs (0.006) (0.001) (0.002) (0.001) (0.000) (0.001)",
+    "note": "CEE 2000-2007 column; N 56."
+   },
+   {
+    "estimate_id": "407-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5: INTuse 0.011 0.003*** \u22120.001 | 0.002** 0.002*** 0.001; SEs (0.006) (0.001) (0.002) (0.001) (0.000) (0.001)",
+    "note": "WE 2000-2007 column; N 112."
+   }
+  ]
+ }
+]

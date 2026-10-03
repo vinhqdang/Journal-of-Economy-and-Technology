@@ -1,0 +1,220 @@
+[
+ {
+  "idx": "245",
+  "paper_verdict": {
+   "estimator_family": "panel fixed effects OLS (country and year FE) with FMOLS, DOLS and PCSE robustness; spatial panel models for spillovers",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Outcome GTFP is a Malmquist-Luenberger/super-SBM green productivity index (growth-type), not labor productivity or GDP; exposure is a composite digital economy index (0-1 scale) so coefficients are not in comparable units. Estimates are mostly negative and several columns include a quadratic term (DE and DE2), so linear coefficients are not marginal effects. Many estimates come from the same sample (OLS/FMOLS/PCSE/DOLS/lags/subsamples) and are not independent. Income-group split has a tiny low-income cell (N=16) and annual WB reclassification. Belt and Road countries only. Reverse causality: no instruments; only lags of DE and FMOLS/DOLS endogeneity corrections."
+  },
+  "estimates": [
+   {
+    "estimate_id": "245-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DE −0.425* (-1.90) ... N 628; t statistics in parentheses.",
+    "note": "Table 9 col (2) matches; t-stats per table note; N 628."
+   },
+   {
+    "estimate_id": "245-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DE −0.423** (-1.97); N 628",
+    "note": "Table 9 col (1) has no control rows; matches."
+   },
+   {
+    "estimate_id": "245-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DE −0.339*** (-4.112); N 587",
+    "note": "Matches. N 587 (two cross-sections dropped, so about 38 countries per text; n_countries left blank in extraction, acceptable)."
+   },
+   {
+    "estimate_id": "245-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DE −1.017*** (-7.56); DE2 0.782*** (5.53); N 605",
+    "note": "Matches; DE2 in the same model is 0.782*** (5.53). Linear term of a quadratic specification, not a marginal effect."
+   },
+   {
+    "estimate_id": "245-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "L1.DE −0.506*** (-6.12); N 604",
+    "note": "Matches Table 10 col (1). Estimator not stated in the paper."
+   },
+   {
+    "estimate_id": "245-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "EU DE −0.662*** (-3.25); N 306",
+    "note": "Matches. Note the 'EU' group in Table B1 includes non-EU countries (Albania, Russia, Ukraine, etc.)."
+   },
+   {
+    "estimate_id": "245-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ASEAN DE 0.212 (1.56); N 94",
+    "note": "Matches."
+   },
+   {
+    "estimate_id": "245-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ASIA DE −0.287** (-2.23); N 205",
+    "note": "Matches. Table B1 defines the group as ASIA (Except ASEAN), so it is non-ASEAN Asia."
+   },
+   {
+    "estimate_id": "245-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Low-income DE −6.305 (-1.66); N 16",
+    "note": "Matches. N=16 country-year observations is very small."
+   },
+   {
+    "estimate_id": "245-10",
+    "verdict": "corrected",
+    "corrections": {
+     "sample_income_group": "middle (lower-middle and upper-middle combined; paper only labels the group 'Middle-income')"
+    },
+    "quote": "Country classification Low-income Middle-income High-income",
+    "note": "Coefficient (-1.240***), t (-3.55) and N 373 are correct. The paper does not restrict the group to upper-middle income; Table A1 lists a single Middle-income group (World Bank annual classification, so countries move between groups)."
+   },
+   {
+    "estimate_id": "245-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "High-income DE −0.860*** (-4.45); N 239",
+    "note": "Matches."
+   },
+   {
+    "estimate_id": "245-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DE −0.374*** −0.463*** ... (-5.10) (-5.74); N 548 528",
+    "note": "Matches Table 17 col (4) (with controls); col (3) without controls is -0.374*** (-5.10), N 548."
+   },
+   {
+    "estimate_id": "245-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DE −0.266** (-2.043); N 605",
+    "note": "Matches Table 17 col (5)."
+   },
+   {
+    "estimate_id": "245-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "DE −1.602*** (-5.903); DE2 1.567*** (5.135); N 587",
+    "note": "Matches Table 9 col (4); DE2 = 1.567*** (5.135). Linear term of a quadratic specification."
+   }
+  ]
+ },
+ {
+  "idx": "268",
+  "paper_verdict": {
+   "estimator_family": "panel fixed effects (country FE, year FE) growth regression in log differences, country-clustered robust SEs; no IV/GMM",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Exposure is growth of ICT capital services per worker (capital deepening, log change x100), an input-growth elasticity rather than technology adoption; outcome is labor productivity growth (log change x100). The four informality proxies (VA share, vulnerable, agricultural, self employment) give four re-estimates on the same sample, so they are not independent, and subsamples (advanced, emerging) overlap with the global sample. Interaction terms (ΔINF x ln kIT) are conditional effects and should not be pooled with main effects. Authors argue reverse causality is mitigated by using growth rates/first differences (footnote 9) and say no suitable instrument exists. Country counts per regression are not given separately; 118/80/38 are sample totals (2374/1583/791 observations)."
+  },
+  "estimates": [
+   {
+    "estimate_id": "268-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .026** (.011); Observations 2374",
+    "note": "Matches Table 5 col (2) Vul. Emp. SE in parentheses per Table 4 note; 118 countries per Section 3."
+   },
+   {
+    "estimate_id": "268-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .042*** (.013); Observations 2374",
+    "note": "Matches Table 5 col (1) Inf. VA."
+   },
+   {
+    "estimate_id": "268-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .026** (.012); Observations 2374",
+    "note": "Matches Table 5 col (3) Agr. Emp."
+   },
+   {
+    "estimate_id": "268-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .029*** (.01); Observations 2374",
+    "note": "Matches Table 5 col (4) Self Emp.."
+   },
+   {
+    "estimate_id": "268-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .019* (.011); Observations 1583",
+    "note": "Matches Table 6 col (2) Vul. Emp. 80 emerging & developing countries per Section 3."
+   },
+   {
+    "estimate_id": "268-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .032** (.013); Observations 1583",
+    "note": "Matches Table 6 col (1) Inf. VA."
+   },
+   {
+    "estimate_id": "268-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .021 (.013); Observations 1583",
+    "note": "Matches Table 6 col (3) Agr. Emp."
+   },
+   {
+    "estimate_id": "268-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .022* (.011); Observations 1583",
+    "note": "Matches Table 6 col (4) Self Emp.."
+   },
+   {
+    "estimate_id": "268-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": " Δln kIT .061** .064** .055** .065** (.028) (.024) (.026) (.025); Observations 791",
+    "note": "Matches Table 7 col (2) Vul. Emp. Table text layout is partly garbled below theΔln kIT row but this row and its SEs are aligned; 38 advanced economies per Section 3. 'high' income is the paper's advanced-economy grouping (Conference Board), not strictly World Bank high income."
+   },
+   {
+    "estimate_id": "268-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .061** (.028); Observations 791",
+    "note": "Matches Table 7 col (1) Inf. VA."
+   },
+   {
+    "estimate_id": "268-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .055** (.026); Observations 791",
+    "note": "Matches Table 7 col (3) Agr. Emp."
+   },
+   {
+    "estimate_id": "268-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Δln kIT .065** (.025); Observations 791",
+    "note": "Matches Table 7 col (4) Self Emp.."
+   },
+   {
+    "estimate_id": "268-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ΔINF × ln kIT .183* (.104); Observations 1583",
+    "note": "Matches Table 6 col (2) Vul. Emp. This is an interaction coefficient (informality change x level of ICT capital per worker), not the main effect of ICT; not poolable with main-effect estimates."
+   },
+   {
+    "estimate_id": "268-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ΔINF × ln kIT .144* (.082); Observations 2374",
+    "note": "Matches Table 5 col (2) Vul. Emp. This is an interaction coefficient, not the main ICT effect; not poolable with main-effect estimates."
+   }
+  ]
+ }
+]

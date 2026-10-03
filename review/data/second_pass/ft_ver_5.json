@@ -1,0 +1,328 @@
+[
+ {
+  "idx": "269",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (CD tests, CIPS, Pesaran-Yamagata, Pedroni/Westerlund, Dumitrescu-Hurlin Granger tests) of an ICT index (broadband, internet, mobile) against GDP per capita for 41 Sub-Saharan African economies, 2000-2019. Meets exposure, sample (>=10) and output criteria. No coefficients are estimated, only causality test statistics, which is a weak form of 'own estimation' but acceptable.",
+  "sample_corrections": {
+   "n_economies": "41 (Table A3 lists 41 countries and Table 1 has 820 obs = 41 x 20). The '42 African economies' in the abstract, introduction and conclusion is an inconsistency in the paper; the data section says '41 Sub-Saharan African economies'.",
+   "economies_or_groups": "The Appendix Table A3 list is complete in the text (21 + 20 = 41 names, e.g. Angola ... Zimbabwe, incl. Mauritius, Botswana, Gabon, Equatorial Guinea, South Africa, Namibia, Sudan); it is not truncated. Seychelles is not in the list.",
+   "income_groups_covered": "mixed (low, lower-middle and upper-middle income SSA economies by name; no income-group analysis)"
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "LICT ! LGDP 1.90 \u22120.30 0.77 (Table 7, p.13; arrow garbled in extraction)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "LGDP ! LICT 3.65 4.99 0.000* (Table 7, p.13; arrow garbled in extraction)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Values as printed: LK->LGDP W-bar 2.65, Z-bar 20.08, p 0.04 (**); LL->LGDP W-bar 2.93, Z-bar 2.99, p 0.000 (*). The Z-bar of 20.08 is indeed inconsistent with p=0.04 (likely a typo); record flags this correctly.",
+    "quote": "LK ! LGDP 2.65 20.08 0.04**; LL ! LGDP 2.93 2.99 0.000* (Table 7, p.13)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 5: Delta 9.68*, Adj Delta 11.71* (slope homogeneity rejected at 1%, p.12-13); conclusion: 'absence of feedback from ICT development to growth may have been due to the lack of absorptive capacity'"
+   }
+  ],
+  "income_group_results": "corrected",
+  "income_group_note": "No income-group results exist, so 'not reported' is right. But the record's speculation about Seychelles is wrong: Seychelles is not in Table A3 (Mauritius is). The sample lists low, lower-middle and upper-middle income SSA economies by name; no World Bank classification is used.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): pairwise/bivariate Granger tests in first differences are predictive only and yet the paper uses 'causal' in title/abstract; it does test both directions (partial handling of reverse direction) but has no omitted-variable or exogenous-variation strategy.",
+   "exposure_measurement": "agree (moderate): PCA index of three log subscription measures captures access, not use or quality; text confirms PCA of logs with COMP1 explaining 82% (Table A1 0.8241); logging near-zero broadband values (min 3.07E-14) is fragile.",
+   "selection_of_countries_years": "agree (moderate): SSA only, 2000-2019, balanced 41-country panel; stated N inconsistent (41 vs 42) but no selective choice evident.",
+   "outcome_measurement": "agree (low): GDP per capita constant 2010 US$ from WDI is a standard output measure.",
+   "specification": "agree (serious, borderline moderate): lag length not reported (text only says robust to different lags), causality run on first differences despite cointegration, capital is a gross-flow measure with negative minimum in Table 1 yet logged, no coefficients estimated.",
+   "selective_reporting": "agree (moderate): CADF unit-root and AfDB-index robustness are 'available upon request'; Table 7 Z-bar 20.08 inconsistency; table cross-references wrong (correlations called Table 3 but are Table 2; first-difference unit root cited as Table 5 but is Table 4).",
+   "why": "Descriptive Granger-type evidence presented with causal wording, no identification strategy, limited transparency on lags and robustness; serious is appropriate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers found. Record errors: (1) Table A3 country list is complete, not truncated, and shows 41 economies, no Seychelles; (2) income-group note should not speculate on Seychelles. Paper-internal inconsistencies correctly flagged (41 vs 42, Z-bar 20.08). Minor: the paper reports no lag length ('findings were robust for different lag lengths') - record is right."
+ },
+ {
+  "idx": "276",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel FE/2SLS/mediation estimation of Stanford AI Vibrancy score on an education development index (HCBED) for 29 countries (>=3 for AI), with a developed/developing split. Outcome is education/human capital (living standards beyond income) with an inequality mediator. Meets criteria.",
+  "sample_corrections": {
+   "years": "2017-2021 (60 monthly observations per country created by quadratic interpolation of annual data; 29 x 60 = 1740 country-months, 1734 in regressions). Underlying data are about 5 annual observations per country.",
+   "economies_or_groups": "29 countries 'primarily drawn from OECD and BRICS economies'; Fig. 1 note: most white-background countries are OECD, Brazil, China, India, Russia are BRIC. The paper claims 'a balanced mix of developed and developing countries' but gives no developed/developing list in text.",
+   "income_groups_covered": "mixed, no World Bank income classification used; low-income countries absent (authors: many less-developed countries lack data)",
+   "unit": "country-month after interpolation (Table 2 N=1740); Table 5 uses N=1182"
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 3 Model (1): 0.084*** (0.020), N=1734, R2=0.598. The text's '1% increase in AI development is associated with a 0.084 increase' misdescribes units (AI index scaled 0-1), as the record notes.",
+    "quote": "AI 0.084*** (0.020); text: 'a 1% increase in AI development is associated with a 0.084 increase in the HCBED' (Table 3, p.8)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 3 Model (3) 'Developed country': 0.058** (0.023), N=358. Table stars imply p<0.05 while text says 10%; record notes both.",
+    "quote": "'the coefficient for developed countries is 0.058, significant at the 10% level' (p.8)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table 3 Model (2) 'Developing country': -0.031 (0.034), N=1376, not significant.",
+    "quote": "AI -0.031 (0.034), Observations 1376 (Table 3)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Model (4): 0.172*** (0.045), N=690 (2020.01-2021.12).",
+    "quote": "'AI adoption is associated with a substantial positive effect on HCBED, with a coefficient of 0.172' (p.9)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Model (5): -0.024*** (0.008), N=1044 (2017.01-2019.12).",
+    "quote": "'the coefficient is negative (-0.024)' (p.9)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Table 4 Model (6): 0.082*** (0.0174), N=1734.",
+    "quote": "AI 0.082*** (0.0174), HCBED2 (Table 4, p.11)"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "Model (7): AI_Readiness 0.004*** (0.001); units of the Oxford index not defined.",
+    "quote": "AI_Readiness 0.004*** (0.001) (Table 4, p.11)"
+   },
+   {
+    "n": 8,
+    "verdict": "confirmed",
+    "correction": "Table 4 Models (8)-(13): Economic 0.000*** (0.000), R&D -0.000 (0.000), Diversity 0.010*** (0.002), Education 0.009*** (0.001), Infrastructure 0.001 (0.000) no star, Policy and Governance 0.002*** (0.000). Matches record; text says R&D and Infrastructure not significant at 95%.",
+    "quote": "Diversity_pillar 0.010*** (0.002); Education_pillar 0.009*** (0.001) (Table 4)"
+   },
+   {
+    "n": 9,
+    "verdict": "confirmed",
+    "correction": "Table A.2 values match: legislative 0.000***, study programs 0.002***, penetration 0.002**, talent concentration -0.000, gender equality 0.000*, strategy 0.001***, new funded companies 0.004***, notable ML models -0.000, internet speed 0.0018 (0.0013), private investment 0.002***, journal publications 0.022*** (0.005), patents 0.002***; N 992-1734. Note: the record lists penetration among 'significant' without noting it is ** (p<0.05), and gender equality is only * (p<0.1).",
+    "quote": "AI_Journal_Publications 0.022*** (0.005); AI_Patent_Grants 0.002*** (0.001) (Table A.2, p.19)"
+   },
+   {
+    "n": 10,
+    "verdict": "confirmed",
+    "correction": "Table 5: 0.260*** (0.0785), 0.179*** (0.0482), 0.244*** (0.070); N=1182 in all three; KP Wald F 36.226, 119.744, 46.330; KP LM 12.462, 41.510, 15.617. The drop from N=1734 to 1182 is not explained in the text.",
+    "quote": "AI 0.260*** (0.0785); Weak identification test 36.226 (Table 5, p.14)"
+   },
+   {
+    "n": 11,
+    "verdict": "confirmed",
+    "correction": "Table 6 Mechanism (1): AI -> Economic_inequity 2.400*** (0.2966), Gini from OECD database (table note 2). Record's data source is correct.",
+    "quote": "Economic_inequity is measured by Gini-coefficients ... obtained from the OECD database (Table 6 note)"
+   },
+   {
+    "n": 12,
+    "verdict": "confirmed",
+    "correction": "Direct 0.057, indirect 0.027*** (SE 0.005), total 0.084; Economic_Inequity->HCBED 0.0112*** (0.0016). About one third (0.027/0.084) is the extractor's arithmetic and is correct.",
+    "quote": "'The direct effect of AI on HCBED is estimated at 0.057, while the indirect effect ... is 0.027' (p.15)"
+   },
+   {
+    "n": 13,
+    "verdict": "confirmed",
+    "correction": "Mechanism (2): AI -> Education_inequality 0.567* (0.3105); Education_inequality -> HCBED -0.006*** (0.0016); Sobel-Goodman -0.003* (0.002); direct 0.088; total 0.084. Education inequality is the Legatum component (table note 3).",
+    "quote": "'negative and significant at the 90% confidence level ... estimated at -0.006' (p.15)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Supported: developed 0.058** (0.023, N=358) vs developing -0.031 (0.034, N=1376). The paper gives no classification criterion or country list for 'developed'; the 'about 6 countries' in the income_group entry is the extractor's arithmetic (358/60), not stated in the paper. No formal interaction test.",
+    "quote": "'significant positive influence on HCBED in developed countries' and developing CI 'crosses the zero line' (p.8-9)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "COVID 0.172*** vs 2017-2019 -0.024***; 'the coefficient is negative (-0.024)' (Table 3 Models 4-5, p.9)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "'four of the AI Pillars - Diversity, Education, Policy and Governance, and Economy - lie entirely to the right of the zero line' (p.11)"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Developed 0.058** (SE 0.023, N=358) and developing -0.031 (SE 0.034, N=1376) are right; low-income not covered (limitations: less-developed countries lack data). 'about 6 countries' is the extractor's inference, and the paper does not name which countries are 'developed'; the text-vs-table significance mismatch (10% vs **) is correctly noted.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): causal wording ('solves the two-way causality issue') with an industrial-robot IV whose exclusion restriction is argued in two sentences; PSM announced but no PSM results shown; the 2SLS sample drops to N=1182 unexplained; controls include Legatum education-quality indices that also feed HCBED.",
+   "exposure_measurement": "agree (serious): total Vibrancy Score is a national AI ecosystem composite (R&D, economy, infrastructure incl. supercomputers, policy), not AI use in education; authors concede 'generalization bias'.",
+   "selection_of_countries_years": "too_harsh (moderate): 29 mostly OECD/BRICS countries chosen for data availability and only 2017-2021, which limits generalisation, but the selection rule is stated and not outcome-driven; serious is a stretch.",
+   "outcome_measurement": "agree (serious): HCBED is the authors' own composite using literature-based country returns to education, Legatum quality scores and annual series quadratically interpolated to months (60 'periods' from about 5 annual points), which inflates N.",
+   "specification": "agree (serious): FE regressions on interpolated monthly data with 'YearFE' and no stated clustering; VIF 8.4 for lnGDP and about 6.8 for three education-quality controls (Table 2) while text claims average VIF below 4; R2 0.598 (Table 3) vs 0.9916 (Table 6) for the same AI coefficient 0.084.",
+   "selective_reporting": "agree (moderate): null/negative results reported (developing, pre-COVID, R&D/Infrastructure pillars), but PSM never reported, text-vs-table significance mismatch (10% vs 5%) and several coefficients rounded to 0.000.",
+   "why": "Causal claims rest on a weak IV and on interpolated data that mechanically overstate precision; serious fits (borderline critical because interpolation invalidates standard errors)."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers. Record notes that need nuance: (1) 'about 6 countries' for the developed subsample is inference, not a paper statement; (2) text claims average VIF below 4 whereas Table 2 shows VIF 8.43 for LnGDP and 6.8 for education sub-indices (record reports VIF 8.4 correctly); (3) Table 4 Infrastructure 0.001 and Table A.2 gender equality 0.000* are marginal; (4) text says 'within the specified 20 months' and 'from 2017 to 2023' for pillar figures, minor internal inconsistencies, not in record."
+ },
+ {
+  "idx": "285",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel FE/RE/FGLS/IV estimation of ICT capital-services elasticity on GDP growth for 27 European economies, 1996-2016. Meets exposure, sample (>=10) and output criteria.",
+  "sample_corrections": {
+   "n_obs": "The record says N=558 or 567 'reported inconsistently'; they are consistent: Table 2 notes give balanced N=567 (27 x 21) and unbalanced N=558 (T=19-21), i.e. 567 minus the nine removed outliers (Table A.1). Subperiods: N=238 (1996-2004) and N=320 (2005-2016).",
+   "economies_or_groups": "Text says 'all European countries for the period 1996-2016, with the exception of Malta (hereinafter EU-27)'; 'EU-27' is the paper's label, membership list not given in text.",
+   "income_groups_covered": "not reported (EU/European economies; paper gives no income classification)"
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 2 FE, EU-27 without outliers: 0.092*** (0.014); equation (4) 0.092.",
+    "quote": "'a 10% increase of the growth rate of ICT capital services would result, on average, in a 0.92% increase in the GDP growth rate' (p.208)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 2 full-sample FE 0.116*** (0.02).",
+    "quote": "\u0394lnKICT 0.116*** (0.02) (Table 2, EU-27 Full Sample, FE)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "IV-2lags 0.114*** (0.034); IV-4lags 0.095** (0.036); first-stage F about 30 and 21 (note 7). The text wrongly says IV coefficients are 'presented in Table 1' (they are in Table 2).",
+    "quote": "\u0394lnKICT 0.114*** (0.034) IV-2lags; 0.095** (0.036) IV-4lags (Table 2)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Table 2: RE 0.100, FGLS 0.092, IV 0.114/0.095, full-sample FE 0.116, RE 0.124, FGLS 0.139; SEs 0.014-0.036.",
+    "quote": "'almost identical with the estimation of the random effects estimator (0.100)' (p.208)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Table 3 FE 1996-2004 0.09*** (0.019); FE 2005-2016 0.087** (0.026). Table 3 note uses 0.001/0.01/0.05 star codes, differing from Table 2 (0.01/0.05/0.1), as the record says. RE 2005-2016 0.094* (0.029) looks inconsistent with its SE.",
+    "quote": "'with ICT elasticity being about 0.09 in all cases' (p.210)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Elasticity about 3 times the ICT income share (0.03, Table A.2/Tables 4-5).",
+    "quote": "'The estimated ICT elasticity is three times higher than the income share (0.03)' (p.208)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Split was by ICT capital deepening (23.1% vs 12% mean growth), used to look for spillover signs; elasticities about equal.",
+    "quote": "'no sign of inflated ICT elasticity in either period that could serve as an explanation of spillover effects' (p.211-212)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Full-sample FE: labour 0.439 > non-ICT capital 0.380; without outliers FE: non-ICT capital 0.449 > labour 0.367. ICT 0.116 vs 0.092.",
+    "quote": "'In the full sample, labor output elasticity is higher than non-ICT capital, whereas the opposite is observed when outliers are removed' (p.208)"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "The paper reports no income-group results. The record's 'high' entry (pooled 0.09-0.12) is the extractor's labelling; the numbers are right but not an income-group finding.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "too_harsh (moderate): growth-on-growth FE panel with non-ICT capital, labour and year dummies is the standard growth-accounting specification; reverse causality is tested with 2- and 4-year lagged instruments (F about 30 and 21), IV results similar to FE, and the authors concede lags are 'not a perfect instrument' and that omitted intangibles are plausible. Causal wording is present but hedged. Serious here is inconsistent with the record's own moderate overall.",
+   "exposure_measurement": "agree (low): ICT capital services with Byrne-Corrado adjusted deflators from the TED, a standard growth-accounting measure.",
+   "selection_of_countries_years": "agree (moderate): near-exhaustive European sample (Malta excluded), 1996-2016, nine outliers removed; the N 'inconsistency' in the record is not real.",
+   "outcome_measurement": "agree (low): GDP growth from TED national accounts.",
+   "specification": "agree (moderate): FE preferred, RE/FGLS/IV reported, outliers removed on a stated Cook's distance/DFBETA rule and results shown both ways; subperiod split post hoc; Table 3 significance codes differ from Table 2.",
+   "selective_reporting": "agree (low): results shown with and without outliers and across estimators; no obvious omission.",
+   "why": "Standard transparent panel production-function estimates with an attempt at lagged-IV, exogeneity not established; moderate fits."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record error: the 558 vs 567 'inconsistency' is not one (567 full balanced sample, 558 after removing nine outliers). Text typo not in record: IV results said to be in 'Table 1' (actually Table 2). Otherwise no invented numbers."
+ },
+ {
+  "idx": "298",
+  "eligibility_ok": false,
+  "eligibility_note": "Borderline, lean exclude. The paper is a descriptive growth-accounting and shift-share decomposition (an accounting identity, no statistical estimation, no standard errors or uncertainty) whose numbers are taken from Van Ark and Piatkowski (2004) and Piatkowski (2004) (source lines of Tables 1, 2, 5, 6), so the 'own estimation' criterion is not clearly met. It is not a regression-based estimate of an ICT effect. If the caller treats growth-accounting contributions of the authors' own earlier work as eligible, the other criteria (23 economies, ICT capital, labour productivity) are met.",
+  "sample_corrections": {
+   "n_economies": "23 in Table 1 (8 CEE/Russia + 14 EU-15 members listed, Luxembourg absent + US) - correct; industry tables cover only 4 CEE countries (Czech, Hungary, Poland, Slovakia) plus Russia, EU-15 aggregate and US.",
+   "years": "1995-2001 (Tables 1, 6 for EU-15/US/Russia 1996-2000 in Table 2/6); CEE industry data 1993-2001 (Hungary 1993-2000 in Tables 5-6); the record's '1993/1995-2001' is fine."
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 1 values match (CEE 3.5 / 0.6 / 17%; EU 1.1 / 0.4 / 36%; US 2.2 / 0.7 / 34%; Czech 0.8, Hungary 0.7, Romania 0.3, Russia 0.1). These are reproduced from Van Ark and Piatkowski (2004) and Piatkowski (2004), per the table source line.",
+    "quote": "'Source: Van Ark and Piatkowski (2004) for the CEE countries, EU-15 and the US. Piatkowski (2004) for Russia.' (Table 1, p.11)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 1 col. 4: CEE 2.0, EU 0.3, US 1.1.",
+    "quote": "'The most important source of convergence ... has been the higher contributions of total factor productivity' (p.12)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table 2: US 0.98, EU-15 0.58, Czech 0.68, Hungary 0.68, Poland 0.21, Slovakia 0.15, Russia 0.08 (1996-2000). Paper-internal inconsistency: Russia is 0.06 in Table 6.",
+    "quote": "Contribution of ICT Producing Industries to LP growth 0.58 0.98 0.68 0.68 0.21 0.15 0.08 (Table 2, p.15)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Table 6: ICT-using manufacturing CEE 0.67, 0.46, 0.65, 0.98, EU-15 -0.01, US -0.12; ICT-using services Czech 0.89, Hungary 0.07, Poland 0.92, Slovakia -0.58, EU 0.47, US 1.29. Text gives Russia ICT-using manufacturing as 0.2 pp but Table 6 shows 0.06 (paper inconsistency).",
+    "quote": "'contributed between 0.46 and 0.98 percentage point ... against close to zero for the EU-15 and the U.S (Table 6)' (p.20)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "corrected",
+    "correction": "Partly supported. Czech Rep and Hungary (A1 rank 2 and 3) have the largest ICT capital contributions (0.8, 0.7) and Romania and Russia (A1 rank 7 and 8) the smallest (0.3, 0.1). But Slovenia (A1 rank 1, 0.5) is no larger than Bulgaria (A1 rank 6, 0.5), and Hungary has A2 rank 7 with only 0.07 ICT-using services. The paper states no statistical test and says there are insufficient observations.",
+    "quote": "'At present there are insufficient observations to carry out a comprehensive statistical analysis' (Section 6, p.27)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Fit (y = 0.0827Ln(x) + 0.1423, R2 = 0.0512) is shown in Figure 2 with all plotted countries; the text interprets it for the CEER group.",
+    "quote": "'within the CEER group, countries with higher labor productivity levels are characterized by a somewhat larger contribution of ICT capital' (p.12)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "'productivity growth rates in ICT-using services in CEE countries as well as in the EU-15 were lower than in the U.S.' (p.26)"
+   }
+  ],
+  "income_group_results": "corrected",
+  "income_group_note": "No income-group results; but record's EU-15 and US ICT capital range '0.3 to 0.8 pp' is off: EU-15 members range 0.2 (Spain) to 0.8 (Sweden), US 0.7 (Table 1). The paper gives no income classification.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): accounting decomposition with causal narrative ('in the case of Romania and Russia, ICT led to a divergence rather than convergence'), no strategy for omitted factors (FDI, privatisation, labour shedding) or reverse causation.",
+   "exposure_measurement": "agree (moderate): ICT capital deepening and industry group contributions are accounting measures; CEE output deflators for ICT-producing industries use US deflators excluding computers/semiconductors (footnote 15), Russia not fully comparable.",
+   "selection_of_countries_years": "agree (serious): 8 transition economies, industry decomposition for only 4 CEE countries and Russia, 1993/95-2001 period with different start years; the reform inference rests on about 8-10 country observations. The 'dot-com peak' remark in the record is the extractor's interpretation, not in the paper.",
+   "outcome_measurement": "agree (moderate): GDP per person employed (real estate excluded) is standard but Russia uses different classification and sources, and periods differ across countries.",
+   "specification": "agree (moderate): analyst-chosen industry groupings and equal-weight z-score reform composites, no robustness checks.",
+   "selective_reporting": "agree (moderate): all countries reported but most results are re-used from the authors' earlier work and narrative emphasises Czech Republic and Hungary; the record's claim is fair.",
+   "why": "Descriptive reused accounting with causal narrative and no inference; serious overall."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers. Record problems: (1) income-group EU range should be 0.2-0.8 pp; (2) heterogeneity item 1 overstates the reform-ICT link (Slovenia and Hungary do not fit); (3) paper-internal inconsistencies not noted in the record: Russia ICT-producing contribution 0.08 (Table 2) vs 0.06 (Table 6), Russia ICT-using manufacturing 0.2 (text) vs 0.06 (Table 6); footnote 12 refers to 'Table 4' for ICT capital share (it is Table 1 column 5); (4) eligibility questionable as above."
+ }
+]

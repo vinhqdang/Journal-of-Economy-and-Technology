@@ -1,0 +1,149 @@
+[
+ {
+  "idx": "10",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (FE/RE and two-step system GMM), 41 economies, 2004-2015, exposure = mobile, internet, fixed telephone, ICT imports; outcome = GDP per capita growth (output). Eligible on the output family. The financial-inclusion outcome (deposit accounts per 1,000) is a supply-side banking measure, so it fits 'living standards beyond income' only loosely; eligibility does not depend on it.",
+  "sample_corrections": {
+   "income_groups_covered": "Paper only labels countries 'Developed'/'Developing' (Table A1). The record's statement that Burundi, Uganda, Rwanda, Mozambique are low-income is the extractor's own classification, not the paper's.",
+   "years": "2004-2015 confirmed (12 years; text p.12-13). 'periods 2004-1015' is a typo in the introduction. Growth variable has 492 obs = 41 x 12 (Table A2); unbalance comes from other variables (Table A2 and p.14)."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Coefficients, SEs and the implied net (0.209 - 0.247 = -0.038) are right; the net is the extractor's arithmetic. Note the authors' conclusion calls the mobile effect 'definite positive', which the net does not support.", "quote": "mobile 0.209*** (0.0359); L.mobile -0.247*** (0.0331)", "locator": "Table 5A col 1, p.29"},
+   {"n": 2, "verdict": "confirmed", "correction": "Correct (net 0.242 - 0.334 = -0.092, extractor's arithmetic).", "quote": "Internet 0.242*** (0.0732); L.internet -0.334*** (0.0759)", "locator": "Table 5A col 2, p.29"},
+   {"n": 3, "verdict": "confirmed", "correction": "Correct, both not significant.", "quote": "Fixed -0.0211 (0.138); L.fixed 0.115 (0.126)", "locator": "Table 5A col 3, p.29; text p.31"},
+   {"n": 4, "verdict": "confirmed", "correction": "Correct, both not significant.", "quote": "ICTimp -0.0204 (0.0564); L.ICTimp 0.0721 (0.0623)", "locator": "Table 5A col 4, p.29"},
+   {"n": 5, "verdict": "confirmed", "correction": "All four coefficients and SEs match; all p<0.01.", "quote": "Mobile 0.116*** (0.0358); L.mobile -0.163*** (0.0375); Mbinternet 0.00180*** (0.000615); L.mbinternet -0.00176*** (0.000414)", "locator": "Table 5B col 1, p.30"},
+   {"n": 6, "verdict": "confirmed", "correction": "Values and SEs match Table 6 col 1 and col 2 (accounts 0.00323** SE 0.00159; L.accounts -0.00471*** SE 0.00159; Mbacct; mobilebranch). Significance is p<0.05 for current accounts and p<0.01 otherwise.", "quote": "Mbacct 6.46e-05*** (1.00e-05); L.mbacct -6.24e-05*** (9.47e-06)", "locator": "Table 6 p.34"},
+   {"n": 7, "verdict": "corrected", "correction": "All coefficients match Table 4. The top of the SE range is 0.0463 (L.credit), not 0.0462. Outstanding deposits are significant only at p<0.05 and p<0.1 (lag), not p<0.01.", "quote": "L.credit -0.190*** (0.0463)", "locator": "Table 4 col 4, p.27"},
+   {"n": 8, "verdict": "confirmed", "correction": "Values and SEs match Table 3(a): internet 6.705** (3.296); mobile -0.098 (1.570); L2.mobile 4.058** (1.753); mobinternet 0.038* (0.020); fixed -5.992 (7.730). The text also says L.mobile is insignificant (-2.982, SE 2.608). Outcome is accounts per 1,000 people (text p.19-20).", "quote": "L2.mobile 4.058** (1.753)", "locator": "Table 3(a) col 3, p.21"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Coefficients match; authors do not compute marginal effects and the interaction is only p<0.1 (current) so the 'conditioning' reading is weakly supported.", "quote": "Netedu -0.00761* (0.00405); L.netedu 0.00790** (0.00381)", "locator": "Table 5B col 2, p.30; text p.32"},
+   {"n": 2, "verdict": "confirmed", "correction": "Coefficients match (SE 0.00511 and 0.00634); no marginal effect computed, as stated. The extraction of this table is garbled but the values are legible.", "quote": "Netservice -0.0377*** (0.00511); L.netservice 0.0356*** (0.00634)", "locator": "Table 5B col 3, p.30-31"},
+   {"n": 3, "verdict": "confirmed", "correction": "Authors do say this, but it rests on an interaction significant only at 10% with an insignificant main effect (mobile -2.125, SE 1.706). 'Only if' is an over-reading of the sign.", "quote": "positive effect on the financial inclusion only if there is also adequate facility of internet", "locator": "p.20 text; Table 3(a) col 4"},
+   {"n": 4, "verdict": "confirmed", "correction": "Matches Table 6 and the text on p.33.", "quote": "Mbacct 6.46e-05*** (1.00e-05); L.mbacct -6.24e-05*** (9.47e-06)", "locator": "Table 6 p.34"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "No income-group split; only a pooled sample. The paper offers speculation about low-income countries (p.31) without estimation. Record is right that nothing is reported.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: internal-lag system GMM is the only strategy, the authors explicitly treat ICT and FI as endogenous, Sargan p = 0.99-1.00 in every column and no instrument count is given, so identification is not credible.",
+   "exposure_measurement": "agree: penetration rates are standard but capture access not use; ICT imports share is a weak proxy and was interpolated.",
+   "selection_of_countries_years": "too_harsh: selection by Financial Access Survey availability (41 of 175) and a 2004-2015 window is a data-availability restriction with mixed income coverage; moderate is more proportionate, and the Moldova/Ukraine labelling issue is a classification quirk, not a selection bias.",
+   "outcome_measurement": "agree: annual GDP per capita growth is noisy and FI is measured only through supply-side bank indicators.",
+   "specification": "agree: many one-at-a-time specifications, current and lag terms of opposite sign interpreted post hoc, and a unit-root argument that 'no co-integration test is required' on a T=12 panel.",
+   "selective_reporting": "too_lenient: the conclusion calls the mobile and internet effects 'definite positive' while the paper's own lag terms offset them (net about -0.04 and -0.09, never tested), so the headline is not supported by the reported coefficients.",
+   "why": "Serious holds: causal language ('Causal link', 'taking care of the endogeneity issue') with only internal-lag GMM, apparent instrument proliferation (Sargan 0.99-1.00) and headline claims that the net coefficients do not back."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers found. Minor: SE range in result 7 (0.0463 not 0.0462). The record's low-income labels for individual countries come from outside the paper. The record's note that the introduction has 'periods 2004-1015' is accurate. The paper is a working paper (Madras School of Economics WP 165/2017), not peer reviewed."
+ },
+ {
+  "idx": "29",
+  "eligibility_ok": true,
+  "eligibility_note": "Own OLS estimation on 82 economies (36 OECD, 46 non-OECD), 2010-2017, outcome TFP growth (productivity). Exposure is licensed cellular IoT connections per inhabitant (machine-to-machine mobile connectivity) with mobile broadband as a control. IoT is not itself on the listed exposures; it qualifies only as a mobile/ICT connectivity measure, so flag as borderline for adjudication. The growth-accounting simulation (Table 6) is not an estimate and must not count towards eligibility.",
+  "sample_corrections": {
+   "years": "2010-2017 confirmed; 574 obs in one-year differences = 82 x 7 and 410 in three-year differences = 82 x 5 (Table 4). The rreg robustness sample retains the 8 dropped countries (630 and 450 obs, Table A3)."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Correct.", "quote": "0.026** (0.010)", "locator": "Table 4 col 1, p.270; N = 574"},
+   {"n": 2, "verdict": "confirmed", "correction": "Correct; R2 0.19; MBB coefficient 0.01* (0.005).", "quote": "a 10 percentage points (pp) increase in the growth of IoT connections per inhabitant is associated with 0.23 pp growth in TFP", "locator": "Section 5.3, p.269; Table 4 col 2"},
+   {"n": 3, "verdict": "confirmed", "correction": "Correct (0.036** SE 0.015; 0.031** SE 0.014; N = 410).", "quote": "0.036** (0.015) 0.031** (0.014)", "locator": "Table 4 cols 3-4, p.270"},
+   {"n": 4, "verdict": "confirmed", "correction": "Correct (0.021* SE 0.011; 0.017* SE 0.010; N = 252).", "quote": "0.021* (0.011) 0.017* (0.010)", "locator": "Table 5 OECD columns, p.270"},
+   {"n": 5, "verdict": "confirmed", "correction": "Correct (0.023* SE 0.012 in both columns; N = 322).", "quote": "0.023* (0.012) 0.023* (0.012)", "locator": "Table 5 non-OECD columns, p.270"},
+   {"n": 6, "verdict": "confirmed", "correction": "Correct; no coefficients are shown. The text also says results are 'primarily sensitive to the inclusion of Syria' (p.269, fn 16).", "quote": "If these extreme outliers are not excluded, the IoT per inhabitant variable is insignificant in our regressions", "locator": "Footnote 15, p.276"},
+   {"n": 7, "verdict": "confirmed", "correction": "Correct: 0.03*** (0.004), 0.02*** (0.004), 0.04*** (0.005), 0.03*** (0.005); N = 630 and 450. rreg keeps all 90 countries and down-weights outliers.", "quote": "Number of observations 630 630 450 450", "locator": "Table A3, p.281"},
+   {"n": 8, "verdict": "confirmed", "correction": "Numbers match Table 6 (0.19% direct, 0.99% with spillovers; range of totals 0.013% to 1.74%). This is a calibration using an assumed spillover multiplier of 4.1 from earlier work, not an estimate; it should not be pooled as evidence.", "quote": "IDC estimate: 27% of PIIICT (2018) = $106bn ... 0.19% (0.99%)", "locator": "Table 6, p.273"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Values match Table 5; no formal test of difference is reported.", "quote": "The IoT coefficient is similar and is significant at the 10 percent level for both.", "locator": "Section 5.3, p.269"},
+   {"n": 2, "verdict": "confirmed", "correction": "Footnote 17 states rejection of equality of coefficients 'in the two different equations' at 1% without naming the specification pair; the extractor's reading (one-year vs three-year) is a reasonable inference.", "quote": "we can reject the null hypothesis that the coefficients in the two different equations are equal at the 1% significance level", "locator": "Footnote 17, p.276"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Only an OECD/non-OECD split is estimated (Table 5); the record reports it correctly and states no World Bank income grouping. OECD membership is not an income classification (includes Mexico, Turkey, Chile).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: first-difference OLS with year dummies, no instrument, authors say they could not find one and footnote 5 assumes the direction of causation; the associational framing is tempered by dollar 'contribution' calculations that read causally.",
+   "exposure_measurement": "agree: licensed cellular IoT connections per inhabitant from industry data is a proxy for investment, excludes WiFi IoT and is not scaled by business capital; the authors acknowledge this.",
+   "selection_of_countries_years": "agree: eight countries dropped by a 3-IQR rule on the dependent variable and the paper states the coefficient is insignificant if they are retained.",
+   "outcome_measurement": "agree: TFP growth from the Total Economy Database is a residual with likely measurement error in developing economies.",
+   "specification": "too_harsh: the preferred specification (first differences, MBB control, year dummies, clustered SEs) is clear and alternatives are reported; the outlier dependence is already scored under selection, so serious double-counts it and moderate is more proportionate.",
+   "selective_reporting": "agree: levels results and the no-exclusion regression are not shown, offset by reporting of one-year, three-year, subsample and rreg results and explicit upper-bound caveats.",
+   "why": "Serious holds: no strategy for reverse causation, a proxy exposure and a significant result that depends on data-driven exclusion of 8 countries; the authors' own 'upper bound' caveat is consistent with that."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers. Minor: the record cites p.270 for the connections-versus-devices discussion, which is on p.271. Not in the record: the research was co-financed by Ericsson and the lead author is at Ericsson Research (Acknowledgements and affiliation), a possible conflict of interest. Result 8 is a simulation, not an estimate, and the record flags that correctly."
+ },
+ {
+  "idx": "45",
+  "eligibility_ok": true,
+  "eligibility_note": "Own FE, Hansen threshold and 2SLS estimates, 30 economies, outcome log GDP per capita (output). Borderline on exposure: the DFI index is a PCA composite in which half (the traditional sub-index: branches, ATMs, accounts, credit cards, borrowing) is not ICT; only the digital access (internet, mobile broadband, mobile cellular subscriptions) and digital usage (digital payments, mobile utility payments, mobile wages) parts are ICT/mobile. The digital sub-index is never used alone. Kept as eligible but flag for adjudication.",
+  "sample_corrections": {
+   "economies_or_groups": "Table A2 lists exactly 30 economies in five sub-regions (4 + 8 + 9 + 7 + 2), which matches the 30 retained; it does not list 38 candidates. List: China, Republic of Korea, Japan, Mongolia, Armenia, Azerbaijan, Georgia, Kazakhstan, Kyrgyzstan, Russia, Tajikistan, Uzbekistan, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Vietnam, Bangladesh, India, Iran, Nepal, Pakistan, Sri Lanka, Turkiye, Australia, New Zealand. Sample selection (Table 3): 60 UNESCAP economies, 27 dropped for limited data, 3 for one year of data.",
+   "income_groups_covered": "Paper's descriptive figures use high, upper-middle and lower-middle only; it does not state an income class per economy and does not label any economy low-income. Estimation is pooled, no income split."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Correct, N = 90.", "quote": "DFI index 0.005*** (0.001)", "locator": "Table 4 col 1, p.13"},
+   {"n": 2, "verdict": "confirmed", "correction": "Correct. The table labels the regime '<71.87'. Threshold CI is 66.78 to 74.10 (Table A11).", "quote": "DFI index (<71.87) 0.007*** (0.001)", "locator": "Table 4 col 2, p.13"},
+   {"n": 3, "verdict": "confirmed", "correction": "Correct.", "quote": "DFI index (>71.87) 0.004*** (0.001)", "locator": "Table 4 col 2, p.13"},
+   {"n": 4, "verdict": "confirmed", "correction": "Correct (N = 90, R-sq 0.683).", "quote": "DFI index 0.005*** (0.001)", "locator": "Table 5 col 1, p.13"},
+   {"n": 5, "verdict": "confirmed", "correction": "Correct, including that the same 18.67 is labelled 'LM-Statistics' in Table 5 and 'Cragg-Donald Wald F-test' in the text; no first stage is shown and the 2SLS point estimate is about seven times the FE estimate.", "quote": "The Cragg-Donald Wald F-test for weak instrumental variables is 18.67", "locator": "Table 5 col 2 and text, p.13"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Threshold 71.87 is right; Appendix Table A11 (in the text) gives F = 31.34, p = 0.01, 1% critical value 31.19, so the test only just clears the 1% line. The 'inverted U-shaped' label is the authors', although both slopes are positive. The 'digitalization paradox' for high-income economies is asserted, not tested; the threshold regimes are not income groups.", "quote": "when the level of DFI exceeds 71.87 %, economic growth increases at a reduced rate", "locator": "Section 6.2, p.11; Table A11 p.18"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "No estimates by income group; only descriptive trend figures 4-6. The conclusion's statements about low-income countries (p.14) are not backed by any low-income estimate or sample member.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: country FE on three waves with causal language and one instrument (internet penetration) that is a component of the DFI index (Table A4), so the exclusion restriction is not credible; no time effects, so the 2021 COVID shock is not absorbed.",
+   "exposure_measurement": "agree: a PCA composite of which half is traditional financial inclusion and half digital; Table A10 shows equal 0.7071 weights, and it measures financial inclusion rather than ICT as such (and partly outcomes of income).",
+   "selection_of_countries_years": "agree: 30 of 60 UNESCAP economies by data availability and only three waves, one in the COVID period; borderline moderate, since there is no evidence that the selection drives the sign.",
+   "outcome_measurement": "agree: log GDP per capita (constant 2015 US$) is a standard WDI measure, though a level is described as 'economic growth'.",
+   "specification": "agree: small number of specifications but discretionary index weights, a threshold model on 90 observations without a visible country effect in equation 3, and a log population growth variable with SD 0.006.",
+   "selective_reporting": "agree: control sets differ across columns, the 2SLS column drops the extra controls and shows no first stage, the gap between 2SLS and FE is not discussed, and Table 5 has typographical errors ('0.0.11', negative SEs).",
+   "why": "Serious holds: causal claims ('DFI significantly promotes economic growth') rest on FE with three time points and an instrument that is part of the regressor."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record error: it says Table A2 lists 38 candidates and the retained list is not stated; Table A2 lists 30 (see sample_corrections). Record error: it says the threshold bootstrap details are in an appendix 'not in the text read'; Appendix Table A11 is in the text (F 31.34, p 0.01, critical values 16.57/20.69/31.19). The record's remark that missing economies are mostly 'low-income' goes beyond the text, which names Pacific islands, Bhutan and Maldives. Other numbers and quotes are accurate."
+ },
+ {
+  "idx": "57",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (FMOLS, DOLS, AMG, Dumitrescu-Hurlin) on exactly 10 Asian economies, 2000-2017; exposure internet users and mobile subscriptions; outcome GDP (output), though measured in current US dollars. Meets the 10-economy minimum with no margin.",
+  "sample_corrections": {
+   "economies_or_groups": "Countries appear only in Table 8 (Bangladesh, Cambodia, China, India, Indonesia, Malaysia, Nepal, Philippines, Sri Lanka, Thailand); text calls them variously 'emerging Asian', 'South Asian' and 'top 10 emerging South Asian'. Selection criterion in the text is 'highest current GDP price (in US dollars)', i.e. selection on the outcome level.",
+   "years": "2000-2017 confirmed. The paper says '17 years', but 2000-2017 is 18 annual points per country."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Correct. Note mobile is in absolute numbers, not per capita, and GDP is current US$ (levels).", "quote": "lnMO 0.719506*** 0.062101 0.754067*** 0.080889", "locator": "Table 7, p.10"},
+   {"n": 2, "verdict": "confirmed", "correction": "Correct.", "quote": "lnIT -0.59107*** 0.102232 -0.56155*** 0.136219", "locator": "Table 7, p.10; text p.8"},
+   {"n": 3, "verdict": "confirmed", "correction": "Correct, both not significant.", "quote": "lnEX 0.133132 0.12144 0.124142 0.149109", "locator": "Table 7, p.10"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table values and stars match (India 0.0759**, Indonesia 0.0870**, Malaysia 0.3128***, Thailand 0.0587*, Bangladesh -0.0987***, Cambodia -0.1060**). Text p.8 lists Nepal as significant and omits Thailand, which contradicts Table 8 (Nepal -0.0281, no star).", "quote": "Malaysia 2.8135 0.3128*** -0.4137*** -0.8111***", "locator": "Table 8, p.10"},
+   {"n": 5, "verdict": "confirmed", "correction": "Correct (Malaysia -0.4137***, Thailand -0.2656***, others insignificant). Direction 'null' is a summary of 8 of 10; the pooled FMOLS/DOLS estimate in result 2 is significantly negative.", "quote": "impact of internet subscriptions is in fact insignificant is majority of the countries except for Malaysia and Thailand", "locator": "Table 8 and text, pp.8, 10"},
+   {"n": 6, "verdict": "corrected", "correction": "W-bar values and p = .0000 are right, but the Granger test has no sign, so direction 'positive' should be 'not applicable'/not coded as an effect. It is a rejection of non-causality from each regressor to GDP only; the reverse direction is not tabulated although the abstract claims bidirectional causality.", "quote": "Dumitrescu and Hurlin (2012) Granger non-causality test (ln_GDP as dependent variable)", "locator": "Table 6, p.9"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Correct and the contradiction with the abstract is real.", "quote": "Overall, the results are consistent for all the countries analyzed in this empirical study.", "locator": "Abstract, p.1; Table 8 p.10"},
+   {"n": 2, "verdict": "confirmed", "correction": "Correct: the income-group remark is a literature citation, not a finding; no income-group split is estimated.", "quote": "impact of ICT on economic growth differs across different income group of countries (Yousefi, 2011)", "locator": "Section 5, p.9"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "No income-group classification or split in the paper; record correctly reports 'not reported' and that it does not classify the countries.",
+  "risk_of_bias": {
+   "overall": "too_lenient",
+   "confounding_reverse_causation": "agree: causal language and policy advice, no strategy for reverse causation (the authors themselves report bidirectional causality), omitted capital and labour, and a second income variable (income index) alongside GDP.",
+   "exposure_measurement": "too_lenient: mobile subscriptions enter as absolute numbers (min 10,226, max 316 million) and GDP as current US$, so both scale with country size and the coefficient does not capture adoption intensity; serious rather than moderate.",
+   "selection_of_countries_years": "too_lenient: the 10 countries were chosen for the highest current US$ GDP, which is the dependent variable, and Nepal and Cambodia are included while the text calls the sample 'South Asian'; this is selection on the outcome in a 10-unit panel.",
+   "outcome_measurement": "agree: current-price US$ GDP mixes inflation and exchange-rate movements and is labelled economic growth.",
+   "specification": "too_lenient: levels-on-levels log model with no capital or labour terms, first-generation tests say all series are stationary at level while a cointegration framework is used, mixed Westerlund p-values (.010-.053), reused coefficient notation and no robustness checks; closer to critical than serious.",
+   "selective_reporting": "agree: abstract and conclusion state a positive internet effect while Table 7 shows a significant negative one, and state consistency across countries while Table 8 shows sign changes.",
+   "why": "Overall should be critical: the headline claims contradict the paper's own tables and the estimates (current-US$ GDP on absolute subscription counts, no capital or labour, 10 units selected on GDP) mostly reflect country scale, so the ICT conclusions cannot be trusted."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers in the record. Text-table inconsistency for Nepal and Thailand in the AMG discussion (text p.8) is not noted by the record. The record's direction code for the Granger result is not an effect direction (corrected). Income index (lnIN) is a coefficient the record omits: FMOLS -0.81856 (1.853447), DOLS -0.43353 (2.316709), both insignificant."
+ }
+]

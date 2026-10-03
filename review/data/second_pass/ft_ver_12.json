@@ -1,0 +1,131 @@
+[
+ {
+  "idx": "1013",
+  "eligibility_ok": true,
+  "eligibility_note": "Own CS-ARDL estimation; exposure is AI (VC investment in AI); 8 economies meets the 3-economy AI threshold; outcome is HDI (living standards beyond income). Eligible, though the AI measure is internally inconsistent (see problems).",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table V, Equation 1: AI 0.206952, SE 0.065532, t 3.158010, p 0.0032. Direction and values match.", "quote": "AI 0.206952 0.065532 3.158010 0.0032", "locator": "Table V, p.424"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table V, Equation 2: AI 0.170111, SE 0.198586, t 0.856611, p 0.3972; text confirms insignificance.", "quote": "in Model 2 the AI coefficient is not statistically significant", "locator": "p.424 text below Table IV"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table V, Equation 3: AI 0.075324, SE 0.001489, t 50.58667, p 0.0000. Matches (SE implausibly small, but as printed).", "quote": "AI 0.075324 0.001489 50.58667 0.0000", "locator": "Table V, p.424"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Delta values 3.408 / 3.153 / 2.091 (adjusted 4.462 / 4.128 / 2.737) match Table II; no country-specific coefficients or moderators are reported; no threshold. Conclusion statement is an inference from the homogeneity test only.", "quote": "impact of AI investments on development varies depending on country characteristics", "locator": "Table II p.423; Conclusion p.425"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis in the paper; record's 'not reported' / 'not applicable' entries are correct (sample is 7 high-income economies plus China and India by external classification, which the paper does not state).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): N=8, T=12 CS-ARDL with no instrument; the paper's own literature review cites evidence of causality running from growth to AI, and the paper never addresses it, yet it uses 'effect/impact' language.",
+   "exposure_measurement": "agree (serious): VC investment in AI in USD millions (not scaled) is a funding flow, and the methodology section says robot installations are the AI indicator, contradicting Table I.",
+   "selection_of_countries_years": "agree (serious): eight hand-picked leading robot markets, T=12, and the conclusion mislabels the sample as G7 although it includes China, India and South Korea.",
+   "outcome_measurement": "agree (moderate): HDI is a slow-moving composite that includes an income component while GDP per capita is a regressor; Table I lists World Bank as the source.",
+   "specification": "agree (serious): three alternative models each omit one control, lag order and CSA terms not reported, Model 3 SEs and t-stats of 50-62 are implausible, and equations say log(PCI), log(INF), log(FDI) while Table V PCI coefficients (6.16E-05) look like level terms and inflation/FDI can be negative.",
+   "selective_reporting": "too_harsh (moderate would fit): all three models are shown, the insignificant Model 2 is disclosed in the text, and the conclusion cites only Models 1 and 3 as significant; the real omission is that the abstract promises short-run results that are never reported, and the abstract claim of a 'substantial effect' overstates 2 of 3 models.",
+   "why": "Causal language, an AI measure that conflicts with its own description, a tiny hand-picked sample and fragile, inconsistent specifications justify serious overall."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "Internal inconsistencies in the paper rather than in the record: (a) methodology says robot installations are the AI indicator but Table I says VC investment in AI (OECD); (b) conclusion says 'G7 countries' but lists China, India, South Korea; (c) Table IV caption repeats 'Cross-sectional Dependency Test' and its star legend is reversed ('*, ** and *** represent 1%, %5 and 10%'); (d) abstract says short-run relationships analysed but only long-run is in Table V; (e) in Equation 2 and 3 the PCI/INF terms are inconsistently included (Model 3 has no PCI). Record is otherwise accurate; no invented content found."
+ },
+ {
+  "idx": "1025",
+  "eligibility_ok": true,
+  "eligibility_note": "Borderline but acceptable: ICT-capital contributions are taken from Timmer et al. (2003), but the author performs own kernel-density, Li bootstrap and Silverman tests on 15 developed economies; outcome is labour productivity. No regression estimate of an ICT effect.",
+  "sample_corrections": {"n_economies": "15 (US plus 14 EU countries; Table 1 also prints an 'European Union' aggregate row that is not a country). Printed unweighted averages recompute to the 14 non-US rows (non-ICT about 0.79, TFP about 1.07, GDP per hour about 2.18), not the 15-country mean, so the record's description of the average as a 15-country mean is not supported by the table."},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 1 prints unweighted average ICT 0.32, non-ICT 0.79, TFP 1.06, GDP per hour 2.17; Li-test p=0.9040 (Table 2); author warns of low power. Direction (null) correct.", "quote": "Giving the p-value of 0.9040 (see Table 2), the Li-test suggests that this contribution was statistically insignificant.", "locator": "p.12; Table 1 p.22; Table 2 p.23"},
+   {"n": 2, "verdict": "confirmed", "correction": "Li p=0.2480 for ICT plus non-ICT capital (TFP set to zero); not significant (the text wording about 'power' is garbled but Table 2 value matches).", "quote": "the power of the Li-test was enough to identify significance of the contribution only with p-value of 0.2480", "locator": "p.12; Table 2 p.23"},
+   {"n": 3, "verdict": "confirmed", "correction": "TFP only: Li p=0.2938, Silverman p=0.0422; TFP plus ICT 0.5776; TFP plus non-ICT 0.0330 all match. Record omits the non-ICT-only result p=0.6606 (omission, not error).", "quote": "gives p-value of 0.0422, thus strongly suggesting us to reject the hypothesis of unimodality", "locator": "p.13-14; Table 2"},
+   {"n": 4, "verdict": "confirmed", "correction": "Li p=0.0062 for 1980 vs 1995 distribution; Silverman unimodality test p=0.0414 on 1995; three clubs. This is the all-sources change, not an ICT estimate, as the record says.", "quote": "yields p-value of 0.0414, thus rejecting the hypothesis of unimodality at less than 5% level", "locator": "p.11; Table 2"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Club membership matches the text (richest: Belgium, Denmark, France, Germany, Italy, Netherlands, US; middle: Austria, Finland, Spain, Sweden, UK; poorest: Greece, Portugal). Attribution to TFP is the author's reading of density plots plus the Silverman test; the Li-test for the TFP-only counterfactual is insignificant (0.2938). Ireland is not assigned to a club in the text.", "quote": "the estimated density plots suggest that TFP was the only driving force (among the three in our decomposition)", "locator": "p.11; Section 5 p.16"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "All 15 economies are developed; no income-group estimates exist. Record's entries are correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): growth-accounting contributions are not causal estimates, the TFP residual absorbs ICT spillovers (author concedes), and the text uses 'caused'/'driving force' language with no strategy for reverse causation.",
+   "exposure_measurement": "agree (moderate): ICT capital contribution is a sound exposure concept but is borrowed from a secondary source with no construction details here.",
+   "selection_of_countries_years": "too_harsh (moderate would fit): the 15 countries are described as almost the whole population of developed economies and chosen by ICT-capital data availability; the short 1980-1995 window mainly limits relevance to the later ICT boom.",
+   "outcome_measurement": "agree (moderate): GDP per hour levels are reconstructed from contribution tables by the author's own base-year procedure.",
+   "specification": "agree (serious): n=15 gives low power (the author says so), a rule-of-thumb bandwidth is used 'for the sake of time' for the Li bootstrap, and conclusions on TFP lean on a Silverman result while the Li-test on the same counterfactual is insignificant.",
+   "selective_reporting": "agree (moderate): all seven Li p-values are shown, but interpretation emphasises the one significant Silverman result.",
+   "why": "Causal wording on an accounting decomposition with tiny n and low-power tests; informative as descriptive evidence but not as an estimate of ICT impact."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented content. Minor points: the Table 1 'unweighted average' row does not recompute as a 15-country mean (see sample_corrections); the 'European Union' row in Table 1 is an aggregate; the text sentence about Li-test power at p=0.2480 is garbled and contradicts the surrounding 'not significant' reading; footnote 5 on the rule-of-thumb bandwidth is on p.29 as the record says."
+ },
+ {
+  "idx": "1026",
+  "eligibility_ok": true,
+  "eligibility_note": "Borderline on exposure: the AI measure is industrial robot stock per million employees, and the author states findings are about industrial automation rather than AI broadly (AI-patent stock only in a robustness row). Kept because it is framed and tested as AI; 64 economies, own FE/GMM estimation, outcome energy poverty (living standards/resource cost). Reviewer may wish to flag as robot-proxy.",
+  "sample_corrections": {"income_groups_covered": "Paper states high (28), upper-middle (24), lower-middle (12), no low-income. However, by usual World Bank classification the Appendix A list appears to contain well over 28 high-income economies (e.g. about 38 by my count of Belgium, Canada, Chile, ..., US); the 28/24/12 split cannot be reconciled from the printed list, so treat the income counts as unverified."},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 6 col 4: 0.0517** (0.017) and -0.0044** (0.016); turning point 5.88; Lind-Mehlum p=0.039; AR(2) 0.198; Hansen 0.387. Col 2 FE with controls 0.0370* (0.051), -0.0030* (0.057), TP 6.17, Lind-Mehlum 0.047. Arithmetic 0.0517/0.0088 is 5.88; exp(5.88) is about 358. Matches.", "quote": "lnRobot_Stock 0.0517** (0.017) ... lnRobot_Stock2 -0.0044** (0.016)", "locator": "Table 6, p.13"},
+   {"n": 2, "verdict": "confirmed", "correction": "Text gives about -0.010 at lnRobot_Stock=7.0 and about -0.019 for a further 1 SD; at the mean the effect is small and positive. Recomputing from 0.0517 and -0.0044 gives -0.0099 at 7.0 and +0.006 at 5.21, consistent. No SE or CI in text.", "quote": "the marginal effect on EP_Index is approximately - 0.010 per unit of lnRobot_Stock", "locator": "Section 4.2, p.12"},
+   {"n": 3, "verdict": "corrected", "correction": "Table 10 lists seven alternative specifications (patent stock, electricity access, excluding oil exporters, excluding 2008-10, 2SLS, Bartik, spatial lag) plus the baseline row, not eight separate checks; the text nevertheless says eight. Ranges 0.0420 to 0.0552, -0.0034 to -0.0048 and TP 5.75 to 6.18 are correct for the seven. Significance for patent stock (*) and spatial lag (*) is only 10%, while the table note says the Lind-Mehlum test rejects at 5% for all rows and no test statistics are shown.", "quote": "We subject our findings to eight robustness tests, each addressing a specific econometric concern.", "locator": "Section 4.5 p.16; Table 10 p.17"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table 8 Panel A step 1: FE -0.152*** and 0.013**; GMM -0.168*** and 0.014**. Table 9: indirect -0.004 [-0.008,-0.001] FE and -0.005 [-0.009,-0.001] GMM. Match. Quadratic term is positive, so energy intensity falls at a decreasing rate.", "quote": "the bootstrap indirect effect is - 0.004 under the FE estimator and - 0.005 under Sys-GMM", "locator": "Tables 8-9, p.15-16"},
+   {"n": 5, "verdict": "confirmed", "correction": "Table 8 Panel B step 1: FE 0.118*** and -0.008*; GMM 0.130*** and -0.009*. Table 9: -0.002 [-0.005,-0.001] FE; -0.003 [-0.006,-0.001] GMM. Match.", "quote": "the corresponding indirect effects are - 0.002 (FE) and - 0.003 (Sys-GMM)", "locator": "Table 8 Panel B, Table 9, p.15-16"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 7: lnRobot_Stock2 x Z 0.002* (0.078) FE and 0.002* (0.065) GMM; Z -0.120*** and -0.135***. Table B1 grouped GMM: low HC 0.0890/-0.0090*** TP 4.94; high HC 0.0310/-0.0020 insignificant TP 7.75; FE low TP 5.17, FE high TP 9.00. Text turning points 5.0 and 5.83. All match. Only 10%-level significance for the interaction.", "quote": "the three-way interaction term (lnRobot_Stock2 x HC) is positive and statistically significant in both FE (0.002, p < 0.10)", "locator": "Table 7 p.14; Table B1 p.20"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table 7 cols 3-4: interaction 0.001* (0.091) and 0.001* (0.082); Z -0.095*** and -0.110***. Table B2 GMM: low 0.0950/-0.0100*** TP 4.75; high 0.0280/-0.0020 TP 7.00; FE TPs 5.07 and 11.00. Match.", "quote": "the three-way interaction term (lnRobot_Stock2 x Inst) is positive and significant (0.001, p < 0.10 in both specifications)", "locator": "Table 7 p.14; Table B2 p.21"},
+   {"n": 3, "verdict": "confirmed", "correction": "No formal income-group split; income groups appear only in Fig. 4(b); the abstract and Section 5.4 restrict applicability. Appendix note gives 28/24/12 (but see sample note about the list not reconciling).", "quote": "high-income (n = 28), upper-middle-income (n = 24), and lower-middle-income (n = 12) countries", "locator": "Appendix A note, p.20"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group-specific estimates; record's 'not reported separately' is correct. Income-group counts in the Appendix A note do not obviously match the printed country list.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (moderate): authors explicitly claim only conditional associations and use Sys-GMM, 2SLS and Bartik IV, but exclusion restrictions are argued verbally, no first-stage numbers are printed, instrumenting of the quadratic term is unclear, and robot stock tracks income (r=0.71 with GDP per capita).",
+   "exposure_measurement": "agree (serious): industrial robot stock per million employees is manufacturing automation, which the authors concede is not AI broadly; patent stock is only a robustness row.",
+   "selection_of_countries_years": "agree (moderate): balanced panel of 64 chosen by IFR and energy-poverty data availability, no low-income economies, 20-year window.",
+   "outcome_measurement": "agree (moderate): geometric-mean composite whose per-capita electricity and energy components rise with development, so the index partly reflects income; electricity-access-only check is reported only in summary form.",
+   "specification": "agree (moderate): quadratic form chosen a priori with many specifications; Table 7 anomalies (main-effect coefficients 0.082-0.121 vs 0.0517 at baseline despite mean-centred Z; text marginal effects of -0.010, +0.008, -0.028 do not recompute from Column 2, which gives about +0.006 at mean HC, +0.005 and +0.008); 'three-way interaction' mislabels two-way interactions; no GMM instrument count.",
+   "selective_reporting": "agree (moderate): every robustness check and both channels support the hypotheses, full tables are only in an Online Appendix, interactions are significant at 10% only, and table notes retain revision language ('previously 5.21', 'formerly Table 3', coefficients 'now reported to four decimal places' to make turning points consistent), which weakens confidence in reported figures.",
+   "why": "The robot proxy does not measure AI as the paper frames it, which by the guide justifies serious overall even though the paper correctly avoids causal claims."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record is accurate on all checked numbers. Additional issues in the paper: Table 7 text marginal effects do not reproduce from the table (record already notes this); Table 10 note says the inverted-U is confirmed at 5% for all rows although several coefficients are only significant at 10% and no Lind-Mehlum statistics are shown; the introduction describes the index as three components while Table 4 lists four; Appendix A says fewer than 10 SSA countries but the list has only South Africa; and the income-group counts (28/24/12) look inconsistent with the printed list. The record's statement 'all eight reported checks' should read seven alternative specifications plus baseline."
+ },
+ {
+  "idx": "1031",
+  "eligibility_ok": true,
+  "eligibility_note": "26 SSA economies, own PMG/ARDL estimation, ICT (internet, mobile, fixed line, index) as exposure, sector value-added shares as outcomes (structural change/output). Eligible, although the ICT index is not a reliable measure of exposure.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 9 long-run LNTO: -0.1807*** (0.0361), -0.0921** (0.0364), -0.1325*** (0.0400), -0.1278*** (0.0401). The table range is -0.09 to -0.18; the text's '0.13-0.18%' does not match the table. Record's table range is correct.", "quote": "a 1% increase in LNTO associated with a 0.13-0.18% decline in agricultural sector growth", "locator": "Table 9 p.114; text p.113"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table 9 col 4: ICT_INF 0.102197 {0.1103}, not significant.", "quote": "ICT_INF 0.102197 {0.1103}", "locator": "Table 9, p.114"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table 9 col 3: FTS -0.1113*** {0.0333}.", "quote": "FTS -0.1113*** {0.0333}", "locator": "Table 9, p.114"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table 9 col 3: TO_FTS 0.0182** {0.0073}; TO_IUI 0.0017, TO_MCS -0.0008, TO_ICTINF -0.0397 {0.0254} not significant.", "quote": "TO_FTS 0.0182** {0.0073}", "locator": "Table 9, p.114"},
+   {"n": 5, "verdict": "confirmed", "correction": "Table 10 long run: IUI 0.0645*** {0.0145} col 1; MCS 0.0055*** {0.0013} col 2; ICT_INF 0.2594*** {0.0617} col 4 match as printed. Caveat: columns 2-4 of Table 10 are identical to columns 2-4 of Table 11 (different dependent variable), so the printed industry values are suspect. FTS (col 3) is -0.0061 {0.0086}, not significant.", "quote": "ICT_INF 0.2594*** {0.0617}", "locator": "Table 10 p.115-116"},
+   {"n": 6, "verdict": "confirmed", "correction": "Table 10: TO_IUI -0.0154*** {0.0033}; TO_MCS -0.0013*** {0.0003}; TO_ICTINF -0.0648*** {0.0145} match. TO_FTS is +0.0026 {0.0019}, insignificant, contrary to the text claim that all four interactions are negative and significant. Same duplication caveat as result 5.", "quote": "TO_ICTINF -0.0648*** {0.0145}", "locator": "Table 10 p.115-116"},
+   {"n": 7, "verdict": "confirmed", "correction": "Table 10 long-run LNTO: -0.2914*** {0.0626}, -0.0396* {0.0222}, -0.1151*** {0.0280}, -0.0978*** {0.0194}. Range -0.0396 to -0.2914, SE 0.0194 to 0.0626, significance 10% to 1%. Match. Cols 2-4 duplicated in Table 11.", "quote": "LNTO -0.2914*** -0.0396* -0.1151*** -0.0978***", "locator": "Table 10 p.115"},
+   {"n": 8, "verdict": "confirmed", "correction": "Table 11 long-run: IUI 0.1436*** {0.0300} col 1 (unique); ICTINF 0.2594*** {0.0617} col 4, identical to Table 10 col 4 and so unreliable as a services-specific estimate.", "quote": "IUI 0.1436*** {0.0300}", "locator": "Table 11 p.117"},
+   {"n": 9, "verdict": "confirmed", "correction": "Table 11: TO_IUI -0.0328*** {0.0068}; TO_MCS -0.0013*** {0.0003}; TO_ICTINF -0.0648*** {0.0145}. Match as printed (last two identical to Table 10). TO_FTS +0.0026 not significant.", "quote": "TO_IUI -0.0328*** {0.0068}", "locator": "Table 11 p.117"},
+   {"n": 10, "verdict": "corrected", "correction": "Agriculture short-run LNTO in Table 9 is 0.0940, 0.1066, 0.0768, 0.1232* so the range is 0.0768 to 0.1232 (record says 0.0940 to 0.1232); SE 0.0701 to 0.1445 is right. Not all insignificant: col 4 LNTO is significant at 10%, services short-run TO -0.0814* (Table 11 col 1), and control variables (FDI, labour) are significant in places. Overall 'largely insignificant' for ICT and interactions holds.", "quote": "trade openness, ICT variables, and their interactions are largely insignificant", "locator": "text p.115 (record cites p.114); Tables 9-11 short-run rows"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Industry and services have positive significant long-run ICT terms (ICT_INF, IUI, MCS; FTS insignificant); agriculture has none except FTS (negative alone, positive interacted).", "quote": "ICT infrastructure generally supports industrial and service sector growth in the long run", "locator": "Conclusion p.118; Tables 9-11"},
+   {"n": 2, "verdict": "corrected", "correction": "Negative significant interactions are TO_IUI, TO_MCS, TO_ICTINF only; TO_FTS in Tables 10-11 is +0.0026 {0.0019}, insignificant, although the text says all four are negative and significant. In agriculture interactions are insignificant or positive (TO_FTS). No ICT-level or openness-level threshold is computed.", "quote": "each 1% increase in openness lowers ICT's contribution to service growth by 0.03%-0.06%", "locator": "p.117; Tables 10-11"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income grouping; all SSA; record's 'not reported' is correct.",
+  "risk_of_bias": {
+   "overall": "too_lenient",
+   "confounding_reverse_causation": "agree (serious): PMG/ARDL without instruments or timing design, text claims it handles endogeneity, conclusion concedes results are correlational.",
+   "exposure_measurement": "agree (serious): the PCA ICT index is internally inconsistent (Table 3 skew/kurtosis and Table 4 correlation 1.000 equal MCS; Tables 6-7 statistics equal IUI; Table 2 loadings differ from either), so what it measures is unclear.",
+   "selection_of_countries_years": "agree (moderate): 26 SSA countries by data availability, balanced 1992-2023 (N=832 equals 26 x 32); Section 3.3 states 1991 to 2022; country list not shown.",
+   "outcome_measurement": "agree (moderate): dependent variables are sector value-added shares of GDP (Table 3 means 21.3, 26.1, 45.9), described as 'growth'; Table 3 also shows agriculture minimum -2.51 and industry minimum 0.0000, which cannot be log-transformed as LnAGRV/LnINDV in Tables 6-7.",
+   "specification": "agree (serious): four ICT measures entered one at a time with interactions, inconsistent log/level treatment, table numbering in text does not match, and in Tables 9-11 the control-variable coefficients and SEs in columns 2 and 4 are identical even though the ICT regressors differ.",
+   "selective_reporting": "agree (serious, arguably critical): Table 10 and Table 11 columns 2-4 are identical in all long-run and short-run rows and the constant, despite different dependent variables (e.g. LNTO -0.0396*, -0.1151***, -0.0978***; ICT_INF 0.2594), and the text reports 0.26 for both sectors.",
+   "why": "Duplicated coefficient blocks across the industry and services tables, plus an ICT index whose identity is unclear, mean the headline industry and services conclusions cannot be relied on; this is closer to critical than serious."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "Record is accurate on printed values. Issues beyond the record: (a) Table 10/11 columns 2-4 duplication and the identical control blocks in columns 2 and 4 of Tables 9-11 indicate copy-paste or generation errors, so sector attribution of printed results is unreliable; (b) text says all four interactions are negative and significant but TO_FTS is not; (c) text says 0.13-0.18 for agriculture LNTO while the table range is 0.09-0.18; (d) record locators: the 'largely insignificant' sentence is on p.115 and the ICT_INF 0.26 text is on p.115 (industry) and p.116 (services), not p.114 and p.116/117; (e) mixed I(0)/I(1) variables are not by themselves a problem for PMG/ARDL, so the record's point is weaker than stated, but I(0) dependent variables with ln of non-positive minima (Table 3) are."
+ }
+]

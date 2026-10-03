@@ -1,0 +1,151 @@
+[
+ {
+  "idx": "408",
+  "eligibility_ok": true,
+  "eligibility_note": "Own system-GMM estimation; ICT/mobile/internet/broadband exposure (PCA index plus three components); 41 African countries in Table 2 (54 stated); outcome is real GDP per capita (output). All criteria hold.",
+  "sample_corrections": {
+    "n_economies": "41 in the estimation sample (Table 2: 'Number of countries 41'); the text states 54 countries (T=22, N=54, Conclusion). The record already reports both, correct.",
+    "observations": "779 observations in Table 2 (not in the record); Table 1 shows 1188 obs for cell phone, 820 for human capital",
+    "years": "2000-2021 confirmed",
+    "income_coverage": "Text gives no income classification; record's 'mixed' is the extractor's gloss from named countries"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Coefficient and SE match Table 2 column (4). Stars were stripped in the text (legend 'p < 0,01. p < 0,05. p < 0,1.' only); coefficient/SE gives |t| of about 3.1 (my arithmetic), so significance at 1-5% is likely but not printed. Main effect is at human capital = 0, as the record says.", "quote": "Digital economy −0,127 (0,0413)", "locator": "Table 2, column (4), p.13"},
+    {"n": 2, "verdict": "confirmed", "correction": "0.0540 (SE 0.0189) and 1% significance confirmed. Thresholds 2.352 (HC) and 81.3% (DE) match text.", "quote": "positive and significant at the 1% threshold", "locator": "Section 5, p.13; thresholds p.14"},
+    {"n": 3, "verdict": "confirmed", "correction": "Interaction 0.0413 (0.0150) and main effect -0.0947 (0.0318) match Table 2 column (1). Thresholds 2.3 and 119.85% confirmed.", "quote": "human capital threshold of 2.3 and a cell phone subscriber threshold of 119.85%", "locator": "p.15"},
+    {"n": 4, "verdict": "confirmed", "correction": "Interaction 0.107 (0.0499), main effect -0.257 (0.120) match column (2). Thresholds 2.4 and 52.34% confirmed. |t| about 2.1 (my arithmetic).", "quote": "human capital threshold of 2.4 and an Internet user threshold of 52.34%", "locator": "p.15"},
+    {"n": 5, "verdict": "confirmed", "correction": "Interaction 1.847 (0.915), main effect -4.796 (2.381) match column (3). Thresholds 2.6 and 2.83% confirmed. |t| about 2.0 (my arithmetic). Eq. 4.8 uses -0.0522, which equals the human capital coefficient in column (3), so it is consistent with the table.", "quote": "human capital threshold of 2.6 and a fixed-line broadband access threshold of 2.83%", "locator": "p.16"},
+    {"n": 6, "verdict": "confirmed", "correction": "Table 3 values match (0.0265, -0.0456, 0.0278, 0.0166, 0.0189; Dln(TFP) 1.3551 vs DlnY 1.4285). Caveats: (i) this is a deterministic growth-accounting residual, not an estimated effect on TFP; (ii) Table 3 numbers its models differently from Table 2 (Model 1 = composite index in Table 3, cell phone in Table 2); (iii) the values appear to be in percentage points (paper says 'average percentage value of 0.0278'; mean growth in Table 1 is 1.528%), so Dln(TFP) of 1.36 is about 1.36 percentage points, not 135% growth.", "quote": "the growth rate of total factor productivity is positive in all models", "locator": "Section 5, p.17; Table 3 p.18"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Thresholds 2.352/2.3/2.4/2.6 and continental average 1.8 confirmed; country averages for South Africa 2.485 and Zimbabwe 2.388 given in text. Note the model itself was written with ln(H) in eq. (3) but thresholds are computed on the raw index.", "quote": "only South Africa and Zimbabwe exceeded the human capital threshold, with averages of 2.485 and 2.388", "locator": "p.14"},
+    {"n": 2, "verdict": "confirmed", "correction": "Thresholds 81.3%, 119.85%, 52.34%, 2.83% confirmed. Text says no country reached 120% mobile; yet Table 1 reports a maximum of 185.6% (Seychelles 2019), so the claim must refer to country averages (text itself says only South Africa reached 105.31%). Seychelles exceeds the composite threshold 'by 16%'.", "quote": "no African country has reached the threshold of 120% of cell phone subscribers per 100 inhabitants", "locator": "p.15"},
+    {"n": 3, "verdict": "confirmed", "correction": "No income-group split or interaction is estimated. The text names countries but never labels them by income; 'richer' is the extractor's gloss.", "quote": "only the Seychelles exceeded the digital economy threshold by 16%", "locator": "p.14-15"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No separate estimates by income group anywhere in the text; the record's 'not reported' entries are correct.",
+  "risk_of_bias": {
+    "overall": "too_harsh",
+    "confounding_reverse_causation": "agree (moderate): system GMM with collapsed instruments (31 instruments, 41 groups), Hansen p 0.232-0.496 and AR(2) p 0.106-0.119 is a standard but internal-instrument strategy; exogeneity not established.",
+    "exposure_measurement": "agree (moderate): PCA index of mobile, internet users and fixed broadband captures connectivity only although labelled 'digital economy'; components also run separately.",
+    "selection_of_countries_years": "agree (moderate): 54 countries stated but 41 countries and 779 observations estimated, with human capital available for only 820 of 1188 country-years; reason not explained.",
+    "outcome_measurement": "agree (low): WDI real GDP per capita is standard; the text calls it 'economic growth' and it is unclear whether the dependent variable is the log level (eq. 3) or growth, since the lag coefficient is 0.012-0.029.",
+    "specification": "too_harsh: the record's serious rating leans on two incorrect points (eq. 4.8 does match the column (3) human capital coefficient; Table 3 TFP values are in percentage points, not 135%). Remaining real problems are interpretive (level vs growth wording, 'elasticity' reading, 'U-shaped', thresholds without SEs) and no robustness checks, which merit moderate to serious.",
+    "selective_reporting": "agree (moderate): all four models shown, no robustness checks, negative human capital main effects not discussed; the 'stars missing' reason in the record is an extraction artefact, not an author fault.",
+    "why": "Standard system-GMM design with passing diagnostics and consistent signs across four models fits the guide's moderate definition (exogeneity not established, causal wording 'leads to'). Serious would require no strategy for reverse causation or a measure that misses the exposure; neither holds. Real weaknesses are interpretation and absent robustness checks."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Two statements in the record are wrong: (1) specification rationale says 'Equation 4.8 text uses a different human capital coefficient from the table column' - eq. 4.8 uses -0.0522, identical to column (3), eq. 4.6 uses -0.056 (column 2), eq. 4.4 uses -0.0495 (column 1), all consistent; (2) 'TFP ... about 135% growth' - Table 3 units look like percentage points (DlnY 1.4285 close to mean growth 1.528% in Table 1; text says 'average percentage value'). Also, the record's result 6 is an accounting residual rather than an estimated effect. The paper's own inconsistency that no country reaches 120% mobile while Table 1 max is 185.6% is not noted in the record. Nothing invented otherwise; no paper mix-ups."
+ },
+ {
+  "idx": "422",
+  "eligibility_ok": true,
+  "eligibility_note": "Own two-step system GMM and dynamic panel quantile estimates; ICT (fixed telephone, mobile, internet subscriptions) as exposure; 84 developing countries (46 upper-middle, 38 lower-middle); outcome labour productivity. All criteria hold.",
+  "sample_corrections": {
+    "n_economies": "84 confirmed",
+    "years": "2000-2019 confirmed",
+    "observations": "1,219 observations (Table 3) out of 84 x 20 = 1,680 possible; unbalanced",
+    "income_coverage": "46 upper-middle and 38 lower-middle by World Bank Atlas 2016 classification; no low or high income - confirmed"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "0.0144 (SE 0.00107, ***) and lag 0.901 match Table 3 Model 1. The text words the effect loosely ('a 0.0144 increase in labour productivity'); all variables are logs. The implied long-run elasticity (about 0.15) is the extractor's calculation, correctly flagged as such.", "quote": "a 1% increase in ICTs usage results in a 0.0144 increase in labour productivity", "locator": "Section 4.1, p.35; Table 3"},
+    {"n": 2, "verdict": "confirmed", "correction": "Interaction 0.123 (0.00887, ***), main effect 0.0175 (0.00112) match Model 2.", "quote": "ICTit*HCit 0.123*** (0.00887)", "locator": "Table 3, Model 2, p.35"},
+    {"n": 3, "verdict": "confirmed", "correction": "Interaction 0.0748 (0.00352, ***), main effect 0.0175 (0.000950) match Model 3.", "quote": "ICTit*FDit 0.0748*** (0.00352)", "locator": "Table 3, Model 3, p.35"},
+    {"n": 4, "verdict": "confirmed", "correction": "Interaction 0.122 (0.00754, ***), main effect 0.0172 (0.00113) match Model 4.", "quote": "ICTit* TOit 0.122*** (0.00754)", "locator": "Table 3, Model 4, p.35"},
+    {"n": 5, "verdict": "confirmed", "correction": "Model 5 0.0148 (0.00109, ***); Models 6-8 ICT coefficients 0.0172, 0.0170, 0.0170 (record says 0.0170-0.0172, correct). Interactions in Table 5 are smaller (0.0893, 0.0590, 0.108) but still 1% significant.", "quote": "ICT 0.0148*** (0.00109) 0.0172*** 0.0170*** 0.0170***", "locator": "Table 5, p.40"},
+    {"n": 6, "verdict": "corrected", "correction": "Numbers confirmed (q10 0.00859 SE 0.00208; q20 0.00604; q30 0.0071; q40 0.000240 SE 0.000182 no stars; q50 0.00854; q60 0.00515 ** SE 0.00204; q70 0.00644; q80 0.00583; q90 0.00195 SE 0.000463). Direction label should be 'positive at all quantiles, null at q40' rather than 'mixed': every point estimate is positive and eight of nine are significant (q60 at 5%, others 1%). Magnitude pattern is not monotone (q50 about equal to q10, q70 above q20).", "quote": "significant at a one percent significance level at all quantiles except for the 40th quantile", "locator": "Section 4.2, p.37; Table 4 p.39"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Table 6 ICT x HC: q10 0.0271***, q40 -0.00879*, q70 -0.0232***, q90 0.0465***; q30 and q60 not significant. Matches the record; text says significant at 10th, 40th, 70th, 90th.", "quote": "the estimated coefficient of the interaction is significant at the 10th,40th, 70th and 90th quantiles", "locator": "Section 4.3.2, p.41; Table 6 p.42"},
+    {"n": 2, "verdict": "confirmed", "correction": "Model 1 FD coefficient -0.107 correct (Model 3 shows -0.126). Table 7 ICT x FD significant except q30, q50, q70; negative at q60 (-0.0134**). Matches.", "quote": "Most of the estimated coefficients of the interaction between ICTs and financial development are significant except for the 30 th, 50th and 70th", "locator": "p.41; Table 7 p.42"},
+    {"n": 3, "verdict": "confirmed", "correction": "Table 8 ICT x TO positive and significant at q30 (0.0229***), q60 (0.0103***), q90 (0.0125***); negative significant at q80 (-0.0112***). Matches.", "quote": "positive and significant estimated coefficient for the interaction between ICTs and trade openness at some quantiles (q30, q60, q90)", "locator": "p.41; Table 8 p.43"},
+    {"n": 4, "verdict": "confirmed", "correction": "Authors say effect is 'more significant' at lower quantiles than upper; q10 0.00859 vs q90 0.00195 correct; q50 0.00854 equals q10 and q40 is insignificant, so non-monotone as the record notes.", "quote": "ICTs have a greater impact and are more significant for developing countries with low and moderate levels of labour productivity", "locator": "Section 4.2, p.37"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "Upper-middle and lower-middle are pooled; no group estimates. The record's 'not reported separately' is correct.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree (serious): causal wording ('impact', 'influence') with system GMM only; the text discusses endogeneity of the lagged dependent variable but never states which regressors (ICT) are treated as endogenous, gives no instrument count or lags, no time effects are mentioned, and capital (in the paper's own eq. 4) is absent from the estimated models.",
+    "exposure_measurement": "agree (moderate): a single logged 'ICTs' variable is described as fixed telephone, mobile and internet subscriptions per 100 people, but the aggregation is never stated and Table 1 lists them separately; subscriptions measure access.",
+    "selection_of_countries_years": "agree (moderate): 84 countries chosen by 2016 GNI class and data availability; 1,219 of 1,680 possible observations; no country list.",
+    "outcome_measurement": "agree (moderate): labour productivity as 'GDP divided by the total number of labor', source and units unnamed (Table 1 mean 1,185,371, min 738.3, max 1.12e+08); if nominal local currency this would be worse.",
+    "specification": "too_harsh: the ICT main coefficient is stable across Tables 3 and 5 (0.0144-0.0175) and population growth is added as robustness; the real faults (uncentred logged interactions, claim that interaction coefficients 'have a greater influence' than main effects, many quantile specifications) are interpretive and merit moderate rather than serious.",
+    "selective_reporting": "agree (moderate): abstract and conclusion stress uniformly positive interactions while quantile interactions (Tables 6-8) are mixed; Figure 2 is replaced by the text 'The Powell command has no graph for quantile regression' yet U-shaped and inverted patterns are described.",
+    "why": "Serious overall is supported by causal language, an endogeneity strategy that is not documented for the exposure (no instrument count, no statement of which variables are instrumented, Sargan p 0.108-0.165 read as 'closer to 1' meaning valid), no time effects, omitted capital, and an unclear exposure aggregation."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Minor: record states Sargan p-values 0.11-0.17; Table 3 range is 0.1084-0.1468 and Table 5 up to 0.1653, so 0.11-0.17 holds across both tables. Record's key control description is accurate. Result 6 direction label 'mixed' should read positive with one null quantile. Table 4 header reads 'D.var LP' (differenced outcome?), not mentioned in the record; the paper does not explain it. Nothing invented and no paper mix-up."
+ },
+ {
+  "idx": "441",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel least squares estimates, 78 countries (AI stream needs 3), labour-market outcome (employment of highly educated workers). Borderline only on exposure: the Oxford Insights AI Readiness Index measures government/sector/data readiness, not AI use or exposure; accepted as an AI measure but flagged.",
+  "sample_corrections": {
+    "n_economies": "78 stated (312 obs = 78 x 4), but the country list printed on pp.63-64 contains 77 names by my count; use 78 as stated and note the discrepancy",
+    "years": "2019-2022 confirmed",
+    "income_coverage": "Text claims 'all types of economies: developed countries, emerging countries, less developed countries'; no income classification or group results given"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "0.00034, Prob 0.000 matches Table 2. Transformation is not stated; Table 1 magnitudes (mean 1.18, SD 0.004) are consistent with log values, as the record says.", "quote": "AI_READINESS 0.00034* 0.000", "locator": "Table 2, p.66"},
+    {"n": 2, "verdict": "confirmed", "correction": "Male 0.0003, Prob 0.141 matches; asterisk (1%) is attached despite p=0.141, so direction is null. The text nevertheless says the effect is 'more pronounced for male workers' and significant for all three categories.", "quote": "AI_READINESS 0.00034* 0.000 0.0003* 0.141 0.0002* 0.000", "locator": "Table 2, p.66"},
+    {"n": 3, "verdict": "confirmed", "correction": "Female 0.0002, Prob 0.000 matches Table 2.", "quote": "0.0002* 0.000", "locator": "Table 2, p.66"},
+    {"n": 4, "verdict": "confirmed", "correction": "Pillar 1 total 0.00042, Prob 0.004 matches Table 3 (male 0.00046, female 0.0006 also significant).", "quote": "PILLAR1_GOV 0.00042* 0.004", "locator": "Table 3, p.67"},
+    {"n": 5, "verdict": "confirmed", "correction": "Total: Pillar 2 0.000022 (p 0.922), Pillar 3 -0.00016 (p 0.423); male Pillar 2 -0.00024 (p 0.013), Pillar 3 -0.00036 (p 0.012) as the record says. Also Table 3 female Pillar 3 -0.0002 has p=0.437 although the text says Pillar 3 is 'significant by category (male and female employment)'; female Pillar 2 -0.0004 has p=0.029 but is starred as 1%.", "quote": "PILLAR3_DATA and INFR. -0.00016 0.423 -0.00036* 0.012 -0.0002 0.437", "locator": "Table 3, p.67"},
+    {"n": 6, "verdict": "confirmed", "correction": "Mixed signs confirmed (Table 5 AI human capital total -0.00052, p 0.003, female +0.0005, p 0.001). Magnitudes are slightly broader than the record's 0.0001-0.0007: several coefficients are 0.00003-0.00009 or 0.0000 (Tables 4 and 6); p-values span 0.000-0.999 as recorded.", "quote": "there are inconsistencies in the impact of both components", "locator": "Section 4, p.67; Tables 4-6 pp.67-69"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "No formal test of male-female differences; the text says 'differs only slightly' and the Conclusion says gender discrepancies 'are not statistically significant' without a test. Opposite-signed component effects by gender are in Tables 4-5 (e.g. innovation capacity +0.00033 male vs -0.0005 female).", "quote": "The estimated impact on high-educated male and female employment differs only slightly", "locator": "Section 4, p.70"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group split or comparison; record's 'not reported' entries are correct. Qualifies only via the panel-level sample (many income levels present).",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree (serious): the equations contain only the index (or sub-indices) plus constant and country effects; no controls, period effects not reported, no strategy for reverse causation; AI human capital component overlaps with an education-based outcome.",
+    "exposure_measurement": "agree (serious): the Oxford Insights readiness index is not AI adoption or use; the text itself says 'practical use and its applications of AI are also important'.",
+    "selection_of_countries_years": "agree (moderate): countries with complete data only, China, UK and Japan lost, four years; the claim of covering more than 60% of highly educated employment is asserted; printed list has 77 names for a stated 78.",
+    "outcome_measurement": "agree (serious): the outcome is described as people employed divided by total employed (a share, called 'employment rate'), with an ILO label but a World Bank gender-data URL for the source; transformation not stated.",
+    "specification": "agree (serious): 15 models, collinear sub-indices entered together, adjusted R2 0.997-0.999 driven by fixed effects, stationarity tests set aside for a 4-year panel, Durbin-Watson used as robustness evidence.",
+    "selective_reporting": "agree (serious): asterisks on insignificant coefficients (0.141, 0.6422, 0.6653, 0.8150), and Table 7 contradicts Tables 3-6 (see problems).",
+    "why": "Critical is supported: no controls, a readiness index treated as AI exposure, an unclear outcome, and a summary table and text that contradict the regression tables mean conclusions cannot be trusted."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "Record is accurate. Additional text/table contradictions it does not list: Table 7 says AI Size is inverse and significant for total, male and female, but Table 5 shows total +0.00021 (p 0.042) and male/female p 0.101/0.276 (starred); Table 7 says AI Human Capital is inverse for total, male and female but Table 5 female is +0.0005; Table 7 says AI Digital Capacity is inverse and significant for total and female while text says male is positive (p 0.665). The text says the male effect is more pronounced although Table 2 male p=0.141. Printed country list has 77 names against 78 stated."
+ },
+ {
+  "idx": "442",
+  "eligibility_ok": true,
+  "eligibility_note": "Own econometric estimation (IPS, Pesaran/Friedman, Swamy, Westerlund cointegration, Dumitrescu-Hurlin) on 22 countries; exposure mobile and internet; outcome female labour force participation. Meets the letter of every criterion, but no coefficient, elasticity or marginal effect is reported, so the paper yields no usable effect estimate; flag as marginal.",
+  "sample_corrections": {
+    "n_economies": "22 confirmed (list of 22 on p.69)",
+    "years": "2000-2021 confirmed; Conclusion's '2022-2022' is a typo",
+    "observations": "264 per variable in Table 2 (about 12 years x 22 countries, not 22 x 22 = 484); not explained",
+    "income_coverage": "Text calls them 'OECD nations'; the list includes Argentina, Brazil, India, Indonesia, Russia and South Africa. No income classification or comparison in the text."
+  },
+  "results": [
+    {"n": 1, "verdict": "unverifiable", "correction": "Westerlund p-values confirmed (Gt 0.003, G 0.004, Pt 0.032, Pa 0.010) but the test is of cointegration and has no sign: the direction 'positive' rests only on the authors' assertion; no coefficient exists in the text. The paper bases rejection on Pt and Pa alone although Gt and G are also below 0.05.", "quote": "mobile cellular subscriptions (mb) have a positive and significant impact on women's empowerment in the long term", "locator": "Conclusion, p.77; Table 6 p.75"},
+    {"n": 2, "verdict": "corrected", "correction": "Statistics confirmed (mb->w W 5.6610, Z-bar 8.5858; w->mb W 4.1382, Z-bar 5.0146; both p 0.0000). Direction should be 'bidirectional, unsigned' rather than 'mixed': Granger causality gives no effect sign or size.", "quote": "there is a reciprocal association between women's employment and mobile cellular subscriptions", "locator": "p.76; Table 7 p.76"},
+    {"n": 3, "verdict": "corrected", "correction": "Statistics confirmed (web->w W 4.6323, Z-bar 6.1733, p 0.0000; w->web W 4.5904, Z-bar 6.0750, p 0.4289), but direction 'positive' is wrong for a Granger test: it is unsigned. The p=0.4289 is inconsistent with Z-bar 6.0750, so the 'one-way' conclusion (web to w) rests on an internally inconsistent row.", "quote": "𝒘 𝒊𝒔 𝒏𝒐𝒕 𝒕𝒉𝒆 𝒄𝒂𝒖𝒔𝒆 𝒐𝒇 𝒘𝒆𝒃 4.5904 6.0750 0.4289", "locator": "Table 7, p.76"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Swamy chi2(126)=29754.27, p=0.0000 confirmed; used only to justify heterogeneous-slope tests; no moderator or country-level estimates.", "quote": "chi2(126) 29754.27 0.0000", "locator": "Table 4, p.73"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis or comparison; the record's 'not reported separately' entries are correct.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree (critical): no identification strategy, only GDP and fertility added; the Dumitrescu-Hurlin results show bidirectionality (mobile and fertility/GDP both ways) yet the paper claims digitalization raises participation.",
+    "exposure_measurement": "agree (moderate): World Bank mobile subscriptions (mean about 120 per 100, max 172) and internet users are standard but subscriptions count SIMs.",
+    "selection_of_countries_years": "agree (serious): 22 countries chosen on 'pragmatic and analytical' grounds, called OECD though several are not members, 264 observations for 22 countries over 22 years unexplained.",
+    "outcome_measurement": "agree (low): World Bank female labour force participation, ages 15-64; standard measure.",
+    "specification": "agree (critical): first-generation IPS tests after the text says second-generation tests are needed with dependence, no lag orders, no long-run coefficients, mixed English/Turkish table labels, Table 7 statistics and p-values inconsistent (e.g. w->f W 3.1073 with Z-bar 14.7071). The record's claim that the LM adj. statistic has an 'inconsistent p-value' is wrong: 1.794 corresponds to p of about 0.073, matching the 'Average' column 0.0728; the real faults are that this is rejected at 10%, the column is mislabeled, and the text then says lack of dependence 'justifies the use of next-generation unit root tests'.",
+    "selective_reporting": "agree (critical): the central claim of a positive long-run effect has no reported coefficient; fixed/random effects, sensitivity analyses and added controls are announced but never shown.",
+    "why": "No effect estimate is reported at all; conclusions of a positive causal effect are asserted from cointegration and Granger tests with internally inconsistent tables."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "One error in the record: it says the cross-sectional dependence test p-value is inconsistent (specification rationale and 'Pesaran CD' label); Table 3 gives LM adj. (Pesaran 2004) 1.794 with 'Average' 0.0728 and Friedman 19.664 with 0.5426, so the p-value is consistent and the test is labelled LM adj., not Pesaran CD. Granger rows are treated as signed ('positive', 'mixed') in the record; they are not. Also the abstract says 'greatly increased' and the conclusion says 'prove the positive effect', which the paper cannot support. Other record statements (22 countries, years, 264 obs, Westerlund p-values, missing coefficients) match the text; nothing invented."
+ }
+]

@@ -1,0 +1,64 @@
+[
+ {
+  "idx": "323",
+  "paper_verdict": {
+   "estimator_family": "system GMM (two-step, xtabond2, small, robust; dynamic panel with lagged TFP; ICTM imports share used as external instrument; Durbin-Wu-Hausman endogeneity tests reported)",
+   "reverse_causality_addressed": "yes",
+   "pooling_concerns": "Exposure is a composite ICT maturation index (ICTMI), not a single-technology measure, so units are not comparable to single-indicator estimates. Outcome is TFP (level, computed as a residual) rather than output growth or per-capita output. Model is dynamic (lagged TFP coefficient 0.9394), so the coefficient is a short-run effect, not a long-run one. The ICT x tertiary-enrolment interaction coefficient is not a marginal effect and should not be pooled with main-effect estimates. Text says ICTSERT is significant 'only at 10%' although Table 5 prints p = 0.000. Very short panel (24 countries, 11 years, N=216 effective)."
+  },
+  "estimates": [
+   {
+    "estimate_id": "323-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTMIi,t 0.0156 0.0063 2.48 0.014",
+    "note": "Table 5 has separate columns for coefficient, standard error, t-statistic and p-value, so SE 0.0063 is correct. Observations = 216, Countries = 24 printed under the table. Text says the sample is a mixed set of Asian countries (few developed, mostly less developed), so 'mixed' is right. Years 2000-2010 consistent with T=11."
+   },
+   {
+    "estimate_id": "323-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "ICTSERTi,t 0.0182 0.0037 4.86 0.000",
+    "note": "Values match Table 5. This is the interaction term ICT x SERT (tertiary enrolment), so it is a complementarity coefficient and not a main ICT effect. Observations = 216, Countries = 24."
+   }
+  ]
+ },
+ {
+  "idx": "358",
+  "paper_verdict": {
+   "estimator_family": "pooled OLS (EViews 'Panel Least Squares', unbalanced, no fixed effects or instruments reported)",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Focal exposure is fintech and big tech credit flows as % of GDP, which is not ICT adoption or a productivity-technology measure and has different units and meaning from usage or capital measures. Outcome is GDP per capita growth (annual %), a growth rate, not TFP or output level; column V is labelled 'GDP Growth' (not per capita) in the header. Column V is suspicious: the same table lists GROW (GDP growth) as a regressor in column V (0.30*), which would be an identity with a GDP-growth dependent variable, so the column V header may be wrong. Table caption says per capita growth for the whole table. Options I-V are five specification variants of the same sample (not independent observations), so they must not be pooled as separate studies. Only one N is printed for the table (594 obs, 95 cross-sections, 2013-2019) even though control sets differ by column. Significance stars for column V (0.86** with t = 2.68) look under-starred relative to the other columns. The 2013-2019 sample of 95 countries is smaller than the 148 countries and 2008-2021 stated in the methods text, which is not reconciled."
+  },
+  "estimates": [
+   {
+    "estimate_id": "358-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "FINTCBIG: Credit flows by fintech and big tech companies as percentage of GDP (2.13) (3.11) (3.71)",
+    "note": "Table 12 PDF layout is garbled (stars wrap onto the next line), but column positions give I 0.99**, II 0.99***, III blank, IV 1.15***, V 0.86**. Column IV 1.15*** with (3.71) matches. Methods text says 'T-statistics' show significance of the betas, so parentheses hold t values. Table header: 'Panel Least Squares; Sample (adjusted): 2013-2019; Periods included: 7; Cross-sections included: 95; Total panel (unbalanced) observations: 594'. Page 37 is printed after the table body, consistent."
+   },
+   {
+    "estimate_id": "358-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "FINTCBIG: Credit 0.99* 0.99** 1.15** 0.86** (2.13) (3.11) (3.71)",
+    "note": "Column I is 0.99 with two stars (second star wrapped onto next line) and t = 2.13, consistent with ** at 5%. Same N as the table header (594 obs, 95 countries)."
+   },
+   {
+    "estimate_id": "358-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "FINTCBIG: Credit 0.99* 0.99** 1.15** 0.86** (2.13) (3.11) (3.71)",
+    "note": "Column II is 0.99 with three stars (wrapped) and t = 3.11. Column III is blank for FINTCBIG, so there is no misalignment with IV."
+   },
+   {
+    "estimate_id": "358-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Dependent Variable Per Capita Income Growth GDP Growth ... FINTCBIG: Credit ... 0.86** (2.68)",
+    "note": "Coefficient 0.86** and t = 2.68 match as printed; the stars may be under-stated for t = 2.68 but are copied as printed. Outcome is GDP growth (header over column V only), not per capita; and column V also lists GROW as a regressor (0.30*), so the column V dependent variable label is doubtful. Treat as lower reliability and keep as a growth-rate outcome."
+   }
+  ]
+ }
+]

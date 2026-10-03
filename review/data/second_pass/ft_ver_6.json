@@ -1,0 +1,252 @@
+[
+ {
+  "idx": "302",
+  "eligibility_ok": true,
+  "eligibility_note": "Own system-GMM estimation, 24 Asian economies (>=10), composite ICT index (telephony, mobile, broadband, internet) as exposure, income per capita/convergence as output outcome. Eligible.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 4, p.12. Text p.13 reads it as 0.119% per 10% ICTMI; log/level form of ICTMI is indeed not stated.",
+    "quote": "ICTMIi,t 0.0119 0.0052 2.29 0.023"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 4, p.12.",
+    "quote": "ICTSERTi,t 0.0028 0.0010 2.84 0.005"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table 4, p.12; lagged income 0.9617 (SE 0.0487) also correct. 'long' horizon is the extractor's label; the paper gives no horizon.",
+    "quote": "YPCi,t(0) -0.0584 0.0240 -2.44 0.016"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "p.13. ICTSERT is the only ICT interaction; ICTSERS is stated as 'not empirically tested' (p.13).",
+    "quote": "This coefficient is statistically significant and has positive influence on national income"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "p.14. Record correctly says no ICT x electricity interaction is estimated; coefficient 1.2082, p=0.000 matches Table 4. This is a control, not tested heterogeneity.",
+    "quote": "electricity consumption has strong complementarily with ICT"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "Pooled sample; no income-group split. Paper only refers loosely to DCs and UDCs (conclusion). Record's 'not reported' entries are accurate.",
+  "risk_of_bias": {
+   "overall": "too_harsh",
+   "confounding_reverse_causation": "too_harsh: system GMM with lagged income and an external instrument (ICT goods imports) is a strategy, weak (30 instruments vs 24 countries, exclusion arguable) but not 'none', so moderate fits the guide better than serious.",
+   "exposure_measurement": "agree: ad hoc weighted composite with overlapping components and a Table 1 definition error (internet users defined via mobile broadband), moderate.",
+   "selection_of_countries_years": "agree: 24 Asian economies by data availability, short panel (216 obs), inconsistent i=1..11 notation, moderate.",
+   "outcome_measurement": "too_harsh: log PPP GDP per capita from WDI is a standard measure (defined in Table 1); only the GNI/GDI labelling is inconsistent, so low-to-moderate.",
+   "specification": "agree: single model, undocumented instrument choices, no sensitivity to instrument count; HDI in abstract but absent from Table 4, moderate.",
+   "selective_reporting": "agree: only one model shown, ICTSERS not estimated, some textual misreadings of the table (constant called initial condition; trade sign), moderate.",
+   "why": "Same system-GMM design as paper 323 (rated moderate on confounding there); under the guide a standard dynamic panel with an external instrument but unestablished exogeneity is moderate. Instrument proliferation and several interpretation slips push it to the upper end, so serious is borderline rather than clearly warranted."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Core numbers in the record match Table 4. Minor: (a) 'Windmeijer-type robust errors implied' is not stated in the paper (it says two-step SGMM with 'small'); (b) page locators slightly off (Table 1 rows 10-11 and the sample paragraph are on pp.10-11, not p.9/p.10); (c) same authors, same 24-country 2000-2010 panel, same ICTMI/ICTSERT specification as paper 323, so 302 and 323 are not independent evidence (possible double counting); (d) paper text says i=1..11 and 11 years while Table 4 shows 216 obs (24 x 9), which the record already notes."
+ },
+ {
+  "idx": "320",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel regressions on 20 countries (>=10); internet users and mobile subscriptions are listed exposures. Outcome is financial inclusion (bank depositors per 1,000 adults), which is not one of the listed outcomes by name; eligible only if the protocol's 'living standards beyond income' family covers financial inclusion (the paper links it to poverty reduction but does not estimate poverty). Borderline but accepted. ATMs are not a listed technology (supplementary).",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table III col (4), p.6; text on p.6 misstates the unit as '2.33%'. The same baseline coefficient is 2.32 in Table IV and 2.25 in Table V.",
+    "quote": "INTT 2.33(0.000)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table III col (4); Table V col (4) gives 0.71 (0.036); Table IV gives 0.66 (0.046).",
+    "quote": "PHON 0.70(0.039)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table III col (4), p.6.",
+    "quote": "ATM 6.45(0.000)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Table IV col (4), p.7. Interactions are differences from the other 18 countries per the model on p.4.",
+    "quote": "INTT x China Dummy 10.42(0.159) INTT x Nigeria Dummy 4.18(0.785)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Table V col (4), p.8.",
+    "quote": "PHON × China Dummy 4.38(0.260) PHON × Nigeria Dummy 2.63(0.563)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "FE col (2): Table III p.6 ATM x China 10.78 (0.000); Table V p.8 PHON x China 21.26 (0.001); Table IV p.7 INTT x Nigeria 36.88 (0.034). All correct.",
+    "quote": "ATM x China Dummy 10.78(0.000)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "corrected",
+    "correction": "The paper has no income-group analysis. It contrasts China and Nigeria with 18 other countries by country dummies and frames them as 'developed and emerging' economies; the 'upper-middle' and 'lower-middle' labels are the extractor's, not in the text. The remaining content (insignificant FGLS differences, several significant FE differences, authors misread insignificant interactions as 'insignificant positive effects') is supported.",
+    "quote": "A significant β*c means a difference between China and the rest of the sample"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group classification or split in the paper; China/Nigeria dummy interactions are country contrasts, and the record's income labels are extractor-imposed.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal verbs ('effect', 'impact', 'engender'), levels regressions, headline FGLS without country or year effects, no handling of reverse causation.",
+   "exposure_measurement": "agree: standard World Bank internet and mobile series; mobile subscriptions are SIM counts (max 198 per 100), moderate.",
+   "selection_of_countries_years": "agree: 20 countries built around two focal cases, 'selected at random' with no sampling frame; borderline serious/moderate.",
+   "outcome_measurement": "agree: single supply-side depositor count; descriptive range (0.999 to 3000.9) and ATM minimum of -3.1 point to data problems, moderate.",
+   "specification": "agree: Hausman favours FE but FGLS is used; coefficients in levels read as percentages; inconsistent diagnostics (F(1,19) vs F(1,9)); POPL sign flip in Table V RE and FE coefficient of -0.00001 vs -5.3 in FGLS suggest inconsistent units.",
+   "selective_reporting": "agree: conclusions on China/Nigeria rest on FGLS only; significant FE interactions not discussed; 'regardless of income level' claim untested, moderate.",
+   "why": "Cross-sectional levels regressions with causal language, no strategy for reverse causality, and a poorly constructed small sample with misread interactions; serious is appropriate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "Numerical entries in the record match Tables III-V. Items to flag: (a) outcome eligibility is borderline (see note); (b) text p.8 gives Wald chi2(8)=26.98 for Table V while the table shows 526.54; (c) text states the Wooldridge F p-value of 0.000 'is greater than 0.05'; (d) abstract says Pooled OLS and FGLS, Section III.C says FE and RE; (e) the baseline internet and mobile coefficients differ across Tables III-V (2.33/2.32/2.25 and 0.70/0.66/0.71) although they are the same variable in the same sample; (f) result 6 is a mix of three FE coefficients from different models, not one estimate."
+ },
+ {
+  "idx": "321",
+  "eligibility_ok": true,
+  "eligibility_note": "Own DEA/Malmquist decomposition and regressions on 24 OECD economies (>=10), ICT capital stock as exposure, labour productivity as output outcome. Eligible, though the main result is an accounting decomposition without standard errors.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 3, p.136 (LABPROD, PROD, EFF, TECH, KACC, DACC); arithmetic DACC 1.2241 also correct. Note the geometric mean is lifted by a few catch-up economies (Latvia 4.0281); 12 of 24 countries have DACC below 1.",
+    "quote": "Geometric average 1.5526 1.1855 1.0486 1.1306 1.1499 1.1389"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 3, p.136. Count of 12 countries below 1 and the listed names verified; US 0.9862.",
+    "quote": "Latvia 4.0281 ... Slovak Republic 0.8212"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Table 4, p.137 (also Western Europe 1.0271 to 0.9811, Northern America 1.0032 to 0.9861, Asia-Australia 0.9973 to 0.9627). Quoted statement is on p.135.",
+    "quote": "Central-Eastern Europe 1.2094 1.1152 1.1044 0.9721 0.9968"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Sect. 4.2, p.138.",
+    "quote": "β = −0.003, p-value = 0.904"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Sect. 4.2, p.138.",
+    "quote": "positive effect on technological progress in the next 5 years (β = 0.095, p-value < 0.001)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Sect. 4.2, p.138-139 (Fig. 2). No standard error, N or controls are reported for any of the three regressions.",
+    "quote": "β = −0.449, p-value < 0.001"
+   },
+   {
+    "n": 7,
+    "verdict": "corrected",
+    "correction": "Numbers are right (Tn=0.772, bootstrap p=0.108), but the direction should be null/inconclusive rather than positive: it is a non-rejection of equality between the 2019 distribution and the 1995 distribution scaled by DACC, not a positive estimate. Non-rejection also occurs for EFF alone (p=0.093) and for several other combinations, so the test does not isolate ICT. The authors' 'ICT capital contributes to convergence' is an interpretation of the counterfactual and Fig. 3.",
+    "quote": "f(y2019) = g(y1995) × DACC 0.772 0.108"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Tables 3-4, pp.136-137; Latvia 4.0281, Hungary 1.5567, Poland 1.4411 correct. Table 4 itself is mixed on the Europe vs North America comparison (2010-15: WE 0.9952 vs NA 0.9871; 2015-19: 0.9811 vs 0.9861); the text relies on Appendix A. Grouping is regional, moderator label 'other' is fine.",
+    "quote": "in the last decade, the total contribution of ICT ... in European countries ... is more downwards than that of Northern American countries"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Sect. 4.2, p.138; lag effect 0.095 and efficiency association -0.449 match the text. Organisational-adjustment interpretation is the authors' speculation, not tested.",
+    "quote": "does not affect technological change in the short term"
+   }
+  ],
+  "income_group_results": "corrected",
+  "income_group_note": "No income-group analysis; only regional groups. Record's range 'about 0.96-1.03 in later windows' for Western Europe, Northern America and Asia-Australia is imprecise: Table 4 gives 0.9458 to 1.0081 for 2000-2019 (1.0271 only in 1995-2000). Central-Eastern Europe is not classified as upper-middle income by the paper.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: accounting decomposition and bivariate regressions with no controls or instruments, yet abstract speaks of 'positive impact'; reverse causation ignored.",
+   "exposure_measurement": "too_lenient: ICT capital stock per hour is a direct measure, but DACC is a model-derived counterfactual component, the paper itself notes spending shifting from ICT assets to services (not captured), and falling constant-price ICT stock in 12 countries suggests deflation/measurement issues; moderate fits better.",
+   "selection_of_countries_years": "agree: 24 OECD economies, mostly high income, moderate.",
+   "outcome_measurement": "agree: GDP per hour worked from OECD with PPP and 2015 prices.",
+   "specification": "agree: deterministic DEA, CRS, no technological regress, no standard errors on the decomposition, regression N and form unreported; moderate.",
+   "selective_reporting": "agree: all 24 countries, all 15 distribution tests and a 4-year robustness check are shown; regression details (N, SE) omitted but minor.",
+   "why": "Descriptive accounting with unadjusted regressions and causal wording, no handling of reverse causality; serious is appropriate for causal claims, though the decomposition itself is transparent."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers found. Points to correct: (a) result 7 direction; (b) the record's claim that regressions 'use few observations' cannot be verified, since the paper reports no N or SE for the Fig. 1-2 regressions; (c) the abstract's 'positive impact' and 'contributes to convergence' go beyond what a non-causal decomposition and a non-rejection test support; (d) record exposure description 'ICT capital stock per hour worked' matches the paper's d = D/L normalisation."
+ },
+ {
+  "idx": "323",
+  "eligibility_ok": true,
+  "eligibility_note": "Own system-GMM estimation, 24 Asian economies (>=10), composite ICT index exposure, TFP outcome (productivity). Eligible.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 5, p.11; lagged TFP 0.9394 also correct. Units and logging not reported in the paper.",
+    "quote": "ICTMIi,t 0.0156 0.0063 2.48 0.014"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 5, p.11. Text p.12 says 'Statistical significance of this regressor is only at 10%', contradicting the table, as the record notes.",
+    "quote": "ICTSERTi,t 0.0182 0.0037 4.86 0.000"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "p.12; Table 5. Tertiary enrolment main effect is absent from the model (eq. 1-e), as the record says.",
+    "quote": "ICT has complementarity with tertiary level of education"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Table 5, p.11. P1564 0.0135 (p=0.186) and HDI 0.0117 (p=0.821) also correct. These are controls, not ICT interactions.",
+    "quote": "URBNPi,t 0.0713 0.0270 2.64 0.009"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "Pooled Asian sample ('few DCs and mostly UDCs'); no income-group split. Record's 'not reported' entries are accurate.",
+  "risk_of_bias": {
+   "overall": "too_harsh",
+   "confounding_reverse_causation": "agree: system GMM with lagged TFP and an external ICT-import instrument is a strategy, weak diagnostics (29 instruments vs 24 countries, Hansen p=0.935); moderate.",
+   "exposure_measurement": "agree: undocumented composite index, interaction without main effect; moderate.",
+   "selection_of_countries_years": "agree: 24 Asian countries by availability, list not reported, 11-year window.",
+   "outcome_measurement": "agree: TFP as an undocumented residual (alpha and capital measure unreported, units absent); moderate and close to serious for replicability.",
+   "specification": "agree: one final model, no robustness, missing Tables 1 and 4, numbering jumps; moderate.",
+   "selective_reporting": "agree: text contradicts Table 5 on HDI significance, ICTSERT significance level, C-test p (0.222 vs 0.822) and observation count (240 vs 216); moderate.",
+   "why": "All six domains are moderate and the design is a standard dynamic panel with an external instrument but unestablished exogeneity, which the guide calls moderate; the textual inconsistencies do not change the table estimates. Serious is borderline, and 302 (same design) should be rated the same way."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record matches the text and Table 5; its inconsistency list (HDI, 10% vs p=0.000, C-test 0.222 vs 0.822, 240 vs 216) is correct, as are the missing-table observation (tables numbered 2, 3, 5). Additional points: (a) same authors, same 24-country 2000-2010 sample and same ICTMI/ICTSERT setup as paper 302, so not independent evidence; (b) the text calls the AR(1) p=0.077 acceptable but AR(1) is expected to reject; (c) the Fig. 1 'ICT Augmented Convergence Hypothesis' diagram is carried over from 302 and does not match this paper's TFP model."
+ }
+]

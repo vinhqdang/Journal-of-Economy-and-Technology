@@ -1,0 +1,99 @@
+[
+ {
+  "idx": "988",
+  "paper_verdict": {
+   "estimator_family": "panel fixed effects (OLS within), with robustness checks using FE with AR(1) errors and GLS random effects",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Outcome is log TFP computed as a Cobb-Douglas residual (not output or labour productivity directly); exposure is log of the DESI composite index, so the coefficient is an elasticity to an index, not to a technology stock or usage measure. Sample of 28 units includes the EU aggregate alongside the 27 member states, with only 6 years (2017-2022). Estimates 988-1 to 988-4 and 988-6 to 988-8 are overlapping re-estimations on the same data, not independent. 988-5 uses the TFP index (TFP in 2020 = 1) in levels, so its units differ from the log-TFP estimates. The author states the model 'proves the causal effect' on the strength of FE alone; no IV, lags or other treatment of reverse causality."
+  },
+  "estimates": [
+   {
+    "estimate_id": "988-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnDigital 0,099*** (4,00)",
+    "note": "Table 2 col (1) basic, lnTFP. Note under table: 'The absolute value of the t statistic is given in parentheses.' Text: 'cover 168 observations (28 countries and 6 years)'. Table 2 does not print N itself; N is from the text. Income group 'high' is approximate (EU27 plus aggregate; Bulgaria and Romania were not high income for all of the period)."
+   },
+   {
+    "estimate_id": "988-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0,097*** (3,93)",
+    "note": "Table 2 col (2) extended, lnTFP. t-statistic in parentheses. 168 obs, 28 countries per text."
+   },
+   {
+    "estimate_id": "988-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0,093*** (3,07)",
+    "note": "Table 2 col (3) extended, lnTFP. t-statistic in parentheses. 168 obs, 28 countries per text."
+   },
+   {
+    "estimate_id": "988-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0,040 (1,43)",
+    "note": "Table 2 col (4) extended, lnTFP. Text confirms t = 1.43 for the fourth specification. No stars, correct."
+   },
+   {
+    "estimate_id": "988-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnDigital 0,099*** (4,00) 0,111*** (4,15)",
+    "note": "Table 1 col TFP_ind (second column), t in parentheses. Table 1 prints no N; 168 obs and 28 countries taken from the Section 5 text, which describes Table 2. Outcome is a TFP index level (2020 = 1), unlike log TFP, so do not pool directly with the log-TFP rows."
+   },
+   {
+    "estimate_id": "988-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnDigital 0,111** (2,40)",
+    "note": "Table 3 col (1), FE with Durbin-Watson test (rho_ar 0,506, i.e. AR(1) FE). Observations 140, Countries 28 as printed. t in parentheses."
+   },
+   {
+    "estimate_id": "988-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnDigital 0,106*** (2,93)",
+    "note": "Table 3 col (2), FE with autocorrelation of residuals. Observations 140, Countries 28 as printed."
+   },
+   {
+    "estimate_id": "988-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnDigital 0,102*** (4,08)",
+    "note": "Table 3 col (3), GLS random effects with Breusch-Pagan LM test. Observations 168, Countries 28 as printed."
+   }
+  ]
+ },
+ {
+  "idx": "1192",
+  "paper_verdict": {
+   "estimator_family": "cross-sectional OLS with HC1 heteroskedasticity-robust standard errors, split-sample (developing vs developed)",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Single cross-section (2023) with no panel or time dimension; no instruments, lags or other treatment of endogeneity, so estimates are correlations. Outcome is the inverse hyperbolic sine of annual GDP per capita growth (a growth rate, not a productivity level), exposure is the min-max normalized Network Readiness Index (0-1), so coefficients are not elasticities and are not on the scale of log-level specifications. Missing trade data were median-imputed. Developed and developing coefficients have opposite signs and 1192-3 is a re-estimation of 1192-2 on a subsample (Malta and Singapore dropped), so the three estimates are not independent. 'Developing' cohort (N=76) is every non-high-income economy by the 2023 World Bank classification, so it mixes income levels. NRI is a composite ICT readiness index, so its fit as the focal technology depends on how the pooled analysis defines the technology."
+  },
+  "estimates": [
+   {
+    "estimate_id": "1192-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Normalized Network Readiness (NRIT) 1.106 *** (0.0027)",
+    "note": "Table 4, Developing Economies (N = 76). Table note: 'p-values are reported in parentheses.' Cross-section of 2023, so n_countries = n_obs = 76. Outcome IHSY is IHS of real GDP per capita growth. The Network Readiness Index is an ICT-readiness composite; the row is confirmed as printed, with technology classification left as 'other'."
+   },
+   {
+    "estimate_id": "1192-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Normalized Network Readiness (NRIT) 1.106 *** (0.0027) −0.734 * (0.0895)",
+    "note": "Table 4, Developed Economies (N = 45), p-value in parentheses. Coefficient is printed with a true minus sign (−0.734). Same row also reappears in Table 6 baseline column."
+   },
+   {
+    "estimate_id": "1192-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Normalized Network Readiness (NRIT) −0.734 * (0.0895) −0.693 (0.1166)",
+    "note": "Table 6, Refined Developed Model (N = 43), dropping Malta and Singapore. p-value in parentheses, no stars. Note under Table 6 reads 'p-values are reported in parentheses'."
+   }
+  ]
+ }
+]

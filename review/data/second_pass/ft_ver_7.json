@@ -1,0 +1,291 @@
+[
+ {
+  "idx": "358",
+  "eligibility_ok": true,
+  "eligibility_note": "Meets all criteria: own panel/cross-section regressions, internet/mobile payments exposure, 62-155 economies, outcomes in poverty/distribution and labour market. Fintech credit and e-payments are context exposures, but internet use alone qualifies.",
+  "sample_corrections": {
+   "n_economies": "Correct as recorded (148 stated; Table 7 70, Table 8 62, Table 9 64, Table 10 147, Table 11 148, Table 12 95, Tables 13-14 155). Text says 148 countries but cross-section tables report 155, an inconsistency in the paper.",
+   "years": "Correct as recorded (text: 'pooled data of 148 countries for 14 years (from 2008 to 2021)'; Table 7 and 12 2013-2019; Table 8 2008-2019; Table 9 and 11 2008-2020; Table 10 2008-2019; Tables 13-14 year 2021)."
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "corrected",
+    "correction": "Option labels are off by one. In Table 7 the INTRNT row is blank in option I: -0.17*** (t=-4.32) is option II, -0.13** (t=-2.30) is option III, -0.22*** (t=-5.67) option IV, -0.22*** (t=-5.68) option V. Direction (negative) and magnitudes are right.",
+    "quote": "Table 7 INTRNT: II -0.17*** (-4.32); III -0.13** (-2.30); IV -0.22*** (-5.67); V -0.22*** (-5.68)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 7 FINTCBIG: -3.76*** (-3.25); -4.10*** (-3.72); -2.83** (-2.08); -2.81** (-2.57); -2.85** (-2.61)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Gini on INTRNT: I -0.08*** (-4.23), II -0.13*** (-4.45), III -0.08*** (-4.20), IV -0.07*** (-3.83), V -0.13** (-2.78); range is -0.07 to -0.13 (record says -0.08 to -0.13, minor).",
+    "quote": "Table 8 INTRNT: -0.08*** (-4.23); -0.13*** (-4.45); -0.08*** (-4.20); -0.07*** (-3.83); -0.13** (-2.78)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 9 INTRNT 0.01* (1.76) I, 0.01* (1.78) III, 0.01 (1.29) IV, 0.01 (1.38) V; MBLPMT 0.08** (2.11) II"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 10 INTRNT 0.08*** (6.76), 0.06*** (2.96), -0.03 (-0.89); MBLPMT 0.36*** (3.31), 0.25** (2.47)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Significance is weak: -0.03*** (-3.00) I, -0.01* (-1.76) II, -0.01** (-1.95) IV, -0.03* (-1.89) V.",
+    "quote": "Table 11 INTRNT: -0.03*** (-3.00); -0.01* (-1.76); -0.01** (-1.95); -0.03* (-1.89); adj R2 0.05-0.09"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 11 FINTCBIG -0.32 (-0.58); Table 10 FINTCBIG 1.08 (0.95), 1.65 (1.46); text: FINTCBIG 'are not significant'"
+   },
+   {
+    "n": 8,
+    "verdict": "corrected",
+    "correction": "Numbers and t-values match Table 12 (0.99** (2.13), 0.99*** (3.11), 1.15*** (3.71), 0.86*** (2.68)), but only options I-II are per-capita income growth; options IV-V are GDP growth (header 'Per Capita Income Growth' I-III, 'GDP Growth' IV-V). Option III has no FINTCBIG coefficient.",
+    "quote": "Table 12 header: 'Per Capita Income Growth' (I-III), 'GDP Growth' (IV-V); FINTCBIG 0.99**, 0.99***, 1.15***, 0.86***"
+   },
+   {
+    "n": 9,
+    "verdict": "confirmed",
+    "correction": "Table 13 also has a 30PSBL40 (lowest 40% income group) version: ELCPMT 0.18** (2.90), CRCRD 0.45*** (5.45); outcome is a perception, not a living-standard measure.",
+    "quote": "Table 13 ELCPMT 0.24*** (3.86); CRCRD 0.48*** (5.83); No. of Countries 155; Year 2021"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "No interaction or income-group subsample regression; descriptive tables only. Table 13-14 do include a regression for the bottom-40% income group (30PSBL40) within countries, which the record does not mention.",
+    "quote": "'These last two equations have been estimated for lowest 40 percent income group separately.' (Section 4)"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "No regression results by World Bank income group; 'not reported' is right. Only descriptive Tables 1-4 by region/high-middle income.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: authors state simultaneity (Figs 1-2) but use no instrument or lag, causal wording ('alleviate poverty'), controls vary by option.",
+   "exposure_measurement": "agree: internet use is a standard measure; Findex-based mobile/e-payment and sparse fintech credit data are weaker (moderate).",
+   "selection_of_countries_years": "agree: availability-driven unbalanced samples varying from 62 to 155 economies, countries not listed (moderate).",
+   "outcome_measurement": "agree: sparse survey poverty/Gini and perception outcomes (moderate).",
+   "specification": "agree: many equations and options with different regressors, unclear FE, adj R2 as low as 0.02-0.05 (serious could be argued, moderate would be too lenient).",
+   "selective_reporting": "agree: abstract/conclusion claim 'robust' and employment effects although coefficients lose significance across options and FINTCBIG is insignificant for labour outcomes (serious).",
+   "why": "Serious is consistent with the guide: causal language, acknowledged simultaneity, no identification strategy."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invention or paper mix-up found. Minor errors: Table 7 option labels for INTRNT (I vs II, II vs III); Table 12 dependent variable differs between options (per-capita income growth vs GDP growth). Record omits the 30PSBL40 (bottom-40%) estimates in Table 13. Record's claim 'mobile payment lowers Gini' as contradicted by Table 8 is slightly loose: text only says MBLPMT was tested on Gini and Table 8 shows no MBLPMT, which is right."
+ },
+ {
+  "idx": "392",
+  "eligibility_ok": true,
+  "eligibility_note": "Borderline but acceptable: own growth-accounting and calibrated equilibrium decompositions (own computation of ICT-specific technical change from quality-adjusted prices), 10 high-income economies, outcome output/productivity. No regression and no uncertainty measures; exposure is ICT investment-specific technical change, not adoption.",
+  "sample_corrections": {
+   "unit": "Country-level period averages 1980-2010 (Tables 1-7 report one value per country), not a country-year panel.",
+   "n_economies": "10 confirmed (AUT, DEN, FIN, GER, ITA, NLD, SPA, SWE, U.K., U.S.)",
+   "years": "1980-2010 confirmed"
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 5 ICT (a) contribution: AUT 0.24, DEN 0.39, FIN 0.24, GER 0.22, ITA 0.28, NLD 0.27, SPA 0.27, SWE 0.33, U.K. 0.28, U.S. 0.31; share 9.2-18.9%"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 6 ICT (a): 0.44, 0.63, 0.40, 0.50, 0.39, 0.46, 0.54, 0.53, 0.46, 0.63; share 16.0 (FIN) to 30.5 (DEN)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 7 ICT: 0.46, 0.67, 0.42, 0.53, 0.41, 0.48, 0.57, 0.56, 0.48, 0.67; share 15.8 (FIN) to 49.5 (NLD); US 41.9"
+   },
+   {
+    "n": 4,
+    "verdict": "corrected",
+    "correction": "Direction should be 'mixed', not 'null': no cross-country dependence of TFP on ICT intensity, but a strong negative time-series correlation between ICT growth and TFP growth in high-ICT-growth countries (no coefficient given). Also note TFP is a residual in an accounting identity, not an estimated effect.",
+    "quote": "'we do find an ordinate pattern between TFP and ICT when looking at the time dimension... strong negative correlation' (Section 3, p.1196)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Table 7 shows non-ICT contribution above ICT in every country (e.g., 0.85 vs 0.53 in Germany), while Table 5 has ICT above non-ICT in 8 of 10 countries; 'similar magnitude' is the authors' wording.",
+    "quote": "'contributions to growth from ICT and non-ICT assets technical change are of similar magnitude for all countries' (Conclusions, p.1197)"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Only high-income economies; 0.41-0.67 pp per year of labour productivity growth (Table 7) is correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: accounting decomposition with calibrated weights; no treatment of endogeneity of ICT investment, 'determinants' wording (serious).",
+   "exposure_measurement": "agree: ICT technical change inferred from quality-adjusted prices, with non-ICT prices built from US adjustments; not adoption (moderate).",
+   "selection_of_countries_years": "agree: ten high-income countries chosen by data availability (moderate).",
+   "outcome_measurement": "agree: EU KLEMS national accounts GDP and productivity (low).",
+   "specification": "agree: results highly method dependent (TFP negative in 7 of 10 countries under Hulten; authors admit sensitivity), moderate is acceptable though serious is arguable.",
+   "selective_reporting": "agree: all methods and countries reported (low); authors do not give uncertainty.",
+   "why": "Serious reflects that the measure captures a supply-side technical-change component and the paper interprets contributions as determinants without any strategy for endogeneity."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "No invention found. Record unit should be country-period averages, and result 4 direction should be mixed. The paper's own Hulten ISTC range is stated inconsistently (text 0.86-1.23 pp vs 0.68-1.25 in Section 3; Table 6 gives 0.84-1.23), but the record does not use these figures."
+ },
+ {
+  "idx": "393",
+  "eligibility_ok": true,
+  "eligibility_note": "Meets all: own AMG/MG estimation, ICT investment exposure, 17 EU economies, TFP outcome. Manufacturing only, all high income or near (mostly EU members).",
+  "sample_corrections": {
+   "n_economies": "17 confirmed. Hungary appears in text (p.8-9) and in the sector figures but not in the list of 17 or the EU-12 Figure 1.",
+   "years": "1995-2007 confirmed",
+   "unit": "industry-country-year (13 manufacturing sectors); Table 1 N=1322 (MG) and 1106 (AMG), Table 2 N=1158"
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 1 AMG Robust: Ln ITC .00817** (.00414); text: 'positively correlated to TFP, although the effect is small in economic terms'"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "t is about 1.4, not significant.",
+    "quote": "Table 1 MG: Ln ITC .00707 (.00516)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 1 MG Robust: Ln ITC .00908*** (.00306)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Column 1 is calculated (accounting) TFP, column 2 estimated TFP.",
+    "quote": "Table 2: D.ln ITC .00194 (.00129) [TFP]; .00386** (.00163) [TFP estimated]"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Text only keeps the three groups; no group-specific ICT coefficients are reported.",
+    "quote": "'we keep the three distinct groups of EU members, core, South and East' (Section 3)"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "No income-group or EU-group results; pooled estimates only.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: AMG handles common factors but ICT investment is not instrumented or lagged and the authors recommend 'widen the use of ITCs'; authors concede reverse-causation reading for wages only.",
+   "exposure_measurement": "agree: ICT investment definition, unit and source not reported (moderate).",
+   "selection_of_countries_years": "agree: 17 countries by data availability, manufacturing only, ends 2007 (moderate).",
+   "outcome_measurement": "agree: TFP is a model-based generated regressor with no correction for estimation error (moderate).",
+   "specification": "agree: R&D and structural funds dropped when insignificant, trend choices, two-step estimation (moderate).",
+   "selective_reporting": "agree: abstract says human capital 'plays a role' though Table 1 coefficients insignificant (it is significant in Table 2 first differences, D.ln Human Capital .00272**); robustness checks not shown (moderate).",
+   "why": "Serious is consistent: causal policy wording and no identification for ICT."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invention found. Minor: record says Hungary appears in 'text and figures' (verified). The record's selective-reporting point about human capital should note Table 2 shows a significant first-difference coefficient."
+ },
+ {
+  "idx": "407",
+  "eligibility_ok": true,
+  "eligibility_note": "Meets all: LSDV panel regressions, ICT spending and internet users, 21 EU economies, labour productivity outcome, CEE vs WE comparison.",
+  "sample_corrections": {
+   "n_economies": "21 confirmed (7 CEE + 14 WE); excluded CY, EE, LV, LT, LU, MT",
+   "years": "1993-2011 confirmed; N=399 (21), 133 (CEE), 266 (WE)",
+   "income_groups_covered": "Paper gives no World Bank income classification; CEE vs WE only"
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 4 log(ICTS) 21 countries 0.192*** (0.015); Num. obs. 399"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 4 log(ICTS) 7 CEE 0.150*** (0.020); Num. obs. 133"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 4 log(ICTS) 14 WE 0.058* (0.026); Num. obs. 266"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Whether dependent variable is in logs is not clear (equation 4 not legible), so the percent interpretation is an assumption.",
+    "quote": "Table 4 INTuse 0.003*** (0.000); CEE 0.005*** (0.001); WE 0.002*** (0.000)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Direction 'mixed' is a judgement; only 2000-2007 is significant.",
+    "quote": "Table 5 CEE log(ICTS): 0.045 (0.055); 0.117*** (0.023); 0.017 (0.141)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "2000-2007 coefficient -0.038 (0.019) has t of about 2.0 but carries no star.",
+    "quote": "Table 5 WE log(ICTS): 0.003 (0.035); -0.038 (0.019); -0.141 (0.093)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Difference between CEE and WE is not tested formally.",
+    "quote": "Table 4 log(ICTS) CEE 0.150*** vs WE 0.058*"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 4 log(EduS) 0.039***, CEE -0.016, WE 0.060***; HRST 0.005***, CEE 0.003, WE 0.004**; Edu CEE 0.004**, WE 0.000"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "The 2000-2007 significant 'education' variable is gross enrolment (Edu 0.013***), not public education spending (EduS 0.034 ns).",
+    "quote": "Table 5 CEE 2000-2007: ICTS 0.117***, Edu 0.013***, INTuse 0.003***, HRST 0.012**; 2008-2011 Trade Openness 0.123*"
+   }
+  ],
+  "income_group_results": "unverifiable",
+  "income_group_note": "Paper reports only CEE vs WE splits; the numbers cited (WE 0.058*, internet 0.002***; CEE 0.150***) are right, but mapping to World Bank income groups (BG, RO as upper-middle) is not in the paper.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: static LSDV on levels, no instruments, lags or unit-root checks; 'impact' language.",
+   "exposure_measurement": "agree: ICT spending as % GDP labelled 'ICT capital', WITSA editions 2002, 2006, 2010 used for annual data (moderate).",
+   "selection_of_countries_years": "agree: 21 EU members after dropping six for data; small sub-samples (moderate).",
+   "outcome_measurement": "agree: Total Economy Database labour productivity per hour (low).",
+   "specification": "agree: nine regressors with 28-112 obs in sub-periods, no clustering, no robustness section, equations garbled in text (moderate).",
+   "selective_reporting": "agree: text states R&D positive and significant for CEE in 1990s and after crisis (conclusion p.218) but Table 5 shows RDS 0.046 (0.025) and 0.029 (0.019) without stars; 'RDS... only significant for whole sample' while Table 4 shows -0.064*** for WE and whole sample only -0.024 with a dot (moderate).",
+   "why": "Serious: causal wording with no strategy for endogeneity of ICT spending."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invention found. Record statements verified, including the conflicts between text and tables on R&D (log(RDS) CEE 0.046/0.043/0.029 not starred). The note that Bulgaria and Romania were upper-middle is external to the paper."
+ }
+]

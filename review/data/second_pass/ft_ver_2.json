@@ -1,0 +1,148 @@
+[
+ {
+  "idx": "68",
+  "eligibility_ok": true,
+  "eligibility_note": "Own IV-GMM panel estimation, 79 economies (Appendix Table 1), 1990-2018; exposures are broadband, internet, mobile and fixed telephone (ICT goods imports and transport are extra exposures); outcomes are HDI, human capital, life expectancy, child and maternal mortality (living standards beyond income). Meets all criteria.",
+  "sample_corrections": {
+   "sample.economies_or_groups": "South Asia 7, sub-Saharan Africa 45 (not 'about 44'), Latin America-Caribbean 27, total 79 (counted from Appendix Table 1 list, p.22)",
+   "results[8] N": "Table 2E N for the ICT columns (5-9) is 148, 175, 150, 173, 172, i.e. 148-175, not 120-175; 54 and 120 are the rail and port-connectivity columns",
+   "exposure_measure locator": "Indicators are entered one at a time in Tables 2A-2E (cols 5-9), not 'Table 1' (Table 1 only defines variables)"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "lnCI 0.020*** (0.003)  [Table 2A col 8, p.5]"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "lnCC 0.022*** (0.003)  [Table 2A col 9, p.5]"},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "lnCB 0.008** (0.004)  [Table 2A col 5, p.5]"},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "lnCT 0.019 (0.013); lnCCT 0.001 (0.014)  [Table 2A cols 6-7, p.5]"},
+   {"n": 5, "verdict": "confirmed", "correction": "All values match Table 2B cols 5-9 (0.007*, 0.025***, -0.006, 0.018***, 0.015***); SEs 0.003-0.012 correct.", "quote": "lnCT 0.025*** (0.008); lnCCT -0.006 (0.012)  [Table 2B, p.6]"},
+   {"n": 6, "verdict": "confirmed", "correction": "Values match Table 2C cols 5-9 (0.012***, 0.026***, -0.012**, 0.011***, 0.011***); SEs 0.001-0.006 correct. Direction 'positive' hides the negative ICT-goods coefficient, which the record does list.", "quote": "lnCCT -0.012** (0.006)  [Table 2C col 7, p.7]"},
+   {"n": 7, "verdict": "confirmed", "correction": "Values match Table 2D cols 5-9. The 'positive' direction label means beneficial (fewer deaths); the coefficients themselves are negative for broadband, telephone, internet and mobile and positive (+0.519) for ICT goods. Dependent variable is the number of under-five deaths (Table 1), so it is a count, not a rate.", "quote": "lnCT -0.582*** (0.050); lnCCT 0.519*** (0.083)  [Table 2D, p.8]"},
+   {"n": 8, "verdict": "corrected", "correction": "Coefficients and SEs are right (broadband -0.070** (0.028), telephone -0.278*** (0.089), internet -0.077** (0.036), mobile -0.033 (0.033), ICT goods 0.085 (0.095)). Sample size is wrong: N for these columns is 148, 175, 150, 173, 172 (148-175), not 120-175.", "quote": "N 142 54 120 127 148 175 150 173 172  [Table 2E, p.9]"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Text confirms positive broadband/telephone/internet/mobile slopes on HDI in all three regions, negative ICT-goods slope in SAR and LAC and positive in SSA, and negative maternal-mortality slopes for broadband, internet and mobile in SAR and LAC with positive in SSA. Interaction estimates are indeed only in the supplementary material (plots in Figs 1B-1J), so no coefficients or SEs can be checked.", "quote": "The broadband penetration slope is positive for all the regions  [Sec 4.2.1, p.12]"},
+   {"n": 2, "verdict": "confirmed", "correction": "No income-group analysis exists; only SSA and LAC dummies versus SAR. SSA dummy on HDI ranges -0.119 to -0.228 in Table 2A, so 'about -0.12 to -0.23' is right.", "quote": "The regional dummies indicate that relative to SAR countries  [p.11]"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "Paper reports no income-group results; the record's 'not reported' entries are correct. Sample is regional (SAR, SSA, LAC) and mixes low to high-income economies (e.g. Bahamas, Barbados, Chile, Uruguay, Seychelles).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree - causal wording ('impact', 'improve', IV-GMM said to address reverse causality) but the instrument is never named, Hansen J is 0.000 in Tables 2B-2D, and the notes say 'a single instrument' while listing 11 instruments.",
+   "exposure_measurement": "agree - WDI penetration rates in logs are standard but values near zero give extreme minima (-10.953 for internet), and ICT-goods imports is a weak adoption proxy.",
+   "selection_of_countries_years": "agree - unbalanced panel chosen 'strictly based on data availability', N from 54 to 785, only three developing regions.",
+   "outcome_measurement": "agree - HDI contains an income component while GDP per capita is a control, maternal mortality is modelled, and under-five mortality is a count of deaths (Table 1).",
+   "specification": "agree - serious is justified because F-statistics are identical across Tables 2B, 2C and 2D (132664.515, 68711.829, ...) and are implausibly large, with no first stage or instrument described.",
+   "selective_reporting": "agree - moderate is defensible because regional interaction results are only in supplementary plots, although the record's own example of a text-table mismatch is garbled and not an actual mismatch (text and tables agree).",
+   "why": "Serious fits: causal claims rest on an unidentified instrument and copy-paste first-stage diagnostics; borderline critical for the mortality tables, but the OLS-like correlations are still informative."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented or mixed-up results. Errors: SSA count given as 'about 44' (45 in Appendix Table 1); LAC 'about 27' is exactly 27; maternal-mortality N range 120-175 should be 148-175 (record's RoB says 54-175 for all maternal models, which only holds across all nine columns); exposure-measure locator should be Tables 2A-2E. The selective_reporting rationale contains a self-contradictory sentence. Also note direction coding for under-five deaths follows 'beneficial' not coefficient sign."
+ },
+ {
+  "idx": "88",
+  "eligibility_ok": true,
+  "eligibility_note": "Own cross-section, panel FE and G2SLS estimation; exposures are fixed telephone lines, mobile phones, internet hosts (composite only), PCs; 88-99 economies in cross-section (47 for mobile and PC), 97 in panel; outcome is GDP per working-age person and its growth (output/productivity). Meets all criteria.",
+  "sample_corrections": {
+   "n_economies": "Cross-section country counts are 88 (phone lines), 47 (mobile, PCs), 94 (composite 1991-97, MRW 1991-97 and growth), 99 (composite 1983-97, Table 1) and 100 for the 1983-97 MRW column; so '94-99' omits 88 for the phone-line column. Growth equations: 94, 88, 47, 47, 94, 95, 94 (Table 3).",
+   "text_vs_appendix": "Text (3.1) says data for 115 countries; the Data Appendix lists 116 (record's 116 matches the appendix)",
+   "internet_hosts": "Internet hosts are never estimated on their own, only inside the composite index, although the abstract names them"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 1: ln(AICT(0)) 0.451, 0.301, 0.438, 0.388 and 0.302 (1983-97 composite); t = 10.18, 10.05, 12.69, 9.97, 8.48. Phone-line column carries only a 90% star under bootstrap SEs, others 95%.", "quote": "ln(AICT(0)) 0.451 0.301 0.438 0.388 0.302  [Table 1, p.24]"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table 1 gICTt row matches: 0.240 [2.080], 0.118 [3.000], 0.230 [2.220], 0.174 [4.550], 0.299 [8.03]. Phone and PC columns are 90%/95% significant under bootstrap.", "quote": "gICTt 0.240 0.118 0.230 0.174 0.299  [Table 1, p.24]"},
+   {"n": 3, "verdict": "confirmed", "correction": "All FE and G2SLS elasticities and t-values match Table 2. Note on the record's remark: the text figure '.02/.12' equals the composite-index values (0.027 FE, 0.120 G2SLS), while single indicators in Table 2 range 0.051-0.314, so the text summary is loose rather than wrong. G2SLS composite t = 1.92 carries no star in Table 2 although text says 'still significant'.", "quote": "ln(AICT) 0.265 0.051 0.138 0.027 0.314 0.094 0.212 0.120  [Table 2, p.25]"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table 3 ln(AICT(1985)) row: 0.131, 0.060, 0.121, 0.063, 0.102; t = 3.040, 3.297, 4.199, 4.590, 4.500 (record rounds 3.30 and 4.20). The 1983-97 composite t has no star in the table.", "quote": "corresponds to a .6/1.3 percent higher rate of growth in the  [p.17]"},
+   {"n": 5, "verdict": "confirmed", "correction": "Table 3 gICT row: 0.020 [0.790], 0.030 [1.955]*, 0.105 [2.225]**, 0.021 [1.100], 0.124 [5.500]**. The abstract does claim all four proxies matter for levels and growth, which Table 3 does not support for phone lines and the 1991-97 composite.", "quote": "significantly affect levels and growth of income per worker across countries  [Abstract]"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Only a footnote; no coefficients reported ('available upon request').", "quote": "the ICT effect is significant in both subsamples, even though it appears to be stronger in OECD countries  [fn 20, p.14]"},
+   {"n": 2, "verdict": "corrected", "correction": "Ln(sh) falls from 0.025 [18.24]** (MRW) to 0.004 [1.82] (phone), 0.004 [1.75]* (mobile), 0.002 [0.88] (PCs), 0.007 [3.38]** (composite). So significance is lost only for PCs; with mobile phones it stays significant at 10% (starred), though the text says ICT 'cast[s] doubts' for mobile and PCs. Physical capital: sk becomes insignificant with the composite (0.003 [0.54]; 0.086 [0.63] for 1983-97), but is still starred with PCs (0.008 [1.61]*).", "quote": "also on that of human capital when we specify the ICT variable with mobile phones or personal computers  [p.13]"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Only an OECD vs non-OECD comparison (footnote 20, no numbers) and income terciles in footnote 21 for descriptive sk and sh only; the record's description is accurate and correctly states numbers are omitted.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree - level regressions on persistent ICT stocks with initial-stock lag and G2SLS using own lags (t-2 to t-4) as instruments, no overidentification or weak-instrument tests, and footnote 18 admits 'risk to be affected by endogeneity' while the introduction claims results are 'not affected by endogeneity'.",
+   "exposure_measurement": "agree - counts of lines, hosts, phones and PCs per capita ignore quality (footnote 14), the composite is an unweighted average of normalised proxies, and hosts have many zeros.",
+   "selection_of_countries_years": "agree - samples driven by data availability (88 to 99 countries, only 47 for mobile and PCs), short 1991-97 window, and series starting after 1985 for many countries.",
+   "outcome_measurement": "agree - GDP per working-age person at PPP from WDI is a standard output measure.",
+   "specification": "agree - many robustness results (alternative labour input, trend income, Levine-Renelt variables, freedom indices, MRW restriction removed) are only 'available upon request'.",
+   "selective_reporting": "agree - abstract overstates (hosts never estimated alone; g_ICT insignificant for phone lines and 1991-97 composite in Table 3), text '.02/.12' loose versus Table 2, identical R2 0.9127 for phone and composite columns in Table 1, and a truncated conclusion sentence.",
+   "why": "Causal language ('effect', 'role', 'not affected by endogeneity') with only lagged-own-variable instruments and a small cross-section is serious, not moderate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record is largely accurate. Corrections: phone-line column has 88 economies (not within 94-99); human-capital significance claim for mobile phones overstated (still 10% significant). Additional inconsistencies in the paper not in the record: text gives implied beta .23 while Table 1 shows 0.242; Table 3 labels initial stock as 1985 for 1991-97 columns while footnote 18 says A_ICT(0) is the first sample year (cannot be checked)."
+ },
+ {
+  "idx": "108",
+  "eligibility_ok": true,
+  "eligibility_note": "Own weighted OLS on sector-occupation cells in 16 European countries (at least 3 for AI); exposure is AI (Webb patent score, Felten et al. AIOI) plus software; outcomes are employment-share and relative-wage changes (labour market). Exposure is a US-based potential-exposure index, not adoption, but qualifies as AI capability.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "(a) AI, Webb 0.104*** (0.035), Obs. 6767  [Table 3 col 1, p.17]"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "(b) AI, Felten et al. 0.174*** (0.044), Obs. 5766  [Table 3 col 1, p.17]"},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "(c) Software -0.025 (0.020), Obs. 6839  [Table 3 col 1, p.17]"},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "(a) AI Webb 0.001 (0.007), Obs. 5729  [Table 4 col 1, p.18]"},
+   {"n": 5, "verdict": "confirmed", "correction": "", "quote": "(b) AI, Felten et al. -0.013* (0.007), Obs. 4872  [Table 4 col 1, p.18]"},
+   {"n": 6, "verdict": "confirmed", "correction": "", "quote": "(c) Software 0.007 (0.008), Obs. 5729  [Table 4 col 1, p.18]"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 3 cols 5-7: Webb -0.008, -0.028, 0.125** (0.055); Felten -0.088, -0.068, 0.266*** (0.083). Authors say the pooled result is driven by high-skill jobs.", "quote": "driven by jobs that employ high skilled workers  [p.18]"},
+   {"n": 2, "verdict": "corrected", "correction": "All coefficients are right (Webb younger 0.212***, Felten younger 0.219***, software younger 0.107***, core -0.083*, older -0.117**), but 'about double the core/older groups' only holds for Webb vs core (0.212 vs 0.106); Webb older is 0.015 and Felten core/older are 0.132/0.144, so the ratio is about 1.5-1.7 for Felten. The record repeats the authors' wording.", "quote": "the magnitude of the coefficient estimated for the younger group doubles that of the rest of the groups  [p.20]"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table 5 DESI: .40, 0.42, -0.08 (Spearman, no significance, 16 countries).", "quote": "Digital Economy and Society Index .40 0.42 -0.08  [Table 5, p.25]"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table 5: WGI 0.51/0.31; PMR -0.50/-0.30; EPL -0.08/-0.17. Text names Greece (Webb) and Lithuania and Ireland (Felten) as the negative country estimates.", "quote": "the only exception where the relationship is negative is Greece when looking at Webb's AI exposure measure  [p.21]"},
+   {"n": 5, "verdict": "confirmed", "correction": "Table 5: Pisa 0.30/0.32, tertiary share 0.31/0.24; authors give both complementarity and diffusion readings.", "quote": "Pisa score 0.30 0.32 0.20  [Table 5, p.25]"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "The paper has no income grouping. The record's 'high' entry applies an outside classification to an all-European sample and is acceptable; the other groups are correctly marked not applicable.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree - predetermined US-based exposure scores limit reverse causation but only sector and country dummies are used and AI exposure is strongly tied to education (Felten percentile 26.6 low-educ vs 75.1 high-educ, Table A1), so skill-biased demand shifts are not separated; moderate is the right level.",
+   "exposure_measurement": "agree - potential-exposure indices crosswalked from US SOC, only moderately correlated across AI measures (rs = 0.64), and Webb AI coefficient rises from 0.104 to 0.192 when software exposure is added (Table B1 col 4).",
+   "selection_of_countries_years": "agree - 16 countries with EU-LFS wage deciles, start fixed by the 2011 ISCO break, some wage reference years substituted (AT, ES, LT 2018; FI 2017; UK 2013 start).",
+   "outcome_measurement": "agree - employment-share change from LFS cells is fine; wages come from deciles converted to cell centiles, which is coarse.",
+   "specification": "agree - simple main specification but clustering is inconsistent (text 'sector-clustered', table notes 'clustered by country' with 16 clusters) and many subgroup and country regressions are run.",
+   "selective_reporting": "agree - software null, wage nulls, negative countries and unsupported routinisation are reported, with country tables in Appendix B; low is fair.",
+   "why": "Standard descriptive-association design with predetermined exposure, no causal strategy beyond that, and cautious wording in most places; moderate is appropriate."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers or mixed-up papers found; all six pooled results and the Table 5 correlations match. Minor: 'about double' overstatement for age pattern; Table B1 notes list column 3 as Software and column 4 as Robots while the rows show Robot in col 3 and Software in col 4 (record's reading of the rows is correct); text says weights are average employment, table notes say average labour supply. The authors also use 'impact' wording in places (conclusion: 'positive impact of AI-enabled automation on employment holds across countries') despite stating the results are statistical associations."
+ },
+ {
+  "idx": "126",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation on 27 EU countries, 1995-2019; exposure is ICT investment stock (hardware, telecom equipment, software and databases); outcome is total employment growth (labour market). Meets all criteria.",
+  "sample_corrections": {
+   "years": "1995-2019 is the data span; estimation sample is 594 = 27 x 22 country-years (24 growth observations per country would be expected from first differences; the paper does not explain the 22)"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "ΔLog(ICT Stock) 0.0917*** 0.0437** 0.0508** 0.112*** / (0.0358) col IV  [Table 4, p.6]; 'the increase is equal to 3.3 jobs'"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table 4 col III: 0.0508** (0.0221); text gives 1.5 jobs per EUR 100,000.", "quote": "ΔLog(ICT Stock) ... 0.0508** (0.0221)  [Table 4 col III, p.6]"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table 5 shows 14 countries with stars (SE, NL, FR, DK, LT, BE, PT, RO, SI, EL, EE, ES, SK, LV), 13 without; Poland -0.001 unstarred; marginal effects 0.8 (Sweden) to 50.7 (Latvia). Beta for Spain 0.731, Portugal 0.335, France 0.196, Sweden 0.081 are right. Country SEs are in online Table S4 only.", "quote": "a statistically significant and positive effect of digitalisation on employment for fourteen countries  [p.7]"},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "Period 1: 1995–2009 0.188 *** 5.9; Period 2: 2010–2019 0.129 *** 3.6  [Table 7, p.8]"},
+   {"n": 5, "verdict": "confirmed", "correction": "RE 0.0337*** (0.0103); Diff GMM 0.108** (0.0491); 2GMM 0.108*** (0.0338). Diag: AR(2) p = 0.153, Hansen 0.229 (Diff GMM), Hansen J 0.8758 (2GMM).", "quote": "ΔLog(ICT Stock) 0.0337*** 0.108** 0.108***  [Table D1, p.10]"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 6: non-machine share < P50 0.134***, 6.8 jobs; > P50 0.262***, 5.8 jobs. Authors' claim is based on the job count, whereas elasticity is higher in the high-share group, as the record notes. Split is at the sample median, no estimated threshold.", "quote": "stronger when the share of non-machine-based investment in machine-based investment is relatively low  [p.7]"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table 6: high vs medium-skilled share < P50 0.226 (9.8 jobs), > P50 0.159 (3.5); high vs low-skilled < P50 0.262 (9.5), > P50 0.155 (4.0); all ***.", "quote": "countries with a lower share of high-skilled jobs in their economy compared to medium-skilled and low-skilled jobs  [p.7]"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table 7 split is 1995-2009 vs 2010-2019. No test of the difference between sub-period coefficients is reported, and the attribution to rising high-skilled share and non-machine ICT is the authors' hypothesis only.", "quote": "confirming that the effect of digitalisation on employment has declined over time  [p.8]"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income grouping; EU27 only, as the record says.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree - moderate fits (2SRI with lags, difference and two-step GMM, Granger test in the supplement) but the record's evidence is muddled: Table C1's r = 0.1385 (p = 0.0007) is for the differenced lag dLog(ICT) in t-1, which is not the instrument used; the instruments in Table C2 are Log(ICT) in t-1 and t-2, which Table C1 shows uncorrelated with employment growth (0.0022, -0.0032). Still, the first-stage coefficients 0.458 and -0.494 nearly offset, so the instrument pair behaves like lagged growth, which makes the exclusion restriction questionable (my inference from Table C2).",
+   "exposure_measurement": "agree - PIM stock from Eurostat GFCF by asset with uniform 33% depreciation from Corrado et al. and linear interpolation of missing values.",
+   "selection_of_countries_years": "agree - all EU27 members and 1995-2019 with no evident selection, but the 22 observations per country are unexplained.",
+   "outcome_measurement": "agree - total employment in thousand persons from Eurostat national accounts, persons not hours.",
+   "specification": "agree - many alternatives (27 country interactions, median splits, sub-periods, GDP weights), and country regressions switch between OLS and 2SRI depending on the significance of rho.",
+   "selective_reporting": "agree - SEs for country, group and sub-period results are only in the online supplement (Tables S4-S8); pooled results with SEs are positive for all estimators.",
+   "why": "Reasonable short-run differenced panel with an explicit endogeneity strategy whose instruments are lags of the regressor; exogeneity not established, so moderate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented or mixed-up numbers; all reported coefficients, SEs and job counts match the tables. One misreading in the record: Table C1 does not show that the instruments used are correlated with employment growth; it shows the differenced lag is, while the log-level lags used in Table C2 are 'Uncorrelated'. The authors' claim that instruments 'are valid' rests on Table C2 first-stage fit and an error-term correlation of 0.0074 (p = 0.8564), which is weak evidence. Note also the footnote-8 statement that Granger causality is unidirectional is not shown in the paper (online Table S1)."
+ }
+]

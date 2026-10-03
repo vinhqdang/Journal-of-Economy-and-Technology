@@ -1,0 +1,92 @@
+[
+ {
+  "idx": "1438",
+  "paper_verdict": {
+   "estimator_family": "Dynamic panel GMM (two-step difference GMM, xtabond2 with robust SEs; internal lagged instruments)",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Log-log specification (lnEG = log GDP per capita level, lnIU/lnMS in logs) so coefficients are elasticities, not comparable with level/growth-rate or per-unit effects. Uncertainty is printed only as t-statistics rounded to one decimal. Data are 3-year non-overlapping averages (6 periods) for 27 EU countries (all high-income, income group not stated in the paper). Mobile subscriptions are labelled 'ICT readiness' proxy and internet users 'ICT usage'. Interaction models (cols 2 and 4) give conditional main effects at lnEI=0, which are not comparable with the no-interaction coefficients (cols 1 and 3). Endogeneity handling relies only on lagged-level instruments (Hansen/Sargan reported); no explicit reverse-causality discussion. Observations (138) are fewer than N=162 in the descriptive table."
+  },
+  "estimates": [
+   {
+    "estimate_id": "1438-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnIU 0.16262** -4.14710*** - - (2.2) (-2.8)",
+    "note": "Table 4 col (1): coefficient 0.16262**, t = (2.2); table note says t-statistics in parentheses. Observations 138, groups 27. lnEG = GDP per capita (Table 1 proxy). EU-27 full sample."
+   },
+   {
+    "estimate_id": "1438-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnMS - - 0.12029* -0.25809*** (1.8) (-3.4)",
+    "note": "Table 4 col (3): 0.12029*, t = (1.8); obs 138, groups 27. Mobile subscriptions (ICT readiness) on log GDP per capita."
+   },
+   {
+    "estimate_id": "1438-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnIU 0.16262** -4.14710*** - - (2.2) (-2.8)",
+    "note": "Table 4 col (2): -4.14710***, t = (-2.8). It is the conditional main effect of lnIU in the model with the lnEI*lnIU interaction (effect at lnEI=0); not a standalone elasticity."
+   },
+   {
+    "estimate_id": "1438-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnEI * lnIU - 2.15698*** - - (2.9)",
+    "note": "Table 4 col (2): interaction coefficient 2.15698***, t = (2.9); obs 138, groups 27. Interaction term, not a main technology effect."
+   },
+   {
+    "estimate_id": "1438-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnMS - - 0.12029* -0.25809*** (1.8) (-3.4)",
+    "note": "Table 4 col (4): -0.25809***, t = (-3.4). Conditional main effect of lnMS in the model with the lnEI*lnMS interaction."
+   },
+   {
+    "estimate_id": "1438-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnEI * lnMS - - - 0.07259** (2.1)",
+    "note": "Table 4 col (4): interaction coefficient 0.07259**, t = (2.1); obs 138, groups 27."
+   }
+  ]
+ },
+ {
+  "idx": "1448",
+  "paper_verdict": {
+   "estimator_family": "Static panel regression, random effects model (pooled/FE/RE chosen via Chow, Hausman, LM tests); no instrumenting",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Outcome is annual GDP growth in % (constant prices) while regressors are ICT indicators measured in levels (listed as '%'), so coefficients are level-on-growth-rate semi-effects, not elasticities; not comparable with log-log or log-GDP-level studies. Four ICT indicators (fixed telephone, mobile, internet users, fixed broadband) are entered jointly in one regression (collinearity) together with financial development variables, and no standard growth controls. Only 10 high-income countries, 2001-2020; number of observations is not printed (Chow test d.f. (9,148) implies a roughly 164-observation panel). The first row of Table 6 labelled 'Economic growth (EG) 8.421' is actually the constant. The text interprets coefficients inconsistently (e.g. 'regression coefficient of -0.8696', 'increase by -0.023510'), and the stated '1% increase' interpretation is not consistent with the level specification. No endogeneity or reverse-causality treatment."
+  },
+  "estimates": [
+   {
+    "estimate_id": "1448-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Fixed telephone subscriptions (FIX) -0.028 0.018 -1.598 0.112",
+    "note": "Table 6: coefficient -0.028, Std. error 0.018, t -1.598, prob 0.112. Technology = fixed telephone; outcome = GDP growth %. n_countries 10 confirmed (Chile, France, Germany, Japan, Korea, Norway, Singapore, Spain, Switzerland, US; high-income). n_obs is not printed in the paper (left empty is correct)."
+   },
+   {
+    "estimate_id": "1448-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Mobile/cellular telephone subscriptions (MOB) -0.017 0.011 -1.504 0.134",
+    "note": "Table 6 values match; text equation gives -0.016936. n_obs not printed."
+   },
+   {
+    "estimate_id": "1448-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Internet users (INTE) -0.011 0.019 -0.549 0.584",
+    "note": "Table 6 values match; text equation gives -0.010659. n_obs not printed."
+   },
+   {
+    "estimate_id": "1448-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Fixed broadband subscriptions (FBS) 0.024 0.026 0.891 0.374",
+    "note": "Table 6 values match; text equation gives 0.023510. n_obs not printed."
+   }
+  ]
+ }
+]

@@ -1,0 +1,111 @@
+[
+ {
+  "idx": "1713",
+  "eligibility_ok": true,
+  "eligibility_note": "Own quantitative estimation (DEA Kumar-Russell decomposition, Simar-Wilson bootstrap, Maasoumi-Racine entropy test) on 14 OECD economies; exposure is ICT capital stock (EU KLEMS); outcome is labour productivity growth. Meets the 10-economy rule. Descriptive/non-regression design but still own estimation, so eligible.",
+  "sample_corrections": {
+    "n_economies": "14 (confirmed)",
+    "years": "1995-2005 (confirmed; two end-point comparison)",
+    "income_groups_covered": "Not reported by the paper; all OECD members incl. Korea, Czech Republic, Portugal (record's 'mostly high-income' is the reviewer's inference, not in the text)",
+    "economies_or_groups": "Record's list of 14 is consistent with the countries named in Sec 4.1 (Fig. 1 holds the full set); no correction"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Direction and Table 3 p-value correct. Note Table 3 tests equality of the counterfactual distributions y1995*KACC between m1 and m2, not a coefficient.", "quote": "ICT capital, on average, exerts a higher growth rate than non-ICT capital does (Sec 4.1, p.13); Table 3 y1995*KACC: < 2.22e-16"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 3: y1995*TECH p=0.024 (5% level); y1995*EFF*TECH p=0.012 (5% level), as recorded.", "quote": "the separation of ICT capital stock from all capital stock caused an implosion of the productive frontier (Sec 4.1, p.14)"},
+    {"n": 3, "verdict": "confirmed", "correction": "No numeric value in text; only Fig. 3 (not available in the extracted text).", "quote": "The negative values for TFP growth obtained in model m2 confirm the existence of problems in incorporating ICT capital (Sec 4.1, p.13)"},
+    {"n": 4, "verdict": "confirmed", "correction": "Table 3 y1995*EFF p=0.962, H0 not rejected. Note the text also says EFF declines in m2 (TFP decline 'relies both on EFF and on TECH', p.13), but the distribution test shows no significant m1-m2 difference.", "quote": "the separation of ICT capital does not produce a significant difference in the EFF component (Sec 4.3, p.17)"},
+    {"n": 5, "verdict": "confirmed", "correction": "Mean +21%, Korea +44%, Italy +2% are bias-corrected 1995-2005 labour productivity changes (Sec 4.1, p.11). Convergence-club claim is qualitative from density shapes; abstract words it more strongly ('positively contribute') than Sec 4.2 ('may be one of the factors').", "quote": "ICT-capital was one of the possible factors contributing to the creation of convergence clubs (Sec 4.2, p.16)"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "corrected", "correction": "Supported as descriptive remarks, but the Finland +20% TFP figure is from the m1 (aggregate capital) decomposition, not from the ICT-separated model m2; the Korea/Japan ICT-producing vs ICT-usage remark is from the m2 EFF discussion (p.16); the US 'marginally' hit by negative TECH is m2 (p.14, p.17).", "quote": "Finland showed the highest TFP growth (+20%) (Sec 4.1, p.12); The USA is the only national economy that marginally suffered from the negative effect of TECH (p.14)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis; sample is OECD only. Record's 'not reported' entries are correct.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree (serious): causal wording ('impact of ICT', 'technological regress caused by ICT capital') with no identification strategy; paper itself says DEA cannot quantify ICT contribution to TFP shifts.",
+    "exposure_measurement": "agree (moderate): EU KLEMS ICT capital stock with hedonic or harmonised deflators; authors flag harmonised deflation as imperfect (Sec 3, p.10).",
+    "selection_of_countries_years": "too_harsh (record: serious; moderate is enough): 14 high-income countries chosen by ICT data availability and a single 1995-2005 window are real limits, but they restrict generalisation rather than bias the within-sample comparison.",
+    "outcome_measurement": "agree (moderate): value added per hour from EU KLEMS with PPP; standard, but DEA scores depend on input dimensionality (Nunamaker point, p.11).",
+    "specification": "agree (serious): the ICT result is the difference between a one-capital-input and a two-capital-input DEA, which mechanically shifts frontier and component estimates; reading falling TECH as lower capacity utilisation is speculative.",
+    "selective_reporting": "agree (moderate): component values appear only in figures; Table 2 Spearman values (0.43-0.49) contradict the text claim of 'above 0.53' (p.12), not flagged in the record.",
+    "why": "Descriptive DEA decomposition with causal wording and no strategy for reverse causation, whose ICT inference depends on an input-count change; conclusions cannot be read as ICT effects."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers found. Minor: (a) heterogeneity item 1 mixes m1 and m2 results (see above); (b) record omits the internal inconsistency between text ('Spearman coefficients ... above 0.53') and Table 2 (0.43, 0.47, 0.47, 0.49); (c) the text file still contains a leftover author draft note after Eq. (1); (d) record states Table 3 evidence at 'p.26', which is correct (printed page 26)."
+ },
+ {
+  "idx": "1759",
+  "eligibility_ok": true,
+  "eligibility_note": "Own GMM estimation of a four-factor nested CES production function on 14 OECD economies; exposure is ICT equipment capital and its rental price (EU KLEMS); outcome is the skill premium (distribution/labour market). Meets the 10-economy rule.",
+  "sample_corrections": {
+    "n_economies": "14 (confirmed)",
+    "years": "1970-2005, unbalanced (confirmed); estimation uses five-year differences",
+    "unit": "Record says 'industry-country'; the text aggregates to two sectors per country (goods and services, 17 and 13 industries aggregated), so the unit is country-sector-year (682 obs, Sec 4.1). Footnote 7 lists 5 and 9 broad categories, inconsistent with the 17/13 industries in the main text.",
+    "income_groups_covered": "Paper gives no income classification; all 14 are OECD (record's 'high only' is a reasonable inference)"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "All values and SEs match Table 1 (p.15): factor-biased sigma 0.888 (0.029) [0.026], rho -0.162 (0.051) [0.057]; factor-neutral sigma 0.642 (0.248) [0.130], rho -0.053 (0.047) [0.053].", "quote": "ICT equipment is much more complementary to skilled labor than unskilled labor even in the presence of factor-biased technological change (p.15)"},
+    {"n": 2, "verdict": "confirmed", "correction": "Direction and qualitative statements match. The 'widens in all countries / quantity effect narrows' statement is on p.26; the 'large enough to account for a rise in almost all countries' statement is on p.21.", "quote": "It is common in all countries that the capital-skill complementarity effect contributes to widening the skill premium (p.26)"},
+    {"n": 3, "verdict": "confirmed", "correction": "Counts correct (goods 8 of 14, service 9 of 14; misaligned goods 6, service 2: Finland, Italy). Record omits that the service sector of three further countries (Denmark, Japan, Netherlands) aligns only partially.", "quote": "Unobserved factors cannot be disregarded as determinants of changes in the skill premium in these countries. (p.26)"},
+    {"n": 4, "verdict": "confirmed", "correction": "Table 4 goods: Australia data 0.225, model 0.182; ICT (k_i) column ranges from -0.501 (Austria) to 0.624 (Japan). Direction 'positive' is the paper's reading, but the ICT component is negative for Austria and Finland (goods) and Finland (service, -0.458).", "quote": "differences in changes in the skill premium compared to the United States are attributable at least in part to ICT equipment in almost all countries (p.27-28)"},
+    {"n": 5, "verdict": "confirmed", "correction": "Table 5 (goods, US): data 1.066, model 1.207, r_i 2.538, w_h -4.600, w_u 2.795, A_h/A_u 8.371, A_h/A_i -7.897 (sum to model 1.207). Text sentence is on p.28, table on p.29.", "quote": "a fall in the rental price of ICT capital is large enough to account for a rise in relative labor quantity (p.28)"},
+    {"n": 6, "verdict": "confirmed", "correction": "Averages 1.78 (goods) and 1.58 (service) are stated on p.31 and match the Table 6 ratio column (my recomputation 1.78 and 1.58). US goods -0.274 = -0.154 (CSC) + -0.121 (RLQ), rounding aside. Germany goods is positive (0.025), so direction is not uniform.", "quote": "the impact of higher education expansion is 1.78 (1.58) times greater for the goods (service) sector on average (p.31)"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Table 2: goods sigma 0.847 (0.036), rho -0.114 (0.113); service sigma 0.889 (0.032), rho -0.123 (0.043). Complementarity effect larger in goods in most countries (p.26).", "quote": "capital-skill complementarity effect was greater for the goods sector than the service sector in the majority of countries (p.26)"},
+    {"n": 2, "verdict": "confirmed", "correction": "None. Finland: gap to the US mostly unobserved technology (Sec 6.2.3, p.28).", "quote": "particularly large in Denmark, Finland, and the United States, while the relative labor quantity effect was particularly large in the United Kingdom (p.26)"},
+    {"n": 3, "verdict": "confirmed", "correction": "Table 2 last row: sigma 0.873 (0.025), rho -0.119 (0.045). The coefficient on bargaining coverage itself is not tabulated, only described as insignificant.", "quote": "The coefficient of the collective bargaining coverage is insignificant (p.15)"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "No income-group comparison exists; the 'high' entry only restates that all 14 countries are advanced OECD economies with pooled estimates. Other groups correctly 'not covered'.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree (moderate): shift-share instrument (other sector, other countries, initial-year shares, leave-one-out) targets simultaneity, but validity is argued not tested, and no first-stage or overidentification statistics appear anywhere in the text; global shocks (e.g. falling ICT prices) may hit both sectors.",
+    "exposure_measurement": "agree (low): ICT equipment quantity and user cost from EU KLEMS national accounts; user cost built from price of investment, depreciation and a CPI-based interest rate (App. A.4). Cross-country comparability of ICT deflators is not discussed.",
+    "selection_of_countries_years": "agree (moderate): 14 advanced economies, 1970-2005, unbalanced; Czech Republic and Slovenia results said to be unchanged without a table (fn 6).",
+    "outcome_measurement": "agree (moderate): skill premium is college versus all other workers from compensation per hour including self-employed and family workers, composition-adjusted; the paper notes it differs from other studies (p.8).",
+    "specification": "agree (serious): polynomial orders of share-parameter trends are chosen per country-sector to fit relative factor prices, so fit in Figs 4-7 is largely by construction and the observed versus unobserved split depends on that choice; Shapley decomposition depends on nested-CES form. Domain is serious while overall is moderate because the core sigma>rho result is IV-identified.",
+    "selective_reporting": "agree (moderate): few robustness checks (Table 2 only), none on trend order or instruments; mixed fit across countries is reported openly.",
+    "why": "Structural estimation with an explicit IV strategy and sensible results, but instrument validity is untested and the decomposition rests on flexible fitted trends; moderate overall."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers found. Minor: unit mislabelled 'industry-country' (data are country x two sectors); record says no first-stage or overidentification statistics 'in the main text', in fact none appear anywhere in the paper; R3 omits the three partially aligned service sectors; abstract's 'most of the changes' claim rests on fit that the paper itself says is obtained by choosing trend orders to fit the data (p.12, fn 9)."
+ },
+ {
+  "idx": "1798",
+  "eligibility_ok": true,
+  "eligibility_note": "Own system-GMM estimation on 42 sub-Saharan African countries; exposure is internet users (% of population); outcome is a supply-side financial inclusion index (bank branches and ATMs per km2 and per 100,000 adults). Meets the 10-economy rule. Borderline on outcome: branch/ATM density is a financial-access measure and fits 'living standards beyond income' only loosely; accepted as family 5 on the record's classification.",
+  "sample_corrections": {
+    "economies_or_groups": "Country list IS given: Table A1 in the Appendix lists the 42 countries (Angola ... Zimbabwe). Record said the list is not given.",
+    "years": "Text conflicts: Sec 3.3 says 2004-2019; abstract and conclusion say 2004-2020. Table A3 reports 714 observations for governance and control variables, which equals 42 x 17 (2004-2020), not 42 x 16 = 672.",
+    "observations": "Estimation sample 426-435 observations (Tables 1-2); Table A3 non-missing counts: IFI 558, internet 686, education 671, capital 676 of 714.",
+    "income_groups_covered": "Not reported by the paper; no income-group split (record correct)"
+  },
+  "results": [
+    {"n": 1, "verdict": "corrected", "correction": "Table 1 internet coefficients are -0.0003 (political stability), -0.0003 (voice), 4.17e-06 (regulatory quality, p=0.979), -0.0003 (government effectiveness, p=0.021), -0.0002 (rule of law, p=0.007), -0.0005 (corruption control). Range of significant coefficients is -0.0002 to -0.0005, not -0.0003 to -0.0005. Table 2: -0.0002 (political governance, p=0.860), -0.001 (economic, institutional, general). All p-values in the record are otherwise correct.", "quote": "Internet (INTERNET) -0.0003*** -0.0003*** 4.17e-06 -0.0003** -0.0002*** -0.0005*** (Table 1)"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 1: x VA 0.001** (0.042), x RQ 0.001*** (0.001), x GE 0.001*** (0.005), x RL 0.0008** (0.019), x PS -0.0001 (0.843), x CC -0.0004 (0.171). Table 2: x PG -0.0001 (0.886), x EG 0.0004** (0.028), x IG 0.001*** (0.000), x GG 0.001*** (0.000). All match.", "quote": "only the interactions with regulatory quality, rule of law, voice and accountability and government effectiveness are significant and positive (Sec 4.1)"},
+    {"n": 3, "verdict": "confirmed", "correction": "Table 1 net effects: -0.0009 (VA), -0.001 (GE), -0.0008 (RL); 'na' for the other three columns, 'nsa' in Table 2. Arithmetic checks against mean governance -0.648, -0.760, -0.748 (Table 1 note). No standard errors reported.", "quote": "the net effect ... is -0.0009 ([-0.0003]+ [0.001x -0.648]) (Sec 4.1)"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Significant positive interactions and thresholds match (VA 0.300, GE 0.300, RL 0.250; EG 2.500, IG 1.000, GG 1.000). No threshold is reported for regulatory quality (internet coefficient insignificant). Thresholds are ratios of rounded coefficients with no uncertainty, and the individual-indicator thresholds are above the sample means (-0.648, -0.760, -0.748, Table A3).", "quote": "The established thresholds are as follows: (i) 0.300 'voice and accountability' and 'government effectiveness', respectively; (ii) 0.250 'rule and law' (Abstract)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis; SSA-only sample. Record's entries ('not applicable' / 'not reported') are fine.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree (serious): causal policy conclusions rest on system GMM with internal instruments only; paper does not say which regressors are endogenous or how instruments are specified; lagged dependent coefficients 0.93-0.997 in Table 1 (0.873-0.997 in Table 2) are near unit root. The record's claim that Sargan p of 0.96-1.000 signals an overfitted set is overstated, since Hansen p-values are 0.373-0.749 with 19-20 instruments and 42 groups.",
+    "exposure_measurement": "agree (moderate): WDI internet users per 100 people is standard but does not capture the quality and cost channel the paper argues for.",
+    "selection_of_countries_years": "agree (moderate): 42 SSA countries, years inconsistent (2004-2019 vs 2004-2020); estimation uses only 426-435 of 714 country-years (Table A3), implying heavy attrition; the record's '672 possible' should be 714.",
+    "outcome_measurement": "too_harsh (record: serious; moderate): index uses four IMF FAS supply-side indicators (branches and ATMs), a standard but narrow access measure; omission of account ownership and digital payments is a construct-validity limit, and the text wrongly says 'eight dimensions' while listing four.",
+    "specification": "agree (moderate): ten governance variants interacted separately, thresholds from rounded coefficients without uncertainty, no year effects reported. The record's remark that a threshold of 2.5 sits at the edge of the WGI range is wrong: economic governance is a PCA composite with max 4.307 (Table A3).",
+    "selective_reporting": "too_harsh (record: serious; moderate): all columns incl. non-significant ones are tabulated and the negative direct effect is stated in Sec 4.1; the problem is abstract framing (thresholds for significant interactions, 'can be effectively complemented') that omits negative direct and net effects.",
+    "why": "Causal policy claims from a single system-GMM specification with unspecified instruments, near-unit-root persistence and a narrow outcome index; conclusions are weakly supported, serious overall."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record errors: (1) says country list not in text, but Table A1 lists all 42; (2) Table 1 internet coefficient range misstated (rule of law is -0.0002); (3) '672 possible' observations should be 714 (Table A3), consistent with 2004-2020; (4) '2.5 at the edge of the WGI range' is wrong because economic governance is a PCA composite; (5) Sargan p near 1 described as overfitting while Hansen p-values (0.37-0.75) are in the acceptable range. Direct effect coefficients are conditional on governance equal to zero, and mean governance is negative (about -0.65 to -0.76), which the paper's 1 person/'increase in internet users' wording obscures. No invented numbers found in the results."
+ }
+]

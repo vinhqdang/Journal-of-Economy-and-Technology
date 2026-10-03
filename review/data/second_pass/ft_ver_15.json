@@ -1,0 +1,133 @@
+[
+ {
+  "idx": "1495",
+  "eligibility_ok": false,
+  "eligibility_note": "Eligibility not established. The text never gives the number of economies (only 'several developing countries'; Table 1 is a 30-row country-year excerpt showing India, Indonesia, Kenya), so the 10-economy threshold cannot be shown, and 'developing countries' pooled is not an income-group comparison. Table 1 shows only illustrative rows and no data appendix, so it is also doubtful that the regressions were run on a documented sample. Mobile banking can count as mobile, but e-wallet value and digital credit are fintech. Recommend exclusion or, at most, a flagged borderline include.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Coefficient -0.25, SE 0.08, significance column 0.05; text reads it as a 0.25% fall in Gini per 1% rise in mobile banking. The column headed 'Significance' is not labelled as a p-value or a level.", "quote": "Mobile Banking (%) -0.25 0.08 0.05 (Table 4)"},
+   {"n": 2, "verdict": "confirmed", "correction": "none; -0.19, SE 0.07, significance 0.01.", "quote": "E-wallet Transactions -0.19 0.07 0.01 (Table 4)"},
+   {"n": 3, "verdict": "confirmed", "correction": "none; -0.22, SE 0.06, significance 0.05.", "quote": "Digital Credit -0.22 0.06 0.05 (Table 4)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 5 gives -0.30, -0.25, -0.28 (significance 0.01, 0.01, 0.05). The moderator variable and model are not defined, as the record says. No threshold.", "quote": "Countries with good internet and telecommunications infrastructure show a greater decrease in income inequality (Sec 3)"},
+   {"n": 2, "verdict": "confirmed", "correction": "Financial literacy is asserted in text only; no variable, estimate or test is reported.", "quote": "level of financial literacy is also an important determinant of the effectiveness of digital financial inclusion (Sec 3)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group split or income classification; the sample is described only as 'developing countries'.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal wording ('effect', 'impact', 'causal relationships') with only GDP per capita and unemployment as controls and no strategy for reverse causation.",
+   "exposure_measurement": "agree: three indicators in different units with unclear construction (digital credit per capita), mixed sources, and mobile banking users percent is not clearly defined.",
+   "selection_of_countries_years": "agree: number and identity of countries not reported, purposive sampling, Table 1 is a 30-row illustration.",
+   "outcome_measurement": "agree: Gini from WDI is a standard but sparse series; no handling of gaps is described.",
+   "specification": "agree: Table 3 lists FE and RE only, no Hausman result, no diagnostics; abstract says dynamic panel but Method describes static FE/RE; Table 5 moderation model unspecified.",
+   "selective_reporting": "agree on 'serious' but not for the stated reason: see problems; the paper reports no diagnostics, no second specification, and the Figure 1 claim has no underlying estimate.",
+   "why": "Causal claims rest on an undocumented sample and an undescribed model, so conclusions cannot be trusted; critical is appropriate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "(1) The record's selective-reporting argument that the significance column is inconsistent with coefficient/SE ratios is not supported: -0.25/0.08 (t about 3.1), -0.19/0.07 (about 2.7) and -0.22/0.06 (about 3.7) are all consistent with significance at the printed 0.05 or 0.01 levels if that column is a threshold; the column is simply unlabelled. (2) Record omits an internal contradiction in the text: it says mobile banking and e-wallets play a bigger role than digital credit, but Table 4 gives e-wallet -0.19, smaller in magnitude than digital credit -0.22. (3) The record is otherwise faithful: n_economies, years 2015-2023, controls and estimator are correctly described as unreported or inconsistent."
+ },
+ {
+  "idx": "1526",
+  "eligibility_ok": true,
+  "eligibility_note": "Own OLS estimation; AI exposure (task-based, potential not actual adoption); 23 OECD countries (>=3 for AI); labour-market outcomes (employment, hours, part-time share). Eligible. Income coverage is almost all high income with Mexico; no income-group comparison.",
+  "sample_corrections": {
+   "unit": "country x 2-digit ISCO-08 occupation cells (record's 'industry-country' label is wrong; text says 'country-occupation cell'); 36 occupations after excluding IT professionals and technicians (footnote 24); 822 cells in Table 2 (a few cells missing, footnote 25)",
+   "years": "Outcomes 2012-2019; exposure measured in 2012, but PIAAC-based task data are from 2012 except Hungary (2017), Lithuania (2014), Mexico (2017) (footnote 53); AI progress 2010-2015",
+   "n_economies": "23 for employment; 22 for hours and part-time (Mexico excluded, Table 4 note)"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Direction 'mixed' is acceptable: positive and significant without controls, not significant once any control except offshorability is added (results not displayed).", "quote": "Exposure to AI 13.3** (6.4); Observations 822 (Table 2, col 1)"},
+   {"n": 2, "verdict": "confirmed", "correction": "none; low computer use -3.7 (13.2), n=274.", "quote": "Exposure to AI ... -3.7 (13.2) (Table 2, col 2)"},
+   {"n": 3, "verdict": "confirmed", "correction": "none; medium computer use 8.3 (18.4), n=274.", "quote": "8.3 (18.4) (Table 2, col 3)"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table 3 cols 1-5: 85.7**, 94.4***, 137.7***, 135.4***, 144.6**; SE 36.5, 34.7, 36.5, 40.6, 62.6; n=274. Record's ranges and the 5.7 pp per SD (0.067 x 85.73) are correct.", "quote": "a one standard deviation increase in AI exposure is associated with 5.7 percentage points higher employment growth (Table 2, Column 4)"},
+   {"n": 5, "verdict": "confirmed", "correction": "none; -2.7*** (0.9), n=781 (Mexico excluded).", "quote": "Exposure to AI -2.7*** (0.9) (Table 4, col 1)"},
+   {"n": 6, "verdict": "confirmed", "correction": "Table 5: -4.8** (2.3), -4.9**, -9.2*** (3.2, trade+offshorability), -9.2** (4.0, plus software and robots), -7.2 (4.6, with 1-digit occupation FEs). Record's figures are correct; 0.60 pp = 0.125 x -4.823, about 13 minutes.", "quote": "loses statistical significance when controlling for 1 digit occupational dummies (Table 5, Column 5)"},
+   {"n": 7, "verdict": "confirmed", "correction": "Table 5 cols 6-10: 56.6** (24.7), 56.6**, 49.4** (24.5), 53.0 (35.3), 23.5 (41.7). Record's values are correct; the text says the result is suggestive.", "quote": "not robust to the inclusion of the full set of controls and the use of alternative indicators of exposure to AI"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Tercile of computer use split is as described; cut-offs not reported. Appendix Table A.1 (wage, creative, social splits) is not in the extracted text, but the main text confirms positive, weaker and less significant coefficients.", "quote": "All coefficients on exposure to AI remain positive, but are weakly statistically significant and of lower magnitude"},
+   {"n": 2, "verdict": "confirmed", "correction": "Country averages range 0.52 (Lithuania) to 0.72 (Finland); text says Northern European countries more exposed than Eastern European. No income-group comparison.", "quote": "from 0.52 (Lithuania) to 0.72 (Finland, Figure 6)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group estimates in the paper; sample is OECD, almost all high income, plus Mexico. Record's note that the income classification is not reported in the paper is accurate.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (moderate): exposure is fixed in 2012 and outcomes are later changes with country FEs, but there is no identification strategy and the headline pooled result disappears with controls.",
+   "exposure_measurement": "agree (moderate): potential-exposure index built from US O*NET abilities and applied to all countries, authors say it does not measure adoption.",
+   "selection_of_countries_years": "agree (moderate): 23 mostly high-income OECD countries, 36 occupations, IT occupations excluded, a few missing cells.",
+   "outcome_measurement": "agree (low): official labour force surveys with occupations harmonised to ISCO-08.",
+   "specification": "agree (moderate): unweighted regressions with robust but not clustered SEs, results driven by post-hoc computer-use terciles; the split choice is theory-motivated and results by alternative splits are reported.",
+   "selective_reporting": "agree (moderate): several control results are 'not displayed but available on request', but non-robust findings are reported openly.",
+   "why": "Standard cross-sectional occupation-by-country regressions with reasonable controls, exogeneity not established, cautious language: moderate."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "Minor: record labels the unit 'industry-country' in the sample field though it later says occupation cells. The statement that employment counts are not adjusted for sampling error is not found in footnote 37 (it only describes sources and ISCO mapping) and is unverifiable. The record's direction 'mixed' for result 1 and 'positive' for result 4 reflect different samples (all occupations versus high computer use), which is consistent with the text. No invented numbers found."
+ },
+ {
+  "idx": "1564",
+  "eligibility_ok": true,
+  "eligibility_note": "Own System-GMM estimation; AI Index exposure; 29 countries (>=3 for AI); employment-to-population ratio is a labour-market outcome. Eligible. Table A1 lists 29 countries; no income-group comparison.",
+  "sample_corrections": {
+   "years": "2017-2021 (balanced 145 observations; 116 used in GMM, Table 5)",
+   "income_groups_covered": "Text says 23 developed and 6 developing; Table A1 includes Brazil, China, India, Malaysia, Russia, Turkiye; no low-income country"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "none; 0.0298, p-value 0.000, n=116. Unit is one point on the AI Index (mean 13.74, SD 15.83).", "quote": "a one-unit increase in AI is associated with a 0.0298-point increase in the employment rate"},
+   {"n": 2, "verdict": "confirmed", "correction": "none; 0.0480, p=0.000. It is the AI effect at lp = 0, outside the observed range of lp.", "quote": "ai 0.0298***(0.000) 0.0480***(0.000) (Table 5)"},
+   {"n": 3, "verdict": "confirmed", "correction": "none; -2.13e-07, p=0.029. Note from the table that ai*lp has a mean of 1,243,830, so lp in the interaction appears to be in dollars while Table 3 reports lp with mean 95.421 (apparently thousands).", "quote": "ai*lp -2.13e-07**(0.029) (Table 5)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Negative interaction with labour productivity is as reported; the paper states no threshold. (Own arithmetic, not in the paper: 0.0480 / 2.13e-07 is about 225,000, above the maximum lp of 219.127 thousand, so the sign of the AI effect does not flip within the sample if lp is in dollars.)", "quote": "this positive effect diminishes at higher productivity levels"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group estimates; the sample is mostly high income and pooled.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): causal wording, only internal GMM instruments with N=29, T=5, 116 observations; Sargan p=0.093/0.107, AR(1) p about 0.045-0.048, instruments not described; unemployment rate is a bad control.",
+   "exposure_measurement": "agree (moderate): composite of research output, investment and talent indicators proxies AI capability, not adoption; absolute values used and correlated 0.74 with ln GDP.",
+   "selection_of_countries_years": "agree (moderate): countries and years fixed by AI Index availability, 5 years including the COVID period, mostly rich countries.",
+   "outcome_measurement": "agree (low): ILO modelled employment-to-population ratio is standard and comparable.",
+   "specification": "too_lenient: one lagged dependent variable that is negative and insignificant, no time effects over 2017-2021, no robustness checks or alternative AI measures, and the paper claims coefficients are 'free from endogeneity bias' on the basis of a marginal Sargan test; serious would be defensible.",
+   "selective_reporting": "agree (moderate): only two columns reported, no robustness tables.",
+   "why": "Causal language with internal-instrument GMM on 116 observations and marginal diagnostics; no external identification, so serious overall."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "None invented; all numbers match Table 5, Table 3 and Table A1. Record's description of AI index as 'composite of 23 indicators' is consistent with Table A2 (16 R&D, 7 economy, including per capita variants), though the paper does not explain how the index is aggregated. Record's remark that the 'Hansen test is not reported' is correct; the paper justifies using Sargan instead."
+ },
+ {
+  "idx": "1596",
+  "eligibility_ok": true,
+  "eligibility_note": "Own correlation/regression on a 300-firm survey in 3 economies (India, Nigeria, Egypt), meeting the 3-economy AI threshold; outcomes are productivity improvement and revenue growth (output/productivity). Formally eligible but evidence quality is very poor. No income-group comparison; income class is not stated in the paper.",
+  "sample_corrections": {
+   "years": "not reported; survey date not given (paper received 28 Oct 2025)",
+   "n_economies": "3 (India, Nigeria, Egypt, at least 100 firms each; Sec 3.2); Sec 1.4 separately refers to Sub-Saharan Africa, Southeast Asia and Latin America"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "r=0.85 (p<0.01); Table 2 Beta 0.75, t 6.35, p 0.000; 60% of variance; high-adoption about 20% vs 2% revenue growth. Not a country-level or panel estimate: firm-level self-reported survey measures.", "quote": "Revenue Growth and AI Adoption: r = 0.85, p < 0.01; AI Adoption (Revenue Growth) 0.75 6.35 0.000"},
+   {"n": 2, "verdict": "confirmed", "correction": "r=0.88 (p<0.01); Table 2 Beta 0.70, t 5.80, p 0.000; 65% of variance; about 30% vs 5%.", "quote": "Productivity Improvement and AI Adoption: r = 0.88, p < 0.01; ßAI Adoption (Productivity) 0.70 5.80 0.000"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "No heterogeneity results by country, sector or income are shown; moderation by training, infrastructure and policy is mentioned in Methods only. EFA reports three factors qualitatively without loadings.", "quote": "path analysis was used to model the direct and indirect relationships ... including the moderating effects of factors like training, infrastructure"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis; the sample is pooled across three countries. The record's statement that all three are lower-middle income is an external classification, not in the paper.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (critical): cross-section, causal wording ('confirms the significant positive impact'), same respondent reports adoption and outcome, no selection strategy.",
+   "exposure_measurement": "agree (serious): self-reported adoption level, scale undefined; sample is owners who had adopted or were adopting, so the low-adoption group is unclear.",
+   "selection_of_countries_years": "agree (serious): three countries chosen without justification, online survey claiming stratified random sampling without a frame or response rate; Sec 1.4 mentions regions and case studies that are not in the Methods.",
+   "outcome_measurement": "agree (critical): self-reported percentage improvements; Table 1 shows Count = 10 for each variable despite N=300.",
+   "specification": "agree (serious): one Beta per outcome, no R-squared or controls shown; correlations of 0.85 and 0.88 imply r-squared of about 0.72 and 0.77 but the text says 60% and 65% of variance, and the standardised Beta (0.75, 0.70) differs from r with no controls shown.",
+   "selective_reporting": "agree (critical): Table 2 customer engagement row is empty, no SEs or n per model, stated path/moderation results absent, data only on request.",
+   "why": "Descriptive, self-reported cross-section with internally inconsistent statistics; conclusions cannot be trusted."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "None invented. Additional inconsistency not in the record: the text's 60%/65% 'variance explained' is inconsistent with the reported Pearson r (0.85 and 0.88 give r-squared of 0.72 and 0.77). Also, Table 1 (n=10, mean revenue growth 10.30, min 2, max 22) looks like a 10-row table rather than the 300-firm sample. Customer engagement results (r=0.82, 70%) exist in the text but are not extracted; that is acceptable since the outcome is not among the eligible families."
+ }
+]

@@ -1,0 +1,135 @@
+[
+ {
+  "idx": "1438",
+  "eligibility_ok": true,
+  "eligibility_note": "Own dynamic panel GMM estimation; internet users and mobile subscriptions as ICT exposure; 27 EU economies (>=10); outcome is log GDP per capita (output). All criteria hold.",
+  "sample_corrections": {},
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "", "quote": "lnIU 0.16262** (2.2)", "locator": "Table 4, col (1), p.10"},
+    {"n": 2, "verdict": "confirmed", "correction": "", "quote": "lnMS 0.12029* (1.8)", "locator": "Table 4, col (3), p.10"},
+    {"n": 3, "verdict": "confirmed", "correction": "Values match (lnIU -4.14710***, t=-2.8; lnEI*lnIU 2.15698***, t=2.9; lnEI 3.82505***, t=2.7). Derived check, not printed by authors: using the Table 2 mean of lnEI (2.0321) the conditional IU effect is about +0.24, so 'mixed' is fair.", "quote": "lnEI * lnIU 2.15698*** (2.9)", "locator": "Table 4, col (2), p.10"},
+    {"n": 4, "verdict": "confirmed", "correction": "Values match (lnMS -0.25809***, t=-3.4; lnEI*lnMS 0.07259**, t=2.1; lnEI 0.38469*, t=1.8). Derived check, not printed by authors: at mean lnEI the conditional MS effect is about -0.11 (negative), which the conclusions do not mention.", "quote": "lnEI * lnMS 0.07259** (2.1)", "locator": "Table 4, col (4), p.10"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "", "quote": "increased internet users and mobile phone subscriptions strengthen economic integration and growth relationship", "locator": "Sec. 4 p.11; Table 4 cols 2 and 4"},
+    {"n": 2, "verdict": "confirmed", "correction": "", "quote": "the study has not discussed any level or precise thresholds for ICT", "locator": "Conclusion, p.12 (top)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "EU-27 pooled; no income split or classification given. Record entries are all 'not reported'; nothing to verify.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree: Difference GMM with internal lags is a standard but weak response to simultaneity (instruments unspecified, persistent series, Hansen p=0.097/0.110, AR1 p=0.056/0.146), so moderate is fair.",
+    "exposure_measurement": "agree: Internet users and mobile subscriptions are standard proxies; the log descriptives (lnIU max 1.99, lnMS mean 6.90 in Table 2) are inconsistent with per-hundred units, so units are unclear but exposure is still captured.",
+    "selection_of_countries_years": "agree: EU-27, 2002-2019 in 3-year averages; N=162 in Table 2 but 138 in Table 4 with no explanation, and Figure 1 lists the UK.",
+    "outcome_measurement": "agree: Log GDP per capita is a level labelled 'economic growth'; price basis not stated.",
+    "specification": "agree: 18-21 instruments with no lag/collapse detail, no time effects, no robustness checks, large offsetting coefficients in interaction models (lnEI 3.83, lnIU -4.15), employment elasticity above 1.3.",
+    "selective_reporting": "agree: All four models are shown in full, but the conclusion emphasises positive ICT effects while ICT main terms are negative in Models 2 and 4; no robustness section.",
+    "why": "Causal 'impact' language with a standard but loosely documented difference GMM, unclear variable units, an unexplained drop from 162 to 138 observations and no robustness checks; serious is defensible, moderate-to-serious borderline."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers found. Record matches the text on all coefficients, t-stats, diagnostics and instrument counts. Minor: the record says Table 2 lnIU/lnMS scales look inconsistent with per-hundred variables (true: lnIU max 1.99, lnMS mean 6.90). Text itself says GMM is 'Two-Step Difference GMM' (Table 4 note) while Sec. 3 cites Blundell-Bond; record follows Table 4. Authors' conclusion that ICT positively affects growth rests on Models 1 and 3 only; the Model 4 conditional mobile effect at mean trade is negative (derived)."
+ },
+ {
+  "idx": "1448",
+  "eligibility_ok": true,
+  "eligibility_note": "Own random-effects panel estimation; ICT exposure (fixed telephone, mobile, internet, fixed broadband); exactly 10 economies, which meets the >=10 threshold; outcome is GDP growth (output).",
+  "sample_corrections": {},
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "", "quote": "Fixed telephone subscriptions (FIX) -0.028 0.018 -1.598 0.112", "locator": "Table 6, p.628"},
+    {"n": 2, "verdict": "confirmed", "correction": "", "quote": "Mobile/cellular telephone subscriptions (MOB) -0.017 0.011 -1.504 0.134", "locator": "Table 6, p.628"},
+    {"n": 3, "verdict": "confirmed", "correction": "", "quote": "Internet users (INTE) -0.011 0.019 -0.549 0.584", "locator": "Table 6, p.628"},
+    {"n": 4, "verdict": "confirmed", "correction": "", "quote": "Fixed broadband subscriptions (FBS) 0.024 0.026 0.891 0.374", "locator": "Table 6, p.628"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "", "quote": "high-income countries (Chile, France, Germany, Japan, The Republic of Korea, Norway, Singapore, Spain, Switzerland and the United States)", "locator": "Sec. 3, p.625"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Only high-income economies are sampled; the 'high' entry (no significant ICT effect, p 0.112 to 0.584) matches Table 6. Other groups are correctly 'not reported'.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree: Contemporaneous growth-on-ICT-levels REM with only two financial controls, no time effects, no instrument and no discussion of reverse causality.",
+    "exposure_measurement": "agree: Standard ITU/WDI access indicators, units given only as '%'; saturated in rich countries.",
+    "selection_of_countries_years": "agree: Ten countries chosen with no stated criterion; observation count not reported (Chow d.f. 9,148 suggests about 164 observations; this is an inference).",
+    "outcome_measurement": "agree: Annual real GDP growth from WDI (Table 2: 'GDP constant prices growth annual').",
+    "specification": "agree: Hausman test on 10 groups selects REM (p=0.584), correlated ICT regressors, no growth controls beyond finance, text misreads coefficients.",
+    "selective_reporting": "agree: One specification reported in full, though no robustness checks.",
+    "why": "Causal-toned conclusion ('no significant effect') from a single minimal-control REM with no strategy for endogeneity; serious fits the guide."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers. Additional text inconsistencies the record only partly covers: Sec. 4.2 states the fixed telephone coefficient is -0.8696 while Table 6 and Eq. 3 give -0.028045; the broadband paragraph says growth 'will increase by -0.023510'; the discussion says each ICT variable 'has a negative effect' (including broadband, whose coefficient is positive) and then that it will 'not have an impact'. Authors treat 'no significant effect' as the finding (abstract and conclusion). Table 6 row labelled 'Economic growth (EG) 8.421' is the constant. Record observation counts are inference only."
+ },
+ {
+  "idx": "1469",
+  "eligibility_ok": true,
+  "eligibility_note": "Own estimation (Driscoll-Kraay FE, quantile, system GMM); mobile and internet exposure; 64 economies; outcome is male/female gross enrolment ratio (education, living standards beyond income). No explicit income-group comparison but the economy threshold is met.",
+  "sample_corrections": {},
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "", "quote": "Mobile phone -0.001*** (0.000); Observations 845; Number of groups 64; Within R2 0.355", "locator": "Table 3 col 1, p.6"},
+    {"n": 2, "verdict": "confirmed", "correction": "", "quote": "Internet -0.001*** (0.000); Observations 862; Within R2 0.165", "locator": "Table 3 col 2, p.6"},
+    {"n": 3, "verdict": "confirmed", "correction": "", "quote": "Mobile phone -0.003***; Observations 638; Number of groups 61; Within R2 0.412", "locator": "Table 3 col 3, p.6; Table 1 p.5 for mean/SD"},
+    {"n": 4, "verdict": "confirmed", "correction": "", "quote": "Internet -0.004*** (0.001); Observations 644; Within R2 0.219", "locator": "Table 3 col 4, p.6"},
+    {"n": 5, "verdict": "confirmed", "correction": "Lagged DV 0.879/0.658/0.713/0.591, Hansen 0.685/0.414/0.532/0.627, AR2 0.187/0.150/0.123/0.329, instruments 56/31/26/36, groups 62/62/59/59 all match.", "quote": "Mobile phone -0.0001*** ... -0.001**; Internet -0.0004** ... -0.001**", "locator": "Table 7, p.9"},
+    {"n": 6, "verdict": "confirmed", "correction": "", "quote": "Fixed broadband -0.002*** ... -0.004***; ICT exports -0.002** ... -0.004*", "locator": "Table 5, p.7"},
+    {"n": 7, "verdict": "confirmed", "correction": "Turning points reproduce from the printed coefficients (e.g. 0.002/(2*0.00001)=100; 0.004/(2*0.00004)=50; 0.013/(2*0.0001)=65).", "quote": "a threshold of 100 subscriptions per 100 people for mobile phones in columns 1 and 3. The thresholds for the Internet ... are 50 and 65", "locator": "Table 8 p.9; Sec. 5.4.1 p.10"},
+    {"n": 8, "verdict": "confirmed", "correction": "", "quote": "Mobile phone x GDP -0.00002* ... -0.0001***; Internet x GDP -0.00003 ... -0.0002**", "locator": "Table 9, p.10"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Record's observation is correct: the text says primary effects are stronger, but its own coefficients (-0.001 primary vs -0.003/-0.004 secondary) show the opposite in absolute size. Outcome SDs differ (0.128 vs 0.363), so a comparison is not straightforward.", "quote": "ICTs have stronger effects (in absolute value) on gender inequality in primary education than on gender inequality in secondary education", "locator": "Sec. 5.2 p.7; repeated in Sec. 6 p.10"},
+    {"n": 2, "verdict": "confirmed", "correction": "", "quote": "beyond the threshold of 100 mobile phone subscriptions per 100 people, the diffusion of mobile phone exacerbates gender inequality", "locator": "Sec. 5.4.1, p.10"},
+    {"n": 3, "verdict": "confirmed", "correction": "", "quote": "increases very little, from 0.002 for the 10th quantile to 0.003 for the 90th quantile", "locator": "Sec. 5.3.3 p.8; Table 6"},
+    {"n": 4, "verdict": "confirmed", "correction": "", "quote": "coefficients of the interactions between GDP growth and ICT indicators are negative and statistically significant (except in column 2", "locator": "Sec. 5.4.2, p.10; Table 9"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group split or comparison; the sample is described as low and lower-middle income but pooled. Record entries are all 'not reported / not applicable'.",
+  "risk_of_bias": {
+    "overall": "too_harsh",
+    "confounding_reverse_causation": "too_harsh: Baseline is country-FE with four controls and no year effects, but the authors discuss reverse causality and add a two-step system GMM with Hansen/AR(2) tests giving the same signs, which is a standard strategy (exogeneity not established), so moderate fits the guide.",
+    "exposure_measurement": "agree: Mobile subscriptions per 100 and share of internet users are standard but not gender-specific.",
+    "selection_of_countries_years": "agree: Unbalanced panel (638-862 obs); Appendix A countries are not classified by year and Appendix A omits labels that appear in Figures 2-5; 5%/95% trimming on the outcome.",
+    "outcome_measurement": "agree: Male/female gross enrolment ratio, not net enrolment or completion; ratios below 1 mean girls ahead, so negative coefficients are not always 'less inequality'.",
+    "specification": "agree: No time effects, rounded coefficients (SE 0.000), turning points from rounded coefficients without tests.",
+    "selective_reporting": "too_harsh: Non-significant results (internet-primary interaction, Q10 mobile-primary) are shown and variants are reported in full; the real issue is rounding and the text contradicting tables, which suggests low to moderate.",
+    "why": "Standard FE panel with explicit causal framing, partly mitigated by a system GMM check and extensive robustness; per the guide this is moderate (exogeneity not established), not serious."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers; all 8 results and 4 heterogeneity items match the tables. Items the record does not mention: (1) Figures 2-5 label countries (e.g. AFG, LBR, MWI, SOM, PNG, PRK, STP, LBN) that are absent from the Appendix A list, so the sample composition is not fully consistent with the stated 64. (2) Table 7 AR(1) p-values (0.099, 0.084) are not significant at 5% for the primary-education columns. (3) The text reports GDP growth minimum as -0.46% while Table 1 gives -46.082 (record notes this). (4) Record's 'Section 3 p.4' and 'Table 1 p.5' locators are correct."
+ },
+ {
+  "idx": "1494",
+  "eligibility_ok": true,
+  "eligibility_note": "Own dynamic panel threshold / system GMM estimation; exposure is a composite digital index built from internet, mobile, digital payments, secure servers plus tertiary enrolment and years of schooling (ICT in general, though it partly mixes in human capital); 45 economies; outcome is Gini and Theil (distribution).",
+  "sample_corrections": {
+    "economies_or_groups": "Appendix A lists China (East Asia and Pacific: China, Indonesia, Malaysia, Mongolia, Philippines, Thailand, Vietnam); the record wrongly says China is absent. India is absent. Regional counts 12/7/14/12 are correct.",
+    "years": "2000-2023 stated, but 1,035 observations = 45 x 23 (Table 4), not 45 x 24; unexplained."
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Table 6 prints 0.125 (SE 0.048, '**'); the positive sign comes from the text and hypothesis H2.", "quote": "In Regime 1 (DIG < 0.48), the coefficient for digitalization is positive and significant (b1 = 0.125, p < 0.05)", "locator": "Sec. 4.3.1, p.59; Table 6 p.60"},
+    {"n": 2, "verdict": "confirmed", "correction": "Table 6 prints 0.087 (SE 0.050, '*'); the negative sign comes from the text.", "quote": "The coefficient becomes negative and significant (b2 = 0.087, p < 0.10)", "locator": "Sec. 4.3.1, p.59; Table 6 p.60"},
+    {"n": 3, "verdict": "confirmed", "correction": "", "quote": "coefficient for digitalization is statistically insignificant (0.015)", "locator": "Sec. 4.3, p.59; Table 6 col 3 (SE 0.032)"},
+    {"n": 4, "verdict": "confirmed", "correction": "Table 7 prints 0.095 (**) and 0.071 (*), no SEs; regime 2 sign comes from the text ('inequality-reducing').", "quote": "inequality-increasing effect below the threshold (b1 = 0.095) and an inequality-reducing effect above it (b2 = 0.071)", "locator": "Sec. 4.3.3, p.61; Table 7"},
+    {"n": 5, "verdict": "confirmed", "correction": "", "quote": "single threshold: F 42.15, p 0.008, gamma 0.48, CI [0.45, 0.51]; double: F 18.72, p 0.215, gamma 0.65", "locator": "Table 5, p.59"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "corrected", "correction": "Threshold 0.48 (Gini) and about 0.50 (Theil) are right, but the claim that 'roughly half the sample-years are in each regime' is the extractor's inference: regime counts are not reported, and a mean DIG of 0.458 (Table 4) would put somewhat more than half below 0.48 if the distribution were symmetric. Remove that sentence.", "quote": "at low-to-moderate levels of digitalization (index <= 0.48), technological advancement exacerbates income disparity", "locator": "Abstract; Table 5 p.59"},
+    {"n": 2, "verdict": "confirmed", "correction": "", "quote": "research and development expenditure only exhibits a significant negative effect on inequality in the higher digitalization regime", "locator": "Sec. 4.3.2, p.60-61; Table 6 (RD regime 1 0.005 n.s.; regime 2 0.018**)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "Sample is labelled 'developing' by the authors; no income-group comparison or split. Record entries are 'not reported'.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree: System GMM with collapsed internal instruments, AR(2) and Hansen reported; instrument count and lags not given, the threshold variable is itself endogenous, and Hansen-style bootstrap search is combined with GMM without explanation.",
+    "exposure_measurement": "agree: DIG mixes ICT with tertiary enrolment and schooling (overlapping the CAP control), and definitions conflict between Table 1/Sec. 3.2.2 (internet, mobile, payments, e-commerce readiness, WIPO) and Appendix B (six different indicators, no WIPO).",
+    "selection_of_countries_years": "agree: 'Developing' list includes Chile, Uruguay, Romania, Bulgaria; a perfectly balanced annual 2000-2023 panel of survey-based Gini/Theil for 45 countries is hard to reconcile with data availability; 1,035 obs = 45 x 23 unexplained.",
+    "outcome_measurement": "agree: Gini from WB PIP and Theil from 'ILO Labour Statistics; National Surveys' with no description of interpolation, harmonisation or income vs consumption basis; descriptive min/max values are unusually round (SUP 10.0/45.0, INF 30.0/80.0).",
+    "specification": "agree: Single main specification, no time effects, no sensitivity to index weights or sample, bootstrap designed for static panels applied to a dynamic one.",
+    "selective_reporting": "agree: Table 7 (Theil) omits control coefficients and SEs; double threshold dismissed; no alternative exposure definitions.",
+    "why": "Causal language ('exacerbates', 'mitigates') with a plausible system GMM, but the composite exposure overlaps with controls, definitions are inconsistent, and the balanced survey-based panel and round descriptives raise data-provenance concerns; serious fits, with a risk of critical if the data cannot be reproduced."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Record error: it says China is absent from the sample, but China is listed in Appendix A (India is the one missing). Record phrase 'Mean years of schooling is 15+ in Table 1 and 25+ in Appendix B' refers to the population age group (aged 15+ vs aged 25+), not the schooling values; Table 4 gives CAP mean 7.82, max 13.00. The signs of Table 6 and 7 coefficients are lost in the converted text; record correctly flags that signs come from the prose. The record's claim that Schutz (1951) does not support the 'sensitive to middle/tails' statement cannot be verified from the paper text. Record locators for regime results cite p.60; Sec. 4.3.1 itself is on p.59. Otherwise numbers (Table 4 obs 1,035; Hansen 0.281/0.315, AR(2) 0.654/0.589; Theil Hansen 0.258 to 0.315) match."
+ }
+]

@@ -1,0 +1,134 @@
+[
+ {
+  "idx": "617",
+  "paper_verdict": {
+   "estimator_family": "SURE (seemingly unrelated regression) two-equation simultaneous system, cross-section",
+   "reverse_causality_addressed": "yes",
+   "pooling_concerns": "Single-year (2000) cross-section of 126 states; outcome LGGDP is log of real GDP level (constant 1995 USD), not per capita or growth; exposure is log internet hosts per 10,000 (log-log elasticity); the 'simulations' are SURE regressions on real data, but the same 126 states recur in all four specifications. Printed T-ratio 6.425 is identical for LHOSTS in Simulation 2 and LGGDP in Simulation 1, so the t-ratio column may contain a typo; the SE is used."
+  },
+  "estimates": [
+   {
+    "estimate_id": "617-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "LHOSTS 0.423 0.066 6.425",
+    "note": "Table 3 block 2 (Simulation 2), LGGDP equation. Coefficient and SE confirmed; n=126 stated in Section 3.3, year 2000. Table prints no per-regression N."
+   },
+   {
+    "estimate_id": "617-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "LHOSTS 0.395 0.064 6.196",
+    "note": "Table 3 block 4 (Simulation 4, with SMALL dummy), LGGDP equation. Confirmed; n=126."
+   }
+  ]
+ },
+ {
+  "idx": "879",
+  "paper_verdict": {
+   "estimator_family": "Panel fixed effects (two-way FE, country-clustered robust SE), with pooled OLS/RE comparisons and system GMM as robustness",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Exposure is a PCA-based composite AI Capability Index that is standardized, so coefficients are per 1 SD of an index mixing AI-hardware imports with ICT, electricity and financial-inclusion readiness, not per unit of a single technology. Outcome is log real GDP per worker (labor productivity). Many estimates come from the same 63-country, 2005-2019 sample and overlap (pooled OLS, FE, lags, GMM, narrow definition). Interaction terms (879-10 to 879-14) are conditional effects and are not comparable with main effects; 879-9 is the low-income reference-group effect. GMM and lagged estimates use lagged regressors, and pooled OLS is attributed by the authors to omitted variable bias. Sample is low and lower-middle income countries (LMICs)."
+  },
+  "estimates": [
+   {
+    "estimate_id": "879-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "AI Capability Index (Flow-based) 0.450*** 0.115*** 0.0920*** (9.823) (7.662) (5.771)",
+    "note": "Table 4 FE column: 0.0920*** (5.771), robust t, 871 obs, 63 countries. Text says country-clustered robust SEs."
+   },
+   {
+    "estimate_id": "879-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "AI Capability Index (Stock-based) 0.449*** 0.118*** 0.0937*** (9.889) (7.612) (5.920)",
+    "note": "Table 5 FE column confirmed; 871 obs, 63 countries."
+   },
+   {
+    "estimate_id": "879-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "AI Capability Index (Flow-based) 0.450*** 0.115*** 0.0920*** (9.823)",
+    "note": "Table 4 Pooled OLS column confirmed; 871, 63. Year FE only."
+   },
+   {
+    "estimate_id": "879-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "L.AI Capability Index (Flow-based) 0.0693*** ... 0.0681** (1.971)",
+    "note": "Table 11 column 6 confirmed; z-statistic, Windmeijer-corrected; 810 obs, 63 panel units, 35 instruments, lag dep var 0.914***."
+   },
+   {
+    "estimate_id": "879-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "L.AI Capability Index (Stock-based) ... 0.0714** 0.0655* (1.810)",
+    "note": "Table 12 column 6 confirmed; 810 obs, 63; lag dep var 0.924***."
+   },
+   {
+    "estimate_id": "879-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "AI Capability Index (Flow-based) 0.0885*** 0.0804*** ... (5.423)",
+    "note": "Table 13 Lag 1 confirmed; 810 obs, 63 countries."
+   },
+   {
+    "estimate_id": "879-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "0.0526*** (3.821) ... Observations 503 ... Number of countries 63 63 63 63 63 62",
+    "note": "Table 13 Lag 6 confirmed; 503 obs, 62 countries."
+   },
+   {
+    "estimate_id": "879-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "AI Capability Index (Flow-based) ... 0.0857*** 0.0859*** (6.091)",
+    "note": "Table D.5 column 6 confirmed; 870 obs, 63 countries."
+   },
+   {
+    "estimate_id": "879-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "AI Capability Index (Flow-based) 0.409*** 0.411*** 0.104*** 0.103*** 0.0913*** (5.898)",
+    "note": "Table 10 column 5 FE confirmed; 871, 63. Coefficient is for the low-income reference group (LMI dummy=0); sample itself is LMICs."
+   },
+   {
+    "estimate_id": "879-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Low Middle Income * AI Capability Index (Flow-based) ... 0.00439 0.00413 (0.223)",
+    "note": "Table 10 column 5 confirmed; differential effect LMI vs low-income; 871, 63."
+   },
+   {
+    "estimate_id": "879-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Domestic Readiness Index * Log of AI Import Per Capita (Flow) 0.0108** (2.106)",
+    "note": "Table 6 column 2 confirmed; 871 obs, 63."
+   },
+   {
+    "estimate_id": "879-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Domestic Readiness Index * Log of AI Imports Per Capita (Stock) 0.00986* (1.736)",
+    "note": "Table 7 column 2 confirmed; 871 obs, 63."
+   },
+   {
+    "estimate_id": "879-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "FDI (% of GDP) * AI Capability Index (Flow-based) -0.000766 -0.00126** (-1.511) (-2.044)",
+    "note": "Table 8 column 4 confirmed; 871 obs, 63."
+   },
+   {
+    "estimate_id": "879-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Gross Fixed Capital Formation * AI Capability Index (Flow-based) 0.000886 0.00114* (1.361) (1.710)",
+    "note": "Table 8 column 4 confirmed; 871 obs, 63."
+   }
+  ]
+ }
+]
