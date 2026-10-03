@@ -1,0 +1,1090 @@
+[
+ {
+  "id": "10-H1",
+  "moderator_type": "human_capital",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Interaction negative contemporaneously, positive at lag; no marginal effects",
+  "idx": "10"
+ },
+ {
+  "id": "29-H1",
+  "moderator_type": "income_group",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "OECD and non-OECD coefficients similar; no formal test",
+  "idx": "29"
+ },
+ {
+  "id": "57-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Discussion remark only; paper estimates no income-group split",
+  "idx": "57"
+ },
+ {
+  "id": "88-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Control sensitivity: adding ICT shrinks human capital elasticity",
+  "idx": "88"
+ },
+ {
+  "id": "108-H4",
+  "moderator_type": "institutions_governance",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Country estimates correlate positively with governance; descriptive correlations only",
+  "idx": "108"
+ },
+ {
+  "id": "126-H3",
+  "moderator_type": "time_period",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Net job effect falls from 5.9 to 3.6 across periods",
+  "idx": "126"
+ },
+ {
+  "id": "140-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "No heterogeneity estimated; only descriptive TFP trends",
+  "idx": "140"
+ },
+ {
+  "id": "174-H1",
+  "moderator_type": "trade_openness",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Negative interaction; threshold model reverses AI effect above trade level",
+  "idx": "174"
+ },
+ {
+  "id": "174-H5",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Effect rises above median then reverses above Q75 of robot density",
+  "idx": "174"
+ },
+ {
+  "id": "239-H2",
+  "moderator_type": "sector_structure",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Robust in manufacturing, not in non-manufacturing under country-year FE",
+  "idx": "239"
+ },
+ {
+  "id": "245-H3",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Non-linear in DE level, turning near 0.6; energy offset untested",
+  "idx": "245"
+ },
+ {
+  "id": "269-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Slope heterogeneity test only; no moderator analysed",
+  "idx": "269"
+ },
+ {
+  "id": "278-H1",
+  "moderator_type": "trade_openness",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive ICT x trade interaction offsets trade's negative effect",
+  "idx": "278"
+ },
+ {
+  "id": "302-H2",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Complementarity claimed; no ICT x electricity interaction estimated",
+  "idx": "302"
+ },
+ {
+  "id": "323-H1",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive ICT x tertiary enrolment interaction",
+  "idx": "323"
+ },
+ {
+  "id": "358-H1",
+  "moderator_type": "income_group",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "No interaction or split; descriptive tables only",
+  "idx": "358"
+ },
+ {
+  "id": "407-H2",
+  "moderator_type": "human_capital",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Education variables significant in WE or CEE differently; no interaction tests",
+  "idx": "407"
+ },
+ {
+  "id": "408-H3",
+  "moderator_type": "income_group",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "No split estimated; qualitative description of countries exceeding threshold",
+  "idx": "408"
+ },
+ {
+  "id": "422-H4",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Larger ICT effect at low productivity quantiles; non-monotone pattern",
+  "idx": "422"
+ },
+ {
+  "id": "617-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Descriptive comparison by income and state size; no test",
+  "idx": "617"
+ },
+ {
+  "id": "707-H3",
+  "moderator_type": "trade_openness",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive interaction with forward GVC linkages",
+  "idx": "707"
+ },
+ {
+  "id": "750-H3",
+  "moderator_type": "institutions_governance",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "WGI correlations positive for employment, mostly negative for wages",
+  "idx": "750"
+ },
+ {
+  "id": "802-H3",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Country-specific ICT interactions leave coefficient close to homogeneous model",
+  "idx": "802"
+ },
+ {
+  "id": "879-H1",
+  "moderator_type": "income_group",
+  "direction": "null",
+  "tested_formally": true,
+  "note": "Interaction with lower-middle-income dummy small and insignificant",
+  "idx": "879"
+ },
+ {
+  "id": "913-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Country results differ; attribution to readiness untested",
+  "idx": "913"
+ },
+ {
+  "id": "957-H2",
+  "moderator_type": "human_capital",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Positive interactions significant in OECD, not in MENA",
+  "idx": "957"
+ },
+ {
+  "id": "1025-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Descriptive productivity clubs; attributed mainly to TFP",
+  "idx": "1025"
+ },
+ {
+  "id": "1031-H1",
+  "moderator_type": "sector_structure",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Positive for industry and services, not agriculture",
+  "idx": "1031"
+ },
+ {
+  "id": "1419-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Quantile effects concentrated at tails; OLS mean mostly null",
+  "idx": "1419"
+ },
+ {
+  "id": "1448-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Sample restricted to high-income countries; nothing tested",
+  "idx": "1448"
+ },
+ {
+  "id": "1469-H4",
+  "moderator_type": "other_country_characteristic",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "ICT reduces gender gap more when GDP growth is higher",
+  "idx": "1469"
+ },
+ {
+  "id": "1526-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Descriptive cross-country exposure variation; no moderation analysis",
+  "idx": "1526"
+ },
+ {
+  "id": "1645-H2",
+  "moderator_type": "institutions_governance",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Stronger where infrastructure and regulation favourable; untested claim",
+  "idx": "1645"
+ },
+ {
+  "id": "1759-H1",
+  "moderator_type": "sector_structure",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Complementarity larger in goods than services; parameters similar across sectors",
+  "idx": "1759"
+ },
+ {
+  "id": "10-H2",
+  "moderator_type": "sector_structure",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Interaction negative contemporaneously, positive at lag; marginal effect not computed",
+  "idx": "10"
+ },
+ {
+  "id": "29-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": true,
+  "note": "Differencing horizon comparison, not a country or sample characteristic",
+  "idx": "29"
+ },
+ {
+  "id": "68-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Region interactions; sign differs by outcome and region; estimates not shown",
+  "idx": "68"
+ },
+ {
+  "id": "108-H1",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Effect concentrated in high-education tercile; subsample estimates only",
+  "idx": "108"
+ },
+ {
+  "id": "108-H5",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Country estimates correlate positively with PISA and tertiary share; descriptive",
+  "idx": "108"
+ },
+ {
+  "id": "138-H1",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Positive in high and lower-middle, insignificant in low; varies by technology",
+  "idx": "138"
+ },
+ {
+  "id": "162-H1",
+  "moderator_type": "income_group",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Effect declines with income level across subsample estimates",
+  "idx": "162"
+ },
+ {
+  "id": "174-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "GVC position interaction negative; threshold model; effect turns negative above",
+  "idx": "174"
+ },
+ {
+  "id": "217-H1",
+  "moderator_type": "financial_development",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Effect only in low bank concentration; median sample split",
+  "idx": "217"
+ },
+ {
+  "id": "239-H3",
+  "moderator_type": "institutions_governance",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Labour institution interactions mixed, no clear role",
+  "idx": "239"
+ },
+ {
+  "id": "268-H1",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Moderation present in emerging economies, absent or negative in advanced",
+  "idx": "268"
+ },
+ {
+  "id": "276-H1",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Positive effect in developed subsample only; no formal test",
+  "idx": "276"
+ },
+ {
+  "id": "285-H1",
+  "moderator_type": "time_period",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Similar elasticities in both subperiods",
+  "idx": "285"
+ },
+ {
+  "id": "320-H1",
+  "moderator_type": "income_group",
+  "direction": "null",
+  "tested_formally": true,
+  "note": "Dummy interactions insignificant under FGLS; FE shows some differences",
+  "idx": "320"
+ },
+ {
+  "id": "323-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Control variables, not interactions with ICT",
+  "idx": "323"
+ },
+ {
+  "id": "392-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Descriptive country comparison; no moderator tested",
+  "idx": "392"
+ },
+ {
+  "id": "407-H3",
+  "moderator_type": "time_period",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Significance lost in crisis subperiod; small subsamples",
+  "idx": "407"
+ },
+ {
+  "id": "422-H1",
+  "moderator_type": "human_capital",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Positive GMM interaction; quantile signs vary across quantiles",
+  "idx": "422"
+ },
+ {
+  "id": "441-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Gender split effects differ only slightly; no formal test",
+  "idx": "441"
+ },
+ {
+  "id": "617-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Small-state dummy matters for GDP equation, not hosts",
+  "idx": "617"
+ },
+ {
+  "id": "707-H4",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Negative in South Asia, insignificant in sub-Saharan Africa; subsamples",
+  "idx": "707"
+ },
+ {
+  "id": "750-H4",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Readiness correlates positively with employment, weakly or negatively with wages",
+  "idx": "750"
+ },
+ {
+  "id": "803-H1",
+  "moderator_type": "sector_structure",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Parameters differ across sectors; equality rejected; construction undistinguishable",
+  "idx": "803"
+ },
+ {
+  "id": "879-H2",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive interaction with domestic readiness",
+  "idx": "879"
+ },
+ {
+  "id": "952-H1",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Signs differ by income group and specification; differentials not significant",
+  "idx": "952"
+ },
+ {
+  "id": "957-H3",
+  "moderator_type": "financial_development",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive ICT x private credit interactions; threshold for fixed telephone",
+  "idx": "957"
+ },
+ {
+  "id": "1026-H1",
+  "moderator_type": "human_capital",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Interaction with squared term positive; low-HC group has larger coefficients",
+  "idx": "1026"
+ },
+ {
+  "id": "1031-H2",
+  "moderator_type": "trade_openness",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Negative interactions in industry and services; ICT and openness substitutes",
+  "idx": "1031"
+ },
+ {
+  "id": "1428-H1",
+  "moderator_type": "financial_development",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Country effects differ; financial development grouping noted but untested",
+  "idx": "1428"
+ },
+ {
+  "id": "1469-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Education level is an outcome, not a country moderator; text inconsistent",
+  "idx": "1469"
+ },
+ {
+  "id": "1494-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Threshold in digital maturity; sign of inequality effect reverses",
+  "idx": "1494"
+ },
+ {
+  "id": "1564-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Negative interaction with labour productivity level",
+  "idx": "1564"
+ },
+ {
+  "id": "1679-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Gender subsamples; effect only among women; not a country moderator",
+  "idx": "1679"
+ },
+ {
+  "id": "1759-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Descriptive country differences in effect magnitudes",
+  "idx": "1759"
+ },
+ {
+  "id": "10-H3",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Mobile effect positive only with adequate internet; positive interaction p<0.1",
+  "idx": "10"
+ },
+ {
+  "id": "45-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Threshold in DFI level; smaller marginal effect above threshold, both positive",
+  "idx": "45"
+ },
+ {
+  "id": "68-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "No income-group analysis; descriptive regional remark only",
+  "idx": "68"
+ },
+ {
+  "id": "108-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Worker age split; software sign differs by age, AI stronger for younger",
+  "idx": "108"
+ },
+ {
+  "id": "126-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "ICT composition median split; jobs and elasticities rank differently",
+  "idx": "126"
+ },
+ {
+  "id": "138-H2",
+  "moderator_type": "institutions_governance",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "ICT x IQI interaction sign differs by income group and estimator",
+  "idx": "138"
+ },
+ {
+  "id": "162-H2",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Effect rises with human capital group; subsample comparison only",
+  "idx": "162"
+ },
+ {
+  "id": "174-H3",
+  "moderator_type": "institutions_governance",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Negative AI x government size interaction; threshold model confirms",
+  "idx": "174"
+ },
+ {
+  "id": "217-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Fin dev index insignificant as control; no moderation tested",
+  "idx": "217"
+ },
+ {
+  "id": "245-H1",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Negative effect less negative in high-income; low-income insignificant; subsample estimates",
+  "idx": "245"
+ },
+ {
+  "id": "268-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Sensitivity to informality proxy choice, a robustness remark",
+  "idx": "268"
+ },
+ {
+  "id": "276-H2",
+  "moderator_type": "time_period",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Sign flips from negative pre-COVID to positive during COVID",
+  "idx": "276"
+ },
+ {
+  "id": "285-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Outlier treatment robustness check, modest change in elasticity",
+  "idx": "285"
+ },
+ {
+  "id": "321-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Regional and period differences in ICT contribution, descriptive",
+  "idx": "321"
+ },
+ {
+  "id": "341-H1",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Negative coefficient smaller in richer group; no formal test reported",
+  "idx": "341"
+ },
+ {
+  "id": "393-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "No group-specific ICT estimates reported",
+  "idx": "393"
+ },
+ {
+  "id": "408-H1",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Effect negative below human capital threshold, positive above",
+  "idx": "408"
+ },
+ {
+  "id": "422-H2",
+  "moderator_type": "financial_development",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive ICT x financial development interaction in GMM; negative at q60",
+  "idx": "422"
+ },
+ {
+  "id": "442-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": true,
+  "note": "Swamy slope heterogeneity test; no moderator analysed",
+  "idx": "442"
+ },
+ {
+  "id": "707-H1",
+  "moderator_type": "income_group",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Negative internet x high-income dummy interaction; effect larger in poorer economies",
+  "idx": "707"
+ },
+ {
+  "id": "750-H1",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Only richest country shows complementarity; no formal test",
+  "idx": "750"
+ },
+ {
+  "id": "802-H1",
+  "moderator_type": "sector_structure",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Slope differs across sectors; subsample estimates only",
+  "idx": "802"
+ },
+ {
+  "id": "803-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Same sign across countries; gender effects shrink with elastic labour supply",
+  "idx": "803"
+ },
+ {
+  "id": "879-H3",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Negative AI x FDI, positive AI x GFCF interactions; FDI sign-change threshold",
+  "idx": "879"
+ },
+ {
+  "id": "952-H2",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Threshold model: effect positive below, negative above internet threshold",
+  "idx": "952"
+ },
+ {
+  "id": "988-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Control sensitivity: adding economic freedom shrinks DESI coefficient",
+  "idx": "988"
+ },
+ {
+  "id": "1026-H2",
+  "moderator_type": "institutions_governance",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Positive squared-term interaction; group results differ in significance and turning points",
+  "idx": "1026"
+ },
+ {
+  "id": "1192-H1",
+  "moderator_type": "income_group",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Positive in developing, weakly negative in developed; Chow test rejects equality",
+  "idx": "1192"
+ },
+ {
+  "id": "1438-H1",
+  "moderator_type": "trade_openness",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive interactions of ICT with economic integration",
+  "idx": "1438"
+ },
+ {
+  "id": "1469-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "U-shaped in diffusion level; gender gap widens beyond thresholds",
+  "idx": "1469"
+ },
+ {
+  "id": "1494-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": true,
+  "note": "Regime split shows R&D effect, not moderation of digital effect",
+  "idx": "1494"
+ },
+ {
+  "id": "1596-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "No heterogeneity results reported; qualitative barriers only",
+  "idx": "1596"
+ },
+ {
+  "id": "1679-H2",
+  "moderator_type": "sector_structure",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Effects concentrated in agriculture and services, not manufacturing",
+  "idx": "1679"
+ },
+ {
+  "id": "1759-H3",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Bargaining coverage control leaves parameters unchanged and insignificant",
+  "idx": "1759"
+ },
+ {
+  "id": "10-H4",
+  "moderator_type": "financial_development",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Positive current interaction offset by negative lags",
+  "idx": "10"
+ },
+ {
+  "id": "57-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Country-by-country estimates differ in sign; no moderator",
+  "idx": "57"
+ },
+ {
+  "id": "88-H1",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Stronger in OECD subsample; results omitted",
+  "idx": "88"
+ },
+ {
+  "id": "108-H3",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Positive Spearman correlation with DESI, 16 countries, no significance",
+  "idx": "108"
+ },
+ {
+  "id": "126-H2",
+  "moderator_type": "human_capital",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Larger job gains where high-skilled share is lower; median split",
+  "idx": "126"
+ },
+ {
+  "id": "138-H3",
+  "moderator_type": "other_country_characteristic",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Similar coefficients across HDI quantiles, no gradient",
+  "idx": "138"
+ },
+ {
+  "id": "162-H3",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Regional subsamples differ in sign and significance",
+  "idx": "162"
+ },
+ {
+  "id": "174-H4",
+  "moderator_type": "institutions_governance",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Negative interaction with transparency; threshold only significant at 10%",
+  "idx": "174"
+ },
+ {
+  "id": "239-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Weaker in Central Europe via interaction; not robust to time trend",
+  "idx": "239"
+ },
+ {
+  "id": "245-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Regional subsamples: negative in EU, non-ASEAN; insignificant positive ASEAN",
+  "idx": "245"
+ },
+ {
+  "id": "268-H3",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Larger ICT effect in advanced than emerging samples",
+  "idx": "268"
+ },
+ {
+  "id": "276-H3",
+  "moderator_type": "not_a_moderator",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Differences across AI index pillars, not country moderators",
+  "idx": "276"
+ },
+ {
+  "id": "302-H1",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive ICT x tertiary enrolment interaction",
+  "idx": "302"
+ },
+ {
+  "id": "321-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Lag structure of ICT effects, not a moderator",
+  "idx": "321"
+ },
+ {
+  "id": "341-H2",
+  "moderator_type": "human_capital",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Positive interaction on concentration; negative ICT effect shrinks at high enrollment",
+  "idx": "341"
+ },
+ {
+  "id": "407-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Larger elasticity in lower-productivity CEE than Western Europe",
+  "idx": "407"
+ },
+ {
+  "id": "408-H2",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Human capital effect positive only past digital penetration threshold",
+  "idx": "408"
+ },
+ {
+  "id": "422-H3",
+  "moderator_type": "trade_openness",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Positive in GMM; quantile interactions vary, negative at q80",
+  "idx": "422"
+ },
+ {
+  "id": "535-H1",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Developed economies show about twice the AI effect",
+  "idx": "535"
+ },
+ {
+  "id": "707-H2",
+  "moderator_type": "sector_structure",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Effect largest in agrarian economies; interactions with structure categories",
+  "idx": "707"
+ },
+ {
+  "id": "750-H2",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Positive correlation with PISA scores; no significance tests",
+  "idx": "750"
+ },
+ {
+  "id": "802-H2",
+  "moderator_type": "income_group",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Wage-level country groups show proportionally similar ICT effect across deciles",
+  "idx": "802"
+ },
+ {
+  "id": "803-H3",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Not examined; sample only high-income OECD economies",
+  "idx": "803"
+ },
+ {
+  "id": "913-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Firm-size subsamples differ by outcome; small firms significant for sales",
+  "idx": "913"
+ },
+ {
+  "id": "957-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "OECD effects positive, MENA mostly null; region comparison",
+  "idx": "957"
+ },
+ {
+  "id": "1013-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": true,
+  "note": "Slope heterogeneity test rejected; no moderator tested",
+  "idx": "1013"
+ },
+ {
+  "id": "1026-H3",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "No income-group split estimated; descriptive remark only",
+  "idx": "1026"
+ },
+ {
+  "id": "1372-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "unclear",
+  "tested_formally": true,
+  "note": "Technology-level threshold flips inequality effect on poverty",
+  "idx": "1372"
+ },
+ {
+  "id": "1438-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "No moderation or thresholds examined",
+  "idx": "1438"
+ },
+ {
+  "id": "1469-H3",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Quantile regression shows little variation across outcome distribution",
+  "idx": "1469"
+ },
+ {
+  "id": "1526-H1",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Positive employment effect only in high computer-use tercile subsample",
+  "idx": "1526"
+ },
+ {
+  "id": "1645-H1",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Qualitative claim of larger effects with higher penetration; no estimates",
+  "idx": "1645"
+ },
+ {
+  "id": "1713-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Descriptive country-specific remarks, no tests",
+  "idx": "1713"
+ },
+ {
+  "id": "1798-H1",
+  "moderator_type": "institutions_governance",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Positive significant internet x governance interactions for most indicators",
+  "idx": "1798"
+ }
+]
