@@ -1,6 +1,6 @@
 # Full-text requests (short list)
 
-Only papers with no free, legal full text found are listed. 72 of 256 papers were obtained automatically (open-access copies, repository versions, preprints), and each file was checked against its title. These 26 are the ones I most need (25 chosen by priority, plus one paper whose automatic download turned out to be the wrong document). Download them with institutional access and send them back; name each file with the number in the first column, for example `878.pdf`.
+Only papers with no free, legal full text found are listed. 72 of 256 papers were obtained automatically (open-access copies, repository versions, preprints), and each file was checked against its title. These are the ones I most need (5 of the original 26 have already been received) (25 chosen by priority, plus one paper whose automatic download turned out to be the wrong document). Download them with institutional access and send them back; name each file with the number in the first column, for example `878.pdf`.
 
 If the repository is private you can push them to `review/fulltext/`; if it is public, attach them in the chat instead, because publisher PDFs should not be committed to a public repository.
 
@@ -8,11 +8,6 @@ Everything else without a free copy is **not requested**. It will be handled at 
 
 | # | Year | Title | Link | Why it matters |
 |---|---|---|---|---|
-| 878 | 2025 | Artificial Intelligence, Trade Convergence and Deglobalisation: A Cross-country Analysis | https://doi.org/10.1177/00157325251362548 | AI evidence; threshold or heterogeneity; income-level comparison; distribution or labour outcome; structural change; convergence |
-| 945 | 2026 | The skill premium across countries in the era of industrial robots and artificial intelligence | https://doi.org/10.1016/j.worlddev.2026.107538 | AI evidence; threshold or heterogeneity; income-level comparison; distribution or labour outcome |
-| 1026 | 2026 | The nonlinear link between AI and energy poverty: Empirical evidence from global data | https://doi.org/10.1016/j.jclepro.2026.148590 | AI evidence; threshold or heterogeneity; distribution or labour outcome |
-| 63 | 2023 | Labor Market Exposure to AI: Cross-country Differences and Distributional Implications | https://doi.org/10.5089/9798400254802.001 | AI evidence; income-level comparison; distribution or labour outcome |
-| 268 | 2023 | Informality and aggregate labor productivity growth: Does ICT moderate the relationship? | https://doi.org/10.1016/j.telpol.2023.102681 | threshold or heterogeneity; income-level comparison; distribution or labour outcome |
 | 276 | 2025 | Does artificial intelligence help in improving human capital based educational development? Evidence from 29 countr | https://doi.org/10.1016/j.techsoc.2025.103004 | AI evidence; income-level comparison; distribution or labour outcome |
 | 534 | 2025 | Do robots impact artificial intelligence (AI)-related employment? Evidence from a cross-national study | https://doi.org/10.1108/ijm-04-2024-0277 | AI evidence; threshold or heterogeneity; income-level comparison; distribution or labour outcome |
 | 174 | 2025 | Artificial intelligence and global carbon inequality: Addressing the challenges and opportunities for SDG 10, SDG 1 | https://doi.org/10.1016/j.gsf.2025.102072 | AI evidence; threshold or heterogeneity; distribution or labour outcome |

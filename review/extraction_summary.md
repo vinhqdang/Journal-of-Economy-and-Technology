@@ -1,12 +1,12 @@
 # Preliminary extraction summary (machine-extracted, not yet human-verified)
 
-**Read this first.** These records were extracted from the 71 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **73% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 71 of 256 sent to full-text assessment have been read; the other 185 are either requested from the author (25) or at abstract level only.
+**Read this first.** These records were extracted from the 77 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **72% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 76 of 256 papers sent to full-text assessment have been read.
 
-## Full-text assessment outcome (n = 71 read)
+## Full-text assessment outcome (n = 76 read)
 
-- Included: 45  |  excluded: 26  |  wrong document retrieved: 1 (idx 242, to be re-retrieved)
-- Reasons for exclusion: E1 8, E2 2, E4 16 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
-- Post-merge adjustments: 242 wrong document; 881 include->exclude E4; 618 E2->E1
+- Included: 48  |  excluded: 27  |  context only: 1  |  wrong document retrieved: 1 (to be re-retrieved)
+- Reasons for exclusion: E1 8, E2 2, E4 17 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
+- Post-merge adjustments are listed with reasons in `data/adjustments.json`.
 - About a third of the papers that looked eligible on the abstract failed at full text. The same attrition should be expected for the papers not yet read.
 
 ## Included studies
@@ -21,6 +21,7 @@
 | 162 | 2024 | H | internet; mobile telephony | 136 | 2000-2020 | serious | ok |
 | 239 | 2018 | H | ICT in general | 19 (stated in text | 1996-2007 for wi | serious | ok |
 | 245 | 2023 | H | ICT in general | 40 | 2006-2021 | serious | needs human check |
+| 268 | 2023 | H | ICT in general; internet | 118 | 1997-2017 (11 co | serious | ok |
 | 298 | 2005 | H | ICT in general | 23 in Table 1 (8 C | 1993/1995-2001 | serious | ok |
 | 302 | 2013 | H | ICT in general | 24 | 2000-2010 per te | serious | needs human check |
 | 320 | 2022 | H | internet; mobile telephony | 20 | 2005-2020 (16 ye | serious | needs human check |
@@ -36,11 +37,13 @@
 | 750 | 2025 | AI | artificial intelligence | not reported (Tabl | 2015-2020 (Brune | serious | needs human check |
 | 802 | 2015 | H | ICT in general | 22 (19 in the wage | 2011-2012 (singl | serious | ok |
 | 803 | 2020 | H | ICT capital | 11 | 1980-2005 (EU KL | moderate | ok |
+| 878 | 2025 | AI | artificial intelligence | 28 | 2020-2023 for re | serious | ok |
 | 913 | 2026 | AI | artificial intelligence | 10 | 2007-2024 (World | critical | ok |
 | 957 | 2024 | H | internet; mobile telephony | 32 (18 OECD + 14 M | 2010-2023 (annua | serious | ok |
 | 988 | 2023 | H | ICT in general | 27 EU member state | 2017-2022 | serious | needs human check |
 | 1013 | 2025 | AI | artificial intelligence | 8 | 2012-2023 | serious | needs human check |
 | 1025 | 2005 | H | ICT capital | 15 (stated in text | 1980-1995 | serious | ok |
+| 1026 | 2026 | AI | artificial intelligence | 64 | 2000-2019 (1,280 | serious | needs human check |
 | 1031 | 2025 | H | ICT in general; mobile telephony | 26 | 1992-2023 (balan | serious | needs human check |
 | 1372 | 2024 | H | internet | 57 (stated); regre | 2012-2016 (unbal | serious | ok |
 | 1419 | 2017 | H | mobile telephony / mobile banking | 93 stated (effecti | cross-section: m | serious | ok |
@@ -65,34 +68,34 @@ Counts of reported results (a paper can contribute several), not of papers, and 
 
 | Family | Positive | Mixed | Null | Negative |
 |---|---|---|---|---|
-| 1. Output and productivity | 47 | 24 | 21 | 7 |
-| 2. Structural change | 5 | 0 | 5 | 5 |
+| 1. Output and productivity | 50 | 26 | 24 | 10 |
+| 2. Structural change | 12 | 0 | 6 | 6 |
 | 3. Labour market | 29 | 8 | 10 | 13 |
-| 4. Poverty and distribution | 6 | 3 | 4 | 11 |
-| 5. Living standards beyond income | 17 | 4 | 6 | 2 |
-| 6. Resource cost | 5 | 1 | 0 | 0 |
+| 4. Poverty and distribution | 6 | 4 | 4 | 11 |
+| 5. Living standards beyond income | 17 | 6 | 6 | 3 |
+| 6. Resource cost | 5 | 2 | 0 | 1 |
 
 ## Risk of bias (adapted ROBINS-I-style tool, 6 domains)
 
 | Domain | Low | Moderate | Serious | Critical |
 |---|---|---|---|---|
-| confounding reverse causation | 0 | 8 | 31 | 6 |
-| exposure measurement | 3 | 31 | 9 | 2 |
-| selection of countries years | 1 | 27 | 16 | 1 |
-| outcome measurement | 10 | 27 | 7 | 1 |
-| specification and researcher degrees of freedom | 0 | 20 | 23 | 2 |
-| selective reporting | 5 | 26 | 11 | 3 |
+| confounding reverse causation | 0 | 9 | 33 | 6 |
+| exposure measurement | 3 | 32 | 11 | 2 |
+| selection of countries years | 1 | 29 | 17 | 1 |
+| outcome measurement | 10 | 30 | 7 | 1 |
+| specification and researcher degrees of freedom | 0 | 21 | 25 | 2 |
+| selective reporting | 5 | 29 | 11 | 3 |
 
-Overall: low 0, moderate 6, serious 31, critical 8. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
+Overall: low 0, moderate 6, serious 34, critical 8. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
 
-Venue check: 29 of 45 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
+Venue check: 29 of 48 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
 
 ## Heterogeneity reported
 
-Moderators examined (counts of findings): other 41, income group 13, human capital 12, sector structure 8, institutions 8, infrastructure 6.
+Moderators examined (counts of findings): other 43, income group 16, human capital 13, institutions 9, sector structure 8, infrastructure 7.
 
-20 of 45 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
+22 of 48 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
 
 ## Papers flagged for human check
 
-Quotes could not be fully matched for: 68, 126, 245, 302, 320, 323, 358, 393, 750, 988, 1013, 1031, 1438, 1526, 1670. Borderline eligibility: 1495 (number of economies not reported, exposure borderline), 913 (exposure is an innovation index labelled AI, rated critical on exposure measurement).
+Quotes could not be fully matched for: 68, 126, 245, 302, 320, 323, 358, 393, 750, 988, 1013, 1026, 1031, 1438, 1526, 1670. Borderline eligibility: 1495, 913, 878, 1026 (number of economies or exposure or outcome family does not clearly meet the criteria; a human decision is needed).

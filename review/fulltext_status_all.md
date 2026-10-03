@@ -12,7 +12,7 @@
 | 45 | 2024 | Financial inclusion through digitalization and economic growth in Asia-Pacific countries | included for assessment | abstract level only |
 | 53 | 2024 | The impact of digital literacy and technology adoption on financial inclusion in Africa, Asia, and L | included for assessment | abstract level only |
 | 57 | 2020 | Nexus between energy consumption, information and communications technology, and economic growth: An | included for assessment | requested from author |
-| 63 | 2023 | Labor Market Exposure to AI: Cross-country Differences and Distributional Implications | included for assessment | requested from author |
+| 63 | 2023 | Labor Market Exposure to AI: Cross-country Differences and Distributional Implications | included for assessment | provided by author |
 | 67 | 2020 | How does the digital economy and society index (DESI) affect labor market indicators in EU countries | included for assessment | abstract level only |
 | 68 | 2022 | Enhancing human development in developing regions: Do ICT and transport infrastructure matter? | included for assessment | retrieved |
 | 71 | 2022 | The ICT, financial development, energy consumption and economic growth nexus in MENA countries: dyna | included for assessment | abstract level only |
@@ -41,7 +41,7 @@
 | 245 | 2023 | The impact of the digital economy on green total factor productivity in Belt and Road countries: the | included for assessment | retrieved |
 | 260 | 2025 | Promoting Economic Development Through Digitalisation: Impacts on Human Development, Economic Comple | included for assessment | retrieved |
 | 261 | 2019 | ICT and transport infrastructure development: an empirical analysis of complementarity | included for assessment | abstract level only |
-| 268 | 2023 | Informality and aggregate labor productivity growth: Does ICT moderate the relationship? | included for assessment | requested from author |
+| 268 | 2023 | Informality and aggregate labor productivity growth: Does ICT moderate the relationship? | included for assessment | provided by author |
 | 269 | 2024 | Economic growth and the proliferation of ICT infrastructures: which causes the other? | included for assessment | abstract level only |
 | 270 | 2012 | Information-communication technology impact on labor productivity growth of EU developing countries | included for assessment | abstract level only |
 | 276 | 2025 | Does artificial intelligence help in improving human capital based educational development? Evidence | included for assessment | requested from author |
@@ -113,7 +113,7 @@
 | 803 | 2020 | The Race between Technological Progress and Female Advancement: Changes in Gender and Skill Premia i | included for assessment | retrieved |
 | 829 | 2026 | Cryptocurrency Adoption and Financial Resilience: A Worldwide Fractional Probit Analysis and Institu | included for assessment | abstract level only |
 | 831 | 2026 | Innovation capability moderates the association between AI readiness and sustainable development in  | included for assessment | abstract level only |
-| 878 | 2025 | Artificial Intelligence, Trade Convergence and Deglobalisation: A Cross-country Analysis | included for assessment | requested from author |
+| 878 | 2025 | Artificial Intelligence, Trade Convergence and Deglobalisation: A Cross-country Analysis | included for assessment | provided by author |
 | 879 | 2026 | AI capability and labor productivity in low- and middle-income countries: An absorptive capacity app | included for assessment | requested from author |
 | 881 | 2026 | ARTIFICIAL INTELLIGENCE ADOPTION IN EMERGING ECONOMIES: IMPACTS ON PRODUCTIVITY AND EMPLOYMENT | included for assessment | retrieved |
 | 882 | 2026 | Artificial Intelligence Readiness and Productive Capacity in Africa: A Cross‐Country Empirical Analy | included for assessment | abstract level only |
@@ -129,7 +129,7 @@
 | 931 | 2019 | ICT Capital-Skill Complementarity and Wage Inequality: Evidence from Fourteen OECD Countries | included for assessment | abstract level only |
 | 932 | 2026 | Does the timing of AI exposure matter? Generational composition, human capital, and productivity | included for assessment | abstract level only |
 | 943 | 2025 | THE ROLE OF ICT DEVELOPMENT IN PROMOTING ASEAN REGIONAL ECONOMIC CONVERGENCE | included for assessment | retrieved |
-| 945 | 2026 | The skill premium across countries in the era of industrial robots and artificial intelligence | included for assessment | requested from author |
+| 945 | 2026 | The skill premium across countries in the era of industrial robots and artificial intelligence | included for assessment | provided by author |
 | 947 | 2016 | Labour Productivity, ICT and Complementary Factors in the CEE Region | included for assessment | abstract level only |
 | 948 | 2022 | CAUSAL LINKS BETWEEN ICT, HDI, AND ECONOMIC GROWTH: EVIDENCE FROM MENA | included for assessment | abstract level only |
 | 952 | 2026 | Twin Transition and Labor Informality in Asia-Pacific: Threshold Effects and Income-Group Heterogene | included for assessment | requested from author |
@@ -142,7 +142,7 @@
 | 1013 | 2025 | The Effect of Artificial Intelligence Investments on Economıc Development: Panel Data Analysis | included for assessment | retrieved |
 | 1014 | 2026 | Technology, Labor Markets, and Inequality across the Development Spectrum: Reviewing the Evidence | review (citation search) | abstract level only |
 | 1025 | 2005 | Testing the impact of ICT in developed countries during 1980-1995: distributional analysis in Solow’ | included for assessment | retrieved |
-| 1026 | 2026 | The nonlinear link between AI and energy poverty: Empirical evidence from global data | included for assessment | requested from author |
+| 1026 | 2026 | The nonlinear link between AI and energy poverty: Empirical evidence from global data | included for assessment | provided by author |
 | 1031 | 2025 | Exploring the Moderating impact of ICT Infrastructure on Trade Openness-Sectoral Growth Nexus in Sub | included for assessment | retrieved |
 | 1090 | 2025 | Driving Industrial Growth through Digitalization: Insights from CEE Countries | included for assessment | requested from author |
 | 1105 | 2025 | Assessing the Impact of Digitalization on Economic Convergence in the Context of Sustainable Develop | included for assessment | retrieved |

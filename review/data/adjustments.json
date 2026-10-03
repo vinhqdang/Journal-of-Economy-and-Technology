@@ -1,0 +1,6 @@
+{
+ "242": {"decision": "not_assessed", "reason": "wrong document retrieved", "note": "The retrieved file is the EU KLEMS 2019 methodology report, not this paper. Needs re-retrieval."},
+ "618": {"decision": "exclude", "reason": "E1", "note": "Study of China and Malaysia only (2 economies). Reclassified from E2 after merge."},
+ "881": {"decision": "exclude", "reason": "E4", "note": "No estimates reported, so there is no own estimation. Reclassified from include after merge."},
+ "63": {"decision": "context", "reason": "none", "note": "Maps AI occupational exposure descriptively and estimates no outcome from the six families. Moved from include to context after merge."}
+}
