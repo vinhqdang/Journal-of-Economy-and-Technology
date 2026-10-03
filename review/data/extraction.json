@@ -176,6 +176,168 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "29",
+  "title": "The Internet of Things and economic growth in a panel of countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel regression of TFP growth on cellular IoT connections per inhabitant (an ICT/mobile-connectivity exposure) for 82 economies, 2010-2017, with an OECD vs non-OECD split; outcome is productivity (family 1). A second, simulation-based growth-accounting projection is an add-on and not the basis for inclusion.",
+  "stream": "H",
+  "technology": [
+   "Internet of Things (licensed cellular IoT / M2M connections)",
+   "mobile broadband (control)",
+   "ICT in general (framing)"
+  ],
+  "exposure_measure": "Change in log of licensed cellular IoT connections per inhabitant (GSMA Wireless Intelligence), used as a proxy for the intensity of IoT investment; mobile broadband connections per inhabitant included as a control. No official IoT investment data exist.",
+  "sample": {
+   "n_economies": "82",
+   "economies_or_groups": "36 OECD and 46 non-OECD countries (Table 2); 8 extreme-outlier countries dropped (Kuwait, Moldova, Kyrgyzstan, Syria, Trinidad and Tobago, Venezuela, Yemen, Zimbabwe)",
+   "income_groups_covered": "mixed (OECD high-income plus non-OECD countries ranging from low income such as Malawi, Uganda, Tanzania to high income such as Singapore, Qatar); no World Bank income-group split, only OECD vs non-OECD",
+   "years": "2010-2017 (574 country-year observations in first differences; 410 in three-year differences)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "OLS in first differences (and three-year differences) with year dummies and cluster-robust standard errors; robustness with Stata rreg robust regression and within-group fixed-effects levels regression",
+   "identification": "none",
+   "key_controls_fixed_effects": "Change in log capital services, change in log labour services (composition-adjusted), change in log mobile broadband per inhabitant, year dummies; first differencing removes country fixed effects"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "TFP growth (change in ln TFP), first differences, IoT only",
+    "direction": "positive",
+    "estimate": "0.026 (coefficient on change in ln IoT connections per inhabitant)",
+    "uncertainty": "SE 0.010, significant at 5%; N=574",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 column 1, p.270: '0.026** (0.010)'"
+   },
+   {
+    "family": 1,
+    "indicator": "TFP growth, first differences, with mobile broadband control (headline specification)",
+    "direction": "positive",
+    "estimate": "0.023; a 10 percentage point rise in IoT-connection growth per inhabitant is associated with 0.23 percentage point higher TFP growth",
+    "uncertainty": "SE 0.009, significant at 5%; R2 0.19; N=574",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 column 2 and Section 5.3, p.269: 'a 10 percentage points (pp) increase in the growth of IoT connections per inhabitant is associated with 0.23 pp growth in TFP'"
+   },
+   {
+    "family": 1,
+    "indicator": "TFP growth, three-year differences",
+    "direction": "positive",
+    "estimate": "0.036 (without MBB) and 0.031 (with MBB)",
+    "uncertainty": "SE 0.015 and 0.014, both significant at 5%; N=410",
+    "horizon": "medium",
+    "evidence": "Table 4 columns 3-4, p.270: '0.036** (0.015)', '0.031** (0.014)'"
+   },
+   {
+    "family": 1,
+    "indicator": "TFP growth, OECD subsample, first differences",
+    "direction": "positive",
+    "estimate": "0.021 (no MBB) and 0.017 (with MBB)",
+    "uncertainty": "SE 0.011 and 0.010, significant at 10% only; N=252",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.270: '0.021* (0.011)', '0.017* (0.010)'"
+   },
+   {
+    "family": 1,
+    "indicator": "TFP growth, non-OECD subsample, first differences",
+    "direction": "positive",
+    "estimate": "0.023 (both specifications)",
+    "uncertainty": "SE 0.012, significant at 10% only; N=322",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.270: '0.023* (0.012)'"
+   },
+   {
+    "family": 1,
+    "indicator": "TFP growth, full sample when extreme-outlier countries are retained",
+    "direction": "null",
+    "estimate": "not reported",
+    "uncertainty": "stated only as 'insignificant'; coefficients not shown",
+    "horizon": "contemporaneous",
+    "evidence": "Footnote 15, p.276: 'If these extreme outliers are not excluded, the IoT per inhabitant variable is insigniﬁcant in our regressions'"
+   },
+   {
+    "family": 1,
+    "indicator": "TFP growth, robust regression (rreg) retaining outliers with down-weighting",
+    "direction": "positive",
+    "estimate": "0.03 (IoT only) and 0.02 (with MBB), first differences; 0.04 and 0.03 in three-year differences; N=630 and 450",
+    "uncertainty": "SE 0.004 / 0.004 / 0.005 / 0.005, significant at 1%",
+    "horizon": "contemporaneous",
+    "evidence": "Appendix D1, Table A3, p.281: '0.03*** (0.004)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Projected IoT contribution to growth (growth accounting simulation, 2018-2030, EU-13)",
+    "direction": "positive",
+    "estimate": "0.99% pa including spillovers (0.19% pa direct capital contribution); range 0.013% to 1.74% pa across assumptions",
+    "uncertainty": "not reported (scenario analysis, no sampling uncertainty)",
+    "horizon": "long",
+    "evidence": "Table 6, p.273: 'IDC estimate... 0.19% (0.99%)'; Section 6.4. This is a calibration/simulation using assumed parameters, not an estimate"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "OECD and non-OECD IoT coefficients are similar in size (0.017-0.021 vs 0.023) and both significant only at 10%; no formal test of difference reported. Authors attribute lower significance to smaller samples.",
+    "threshold_value": "none",
+    "evidence": "Table 5 and text p.269: 'The IoT coeﬃcient is similar and is signiﬁcant at the 10 percent level for both'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Longer (three-year) differences give larger coefficients (0.031-0.036 vs 0.023-0.026); equality with the one-year coefficients rejected at 1% in a sureg test. Authors suggest lagged effects or reduced measurement error.",
+    "threshold_value": "none",
+    "evidence": "Section 5.3, p.269 and footnote 17: 'positive and signiﬁcant at the 5 percent level, but with larger coeﬃcients'"
+   }
+  ],
+  "income_group_results": {
+   "high": "OECD group (mostly high-income): 0.021* (no MBB), 0.017* (with MBB), N=252; significant at 10% only. No World Bank income-group split.",
+   "upper_middle": "not reported separately (included in non-OECD group)",
+   "lower_middle": "not reported separately (included in non-OECD group)",
+   "low": "not reported separately (included in non-OECD group)"
+  },
+  "n_specifications_reported": "about 20 coefficient sets across main tables (Tables 4, 5), appendix tables (A1-A4) and an unreported fixed-effects levels regression (results 'available upon request')",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "OLS in first differences with no instrument and no GMM; authors say they could not find an instrument and lagging does not fix endogeneity. Countries with faster TFP growth may adopt IoT faster. Footnote 5 simply assumes the direction of causality. Causal-sounding 'contribution' calculations (e.g. $592 billion) are drawn from the coefficient. Authors themselves call the estimate an upper bound and possibly biased upward by early-year effects.",
+    "evidence": "Section 5.1, p.268: 'we have been unable to ﬁnd any suitable instrument for IoT connections'; footnote 5, p.275; Conclusions p.275"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Exposure is licensed cellular IoT connections per inhabitant from industry data (GSMA), not IoT investment or capital; excludes WiFi-based IoT; normalised by population rather than by business capital; the authors note that connections include non-business uses. Connection counts are concentrated in a few markets (China 61% of world connections in 2018). Short, rapidly growing series.",
+    "evidence": "Section 5.1 p.267; footnote 3 p.275; footnote 7 p.275: 'data on IoT connections based on WiFi were not available'; p.270 discussion of connections vs devices"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Eight countries removed as extreme TFP-growth outliers (Syria, Venezuela, Yemen, Zimbabwe and others), and the paper says the IoT coefficient is insignificant if they are retained. Sample is limited to countries covered by both TED and GSMA, 2010-2017, so it is tilted to richer and larger economies. The outlier rule (3 IQR) is stated.",
+    "evidence": "Footnote 15, p.276; Section 5.3, p.268-269: 'After removing extreme outliers from our sample, we ﬁnd a signiﬁcant correlation'"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "TFP growth is a residual from the Conference Board Total Economy Database using composition-adjusted labour and capital services; measurement error in TFP for developing economies is likely, and the TFP residual can reflect output measurement problems. Authors note measurement error may be attenuated using longer differences.",
+    "evidence": "Section 5.2, p.268: 'country data on growth in TFP and capital and labor services are from the Total Economy Database (2018)'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Many specifications (first and three-year differences, with and without MBB, OECD split, alternative labour measures, robust regression, FE levels). Significant results depend on a data-driven outlier exclusion and are mostly significant only at 5% or 10%. Labour and capital services coefficients are negative and significant, which is unexpected and suggests the TFP construction interacts with the regressors. The preferred specification is not pre-specified.",
+    "evidence": "Tables 4, 5, A1-A4; footnote 15 and p.269; negative labour coefficient '-0.19**' in Table 4"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Fixed-effects levels results are described but not shown ('available upon request'); the no-outlier-exclusion regression is described as insignificant but the coefficients are not shown. On the other hand, the paper reports one-year, three-year, subsample and robust-regression results and flags its own caveats and upper-bound status.",
+    "evidence": "Footnote 38, p.276: 'Results are available upon request'; footnote 15, p.276"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Two parts: (1) the econometric analysis, which is the basis for inclusion, and (2) a growth-accounting simulation for 14 OECD countries (US plus EU-13), a calibration exercise with assumed parameters that does not count as estimation; the 0.99% pa figure depends on an assumed IoT investment starting value (IDC estimate vs Ericsson-implied 3% of CT investment gives a 75-fold range, 0.013% to 0.99%) and on an imported spillover multiplier of 4.1 from the authors' earlier work. Do not mix the 0.99% simulation figure with the regression estimates. Conflict of interest: first author is employed by Ericsson AB, which co-funded the project and has a commercial interest in ICT; disclosed in the Disclosure statement and Acknowledgements (p.277). Authors describe results as an 'association' and 'upper bound', though they also convert the coefficient into dollar 'contributions'. Footnote 2 and the introduction give different dollar conversions ($197 billion for 0.23 pp, $592 billion for 0.69 pp). The paper states that IoT 'is an innovational complementarity to ICT', so it is treated as an ICT/mobile-connectivity exposure for eligibility. Sample count of non-OECD observations differs between Table 5 (322) and rreg Table A4 (378) because rreg retains outlier observations; total obs 630 in Table A3 implies about 90 countries. No instructions embedded in the text were found.",
+  "quote_check": {
+   "verified": 9,
+   "checked": 10
+  },
+  "quote_flag": "ok"
+ },
+ {
   "idx": "57",
   "title": "Nexus between energy consumption, information and communications technology, and economic growth: An enquiry into emerging Asian countries",
   "fulltext_decision": "include",
@@ -1603,6 +1765,148 @@
   "quote_check": {
    "verified": 3,
    "checked": 13
+  },
+  "quote_flag": "needs human check"
+ },
+ {
+  "idx": "217",
+  "title": "Does digital financial inclusion moderate or exacerbate output volatility?",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of about 40 EMDEs (2009-2017) using mobile money usage (mobile-telephony-based digital finance) as exposure and output volatility as outcome (family 1). Meets sample size (>=10 economies) and own estimation. Exposure is mobile-money, a narrow proxy within mobile telephony; judged eligible but borderline on exposure scope.",
+  "stream": "H",
+  "technology": [
+   "mobile telephony (mobile money / digital financial inclusion)"
+  ],
+  "exposure_measure": "IMF Financial Access Survey: MM1 = number of mobile money transactions per 1,000 adults (access); MM2 = active mobile money accounts (usage); alternative normalisations (value of transactions, accounts per population) mentioned in footnote 2 only.",
+  "sample": {
+   "n_economies": "about 40 (38 in baseline FE with MM1; 26 with MM2; 32 and 24 in system-GMM)",
+   "economies_or_groups": "Selected emerging market and developing economies (EMDEs); country list not reported in text; selection based on availability of digital financial inclusion data",
+   "income_groups_covered": "not reported (EMDEs, mixed)",
+   "years": "2009-2017",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Two-way fixed effects (country and year) with robust SEs; Blundell-Bond system GMM with lagged dependent variable as robustness; split-sample FE by median banking concentration",
+   "identification": "other",
+   "key_controls_fixed_effects": "Country and year FE; covariates lagged one year: ln GDP per capita, inflation, change in government expenditure, trade openness, terms of trade, financial openness, REER volatility, credit volatility, VIX; bank concentration (top-3 bank asset share) in extended models. Outcome: 3-year rolling SD of GDP per capita growth."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Output volatility (3-yr rolling SD of GDP per capita growth) vs MM1 mobile money transactions per 1,000 adults, two-way FE",
+    "direction": "positive",
+    "estimate": "0.119 (MM1 coefficient)",
+    "uncertainty": "SE 0.0442, p<0.05; N=158, 38 countries",
+    "horizon": "contemporaneous",
+    "evidence": "Table 1 col (3), p.1806: 'MM1 0.119** (0.0442)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Output volatility vs MM2 active mobile money accounts, two-way FE",
+    "direction": "positive",
+    "estimate": "0.318 (MM2 coefficient)",
+    "uncertainty": "SE 0.135, p<0.05; N=100, 26 countries",
+    "horizon": "contemporaneous",
+    "evidence": "Table 1 col (4), p.1806: 'MM2 0.318** (0.135)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Output volatility vs MM1, system-GMM",
+    "direction": "positive",
+    "estimate": "0.177",
+    "uncertainty": "SE 0.0809, p<0.05; N=120, 32 countries",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 col (1), p.1806: 'MM1 0.177** (0.0809)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Output volatility vs MM2, system-GMM",
+    "direction": "positive",
+    "estimate": "0.582",
+    "uncertainty": "SE 0.211, p<0.01; N=75, 24 countries",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 col (2), p.1806: 'MM2 0.582*** (0.211)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Output volatility vs MM1 in low-concentration banking sample",
+    "direction": "positive",
+    "estimate": "0.139 (MM1, low concentration); MM2 0.448",
+    "uncertainty": "SE 0.0651 (p<0.05) for MM1; SE 0.192 (p<0.05) for MM2; N=109 and 61",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 cols (3) and (6), p.1807"
+   },
+   {
+    "family": 1,
+    "indicator": "Output volatility vs MM1/MM2 in high-concentration banking sample",
+    "direction": "mixed",
+    "estimate": "MM1 -0.109 (marginally negative); MM2 -0.150 (not significant)",
+    "uncertainty": "MM1 SE 0.0628, p<0.1; MM2 SE 0.238, insignificant; N=47 and 38",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 cols (2) and (5), p.1807"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Banking concentration: positive effect on volatility only in countries below median concentration (60% top-3 bank asset share); in high-concentration countries MM1 effect is small negative (p<0.1) and MM2 insignificant. Sample split, not an interaction term.",
+    "threshold_value": "60% (median bank concentration)",
+    "evidence": "Table 3 and text p.1808: 'consistent and significant only for the low concentration sample'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Fin. development index does not substitute for digital financial inclusion (Fin Dev index insignificant in Table 4 specifications); no moderation by income group tested.",
+    "threshold_value": "none",
+    "evidence": "Table 4, p.1808: 'Fin Dev Index 1.546 (4.567)'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 16 columns across Tables 1-4 (plus unreported robustness in footnotes)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal-sounding language ('exacerbates', 'amplifies'). Only strategy is one-year lags of covariates (note the digital finance variable itself appears in Table 1 unlagged: 'MM1' not 't-1'), country and year FE, and a system-GMM with a 120/75-observation sample and no reported instrument diagnostics (AR tests, Hansen). Short panel of 9 years; reverse causation (volatile economies adopting mobile money) not addressed.",
+    "evidence": "Section II p.1805; Tables 1-2 p.1806"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mobile money transactions and active accounts are direct but narrow measures of digital financial inclusion; they capture a mobile-money-specific channel, not mobile or internet adoption generally. Levels not scaled consistently (MM2 is accounts, not normalised in main tables); well-known to be dominated by a few countries such as Kenya.",
+    "evidence": "Section II p.1805; Table 1 footnote p.1806"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Sample chosen 'solely on consistent availability' of mobile money data; unbalanced and small (26-38 countries, 100-158 obs); country list not reported; sample size varies across columns, and countries with mobile money data are likely selected on mobile money activity.",
+    "evidence": "Section II p.1805: 'based solely on consistent availability of panel data'; Tables 1-3 observations"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "3-year rolling SD of GDP per capita growth over 2009-2017 induces overlapping windows and mechanical serial correlation in a short panel; standard in literature but noisy.",
+    "evidence": "Section II p.1805: 'three-year rolling standard deviation of growth rate of GDP per capita'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Sample split at the median concentration is post hoc ('we conjecture'), quadratic concentration term mentioned but not shown, alternative measures only in footnote, column numbering in Table 1 skips (2). Controls appear to include lagged levels and VIX with differing coefficient magnitudes across columns (VIX 4.4 vs 0.40), suggesting scale or sample instability.",
+    "evidence": "Section III p.1807; footnotes 2 and 3; Table 1 header '(1) (3) (4)'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Several key robustness results are reported as 'not shown' or 'available on request' (quadratic concentration term) or only in a footnote. Headline emphasis on significant results; some conflicting results (insignificant MM2 in high concentration; wrong sign of concentration) are reported, though.",
+    "evidence": "Footnote 2 and footnote 3, p.1806-1807"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Short letter (Applied Economics Letters, 6 pages). Sample list of countries not given. Table 1 has no column (2); text says 'Column (1) before introducing proxies in columns (2-3)' but table shows (1), (3), (4). System-GMM text claims lagged dependent coefficient 'close to zero' whereas Table 2 shows 0.346 and 0.194 (inconsistency). Abstract says result 'persistently' amplifies volatility but no long-horizon or dynamic analysis is reported. Outcome is volatility, treated as family 1 (output); negative-for-stability finding implies a payoff cost. No instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 8
   },
   "quote_flag": "needs human check"
  },
@@ -5549,6 +5853,173 @@
    "checked": 13
   },
   "quote_flag": "ok"
+ },
+ {
+  "idx": "879",
+  "title": "AI capability and labor productivity in low- and middle-income countries: An absorptive capacity approach",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of 63 low- and lower-middle-income economies (2005-2019) estimating the association of a PCA-based AI capability index (AI-related hardware imports plus digital/financial/electricity readiness) with labour productivity. Meets AI sample threshold (>=3 economies) and outcome family 1; the AI exposure is a loose proxy, which is handled in risk of bias rather than eligibility.",
+  "stream": "both",
+  "technology": [
+   "artificial intelligence (AI-related hardware imports, capability index)",
+   "ICT in general (internet use, fixed broadband, mobile cellular subscriptions as index components)"
+  ],
+  "exposure_measure": "National 'AI Capability Index' = first principal component (PCA, standardised) of six variables: annual (flow) or 3-year cumulative (stock) per-capita AI-related hardware imports (23 HS 6-digit categories from CEPII BACI, selected using UNCTAD ICT goods list, expert judgement and ChatGPT), plus internet users (% pop), fixed broadband per 100, mobile cellular per 100, electricity access (%), and account ownership (%). Five of six components are general ICT/infrastructure/finance indicators. Alternative interaction specification uses log AI imports per capita x a PCA Domestic Readiness Index; a narrow index uses only GPU/TPU/FPGA/ASIC/memory HS codes.",
+  "sample": {
+   "n_economies": "63",
+   "economies_or_groups": "Low- and middle-income countries; initial panel of 80 LMICs, effective sample 63 with complete data; country list not given in the main text. Heterogeneity analysis only splits low-income vs lower-middle-income.",
+   "income_groups_covered": "low and lower-middle (the income dummy is LMI=1, low-income=0); upper-middle inclusion unclear",
+   "years": "2005-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pooled OLS, random effects, two-way fixed effects (preferred; country-clustered robust SEs); interaction FE models; two-step system GMM (xtabond2, Windmeijer-corrected, collapsed instruments, 30-35 instruments); FE with regressors lagged 1-6 years.",
+   "identification": "other",
+   "key_controls_fixed_effects": "Country and year FE; controls: gross fixed capital formation, human capital index, population growth, strength of legal rights index, R&D % GDP, FDI % GDP, trade % GDP. GMM treats lagged productivity and the AI index as endogenous using own lags. Authors explicitly say estimates are associations, not causal."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Log labour productivity (GDP constant 2015 US$ per worker); TWFE, flow-based AI Capability Index (per 1 SD)",
+    "direction": "positive",
+    "estimate": "0.0920 log points (about 9.2%) per 1 SD; pooled OLS 0.450, RE 0.115",
+    "uncertainty": "robust t = 5.771, p<0.01, N=871, 63 countries",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.10: 'AI Capability Index (Flow-based) 0.450*** 0.115*** 0.0920***'; abstract: '9.20-9.37% increase in labor productivity'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log labour productivity; TWFE, stock-based AI Capability Index (per 1 SD)",
+    "direction": "positive",
+    "estimate": "0.0937 log points (about 9.4%) per 1 SD; pooled OLS 0.449, RE 0.118",
+    "uncertainty": "robust t = 5.920, p<0.01, N=871",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.10: 'AI Capability Index (Stock-based) 0.449*** 0.118*** 0.0937***'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log labour productivity; AI-related hardware imports x domestic readiness interaction (TWFE, broad flow measure)",
+    "direction": "positive",
+    "estimate": "Log AI imports per capita 0.0497; interaction with Readiness Index 0.0108",
+    "uncertainty": "t = 3.100 (imports), t = 2.106 (interaction), p<0.05 for interaction; narrow measure interaction 0.00952, t=1.812 (p<0.1)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.11, columns (2) and (4); text p.11: 'interaction coefficient is positive and significant at the 5% level for broad AI imports and at the 10% level for narrow'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log labour productivity; AI imports x readiness, stock-based",
+    "direction": "mixed",
+    "estimate": "Interaction 0.00986 (broad stock, t=1.736, p<0.1); narrow stock interaction 0.00901 (t not significant, 1.386)",
+    "uncertainty": "see estimate; narrow stock interaction not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.12, columns (2) and (4); text: 'it is not statistically significant for the narrow stock-based measure'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log labour productivity; system GMM with lagged AI Capability Index (flow-based)",
+    "direction": "positive",
+    "estimate": "0.0681 to 0.0716 (spec 6 = 0.0681); lagged dependent variable about 0.91-0.93",
+    "uncertainty": "z = 1.971 in fullest spec (p<0.05); AR(2) p=0.250, Hansen p=0.179; N=810, 35 instruments",
+    "horizon": "medium",
+    "evidence": "Table 11, p.15: 'L.AI Capability Index (Flow-based) ... 0.0681**' (column 6)"
+   },
+   {
+    "family": 1,
+    "indicator": "Log labour productivity; system GMM with lagged AI Capability Index (stock-based)",
+    "direction": "positive",
+    "estimate": "0.0655 in fullest spec (range 0.0655-0.0733)",
+    "uncertainty": "z = 1.810 (p<0.1) in fullest spec; AR(2) p=0.214, Hansen p=0.140",
+    "horizon": "medium",
+    "evidence": "Table 12, p.16: 'L.AI Capability Index (Stock-based) ... 0.0655*' (column 6)"
+   },
+   {
+    "family": 1,
+    "indicator": "Log labour productivity; FE with AI Capability Index (flow-based) lagged 1 to 6 years",
+    "direction": "positive",
+    "estimate": "0.0885 (lag 1), 0.0804 (lag 2), 0.0623 (lag 3), 0.0540 (lag 4), 0.0489 (lag 5), 0.0526 (lag 6)",
+    "uncertainty": "t = 5.423 (lag 1) to 3.821 (lag 6); all p<0.01; N falls from 810 to 503",
+    "horizon": "long",
+    "evidence": "Table 13, p.16; text: 'remains positive and highly statistically significant across all lags from one to six years'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log labour productivity; narrow AI-hardware-only index (flow and stock), TWFE",
+    "direction": "positive",
+    "estimate": "0.0859 (flow, spec 6) and 0.0859 (stock, spec 6)",
+    "uncertainty": "t = 6.091 and 5.827; p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Tables D.5 and D.6, Appendix D, pp.23-24: 'AI Capability Index ... 0.0859***'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Interaction of AI index with lower-middle-income dummy (vs low-income) is small and insignificant in all specifications (FE: 0.00413, t=0.223); no evidence that returns differ between low and lower-middle income. Authors conclude effect is similar across groups.",
+    "threshold_value": "none",
+    "evidence": "Table 10, p.14, column (5): 'Low Middle Income * AI Capability Index (Flow-based) ... 0.00413 (0.223)'"
+   },
+   {
+    "moderator": "infrastructure",
+    "finding": "Association of AI-related imports with productivity is larger where domestic readiness (connectivity, electricity, financial inclusion index) is higher (positive interaction, about 0.01).",
+    "threshold_value": "none",
+    "evidence": "Table 6, p.11: 'Domestic Readiness Index * Log of AI Import Per Capita (Flow) 0.0108** (2.106)'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Interaction of AI index with FDI (% GDP) is negative (-0.00126, p<0.05), with gross fixed capital formation positive and marginal (0.00114, p<0.1). Authors compute a sign-reversal FDI threshold of 73.6% of GDP (inside sample range but in extreme tail); GFCF threshold -52.2% (infeasible). Net marginal effect at means 0.0868.",
+    "threshold_value": "FDI 73.6% of GDP (sign change); GFCF none (-52.2, outside range)",
+    "evidence": "Table 8 col (4), p.12 and Table 9, p.14: 'Net marginal effect of AI capability at means 0.0868'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not applicable (high-income economies not in sample)",
+   "upper_middle": "not reported separately (unclear whether any upper-middle economies are included; the heterogeneity dummy contrasts only LMI vs low-income)",
+   "lower_middle": "FE: marginal effect not different from low-income (interaction 0.00413, t=0.223); implied marginal effect about 0.0954 (0.0913+0.0041) from Table 10, derived not reported",
+   "low": "FE reference-group coefficient on flow-based AI index 0.0913 (t=5.898), Table 10 column (5)"
+  },
+  "n_specifications_reported": "approximately 80 regression columns (Tables 4-8, 10-13 and D.1-D.6, including pooled/RE/FE, GMM, lags, narrow indices)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "Two-way FE plus controls, a system GMM with internal instruments, and 1-6 year lags are used, and the authors repeatedly disclaim causality. But the index is a generic digital/infrastructure development composite, so time-varying omitted factors (reforms, structural change, overall development) and reverse causation (richer countries import more hardware and have better connectivity) are not excluded; GMM instruments are internal lags only, and the AI index is a lagged regressor in GMM. No external instrument or event timing.",
+    "evidence": "Sec. 5.6, p.14-15: 'does not fully address potential simultaneity'; Sec. 5.7, p.16-17: 'does not eliminate endogeneity arising from time-varying omitted factors'; Sec. 6.4: 'results remain associative'"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Only 1 of 6 index components is AI-related (per-capita imports of 23 dual-use ICT hardware HS codes, partly selected with ChatGPT; includes laptops, phones, monitors, keyboards). The other five are general ICT, electricity and financial inclusion. PCA first component therefore mostly measures general digital/infrastructure development; the authors state it does not capture realised AI use. Narrow index (GPU/TPU/ASIC etc.) gives similar results but still reflects imports of chips that are largely general electronics and is also mixed into the index with the same readiness variables. Readiness variables come from an imputed dataset.",
+    "evidence": "Sec. 4.1.1, p.7 and fn 2-4: 'many of these goods are not uniquely AI-specific'; Sec. 4.1, p.7: 'does not capture realized AI use or economic outcomes'; Table 1, p.6"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "63 of an initial 80 LMICs retained based on data availability for all variables; effective N=871 of up to 945 country-years (unbalanced), yet descriptive statistics show 1200 obs for many variables, indicating the 80-country panel was completed by multiple imputation (MICE). Country list not shown in main text. No bias analysis of excluded countries; sample restricted to 2005-2019, pre-generative AI, so results describe general ICT/hardware accumulation.",
+    "evidence": "Sec. 4, p.6: 'effective sample ... comprises a robust panel of 63 LMICs'; Table 2, p.7 (obs 1200 vs 1093 for labour productivity)"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Log real GDP per worker from WDI is a standard measure, but the paper defines it inconsistently (GDP / total labour force in Table 1; GDP per capita divided by total employment in Sec. 4.3; real GDP per worker in Sec. 5.1). WDI data quality for low-income economies and the imputation of some covariates add noise.",
+    "evidence": "Table 1 p.6: 'Log (GDP constant 2015 USD/Total Labor Force)'; Sec. 4.3, p.9: 'GDP per capita (constant 2015 US$) divided by total employment'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Index weights are data-driven (PCA), flow versus stock versions, broad versus narrow HS lists, many control sets and estimators were tried (about 80 specs). However, headline TWFE results are stable across controls, with and without year effects, and estimators; no p-hacking signals beyond the flexibility of index construction. Several control coefficients (human capital) flip sign in GMM; some FE results (GFCF) only marginally significant. Construct overlap between AI index components and development level may mechanically load on productivity.",
+    "evidence": "Tables D.1-D.3 pp.21-22, Sec. 5.8; Sec. 6.4: 'composite index may also overlap with broader digital and infrastructural development'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Single outcome (labour productivity) with all reported AI-index estimates positive; null or weak results are reported where they occur (insignificant narrow-stock interaction, insignificant income interaction, insignificant R&D/FDI/trade). No pre-registration or mention of unreported specifications; the authors choose a PCA construction and not alternative indices (e.g., equal weights, other components) in the main text. Index diagnostics in appendix only.",
+    "evidence": "Sec. 5.3, p.11-12 (narrow stock interaction not significant); Sec. 5.5, p.14; Appendices A-D"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "No text attempting to direct the reviewer was found. Technovation (Elsevier), open access, accepted July 2026. Key caveat for synthesis: despite the AI label, the exposure is a composite dominated by general ICT/infrastructure indicators (internet, broadband, mobile, electricity, account ownership) plus imported ICT hardware, so results speak as much to ICT/digital infrastructure as to AI; the stream is coded 'both'. Dependent variable is in logs, so '9.2%' is the approximate effect per 1 SD of the index (exp(0.092)-1 is about 9.6%). Abstract range 9.20-9.37% comes from flow vs stock FE coefficients (0.0920, 0.0937). Text states pooled OLS magnitudes of about 45% are inflated by omitted-variable bias. The HS code list and its AI relevance were partly generated with ChatGPT (disclosed in fn 2). Table D.3 repeats column labels (1)-(3) twice. Income-group analysis only compares low vs lower-middle income, so it cannot speak to upper-middle or high-income economies; despite the 'low- and middle-income' framing the sample's coverage of upper-middle income countries is unclear. Table 6 and 7 observation counts 871/870; Table 4 labels 'Number of cnumber' in Tables 6-7.",
+  "quote_check": {
+   "verified": 8,
+   "checked": 21
+  },
+  "quote_flag": "needs human check"
  },
  {
   "idx": "881",
