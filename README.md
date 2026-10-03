@@ -21,3 +21,5 @@ B and C were set aside as too narrow or too close to a calculation. Their litera
 [manuscript/manuscript.tex](manuscript/manuscript.tex) ([PDF](manuscript/manuscript.pdf)): working draft of the systematic review with the pilot meta-regression, written for the Journal of Economy and Technology. It is not ready to submit: extractions are unverified by a human, the protocol was not pre-registered, and sections marked for the author (CRediT, conflict of interest, AI-use disclosure, registration) are open.
 
 [review/extra_questions_spec.md](review/extra_questions_spec.md) and [review/extra_questions.md](review/extra_questions.md): nine additional research questions specified before analysis, and their exploratory results.
+
+[analysis/](analysis/): original macro-panel analysis of World Bank data for the questions the literature cannot yet answer ([plan](analysis/spec.md), [results](analysis/results.md), [summary](analysis/summary.md)). Fixed-effects associations only, not causal effects.
