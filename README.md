@@ -16,4 +16,4 @@ B and C were set aside as too narrow or too close to a calculation. Their litera
 
 ## Systematic review
 
-[review/protocol.md](review/protocol.md): PRISMA-P protocol for the evidence-synthesis stage of proposal D. Status: protocol confirmed by the author, OSF registration pending. A pilot search and screening have been run (see [review/prisma_flow.md](review/prisma_flow.md)). No study is included yet: 247 records await full-text assessment ([tier A requests](review/fulltext_requests.md), [tier B requests](review/fulltext_requests_tierB.md)).
+[review/protocol.md](review/protocol.md): PRISMA-P protocol for the evidence-synthesis stage of proposal D. Status: protocol confirmed by the author, OSF registration pending. Search and screening are done for OpenAlex, Crossref and NBER ([review/prisma_flow.md](review/prisma_flow.md)); 103 of 247 full texts have been read and 67 studies are included ([review/extraction_summary.md](review/extraction_summary.md)). Working drafts: [narrative synthesis](review/synthesis.md) and [pilot meta-regression](review/mra_pilot.md). All extractions are machine-made and still need human verification.
