@@ -10686,6 +10686,90 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "1706",
+  "title": "The dynamics of ICT, foreign direct investment, globalization and economic growth: Panel estimation robust to heterogeneity and cross-sectional dependence",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E1",
+  "decision_rationale": "Quantitative ICT-growth study, but the sample is only five BRICS economies (non-AI technology requires at least 10 economies or an explicit income-group comparison; none is made).",
+  "stream": "H",
+  "technology": [
+   "ICT in general (PCA composite of mobile, internet users, fixed broadband, secure servers, ICT index)"
+  ],
+  "exposure_measure": "PCA-weighted ICT index built from ICT index, mobile subscriptions, internet users, fixed broadband and secure internet servers (Table 1, Table 2)",
+  "sample": {
+   "n_economies": "5",
+   "economies_or_groups": "Brazil, Russia, India, China, South Africa (BRICS)",
+   "income_groups_covered": "not reported (emerging economies only; no income-group comparison)",
+   "years": "2000-2014 (footnote 1 also mentions 2004-2014; inconsistent)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "OLS with fixed effects, group-mean FMOLS, group-mean DOLS, mean-group estimator; Westerlund cointegration; Dumitrescu-Hurlin causality",
+   "identification": "none",
+   "key_controls_fixed_effects": "FDI, globalization, trade; fixed effects in one model"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Per capita GDP (log), long-run elasticity with respect to ICT index",
+    "direction": "positive",
+    "estimate": "0.237 (FE), 0.250 (FMOLS), 0.986 (DOLS), 0.348 (MG)",
+    "uncertainty": "p=.0657, .0000, .0000, .0926 (Table 5)",
+    "horizon": "long",
+    "evidence": "p.324 Table 5, LOGICT row; 'significant positive long-run relationship between ICT index and economic growth in BRICS countries'"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "none",
+  "notes": "Section 6 states 'five BRICS countries'. Text contains internal inconsistencies (sample 2000-2014 vs footnote 2004-2014; methods text refers to 'tourism receipts, economic growth and CO2 emission', apparently copied from another paper; Table 5 globalization coefficient is negative in three estimators and positive in MG but described as positive; Granger causality in Table 6 shows ICT<->GDP bidirectional while text says unidirectional). No embedded instructions to the reader found. Included here only for the record; not used for payoffs synthesis.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 1
+  },
+  "quote_flag": "ok"
+ },
+ {
   "idx": "1713",
   "title": "ICT capital and labour productivity growth: A non-parametric analysis of 14 OECD countries",
   "fulltext_decision": "include",

@@ -212,7 +212,7 @@
 | 1687 | 2010 | Technology Diffusion and Postwar Growth | included for assessment | abstract level only |
 | 1695 | 2010 | An Intensive Exploration of Technology Diffusion | included for assessment | abstract level only |
 | 1696 | 2020 | Technology Diffusion | review (citation search) | abstract level only |
-| 1706 | 2017 | The dynamics of ICT, foreign direct investment, globalization and economic growth: Panel estimation  | included for assessment | abstract level only |
+| 1706 | 2017 | The dynamics of ICT, foreign direct investment, globalization and economic growth: Panel estimation  | included for assessment | provided by author |
 | 1713 | 2012 | ICT capital and labour productivity growth: A non-parametric analysis of 14 OECD countries | included for assessment | retrieved |
 | 1715 | 2004 | Productivity, innovation and ICT in Old and New Europe | included for assessment | abstract level only |
 | 1716 | 2002 | Can information and communication technologies be pro-poor? | included for assessment | abstract level only |

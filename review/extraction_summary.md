@@ -1,11 +1,11 @@
 # Preliminary extraction summary (machine-extracted, not yet human-verified)
 
-**Read this first.** These records were extracted from the 93 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **68% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 93 of 256 papers sent to full-text assessment have been read.
+**Read this first.** These records were extracted from the 94 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **68% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 94 of 256 papers sent to full-text assessment have been read.
 
-## Full-text assessment outcome (n = 93 read)
+## Full-text assessment outcome (n = 94 read)
 
-- Included: 61  |  excluded: 31  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
-- Reasons for exclusion: E1 8, E2 4, E4 19 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
+- Included: 61  |  excluded: 32  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
+- Reasons for exclusion: E1 9, E2 4, E4 19 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
 - Post-merge adjustments are listed with reasons in `data/adjustments.json`.
 - About a third of the papers that looked eligible on the abstract failed at full text. The same attrition should be expected for the papers not yet read.
 

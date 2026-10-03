@@ -17,7 +17,6 @@ Added after the decision to run a meta-regression on the output and productivity
 
 | # | Year | Title | Venue | Link |
 |---|---|---|---|---|
-| 1706 | 2017 | The dynamics of ICT, foreign direct investment, globalization and economic growth: Panel estimation robust to heterogeneity and cr | Telematics and Informatics | https://doi.org/10.1016/j.tele.2017.12.006 |
 | 37 | 2020 | The role of ICT infrastructure, innovation and globalization on economic growth in OECD countries, 1996-2017 | Journal of Science and Technology Policy Mana | https://doi.org/10.1108/jstpm-06-2019-0065 |
 | 41 | 2002 | Growth, Technological Change, and ICT Diffusion: Recent Evidence from OECD Countries | Oxford Review of Economic Policy | https://doi.org/10.1093/oxrep/18.3.324 |
 | 106 | 2010 | THE EFFECT OF INFORMATION TECHNOLOGY AND HUMAN CAPITAL ON ECONOMIC GROWTH | Macroeconomic Dynamics | https://doi.org/10.1017/s1365100510000210 |
