@@ -18,10 +18,10 @@ A coefficient on `composite` or `growth` is the average difference in partial co
 
 | Outcome | Studies listing a low-income economy | Studies not listing one | Odds ratio | Fisher p |
 |---|---|---|---|---|
-| No identification strategy (versus any) | 10 of 26 (38%) | 26 of 41 (63%) | 0.36 | 0.08 |
-| Moderate risk of bias (versus serious or critical) | 2 of 26 (8%) | 6 of 41 (15%) | 0.49 | 0.47 |
+| No identification strategy (versus any) | 8 of 20 (40%) | 28 of 47 (60%) | 0.45 | 0.18 |
+| Moderate risk of bias (versus serious or critical) | 2 of 20 (10%) | 6 of 47 (13%) | 0.76 | 1.00 |
 
-26 of 67 studies list at least one low-income economy; studies that report no income coverage are counted as not listing one, which biases the comparison toward the second column.
+20 of 67 studies list at least one low-income economy; studies that report no income coverage are counted as not listing one, which biases the comparison toward the second column.
 
 ## RQ6: does study quality go with the reported direction for output?
 
@@ -44,7 +44,7 @@ Base: 37 studies with at least one output or productivity result. Most studies r
 | financial_development | 5 | 5 | 2 | 1 | 1 | 0 | 1 | 3 |
 | time_period | 4 | 4 | 0 | 1 | 2 | 1 | 0 | 0 |
 
-136 heterogeneity entries from 67 studies; 31 are not moderation tests (robustness, control sensitivity or descriptive remarks) and are left out of the table. Classification by one model reader; agreement with a second reader on a random 20% sample is in `data/rq7_agreement.json`.
+136 heterogeneity entries from 67 studies; 31 are not moderation tests (robustness, control sensitivity or descriptive remarks) and are left out of the table. Classification by one model reader; a second reader classified a random 20% sample (n = 28) and agreed on the moderator type in 86% of entries (kappa 0.83), on the direction in 71% (kappa 0.64) and on whether the test was formal in 96% (kappa 0.93). Direction counts are therefore indicative only.
 
 ## RQ8: thresholds stated by the studies
 
@@ -80,12 +80,12 @@ A study counts in every income group its sample lists. Studies that report no in
 
 | Outcome family | Low | Lower-middle | Upper-middle | High | Coverage not reported | Studies |
 |---|---|---|---|---|---|---|
-| Output and productivity | 14 | 11 | 11 | 23 | 9 | 37 |
-| Structural change | 4 | 3 | 3 | 4 | 1 | 5 |
-| Labour market | 4 | 5 | 6 | 12 | 2 | 14 |
-| Poverty and distribution | 3 | 2 | 3 | 8 | 3 | 11 |
-| Living standards | 5 | 4 | 4 | 6 | 4 | 12 |
-| Resource cost | 3 | 1 | 2 | 4 | 0 | 4 |
+| Output and productivity | 11 | 11 | 11 | 22 | 9 | 37 |
+| Structural change | 3 | 3 | 3 | 3 | 1 | 5 |
+| Labour market | 3 | 5 | 6 | 11 | 2 | 14 |
+| Poverty and distribution | 2 | 1 | 3 | 7 | 4 | 11 |
+| Living standards | 4 | 4 | 4 | 6 | 4 | 12 |
+| Resource cost | 2 | 1 | 2 | 4 | 0 | 4 |
 
 ## RQ10: AI stream versus historical-wave stream
 
@@ -95,9 +95,9 @@ A study counts in every income group its sample lists. Studies that report no in
 | Critical risk of bias | 5 of 54 (9%) | 4 of 13 (31%) |
 | No identification strategy | 28 of 54 (52%) | 8 of 13 (62%) |
 | Compares income groups or regions | 21 of 54 (39%) | 5 of 13 (38%) |
-| Lists a low-income economy | 23 of 54 (43%) | 3 of 13 (23%) |
+| Lists a low-income economy | 18 of 54 (33%) | 2 of 13 (15%) |
 | Median number of economies | 27 (n = 54) | 23 (n = 13) |
 | Median first sample year | 2000 (n = 54) | 2012 (n = 13) |
 
-Low-income coverage, AI against historical: Fisher p = 0.23. Counts are small (AI n = 13).
+Low-income coverage, AI against historical: Fisher p = 0.31. Counts are small (AI n = 13).
 

@@ -58,6 +58,9 @@ We synthesised results narratively, following the SWiM reporting guideline \cite
 
 For ICT-type adoption and output or productivity we ran a pilot meta-regression in the tradition of Stanley and Doucouliagos \cite{stanley2012}. Each estimate was converted to a partial correlation coefficient, $PCC = t/\sqrt{t^2 + df}$, with $df$ equal to the number of observations minus 10 regressors (a sensitivity check uses 0, 5 and 20). The $t$-statistic came from the printed coefficient and standard error, or from a printed $t$-statistic. Estimates reported with $p$-values or intervals only were not converted. We excluded interaction terms, crypto and AI exposures, estimates without a usable number of observations, and five estimates judged not poolable on the second pass (a fintech-credit exposure, a growth outcome mixed with level outcomes, and a TFP index in levels). We pooled one headline estimate per paper by random effects \cite{dersimonian1986}, ran a weighted moderator regression with standard errors clustered by paper, and tested for publication selection with FAT-PET and PEESE \cite{stanley2014}. With 18 papers, the clustered standard errors are optimistic and p-values are indicative.
 
+\subsection{Additional exploratory questions}
+Beyond the main question we specified nine further questions and their analyses before running them (\texttt{review/extra\_questions\_spec.md}), all using the data already collected: whether the pooled association depends on the measurement of the technology (a composite index versus a single indicator), on the outcome form (growth versus level) and on the sample period (added one at a time to the meta-regression); whether weaker designs are more common where low-income economies are sampled; whether study quality goes with the reported direction; which enabling conditions authors test and in which direction (136 heterogeneity entries classified by one model reader, with a second reader on a random 20\% sample); the thresholds stated; an evidence-gap map by outcome family and income group; and a comparison of the AI and historical-wave streams. These analyses are exploratory, are not corrected for multiple testing, and should be read as hypotheses.
+
 \section{Results}
 
 \subsection{Study selection}
@@ -82,7 +85,7 @@ Kept as context only & 1\\
 \end{tabular}\end{table}
 
 \subsection{Characteristics of included studies}
-The 67 included studies were published between 2003 and 2026, and 52 of them from 2020 onward. Fifty-four study ICT, mobile, internet or broadband; 11 study AI; 2 cover both. Most use country-year panels (48), with a few at industry-country level. In a rough classification of the main estimator, 25 use system or difference GMM, 24 use fixed-effects, random-effects or pooled OLS, 11 use ARDL, cointegration or heterogeneous-panel estimators and 7 use growth accounting, data envelopment or other methods. Thirty-six studies have no identification strategy beyond controls and fixed effects. Twenty-six include at least one low-income economy. Outcome families, with a study able to contribute to several, are: output and productivity 37, labour market 14, living standards beyond income 12, poverty and distribution 11, structural change 5, resource cost 4. Appendix~\ref{app:studies} lists all studies.
+The 67 included studies were published between 2003 and 2026, and 52 of them from 2020 onward. Fifty-four study ICT, mobile, internet or broadband; 11 study AI; 2 cover both. Most use country-year panels (48), with a few at industry-country level. In a rough classification of the main estimator, 25 use system or difference GMM, 24 use fixed-effects, random-effects or pooled OLS, 11 use ARDL, cointegration or heterogeneous-panel estimators and 7 use growth accounting, data envelopment or other methods. Thirty-six studies have no identification strategy beyond controls and fixed effects. Twenty list at least one low-income economy; studies that do not state their income coverage are counted as not listing one. Outcome families, with a study able to contribute to several, are: output and productivity 37, labour market 14, living standards beyond income 12, poverty and distribution 11, structural change 5, resource cost 4. Appendix~\ref{app:studies} lists all studies.
 
 \subsection{Risk of bias}
 No study was rated at low risk of bias. The first-pass ratings were moderate for 8 studies, serious for 50 and critical for 9. In the second pass, the separate reader agreed with the overall rating for 55 of 64 studies, found six too harsh (268, 302, 323, 408, 707 and 1469) and three too lenient (57, 957 and 1031). We did not change any rating, and these differences should be settled by a human reviewer. The commonest weaknesses are adoption treated as exogenous, indices whose scope does not match the technology, and many specifications with no stated preferred one.
@@ -140,6 +143,29 @@ Table~\ref{tab:mra} shows that GMM estimates are on average 0.16 lower in partia
 \includegraphics[width=0.62\textwidth]{../review/figures/funnel.png}
 \caption{Funnel plot of main estimates (partial correlation against its standard error).}\label{fig:funnel}
 \end{figure}
+
+\subsection{Exploratory analyses of additional questions}
+\emph{Measurement, outcome form and period.} Adding single variables to the meta-regression, composite-index exposures show a partial correlation 0.07 higher than single indicators (SE 0.11, $p=0.50$) and growth-rate outcomes 0.04 higher than level outcomes (SE 0.10, $p=0.67$); neither is distinguishable from zero, and both rest on between-paper contrasts because few papers contribute both kinds. Later samples show lower partial correlations ($-0.014$ per year of sample midyear, SE 0.009, $p=0.11$), which would be about $-0.14$ per decade. This is not significant, is partly confounded with the shift to GMM in recent studies, and is a hypothesis about diminishing returns, not a finding.
+
+\emph{Design and income coverage.} Studies that list a low-income economy were not more likely to lack an identification strategy (8 of 20, 40\%, against 28 of 47, 60\%; Fisher $p=0.18$) or to be rated at higher risk of bias (moderate risk: 2 of 20 against 6 of 47, $p=1.00$). We therefore find no evidence that weaker designs cluster where low-income economies are sampled, although the comparison has little power. The test of whether study quality goes with a positive direction for output could not be run: only one of the 37 output studies was rated at moderate risk of bias.
+
+\emph{Enabling conditions.} Of the 136 heterogeneity entries, 105 are moderation tests. Human capital is tested in 14 studies (amplifies the effect in 8, dampens it in 3, mixed in 4), income group in 18 (richer or higher-income group larger in 7, smaller in 3, mixed in 3, no difference in 4, unclear in 2), infrastructure or connectivity in 8 (5 amplify), institutions or governance in 8 (3 amplify, 2 dampen, 4 mixed), trade openness in 6 (3 amplify, 2 dampen), financial development in 5 and sector structure in 8 (6 mixed). A second reader agreed with the moderator type in 86\% of a 28-entry sample (kappa 0.83) but with the direction in only 71\% (kappa 0.64), so the direction counts are indicative only. Amplification is the commonest finding for human capital and infrastructure, which is consistent with, but does not show, conditional returns.
+
+\emph{Thresholds.} The studies state 21 thresholds in 14 studies, for the human-capital index, digital maturity, internet penetration, trade openness, private credit and others. They are in different units, rest on one study each and cannot be pooled. Where two studies address the same variable they do not give comparable values.
+
+\emph{Evidence gaps.} Table~\ref{tab:gap} shows that low-income economies are listed in 11 of 37 output studies, 3 of 14 labour-market studies, 2 of 11 distribution studies and 2 of 4 resource-cost studies. High-income economies are listed in 22 of 37 output studies and 11 of 14 labour-market studies. The historical-wave and AI streams look alike on income-group comparison (39\% against 38\%) but differ on risk of bias (critical in 9\% against 31\%) and first sample year (median 2000 against 2012); the AI stream lists a low-income economy in 2 of 13 studies against 18 of 54 (Fisher $p=0.31$).
+
+\begin{table}[ht]\centering\small
+\caption{Evidence-gap map: studies per outcome family by income groups listed in the sample (a study counts in each group it lists).}\label{tab:gap}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Outcome family & Low & Lower-middle & Upper-middle & High & Not reported & Studies\\\midrule
+Output and productivity & 11 & 11 & 11 & 22 & 9 & 37\\
+Structural change & 3 & 3 & 3 & 3 & 1 & 5\\
+Labour market & 3 & 5 & 6 & 11 & 2 & 14\\
+Poverty and distribution & 2 & 1 & 3 & 7 & 4 & 11\\
+Living standards & 4 & 4 & 4 & 6 & 4 & 12\\
+Resource cost & 2 & 1 & 2 & 4 & 0 & 4\\\bottomrule
+\end{tabular}\end{table}
 
 \section{Discussion}
 

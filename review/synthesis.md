@@ -12,7 +12,7 @@ Method: structured narrative synthesis (SWiM). Studies are grouped by outcome fa
 | Risk of bias, overall (first-pass ratings) | moderate 8, serious 50, critical 9, low 0. The second-pass check would move nine ratings (six down, three up); it is not applied |
 | Studies with no identification strategy beyond controls and fixed effects | 36 of 67 |
 | Studies with a formal or descriptive income-group or regional comparison of the effect | 26 of 67 |
-| Studies that include at least one low-income economy | 26 of 67 |
+| Studies that list a low-income economy (negated mentions such as "no low-income country" not counted) | 20 of 67 |
 | Studies where the headline estimate is the preferred specification | yes 24, no 7, unclear 36 |
 
 Studies per outcome family (a study can contribute to several): output and productivity 37; labour market 14; poverty and distribution 11; living standards beyond income 12; structural change 5; resource cost 4. AI evidence by family: output 4, labour 5, poverty and distribution 2, living standards 3, resource cost 2, structural change 0.

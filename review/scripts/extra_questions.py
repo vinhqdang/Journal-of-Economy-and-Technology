@@ -48,8 +48,15 @@ for q, var, lab in [("RQ2 measurement", "composite", "composite index as exposur
 L += ["", "A coefficient on `composite` or `growth` is the average difference in partial correlation relative to single-indicator or level estimates. Several papers contribute estimates with the same value of the added variable, so these tests rest on between-paper contrasts and are weak.", ""]
 
 # ---------- helpers on the 67 records ----------
+def coverage_text(x):
+    """Income coverage text with negated mentions removed ("no low-income economy") and the one
+    coverage claim the second pass found unsupported (study 1372) treated as not reported."""
+    if x["idx"] == "1372":
+        return ""
+    t = x["sample"]["income_groups_covered"].lower()
+    return re.sub(r"\bno (?:[a-z-]+ or )?(?:low|high)[^;).]*", "", t)
 def has_low(x):
-    return bool(re.search(r"\blow\b(?!\s*-?\s*middle)", x["sample"]["income_groups_covered"].lower().replace("lower", "x")))
+    return bool(re.search(r"\blow\b(?!\s*-?\s*middle)", coverage_text(x).replace("lower", "x")))
 def ident_none(x):
     return x["design"]["identification"].lower().startswith("none")
 def rob_mod(x):
@@ -101,8 +108,9 @@ if os.path.exists(p7):
         ft = sum(1 for e in cls if e["moderator_type"] == t and e.get("tested_formally"))
         d = dirs[t]
         L.append(f"| {t} | {len(studies[t])} | {c[t]} | {d['amplifies']} | {d['dampens']} | {d['mixed']} | {d['null']} | {d['unclear']} | {ft} |")
+    ag = json.load(open(os.path.join(ROOT, "review/data/rq7_agreement.json")))
     nm = sum(1 for e in cls if e["moderator_type"] == "not_a_moderator")
-    L += ["", f"{len(cls)} heterogeneity entries from {len(ext)} studies; {nm} are not moderation tests (robustness, control sensitivity or descriptive remarks) and are left out of the table. Classification by one model reader; agreement with a second reader on a random 20% sample is in `data/rq7_agreement.json`.", ""]
+    L += ["", f"{len(cls)} heterogeneity entries from {len(ext)} studies; {nm} are not moderation tests (robustness, control sensitivity or descriptive remarks) and are left out of the table. Classification by one model reader; a second reader classified a random 20% sample (n = {ag['n']}) and agreed on the moderator type in {100*ag['moderator_type']['agreement']:.0f}% of entries (kappa {ag['moderator_type']['kappa']:.2f}), on the direction in {100*ag['direction']['agreement']:.0f}% (kappa {ag['direction']['kappa']:.2f}) and on whether the test was formal in {100*ag['tested_formally']['agreement']:.0f}% (kappa {ag['tested_formally']['kappa']:.2f}). Direction counts are therefore indicative only.", ""]
 else:
     L += ["Not yet run.", ""]
 
@@ -119,7 +127,7 @@ L += ["", "Thresholds are in different units and rest on one study each. They ar
 # ---------- RQ9 ----------
 fam = {1: "Output and productivity", 2: "Structural change", 3: "Labour market", 4: "Poverty and distribution", 5: "Living standards", 6: "Resource cost"}
 def groups(x):
-    t = x["sample"]["income_groups_covered"].lower()
+    t = coverage_text(x)
     g = []
     if re.search(r"\blow\b(?!\s*-?\s*middle)", t.replace("lower", "x")):
         g.append("low")

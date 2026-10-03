@@ -1,0 +1,17 @@
+{
+ "moderator_type": {
+  "agreement": 0.857,
+  "kappa": 0.832
+ },
+ "direction": {
+  "agreement": 0.714,
+  "kappa": 0.644
+ },
+ "tested_formally": {
+  "agreement": 0.964,
+  "kappa": 0.929
+ },
+ "n": 28,
+ "direction_agreement_where_both_moderator": 0.737,
+ "n_both_moderator": 19
+}
