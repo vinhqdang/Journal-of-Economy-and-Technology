@@ -17,7 +17,7 @@
 | 68 | 2022 | Enhancing human development in developing regions: Do ICT and transport infrastructure matter? | included for assessment | retrieved |
 | 71 | 2022 | The ICT, financial development, energy consumption and economic growth nexus in MENA countries: dyna | included for assessment | abstract level only |
 | 74 | 2015 | The Digital Economy, ICT and Economic Growth in the CEE Countries | included for assessment | abstract level only |
-| 76 | 2005 | Contribution of information and communication technology to total factor productivity and externalit | included for assessment | abstract level only |
+| 76 | 2005 | Contribution of information and communication technology to total factor productivity and externalit | included for assessment | requested, not obtainable: abstract level only |
 | 88 | 2005 | Does the digital divide matter? The role of information and communication technology in cross-countr | included for assessment | retrieved |
 | 89 | 2021 | Impact of institutions and ICT services in avoiding resource curse: lessons from the successful econ | included for assessment | abstract level only |
 | 90 | 2024 | Does digital technology enhance the global value chain position? | included for assessment | abstract level only |
@@ -42,17 +42,17 @@
 | 260 | 2025 | Promoting Economic Development Through Digitalisation: Impacts on Human Development, Economic Comple | included for assessment | retrieved |
 | 261 | 2019 | ICT and transport infrastructure development: an empirical analysis of complementarity | included for assessment | abstract level only |
 | 268 | 2023 | Informality and aggregate labor productivity growth: Does ICT moderate the relationship? | included for assessment | provided by author |
-| 269 | 2024 | Economic growth and the proliferation of ICT infrastructures: which causes the other? | included for assessment | abstract level only |
+| 269 | 2024 | Economic growth and the proliferation of ICT infrastructures: which causes the other? | included for assessment | provided by author |
 | 270 | 2012 | Information-communication technology impact on labor productivity growth of EU developing countries | included for assessment | abstract level only |
 | 276 | 2025 | Does artificial intelligence help in improving human capital based educational development? Evidence | included for assessment | provided by author |
 | 278 | 2024 | Towards ICT diffusion and trade liberalisation on inclusive growth in Sub-Saharan Africa | included for assessment | abstract level only |
-| 285 | 2022 | ICT and Economic Growth in EU: A macro Level Comparison of Estimated ICT Output Elasticities | included for assessment | abstract level only |
+| 285 | 2022 | ICT and Economic Growth in EU: A macro Level Comparison of Estimated ICT Output Elasticities | included for assessment | provided by author |
 | 298 | 2005 | ICT and Productivity Growth in Transition Economies: Two-Phase Convergence and Structural Reforms | included for assessment | retrieved |
 | 300 | 2004 | Trends of Convergence and Divergence in the Information Economy: Lessons for Developing Countries | included for assessment | abstract level only |
 | 302 | 2013 | Does ICT Participate in Economic Convergence among Asian Countries: Evidence from Dynamic Panel Data | included for assessment | retrieved |
 | 308 | 2004 | Technological Learning, Policy Regimes and Growth in a `Globalized' Economy: General Patterns and th | included for assessment | retrieved |
 | 320 | 2022 | The Effect of Technology Adoption on Financial Inclusion: A Cross-country Panel Analysis between Chi | included for assessment | retrieved |
-| 321 | 2024 | Information and communication technology and labour productivity growth: a production‐frontier appro | included for assessment | abstract level only |
+| 321 | 2024 | Information and communication technology and labour productivity growth: a production‐frontier appro | included for assessment | provided by author |
 | 323 | 2014 | Total Factor Productivity, Demographic Traits and ICT: Empirical Analysis for Asia | included for assessment | retrieved |
 | 325 | 2021 | Economic determinants of total factor productivity growth: The Bayesian modelling averaging approach | included for assessment | abstract level only |
 | 327 | 2013 | Human Development and Macroeconomic Returns within the Context of Investments in Telecoms: An Explor | included for assessment | abstract level only |
@@ -66,7 +66,7 @@
 | 392 | 2018 | TECHNOLOGICAL SOURCES OF ECONOMIC GROWTH IN EUROPE AND THE U.S. | included for assessment | retrieved |
 | 393 | 2013 | The Determinants of Total Factor Productivity in the EU: Insights from Sectoral Data and Common Dyna | included for assessment | retrieved |
 | 407 | 2015 | THE ROLE OF ICT IN THE PRODUCTIVITY OF CENTRAL AND EASTERN EUROPE AN COUNTRIES: CROSS-COUNTRY COMPAR | included for assessment | retrieved |
-| 408 | 2025 | Effects of the digital economy on economic growth in Africa: the role of human capital | included for assessment | abstract level only |
+| 408 | 2025 | Effects of the digital economy on economic growth in Africa: the role of human capital | included for assessment | provided by author |
 | 409 | 2021 | Digital Technology and Inequality: The Impact on Arab Countries | included for assessment | abstract level only |
 | 422 | 2024 | Icts And Labour Productivity Nexus In Developing Countries: Evidence From Panel Estimation Approach | included for assessment | retrieved |
 | 438 | 2024 | Does information and communication technology improve labor productivity? Recent evidence from the S | included for assessment | abstract level only |

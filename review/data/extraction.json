@@ -2893,6 +2893,115 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "269",
+  "title": "Economic growth and the proliferation of ICT infrastructures: which causes the other?",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with its own estimation (Dumitrescu-Hurlin Granger causality, cointegration tests) of an ICT index (mobile, broadband, internet) against GDP per capita in about 41-42 Sub-Saharan African economies. Meets exposure, sample (at least 10 economies) and output outcome criteria.",
+  "stream": "H",
+  "technology": [
+   "ICT in general (composite index of mobile subscriptions, fixed broadband, internet users)"
+  ],
+  "exposure_measure": "ICT index = first principal component (82% of variance) of log fixed broadband subscriptions, log internet users and log mobile cellular subscriptions (all per 100 people), from World Development Indicators.",
+  "sample": {
+   "n_economies": "41 or 42 (text states both: 'Cover 41 Sub-Saharan African economies' in Section 3.1 vs '42 African countries' in abstract and conclusion; Table 1 has 820 obs = 41 x 20)",
+   "economies_or_groups": "Sub-Saharan African countries (list in Appendix Table A3; the page 21 list shown is truncated in the extracted text)",
+   "income_groups_covered": "mixed (SSA; income-group breakdown not analysed or reported)",
+   "years": "2000-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pesaran CD and Friedman cross-section dependence tests; CIPS unit root; Pesaran-Yamagata slope homogeneity; Pedroni and Westerlund cointegration; Dumitrescu-Hurlin heterogeneous panel Granger non-causality test with bootstrap. Coefficients of the production function are not estimated.",
+   "identification": "other (Granger-type predictive causality only; no instrument or exogenous variation)",
+   "key_controls_fixed_effects": "Solow-type production function with log capital (gross capital formation) and log employment; country fixed effects in the DH test equation; lag length not stated in the text."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "GDP per capita (constant 2010 US$), ICT index Granger-causing GDP per capita",
+    "direction": "null",
+    "estimate": "not reported (DH W-bar = 1.90, Z-bar = -0.30; no coefficient estimated)",
+    "uncertainty": "p = 0.77",
+    "horizon": "not reported",
+    "evidence": "Table 7, p.13: 'LICT -> LGDP 1.90 -0.30 0.77'; text p.13: findings 'unidirectional causality relationship from growth in per capita GDP to ICT services'"
+   },
+   {
+    "family": 1,
+    "indicator": "Reverse direction: GDP per capita Granger-causing ICT index (ICT adoption as outcome of growth; relevant to reverse causality, not a payoff)",
+    "direction": "positive",
+    "estimate": "not reported (W-bar = 3.65, Z-bar = 4.99)",
+    "uncertainty": "p < 0.001",
+    "horizon": "not reported",
+    "evidence": "Table 7, p.13: 'LGDP -> LICT 3.65 4.99 0.000'"
+   },
+   {
+    "family": 1,
+    "indicator": "Capital and employment Granger-causing GDP per capita (control inputs)",
+    "direction": "positive",
+    "estimate": "not reported (capital W-bar 2.65; employment W-bar 2.93)",
+    "uncertainty": "capital p = 0.04; employment p < 0.001",
+    "horizon": "not reported",
+    "evidence": "Table 7, p.13. Capital Z-bar is printed as 20.08, which looks like a typo (p = 0.04 is inconsistent with that value)."
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Slope homogeneity is rejected (Delta 9.68, adjusted Delta 11.71), so country-specific slopes differ. No analysis of income group, institutions or human capital as moderators is reported; absorptive capacity is mentioned only as a speculative explanation.",
+    "threshold_value": "none",
+    "evidence": "Table 5, p.12; Conclusion p.15: 'absence of feedback from ICT development to growth may have been due to the lack of absorptive capacity'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported (no high-income economy in an SSA sample apart possibly from Seychelles or Mauritius if included; no income-group split)",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 2 (baseline ICT-index causality test with different lag lengths said to be robust; alternative AfDB ICT index robustness test described but not shown)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Granger causality in first differences is predictive, not causal, yet the title and abstract use 'causal'. No instrument or exogenous variation, and only a minimal bivariate/small multivariate system. The bidirectional test does address reverse causation descriptively. The Z-bar of -0.30 for ICT to GDP (a test of the null) is consistent with weak power with T=20 and short lags.",
+    "evidence": "Abstract; Section 3.2 pp.11-12; Table 7 p.13"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "PCA index of three infrastructure access/subscription measures covers ICT adoption well but mixes mobile subscriptions (which can exceed 100 per 100, with duplicate SIMs) with very low broadband values; takes logs of values as small as 3e-14 (Table 1), which is fragile. Captures infrastructure, not use or quality.",
+    "evidence": "Section 3.1 p.9; Table 1 p.9 (broadband min 3.07E-14); Tables A1-A2"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Only Sub-Saharan Africa, 2000-2019, balanced panel of 41 countries; the stated country count is inconsistent (41 vs 42). Limits generalisation beyond SSA but there is no obvious selective choice of years.",
+    "evidence": "Abstract ('42 African economies'); Section 3.1 p.9 ('41 Sub-Saharan African economies'); Table 1 (820 obs)"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita (constant 2010 US$) from WDI is a standard output measure, although data quality for some SSA countries is weaker.",
+    "evidence": "Section 3.1 p.9: 'Y denotes GDP per capita (constant 2010 US$)'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Lag length for the DH test is not reported; capital measured as gross capital formation (flow, negative minimum in Table 1) rather than a stock; variables in levels are I(1) with possible cointegration, yet causality is run on first differences, discarding the long-run relation. No coefficients are estimated. Text states results robust to lags but shows no numbers.",
+    "evidence": "Table 1 (capital min -6.30E+09); p.13 'findings were robust for different lag lengths'; Section 5 p.16: 'coefficients of each variable were not estimated'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "CADF unit root results and the AfDB-index robustness check are said to be 'available upon request' and are not shown; the main result is the one reported in the abstract. Table 7 has an internal inconsistency (Z-bar 20.08 for capital with p = 0.04). Text refers to 'correlation results in Table 3' when it is Table 2, and to 'Table 5' for the unit root test (it is Table 4).",
+    "evidence": "p.12 'CADF test results have not been presented'; Section 4.1 p.14 'not reported here but available upon request'; Table 7"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Direction of effect is a Granger-causality verdict, not an effect size: ICT index does not Granger-cause GDP per capita; GDP per capita Granger-causes ICT (demand-following). Conclusions that ICT 'contributed nothing to the living standards' go beyond the evidence (p.14). Several internal inconsistencies: 41 vs 42 countries; Table 3 vs 2 and Table 5 vs 4 cross-references; capital Z-bar typo; text says results are consistent with Shiu and Lam for 'low-income countries in Europe' although that study is about China. Section 3.1 mentions a 'landline' component in the literature but the index uses broadband, internet and mobile. No instructions embedded in the text were found. Published in Economic Research-Ekonomska Istrazivanja, 2024, open access, a standard indexed journal.",
+  "quote_check": {
+   "verified": 8,
+   "checked": 11
+  },
+  "quote_flag": "needs human check"
+ },
+ {
   "idx": "276",
   "title": "Does artificial intelligence help in improving human capital based educational development? Evidence from 29 countries",
   "fulltext_decision": "include",
@@ -3102,6 +3211,148 @@
    "checked": 12
   },
   "quote_flag": "needs human check"
+ },
+ {
+  "idx": "285",
+  "title": "ICT and Economic Growth in EU: A macro Level Comparison of Estimated ICT Output Elasticities",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel estimation of ICT capital-services elasticity of GDP growth for 27 EU countries (>=10 economies, non-AI ICT); outcome is output growth (family 1).",
+  "stream": "H",
+  "technology": [
+   "ICT in general (ICT capital services)"
+  ],
+  "exposure_measure": "Growth rate of ICT capital services (dlnK_ICT) from the Conference Board Total Economy Database, adjusted with Byrne-Corrado ICT price deflators; entered alongside non-ICT capital and labour services in an augmented Cobb-Douglas growth equation.",
+  "sample": {
+   "n_economies": "27",
+   "economies_or_groups": "EU-27 (all EU members at the time of data, Malta excluded per text; text calls the sample 'EU-27')",
+   "income_groups_covered": "not reported (EU countries; paper does not classify by income group, presumably high-income/developed)",
+   "years": "1996-2016 (subperiods 1996-2004 and 2005-2016)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Fixed effects (preferred), random effects, robust FGLS, IV-2SLS with 2-year and 4-year lags of ICT growth as instruments; Newey-West robust SEs; with and without 9 removed outliers",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Non-ICT capital services growth, labour services growth (hours and quality), country fixed effects, year dummies"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Output elasticity of ICT capital services, GDP growth, FE, sample without outliers (headline)",
+    "direction": "positive",
+    "estimate": "0.092 (elasticity of GDP growth w.r.t. ICT capital services growth)",
+    "uncertainty": "SE 0.014, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, col. FE without outliers: 'ΔlnKICT 0.092*** (0.014)'; text p.208 'a 10% increase ... 0.92% increase in the GDP growth rate'"
+   },
+   {
+    "family": 1,
+    "indicator": "ICT elasticity, FE, full sample incl. outliers",
+    "direction": "positive",
+    "estimate": "0.116",
+    "uncertainty": "SE 0.02, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, EU-27 Full Sample FE: 0.116*** (0.02)"
+   },
+   {
+    "family": 1,
+    "indicator": "ICT elasticity, IV-2SLS (2-year lags), without outliers",
+    "direction": "positive",
+    "estimate": "0.114",
+    "uncertainty": "SE 0.034, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, IV-2lags: 0.114*** (0.034); IV-4lags 0.095** (0.036)"
+   },
+   {
+    "family": 1,
+    "indicator": "ICT elasticity, RE and FGLS, range across specifications",
+    "direction": "positive",
+    "estimate": "0.092 to 0.139 across FE/RE/FGLS/IV columns in Table 2",
+    "uncertainty": "SEs 0.014 to 0.036; all significant at 5% or better",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2: RE 0.100, FGLS 0.092, full-sample RE 0.124, FGLS 0.139"
+   },
+   {
+    "family": 1,
+    "indicator": "ICT elasticity by subperiod, FE, without outliers",
+    "direction": "positive",
+    "estimate": "0.090 (1996-2004); 0.087 (2005-2016)",
+    "uncertainty": "SE 0.019 and 0.026; stars as printed (note footnote of Table 3 uses different significance codes from Table 2)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3: 'ΔlnKICT 0.09*** (0.019)'; '0.087** (0.026)'"
+   },
+   {
+    "family": 1,
+    "indicator": "ICT elasticity relative to ICT income share (excess returns)",
+    "direction": "positive",
+    "estimate": "Estimated elasticity about 3 times the ICT income share of 0.03",
+    "uncertainty": "not reported (descriptive comparison)",
+    "horizon": "contemporaneous",
+    "evidence": "p.208 'estimated ICT elasticity is three times higher than the income share (0.03)'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Subperiod split (1996-2004 vs 2005-2016, defined by ICT capital deepening) gives similar elasticities (about 0.09 in both); used to argue against spillover explanation of excess returns.",
+    "threshold_value": "none",
+    "evidence": "p.210-212, Table 3; 'ICT elasticity being about 0.09 in all cases'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Outlier treatment matters modestly: full-sample FE elasticity 0.116 vs 0.092 without outliers; labour elasticity exceeds non-ICT capital elasticity in full sample but not without outliers.",
+    "threshold_value": "none",
+    "evidence": "Table 2; p.208 'labor output elasticity is higher than non-ICT capital' in the full sample"
+   }
+  ],
+  "income_group_results": {
+   "high": "EU-27 pooled elasticity about 0.09 to 0.12; paper does not classify EU members by income group",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 24 coefficient columns (8 in Table 2 for full-sample and no-outlier variants, 4 in Table 3, plus diagnostics)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Contemporaneous growth-on-growth FE regression with causal language ('impact', 'effect'). Only identification attempt is IV with 2- and 4-year lags of ICT growth, which the authors concede is 'not a perfect instrument'; lagged ICT growth is plausibly correlated with persistent omitted factors (intangibles, organisational capital). Authors themselves attribute excess returns to omitted variables.",
+    "evidence": "p.209 'lagged ICT variables is not a perfect instrument'; Conclusions 'omitted variables could serve as a plausible explanation'"
+   },
+   "exposure_measurement": {
+    "rating": "low",
+    "why": "ICT capital services (flow measure) with quality-adjusted ICT price deflators from TED, a standard growth-accounting source, appropriate for a production-function exposure.",
+    "evidence": "p.205 data section; footnote 4 'TED's adjusted dataset has been used'"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Exhaustive EU sample, so no selective sampling, but only high-income/developed European economies, limiting generalisability to developing countries; Malta dropped, unbalanced panel; sample N=558 or 567 reported inconsistently (n=27, T=19-21).",
+    "evidence": "p.205 'all European countries for the period 1996-2016, with the exception of Malta'; Table 2 notes"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP growth from national accounts compiled by the Conference Board TED, standard.",
+    "evidence": "p.204-205 data description"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Nine observations removed as outliers with results shown both ways; subperiod split chosen post hoc from capital-deepening patterns; several estimators reported. Specification otherwise standard and transparent. Table 3 uses different significance-star convention from Table 2 and some significance stars look inconsistent with the SEs (e.g. 0.094 with SE 0.029 shown as p<0.05).",
+    "evidence": "p.207 'we removed outliers and reported on results with and without outliers'; Table A.1; Table 3 notes"
+   },
+   "selective_reporting": {
+    "rating": "low",
+    "why": "Results reported with and without outliers and across FE/RE/FGLS/IV; non-ICT and labour coefficients also shown. No pre-registration; no obvious omission.",
+    "evidence": "Table 2, Table 3"
+   }
+  },
+  "overall_risk_of_bias": "moderate",
+  "venue_quality_concern": "none",
+  "notes": "Journal of Global Information Technology Management (Taylor & Francis, peer reviewed). Sample is EU only, so no income-group comparison; contains 'EU-27' label though Malta is excluded (text says 'all European countries ... with the exception of Malta (hereinafter EU-27)'), and later states 'n = 27', so count of 27 is taken as stated. Text says IV coefficients 'are presented in Table 1' but they are in Table 2. Equation for IV first-stage Angrist-Pischke F about 30 and 21 (footnote 7). No instructions embedded in the text.",
+  "quote_check": {
+   "verified": 9,
+   "checked": 11
+  },
+  "quote_flag": "ok"
  },
  {
   "idx": "298",
@@ -3559,6 +3810,157 @@
    "checked": 1
   },
   "quote_flag": "needs human check"
+ },
+ {
+  "idx": "321",
+  "title": "Information and communication technology and labour productivity growth: a production-frontier approach",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative DEA/Malmquist decomposition of labour productivity growth with ICT capital change as an explicit component, 24 OECD economies (>=10), outcome in family 1 (output and productivity).",
+  "stream": "H",
+  "technology": [
+   "ICT in general (ICT capital: computer hardware, telecommunication equipment, software and databases)"
+  ],
+  "exposure_measure": "ICT capital stock per hour worked from OECD database (hardware + telecom equipment + software/databases); exposure enters as ICT capital change (DACC) component of a four-way decomposition of labour productivity growth (EFF x TECH x KACC x DACC), a counterfactual movement along the frontier.",
+  "sample": {
+   "n_economies": "24",
+   "economies_or_groups": "OECD members: Australia, Austria, Belgium, Canada, Czech Rep., Estonia, Finland, France, Germany, Greece, Hungary, Italy, Japan, Latvia, Lithuania, Netherlands, Poland, Portugal, Slovak Rep., Slovenia, Spain, Sweden, UK, US; grouped as Western Europe, Central-Eastern Europe, Northern America, Asia-Australia",
+   "income_groups_covered": "mixed OECD (predominantly high income; the text does not classify by World Bank income group)",
+   "years": "1995-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Non-parametric Data Envelopment Analysis with Malmquist/Fisher-ideal decomposition (Kumar and Russell type, extended to ICT capital); bootstrap-based Li et al. distribution test (5,000 replications); dip test of unimodality; simple regressions of TECH and EFF on DACC and lagged DACC across 5-year intervals",
+   "identification": "none",
+   "key_controls_fixed_effects": "No controls or fixed effects; accounting decomposition with constant returns to scale, frontier built without technology regress; output GDP, inputs labour hours, non-ICT capital, ICT capital; PPP and 2015 prices"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Labour productivity growth 1995-2019, contribution of ICT capital change (DACC), geometric average across 24 countries",
+    "direction": "positive",
+    "estimate": "DACC index 1.1389 geometric average (1.2241 arithmetic), vs KACC 1.1499, TECH 1.1306, EFF 1.0486; total LABPROD CHG 1.5526 (geometric); index of 1 = no contribution",
+    "uncertainty": "not reported (accounting decomposition, no standard errors)",
+    "horizon": "long",
+    "evidence": "Table 3, p.136; text: 'most significant improvement ... similarly attributable to technological change, ICT and non-ICT capital change'"
+   },
+   {
+    "family": 1,
+    "indicator": "Country heterogeneity of DACC contribution 1995-2019",
+    "direction": "mixed",
+    "estimate": "DACC ranges from 0.8212 (Slovak Republic) to 4.0281 (Latvia); below 1 in 12 of 24 countries (Australia, Austria, Belgium, Canada, Germany, Japan, Portugal, Slovak Rep., Slovenia, Sweden, UK, US; US 0.9862)",
+    "uncertainty": "not reported",
+    "horizon": "long",
+    "evidence": "Table 3, p.136; Czech, Finland, Hungary, Latvia, Poland growth 'driven primarily by ICT capital change'"
+   },
+   {
+    "family": 1,
+    "indicator": "Contribution of ICT capital change over time (5-year windows)",
+    "direction": "mixed",
+    "estimate": "Central-Eastern Europe DACC 1.2094 (1995-2000), 1.1152, 1.1044, 0.9721 (2010-2015), 0.9968 (2015-2019); Western Europe 1.0271 to 0.9811; Northern America about 1.00 to 0.986; Asia-Australia 0.9973 to 0.9627",
+    "uncertainty": "not reported",
+    "horizon": "medium",
+    "evidence": "Table 4, p.137; 'ICT capital change is mainly responsible for the growth of labour productivity ... 1995-2010, but this turns into a lower coefficient after 2010'"
+   },
+   {
+    "family": 1,
+    "indicator": "Technological change (TECH, frontier shift) regressed on ICT capital change, same period",
+    "direction": "null",
+    "estimate": "beta = -0.003",
+    "uncertainty": "p = 0.904",
+    "horizon": "contemporaneous",
+    "evidence": "Sect. 4.2, p.138, Fig. 1a: 'does not affect technological change in the short term'"
+   },
+   {
+    "family": 1,
+    "indicator": "Technological change (TECH) regressed on ICT capital change lagged 5 years",
+    "direction": "positive",
+    "estimate": "beta = 0.095",
+    "uncertainty": "p < 0.001",
+    "horizon": "medium",
+    "evidence": "Sect. 4.2, p.138, Fig. 1b: 'positive effect on technological progress in the next 5 years'"
+   },
+   {
+    "family": 1,
+    "indicator": "Efficiency change (EFF) regressed on ICT capital change, same 5-year period",
+    "direction": "negative",
+    "estimate": "beta = -0.449",
+    "uncertainty": "p < 0.001",
+    "horizon": "contemporaneous",
+    "evidence": "Sect. 4.2, pp.138-139, Fig. 2: 'negative relationship between efficiency and ICT capital during the transition period'"
+   },
+   {
+    "family": 1,
+    "indicator": "Cross-country distribution of labour productivity (convergence): ICT capital change as a driver of change in the 1995-2019 distribution",
+    "direction": "positive",
+    "estimate": "Li et al. test statistic Tn = 0.772 for f(y2019) = g(y1995) x DACC; not rejected",
+    "uncertainty": "bootstrap p = 0.108 (5,000 replications)",
+    "horizon": "long",
+    "evidence": "Table 5, p.140: 'efficiency change and ICT capital change are only responsible for moving the 1995 distribution to 2019'; abstract says 'ICT capital contributes to convergence'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Contribution of ICT capital change is large in Central-Eastern Europe in 1995-2010 (catch-up, e.g. Latvia 4.03, Hungary 1.56, Poland 1.44) and weak or below 1 in Western Europe, Northern America and Asia-Australia after 2000; European decline after 2010 stronger than Northern America.",
+    "threshold_value": "none",
+    "evidence": "Table 3 p.136, Table 4 p.137; 'in the last decade, the total contribution of ICT ... in European countries ... is more downwards than that of Northern American countries'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Time lag: ICT capital change has no contemporaneous effect on frontier shifts but a positive effect five years later, and a negative contemporaneous association with efficiency (interpreted as an organisational adjustment period, general-purpose technology).",
+    "threshold_value": "none",
+    "evidence": "Sect. 4.2, p.138"
+   }
+  ],
+  "income_group_results": {
+   "high": "Sample is mostly high-income OECD; reported by region (Western Europe, Northern America, Asia-Australia), not income group; DACC about 0.96-1.03 in later windows",
+   "upper_middle": "not reported (Central-Eastern European transition economies are grouped by region, with largest DACC contributions 1995-2010)",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "unclear (one main decomposition with 15 distribution tests and a few bivariate regressions; 4-year interval robustness in Appendix B)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Descriptive decomposition and simple bivariate regressions of TECH/EFF on DACC with no controls, fixed effects or instruments; abstract and conclusions use causal language ('impact of ICT'). ICT capital accumulation is itself endogenous to productivity and the paper does not address reverse causation.",
+    "evidence": "Abstract, p.123; Sect. 4.2, p.138 (regressions without controls)"
+   },
+   "exposure_measurement": {
+    "rating": "low",
+    "why": "ICT capital stock from OECD includes hardware, telecoms and software/databases, which directly measures ICT investment capability; however DACC is a counterfactual component and the text itself notes ICT capital falls in constant-price terms because prices of ICT assets fall.",
+    "evidence": "Sect. 3 p.134; Table 2 p.135 (D median growth 123.7%, min -66.9%)"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Sample of 24 OECD countries, 'the most prominent sample possible' limited by data availability; mostly high income so results do not extend to developing countries; no income-group comparison.",
+    "evidence": "Sect. 3, p.134"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per hour worked from OECD, PPP and price corrected to 2015, a standard measure of labour productivity.",
+    "evidence": "Sect. 3, p.134"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "DEA is deterministic and sensitive to outliers; constant returns to scale and no-technological-regress assumed; ordering of components in decomposition is arbitrary (handled by Fisher-ideal averaging); no standard errors on decomposition; regressions on 5-year windows use few observations.",
+    "evidence": "Sect. 2, pp.131-134 (Eqs. 6-8: 'choice between (6) and (7) is arbitrary')"
+   },
+   "selective_reporting": {
+    "rating": "low",
+    "why": "All 24 countries and all 15 counterfactual distribution tests are reported; appendix tables give full detail; 4-year interval robustness shown. Table 5 reports no multiple-testing adjustment.",
+    "evidence": "Table 3 p.136, Table 5 p.140, Appendices A-C"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Decomposition values are multiplicative indices (1 = no contribution) and are not regression coefficients. Abstract states 'positive impact of ICT', but DACC is below 1 for 12 of 24 countries including the US, Germany, Japan and Canada, and the contribution fades after 2010; a contemporaneous negative efficiency association is also reported. I did not read Appendix tables 14-25 and Appendices B-C in full. Nothing in the text attempted to direct the extraction. Text extraction garbled equation symbols (e.g. '='); the text states 'ICT capital contributes to convergence' but Table 5 p-value for DACC counterfactual is 0.108, a non-rejection.",
+  "quote_check": {
+   "verified": 10,
+   "checked": 10
+  },
+  "quote_flag": "ok"
  },
  {
   "idx": "323",
@@ -4215,6 +4617,157 @@
    "checked": 7
   },
   "quote_flag": "ok"
+ },
+ {
+  "idx": "408",
+  "title": "Effects of the digital economy on economic growth in Africa: the role of human capital",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative system-GMM panel study of ICT/mobile/internet/broadband (PCA index) and its interaction with human capital on real GDP per capita (family 1), with 41 African countries in the estimation sample (54 in the stated sample), above the 10-economy minimum.",
+  "stream": "H",
+  "technology": [
+   "ICT in general (PCA digital-economy index)",
+   "mobile telephony",
+   "internet",
+   "fixed broadband"
+  ],
+  "exposure_measure": "Synthetic 'digital economy' index from first principal component of mobile subscriptions, internet users and fixed broadband subscriptions (ITU data, per 100 inhabitants); each of the three also entered separately. Interacted with log of Penn World Table human capital index.",
+  "sample": {
+   "n_economies": "41 in Table 2 estimation sample (text says unbalanced panel of 54 African countries)",
+   "economies_or_groups": "African countries; Seychelles, Botswana, South Africa, Mauritius named among the higher-digital/higher-income cases",
+   "income_groups_covered": "mixed (not reported by group; includes low-income to high-income Seychelles)",
+   "years": "2000-2021",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Blundell-Bond system GMM, collapsed instruments, robust SEs; four models (one per digital variable plus the composite index)",
+   "identification": "other",
+   "key_controls_fixed_effects": "Lagged log GDP per capita, investment rate, labour force, inflation, financial development, trade openness, government consumption, human capital; internal GMM instruments; Hansen and AR tests reported"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Log real GDP per capita: digital economy index main effect (at human capital = 0 in the interaction model)",
+    "direction": "negative",
+    "estimate": "-0.127 (Table 2, model 4)",
+    "uncertainty": "SE 0.0413 (robust); significance stars not legible in the extracted text",
+    "horizon": "contemporaneous",
+    "evidence": "p.13 Table 2, 'Digital economy -0,127 (0,0413)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log real GDP per capita: digital economy x human capital interaction (complementarity)",
+    "direction": "positive",
+    "estimate": "0.0540 (Table 2, model 4); implied marginal effect of DE = -0.127 + 0.054*HC, zero at HC = 2.352; implied marginal effect of HC zero at DE = 81.3%",
+    "uncertainty": "SE 0.0189; text says significant at 1%",
+    "horizon": "contemporaneous",
+    "evidence": "p.13 'positive and significant at the 1% threshold'; p.14 'human capital threshold of 2.352 and a digital economy threshold of 81.3%'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log real GDP per capita: cell phone x human capital interaction",
+    "direction": "positive",
+    "estimate": "0.0413 (main effect of cell phone -0.0947); thresholds HC 2.3 and 119.85% subscriptions",
+    "uncertainty": "SE 0.0150 (interaction), 0.0318 (main effect)",
+    "horizon": "contemporaneous",
+    "evidence": "p.13 Table 2 'Cell phone x human Capital 0,0413 (0,0150)'; p.15 eq. 4.3"
+   },
+   {
+    "family": 1,
+    "indicator": "Log real GDP per capita: internet users x human capital interaction",
+    "direction": "positive",
+    "estimate": "0.107 (main effect -0.257); thresholds HC 2.4 and 52.34% internet users",
+    "uncertainty": "SE 0.0499 (interaction), 0.120 (main effect)",
+    "horizon": "contemporaneous",
+    "evidence": "p.13 Table 2; p.15 eq. 4.5"
+   },
+   {
+    "family": 1,
+    "indicator": "Log real GDP per capita: fixed broadband access x human capital interaction",
+    "direction": "positive",
+    "estimate": "1.847 (main effect -4.796); thresholds HC 2.6 and 2.83% broadband per 100",
+    "uncertainty": "SE 0.915 (interaction), 2.381 (main effect)",
+    "horizon": "contemporaneous",
+    "evidence": "p.13 Table 2 'Internet access x human Capital 1,847 (0,915)'; p.16 eq. 4.7"
+   },
+   {
+    "family": 1,
+    "indicator": "TFP growth contribution of the digital economy x human capital interaction (growth-accounting residual)",
+    "direction": "positive",
+    "estimate": "Interaction contribution 0.0265 (model 1, composite index); digital economy main-effect contribution -0.0456; cell-phone interaction 0.0278, internet user 0.0166, broadband 0.0189 (Table 3). Dln(TFP) reported as about 1.35 against DlnY 1.4285.",
+    "uncertainty": "not reported (deterministic post-estimation calculation)",
+    "horizon": "not reported",
+    "evidence": "p.18 Table 3; p.17 'growth rate of total factor productivity is positive in all models'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "human capital",
+    "finding": "Marginal effect of digital economy on GDP per capita is negative at low human capital and turns positive only above a human capital index of about 2.35 (models range 2.3-2.6); continental average is 1.8, so the average African country is below the threshold. Only South Africa and Zimbabwe exceed it on country averages.",
+    "threshold_value": "HC index 2.352 (composite); 2.3 mobile; 2.4 internet users; 2.6 broadband",
+    "evidence": "p.14 'only South Africa and Zimbabwe exceeded the human capital threshold'"
+   },
+   {
+    "moderator": "infrastructure",
+    "finding": "Human capital only has a positive marginal effect once digital penetration passes a threshold; no African country reaches the mobile (120%) or internet-user (52.34%) thresholds, and only Seychelles exceeds the composite threshold (81.3%).",
+    "threshold_value": "DE 81.3%; mobile 119.85%; internet users 52.34%; broadband 2.83%",
+    "evidence": "p.14-16, 'no African country has reached the threshold of 120% of cell phone subscribers'"
+   },
+   {
+    "moderator": "income group",
+    "finding": "No income-group split estimated. Country-level threshold exceedance is described qualitatively (richer, higher-human-capital countries such as Seychelles, Botswana, South Africa, Mauritius).",
+    "threshold_value": "none",
+    "evidence": "p.14-16 country-by-country discussion"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported (Seychelles named as exceeding the digital threshold; no separate estimate)",
+   "upper_middle": "not reported (Botswana, South Africa, Gabon, Mauritius named as exceeding human-capital thresholds; no separate estimate)",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "4 main models (Table 2), plus post-estimation contribution calculation (Table 3); no robustness checks reported",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "System GMM with internal collapsed instruments is used to address two-way causality between ICT and GDP; Hansen p 0.23-0.50 and AR(2) p about 0.11 are reported. No external instrument or event timing, so exogeneity rests on internal instruments; instrument count (31) is close to the 41 groups. The lagged dependent variable coefficient is near zero (about 0.01) in a log-level GDP specification, which is implausible and suggests misspecification.",
+    "evidence": "p.12 s.4.3; p.13 Table 2 (instruments 31, Hansen 0.232, L.lnGDP 0.012)"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Composite index from PCA of mobile, internet-user and fixed-broadband penetration is a reasonable ICT proxy but is labelled 'digital economy' although it captures connectivity only. Mobile penetration exceeds 100% (max 185.6%) because of multiple SIMs. Index is not scaled in an interpretable way (0 to 1.673). Components are also run separately, which helps.",
+    "evidence": "p.7-8 s.3.2; p.10 Table 1"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Unbalanced panel; text says 54 countries but Table 2 uses 41 countries and 779 observations, with human capital available for only 820 of 1188 country-years. Reason for the drop is not explained, and the sample includes extreme outliers (growth of -48% and +97%).",
+    "evidence": "p.10 Table 1 (Human Capital 820 obs); p.13 Table 2 'Number of countries 41'; p.17 'unbalanced panel of 54 African countries'"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Real GDP per capita from WDI is a standard outcome. The model uses the log level while the text and policy discussion refer to 'economic growth'.",
+    "evidence": "p.3 s.3.1; p.11 eq. (3)"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Dependent variable is log GDP per capita level but results are interpreted as growth effects; interaction coefficients are misread as 'U-shaped' relationships and as elasticities ('1% increase in human capital raises elasticity by 0.054%') though the digital variable is in levels; thresholds lie at the edge or outside most of the data, and human capital enters in logs in the model but thresholds are quoted on the raw index. TFP is a residual that comes out at about 135% growth in Table 3, which is not credible. Main effects at zero human capital (an out-of-sample value, minimum HC 1.069) are interpreted as meaningful. Equation 4.8 text uses a different human capital coefficient from the table column. No robustness checks.",
+    "evidence": "p.13 s.5 'a 1% increase in the level of human capital leads to a 0.054% increase'; p.18 Table 3 'Dln(TFP) 1.3551'; p.10 Table 1 HC min 1.069"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All four models are shown, with consistent signs, but the human capital main effects are negative in every model, which is not discussed; significance stars are missing in the extracted Table 2; no robustness or alternative-specification results; the main-effect negative result is explained by threshold rather than tested.",
+    "evidence": "p.13 Table 2 (Human capital -0.0439 to -0.0560)"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (Cogent Economics & Finance is a broad open-access megajournal with limited methodological scrutiny; the paper's internal inconsistencies in sample size, interpretation of interactions and the TFP calculation were not caught in review)",
+  "notes": "Sample size inconsistency: 54 countries stated in the methods/conclusion but 41 countries in Table 2. Significance stars are not legible in the converted text, so only the SEs are recorded; p-values are inferred only where the text states significance. Table 2 columns 1-4 are cell phone, internet user, internet access and the composite index respectively; the column ordering of the human capital main effects is ambiguous in the extraction and the text quotes -0.056 for the internet-user model (matches column 2) and -0.0522 for broadband (matches column 3). No instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 9,
+   "checked": 12
+  },
+  "quote_flag": "needs human check"
  },
  {
   "idx": "422",
