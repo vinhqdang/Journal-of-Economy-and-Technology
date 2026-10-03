@@ -6,10 +6,10 @@
 | 14 | 2021 | Human Capital in Digital Economy: An Empirical Analysis of Central and Eastern European Countries fr | included for assessment | abstract level only |
 | 29 | 2019 | The Internet of Things and economic growth in a panel of countries | included for assessment | provided by author |
 | 37 | 2020 | The role of ICT infrastructure, innovation and globalization on economic growth in OECD countries, 1 | included for assessment | abstract level only |
-| 38 | 2021 | Leveraging digital technologies to boost productivity in the informal sector in Sub‐Saharan Africa | included for assessment | abstract level only |
+| 38 | 2021 | Leveraging digital technologies to boost productivity in the informal sector in Sub‐Saharan Africa | included for assessment | provided by author |
 | 41 | 2002 | Growth, Technological Change, and ICT Diffusion: Recent Evidence from OECD Countries | included for assessment | abstract level only |
 | 42 | 2005 | Catching up or getting stuck? Europe's troubles to exploit ICT's productivity potential | included for assessment | abstract level only |
-| 45 | 2024 | Financial inclusion through digitalization and economic growth in Asia-Pacific countries | included for assessment | abstract level only |
+| 45 | 2024 | Financial inclusion through digitalization and economic growth in Asia-Pacific countries | included for assessment | provided by author |
 | 53 | 2024 | The impact of digital literacy and technology adoption on financial inclusion in Africa, Asia, and L | included for assessment | abstract level only |
 | 57 | 2020 | Nexus between energy consumption, information and communications technology, and economic growth: An | included for assessment | provided by author |
 | 63 | 2023 | Labor Market Exposure to AI: Cross-country Differences and Distributional Implications | included for assessment | provided by author |
@@ -24,11 +24,11 @@
 | 93 | 2021 | ICT development and shadow economy: Empirical evidence from the EU transition economies | included for assessment | abstract level only |
 | 106 | 2010 | THE EFFECT OF INFORMATION TECHNOLOGY AND HUMAN CAPITAL ON ECONOMIC GROWTH | included for assessment | abstract level only |
 | 108 | 2024 | New technologies and jobs in Europe | included for assessment | retrieved |
-| 117 | 2011 | Human Capital and Growth of Information and Communication Technology-intensive Industries: Empirical | included for assessment | abstract level only |
+| 117 | 2011 | Human Capital and Growth of Information and Communication Technology-intensive Industries: Empirical | included for assessment | provided by author |
 | 118 | 2014 | Informality, Inequality, and ICT in Transition Economies | included for assessment | abstract level only |
 | 126 | 2023 | Job creation and destruction in the digital age: Assessing heterogeneous effects across European Uni | included for assessment | retrieved |
 | 138 | 2023 | Empirical Analysis of Inclusive Growth, Information and Communication Technology Adoption, and Insti | included for assessment | provided by author |
-| 140 | 2015 | What are the drivers of total factor productivity in the European Union? | included for assessment | abstract level only |
+| 140 | 2015 | What are the drivers of total factor productivity in the European Union? | included for assessment | provided by author |
 | 153 | 2009 | Determinants of Labor Productivity: An Empirical Investigation of Productivity Divergence | included for assessment | skipped: venue judged unreliable by the author |
 | 162 | 2024 | Impact of digitization on carbon productivity: an empirical analysis of 136 countries | included for assessment | retrieved |
 | 174 | 2025 | Artificial intelligence and global carbon inequality: Addressing the challenges and opportunities fo | included for assessment | provided by author |
@@ -220,7 +220,7 @@
 | 1720 | 2007 | Internet, inequality and growth | included for assessment | abstract level only |
 | 1722 | 2016 | Information and communication technologies and their impact in the economic growth of Latin America, | included for assessment | abstract level only |
 | 1730 | 2025 | Artificial intelligence and sustainable development: A global nonlinear analysis of the moderating r | included for assessment | abstract level only |
-| 1734 | 2012 | The Impact of ICT on East Asian Economic Growth: Panel Estimation Approach | included for assessment | abstract level only |
+| 1734 | 2012 | The Impact of ICT on East Asian Economic Growth: Panel Estimation Approach | included for assessment | provided by author |
 | 1749 | 2024 | The impact of digital economy on income inequality from the perspective of technological progress-bi | included for assessment | abstract level only |
 | 1751 | 2017 | Raising European Productivity Growth Through ICT | included for assessment | abstract level only |
 | 1759 | 2022 | ICT capital–skill complementarity and wage inequality: Evidence from OECD countries | included for assessment | retrieved |

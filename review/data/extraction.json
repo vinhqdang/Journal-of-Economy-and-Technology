@@ -338,6 +338,210 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "38",
+  "title": "Leveraging digital technologies to boost productivity in the informal sector in Sub-Saharan Africa",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E4",
+  "decision_rationale": "Labelled a review article; it summarises the literature, shows descriptive stylised-fact figures from World Bank sources and offers policy recommendations, with no estimation of its own. Fails the quantitative-empirical criterion.",
+  "stream": "H",
+  "technology": [
+   "ICT / digital technologies (general, narrative)"
+  ],
+  "exposure_measure": "not applicable",
+  "sample": {
+   "n_economies": "not applicable",
+   "economies_or_groups": "Sub-Saharan Africa (descriptive)",
+   "income_groups_covered": "not applicable",
+   "years": "not applicable",
+   "unit": "other"
+  },
+  "design": {
+   "estimator": "not applicable",
+   "identification": "none",
+   "key_controls_fixed_effects": "not applicable"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "none",
+  "notes": "Evidence: p.707 header 'REVIEW ARTICLE'; abstract 'This paper summarizes what we know on digital technologies in Sub-Saharan Africa'; p.712 states informality assessment 'relying on correlations rather than causal effects'. Figures (p.713-714) reproduce World Bank (2019b) data. No embedded instructions to the reader found in the text.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok"
+ },
+ {
+  "idx": "45",
+  "title": "Financial inclusion through digitalization and economic growth in Asia-Pacific countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of 30 Asia-Pacific economies relating a digital financial inclusion index (built largely from mobile, internet and digital-payment indicators) to log GDP per capita. Meets the >=10 economies rule for non-AI ICT/mobile/internet exposure and has an output outcome; the exposure is a composite that mixes digital and traditional financial inclusion, which is flagged in risk of bias.",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "mobile telephony",
+   "internet or broadband",
+   "digital financial services (composite index)"
+  ],
+  "exposure_measure": "Digital financial inclusion (DFI) index built by three-stage PCA from 16 indicators in four dimensions: traditional access, traditional usage, digital access (mobile broadband, mobile-cellular and internet subscriptions per 100), digital usage (digital payments, mobile utility payments, mobile wage receipt). Index normalised 0-1 and 'taken in percentage' in regressions. The final index combines traditional and digital sub-indices, so it is not a pure ICT measure.",
+  "sample": {
+   "n_economies": "30",
+   "economies_or_groups": "Asia-Pacific (UNESCAP): e.g. China, Japan, Korea, Mongolia, Russia, Kazakhstan, Indonesia, Singapore, Vietnam, India, Pakistan, Bangladesh, Iran, Turkiye, Australia, New Zealand (Table A2 lists 38 candidates; 30 retained, exact retained list not stated)",
+   "income_groups_covered": "high, upper-middle, lower-middle (no low-income economy described in the trend figures)",
+   "years": "2014, 2017, 2021 (three waves only)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Country fixed-effects OLS with robust SE (Hausman test chose FE over RE); Hansen-type panel threshold regression with DFI as threshold variable; robustness with extra controls; 2SLS with internet penetration as instrument",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Country FE; controls: log growth of population aged 15-64, log gross capital formation, tertiary enrolment, unemployment, inflation (GDP deflator), rule of law; extra controls in Table 5: trade openness, FDI, government expenditure, gross domestic savings. No time effects mentioned."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita (constant 2015 US$), linear FE effect of DFI index",
+    "direction": "positive",
+    "estimate": "0.005 (log points of GDP per capita per 1 percentage point of DFI index; roughly 0.5% per point)",
+    "uncertainty": "SE 0.001, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 col (1), p.13: 'DFI index 0.005*** (0.001)', N=90"
+   },
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita, threshold model, low-DFI regime (DFI <= 71.87)",
+    "direction": "positive",
+    "estimate": "0.007",
+    "uncertainty": "SE 0.001, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 col (2), p.13: 'DFI index (<71.87) 0.007*** (0.001)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita, threshold model, high-DFI regime (DFI > 71.87)",
+    "direction": "positive",
+    "estimate": "0.004",
+    "uncertainty": "SE 0.001, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 col (2), p.13: 'DFI index (>71.87) 0.004*** (0.001)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita, FE with four additional controls",
+    "direction": "positive",
+    "estimate": "0.005",
+    "uncertainty": "SE 0.001, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col (1), p.13: 'DFI index 0.005*** (0.001)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita, 2SLS with internet penetration as instrument",
+    "direction": "positive",
+    "estimate": "0.034",
+    "uncertainty": "SE 0.011, p<0.01; Cragg-Donald F reported as 18.67 (table labels 18.67 as LM-statistic); first stage not shown",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col (2), p.13: 'DFI index ... 0.034*** (0.011)'; text: 'Cragg-Donald Wald F-test ... is 18.67'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Marginal effect of DFI on log GDP per capita is larger below the estimated threshold (0.007) than above it (0.004); both positive. Authors describe this as an 'inverted U-shaped' impact, although both regime slopes are positive (diminishing returns, not a turning point). Authors interpret it as larger gains for lower-DFI economies and a 'digitalization paradox' for high-income ones, without testing income group directly.",
+    "threshold_value": "71.87 (DFI index in percent)",
+    "evidence": "Table 4 note p.13: 'F statistic ... 31.34, with a p-value of 0.01'; Section 6.2 p.11: 'when the level of DFI exceeds 71.87 %, economic growth increases at a reduced rate'"
+   }
+  ],
+  "income_group_results": {
+   "high": "Not estimated separately; only descriptive trend figures (Fig. 4). Authors say DFI is high and shows little increase except in Japan.",
+   "upper_middle": "Not estimated separately; descriptive trends only (Fig. 5), 'substantial upward trend' in DFI.",
+   "lower_middle": "Not estimated separately; descriptive trends only (Fig. 6), low DFI with slight upward trend.",
+   "low": "not reported (no low-income economies identified in the sample); conclusion nonetheless speaks of effects 'in low-income countries'"
+  },
+  "n_specifications_reported": "4 main (FE, threshold, FE with extra controls, 2SLS)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Country FE with only three time points (2014, 2017, 2021) and N=90. Causal language ('DFI significantly promotes economic growth'). The only identification strategy is internet penetration as instrument, but internet subscribers per 100 is itself a component of the DFI index (digital access dimension), so the exclusion restriction is implausible and the instrument is mechanically correlated with the regressor. Richer countries both adopt more and have higher GDP per capita; the 2SLS coefficient (0.034) is about seven times the FE estimate (0.005) with no discussion. No time effects reported, so common shocks such as COVID-19 in 2021 are not absorbed.",
+    "evidence": "Section 5.2.2 p.8; Section 6.3 p.13; Table A1 p.15 (internet subscribers in digital access); Table 5 col (2)"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Composite PCA index mixes traditional and digital financial indicators, and PCA weights are re-estimated on the pooled 90 observations; stage-two and stage-three PCA on two sub-indices with eigenvector 0.7071 each is effectively an equal-weight average. Index construction is transparent (Tables A4-A10) but it measures financial inclusion, not ICT adoption as such. Scale is inconsistent: Table A3 shows index range 0-1 while threshold is reported as 71.87 and coefficients are per percentage point.",
+    "evidence": "Section 5.2.1 p.8; Table A3 p.15; Table A8-A10 pp.17-18"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 30 of 60 UNESCAP economies, chosen by data availability (27 dropped for limited data, 3 for one year of data). Only three survey years (2014, 2017, 2021), the last in the COVID-19 period. Missing economies are mostly Pacific islands and low-income economies, so the sample is skewed to richer, better-measured countries.",
+    "evidence": "Section 5.1 p.6-7 and Table 3 p.7: 'Countries not available due to limited data 27 countries'; Section 7.3 p.14"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Log GDP per capita (constant 2015 US$) from World Development Indicators is a standard measure, but it is a level, not a growth rate, even though the paper speaks of 'economic growth'.",
+    "evidence": "Section 5.1 p.6: 'We used GDP Per Capita (constant 2015 US$) in the natural logarithm'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Small number of specifications, but index weights, threshold estimation on a three-period panel with 90 observations, and control choice are discretionary. Threshold specification (eq. 3) shows no country fixed effect term. Threshold located by data, bootstrap p-value 0.01 with F=31.34 from Appendix A11 (not in the text read). Population growth variable in logs has near-zero variance (SD 0.006), suggesting a construction problem.",
+    "evidence": "Eq. (3) p.8; Table 4 note p.13; Table A3 p.15"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Controls differ across Table 4 and Table 5 and the 2SLS column drops the extra controls and does not report first-stage results; the large divergence between 2SLS and FE estimates is not discussed. Several reporting errors suggest limited checking: Table 5 shows '(0.0.11)', positive SEs written as '(-0.004)', and the instrumental F statistic is labelled both Cragg-Donald F and LM-statistic. No pre-registration.",
+    "evidence": "Table 5 p.13; Section 6.3 p.13"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Published in International Review of Financial Analysis 96 (2024) 103596 (Elsevier, open access). No instruction-like text in the paper. Items a reviewer should check: (1) the instrument (internet penetration) overlaps with an index component; (2) the conclusion refers to effects 'in low-income countries' and 'Pacific' coverage, but the sample has no low-income economy listed in the trend figures and the Pacific is only Australia and New Zealand (Table A2 lists 38 countries, text says 30 selected, the retained list is not given); (3) text calls the pattern 'inverted U-shaped' while both threshold slopes are positive; (4) Section 7.2.6 mislabels SDG 4 as the growth goal; (5) Section 4.1 attributes the 42-country OBRI study to Daud and Ahmad when Table 1 lists it under Ozturk and Ullah; (6) Table 4 adjusted R-squared drops from 0.631 (FE) to 0.573 (threshold) while R-squared rises, and the Rule of law coefficient is 0.001 with SE 0.000, so the scale is unclear. The Appendix tables A11 onwards (threshold test details) were beyond the extracted text I read (text read through Table A10, ~line 1200); coverage of A11 is therefore from the Table 4 note only. Fig. 3-7 are images and not available in the text. Income-group findings are descriptive only (Figs 4-6).",
+  "quote_check": {
+   "verified": 3,
+   "checked": 9
+  },
+  "quote_flag": "needs human check"
+ },
+ {
   "idx": "57",
   "title": "Nexus between energy consumption, information and communications technology, and economic growth: An enquiry into emerging Asian countries",
   "fulltext_decision": "include",
@@ -1108,6 +1312,80 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "117",
+  "title": "Human Capital and Growth of Information and Communication Technology-intensive Industries: Empirical Evidence from Open Economies",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E2",
+  "decision_rationale": "The exposure of interest is human capital (initial years of schooling and its change), interacted with a US-benchmark industry ICT-intensity indicator in a Rajan-Zingales design; ICT adoption, diffusion, investment or capability at country level is not the exposure, so the paper does not estimate the payoff to ICT adoption. Borderline: it is an ICT-related industry-growth study; the 17-economy sample meets the size rule but is all high income.",
+  "stream": "H",
+  "technology": [
+   "ICT (industry ICT intensity used as a classifier of industries, not as the exposure)"
+  ],
+  "exposure_measure": "not applicable",
+  "sample": {
+   "n_economies": "17 (11 in some specifications)",
+   "economies_or_groups": "EU KLEMS countries (EU-15 members plus US, Japan, Australia, Korea etc.), described as open developed economies",
+   "income_groups_covered": "high",
+   "years": "1980-1999",
+   "unit": "industry-country"
+  },
+  "design": {
+   "estimator": "not applicable",
+   "identification": "not applicable",
+   "key_controls_fixed_effects": "not applicable"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "none",
+  "notes": "Evidence for decision: p.1406, eq. (1), explanatory variables of interest are 'initial human capital stock and human capital accumulation interacted with a measure of industry-level ICT intensity'; ICT intensity is the share of US industry ICT capital in fixed capital (p.1407). Sample of seventeen countries (p.1406), 1980-1999, Table 1 notes. Results (not extracted as payoffs): human capital accumulation interacted with ICT intensity positive and significant for value-added growth (Table 1 IV about 1.1-1.25, SE about 0.3). Screening decision was INC; full-text reading suggests this is a human-capital paper whose ICT dimension is only an industry classifier, hence E2. A human reviewer may wish to reconsider as context if the review treats ICT-intensive industry growth as capability. No instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok"
+ },
+ {
   "idx": "126",
   "title": "Job creation and destruction in the digital age: Assessing heterogeneous effects across European Union countries",
   "fulltext_decision": "include",
@@ -1420,6 +1698,97 @@
   "quote_check": {
    "verified": 9,
    "checked": 10
+  },
+  "quote_flag": "ok"
+ },
+ {
+  "idx": "140",
+  "title": "What are the drivers of total factor productivity in the European Union?",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with own estimation (AMG for TFP, then DOLS) on 17 EU countries and 13 manufacturing sectors; ICT capital services is one of the exposures and TFP (family 1) is the outcome. Meets the >=10 economies rule for non-AI technology.",
+  "stream": "H",
+  "technology": [
+   "ICT in general (sectoral ICT capital services)"
+  ],
+  "exposure_measure": "Sector-specific contribution of ICT capital services to value-added growth (EU KLEMS), entered in logs (ln ICT).",
+  "sample": {
+   "n_economies": "17",
+   "economies_or_groups": "17 EU countries (Table 1: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Italy, Netherlands, Slovak Republic, Slovenia, Spain, Sweden, UK); 13 manufacturing sectors; grouped as EU core, South, East",
+   "income_groups_covered": "high-income and some upper-middle-income EU members (income groups not reported or analysed; all EU)",
+   "years": "1995-2007",
+   "unit": "industry-country"
+  },
+  "design": {
+   "estimator": "Two steps: (1) augmented mean group (AMG) estimator of heterogeneous Cobb-Douglas value-added production functions to obtain sector-country TFP residuals; (2) dynamic OLS (DOLS) of estimated ln TFP on determinants with leads and lags of first differences.",
+   "identification": "other",
+   "key_controls_fixed_effects": "FDI inflow/GDP, sectoral R&D/VA, intra-EU and extra-EU trade openness, secondary-education share (human capital), efficiency-effort (rationalization) variable; country and sector fixed effects with year dummies (col 1) or country-specific time trend (col 2); DOLS leads/lags of differenced regressors."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Sectoral TFP level (estimated ln TFP, manufacturing) on ln ICT capital services contribution",
+    "direction": "positive",
+    "estimate": "0.06 (year dummies spec) and 0.07 (time trend spec) on ln TFP per unit of ln ICT; standardized beta 0.07",
+    "uncertainty": "t = 2.40 and 3.19 (t-values in parentheses); standardized beta flagged *** (1%)",
+    "horizon": "long",
+    "evidence": "Table 2, row ln ICT: 0.06 (2.40), 0.07 (3.19), std beta 0.07***; text p.415: 'a more intensive use of ICT leads to an improvement in TFP'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "No heterogeneity in the ICT effect is estimated. Authors say sector- or country-specific coefficients were infeasible for lack of degrees of freedom. Descriptive TFP trends are shown separately for EU core, South and East.",
+    "threshold_value": "none",
+    "evidence": "Section 4.3, p.416: 'our sample is not sufficiently large and hence we do not have enough degrees of freedom for this approach'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported (all EU; core/South/East groups only used descriptively for TFP levels, not for ICT effect)",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "2 main DOLS specifications (Table 2); a robustness run excluding Hungary and Czech Republic is mentioned in note 21 without results shown",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "DOLS leads and lags are the only strategy for endogeneity. Authors claim cointegration implies omitted variables cannot bias results, which does not hold. No instrument or event timing. Dependent variable is a generated regressor (TFP residual from step 1) and second-stage uncertainty from this is not addressed.",
+    "evidence": "Section 4.2, p.415: 'omitted variables cannot impact TFP'; p.414 DOLS description"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT is measured at the sector level from EU KLEMS as a growth contribution of ICT capital services, which is a reasonable capability/investment proxy. Entering it in logs is unusual because a growth contribution can be zero or negative. Other regressors (FDI, openness, human capital) are country-level.",
+    "evidence": "p.413: 'ICT variable measures the sector-specific contribution of ICT capital services to VA growth'"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "17 EU countries, 1995-2007, chosen by data availability; Hungary and Czech Republic show anomalous TFP levels attributed to measurement error but are kept in the main estimates. Text lists Portugal in the South group but it is absent from Table 1.",
+    "evidence": "Section 3, p.410 and p.411; note 21"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Outcome is TFP as a residual from estimated production functions (wide definition including all non-input factors). It is a generated variable, and ICT capital is plausibly correlated with the estimated inputs and TFP by construction. Reported N is 451, far below the 17 x 13 x 13 panel size, with no explanation.",
+    "evidence": "Section 2, p.407: 'we obtain TFP as a residual'; Table 2: N 451"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Few specifications are reported (year dummies versus time trend) and the sign is stable; the choice of lead/lag length is not reported. The authors interpret the time trend column flexibly.",
+    "evidence": "Table 2 and p.415: 'We use a flexible approach to interpret the results shown in the second column'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Coefficients on differenced terms are not shown. The abstract and conclusion list ICT as a main driver although its standardized beta (0.07) is the smallest of the significant effects. Robustness without Hungary and the Czech Republic is mentioned but not reported.",
+    "evidence": "Table 2 notes; abstract; note 21"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Two-stage design: estimated TFP is the dependent variable. The ICT estimate is a small positive association (elasticity about 0.06-0.07, std beta 0.07), not clearly causal. Manufacturing sectors only. Source file is the published 2016 volume version (online 2015), so the 2015 label in the assignment is the online-first date. No text in the paper tried to instruct the reader.",
+  "quote_check": {
+   "verified": 6,
+   "checked": 6
   },
   "quote_flag": "ok"
  },
@@ -10893,6 +11262,106 @@
   "quote_check": {
    "verified": 4,
    "checked": 4
+  },
+  "quote_flag": "ok"
+ },
+ {
+  "idx": "1734",
+  "title": "The Impact of ICT on East Asian Economic Growth: Panel Estimation Approach",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E1",
+  "decision_rationale": "Quantitative panel study of ICT (telecommunications investment) and GDP, but only 5 (ASEAN5) and 8 (ASEAN5+3) economies, below the 10-economy minimum for non-AI technologies; no explicit income-group comparison (the two models are nested country groupings, not income groups).",
+  "stream": "H",
+  "technology": [
+   "ICT in general (telecommunications investment)"
+  ],
+  "exposure_measure": "Real telecommunications/ICT investment (TELINT), log form",
+  "sample": {
+   "n_economies": "8 (ASEAN5: Malaysia, Thailand, Singapore, Indonesia, Philippines; plus Japan, Korea, China)",
+   "economies_or_groups": "ASEAN5 and ASEAN5+3",
+   "income_groups_covered": "mixed (not explicitly analysed by income group)",
+   "years": "1975-2006",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel unit root and Pedroni cointegration tests; pooled/fixed/random effects GLS; Hausman test",
+   "identification": "none",
+   "key_controls_fixed_effects": "Capital and labour; country fixed or random effects"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Log GDP on log telecom investment, ASEAN5 fixed effects (Model 1)",
+    "direction": "null",
+    "estimate": "0.024156 (fixed effect); authors describe it as positive",
+    "uncertainty": "t = 0.873370 (not significant)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p. 551; text p. 552: 'CAP is the only variable that shows a significant result at 1 % level while LAB and TELINT are not significant.'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log GDP on log telecom investment, ASEAN5+3 random effects (Model 2)",
+    "direction": "null",
+    "estimate": "0.000165 (random effect); fixed effect -0.005271",
+    "uncertainty": "t = 0.012469 (random); t = -0.302025 (fixed)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p. 552; text p. 552: 'TELINT are positively correlated with GDP'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Only a split between ASEAN5 and ASEAN5+3; no income-group analysis. Pooled no-effect model gives significant positive TELINT coefficients (0.043 and 0.023) that vanish with country effects.",
+    "threshold_value": "none",
+    "evidence": "Tables 6 and 7, pp. 551-552"
+   }
+  ],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "6 (3 estimators x 2 country groups)",
+  "headline_is_preferred_specification": "no",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "none",
+  "notes": "Abstract and conclusion state a positive ICT effect on growth, but telecom investment is statistically insignificant in the fixed-effect specifications (Tables 6-7); the abstract claim is stronger than the estimates support. Conclusion section repeats methods text about OLS and Table 4. Cointegration was supported only for Model 1 (Table 3); Model 2 failed the unit-root requirement (p. 549). Table 3 title says 'ASEAN5+3' although it is for Model 1. Text says 'one unit increase ... leads to about 0.02 percentage rise in GDP growth', which misreads a log-log coefficient. Hausman reading is inconsistent (p. 551 cites p = 0.002 vs 0.0002 in Table 5). No instructions embedded in the text.",
+  "quote_check": {
+   "verified": 2,
+   "checked": 2
   },
   "quote_flag": "ok"
  },

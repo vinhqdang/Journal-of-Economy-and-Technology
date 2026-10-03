@@ -37,8 +37,8 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 
 | Stage | n | Note |
 |---|---|---|
-| Full texts read | 94 | 94 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
-| Excluded at full text | 32 | E1 9, E2 4, E4 19 |
+| Full texts read | 99 | 99 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
+| Excluded at full text | 35 | E1 10, E2 5, E4 20 |
 | Context only (no payoff outcome estimated) | 1 | |
-| **Included, preliminary** | **61** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 24 are flagged for human check |
-| Still to read | 158 | Abstract level only. A second round of requests (24 papers for the growth and productivity meta-regression) is open in `fulltext_requests.md` |
+| **Included, preliminary** | **63** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 25 are flagged for human check |
+| Still to read | 153 | Abstract level only. Round 2 requests (19 papers for the growth and productivity meta-regression) are open in `fulltext_requests.md` |

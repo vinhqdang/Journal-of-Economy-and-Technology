@@ -21,11 +21,6 @@ Added after the decision to run a meta-regression on the output and productivity
 | 41 | 2002 | Growth, Technological Change, and ICT Diffusion: Recent Evidence from OECD Countries | Oxford Review of Economic Policy | https://doi.org/10.1093/oxrep/18.3.324 |
 | 106 | 2010 | THE EFFECT OF INFORMATION TECHNOLOGY AND HUMAN CAPITAL ON ECONOMIC GROWTH | Macroeconomic Dynamics | https://doi.org/10.1017/s1365100510000210 |
 | 71 | 2022 | The ICT, financial development, energy consumption and economic growth nexus in MENA countries: dynamic panel CS-ARDL evidence | Applied Economics | https://doi.org/10.1080/00036846.2022.2096861 |
-| 1734 | 2012 | The Impact of ICT on East Asian Economic Growth: Panel Estimation Approach | Journal of the Knowledge Economy | https://doi.org/10.1007/s13132-012-0096-5 |
-| 38 | 2021 | Leveraging digital technologies to boost productivity in the informal sector in Sub‐Saharan Africa | Review of Policy Research | https://doi.org/10.1111/ropr.12441 |
-| 45 | 2024 | Financial inclusion through digitalization and economic growth in Asia-Pacific countries | International Review of Financial Analysis | https://doi.org/10.1016/j.irfa.2024.103596 |
-| 117 | 2011 | Human Capital and Growth of Information and Communication Technology-intensive Industries: Empirical Evidence from Open Economies | Regional Studies | https://doi.org/10.1080/00343404.2010.529115 |
-| 140 | 2015 | What are the drivers of total factor productivity in the European Union? | Economics of Innovation and New Technology | https://doi.org/10.1080/10438599.2015.1067007 |
 | 76 | 2005 | Contribution of information and communication technology to total factor productivity and externalities effects | Information Technology for Development | https://doi.org/10.1002/itdj.20021 |
 | 89 | 2021 | Impact of institutions and ICT services in avoiding resource curse: lessons from the successful economies | Heliyon | https://doi.org/10.1016/j.heliyon.2021.e05961 |
 | 90 | 2024 | Does digital technology enhance the global value chain position? | Borsa Istanbul Review | https://doi.org/10.1016/j.bir.2024.04.016 |
