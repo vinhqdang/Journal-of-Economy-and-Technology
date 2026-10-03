@@ -23,7 +23,7 @@ IND = {"mobile": "IT.CEL.SETS.P2", "internet": "IT.NET.USER.ZS", "broadband": "I
 def get(url, params=None, tries=6):
     for i in range(tries):
         try:
-            r = requests.get(url, params=params, timeout=200)
+            r = requests.get(url, params=params, timeout=280)
             if r.status_code == 200:
                 return r.json()
         except requests.RequestException:
@@ -42,7 +42,7 @@ def fetch(item):
         return name, d
     return name, None
 
-with cf.ThreadPoolExecutor(4) as ex:
+with cf.ThreadPoolExecutor(2) as ex:
     res = dict(ex.map(fetch, IND.items()))
 meta = get("https://api.worldbank.org/v2/country", {"format": "json", "per_page": 400})
 ctry = pd.DataFrame([{"iso3": c["id"], "country": c["name"], "region": c["region"]["value"].strip(), "income": c["incomeLevel"]["value"]} for c in meta[1]])
