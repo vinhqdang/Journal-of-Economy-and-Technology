@@ -39,7 +39,7 @@ idx,estimate_id,role,subsample_label,sample_income_group,technology,coef,t,n,pcc
 245,245-7,subsample,ASEAN countries,mixed,digital economy,0.212,1.56,94.0,0.1677966543798794,0.1075619579358201
 245,245-8,subsample,Asian countries (ASIA column),mixed,digital economy,-0.287,-2.23,205.0,-0.15769549643642428,0.07071546925400192
 245,245-9,subsample,low-income countries,low,digital economy,-6.305,-1.66,16.0,-0.5610029329153645,0.3379535740454003
-245,245-10,subsample,middle-income countries,upper-middle,digital economy,-1.24,-3.55,373.0,-0.18317412090112759,0.051598343915810585
+245,245-10,subsample,middle-income countries,middle,digital economy,-1.24,-3.55,373.0,-0.18317412090112759,0.051598343915810585
 245,245-11,subsample,high-income countries,high,digital economy,-0.86,-4.45,239.0,-0.28211919829996807,0.06339757265167821
 245,245-12,robustness,"excluding COVID-19 period (2006-2019), with controls",mixed,digital economy,-0.463,-5.74,528.0,-0.2445438496258111,0.0426034581229636
 245,245-13,robustness,"DOLS, linear",mixed,digital economy,-0.266,-2.043,605.0,-0.08346260613129851,0.04085296433250049
@@ -70,10 +70,6 @@ idx,estimate_id,role,subsample_label,sample_income_group,technology,coef,t,n,pcc
 285,285-12,subsample,"EU-27 sub-period 2005-2016, without outliers, RE",high,ICT,0.094,3.2413793103448274,320.0,0.18105536901403801,0.055857507461777686
 302,302-1,headline,full sample,mixed,"ICT (composite ICT Maturation Index of fixed telephone, mobile, fixed broadband, fixed internet, internet users)",0.0119,2.2884615384615388,216.0,0.15745576434488026,0.06880419954566196
 323,323-1,headline,full sample (24 Asian countries),mixed,"ICT (composite index, ICTMI)",0.0156,2.4761904761904763,216.0,0.17001273256936622,0.06865898815301327
-358,358-1,headline,"full sample (95 countries, 2013-2019), Option IV",mixed,other (fintech and big tech credit flows),1.15,3.71,594.0,0.1517431150164087,0.04090110916884331
-358,358-2,baseline,"full sample (95 countries, 2013-2019), Option I",mixed,other (fintech and big tech credit flows),0.99,2.13,594.0,0.08779964395442294,0.04122049011944739
-358,358-3,robustness,"full sample (95 countries, 2013-2019), Option II",mixed,other (fintech and big tech credit flows),0.99,3.11,594.0,0.12764008046333017,0.04104182651554025
-358,358-4,robustness,"full sample, Option V (column headed 'GDP Growth')",mixed,other (fintech and big tech credit flows),0.86,2.68,594.0,0.11022346156130063,0.041128157298992774
 393,393-1,headline,"full sample, AMG robust",not stated,ICT,0.00817,1.9734299516908216,1106.0,0.05950400738018304,0.030152581463152726
 393,393-2,baseline,"full sample, MG",not stated,ICT,0.00707,1.37015503875969,1322.0,0.037800043828288755,0.027588150799712868
 393,393-3,robustness,"full sample, MG robust SE",not stated,ICT,0.00908,2.9673202614379086,1322.0,0.08164790987533893,0.02751570531041158
@@ -98,7 +94,6 @@ idx,estimate_id,role,subsample_label,sample_income_group,technology,coef,t,n,pcc
 988,988-2,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
 988,988-3,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
 988,988-4,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
-988,988-5,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
 988,988-6,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,140.0,0.0,0.08770580193070292
 988,988-7,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,140.0,0.0,0.08770580193070292
 988,988-8,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301

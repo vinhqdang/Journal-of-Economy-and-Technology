@@ -55,6 +55,13 @@ df.loc[tech.str.contains("crypto|bitcoin|artificial|\\bai\\b|generative"), "excl
 df.loc[df["role"] == "interaction", "exclude_reason"] = "interaction term, not a main effect"
 df.loc[df["t"].isna(), "exclude_reason"] = df["exclude_reason"].replace("", "uncertainty not convertible to t (p-value or interval)")
 df.loc[(df["df_"] <= 5) | df["df_"].isna(), "exclude_reason"] = df["exclude_reason"].replace("", "no usable number of observations")
+# exclusions found by the second-pass check against the source texts (see data/mra_exclusions.csv)
+excl = pd.read_csv(os.path.join(ROOT, "review/data/mra_exclusions.csv"), dtype=str)
+excl_map = dict(zip(excl["estimate_id"], excl["reason"]))
+mask = df["estimate_id"].isin(excl_map) & (df["exclude_reason"] == "")
+df.loc[mask, "exclude_reason"] = "judged not poolable on second-pass check"
+# correction from the second-pass check: 245-10 is a combined middle-income group, not upper-middle
+df.loc[df["estimate_id"] == "245-10", "sample_income_group"] = "middle"
 use = df[df["exclude_reason"] == ""].copy()
 use["idx"] = use["idx"].astype(str)
 
@@ -74,7 +81,7 @@ def dl(y, v):
 
 out = []
 out.append("# Pilot meta-regression: ICT-type adoption and output or productivity\n")
-out.append("**Status: exploratory pilot, not a result.** The inputs were extracted by machine and every printed number was checked against the source text, but no human has verified them yet. Effect sizes are partial correlation coefficients (PCC) computed from the printed coefficient and its standard error or t-statistic, with degrees of freedom approximated as observations minus %d regressors. The sample is small, comes only from papers with a free or supplied full text, and the underlying studies mostly treat adoption as exogenous, so pooled numbers describe conditional association and not a causal effect.\n" % K_REGRESSORS)
+out.append("**Status: exploratory pilot, not a result.** The inputs were extracted by machine and every printed number was checked against the source text twice (an automatic proximity check and a second, independent reading of the tables by a separate model run), but no human has verified them yet. Effect sizes are partial correlation coefficients (PCC) computed from the printed coefficient and its standard error or t-statistic, with degrees of freedom approximated as observations minus %d regressors. The sample is small, comes only from papers with a free or supplied full text, and the underlying studies mostly treat adoption as exogenous, so pooled numbers describe conditional association and not a causal effect.\n" % K_REGRESSORS)
 out.append(f"- Estimates extracted: {len(df)} from {df['idx'].nunique()} papers.\n- Usable estimates: {len(use)} from {use['idx'].nunique()} papers. Excluded: " + "; ".join(f"{k} ({v})" for k, v in df[df['exclude_reason']!='']['exclude_reason'].value_counts().items()) + ".\n")
 
 # (1) headline estimate per paper
@@ -91,7 +98,7 @@ if len(head) >= 3:
 # (2) moderator meta-regression on all main estimates
 m = use.copy()
 inc_txt = m["sample_income_group"].fillna("").str.lower() + " " + m["subsample_label"].fillna("").str.lower()
-m["lowmid"] = inc_txt.str.contains("low|developing|emerging|lower|africa|sub-saharan|mena").astype(int)
+m["lowmid"] = inc_txt.str.contains("low|developing|emerging|lower|middle|africa|sub-saharan|mena").astype(int)
 m["highinc"] = inc_txt.str.contains("high|oecd|advanced|developed|eu|europe").astype(int)
 m["lowmid"] = np.where(m["highinc"] == 1, 0, m["lowmid"])
 m["gmm"] = m["estimator"].fillna("").str.lower().str.contains("gmm").astype(int)
