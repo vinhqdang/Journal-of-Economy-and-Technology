@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | 10 | 2020 | Financial inclusion, information and communication technology diffusion, and economic growth: a pane | included for assessment | retrieved |
 | 14 | 2021 | Human Capital in Digital Economy: An Empirical Analysis of Central and Eastern European Countries fr | included for assessment | abstract level only |
-| 29 | 2019 | The Internet of Things and economic growth in a panel of countries | included for assessment | requested from author |
+| 29 | 2019 | The Internet of Things and economic growth in a panel of countries | included for assessment | provided by author |
 | 37 | 2020 | The role of ICT infrastructure, innovation and globalization on economic growth in OECD countries, 1 | included for assessment | abstract level only |
 | 38 | 2021 | Leveraging digital technologies to boost productivity in the informal sector in Sub‐Saharan Africa | included for assessment | abstract level only |
 | 41 | 2002 | Growth, Technological Change, and ICT Diffusion: Recent Evidence from OECD Countries | included for assessment | abstract level only |
@@ -29,13 +29,13 @@
 | 126 | 2023 | Job creation and destruction in the digital age: Assessing heterogeneous effects across European Uni | included for assessment | retrieved |
 | 138 | 2023 | Empirical Analysis of Inclusive Growth, Information and Communication Technology Adoption, and Insti | included for assessment | provided by author |
 | 140 | 2015 | What are the drivers of total factor productivity in the European Union? | included for assessment | abstract level only |
-| 153 | 2009 | Determinants of Labor Productivity: An Empirical Investigation of Productivity Divergence | included for assessment | requested from author |
+| 153 | 2009 | Determinants of Labor Productivity: An Empirical Investigation of Productivity Divergence | included for assessment | skipped: venue judged unreliable by the author |
 | 162 | 2024 | Impact of digitization on carbon productivity: an empirical analysis of 136 countries | included for assessment | retrieved |
 | 174 | 2025 | Artificial intelligence and global carbon inequality: Addressing the challenges and opportunities fo | included for assessment | provided by author |
 | 200 | 2013 | Discovering the Impact of ICT, FDI and Human Capital on GDP: A Cross-sectional Analysis | included for assessment | abstract level only |
 | 214 | 2021 | Technology adoption and the middle‐income trap: Lessons from the Middle East and East Asia | included for assessment | abstract level only |
 | 216 | 2024 | Does the digital economy promote or inhibit income inequality? | included for assessment | abstract level only |
-| 217 | 2021 | Does digital financial inclusion moderate or exacerbate output volatility? | included for assessment | requested from author |
+| 217 | 2021 | Does digital financial inclusion moderate or exacerbate output volatility? | included for assessment | provided by author |
 | 239 | 2018 | What drives labor market polarization in advanced countries? The role of China and technology | included for assessment | retrieved |
 | 242 | 2023 | The unequal implications of Industry 4.0 adoption: evidence on productivity growth and convergence a | included for assessment | requested from author |
 | 245 | 2023 | The impact of the digital economy on green total factor productivity in Belt and Road countries: the | included for assessment | retrieved |
@@ -114,11 +114,11 @@
 | 829 | 2026 | Cryptocurrency Adoption and Financial Resilience: A Worldwide Fractional Probit Analysis and Institu | included for assessment | abstract level only |
 | 831 | 2026 | Innovation capability moderates the association between AI readiness and sustainable development in  | included for assessment | abstract level only |
 | 878 | 2025 | Artificial Intelligence, Trade Convergence and Deglobalisation: A Cross-country Analysis | included for assessment | provided by author |
-| 879 | 2026 | AI capability and labor productivity in low- and middle-income countries: An absorptive capacity app | included for assessment | requested from author |
+| 879 | 2026 | AI capability and labor productivity in low- and middle-income countries: An absorptive capacity app | included for assessment | provided by author |
 | 881 | 2026 | ARTIFICIAL INTELLIGENCE ADOPTION IN EMERGING ECONOMIES: IMPACTS ON PRODUCTIVITY AND EMPLOYMENT | included for assessment | retrieved |
 | 882 | 2026 | Artificial Intelligence Readiness and Productive Capacity in Africa: A Cross‐Country Empirical Analy | included for assessment | abstract level only |
 | 886 | 2026 | DIGITAL FINANCIAL INCLUSION, INSTITUTIONAL QUALITY AND MULTIDIMENSIONAL POVERTY REDUCTION: A CONCEPT | included for assessment | retrieved |
-| 892 | 2025 | Technological Modernization and Economic Growth: A Comparative Study of Emerging and Developed Econo | included for assessment | requested from author |
+| 892 | 2025 | Technological Modernization and Economic Growth: A Comparative Study of Emerging and Developed Econo | included for assessment | skipped: venue judged unreliable by the author |
 | 898 | 2014 | The Relationship among Information and Communication Technologies and GDP in Middle East Countries:  | included for assessment | abstract level only |
 | 903 | 2026 | Artificial Intelligence, Inequality, and Sustainable Development: An Economic Perspective | included for assessment | retrieved |
 | 905 | 2026 | Artificial Intelligence and Aggregate Labor Productivity | included for assessment | abstract level only |

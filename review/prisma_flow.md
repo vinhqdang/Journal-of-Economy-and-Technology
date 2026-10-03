@@ -41,4 +41,5 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 | Excluded at full text | 29 | E1 8, E2 3, E4 18 |
 | Context only (no payoff outcome estimated) | 1 | |
 | **Included, preliminary** | **56** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 20 are flagged for human check |
-| Still to read | 170 | 11 requested from the author (batches of 5), 159 at abstract level only |
+| Skipped at full text because the author judged the venue unreliable | 2 | idx 153 and 892 |
+| Still to read | 168 | 6 requested from the author (952, 1469, 242, 1519, 1556, 1289), 159 at abstract level only, 3 being processed now |
