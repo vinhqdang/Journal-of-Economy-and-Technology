@@ -1090,6 +1090,202 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "174",
+  "title": "Artificial intelligence and global carbon inequality: Addressing the challenges and opportunities for SDG 10, SDG 12, and SDG 13",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with own estimation (POLS, SYS-GMM, UQR, dynamic threshold) on 67 countries over 1995-2019; exposure is AI proxied by industrial robot stock per capita; outcomes are carbon inequality between and within countries (families 4 and 6). Meets the AI criterion of at least 3 economies. Weak AI proxy is a risk-of-bias issue, not an eligibility one.",
+  "stream": "AI",
+  "technology": [
+   "artificial intelligence (proxied by industrial robots)"
+  ],
+  "exposure_measure": "Per capita industrial robot stock (IFR World Robotics), logged (LNAI). Alternative proxy in robustness: new robot installations per capita (AI2). Authors concede robots are 'far from being a comprehensive indicator of AI' (Sec 4.2.2).",
+  "sample": {
+   "n_economies": "67 (56 when GVC position is used)",
+   "economies_or_groups": "67 countries with IFR robot data and WID/WDI data; the country list is given only in Fig. 3 (image, not in extracted text). Authors say sample 'mainly involve[s] countries with comparative advantages in AI development'.",
+   "income_groups_covered": "not reported (no income-group split; sample selected on IFR robot data availability, likely skewed to high and upper-middle income)",
+   "years": "1995-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pooled OLS; system GMM (Blundell-Bond) dynamic panel as preferred baseline; unconditional quantile regression (RIF); SYS-GMM with AI-quantile dummies; SYS-GMM moderation (AI x moderator); dynamic panel threshold model (Seo et al. 2019, xthenreg) with TRADE, GVCP, GOV, IT as thresholds; IV-GMM robustness using lagged AI.",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Inter-country model: lagged DV, oil price, natural resource rents, GDP per capita. Intra-country model: lagged DV, renewable energy share, tertiary-sector share, share of population aged 80+. No explicit country or year fixed effects reported; control sets differ between the two equations. Instruments are internal lags (GMM-style)."
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Inter-country carbon inequality (population-weighted absolute percentage deviation of per capita CO2 from 67-country mean), log",
+    "direction": "positive",
+    "estimate": "SYS-GMM LNAI = 0.0016 (log-log elasticity); POLS LNAI = 0.1708. Text says each 1% rise in AI raises inter-country CI by '0.00016%' (does not match table coefficient 0.0016).",
+    "uncertainty": "SYS-GMM t = 5.178, p < 0.01; POLS t = 14.788",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, col (3) and (1); Sec 5.2: 'Each 1% increase in AI applications enlarges the inter-country carbon inequality by 0.00016%'"
+   },
+   {
+    "family": 4,
+    "indicator": "Intra-country carbon inequality (ratio of top-10% to bottom-50% emitters' carbon emissions, WID), log",
+    "direction": "positive",
+    "estimate": "SYS-GMM LNAI = 0.0130 (elasticity); POLS LNAI = 0.0132",
+    "uncertainty": "SYS-GMM t = 36.922, p < 0.01; POLS t = 5.804",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, col (4) and (2); Sec 5.2: 'carbon inequality within countries is boosted by 0.0130%'"
+   },
+   {
+    "family": 6,
+    "indicator": "Carbon inequality (distribution of per capita CO2 emissions) as resource-cost / carbon outcome; the paper does not estimate AI effect on emissions level or carbon intensity directly",
+    "direction": "positive",
+    "estimate": "Same coefficients as above (0.0016 inter; 0.0130 intra)",
+    "uncertainty": "p < 0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6; AI energy requirement is asserted as a mechanism (abstract 'due to its energy requirements') but no energy-use variable is estimated"
+   },
+   {
+    "family": 4,
+    "indicator": "Robustness: IV-GMM with lagged AI as instrument",
+    "direction": "positive",
+    "estimate": "Inter 0.0071; intra 0.0122",
+    "uncertainty": "t = 12.836 and 21.450; Sargan p = 1.0000 in both",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9 col (1)-(2)"
+   },
+   {
+    "family": 4,
+    "indicator": "Robustness: alternative dependent variables (unweighted CI_INTER2; top1%/bottom1% CI_INTRA2)",
+    "direction": "positive",
+    "estimate": "Inter 0.0145; intra 0.0222",
+    "uncertainty": "t = 84.038 and 35.54",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9 col (3)-(4)"
+   },
+   {
+    "family": 4,
+    "indicator": "Robustness: alternative AI proxy (new robot installations per capita, AI2)",
+    "direction": "positive",
+    "estimate": "Inter 0.0059; intra 0.0175",
+    "uncertainty": "t = 27.414 and 65.356",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9 col (5)-(6)"
+   },
+   {
+    "family": 4,
+    "indicator": "Unconditional quantile regression: AI effect across distribution of CI_INTER (Q10-Q90)",
+    "direction": "positive",
+    "estimate": "0.1648, 0.1489, 0.1835, 0.1477, 0.1400 at Q10, Q25, Q50, Q75, Q90",
+    "uncertainty": "all p < 0.01 (t = 7.4 to 10.5)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7 cols (1)-(5); note UQR coefficients are two orders of magnitude larger than SYS-GMM 0.0016 for the same outcome"
+   },
+   {
+    "family": 4,
+    "indicator": "Unconditional quantile regression: AI effect across distribution of CI_INTRA",
+    "direction": "positive",
+    "estimate": "0.0132, 0.0125, 0.0081, 0.0138, 0.0194 (U-shape, minimum at Q50)",
+    "uncertainty": "all p < 0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7 cols (6)-(10)"
+   },
+   {
+    "family": 4,
+    "indicator": "AI level non-linearity (dummies for AI above median / 75th percentile), inter-country CI",
+    "direction": "mixed",
+    "estimate": "LNAI 0.0050; LNAI*Q50 +0.0164; LNAI*Q75 -0.0447 (net marginal effect at top quartile about -0.0233 by simple sum, not reported by authors)",
+    "uncertainty": "all p < 0.01 (t = 13.4, 21.6, -17.3)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8 col (1); Sec 5.3: 'when AI level further surpasses the third-quarter value, the impact of AI can significantly decline and become negative'"
+   },
+   {
+    "family": 4,
+    "indicator": "AI level non-linearity, intra-country CI",
+    "direction": "positive",
+    "estimate": "LNAI 0.0126; LNAI*Q50 -0.0015; LNAI*Q75 +0.0013",
+    "uncertainty": "p < 0.01, p < 0.01, p < 0.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8 col (2)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Trade openness weakens AI's inequality-raising effect on inter-country CI: interaction LNAI*LNTRADE = -0.0163 (t = -14.804). Threshold model: AI effect turns from positive to negative above LNTRADE = 4.737 (log of trade/GDP).",
+    "threshold_value": "LNTRADE = 4.737 (about 114% trade/GDP in levels if natural log; only about 4.5% of country-years above it by 2019)",
+    "evidence": "Table 10 col (1); Table 11 col (1); Fig. 8 text 'in 2014, 20.9% of countries exceeded the threshold, but by 2019, this figure had fallen dramatically to 4.5%'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Global value chain position weakens AI effect on inter-country CI: LNAI*LNGVCP = -0.0176 (t = -12.271); LNAI main effect itself negative (-0.0233) in this specification. Threshold: b_LNAI 0.0067 below, 0.0067-0.1332 = -0.1265 above.",
+    "threshold_value": "LNGVCP = -1.0710 (56 countries)",
+    "evidence": "Table 10 col (2); Table 11 col (2); Sec 5.6 'changes to -0.1265, with a decrease of -0.1332'"
+   },
+   {
+    "moderator": "institutions",
+    "finding": "Government size weakens AI effect on intra-country CI: LNAI*LNGOV = -0.0064 (t = -6.118). Threshold: 0.0031 below, 0.0031-0.0078 = -0.0047 above.",
+    "threshold_value": "LNGOV = 2.9072 (about 50% of country-years above)",
+    "evidence": "Table 10 col (3); Table 11 col (3); Sec 5.6"
+   },
+   {
+    "moderator": "institutions",
+    "finding": "Institutional transparency (control of corruption index, logged) weakens AI effect on intra-country CI: LNAI*LNIT = -0.0111 (t = -15.518). Threshold: 0.0096 below, 0.0096-0.0098 = -0.0002 above, i.e. essentially zero, threshold only significant at 10%.",
+    "threshold_value": "LNIT = -0.2166 (p < 0.10 only; about 85% of sample above)",
+    "evidence": "Table 11 col (4): 'c -0.2166* (1.842)'; Sec 5.6"
+   },
+   {
+    "moderator": "other",
+    "finding": "Level of AI development: effect on inter-country CI rises above the median and then reverses above the 75th percentile of robot density; intra-country effect stays positive throughout.",
+    "threshold_value": "AI quantiles Q50 and Q75 (values not reported)",
+    "evidence": "Table 8; Sec 5.3"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 30 columns across Tables 6-11 (2 POLS, 2 SYS-GMM, 10 UQR, 2 AI-quantile GMM, 6 robustness, 4 moderation, 4 threshold); each tested on two dependent variables",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('AI significantly amplifies CI'). Identification relies on internal lags in SYS-GMM and a lagged-AI IV-GMM; authors admit reverse causality 'cannot be completely ruled out'. Sargan p-values of 0.95 to 1.0000 suggest instrument proliferation, so over-identification tests are uninformative. Models contain few controls (no education, institutions, trade or income distribution in the baseline) and controls differ between equations. Industrial-robot density correlates with income and manufacturing structure, which independently shape per capita CO2 distribution. No country or year fixed effects reported.",
+    "evidence": "Sec 5.4 'it is difficult to completely rule out the possibility that the level of AI development ... is influenced by ... carbon emission inequality'; Tables 6, 9 (Sargan p = 1.0000)"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "AI is proxied by industrial robot stock per capita, which captures automation in manufacturing, not machine learning, deep learning or generative AI. Authors acknowledge it is not a comprehensive indicator. Interpreting robot density as 'AI development' and its 'energy requirements' is not supported by measures of AI compute or energy.",
+    "evidence": "Sec 4.2.2; Table 1: 'measured by the per capita industrial robot stocks'; 'Although industrial robots are far from being a comprehensive indicator of AI'"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "67 countries chosen by availability of IFR robot and GVC data, 'mainly countries with comparative advantages in AI development'; 56 countries for GVC models. No income-group analysis, so results cannot speak to low-income countries. Panel ends in 2019, before generative AI.",
+    "evidence": "Sec 5.1 and 6.3: 'the sample countries mainly involve countries with comparative advantages in AI development'; Table 3 footnote (LNGVCP 56 countries)"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Inter-country CI is constructed by the authors from WDI per capita CO2 (territorial or production-based, not clearly stated; the paper's own framework speaks of consumption- and investment-based emissions). Intra-country CI (top 10% / bottom 50% emitters) from WID is modelled/imputed at the group level, not a direct survey measure. Both are heavily transformed (log of an absolute-deviation index) and the inter-country measure is a country-year deviation from the sample mean, so it depends on sample composition. The paper does not say how the global mean or WID series are defined by year.",
+    "evidence": "Sec 4.2.1 (CI_INTER formula and CI_INTRA definition); Table 1 'calculated by the authors'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Many specifications (POLS, SYS-GMM, UQR, quantile dummies, moderation, thresholds, IV-GMM) with different control sets by outcome, hypotheses H1b/H2b/H3b all reported as 'confirmed'. Estimated effect sizes are extremely unstable across estimators for the same outcome (0.0016 SYS-GMM vs 0.1708 POLS vs about 0.15-0.18 UQR). Unit-root tests show mixed integration orders yet levels models are estimated and cointegration is invoked as justification. t-statistics of 100 to 1,800 (e.g. L.Y t = 1876.54, 378.68) are implausibly large for GMM output. Threshold in LNIT significant only at 10%.",
+    "evidence": "Table 6 vs Table 7; Table 9 R2 L.Y t = 1876.54; Table 4 mixed I(0)/I(1); Table 11 col (4)"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Internal inconsistencies point to transcription or reporting errors: text '0.00016%' vs table 0.0016; Sec 5.6 reports TRADE threshold result using GOV numbers (d_LNAI -0.0078, net -0.0047) while Table 11 col (1) gives d_LNAI = -0.0665; Sec 5.5 says governance moderators reduce 'inter-country' CI when they concern intra-country CI; Table 11 'd_Cons.' equals b_LNAI exactly in every column; Table 8 L.Y has negative t-statistics with positive coefficients; Eq. (6) lags CI_INTER instead of CI_INTRA; Tables 9-11 lack N in some columns. All reported hypotheses confirmed; no null results or failed tests reported. No pre-registration.",
+    "evidence": "Sec 5.6 vs Table 11 col (1); Table 11 d_Cons rows; Table 8 L.Y '(-402.78)'; Sec 5.5 'inhibit the increasing effect of AI on inter-country carbon inequality'"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Journal is Geoscience Frontiers (Elsevier, open access); no venue concern. No embedded instructions to the reader found in the text. Key cautions for synthesis: (1) AI exposure is industrial robots only; (2) outcome is carbon inequality, not emissions level or carbon intensity, so it is only indirectly a resource-cost result; (3) the main SYS-GMM inter-country elasticity (0.0016) is economically negligible and differs by about two orders of magnitude from POLS and UQR estimates, and the text misstates it as 0.00016%; (4) several textual and table inconsistencies (see selective_reporting) mean exact numbers should be treated cautiously; (5) threshold values are in logs (LNTRADE 4.737, LNGVCP -1.071, LNGOV 2.907, LNIT -0.217), and the abstract rounds them to 4.74, -1.07, 2.90, -0.22; (6) the country list is only in Fig. 3 (image) and could not be read from the text, and no income-group results exist. Heterogeneity by income group is therefore unavailable.",
+  "quote_check": {
+   "verified": 3,
+   "checked": 13
+  },
+  "quote_flag": "needs human check"
+ },
+ {
   "idx": "239",
   "title": "What drives labor market polarization in advanced countries? The role of China and technology",
   "fulltext_decision": "include",
@@ -1735,6 +1931,217 @@
    "checked": 16
   },
   "quote_flag": "ok"
+ },
+ {
+  "idx": "276",
+  "title": "Does artificial intelligence help in improving human capital based educational development? Evidence from 29 countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with its own estimation (FE, 2SLS, mediation) of AI development (Stanford Global AI Vibrancy score) on a schooling and education-quality index in 29 countries, with explicit developed/developing comparison. Meets AI sample rule (>=3 economies) and outcome family 5 (schooling), with a family 4 mediator (inequality).",
+  "stream": "AI",
+  "technology": [
+   "artificial intelligence (national AI development / vibrancy composite)"
+  ],
+  "exposure_measure": "Stanford Global AI Vibrancy Tool total score (8 pillars, 42 indicators), scaled 0-1 (original scaled down by 100%); robustness: Oxford Insights Government AI Readiness Index, six AI pillar scores, 12 individual AI sub-indicators in logs (Sections 4.1, 5.4; Tables 4, A.2). Instruments: industrial robot stock/installations/total count.",
+  "sample": {
+   "n_economies": "29",
+   "economies_or_groups": "Mainly OECD and BRICS economies (e.g., Brazil, China, India, Russia, Malaysia, Turkey, Singapore, US, Japan, European countries); full list only shown in Fig. 1 panels",
+   "income_groups_covered": "mixed (mostly high income; developing group includes large emerging economies); World Bank income groups not used, 'developed' vs 'developing' split only",
+   "years": "2017-2021 (annual data interpolated to 60 monthly periods)",
+   "unit": "country-year (analysed as country-month after quadratic interpolation; N=1740 in Table 2, 1734 in regressions)"
+  },
+  "design": {
+   "estimator": "Two-way fixed effects OLS (country and 'year' FE); subsample regressions (developed/developing; COVID/non-COVID); 2SLS with industrial-robot IVs; Sobel-Goodman mediation; PSM mentioned",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Country FE, time FE; controls: ln GDP per capita, CPI growth, FX rate, personal expenditure growth, unemployment, population growth, and five Legatum education-quality sub-indices (adult, pre-primary, primary, secondary, tertiary)"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "HCBED index (World Bank HCI education component adjusted for learning-adjusted years of schooling and returns to education) on AI Vibrancy Index, full sample FE",
+    "direction": "positive",
+    "estimate": "0.084 (HCBED units per unit of AI index, 0-1 scale; text misdescribes as 'a 1% increase in AI ... 0.084 increase')",
+    "uncertainty": "SE 0.020, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 Model (1), p.8: 'AI 0.084*** (0.020)'; N=1734, R2=0.598"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED on AI, developed-country subsample",
+    "direction": "positive",
+    "estimate": "0.058",
+    "uncertainty": "SE 0.023, ** (p<0.05) in Table 3; text says significant at 10%",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 Model (3), p.8; N=358; text p.8: 'coefficient for developed countries is 0.058, significant at the 10% level'"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED on AI, developing-country subsample",
+    "direction": "null",
+    "estimate": "-0.031",
+    "uncertainty": "SE 0.034, not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 Model (2), p.8; N=1376"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED on AI, COVID period (2020.01-2021.12)",
+    "direction": "positive",
+    "estimate": "0.172",
+    "uncertainty": "SE 0.045, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 Model (4), p.8; N=690"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED on AI, pre-COVID period (2017.01-2019.12)",
+    "direction": "negative",
+    "estimate": "-0.024",
+    "uncertainty": "SE 0.008, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 Model (5), p.8; N=1044; text p.9: 'coefficient is negative (-0.024)'"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED2 (recomputed with HDI mean years of schooling) on AI",
+    "direction": "positive",
+    "estimate": "0.082",
+    "uncertainty": "SE 0.0174, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 Model (6), p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED on Government AI Readiness Index",
+    "direction": "positive",
+    "estimate": "0.004 per index unit (units not defined)",
+    "uncertainty": "SE 0.001, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 Model (7), p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED on AI pillars (separate regressions): Diversity, Education, Policy and Governance, Economy positive; R&D and Infrastructure not significant",
+    "direction": "mixed",
+    "estimate": "Diversity 0.010, Education 0.009, Policy 0.002, Economy 0.000 (rounded, significant), R&D -0.000, Infrastructure 0.001 (ns)",
+    "uncertainty": "SE 0.002, 0.001, 0.000, 0.000 ; R&D and Infrastructure SE 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 Models (8)-(13), p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED on 12 individual AI sub-indicators (logs)",
+    "direction": "mixed",
+    "estimate": "Significant positive: Legislative mentions 0.000, Study programs 0.002, Study program penetration 0.002, Strategy presence 0.001, Newly funded companies 0.004, Private investment 0.002, Journal publications 0.022, Patent grants 0.002; not significant: AI talent concentration, notable ML models, internet speed; gender equality 0.000*",
+    "uncertainty": "SE reported per column, e.g. journal publications 0.005",
+    "horizon": "contemporaneous",
+    "evidence": "Table A.2, p.19; each in a separate regression with different N (992-1734)"
+   },
+   {
+    "family": 5,
+    "indicator": "HCBED on AI, 2SLS with industrial-robot instruments (stock, installations, total count)",
+    "direction": "positive",
+    "estimate": "0.260 (robot stock), 0.179 (robot installations), 0.244 (total robots)",
+    "uncertainty": "SE 0.0785, 0.0482, 0.070; all p<0.01; Kleibergen-Paap rk Wald F 36.2, 119.7, 46.3",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.14; N=1182; 'AI 0.260*** (0.0785)'"
+   },
+   {
+    "family": 4,
+    "indicator": "Income inequality (Gini, OECD data) regressed on AI (mediator equation)",
+    "direction": "positive",
+    "estimate": "2.400 (Gini units not specified)",
+    "uncertainty": "SE 0.2966, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.16, Mechanism test (1): 'Economic_inequity 2.400*** (0.2966)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Mediation via economic inequality: direct effect 0.057, indirect effect 0.027, total 0.084 (Sobel-Goodman)",
+    "direction": "positive",
+    "estimate": "indirect 0.027 (about one third of total effect)",
+    "uncertainty": "SE 0.005, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.16; text p.15: 'direct effect ... 0.057, while the indirect effect ... 0.027'"
+   },
+   {
+    "family": 4,
+    "indicator": "Education inequality (Legatum component) regressed on AI, and mediation via education inequality (indirect effect on HCBED)",
+    "direction": "mixed",
+    "estimate": "AI -> education inequality 0.567; education inequality -> HCBED -0.006; indirect -0.003; direct 0.088; total 0.084",
+    "uncertainty": "AI->edu inequality SE 0.3105 (p<0.1); -0.006 SE 0.0016 (p<0.01); indirect SE 0.002 (p<0.1)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.16, Mechanism test (2): 'Sobel-goodman mediation tests ... -0.003*'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Positive significant effect in 'developed' subsample (0.058, N=358), no significant effect in 'developing' subsample (-0.031, N=1376). Authors attribute this to lower AI penetration per capita and infrastructure/education access limits. Subsample is not a formal interaction test and the classification criterion is not stated.",
+    "threshold_value": "none",
+    "evidence": "Table 3 Models (2)-(3) and text p.8-9; Fig. 3 per-capita AI index"
+   },
+   {
+    "moderator": "other",
+    "finding": "Time period: coefficient is +0.172 during COVID-19 (2020-21) and -0.024 in 2017-19; authors interpret as AI-enabled remote education and shift from substitution to assistance. Pandemic-period education quality measures may be affected by other contemporaneous shocks.",
+    "threshold_value": "none",
+    "evidence": "Table 3 Models (4)-(5), p.8; text p.9"
+   },
+   {
+    "moderator": "other",
+    "finding": "AI dimension: Education, Diversity, Policy & Governance and Economy pillars positively related to HCBED; R&D and Infrastructure pillars not significant.",
+    "threshold_value": "none",
+    "evidence": "Table 4 Models (8)-(13), p.11; text p.11"
+   }
+  ],
+  "income_group_results": {
+   "high": "Not reported by World Bank group; 'developed' subsample (N=358, about 6 countries by obs/60): AI coef 0.058 (SE 0.023)",
+   "upper_middle": "not reported separately; pooled in 'developing' subsample: AI coef -0.031 (SE 0.034), not significant",
+   "lower_middle": "not reported separately; pooled in 'developing' subsample (e.g., India): not significant",
+   "low": "not covered (authors state low-income countries lack data)"
+  },
+  "n_specifications_reported": "about 35 (5 subsample models, 8 robustness models, 12 sub-indicator models, 3 IV models, 2 mediation sets)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('AI influences HCBED', 'solves the two-way causality issue'). The IV is industrial robot stock/installations, whose exclusion from education outcomes is argued only briefly and is doubtful (robots proxy for general economic/industrial development and can affect education demand through wages and automation exposure). Only about 1 year of within-country variation in a 5-year window; PSM is mentioned but no PSM results are reported. Controls include Legatum education-quality sub-indices that are components of the outcome.",
+    "evidence": "Section 5.4 p.13, Table 5 p.14: 'use of industrial robot prevalence as an instrumental variable (IV) is appropriate and justified'; Table 3 controls Pre_edu, Prim_edu etc."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "AI Vibrancy score is a composite of R&D, investment, talent, policy and infrastructure indicators for the national ecosystem, not adoption or use in education. Authors concede possible 'generalization bias'. Index is dominated by country size (total, not per capita) and shows little within-country variation. Weighted pillars include internet speed and supercomputers.",
+    "evidence": "Section 4.1 p.4; Limitations p.18: 'using the AI Vibrancy Index as a proxy for AI's influence on educational development may introduce a degree of generalization bias'"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "29 countries chosen by availability of returns-to-education estimates and AI indicators, mostly OECD/BRICS; only five years (2017-2021); no low-income and few lower-middle-income countries; developed subsample covers only about 6 countries (358 obs / 60 months), developing about 23, which contradicts the stated mix and the selection criterion for 'developed' is not given.",
+    "evidence": "Section 5.1 p.5; Table 3 observations 1376 vs 358; Limitations p.18"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "HCBED is the authors' own constructed index combining years of schooling, quality scores from Legatum, and country-specific returns to education from single-country literature estimates (which vary little over time). Annual data (index, AI score) are converted to monthly by quadratic interpolation, creating 1740 country-months from about 145 country-years, which artificially inflates N and deflates standard errors. Education quality drawn from a rankings index.",
+    "evidence": "Section 5.1 p.6: 'transformed certain annual and quarterly variables into monthly frequency using quadratic interpolation'; Table 2 N=1740; Section 4.2 p.4-5"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Standard errors do not appear clustered by country; observations are interpolated monthly and 'Year FE' on monthly data is unclear; highly collinear controls (VIF 8.4 for lnGDP, about 6.8 for adult/primary/secondary education quality); many subsample and indicator regressions; sub-indicators estimated one by one in logs; Table 6 R2 around 0.99 vs 0.598 in Table 3 for the same specification, unexplained. Interpretation misstates units ('1% increase').",
+    "evidence": "Table 2 VIF column p.7; Table 3 p.8 'Standard errors in parentheses'; Table 6 p.16 R-squared 0.9916 vs Table 3 0.598"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Positive full-sample result is emphasised, but null developing result, negative pre-COVID result, and non-significant pillars/IV-related caveats are reported. PSM is announced but not reported; text reports the developed coefficient 0.058 as significant at 10% while the table marks 5%, and some tables show coefficients rounded to 0.000. Full country list and classification not tabulated.",
+    "evidence": "Section 5.4 p.13 'implementing the propensity score matching strategy' with no PSM table; Table 3 vs text p.8"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Elsevier Technology in Society 2025. Outcome is education/human capital (family 5); inequality mediator (family 4) is a secondary result. Several internal inconsistencies for a human reviewer: 1740 vs 1734 observations; Table 2 N inflated by interpolation; text speaks of 'within the specified 20 months' and 'HCBED ... from over 0.6 to less than 0.8' while data span 60 months; text says 'a 1% increase' but variables are in levels on a 0-1 scale; developed coefficient significance mismatch (** in table, 10% in text); R2 0.9916 in Table 6 vs 0.598 in Table 3 for the same model; Hypothesis 1 states AI contributes to HCBED 'by aggravating income inequality' based on a Sobel test with Gini on unclear scale and no mediator-to-outcome identification. Coverage of income groups: no low-income and few lower-middle-income countries, so evidence on the 'payoff' for poorer countries is thin. No instructions directed at the reader were found in the text.",
+  "quote_check": {
+   "verified": 5,
+   "checked": 12
+  },
+  "quote_flag": "needs human check"
  },
  {
   "idx": "298",
@@ -3250,6 +3657,81 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "534",
+  "title": "Do robots impact artificial intelligence (AI)-related employment? Evidence from a cross-national study",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E2",
+  "decision_rationale": "Quantitative cross-country panel (28 countries named, 25 in estimation, 2016-2022) with a labour-market outcome (relative AI hiring index), but the exposure is industrial robot volume per labour force, which is not one of the eligible technologies (ICT, mobile, internet/broadband, crypto, AI). AI hiring is the outcome, not the exposure; internet penetration, patents, GDP per capita and tertiary-educated labour share enter only as threshold variables or controls.",
+  "stream": "AI",
+  "technology": [
+   "industrial robots (exposure)",
+   "AI talent hiring (outcome); internet penetration used only as a threshold variable"
+  ],
+  "exposure_measure": "Robot volume as a share of the labour force (rvol_lf), from Statista and WDI. Table 2: 'Robot Volume as a share of labor force'.",
+  "sample": {
+   "n_economies": "28 listed (Table 2 note); 25 in the estimated panels (Table 5: N=25, T=6)",
+   "economies_or_groups": "Mostly high-income economies plus India, Brazil, South Africa, Chile; list in Table 2 note (Australia, Belgium, Brazil, Canada, Chile, Denmark, Finland, France, Germany, Hong Kong, India, Ireland, Israel, Italy, Luxembourg, Netherlands, New Zealand, Norway, Portugal, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, UAE, UK, USA)",
+   "income_groups_covered": "mixed, but dominated by high income; income groups are not reported by name",
+   "years": "2016-2022 (abstract); 150 observations in Table 3",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pooled OLS, fixed effects, random effects, system GMM (Table 4); dynamic panel threshold regression of Seo and Shin (Table 5, Table 6)",
+   "identification": "threshold model",
+   "key_controls_fixed_effects": "Lagged dependent variable; internet, resident patents per million, GDP per capita, advanced-education labour share (each in turn as threshold, the others as controls); time effects in the model equation"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "none",
+  "notes": "Borderline on E2: the title and framing link robots and AI, but the regressor is robot density (p. 906, Table 2) and the dependent variable is the LinkedIn-based relative AI hiring index (aihi). A reviewer may reconsider if robots are judged an AI-capability proxy; this is an exclusion on my reading of the stated criteria. For reference only, results (Table 4, p. 907): rvol_lf positive in linear models (pooled 48.347*, system-GMM 150.069***). Table 5 (p. 909): threshold coefficients change sign by regime, e.g. internet threshold 82.39 (lower -1779.863***, upper 2105.485***); GDP per capita threshold 47714.14 (lower 616.005***, upper -895.725***). Inconsistencies noticed: the abstract and text say 28 countries but Tables 5 and 6 report N=25; System-GMM uses 100 observations with only 6 years; the text interprets 2,105 as raising the AI hiring index 'by 2,105 times', which is a misreading of a coefficient on a share variable; Table 5 constant and some significance stars look inconsistent with standard errors (e.g. 2105.485 with SE 785.128 shown as ***, constant -7.314*** with SE 5.646); threshold CI for patents includes negative values [-329.231, 693.656]; no endogeneity instrument beyond GMM-style lags. No instructions directed at the reader were found in the text.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok"
+ },
+ {
   "idx": "542",
   "title": "Impact of ICT Access on Total Factor Productivity(TFP) in Asian Economies",
   "fulltext_decision": "exclude",
@@ -3668,6 +4150,170 @@
   "quote_check": {
    "verified": 0,
    "checked": 0
+  },
+  "quote_flag": "ok"
+ },
+ {
+  "idx": "707",
+  "title": "Digitalisation and structural change: Evidence from cross-country analysis",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative cross-country panel (FE, FE-IV, system GMM) of 51 economies, exposure is internet penetration (with mobile penetration as robustness), outcomes are structural change (between-sector productivity component) and manufacturing employment share, with explicit income-group comparisons. All criteria met.",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "mobile telephony (robustness only)"
+  ],
+  "exposure_measure": "Internet penetration (% of population with internet access), entered in logs in the structural change equation and in levels in the manufacturing employment equation; mobile subscriptions per 100 people as alternative measure (Table 3 Model 7, Table 5 Model 5). Source stated as ITU in Section 3.2 but as WDI in Table A1.",
+  "sample": {
+   "n_economies": "51 (47-49 in most regressions; 36-42 in the manufacturing employment models)",
+   "economies_or_groups": "Economies in the GGDC/UNU-WIDER Economic Transformation Database, mostly developing (Africa, Asia, Latin America) plus some high-income; Table A2 note lists 6 high-income, 9 low-income, 19 lower-middle-income, 16 upper-middle-income",
+   "income_groups_covered": "high, upper-middle, lower-middle, low (only 6 high-income economies)",
+   "years": "1990-2018",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Two-way fixed effects (country and year) with country-clustered SE; FE-IV (regional average internet penetration and lagged internet penetration as instruments); two-step system GMM with collapsed instruments",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Lagged log labour productivity, lagged FDI/GDP, lagged backward and forward GVC linkages (or aggregate GVC index), lagged human capital index; robustness adds gross capital formation, agricultural employment share, REER. Manufacturing equation adds log population and GDP per capita and their squares. Country and year FE (Table 2 and Table 4 report time FE only in the table rows; Table 3 lists both)."
+  },
+  "results": [
+   {
+    "family": 2,
+    "indicator": "Economy-wide structural change (between-sector component of labour productivity growth, McMillan-Rodrik decomposition) on log internet penetration, FE",
+    "direction": "positive",
+    "estimate": "0.126 to 0.137 (Table 2 Models 1-4; Model 4 = 0.137) per unit of log internet penetration; 0.171-0.180 in robustness (Table 3 Models 5, 6, 8)",
+    "uncertainty": "Model 4 SE 0.0759, significant only at 10%; Table 3 Models 5, 6, 8 SE 0.072-0.079, p<0.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 Model 4; text p.319: 'positive and significant effect on economy-wide SC (albeit at the 10%)'"
+   },
+   {
+    "family": 2,
+    "indicator": "Structural change on log internet penetration, FE-IV (regional average and lagged internet penetration as instruments)",
+    "direction": "positive",
+    "estimate": "0.204 to 0.341 (Table 4 Models 1-6)",
+    "uncertainty": "SE 0.116-0.157; significance 10% to 1%; Kleibergen-Paap p=0.00, Hansen p 0.11-0.33",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, row 'Log (internet pen) _IV'"
+   },
+   {
+    "family": 2,
+    "indicator": "Structural change on log internet penetration, two-step system GMM",
+    "direction": "positive",
+    "estimate": "0.118 to 0.186 (Table A3 Models 1-5)",
+    "uncertainty": "SE 0.069-0.094; significant at 5-10%; AR(2) p 0.23-0.51, Hansen p 0.58-0.80",
+    "horizon": "contemporaneous",
+    "evidence": "Table A3 row 'Log (internet penetration)'; text p.323: 'estimates comparable to the FE regressions'"
+   },
+   {
+    "family": 2,
+    "indicator": "Structural change on log mobile penetration, FE (alternative exposure)",
+    "direction": "positive",
+    "estimate": "0.177 (Table 3 Model 7)",
+    "uncertainty": "SE 0.0873, p<0.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 Model 7, row 'Log (mob penetration)'"
+   },
+   {
+    "family": 2,
+    "indicator": "Manufacturing share of total employment (percentage points) on internet penetration (% points), FE",
+    "direction": "negative",
+    "estimate": "-0.0782 to -0.0596 (Table 6 Models 1-4; Model 4 = -0.0596) pp of employment share per pp of internet penetration",
+    "uncertainty": "SE 0.0217-0.0226; p<0.01 in all four",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, row 'Internet penetration'"
+   },
+   {
+    "family": 2,
+    "indicator": "Manufacturing employment share on internet penetration, FE-IV",
+    "direction": "negative",
+    "estimate": "-0.0430 (Model 5), -0.0626 (Model 6), -0.0413 (Model 7)",
+    "uncertainty": "SE 0.0103, 0.0236, 0.0247; Model 7 significant only at 10%. Table 6 reports no instrument test statistics.",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6 Models 5-7"
+   },
+   {
+    "family": 2,
+    "indicator": "Manufacturing employment share on internet penetration, low- and middle-income subsample",
+    "direction": "negative",
+    "estimate": "-0.0707 (internet, Table A4 Model 1); -0.116 (server penetration, Model 2)",
+    "uncertainty": "SE 0.0242 and 0.0364; p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table A4 Models 1-2; text p.325: 'negative and significant impact ... in low- and middle-income countries'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Positive effect of internet penetration on structural change is larger in low and lower-middle income economies than in upper-middle and high-income ones. The interaction of internet penetration with an upper-middle/high-income dummy is negative; the main internet term is itself not significant in this specification.",
+    "threshold_value": "none (binary split: low/lower-middle vs upper-middle/high)",
+    "evidence": "Table 5 Model 1: UMIC-HIC# internet pen -0.0147** (SE 0.00556); internet pen 0.00660 (SE 0.00966)"
+   },
+   {
+    "moderator": "sector structure",
+    "finding": "Effect on structural change is largest in structurally underdeveloped (agrarian) economies and smaller in structurally developing and developed economies (Sen 2019 classification based on 2018 employment shares). Same pattern with mobile penetration, though only the 'developing' interaction is significant at 10%.",
+    "threshold_value": "none (3-category variable: 19 underdeveloped, 19 developing, 12 developed)",
+    "evidence": "Table 5 Models 3-5: internet pen 0.0463**, ST developing# -0.0448***, ST developed# -0.0499***; mobile Model 5 ST developing# -0.00932*"
+   },
+   {
+    "moderator": "other",
+    "finding": "Effect on structural change is stronger where forward GVC linkages are higher (positive interaction of log forward linkages with internet penetration).",
+    "threshold_value": "none",
+    "evidence": "Table 5 Model 2: L.logFL# internet pen 0.0105** (SE 0.00515)"
+   },
+   {
+    "moderator": "other",
+    "finding": "Manufacturing employment effect is negative in South Asia subsample (5 countries) and not significant in sub-Saharan Africa subsample (13 countries).",
+    "threshold_value": "none",
+    "evidence": "Table A4 Models 3-4: -0.301*** (SE 0.0626) and 0.000309 (SE 0.0637)"
+   }
+  ],
+  "income_group_results": {
+   "high": "Not estimated separately (only 6 high-income economies). Upper-middle and high are pooled in the interaction; the effect on structural change is smaller than for low/lower-middle income (Table 5 Model 1, -0.0147**).",
+   "upper_middle": "Pooled with high income; smaller effect on structural change than for low/lower-middle (Table 5 Model 1).",
+   "lower_middle": "Pooled with low income in the interaction; larger positive effect on structural change. Manufacturing employment effect negative in low- and middle-income subsample (Table A4 Model 1, -0.0707***), not split further.",
+   "low": "Pooled with lower-middle income; larger positive effect on structural change (Table 5 Model 1). Not estimated separately."
+  },
+  "n_specifications_reported": "about 36 (Table 2: 4; Table 3: 5; Table 4: 6; Table 5: 5; Table 6: 7; Table A3: 5; Table A4: 4)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('isolate the causal effect'), but the sole external instrument is the regional average of internet penetration, whose exclusion restriction is not defended (regional diffusion can be correlated with regional structural change and common shocks); the other instrument is lagged internet penetration. Footnote 3 argues reverse causality is absent for the manufacturing equation because the outcome is sectoral and the regressor national, which is not a valid argument. FE-IV estimates are larger than FE, unexplained. Table 6 Models 5-7 report no instrument tests.",
+    "evidence": "Section 3.2 p.318-319; Section 4.3 p.319-322; footnote 3 p.319; Table 4 notes; Table 6"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet penetration is a single access proxy for 'digitalisation'; the authors acknowledge this. Data source is given inconsistently (ITU in text, WDI in Table A1). Internet penetration is 0 at the minimum and 1230 observations versus 1398 for other variables, so early years have many zeros/missing; log of zero values not discussed.",
+    "evidence": "Section 3.2 p.318; Table A1; Table 1; conclusion p.325"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Sample is restricted to the ETD's 51 economies, mostly developing, with only 6 high-income; unbalanced panel with 36-49 countries depending on specification; the 1990-2018 window is set by data availability. Income groups are not separately estimated, only through an interaction. Sample size is inconsistent: 51 stated, Table A2 note adds to 50.",
+    "evidence": "Section 3.1 p.318; Table A2 note; Tables 2-6 observation counts"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Structural change is computed from the standard McMillan-Rodrik decomposition on ETD sectoral value added and employment, and manufacturing employment share is measured directly. The paper concedes manufacturing share is an imperfect industrialisation indicator.",
+    "evidence": "Section 3.2 p.318 (decomposition); Table A1"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Many specifications with varying control sets across models and estimators (about 36). Control sets differ between models (for example GCF is -0.019 insignificant in FE but -2.4 significant in FE-IV, with unexplained scale differences), the stated 'doubling' interpretation of a log coefficient is incorrect, and the preferred model is not declared. Significance of the headline FE effect is only 10% in Model 4. Some tables list no country FE row. Table 6 Model 5 omits year FE.",
+    "evidence": "Tables 2-6, A3-A4; p.319: 'A doubling of internet penetration is associated with a 0.14-unit increase'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "The abstract reports a 0.14 to 0.18 range drawn from FE models, omitting the larger FE-IV estimates (0.20-0.34), and states that the effects are stronger for low and lower-middle-income economies, although the main effect is insignificant in the income interaction. Manufacturing employment effect in SSA is insignificant, and appendix tables report only a few of the many specifications. Robustness text claims all results hold, but Table 3 Model 5 has insignificant forward linkage and backward linkage coefficients.",
+    "evidence": "Abstract; Table 3 Model 5; Table 5 Model 1; Table A4 Model 4"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Journal of Digital Economy 5 (2026) 314-329, KeAi/Elsevier, peer reviewed, received 2 Sep 2025, accepted 22 Mar 2026. Funded by UNU-WIDER. Internal inconsistencies for the reviewer: (1) the abstract and p.319 say a 'doubling of internet penetration' raises SC by 0.14 units, but the regressor is a log, so the coefficient is a semi-elasticity (a doubling would imply about 0.095 on 0.137). (2) Text p.322 says KP p<0.05 'ensures' the model is not under-identified, and Table 4 shows p=0.00 and Hansen p>0.05, but instrument strength (Cragg-Donald F) is not reported. (3) Table 5 text numbering of Models 3-4 is loose (Model 4 uses lagged SC and the structural-development interaction). (4) Table 5 Model 1 reports a negative interaction on a binary dummy but the main effect is insignificant. (5) The structural change effect applies to the within-year percentage-point contribution to productivity growth; units of SC are percent. (6) The manufacturing employment results are interpreted as 'digital-led deindustrialisation' in developing countries, but the full sample includes six high-income economies and the SSA subsample shows no effect. Outcome families: both outcomes coded to family 2 (structural change); manufacturing employment share could also be read as family 3 (labour market). No instructions embedded in the text were found.",
+  "quote_check": {
+   "verified": 8,
+   "checked": 8
   },
   "quote_flag": "ok"
  },
@@ -6050,6 +6696,83 @@
    "checked": 9
   },
   "quote_flag": "needs human check"
+ },
+ {
+  "idx": "1090",
+  "title": "Driving Industrial Growth through Digitalization: Insights from CEE Countries",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E4",
+  "decision_rationale": "Descriptive benchmarking of DESI indicators (SME digital intensity, ERP, big data, AI use) for five CEE countries with charts only; no estimation of any relationship with an outcome. Would also fail E1 (5 countries, non-AI technologies) and E3 (no outcome from the six families).",
+  "stream": "both",
+  "technology": [
+   "ICT/digital intensity of SMEs",
+   "ERP",
+   "big data analytics",
+   "AI (enterprise use)"
+  ],
+  "exposure_measure": "DESI enterprise indicators (share of SMEs with basic digital intensity, ERP use, big data use, AI use) shown as descriptive percentages",
+  "sample": {
+   "n_economies": "5",
+   "economies_or_groups": "Romania, Hungary, Bulgaria, Czech Republic, Poland (EU-27 average as reference)",
+   "income_groups_covered": "not reported",
+   "years": "2014-2023 stated; indicator series 2019-2023, AI 2022-2023",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "none (descriptive comparison of DESI indicators)",
+   "identification": "none",
+   "key_controls_fixed_effects": "none"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "0",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "possible (conference proceedings, IBIMA Publishing, Communications of International Proceedings; descriptive study with no estimation)",
+  "notes": "Methodology section: 'comparative case study' relying on DESI reports; Conclusions speculate on productivity effects without testing them. Title promises industrial growth but no industrial output outcome is analysed. Minor internal inconsistencies: abstract says 2014-2023 data, text says indicators only from 2019/2021/2022; text for Chart 3 says progress 2023 vs 2022 while chart title says 2021-2022. No instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok"
  },
  {
   "idx": "1105",

@@ -1,6 +1,6 @@
 # Full-text requests (short list)
 
-Only papers with no free, legal full text found are listed. 72 of 256 papers were obtained automatically (open-access copies, repository versions, preprints), and each file was checked against its title. These are the ones I most need (5 of the original 26 have already been received) (25 chosen by priority, plus one paper whose automatic download turned out to be the wrong document). Download them with institutional access and send them back; name each file with the number in the first column, for example `878.pdf`.
+Only papers with no free, legal full text found are listed. 72 of 256 papers were obtained automatically (open-access copies, repository versions, preprints), and each file was checked against its title. These are the ones I most need (10 of the original 26 have already been received) (25 chosen by priority, plus one paper whose automatic download turned out to be the wrong document). Download them with institutional access and send them back; name each file with the number in the first column, for example `878.pdf`.
 
 If the repository is private you can push them to `review/fulltext/`; if it is public, attach them in the chat instead, because publisher PDFs should not be committed to a public repository.
 
@@ -8,11 +8,6 @@ Everything else without a free copy is **not requested**. It will be handled at 
 
 | # | Year | Title | Link | Why it matters |
 |---|---|---|---|---|
-| 276 | 2025 | Does artificial intelligence help in improving human capital based educational development? Evidence from 29 countr | https://doi.org/10.1016/j.techsoc.2025.103004 | AI evidence; income-level comparison; distribution or labour outcome |
-| 534 | 2025 | Do robots impact artificial intelligence (AI)-related employment? Evidence from a cross-national study | https://doi.org/10.1108/ijm-04-2024-0277 | AI evidence; threshold or heterogeneity; income-level comparison; distribution or labour outcome |
-| 174 | 2025 | Artificial intelligence and global carbon inequality: Addressing the challenges and opportunities for SDG 10, SDG 1 | https://doi.org/10.1016/j.gsf.2025.102072 | AI evidence; threshold or heterogeneity; distribution or labour outcome |
-| 707 | 2026 | Digitalisation and structural change: Evidence from cross-country analysis | https://doi.org/10.1016/j.jdec.2026.03.003 | threshold or heterogeneity; income-level comparison; distribution or labour outcome; structural change; convergence |
-| 1090 | 2025 | Driving Industrial Growth through Digitalization: Insights from CEE Countries | https://doi.org/10.5171/2025.4521925 | AI evidence; income-level comparison; structural change; convergence |
 | 1192 | 2026 | The Digital Maturity Paradox: The Divergent Impact of Network Readiness and FDI Across Development Tiers | https://doi.org/10.3390/economies14080320 | AI evidence; income-level comparison; structural change; convergence |
 | 1494 | 2026 | Digital transformation and income disparities: A threshold analysis in developing countries | https://doi.org/10.1556/032.2025.00183 | threshold or heterogeneity; income-level comparison; distribution or labour outcome; structural change; convergence |
 | 57 | 2020 | Nexus between energy consumption, information and communications technology, and economic growth: An enquiry into e | https://doi.org/10.1002/pa.2172 | threshold or heterogeneity; income-level comparison |

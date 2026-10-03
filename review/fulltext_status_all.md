@@ -31,7 +31,7 @@
 | 140 | 2015 | What are the drivers of total factor productivity in the European Union? | included for assessment | abstract level only |
 | 153 | 2009 | Determinants of Labor Productivity: An Empirical Investigation of Productivity Divergence | included for assessment | requested from author |
 | 162 | 2024 | Impact of digitization on carbon productivity: an empirical analysis of 136 countries | included for assessment | retrieved |
-| 174 | 2025 | Artificial intelligence and global carbon inequality: Addressing the challenges and opportunities fo | included for assessment | requested from author |
+| 174 | 2025 | Artificial intelligence and global carbon inequality: Addressing the challenges and opportunities fo | included for assessment | provided by author |
 | 200 | 2013 | Discovering the Impact of ICT, FDI and Human Capital on GDP: A Cross-sectional Analysis | included for assessment | abstract level only |
 | 214 | 2021 | Technology adoption and the middle‐income trap: Lessons from the Middle East and East Asia | included for assessment | abstract level only |
 | 216 | 2024 | Does the digital economy promote or inhibit income inequality? | included for assessment | abstract level only |
@@ -44,7 +44,7 @@
 | 268 | 2023 | Informality and aggregate labor productivity growth: Does ICT moderate the relationship? | included for assessment | provided by author |
 | 269 | 2024 | Economic growth and the proliferation of ICT infrastructures: which causes the other? | included for assessment | abstract level only |
 | 270 | 2012 | Information-communication technology impact on labor productivity growth of EU developing countries | included for assessment | abstract level only |
-| 276 | 2025 | Does artificial intelligence help in improving human capital based educational development? Evidence | included for assessment | requested from author |
+| 276 | 2025 | Does artificial intelligence help in improving human capital based educational development? Evidence | included for assessment | provided by author |
 | 278 | 2024 | Towards ICT diffusion and trade liberalisation on inclusive growth in Sub-Saharan Africa | included for assessment | abstract level only |
 | 285 | 2022 | ICT and Economic Growth in EU: A macro Level Comparison of Estimated ICT Output Elasticities | included for assessment | abstract level only |
 | 298 | 2005 | ICT and Productivity Growth in Transition Economies: Two-Phase Convergence and Structural Reforms | included for assessment | retrieved |
@@ -79,7 +79,7 @@
 | 485 | 2026 | Artificial intelligence and green growth nexus: evidence from OECD countries using panel CS-ARDL and | included for assessment | abstract level only |
 | 526 | 2017 | Digitalization at work, Job Tasks and Wages: Cross-Country evidence from PIAAC1 | included for assessment | abstract level only |
 | 532 | 2007 | The Effect of Human Capital on Output Growth in ICT Industries: Evidence from OECD Countries | included for assessment | abstract level only |
-| 534 | 2025 | Do robots impact artificial intelligence (AI)-related employment? Evidence from a cross-national stu | included for assessment | requested from author |
+| 534 | 2025 | Do robots impact artificial intelligence (AI)-related employment? Evidence from a cross-national stu | included for assessment | provided by author |
 | 535 | 2026 | The Economic Value of Agentic AI: A Comparative Analysis of Its Impact on Growth and Business Produc | included for assessment | requested from author |
 | 536 | 2012 | Macroeconomic Effects of Information and Communication Technologies in Turkey and Other OECD Member  | included for assessment | abstract level only |
 | 542 | 2023 | Impact of ICT Access on Total Factor Productivity(TFP) in Asian Economies | included for assessment | retrieved |
@@ -97,7 +97,7 @@
 | 627 | 2017 | ICT and growth gap between nations: Evidence from MENA region | included for assessment | abstract level only |
 | 652 | 2016 | Human capital, mechanisms of technological diffusion and the role of technological shocks in the spe | included for assessment | retrieved |
 | 653 | 2020 | Technology, TFPG and Employment: A Panel Data Analysis | included for assessment | retrieved |
-| 707 | 2026 | Digitalisation and structural change: Evidence from cross-country analysis | included for assessment | requested from author |
+| 707 | 2026 | Digitalisation and structural change: Evidence from cross-country analysis | included for assessment | provided by author |
 | 709 | 2007 | Accounting for the Impact of Information and Communication Technologies on Total Factor Productivity | included for assessment | abstract level only |
 | 711 | 2026 | Economic Complexity and Income Inequality: The Influence of ICT and Human Capital Development in Afr | included for assessment | abstract level only |
 | 722 | 2025 | Digital Transformation and Economic Development: A Comparative Study of Emerging and Developed Econo | included for assessment | retrieved |
@@ -144,7 +144,7 @@
 | 1025 | 2005 | Testing the impact of ICT in developed countries during 1980-1995: distributional analysis in Solow’ | included for assessment | retrieved |
 | 1026 | 2026 | The nonlinear link between AI and energy poverty: Empirical evidence from global data | included for assessment | provided by author |
 | 1031 | 2025 | Exploring the Moderating impact of ICT Infrastructure on Trade Openness-Sectoral Growth Nexus in Sub | included for assessment | retrieved |
-| 1090 | 2025 | Driving Industrial Growth through Digitalization: Insights from CEE Countries | included for assessment | requested from author |
+| 1090 | 2025 | Driving Industrial Growth through Digitalization: Insights from CEE Countries | included for assessment | provided by author |
 | 1105 | 2025 | Assessing the Impact of Digitalization on Economic Convergence in the Context of Sustainable Develop | included for assessment | retrieved |
 | 1106 | 2020 | What is the significance of free digital goods on economic welfare | included for assessment | abstract level only |
 | 1109 | 2002 | Can Innovation Explain the Increasing Growth Differences in the 1990s | included for assessment | abstract level only |
