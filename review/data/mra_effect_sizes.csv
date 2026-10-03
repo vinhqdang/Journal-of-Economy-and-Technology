@@ -1,0 +1,106 @@
+idx,estimate_id,role,subsample_label,sample_income_group,technology,coef,t,n,pcc,se
+10,10-1,headline,full sample; current-year term,mixed,mobile,0.209,5.821727019498606,395.0,0.2844464659652107,0.04885946472799553
+10,10-2,baseline,full sample; one-year lagged term of mobile in the same regression,mixed,mobile,-0.247,-7.4622356495468285,395.0,-0.35547154731119496,0.0476360656518241
+10,10-3,headline,full sample; current-year term,mixed,internet,0.242,3.3060109289617485,392.0,0.16678110696727996,0.05044783896696237
+10,10-4,baseline,full sample; one-year lagged term of internet in the same regression,mixed,internet,-0.334,-4.400527009222662,392.0,-0.21965198768263386,0.049914927739856015
+10,10-5,baseline,full sample; current-year term,mixed,telecom,-0.0211,-0.15289855072463768,397.0,-0.0077720353867553275,0.05083132148683579
+10,10-6,baseline,full sample; current-year term,mixed,other (ICT goods imports),-0.0204,-0.3617021276595745,396.0,-0.018407034446536543,0.05089003641101279
+29,29-1,headline,"full sample, first differences, with mobile broadband control",mixed,other (cellular IoT connections),0.023,2.555555555555556,574.0,0.10699063245997376,0.04186589965825059
+29,29-2,baseline,"full sample, first differences, without mobile broadband control",mixed,other (cellular IoT connections),0.026,2.5999999999999996,574.0,0.10882948733250686,0.041857495127887265
+29,29-3,robustness,"full sample, three-year differences, without mobile broadband control",mixed,other (cellular IoT connections),0.036,2.4,410.0,0.11914522061843064,0.0496438419243461
+29,29-4,robustness,"full sample, three-year differences, with mobile broadband control",mixed,other (cellular IoT connections),0.031,2.2142857142857144,410.0,0.11004191207913502,0.04969634739057711
+29,29-5,subsample,"OECD countries, first differences, without mobile broadband control",OECD,other (cellular IoT connections),0.021,1.9090909090909094,252.0,0.12180720389106349,0.06380377346674754
+29,29-6,subsample,"OECD countries, first differences, with mobile broadband control",OECD,other (cellular IoT connections),0.017,1.7000000000000002,252.0,0.10863340587904673,0.06390200345826277
+29,29-7,subsample,"non-OECD countries, first differences, without mobile broadband control",not stated,other (cellular IoT connections),0.023,1.9166666666666665,322.0,0.10787664984571302,0.05628346948471984
+29,29-8,subsample,"non-OECD countries, first differences, with mobile broadband control",not stated,other (cellular IoT connections),0.023,1.9166666666666665,322.0,0.10787664984571302,0.05628346948471984
+29,29-9,robustness,"full sample incl. outliers, robust regression (rreg), first differences, with mobile broadband control",mixed,other (cellular IoT connections),0.02,5.0,630.0,0.19687480773953944,0.039374961547907886
+29,29-10,robustness,"full sample incl. outliers, robust regression (rreg), three-year differences, with mobile broadband control",mixed,other (cellular IoT connections),0.03,6.0,450.0,0.2750095491084634,0.045834924851410566
+29,29-11,robustness,"OECD, robust regression (rreg), first differences, with mobile broadband control",OECD,other (cellular IoT connections),0.02,3.3333333333333335,252.0,0.20951886854752808,0.06285566056425843
+29,29-12,robustness,"non-OECD, robust regression (rreg), first differences, with mobile broadband control",not stated,other (cellular IoT connections),0.02,2.857142857142857,378.0,0.1473139127471974,0.05155986946151909
+29,29-13,robustness,"full sample, labor quantity only (instead of labor services), first differences, with mobile broadband control",mixed,other (cellular IoT connections),0.02,2.2222222222222223,574.0,0.09316545551067794,0.04192445497980506
+29,29-14,robustness,"full sample, labor quantity and labor quality entered separately, first differences, with mobile broadband control",mixed,other (cellular IoT connections),0.02,2.2222222222222223,574.0,0.09316545551067794,0.04192445497980506
+45,45-1,headline,full sample,mixed,"other (digital financial inclusion index, composite of digital and traditional financial inclusion)",0.005,5.0,90.0,0.4879500364742666,0.09759000729485331
+45,45-2,subsample,"threshold regression, low-DFI regime (index below threshold 71.87)",mixed,"other (digital financial inclusion index, composite of digital and traditional financial inclusion)",0.007,7.0,90.0,0.6163156344279367,0.08804509063256238
+45,45-3,subsample,"threshold regression, high-DFI regime (index above threshold 71.87)",mixed,"other (digital financial inclusion index, composite of digital and traditional financial inclusion)",0.004,4.0,90.0,0.4082482904638631,0.10206207261596575
+45,45-4,robustness,"full sample, adding trade openness, FDI, government expenditure, gross domestic savings",mixed,"other (digital financial inclusion index, composite of digital and traditional financial inclusion)",0.005,5.0,90.0,0.4879500364742666,0.09759000729485331
+45,45-5,robustness,"full sample, 2SLS with internet penetration rate as instrument",mixed,"other (digital financial inclusion index, composite of digital and traditional financial inclusion)",0.034,3.0909090909090913,90.0,0.3266212366990665,0.10567157657910974
+88,88-7,robustness,"panel fixed effects, composite index",mixed,ICT (composite),0.027,2.15,465.0,0.10028542505774539,0.04664438374778856
+88,88-8,robustness,"panel fixed effects, personal computers",mixed,computers,0.138,14.29,293.0,0.6474060619803315,0.04530483288875658
+88,88-9,robustness,"G2SLS fixed effects, composite index (lagged instruments)",mixed,ICT (composite),0.12,1.92,465.0,0.08964855565088584,0.04669195606816971
+88,88-10,robustness,"G2SLS fixed effects, personal computers (lagged instruments)",mixed,computers,0.212,13.19,181.0,0.7101503272013521,0.05384005513277877
+140,140-1,headline,"full sample, country and sector FE with time trend",mixed (17 EU countries),"ICT (ICT capital services contribution to value added growth, sector level)",0.07,3.19,451.0,0.15018191580528314,0.0470789704718756
+140,140-2,baseline,"full sample, country and sector FE with year dummies",mixed (17 EU countries),"ICT (ICT capital services contribution to value added growth, sector level)",0.06,2.4,451.0,0.1135465911607319,0.04731107965030496
+245,245-1,headline,"full sample, OLS with controls and country and year FE",mixed,digital economy,-0.425,-1.9,628.0,-0.07620695427154645,0.04010892330081391
+245,245-2,baseline,"full sample, OLS without controls",mixed,digital economy,-0.423,-1.97,628.0,-0.0789973671012624,0.040100186345818474
+245,245-3,robustness,"full sample, FMOLS linear",mixed,digital economy,-0.339,-4.112,587.0,-0.16873039353541633,0.041033656015422255
+245,245-4,robustness,"full sample, PCSE quadratic specification (linear term)",mixed,digital economy,-1.017,-7.56,605.0,-0.2960375814644971,0.039158410246626606
+245,245-5,robustness,digital economy lagged one year,mixed,digital economy,-0.506,-6.12,604.0,-0.24354567706853814,0.03979504527263695
+245,245-6,subsample,EU countries,mixed,digital economy,-0.662,-3.25,306.0,-0.18561960598051835,0.05711372491708258
+245,245-7,subsample,ASEAN countries,mixed,digital economy,0.212,1.56,94.0,0.1677966543798794,0.1075619579358201
+245,245-8,subsample,Asian countries (ASIA column),mixed,digital economy,-0.287,-2.23,205.0,-0.15769549643642428,0.07071546925400192
+245,245-9,subsample,low-income countries,low,digital economy,-6.305,-1.66,16.0,-0.5610029329153645,0.3379535740454003
+245,245-10,subsample,middle-income countries,upper-middle,digital economy,-1.24,-3.55,373.0,-0.18317412090112759,0.051598343915810585
+245,245-11,subsample,high-income countries,high,digital economy,-0.86,-4.45,239.0,-0.28211919829996807,0.06339757265167821
+245,245-12,robustness,"excluding COVID-19 period (2006-2019), with controls",mixed,digital economy,-0.463,-5.74,528.0,-0.2445438496258111,0.0426034581229636
+245,245-13,robustness,"DOLS, linear",mixed,digital economy,-0.266,-2.043,605.0,-0.08346260613129851,0.04085296433250049
+245,245-14,robustness,"full sample, FMOLS quadratic specification (linear term)",mixed,digital economy,-1.602,-5.903,587.0,-0.238644775131313,0.040427710508438595
+268,268-1,headline,full sample (informality proxy: vulnerable employment),mixed,"other (ICT capital deepening, TED capital services per worker)",0.026,2.3636363636363638,2374.0,0.04855616225420974,0.020542991722934893
+268,268-2,robustness,full sample (informality proxy: informal value added share),mixed,"other (ICT capital deepening, TED capital services per worker)",0.042,3.2307692307692313,2374.0,0.06630183266210724,0.02052199582398557
+268,268-3,robustness,full sample (informality proxy: agricultural employment),mixed,"other (ICT capital deepening, TED capital services per worker)",0.026,2.1666666666666665,2374.0,0.044518198458823655,0.02054686082714938
+268,268-4,robustness,full sample (informality proxy: self-employment),mixed,"other (ICT capital deepening, TED capital services per worker)",0.029,2.9,2374.0,0.05953921781855393,0.020530764765018597
+268,268-5,subsample,emerging & developing economies (informality proxy: vulnerable employment),developing,"other (ICT capital deepening, TED capital services per worker)",0.019,1.7272727272727273,1583.0,0.043509599596050184,0.02518976818718695
+268,268-6,subsample,emerging & developing economies (informality proxy: informal value added share),developing,"other (ICT capital deepening, TED capital services per worker)",0.032,2.4615384615384617,1583.0,0.0619451663800245,0.025165223841884955
+268,268-7,subsample,emerging & developing economies (informality proxy: agricultural employment),developing,"other (ICT capital deepening, TED capital services per worker)",0.021,1.6153846153846156,1583.0,0.04069599315441554,0.02519275766701914
+268,268-8,subsample,emerging & developing economies (informality proxy: self-employment),developing,"other (ICT capital deepening, TED capital services per worker)",0.022,2.0,1583.0,0.050363296516587906,0.025181648258293953
+268,268-9,subsample,advanced economies (informality proxy: vulnerable employment),high,"other (ICT capital deepening, TED capital services per worker)",0.064,2.6666666666666665,791.0,0.0949893699485076,0.03562101373069035
+268,268-10,subsample,advanced economies (informality proxy: informal value added share),high,"other (ICT capital deepening, TED capital services per worker)",0.061,2.1785714285714284,791.0,0.0777196196075684,0.03567457949199861
+268,268-11,subsample,advanced economies (informality proxy: agricultural employment),high,"other (ICT capital deepening, TED capital services per worker)",0.055,2.1153846153846154,791.0,0.07547848925985505,0.03568074037738602
+268,268-12,subsample,advanced economies (informality proxy: self-employment),high,"other (ICT capital deepening, TED capital services per worker)",0.065,2.6,791.0,0.09263527295293347,0.035628951135743644
+285,285-1,headline,"EU-27, without outliers, whole period",high,ICT,0.092,6.571428571428571,558.0,0.27027045686939827,0.04112811300186495
+285,285-2,baseline,"EU-27, full sample (incl. outliers), FE",high,ICT,0.116,5.8,567.0,0.23865281744864233,0.041147037491145226
+285,285-3,robustness,"EU-27, without outliers, random effects",high,ICT,0.1,7.142857142857143,558.0,0.2918442592919332,0.04085819630087065
+285,285-4,robustness,"EU-27, without outliers, FGLS",high,ICT,0.092,5.75,558.0,0.2385373666600378,0.041484759419137006
+285,285-5,robustness,"EU-27, without outliers, IV with 2-year lags of ICT",high,ICT,0.114,3.3529411764705883,558.0,0.14178358748050227,0.04228633310821998
+285,285-6,robustness,"EU-27, without outliers, IV with 4-year lags of ICT",high,ICT,0.095,2.6388888888888893,558.0,0.11201825486516988,0.0424490228962749
+285,285-7,robustness,"EU-27, full sample, random effects",high,ICT,0.124,6.526315789473684,567.0,0.266526183468688,0.04083868940246026
+285,285-8,robustness,"EU-27, full sample, FGLS",high,ICT,0.139,4.964285714285714,567.0,0.2058392037233759,0.041464012260823926
+285,285-9,subsample,"EU-27 sub-period 1996-2004, without outliers, FE",high,ICT,0.09,4.7368421052631575,238.0,0.29932230330028275,0.06319026403005969
+285,285-10,subsample,"EU-27 sub-period 1996-2004, without outliers, RE",high,ICT,0.111,6.529411764705882,238.0,0.39690220039681795,0.060786823484197346
+285,285-11,subsample,"EU-27 sub-period 2005-2016, without outliers, FE",high,ICT,0.087,3.3461538461538463,320.0,0.1867068863918972,0.055797460301026745
+285,285-12,subsample,"EU-27 sub-period 2005-2016, without outliers, RE",high,ICT,0.094,3.2413793103448274,320.0,0.18105536901403801,0.055857507461777686
+302,302-1,headline,full sample,mixed,"ICT (composite ICT Maturation Index of fixed telephone, mobile, fixed broadband, fixed internet, internet users)",0.0119,2.2884615384615388,216.0,0.15745576434488026,0.06880419954566196
+323,323-1,headline,full sample (24 Asian countries),mixed,"ICT (composite index, ICTMI)",0.0156,2.4761904761904763,216.0,0.17001273256936622,0.06865898815301327
+358,358-1,headline,"full sample (95 countries, 2013-2019), Option IV",mixed,other (fintech and big tech credit flows),1.15,3.71,594.0,0.1517431150164087,0.04090110916884331
+358,358-2,baseline,"full sample (95 countries, 2013-2019), Option I",mixed,other (fintech and big tech credit flows),0.99,2.13,594.0,0.08779964395442294,0.04122049011944739
+358,358-3,robustness,"full sample (95 countries, 2013-2019), Option II",mixed,other (fintech and big tech credit flows),0.99,3.11,594.0,0.12764008046333017,0.04104182651554025
+358,358-4,robustness,"full sample, Option V (column headed 'GDP Growth')",mixed,other (fintech and big tech credit flows),0.86,2.68,594.0,0.11022346156130063,0.041128157298992774
+393,393-1,headline,"full sample, AMG robust",not stated,ICT,0.00817,1.9734299516908216,1106.0,0.05950400738018304,0.030152581463152726
+393,393-2,baseline,"full sample, MG",not stated,ICT,0.00707,1.37015503875969,1322.0,0.037800043828288755,0.027588150799712868
+393,393-3,robustness,"full sample, MG robust SE",not stated,ICT,0.00908,2.9673202614379086,1322.0,0.08164790987533893,0.02751570531041158
+393,393-4,robustness,"full sample, first-step AMG pooled first differences, estimated TFP",not stated,ICT,0.00386,2.3680981595092025,1158.0,0.06972212122736013,0.02944224290170907
+393,393-5,robustness,"full sample, first-step pooled first differences, calculated TFP",not stated,ICT,0.00194,1.5038759689922483,1158.0,0.044341838993528074,0.029485037268892372
+407,407-1,headline,21 countries (full sample),mixed,ICT,0.192,12.8,399.0,0.544390127266219,0.04253047869267337
+407,407-2,subsample,7 CEE countries,not stated,ICT,0.15,7.5,133.0,0.5601852652299533,0.0746913686973271
+407,407-3,subsample,14 WE (Western Europe) countries,not stated,ICT,0.058,2.230769230769231,266.0,0.1380874102326297,0.06190125286290296
+407,407-5,subsample,"7 CEE countries, Internet users",not stated,internet,0.005,5.0,133.0,0.41099746826339323,0.08219949365267865
+407,407-7,robustness,"CEE, 1993-1999",not stated,ICT,0.045,0.8181818181818181,49.0,0.12990381056766578,0.15877132402714708
+407,407-8,robustness,"CEE, 2000-2007",not stated,ICT,0.117,5.086956521739131,56.0,0.6000157797151788,0.11795181994400952
+407,407-9,robustness,"CEE, 2008-2011",not stated,ICT,0.017,0.12056737588652484,28.0,0.02840653502537213,0.23560714344573355
+407,407-10,robustness,"WE, 1993-1999",not stated,ICT,0.003,0.0857142857142857,98.0,0.00913679216007725,0.10659590853423458
+407,407-11,robustness,"WE, 2000-2007",not stated,ICT,-0.038,-2.0,112.0,-0.19425717247145283,0.09712858623572641
+407,407-12,robustness,"WE, 2008-2011",not stated,ICT,-0.141,-1.5161290322580643,56.0,-0.21815676279966656,0.14389063078275882
+407,407-13,robustness,"CEE, 2000-2007, Internet users",not stated,internet,0.003,3.0,56.0,0.40451991747794525,0.13483997249264842
+408,408-7,robustness,"full sample (Africa), fixed broadband component",mixed,broadband,-4.0,-2.0,779.0,-0.07193500012656064,0.035967500063280325
+617,617-1,headline,"full sample (126 states), model specification 1 (no small-state dummy), Simulation 2",mixed,"internet (internet hosts per 10,000 inhabitants, proxy for e-commerce)",0.423,6.409090909090908,126.0,0.5113766552406906,0.07978926535670351
+617,617-2,robustness,"full sample (126 states), model specification 2 (with small-state dummy), Simulation 4",mixed,"internet (internet hosts per 10,000 inhabitants, proxy for e-commerce)",0.395,6.171875,126.0,0.4971953037098213,0.08055822642386977
+952,952-1,headline,full sample,mixed,"digital economy (composite digital index: internet, broadband, ICT exports)",0.985,1.7041522491349481,198.0,0.12333908564512275,0.0723756258912497
+988,988-1,headline,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
+988,988-2,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
+988,988-3,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
+988,988-4,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
+988,988-5,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
+988,988-6,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,140.0,0.0,0.08770580193070292
+988,988-7,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,140.0,0.0,0.08770580193070292
+988,988-8,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
+1438,1438-1,headline,full sample,not stated,internet,0.16262,2.2,138.0,0.1908790423082963,0.0867632010492256
+1438,1438-2,baseline,full sample,not stated,mobile,0.12029,1.8,138.0,0.1571228667169487,0.08729048150941594
