@@ -99,3 +99,6 @@ idx,estimate_id,role,subsample_label,sample_income_group,technology,coef,t,n,pcc
 988,988-8,robustness,full sample (27 EU countries plus EU aggregate),high,digital economy (DESI composite index),0.0,0.0,168.0,0.0,0.07955572841757301
 1438,1438-1,headline,full sample,not stated,internet,0.16262,2.2,138.0,0.1908790423082963,0.0867632010492256
 1438,1438-2,baseline,full sample,not stated,mobile,0.12029,1.8,138.0,0.1571228667169487,0.08729048150941594
+71,71-1,headline,"full sample (11 MENA economies), long-run",not stated,ICT,0.05,1.6666666666666667,429.0,0.08115343414514944,0.04869206048708966
+71,71-2,baseline,"full sample (11 MENA economies), short-run",not stated,ICT,0.062,1.8235294117647058,429.0,0.08873383334419901,0.04866048925327043
+71,71-3,robustness,"full sample (11 MENA economies), DCCEMG",not stated,ICT,0.298,3.5476190476190474,429.0,0.17076682531166282,0.0481356151885224

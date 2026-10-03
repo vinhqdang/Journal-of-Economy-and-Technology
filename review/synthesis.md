@@ -1,6 +1,6 @@
 # Narrative synthesis: who gains from technology waves, and under what conditions
 
-**Status: working draft for the review team. Based on 64 included studies read in full (of 247 sent to full-text assessment). Extractions are machine-made and were re-checked once against the texts by a separate model run (`second_pass_verification.md`); no human has checked them. Read the limits in section 9 before quoting anything.**
+**Status: working draft for the review team. Based on 67 included studies read in full (of 247 sent to full-text assessment). Extractions are machine-made. 64 were re-checked once against the texts by a separate model run (`second_pass_verification.md`); the last three (71, 278, 341) had only a first pass plus a check of their printed numbers by search. No human has checked any of them. Read the limits in section 9 before quoting anything.**
 
 Method: structured narrative synthesis (SWiM). Studies are grouped by outcome family and by technology; direction of association, size where comparable, and the moderators the authors tested are tabulated. No studies are pooled here except in the pilot meta-regression (`mra_pilot.md`), which covers only ICT-type adoption and output. Because every included study has a moderate, serious or critical risk of bias and no study rates "low", the direction of an association is reported, not a causal effect.
 
@@ -8,24 +8,24 @@ Method: structured narrative synthesis (SWiM). Studies are grouped by outcome fa
 
 | Item | Count |
 |---|---|
-| Included studies | 64 (51 on ICT, mobile, internet, broadband and similar; 11 on AI; 2 on both) |
-| Risk of bias, overall (first-pass ratings) | moderate 7, serious 48, critical 9, low 0. The second-pass check would move nine ratings (six down, three up); it is not applied |
-| Studies with no identification strategy beyond controls and fixed effects | 35 of 64 |
-| Studies with a formal or descriptive income-group or regional comparison of the effect | 25 of 64 |
-| Studies that include at least one low-income economy | 25 of 64 |
-| Studies where the headline estimate is the preferred specification | yes 21, no 7, unclear 36 |
+| Included studies | 67 (54 on ICT, mobile, internet, broadband and similar; 11 on AI; 2 on both) |
+| Risk of bias, overall (first-pass ratings) | moderate 8, serious 50, critical 9, low 0. The second-pass check would move nine ratings (six down, three up); it is not applied |
+| Studies with no identification strategy beyond controls and fixed effects | 36 of 67 |
+| Studies with a formal or descriptive income-group or regional comparison of the effect | 26 of 67 |
+| Studies that include at least one low-income economy | 26 of 67 |
+| Studies where the headline estimate is the preferred specification | yes 24, no 7, unclear 36 |
 
-Studies per outcome family (a study can contribute to several): output and productivity 36; labour market 14; poverty and distribution 10; living standards beyond income 12; structural change 4; resource cost 4. AI evidence by family: output 4, labour 5, poverty and distribution 2, living standards 3, resource cost 2, structural change 0.
+Studies per outcome family (a study can contribute to several): output and productivity 37; labour market 14; poverty and distribution 11; living standards beyond income 12; structural change 5; resource cost 4. AI evidence by family: output 4, labour 5, poverty and distribution 2, living standards 3, resource cost 2, structural change 0.
 
 The evidence is thick for one question (ICT and output in rich or mixed samples) and thin for the rest. Almost all the evidence is on ICT, mobile and internet. The 13 AI studies are mostly short panels (2015 to 2023) of 3 to 78 economies, and several use a national readiness index or a count of robots as the AI measure.
 
-## 2. Output and productivity (36 studies; 4 on AI)
+## 2. Output and productivity (37 studies; 4 on AI)
 
-**Direction.** Most studies report a positive association between ICT-type adoption and growth or productivity, but not all. Of the 15 studies whose headline estimate could be converted to a partial correlation, 87% are positive and 80% positive and significant. The pooled value is 0.20 (95% CI 0.11 to 0.29) with I² of 93%, so studies disagree strongly on size. After correcting for small-study bias the effect shrinks to between 0.005 (FAT-PET) and 0.06 (PEESE). See `mra_pilot.md`.
+**Direction.** Most studies report a positive association between ICT-type adoption and growth or productivity, but not all. Of the 16 studies whose headline estimate could be converted to a partial correlation, 88% are positive and 75% positive and significant. The pooled value is 0.19 (95% CI 0.10 to 0.27) with I² of 93%, so studies disagree strongly on size. After correcting for small-study bias the effect shrinks to between 0.005 (FAT-PET) and 0.06 (PEESE). See `mra_pilot.md`.
 
-**Effects can run the other way or cancel out.** Mobile subscriptions: current-year effect +0.209 and lag -0.247 in a 41-economy system GMM (10). Country-by-country estimates for ten Asian economies are positive in four, negative in two, and insignificant in four (57). Ten high-income countries show no significant effect of any ICT indicator (1448). In 27 EU states the DESI digitalisation coefficient loses significance once economic freedom is added (988). A digital economy index lowers green total factor productivity across 40 Belt and Road economies (245), although that outcome sits closer to resource cost.
+**Effects can run the other way or cancel out.** Mobile subscriptions: current-year effect +0.209 and lag -0.247 in a 41-economy system GMM (10). Country-by-country estimates for ten Asian economies are positive in four, negative in two, and insignificant in four (57). Ten high-income countries show no significant effect of any ICT indicator (1448). In 27 EU states the DESI digitalisation coefficient loses significance once economic freedom is added (988). In 11 MENA economies, CS-ARDL estimates of an ICT index on GDP per capita are 0.05 (long run) and 0.06 (short run), both significant only at 10%, while the dynamic common correlated effects estimate is 0.30; the paper's own causality tests show feedback in both directions (71). A digital economy index lowers green total factor productivity across 40 Belt and Road economies (245), although that outcome sits closer to resource cost.
 
-**Estimator matters.** In the meta-regression, estimates from system or difference GMM are on average 0.16 lower in partial correlation than OLS or fixed-effects estimates (p < 0.01 with clustered errors, 17 papers). This is consistent with reverse causation inflating simpler estimates, though it cannot prove it.
+**Estimator matters.** In the meta-regression, estimates from system or difference GMM are on average 0.16 lower in partial correlation than OLS or fixed-effects estimates (p < 0.01 with clustered errors, 18 papers). This is consistent with reverse causation inflating simpler estimates, though it cannot prove it.
 
 **Complementarities are the most repeated finding.** ICT pays more where human capital is higher: tertiary-enrolment interactions are positive in two Asian system-GMM studies (302, 323) and in a developing-country productivity study (422); in Africa the marginal effect of the digital economy is negative below a human capital index of about 2.35 and positive above it, and the average African country is below the threshold (408). Financial development, trade openness, governance, electricity and ICT's own diffusion level also appear as moderators (957, 422, 988, 302). Most of these are interaction terms in single-equation panels, so they show conditional association, not that raising the moderator would change the return.
 
@@ -33,9 +33,9 @@ The evidence is thick for one question (ICT and output in rich or mixed samples)
 
 **AI and output.** Four studies. Developed economies show about twice the productivity effect of emerging economies (0.24 against 0.11) in a 10-economy comparison rated at critical risk of bias (535). In 63 low and lower-middle income economies, AI-related imports are associated with higher labour productivity, more so where connectivity, electricity and financial inclusion are better, and no different between low and lower-middle income (879). A sub-Saharan firm-level study (913) and a three-country generative-AI survey (1596) are both rated critical and cannot be relied on.
 
-## 3. Structural change (4 studies; none on AI)
+## 3. Structural change (5 studies; none on AI)
 
-Internet penetration is associated with faster structural change, and the association is larger in low and lower-middle income and agrarian economies than in upper-middle and high-income ones (707, 51 economies). It is also larger where forward value-chain linkages are higher. The same study finds that manufacturing employment falls in South Asia and is unchanged in sub-Saharan Africa. A 3G coverage study in 14 developing countries finds jobs created in services and non-farm self-employment but no shift of labour away from agriculture (1679). ICT is positive for industry and services value added but not for agriculture in a 26-economy PMG study (1031), although columns 2 to 4 of its Tables 10 and 11 are identical across industry and services, so that paper needs a human check. The evidence base here is too small to say anything firm.
+Internet penetration is associated with faster structural change, and the association is larger in low and lower-middle income and agrarian economies than in upper-middle and high-income ones (707, 51 economies). It is also larger where forward value-chain linkages are higher. The same study finds that manufacturing employment falls in South Asia and is unchanged in sub-Saharan Africa. A 3G coverage study in 14 developing countries finds jobs created in services and non-farm self-employment but no shift of labour away from agriculture (1679). ICT is positive for industry and services value added but not for agriculture in a 26-economy PMG study (1031), although columns 2 to 4 of its Tables 10 and 11 are identical across industry and services, so that paper needs a human check. Information and communication technology is associated with lower export concentration and a more diversified export structure in about 100 developing economies, and the effect is larger in the low and lower-middle income group (−0.155 on the concentration index) than in the high and upper-middle group (−0.020), with no formal test of the difference (341, system GMM, rated moderate; the paper is inconsistent on years and country counts). The evidence base here is still small.
 
 ## 4. Labour market (14 studies; 5 on AI)
 
@@ -45,9 +45,9 @@ Internet penetration is associated with faster structural change, and the associ
 
 **AI and employment.** Studies find AI exposure positively associated with employment growth, concentrated in high-education occupations and younger workers: 16 European countries (108) and 23 mostly high-income countries (1526, with gains only in the high computer-use tercile). In Southeast Asia, Singapore is the only complementarity case, and Indonesia and Thailand show displacement (750; the country-level results sit in a figure that could not be checked). Across 29 countries the AI index effect on employment declines with labour productivity level (1564). A 78-economy readiness index study (441) is rated critical. The pattern across studies is that AI complements skills and displaces the rest; the evidence on low-income economies is nil.
 
-## 5. Poverty and distribution (10 studies; 2 on AI)
+## 5. Poverty and distribution (11 studies; 2 on AI)
 
-Results split. In 45 developing countries a threshold model finds ICT raises the Gini below a digital maturity score of 0.48 and lowers it above, an inverted U (1494); the mean score of 0.458 is close to the threshold. A study of poverty and inequality finds the inequality effect on poverty reverses above a technology threshold (1372). Mobile banking is mostly null or weakly negative on average inclusive growth, with effects at the tails of the distribution (1419). Robots raise inter-country carbon inequality, less so in open and well-connected economies (174, threshold on trade openness). Wage distribution results in OECD countries are those above under labour market.
+Results split. In 45 developing countries a threshold model finds ICT raises the Gini below a digital maturity score of 0.48 and lowers it above, an inverted U (1494); the mean score of 0.458 is close to the threshold. A study of poverty and inequality finds the inequality effect on poverty reverses above a technology threshold (1372). In 48 sub-Saharan African economies ICT is positively associated with a composite inclusive growth index (0.03 to 0.15 across specifications), with trade openness negative on its own and offset by ICT in the interaction, though the paper is inconsistent about its estimator (278). Mobile banking is mostly null or weakly negative on average inclusive growth, with effects at the tails of the distribution (1419). Robots raise inter-country carbon inequality, less so in open and well-connected economies (174, threshold on trade openness). Wage distribution results in OECD countries are those above under labour market.
 
 The consistent message is that effects depend on how far a country has gone: below some level digitalisation widens the gap, above it narrows it. The thresholds are estimated in single studies with large uncertainty and have not been replicated.
 
@@ -59,12 +59,12 @@ The consistent message is that effects depend on how far a country has gone: bel
 
 ## 7. Do gains differ by income level? Answer to the main question
 
-Twenty-five studies compare income groups or regions, formally or only descriptively. Reading them one by one:
+Twenty-six studies compare income groups or regions, formally or only descriptively. Reading them one by one:
 
 | Finding | Studies | Notes |
 |---|---|---|
 | Effect larger in richer or OECD economies | 88, 138, 162, 268 (direct effect), 276, 535, 957, 750 | Several have no test of the difference (88 gives results "on request"; 750 is a handful of countries and its country results could not be checked). 535 is rated critical and its numbers look illustrative. 957 compares OECD with MENA, not income groups |
-| Effect larger in poorer or less productive economies | 407, 707, 1192, 268 (moderation of informality drag), 952 | 407 compares Central and Eastern with Western Europe, not income groups. 1192 is a single cross-section rated critical; 952 has a sign flip between pooled and subgroup models |
+| Effect larger in poorer or less productive economies | 341, 407, 707, 1192, 268 (moderation of informality drag), 952 | 407 compares Central and Eastern with Western Europe, not income groups. 1192 is a single cross-section rated critical; 952 has a sign flip between pooled and subgroup models |
 | No clear difference | 29, 320, 879 | 879 compares low with lower-middle income only |
 | Effect negative in all groups, larger in middle-income | 245 | Green TFP outcome |
 
@@ -88,7 +88,7 @@ A fair reading is "similar in pattern to ICT where tested, but with too little a
 - **Searches.** OpenAlex, Crossref and NBER were searched; arXiv did not complete; Scopus and Web of Science have not been run.
 - **Design.** No study has low risk of bias. Most treat adoption as exogenous. The synthesis says where associations differ, not what causes them.
 - **Counting.** Direction counts here are descriptive. They are not weighted by sample size or quality and a count of "positive" studies is not an effect size.
-- **Interpretation.** All authors' claims of thresholds and inverted-U curves rest on one study each; the pilot meta-regression has 17 papers and only 4 with low or middle-income samples.
+- **Interpretation.** All authors' claims of thresholds and inverted-U curves rest on one study each; the pilot meta-regression has 18 papers and only 5 with low or middle-income samples.
 
 ## 10. What a conclusion could responsibly say
 

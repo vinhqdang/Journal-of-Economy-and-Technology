@@ -1,10 +1,10 @@
 # Preliminary extraction summary (machine-extracted, not yet human-verified)
 
-**Read this first.** These records were extracted from the 103 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **69% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 103 of 256 papers sent to full-text assessment have been read.
+**Read this first.** These records were extracted from the 106 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **68% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 106 of 256 papers sent to full-text assessment have been read.
 
-## Full-text assessment outcome (n = 103 read)
+## Full-text assessment outcome (n = 106 read)
 
-- Included: 64  |  excluded: 38  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
+- Included: 67  |  excluded: 38  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
 - Reasons for exclusion: E1 11, E2 5, E3 1, E4 21 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
 - Post-merge adjustments are listed with reasons in `data/adjustments.json`.
 - About a third of the papers that looked eligible on the abstract failed at full text. The same attrition should be expected for the papers not yet read.
@@ -18,6 +18,7 @@
 | 45 | 2024 | H | ICT in general; mobile telephony | 30 | 2014, 2017, 2021 | serious | needs human check |
 | 57 | 2020 | H | internet; mobile telephony | 10 | 2000-2017 | serious | needs human check |
 | 68 | 2022 | H | fixed broadband; internet use | 79 | 1990-2018 (unbal | serious | needs human check |
+| 71 | 2022 | H | ICT in general | 11 | 1980-2018 | serious | needs human check |
 | 88 | 2005 | H | ICT in general: fixed telephone lines; mobile tele | 94-99 in cross-sec | 1983-1997 (compo | serious | ok |
 | 108 | 2024 | both | artificial intelligence; software | 16 | 2011-2019 (chang | moderate | ok |
 | 126 | 2023 | H | ICT in general | 27 | 1995-2019 (594 o | moderate | needs human check |
@@ -31,11 +32,13 @@
 | 268 | 2023 | H | ICT in general; internet | 118 | 1997-2017 (11 co | serious | ok |
 | 269 | 2024 | H | ICT in general | 41 or 42 (text sta | 2000-2019 | serious | needs human check |
 | 276 | 2025 | AI | artificial intelligence | 29 | 2017-2021 (annua | serious | needs human check |
+| 278 | 2024 | H | ICT in general | 48 | 2005-2020 | serious | ok |
 | 285 | 2022 | H | ICT in general | 27 | 1996-2016 (subpe | moderate | ok |
 | 302 | 2013 | H | ICT in general | 24 | 2000-2010 per te | serious | needs human check |
 | 320 | 2022 | H | internet; mobile telephony | 20 | 2005-2020 (16 ye | serious | needs human check |
 | 321 | 2024 | H | ICT in general | 24 | 1995-2019 | serious | ok |
 | 323 | 2014 | H | ICT in general | 24 | 2000-2010 (effec | serious | needs human check |
+| 341 | 2024 | H | ICT in general | 110 stated in text | 2000-2019 (abstr | moderate | needs human check |
 | 358 | 2023 | H | internet; mobile telephony | 148 stated overall | 2008-2021 stated | serious | needs human check |
 | 392 | 2018 | H | ICT | 10 | 1980-2010 | serious | ok |
 | 393 | 2013 | H | ICT | 17 | 1995-2007 | serious | needs human check |
@@ -84,10 +87,10 @@ Counts of reported results (a paper can contribute several), not of papers, and 
 
 | Family | Positive | Mixed | Null | Negative |
 |---|---|---|---|---|
-| 1. Output and productivity | 100 | 31 | 30 | 14 |
-| 2. Structural change | 9 | 0 | 5 | 8 |
+| 1. Output and productivity | 103 | 31 | 30 | 14 |
+| 2. Structural change | 9 | 0 | 5 | 14 |
 | 3. Labour market | 31 | 9 | 14 | 14 |
-| 4. Poverty and distribution | 16 | 7 | 5 | 9 |
+| 4. Poverty and distribution | 21 | 7 | 5 | 9 |
 | 5. Living standards beyond income | 28 | 13 | 7 | 12 |
 | 6. Resource cost | 6 | 2 | 0 | 1 |
 
@@ -95,23 +98,23 @@ Counts of reported results (a paper can contribute several), not of papers, and 
 
 | Domain | Low | Moderate | Serious | Critical |
 |---|---|---|---|---|
-| confounding reverse causation | 0 | 12 | 46 | 6 |
-| exposure measurement | 5 | 40 | 17 | 2 |
-| selection of countries years | 1 | 40 | 23 | 0 |
-| outcome measurement | 16 | 35 | 12 | 1 |
-| specification and researcher degrees of freedom | 0 | 27 | 35 | 2 |
-| selective reporting | 7 | 41 | 13 | 3 |
+| confounding reverse causation | 0 | 13 | 48 | 6 |
+| exposure measurement | 5 | 42 | 18 | 2 |
+| selection of countries years | 1 | 43 | 23 | 0 |
+| outcome measurement | 18 | 35 | 13 | 1 |
+| specification and researcher degrees of freedom | 0 | 28 | 37 | 2 |
+| selective reporting | 7 | 44 | 13 | 3 |
 
-Overall: low 0, moderate 7, serious 48, critical 9. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
+Overall: low 0, moderate 8, serious 50, critical 9. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
 
-Venue check: 30 of 64 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
+Venue check: 30 of 67 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
 
 ## Heterogeneity reported
 
-Moderators examined (counts of findings): other 66, income group 25, human capital 14, institutions 12, sector structure 8, infrastructure 8.
+Moderators examined (counts of findings): other 67, income group 26, human capital 15, institutions 12, sector structure 8, infrastructure 8.
 
-32 of 64 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
+33 of 67 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
 
 ## Papers flagged for human check
 
-Quotes could not be fully matched for: 45, 57, 68, 126, 174, 217, 245, 269, 276, 302, 320, 323, 358, 393, 408, 750, 879, 952, 988, 1013, 1026, 1031, 1438, 1469, 1494, 1526, 1670. Borderline eligibility: 1495, 913, 878, 1026 (number of economies or exposure or outcome family does not clearly meet the criteria; a human decision is needed).
+Quotes could not be fully matched for: 45, 57, 68, 71, 126, 174, 217, 245, 269, 276, 302, 320, 323, 341, 358, 393, 408, 750, 879, 952, 988, 1013, 1026, 1031, 1438, 1469, 1494, 1526, 1670. Borderline eligibility: 1495, 913, 878, 1026 (number of economies or exposure or outcome family does not clearly meet the criteria; a human decision is needed).
