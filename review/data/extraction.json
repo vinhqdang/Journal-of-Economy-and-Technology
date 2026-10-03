@@ -2070,71 +2070,37 @@
  {
   "idx": "242",
   "title": "The unequal implications of Industry 4.0 adoption: evidence on productivity growth and convergence across Europe",
-  "fulltext_decision": "not_assessed",
-  "exclusion_reason": "wrong document retrieved",
-  "decision_rationale": "The retrieved file is the EU KLEMS 2019 methodology report, not this paper. Needs re-retrieval.",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E2",
+  "decision_rationale": "Quantitative panel study (14 European countries x 13 manufacturing industries, 2009-2019) with TFP growth outcome, but the exposure is import stocks of advanced industrial robots, additive manufacturing and industrial IoT, which are not ICT in general, mobile, internet/broadband, crypto-assets or AI. ICT capital enters only as a control variable, not as the exposure of interest.",
   "stream": "H",
   "technology": [
-   "ICT capital (growth accounting asset category, in the report supplied)"
+   "advanced industrial robots",
+   "additive manufacturing (3D printing)",
+   "industrial internet of things"
   ],
-  "exposure_measure": "not applicable",
+  "exposure_measure": "Sectoral stock of imports of 8-digit CN capital goods embodying AIR, AM and IIoT, allocated to industries with 2008 input-output weights (WIOD), perpetual inventory with 15% depreciation, as share of value added (Section 4.2, Eq. 7).",
   "sample": {
-   "n_economies": "not applicable",
-   "economies_or_groups": "not applicable",
-   "income_groups_covered": "not applicable",
-   "years": "not applicable",
-   "unit": "other"
+   "n_economies": "14",
+   "economies_or_groups": "Austria, Belgium, Czech Republic, Germany, Denmark, Spain, Finland, France, UK, Italy, Netherlands, Portugal, Slovakia, Sweden (note 7); 13 manufacturing industries",
+   "income_groups_covered": "high (all European; income groups not compared by the authors)",
+   "years": "2009-2019",
+   "unit": "industry-country"
   },
   "design": {
-   "estimator": "not applicable",
+   "estimator": "WLS fixed effects (within-groups) distance-to-frontier model; GMM, LSDVC and FGLS as robustness",
    "identification": "none",
-   "key_controls_fixed_effects": "not applicable"
+   "key_controls_fixed_effects": "country-industry and year FE; R&D, ICT capital and import shares of value added with distance-to-frontier interactions"
   },
-  "results": [],
-  "heterogeneity": [],
-  "income_group_results": {
-   "high": "not applicable",
-   "upper_middle": "not applicable",
-   "lower_middle": "not applicable",
-   "low": "not applicable"
-  },
+  "results": "not applicable",
+  "heterogeneity": "not applicable",
+  "income_group_results": "not applicable",
   "n_specifications_reported": "not applicable",
-  "headline_is_preferred_specification": "unclear",
-  "risk_of_bias": {
-   "confounding_reverse_causation": {
-    "rating": "not applicable",
-    "why": "not applicable",
-    "evidence": "not applicable"
-   },
-   "exposure_measurement": {
-    "rating": "not applicable",
-    "why": "not applicable",
-    "evidence": "not applicable"
-   },
-   "selection_of_countries_years": {
-    "rating": "not applicable",
-    "why": "not applicable",
-    "evidence": "not applicable"
-   },
-   "outcome_measurement": {
-    "rating": "not applicable",
-    "why": "not applicable",
-    "evidence": "not applicable"
-   },
-   "specification_and_researcher_degrees_of_freedom": {
-    "rating": "not applicable",
-    "why": "not applicable",
-    "evidence": "not applicable"
-   },
-   "selective_reporting": {
-    "rating": "not applicable",
-    "why": "not applicable",
-    "evidence": "not applicable"
-   }
-  },
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": "not applicable",
   "overall_risk_of_bias": "not applicable",
   "venue_quality_concern": "none",
-  "notes": "FULL-TEXT MISMATCH: txt/242.txt (2687 lines) is the EU KLEMS Release 2019 methodology report (title page, 'Contract No. 2018 ECFIN-116/SI2.784491 Deliverable 3'), not 'The unequal implications of Industry 4.0 adoption'. A grep for 'Industry 4.0', 'convergence', 'robot' and 'unequal' finds nothing. The file covers EU28, US and Japan growth accounting, Sections 1-5 and appendix tables on data coverage, and reports no regression of outcomes on technology adoption. The exclusion (E4) applies to the supplied document only. The correct PDF should be re-retrieved and this record redone before the final inclusion count is trusted. No instruction-like text found in the file.",
+  "notes": "Screening had marked this INC. Excluded at full text on E2 because the exposure is Industry 4.0 capital goods (robots, AM, IIoT) rather than a listed technology; a reviewer who treats IIoT as ICT may reconsider. For reference only: headline Table 4 col (7), p. 1060, I40(t-1) = 0.329 (SE 0.102) with I40 x lnDTF = -0.313 (SE 0.089), 1760 obs; authors note reverse causality cannot be ruled out (Section 5.3, p. 1065). The Table 4 ICT capital control is positive in 2009-2019 (col 7: 0.491, SE 0.234) but is a control, not an identified exposure. No instruction-like text found in the paper.",
   "quote_check": {
    "verified": 0,
    "checked": 0
@@ -6743,6 +6709,187 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "952",
+  "title": "Twin Transition and Labor Informality in Asia-Pacific: Threshold Effects and Income-Group Heterogeneity",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of 17 Asia-Pacific economies (all four income groups) relating an internet/broadband/ICT-exports index to labor informality (labour market) and labor productivity (output); meets the 10-economy and income-group criteria for non-AI technology.",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "fixed broadband",
+   "ICT goods exports (composite digital index, PCA)",
+   "renewable energy share and CO2 per capita (green index, not an eligible exposure; interacted with digital)"
+  ],
+  "exposure_measure": "DIGI_std: first principal component of internet users (% pop), fixed broadband per 100, ICT goods exports (% merchandise exports); standardised. Threshold variable is internet penetration (INT). GREEN_std: PC1 of renewable energy share and reversed CO2 per capita. DIGI x GREEN interaction.",
+  "sample": {
+   "n_economies": "17 (16 in pooled income-group interaction model)",
+   "economies_or_groups": "Asia-Pacific: 6 high (Australia, Hong Kong, Japan, Korea, New Zealand, Singapore), 4 upper-middle (Armenia, Georgia, Malaysia, Thailand), 6 lower-middle (Bhutan, Indonesia, Pakistan, Philippines, Sri Lanka, Vietnam), 1 low (Cambodia)",
+   "income_groups_covered": "high, upper-middle, lower-middle, low (low = Cambodia only)",
+   "years": "2005-2022",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Two-way fixed-effects and dynamic panel FE with lagged dependent variable (LSDV-type, not corrected for Nickell bias; no GMM); Hansen-type threshold regression on internet penetration (static, no lag); income-group subsample dynamic panels (entity FE only); wild cluster bootstrap for the interaction; pooled triple-interaction model",
+   "identification": "threshold model",
+   "key_controls_fixed_effects": "Country and year FE (subsamples: entity FE only); ln GDP per capita PPP, trade openness, FDI, urbanisation, education expenditure; COVID dummy; SEs clustered by country"
+  },
+  "results": [
+   {
+    "family": 3,
+    "indicator": "Labor informality proxy (own-account + contributing family workers, % of employment) on DIGI_std, full sample",
+    "direction": "null",
+    "estimate": "0.356 (Model 1 FE) to 0.752 (Model 4 dynamic + interaction), percentage points of informality per 1 SD of digital index; Model 3 = 0.714",
+    "uncertainty": "SE 1.43 to 1.91; paper reports p = 0.61 to 0.84",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, Section 4.3: \"DIGI_std shows a small, positive, and statistically insignificant coefficient in every specification\""
+   },
+   {
+    "family": 3,
+    "indicator": "Informality proxy on DIGI x GREEN interaction, full sample",
+    "direction": "null",
+    "estimate": "0.591 (Model 2); 0.230 (Model 4)",
+    "uncertainty": "SE 1.924; 1.502; p = 0.76 to 0.88",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, Section 4.3: \"No average synergistic effect is detected across the pooled sample of 17 economies.\""
+   },
+   {
+    "family": 1,
+    "indicator": "Labor productivity level (output per worker, thousands constant PPP$, ILO modelled estimate) on DIGI_std",
+    "direction": "positive",
+    "estimate": "0.985 (thousand PPP$ per 1 SD digital index), Model 5",
+    "uncertainty": "SE 0.578; p = 0.090 (marginal)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 Model 5, Section 4.4: \"DIGI_std alone is also positive and marginally significant (beta = 0.985, p = 0.090)\""
+   },
+   {
+    "family": 1,
+    "indicator": "Labor productivity level on DIGI x GREEN interaction",
+    "direction": "positive",
+    "estimate": "1.685 (thousand PPP$)",
+    "uncertainty": "SE 0.633; p < 0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 Model 5, Section 4.4: \"DIGI x GREEN interaction is positive and highly significant (beta = 1.685, p < 0.01)\""
+   },
+   {
+    "family": 3,
+    "indicator": "Informality proxy on DIGI_std, threshold regression by internet penetration (threshold 47.5%)",
+    "direction": "mixed",
+    "estimate": "Regime 1 (INT <= 47.5%): +3.039; Regime 2 (INT > 47.5%): -1.633 (pp of informality per 1 SD)",
+    "uncertainty": "Regime 1 SE 1.841, p = 0.101; Regime 2 SE 1.812, p = 0.369; F = 11.20 (SSR 1397.3 vs 1483.8), no p-value or threshold CI reported",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, Section 4.5: \"above the threshold, the coefficient turns negative (-1.63, not individually significant\""
+   },
+   {
+    "family": 3,
+    "indicator": "Informality proxy on DIGI x GREEN, lower-middle-income subsample (6 countries, 60 obs, entity FE only)",
+    "direction": "negative",
+    "estimate": "-8.685",
+    "uncertainty": "SE 2.087; wild cluster bootstrap p = 0.011",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6: \"DIGI x GREEN ... -8.685 *** (2.087)\", WCB p-value 0.011"
+   },
+   {
+    "family": 3,
+    "indicator": "Informality proxy on DIGI x GREEN, high-income subsample (6 countries, 61 obs)",
+    "direction": "positive",
+    "estimate": "+1.243 (wrong sign for H3)",
+    "uncertainty": "SE 0.601; conventional p = 0.044; WCB p = 0.078",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, Section 4.6: \"The bootstrap p-value rises to 0.078\""
+   },
+   {
+    "family": 3,
+    "indicator": "Informality proxy on DIGI x GREEN, upper-middle-income subsample (4 countries, 61 obs)",
+    "direction": "null",
+    "estimate": "-2.635",
+    "uncertainty": "SE 5.272; WCB p = 0.760",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6"
+   },
+   {
+    "family": 3,
+    "indicator": "Informality proxy on DIGI x GREEN, pooled income-group interaction model with country and year FE (N = 186, 16 countries); implied lower-middle-income coefficient",
+    "direction": "null",
+    "estimate": "High-income reference -3.231; upper-middle differential -3.154; lower-middle differential +9.891 (implied lower-middle coefficient +6.660, reversing the Table 6 sign)",
+    "uncertainty": "SE 6.485; 6.460; 7.860; p = 0.619; 0.626; 0.210; joint test chi2 = 5.388, p = 0.068",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, Section 4.6: \"the sign of the lower-middle-income digital-green interaction reverses\""
+   },
+   {
+    "family": 3,
+    "indicator": "Informality proxy on GREEN_std (green index, full sample; context for interpretation)",
+    "direction": "positive",
+    "estimate": "7.321 (Model 3) to 12.422 (Model 2)",
+    "uncertainty": "SE 3.2 to 4.1; p < 0.10 to p < 0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4; authors attribute this to traditional biomass in the renewable-share indicator, stated to be inferential"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Separate subgroup models show DIGI x GREEN significantly negative on informality only in lower-middle-income economies (-8.685), null in upper-middle, and positive (wrong sign) in high-income. The pooled model with country and year FE reverses the lower-middle sign (implied +6.660), none of the differentials is individually significant, and the authors call the pattern specification-sensitive and exploratory.",
+    "threshold_value": "none",
+    "evidence": "Table 6, Table 8, Section 5.4: \"specification-sensitive heterogeneity pattern\""
+   },
+   {
+    "moderator": "infrastructure",
+    "finding": "Digital coefficient on informality is positive (3.04, p = 0.10) at internet penetration <= 47.5% and negative (-1.63, n.s.) above it; pooled null is attributed to averaging offsetting regimes. No threshold confidence interval and the threshold model omits the lagged dependent variable.",
+    "threshold_value": "47.5% internet penetration",
+    "evidence": "Table 5, Section 4.5"
+   }
+  ],
+  "income_group_results": {
+   "high": "DIGI x GREEN on informality +1.243 (SE 0.601; cluster p = 0.044, WCB p = 0.078); DIGI_std 0.150 n.s.; mean informality 14.5%",
+   "upper_middle": "DIGI x GREEN -2.635 (SE 5.272; WCB p = 0.760); DIGI_std -1.537 n.s.",
+   "lower_middle": "DIGI x GREEN -8.685 (SE 2.087; WCB p = 0.011) in separate subgroup model; DIGI_std +10.127 and GREEN_std +19.456 (both p < 0.01); pooled model implies +6.660, n.s. (Table 8)",
+   "low": "Cambodia only (n = 1); excluded from subgroup and pooled-interaction estimates; no result"
+  },
+  "n_specifications_reported": "about 10 (5 main models in Table 4, 1 threshold model, 3 subgroup models, 1 pooled interaction model)",
+  "headline_is_preferred_specification": "no",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Digital and green indices treated as exogenous given FE; no instruments, GMM or lagged-regressor strategy; Nickell bias acknowledged and not corrected. The text uses mostly associational language, but the headline claims a development-stage-contingent synergy.",
+    "evidence": "Section 3.3.6: \"cannot rule out that unmodelled endogeneity in DIGI_std or GREEN_std biases the interaction coefficient in either direction\"; Section 6 limitations"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "PCA composite of internet, broadband and ICT exports is a reasonable ICT capability index. The green index is contaminated by traditional biomass (acknowledged), and the interaction depends on it. The 'twin transition' exposure is therefore only partly an eligible technology.",
+    "evidence": "Section 3.2.3 (PC1 explains 68.7% of variance); Section 5.2 on the biomass problem"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "17 economies selected by labour-force-survey data availability; income subgroups have 4-6 countries and low income only 1 country; the pooled interaction model drops one country (16). Asia-Pacific only, so generalisation is limited.",
+    "evidence": "Section 3.1, Table 1; Section 3.3.3; Section 4.6 (N = 186; 16 clusters)"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Informality is proxied by own-account plus contributing family workers, which excludes informal wage work and includes formal self-employment in high-income settings; the authors state this qualifies every result. Productivity is an ILO modelled estimate (100% coverage), which may be partly imputed.",
+    "evidence": "Section 3.2.1: \"not equivalent to the ILO's broader, enterprise- and job-based definition of informal employment\"; Table 2"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Small N; subgroup models omit year FE while the pooled model includes them and gives the opposite sign for the lower-middle group; threshold model is static with no threshold CI; no leave-one-out or alternative-clustering checks; Hausman test not run; GREEN index validity questioned by the authors; the education coefficient is unstable.",
+    "evidence": "Table 6 note (time FE omitted); Sections 3.3.7 and 4.6; Table 8"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "The paper reports nulls, the sign reversal and the loss of significance transparently. However, the conclusions still describe the lower-middle-income synergy as holding 'specifically and strongly' and the productivity synergy as 'robust', which sit against the authors' own caveats and the abstract.",
+    "evidence": "Section 6: \"holds specifically and strongly among lower-middle-income economies\" versus Section 5.4 and the Abstract; Section 3.3.7 lists required robustness checks not performed"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (the published text keeps revision-round language, for example 'Round 3 review', 'the reviewer's concern', 'this revision's timeframe', and internal contradictions between sections; these suggest peer-review handling was not completed in the final text. Venue is an MDPI journal, Economies)",
+  "notes": "Contradictions: Section 3.3.6 says the dynamic-threshold and pooled specifications are not implemented, then says the specification 'has since been estimated (Section 3.3.8)'; Section 3.3.7 says the Hausman test and robustness checks were not possible and lists them as required for 'the next revision' despite the paper being the final published version. The conclusion states the productivity synergy is 'robustly' positive, but this rests on a single specification (Table 4, Model 5, a level equation with lagged dependent variable). Section 4.6 and the Section 3.3.7 text call the lower-middle-income result 'survives' the bootstrap while the pooled model reverses its sign. The text refers to Table 8 in Section 5.4 and to a 'reviewer' within the article. Section 3.3.7 refers to Section 3.3.5 for within-country SDs of LGDP, but these appear in Table 7 (Section 4.6). No text attempted to instruct the extractor. Dates of receipt and publication are in 2026. Informality in the full sample has N=286 observations while the estimation sample is 191-208. Productivity outcome family 1 and informality family 3 are both extracted. GREEN is not itself an eligible exposure; only the digital component and its interactions are relevant to payoffs of ICT.",
+  "quote_check": {
+   "verified": 8,
+   "checked": 12
+  },
+  "quote_flag": "needs human check"
+ },
+ {
   "idx": "954",
   "title": "DIGITAL ECONOMY TRANSFORMATION AND ITS IMPACT ON LABOR PRODUCTIVITY IN DEVELOPING COUNTRIES: EVIDENCE FROM VIETNAM'S MANUFACTURING AND SERVICE SECTORS",
   "fulltext_decision": "exclude",
@@ -8616,6 +8763,180 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "1469",
+  "title": "Reducing Gender Inequality in Education in Developing Countries: Do Information and Communication Technologies Matter?",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with its own estimation (Driscoll-Kraay, quantile, system GMM) of mobile phone and internet diffusion on male-to-female primary and secondary gross enrolment ratios in 64 low and lower-middle income economies; meets exposure, sample (>=10 economies) and outcome (family 5, schooling) criteria.",
+  "stream": "H",
+  "technology": [
+   "mobile telephony",
+   "internet",
+   "ICT in general (fixed broadband and ICT service exports as alternative measures)"
+  ],
+  "exposure_measure": "Mobile cellular subscriptions per 100 people; share of individuals using the Internet (WDI). Robustness: fixed broadband subscriptions per 100 people and ICT service exports as % of service exports.",
+  "sample": {
+   "n_economies": "64",
+   "economies_or_groups": "64 developing countries described as low-income and lower-middle income (list in Appendix A, e.g. Angola, Bangladesh, India, Egypt, Tunisia, Sri Lanka, Vietnam)",
+   "income_groups_covered": "low and lower-middle (as stated by authors); group membership not reported per country, and some listed countries (e.g. Tunisia, Jordan, Sri Lanka) may be upper-middle in parts of the period",
+   "years": "2001-2022 (unbalanced; 638-862 usable obs in main models)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Country fixed effects with Driscoll-Kraay standard errors (baseline); OLS (Appendix B); trimming outliers; quantile regression (Q10-Q90); two-step system GMM with lagged dependent variable; quadratic ICT term; ICT x GDP growth interaction",
+   "identification": "other",
+   "key_controls_fixed_effects": "Country FE; controls GDP growth, government education spending (% GDP), population growth, trade openness; no year fixed effects reported. GMM uses internal lagged instruments only."
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Gender inequality in primary education (male/female primary gross enrolment ratio; higher = more inequality to the detriment of women) on mobile subscriptions per 100",
+    "direction": "negative",
+    "estimate": "-0.001 per additional subscription per 100 people (rounded; baseline FE, Driscoll-Kraay); mean of outcome 1.072 (SD 0.128)",
+    "uncertainty": "SE 0.000 (reported to 3 decimals), p<0.01, N=845, 64 countries, within R2 0.355",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 col 1, p.6: 'Mobile phone -0.001*** (0.000)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Gender inequality in primary education on internet users (% population)",
+    "direction": "negative",
+    "estimate": "-0.001 per percentage point of internet users (rounded)",
+    "uncertainty": "SE 0.000, p<0.01, N=862, within R2 0.165",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 col 2, p.6: 'Internet -0.001*** (0.000)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Gender inequality in secondary education (male/female secondary GER) on mobile subscriptions per 100",
+    "direction": "negative",
+    "estimate": "-0.003 per subscription per 100 people; outcome mean 1.170 (SD 0.363)",
+    "uncertainty": "SE 0.000, p<0.01, N=638, 61 countries, within R2 0.412",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 col 3, p.6: 'Mobile phone -0.003***'"
+   },
+   {
+    "family": 5,
+    "indicator": "Gender inequality in secondary education on internet users (% population)",
+    "direction": "negative",
+    "estimate": "-0.004 per percentage point",
+    "uncertainty": "SE 0.001, p<0.01, N=644, within R2 0.219",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 col 4, p.6: 'Internet -0.004*** (0.001)'"
+   },
+   {
+    "family": 5,
+    "indicator": "System GMM (dynamic) effect of mobile/internet on primary and secondary gender inequality",
+    "direction": "negative",
+    "estimate": "Mobile: -0.0001 (primary), -0.001 (secondary); Internet: -0.0004 (primary), -0.001 (secondary); lagged dependent var 0.59-0.88",
+    "uncertainty": "Primary mobile p<0.01; other three p<0.05; Hansen p 0.41-0.69; AR(2) p 0.12-0.33; instruments 26-56 vs 59-62 groups",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.9: 'Mobile phone -0.0001*** ... Hansenp 0.685'; text: 'smaller marginal effects in absolute value'"
+   },
+   {
+    "family": 5,
+    "indicator": "Alternative ICT measures (fixed broadband; ICT service exports) on gender inequality",
+    "direction": "negative",
+    "estimate": "Fixed broadband -0.002 (primary), -0.004 (secondary); ICT exports -0.002 (primary), -0.004 (secondary)",
+    "uncertainty": "Broadband p<0.01; ICT exports p<0.05 (primary) and p<0.1 (secondary); within R2 0.054-0.111",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.8: 'Fixed broadband -0.002*** ... ICT exports -0.002** ... -0.004*'"
+   },
+   {
+    "family": 5,
+    "indicator": "Nonlinearity: quadratic ICT terms (U-shape) for gender inequality in education",
+    "direction": "mixed",
+    "estimate": "Linear term negative, squared term positive: mobile -0.002 / +0.00001 (primary), -0.006 / +0.00003 (secondary); internet -0.004 / +0.00004 (primary), -0.013 / +0.0001 (secondary). Implied turning points: 100 mobile subs per 100; internet 50% (primary) and 65% (secondary)",
+    "uncertainty": "All reported p<0.01; turning points computed from rounded coefficients, no CI for the threshold",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, p.9 and text p.10: 'threshold of 100 subscriptions per 100 people for mobile phones'"
+   },
+   {
+    "family": 5,
+    "indicator": "ICT x GDP growth interaction on gender inequality",
+    "direction": "negative",
+    "estimate": "Mobile x GDP growth -0.00002 (primary), -0.0001 (secondary); Internet x GDP growth -0.00003 (primary, n.s.), -0.0002 (secondary)",
+    "uncertainty": "Mobile primary p<0.1; mobile secondary p<0.01; internet primary not significant; internet secondary p<0.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9, p.10: 'Mobile phone x GDP -0.00002* ... Internet x GDP -0.00003'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Effects stronger in secondary than primary education (about -0.003/-0.004 vs -0.001). Text says opposite ('stronger effects ... on primary education') in conclusion and policy section, contradicting Table 3 in absolute coefficient terms (outcome scales differ).",
+    "threshold_value": "none",
+    "evidence": "Section 5.2 p.7: 'ICTs have stronger effects ... on primary education than on secondary' vs Table 3 coefficients"
+   },
+   {
+    "moderator": "other",
+    "finding": "Level of ICT diffusion: U-shaped relation; beyond about 100 mobile subscriptions per 100 people, or 50% (primary) / 65% (secondary) internet users, ICT widens the gender gap",
+    "threshold_value": "100 mobile subs per 100; internet 50% (primary), 65% (secondary)",
+    "evidence": "Section 5.4.1, p.10: 'beyond the threshold of 100 mobile phone subscriptions per 100 people, the diffusion of mobile phone exacerbates gender inequality'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Position in outcome distribution (quantile regression): little variation; mobile on secondary gap grows from -0.002 (Q10) to -0.003 (Q90), internet on secondary gap shrinks from -0.004 to -0.003; primary constant at -0.001",
+    "threshold_value": "none",
+    "evidence": "Table 6, p.8 and Section 5.3.3"
+   },
+   {
+    "moderator": "other",
+    "finding": "Economic growth: negative interaction terms, i.e. ICT effect on reducing gender gap larger when GDP growth is higher (internet-primary interaction not significant)",
+    "threshold_value": "none",
+    "evidence": "Table 9, p.10"
+   }
+  ],
+  "income_group_results": {
+   "high": "not applicable (not in sample)",
+   "upper_middle": "not reported (sample described as low and lower-middle; no group split)",
+   "lower_middle": "not reported separately; pooled estimates only",
+   "low": "not reported separately; pooled estimates only"
+  },
+  "n_specifications_reported": "about 50 (Table 3: 4; Table 4: 8; Table 5: 4; Table 6: 20 quantile coefficients; Table 7: 4; Table 8: 4; Table 9: 4; Table B1: 4)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Authors use causal language ('direct causal effect') but the baseline is a country-FE panel with four controls and no year effects, so common trends (ICT diffusion and enrolment parity both rising 2001-2022) and omitted variables (income level, urbanisation, schooling policy) can drive the result. Authors acknowledge reverse causality (skills bias). System GMM uses internal instruments only, with up to 56 instruments for 62 groups in one model, and gives smaller coefficients.",
+    "evidence": "Section 4 p.5: '𝛼 is used to capture the direct causal effect'; Section 5.3.4 p.8; Table 7 p.9"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mobile subscriptions per 100 (counts SIMs, exceeds 100 in sample, max 174) and share of internet users are standard but are not gender-specific and do not capture access by girls or school-age children; the mechanism concerns gendered access. Internet user data have many missing years.",
+    "evidence": "Section 3 p.4; Table 1 p.5: Mobile phone max 174, Internet obs 1671"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "64 low and lower-middle economies, 2001-2022, but unbalanced: 638-862 obs used in main models vs roughly 1,400 possible country-years; missingness not discussed. Outlier-trimming robustness cuts the top and bottom 5% of the outcome distribution (selects on the dependent variable). Income classification is not applied per country; some listed countries are upper-middle income.",
+    "evidence": "Section 3 p.4; Table 3 obs rows p.6; Section 5.3.1 p.7"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Male/female gross enrolment ratio (not net enrolment, completion or learning). Ratio below 1 (min 0.72-0.84) means girls ahead, so a lower ratio is not always 'less inequality'; interpretation of negative coefficients as reduced inequality is not qualified. GER can exceed 100% because of repeaters and over-age pupils.",
+    "evidence": "Section 3 p.4: 'ratio of male to female primary school gross enrollment'; Table 1 p.5 (min 0.842 and 0.723)"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Many estimators and variants (DK, OLS, trimming, quantile, GMM, quadratic, interaction) but headline spec is the pre-stated baseline. Four controls, no time effects, no lags in baseline. Threshold from quadratic form is computed from rounded coefficients without a test of the turning point or CI. Descriptive text in Section 3 contains units inconsistencies (GDP min stated -0.46% vs -46.082 in Table 1).",
+    "evidence": "Section 4 p.5; Section 5.4.1 p.9-10; Section 3 p.5 vs Table 1"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Nearly every specification supports the main finding, with all primary coefficients rounded to -0.001 and SE 0.000, limiting inspection of precision. Table 6 shows Q10 mobile-primary at -0.001 with SE 0.0001 and no star, which looks inconsistent. Text on relative effect size (primary stronger) contradicts the tables. No pre-registration or placebo checks.",
+    "evidence": "Table 6 panel A p.8; Section 5.2 p.7 and Section 6 p.10"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Included under family 5 (schooling / gender gap in enrolment), technology stream H (mobile and internet). No text attempting to direct the extractor was found. Reported inconsistencies: (1) conclusion says ICT effects are stronger on primary than secondary education, but coefficients in Table 3 are larger for secondary (-0.003/-0.004 vs -0.001) though the secondary outcome has a larger SD; (2) text states GDP growth min -0.46% and max 34% while Table 1 gives -46.082 and 33.629; (3) Table 2 footnote reads '***p < 0.0'; (4) Table 4 note shows only *** though 8 columns; (5) Table 7 first column has 56 instruments for 62 groups. Authors claim to be first to study ICT and gender gap in education. Sample is low and lower-middle only so no high-income comparison and no estimated income-group heterogeneity; the U-shape turning point for mobile (100 per 100) lies within the sample range (mean 50, max 174). Appendix B OLS results reported (coefficients similar). Wiley journal Sustainable Development, 2026.",
+  "quote_check": {
+   "verified": 5,
+   "checked": 13
+  },
+  "quote_flag": "needs human check"
+ },
+ {
   "idx": "1485",
   "title": "Role of Information Communication Technology in Accelerating the Sustainable Development Goals in Financial Inclusion",
   "fulltext_decision": "exclude",
@@ -9007,6 +9328,81 @@
   "overall_risk_of_bias": "not applicable",
   "venue_quality_concern": "possible (conference proceedings volume of Highlights in Business, Economics and Management, GEFHR 2023; unsupported claims in abstract and conclusion with no data; text contains garbled phrases such as 'digital fusion financing')",
   "notes": "Pages 376-381 contain only text, three mechanism figures and one index figure; abstract and conclusion assert that digital finance narrows the urban-rural gap and helps developing countries, but nothing is estimated (Sections 1-4: introduction, status, suggestions, conclusion). Reference list is of other papers. No instruction-like text found.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok"
+ },
+ {
+  "idx": "1519",
+  "title": "The Impact of Digital Financial Technology on Accelerating Financial Inclusion in Developing Economies",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E4",
+  "decision_rationale": "Literature review plus a conceptual systems-dynamics framework; no empirical estimation, data, coefficients or sample are reported. The system dynamics model is described as 'in its infancy'.",
+  "stream": "both",
+  "technology": [
+   "digital financial technology / FinTech",
+   "artificial intelligence (discussed conceptually)"
+  ],
+  "exposure_measure": "not applicable",
+  "sample": {
+   "n_economies": "not reported",
+   "economies_or_groups": "not applicable",
+   "income_groups_covered": "not reported",
+   "years": "not reported",
+   "unit": "other"
+  },
+  "design": {
+   "estimator": "not applicable",
+   "identification": "none",
+   "key_controls_fixed_effects": "not applicable"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "excluded",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "possible (conference proceedings, Procedia Computer Science 217, 4th Int. Conf. on Industry 4.0 and Smart Manufacturing; off-topic venue for economics)",
+  "notes": "Section 3 states 'quantitative and qualitative approach' but only a literature analysis and an unpopulated system dynamics diagram (Fig. 2) are shown; Section 4 says ten key variables, Section 5 says 8 variables (internal inconsistency). Text claims such as 'digital financial technology is identified as potential catalyst' are drawn from cited literature, not own estimation. No instruction-like text found in the paper.",
   "quote_check": {
    "verified": 0,
    "checked": 0
