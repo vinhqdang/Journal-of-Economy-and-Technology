@@ -37,7 +37,7 @@
 | 216 | 2024 | Does the digital economy promote or inhibit income inequality? | included for assessment | abstract level only |
 | 217 | 2021 | Does digital financial inclusion moderate or exacerbate output volatility? | included for assessment | provided by author |
 | 239 | 2018 | What drives labor market polarization in advanced countries? The role of China and technology | included for assessment | retrieved |
-| 242 | 2023 | The unequal implications of Industry 4.0 adoption: evidence on productivity growth and convergence a | included for assessment | requested from author |
+| 242 | 2023 | The unequal implications of Industry 4.0 adoption: evidence on productivity growth and convergence a | included for assessment | provided by author |
 | 245 | 2023 | The impact of the digital economy on green total factor productivity in Belt and Road countries: the | included for assessment | retrieved |
 | 260 | 2025 | Promoting Economic Development Through Digitalisation: Impacts on Human Development, Economic Comple | included for assessment | retrieved |
 | 261 | 2019 | ICT and transport infrastructure development: an empirical analysis of complementarity | included for assessment | abstract level only |
@@ -132,7 +132,7 @@
 | 945 | 2026 | The skill premium across countries in the era of industrial robots and artificial intelligence | included for assessment | provided by author |
 | 947 | 2016 | Labour Productivity, ICT and Complementary Factors in the CEE Region | included for assessment | abstract level only |
 | 948 | 2022 | CAUSAL LINKS BETWEEN ICT, HDI, AND ECONOMIC GROWTH: EVIDENCE FROM MENA | included for assessment | abstract level only |
-| 952 | 2026 | Twin Transition and Labor Informality in Asia-Pacific: Threshold Effects and Income-Group Heterogene | included for assessment | requested from author |
+| 952 | 2026 | Twin Transition and Labor Informality in Asia-Pacific: Threshold Effects and Income-Group Heterogene | included for assessment | provided by author |
 | 954 | 2025 | DIGITAL ECONOMY TRANSFORMATION AND ITS IMPACT ON LABOR PRODUCTIVITY IN DEVELOPING COUNTRIES: EVIDENC | included for assessment | retrieved |
 | 955 | 2024 | Digital Readiness and Economic Growth: Analyzing the Impact of DESI Scores on GDP in European Countr | included for assessment | abstract level only |
 | 957 | 2024 | IMPACT OF ICT ON ECONOMIC GROWTH: CASE OF OECD AND MENA COUNTRIES | included for assessment | retrieved |
@@ -152,7 +152,7 @@
 | 1152 | 2026 | Relative Development and the Intelligence Divide | included for assessment | abstract level only |
 | 1167 | 2026 | AI Preparedness and Economic Performance: Evidence from Selected Countries | included for assessment | abstract level only |
 | 1192 | 2026 | The Digital Maturity Paradox: The Divergent Impact of Network Readiness and FDI Across Development T | included for assessment | provided by author |
-| 1289 | 2025 | Impact of the Fourth Industrial Revolution on Society: A Global Perspective | included for assessment | requested from author |
+| 1289 | 2025 | Impact of the Fourth Industrial Revolution on Society: A Global Perspective | included for assessment | skipped: venue judged unreliable |
 | 1353 | 2014 | Internet Education and Economic Growth: Evidence from Cross-Country Regressions | included for assessment | abstract level only |
 | 1354 | 2025 | Artificial Intelligence Adoption and Economic Growth: Evidence from a Global Cross-Country Panel (20 | included for assessment | retrieved |
 | 1355 | 2013 | Internet-growth nexus: evidence from cross-country panel data | included for assessment | abstract level only |
@@ -174,7 +174,7 @@
 | 1443 | 2019 | Health outcome and expenditure in low-income countries: does increasing diffusion of information and | included for assessment | abstract level only |
 | 1444 | 2019 | Impact of Information and Communication Technology on Economic Growth: Evidence from Developing Coun | included for assessment | abstract level only |
 | 1448 | 2023 | The effect of information and communication technology on economic growth high-income countries | included for assessment | retrieved |
-| 1469 | 2026 | Reducing Gender Inequality in Education in Developing Countries: Do Information and Communication Te | included for assessment | requested from author |
+| 1469 | 2026 | Reducing Gender Inequality in Education in Developing Countries: Do Information and Communication Te | included for assessment | provided by author |
 | 1476 | 2023 | Investigating the direct and indirect effects of Information and Communication Technology on economi | included for assessment | abstract level only |
 | 1485 | 2022 | Role of Information Communication Technology in Accelerating the Sustainable Development Goals in Fi | included for assessment | retrieved |
 | 1486 | 2026 | Information and communication technologies and economic growth in West African economic and Monetary | included for assessment | abstract level only |
@@ -185,13 +185,13 @@
 | 1497 | 2023 | Digital Inclusive Finance Helps Developing Countries Narrow the Urban-rural Income Gap Analysis——Tak | included for assessment | retrieved |
 | 1499 | 2026 | Digital technology and macroeconomic performance in developing Asian countries | included for assessment | abstract level only |
 | 1503 | 2026 | Assessing the impact of digital finance on inequality, poverty and carbon emissions in developing As | included for assessment | abstract level only |
-| 1519 | 2023 | The Impact of Digital Financial Technology on Accelerating Financial Inclusion in Developing Economi | included for assessment | requested from author |
+| 1519 | 2023 | The Impact of Digital Financial Technology on Accelerating Financial Inclusion in Developing Economi | included for assessment | provided by author |
 | 1525 | 2026 | Analyzing the Impact of Artificial Intelligence Adoption on Economic Inequality: A Cross-Country Dat | included for assessment | retrieved |
 | 1526 | 2022 | Artificial Intelligence and Employment: New Cross-Country Evidence | included for assessment | retrieved |
 | 1529 | 2020 | Artificial Intelligence in Developing Countries | review (citation search) | abstract level only |
 | 1549 | 2025 | How artificial intelligence adoption influence energy poverty? Fresh insights for energy-deficient O | included for assessment | abstract level only |
 | 1551 | 2026 | Artificial Intelligence and Poverty Reduction: How AI Applications and Digital Solutions Can Help, p | included for assessment | retrieved |
-| 1556 | 2025 | Artificial Intelligence Adoption and Productivity in Emerging Markets: Firm Level Evidence | included for assessment | requested from author |
+| 1556 | 2025 | Artificial Intelligence Adoption and Productivity in Emerging Markets: Firm Level Evidence | included for assessment | skipped: venue judged unreliable |
 | 1557 | 2026 | IMPACT OF ARTIFICIAL INTELLIGENCE ON ECONOMIC GROWTH: EVIDENCE FROM EMERGING ECONOMIES | included for assessment | retrieved |
 | 1564 | 2025 | The Impact of Artificial Intelligence on Employment: A Panel Data Analysis for Selected Countries | included for assessment | retrieved |
 | 1580 | 2023 | Implications of AI innovation on economic growth: a panel data study | included for assessment | abstract level only |

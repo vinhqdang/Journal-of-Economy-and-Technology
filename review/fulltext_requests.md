@@ -1,6 +1,6 @@
 # Full-text requests (short list)
 
-Only papers with no free, legal full text found are listed. 72 of 256 papers were obtained automatically (open-access copies, repository versions, preprints), and each file was checked against its title. These are the ones I most need (18 of the original 26 have already been received; 2 were skipped because the author judged the venue unreliable) (25 chosen by priority, plus one paper whose automatic download turned out to be the wrong document). Download them with institutional access and send them back; name each file with the number in the first column, for example `878.pdf`.
+Only papers with no free, legal full text found are listed. 72 of 256 papers were obtained automatically (open-access copies, repository versions, preprints), and each file was checked against its title. These are the ones I most need (22 of the original 26 are settled: 20 received, 2 skipped by the author for venue quality, and 2 more skipped as doubtful) (25 chosen by priority, plus one paper whose automatic download turned out to be the wrong document). Download them with institutional access and send them back; name each file with the number in the first column, for example `878.pdf`.
 
 If the repository is private you can push them to `review/fulltext/`; if it is public, attach them in the chat instead, because publisher PDFs should not be committed to a public repository.
 
@@ -8,11 +8,5 @@ Everything else without a free copy is **not requested**. It will be handled at 
 
 | # | Year | Title | Link | Why it matters |
 |---|---|---|---|---|
-| 952 | 2026 | Twin Transition and Labor Informality in Asia-Pacific: Threshold Effects and Income-Group Heterogeneity | https://doi.org/10.3390/economies14090398 | threshold or heterogeneity; income-level comparison; distribution or labour outcome |
-| 1289 | 2025 | Impact of the Fourth Industrial Revolution on Society: A Global Perspective | https://doi.org/10.9734/ajaees/2025/v43i62770 | AI evidence; income-level comparison; distribution or labour outcome; convergence |
-| 1469 | 2026 | Reducing Gender Inequality in Education in Developing Countries: Do Information and Communication Technologies Matt | https://doi.org/10.1002/sd.71201 | threshold or heterogeneity; income-level comparison; distribution or labour outcome |
-| 1519 | 2023 | The Impact of Digital Financial Technology on Accelerating Financial Inclusion in Developing Economies | https://doi.org/10.1016/j.procs.2022.12.263 | AI evidence; income-level comparison; distribution or labour outcome |
-| 1556 | 2025 | Artificial Intelligence Adoption and Productivity in Emerging Markets: Firm Level Evidence | https://doi.org/10.69725/jebi.v2i1.263 | AI evidence; threshold or heterogeneity; income-level comparison |
-| 242 | 2023 | The unequal implications of Industry 4.0 adoption: evidence on productivity growth and convergence across Europe | https://doi.org/10.1080/10438599.2023.2269089 | The file retrieved automatically was the wrong document; this one needs the real paper |
 
 \* judged on the title only, so it may turn out not to qualify.
