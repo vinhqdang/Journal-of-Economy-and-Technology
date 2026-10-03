@@ -153,6 +153,8 @@ def eventstudy(df, ks):
     cols = [f"e{k}" for k in ks]
     Xd = demean(d, cols + ["y"], [d["ci"], d["cy"]])
     keep = Xd[cols].columns[(Xd[cols].abs().sum() > 1e-9).values]
+    if len(keep) == 0 or d["tr"].nunique() < 2:
+        return None, d
     m = __import__("statsmodels.api", fromlist=["OLS"]).OLS(Xd["y"], Xd[list(keep)]).fit(cov_type="cluster", cov_kwds={"groups": pd.factorize(d["iso"])[0]})
     return m, d
 
@@ -161,6 +163,16 @@ treated_all = [k for k, v in to.items() if v]
 KS = [k for k in range(-5, 11) if k != -1]
 out += ["## A4 event study around the mobile takeoff (first year with at least 10 subscriptions per 100)", "",
         f"Economies below 10 per 100 in 1995: {len(to)}; of these {len(treated_all)} reach 10 by {END}. Window: 5 years before to 10 years after; reference year -1; stacked cohorts with clean controls (control economies reach 10 more than 10 years after the cohort year, or never by {END}); cohort-by-country and cohort-by-year fixed effects. Controls are drawn from the same income-group set as the treated economies (clarification of the spec). Outcome: log GDP per capita times 100, so a coefficient of 5 means GDP per capita about 5% higher than in the reference year, relative to controls.", ""]
+def clean_controls(T, Cn):
+    """Same-group clean controls if at least 8 exist for the stacked cohorts, otherwise controls from all groups (flagged)."""
+    cohorts = {to[k] for k in T}
+    ok = [k for k in Cn if to.get(k) is None or all(to[k] > g + 10 for g in cohorts)]
+    ok_any = [k for k in Cn if to.get(k) is None or to[k] > min(cohorts) + 10]
+    if len(ok_any) >= 8:
+        return Cn, False
+    allc = [k for k, v in to.items()]
+    return allc, True
+
 sets = [("All economies", list(GROUPS.values())), ("Low and lower-middle income", ["1 Low", "2 Lower-middle"]), ("Upper-middle income", ["3 Upper-middle"]), ("High income", ["4 High"])]
 fig, ax = plt.subplots(1, 4, figsize=(13, 3.2), sharey=True)
 out += ["| Sample | Treated economies | Control economies | Pre-trend (mean of -5 to -2) | Effect at +5 | Effect at +10 |", "|---|---|---|---|---|---|"]
@@ -172,9 +184,15 @@ for i, (lab, gs) in enumerate(sets):
         out.append(f"| {lab} | {len(T)} | {len([k for k in Cn if k not in T or True])} | fewer than 15 treated economies, not interpreted | | |")
         # still estimate descriptively for the plot? skip
         ax[i].set_title(f"{lab}\n(n<15, not shown)", fontsize=8); continue
+    Cn, widened = clean_controls(T, Cn)
     df = stacked("gdppc", to, T, Cn, True)
     m, d = eventstudy(df, KS)
+    if m is None:
+        out.append(f"| {lab} | {len(T)} | 0 | no clean control economies; not estimated | | |")
+        continue
     ctrl_n = d[d["tr"] == 0]["iso"].nunique()
+    if widened:
+        lab = lab + " (controls from all income groups)"
     pre = [f"e{k}" for k in (-5, -4, -3, -2) if f"e{k}" in m.params.index]
     pt = m.t_test(" + ".join(f"{c}" for c in pre) + f" = 0") if pre else None
     pre_mean = np.mean([m.params[c] for c in pre]) if pre else np.nan
@@ -198,15 +216,23 @@ out += ["", "Figure: `figures/event_study.png`. Panels with fewer than 15 treate
 # A5 secondary outcomes
 out += ["## A5 secondary outcomes around the mobile takeoff (effect at +5 and +10 years)", "", "| Outcome | Sample | Treated | Effect at +5 | Effect at +10 |", "|---|---|---|---|---|"]
 for yv, lab, logy in [("lifeexp", "Life expectancy (years)", False), ("u5mort", "Under-5 mortality (log x 100)", True), ("unemp", "Unemployment (pp)", False), ("agshare", "Agriculture share of value added (pp)", False), ("co2pc", "CO2 per capita (log x 100)", True), ("elecuse", "Electric power use per capita (log x 100)", True)]:
+    if yv not in W:
+        out.append(f"| {lab} | not available from the API | | | |")
+        continue
     for slab, gs in sets[:2] + sets[2:]:
         T = [k for k in treated_all if grp.get(k) in gs and k in W[yv].index and W[yv].loc[k].notna().sum() > 10]
         Cn = [k for k, v in to.items() if grp.get(k) in gs and k in W[yv].index]
         if len(T) < 15:
             continue
+        Cn, widened = clean_controls(T, Cn)
         df = stacked(yv, to, T, Cn, logy)
         if len(df) < 200:
             continue
         m, d = eventstudy(df, KS)
+        if m is None:
+            continue
+        if widened:
+            slab = slab + " (controls from all groups)"
         def eff(k):
             c = f"e{k}"
             if c not in m.params.index:
