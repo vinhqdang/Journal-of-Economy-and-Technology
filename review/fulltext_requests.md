@@ -1,6 +1,6 @@
 # Full-text requests (short list)
 
-Only papers with no free, legal full text found are listed. 72 of 256 papers were obtained automatically (open-access copies, repository versions, preprints), and each file was checked against its title. These are the ones I most need (10 of the original 26 have already been received) (25 chosen by priority, plus one paper whose automatic download turned out to be the wrong document). Download them with institutional access and send them back; name each file with the number in the first column, for example `878.pdf`.
+Only papers with no free, legal full text found are listed. 72 of 256 papers were obtained automatically (open-access copies, repository versions, preprints), and each file was checked against its title. These are the ones I most need (15 of the original 26 have already been received) (25 chosen by priority, plus one paper whose automatic download turned out to be the wrong document). Download them with institutional access and send them back; name each file with the number in the first column, for example `878.pdf`.
 
 If the repository is private you can push them to `review/fulltext/`; if it is public, attach them in the chat instead, because publisher PDFs should not be committed to a public repository.
 
@@ -8,11 +8,6 @@ Everything else without a free copy is **not requested**. It will be handled at 
 
 | # | Year | Title | Link | Why it matters |
 |---|---|---|---|---|
-| 1192 | 2026 | The Digital Maturity Paradox: The Divergent Impact of Network Readiness and FDI Across Development Tiers | https://doi.org/10.3390/economies14080320 | AI evidence; income-level comparison; structural change; convergence |
-| 1494 | 2026 | Digital transformation and income disparities: A threshold analysis in developing countries | https://doi.org/10.1556/032.2025.00183 | threshold or heterogeneity; income-level comparison; distribution or labour outcome; structural change; convergence |
-| 57 | 2020 | Nexus between energy consumption, information and communications technology, and economic growth: An enquiry into e | https://doi.org/10.1002/pa.2172 | threshold or heterogeneity; income-level comparison |
-| 535 | 2026 | The Economic Value of Agentic AI: A Comparative Analysis of Its Impact on Growth and Business Productivity in Devel | https://doi.org/10.9734/ajrcos/2026/v19i5859 | AI evidence; income-level comparison; distribution or labour outcome; structural change |
-| 138 | 2023 | Empirical Analysis of Inclusive Growth, Information and Communication Technology Adoption, and Institutional Qualit | https://doi.org/10.3390/economies11040124 | threshold or heterogeneity; income-level comparison |
 | 153 | 2009 | Determinants of Labor Productivity: An Empirical Investigation of Productivity Divergence | (no DOI: search the title) | income-level comparison; distribution or labour outcome; structural change; convergence |
 | 217 | 2021 | Does digital financial inclusion moderate or exacerbate output volatility? | https://doi.org/10.1080/13504851.2021.1963400 | threshold or heterogeneity; income-level comparison |
 | 29 | 2019 | The Internet of Things and economic growth in a panel of countries | https://doi.org/10.1080/10438599.2019.1695941 | AI evidence |

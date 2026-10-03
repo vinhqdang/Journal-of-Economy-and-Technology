@@ -176,6 +176,150 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "57",
+  "title": "Nexus between energy consumption, information and communications technology, and economic growth: An enquiry into emerging Asian countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of 10 Asian economies (2000-2017) estimating the effect of internet and mobile subscriptions on GDP with FMOLS, DOLS and AMG. Meets the non-AI sample threshold of at least 10 economies and has a family 1 outcome.",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "mobile telephony",
+   "ICT in general (medium and high technology exports as proxy)"
+  ],
+  "exposure_measure": "Internet users (% of population, lnIT); mobile cellular subscriptions (number, lnMO); medium and high technology exports (% of manufactured exports, lnEX) used as an ICT-capability proxy because ICT investment or capital stock data were unavailable. Source: World Development Indicators.",
+  "sample": {
+   "n_economies": "10",
+   "economies_or_groups": "Bangladesh, Cambodia, China, India, Indonesia, Malaysia, Nepal, Philippines, Sri Lanka, Thailand (listed in Table 8). Text says selected as 'highest current GDP' emerging and developing Asian countries; the paper does not list them in the text.",
+   "income_groups_covered": "mixed (paper gives no income classification; sample spans lower-middle and upper-middle economies by my reading, not stated by the paper)",
+   "years": "2000-2017",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pesaran and Breusch-Pagan CSD tests, IPS/Fisher and CIPS/CADF unit roots, Westerlund cointegration, Dumitrescu-Hurlin Granger non-causality (GDP as dependent variable), panel FMOLS and DOLS long-run elasticities, country-wise Augmented Mean Group (AMG)",
+   "identification": "none",
+   "key_controls_fixed_effects": "Log-log model of GDP on electricity consumption (kWh per capita), energy use (kg oil eq per $1,000 GDP), income index (GNI per capita), internet, mobile, high-tech exports. No other controls; no explicit fixed effects described for FMOLS/DOLS."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Elasticity of GDP (current US$) with respect to mobile subscriptions, panel FMOLS/DOLS",
+    "direction": "positive",
+    "estimate": "FMOLS 0.7195; DOLS 0.7541 (log-log elasticity)",
+    "uncertainty": "FMOLS SE 0.0621, p<0.01; DOLS SE 0.0809, p<0.01",
+    "horizon": "long",
+    "evidence": "p.10, Table 7: lnMO 0.719506*** (0.062101) FMOLS; 0.754067*** (0.080889) DOLS"
+   },
+   {
+    "family": 1,
+    "indicator": "Elasticity of GDP (current US$) with respect to internet users, panel FMOLS/DOLS",
+    "direction": "negative",
+    "estimate": "FMOLS -0.5911; DOLS -0.5616 (log-log elasticity)",
+    "uncertainty": "FMOLS SE 0.1022, p<0.01; DOLS SE 0.1362, p<0.01",
+    "horizon": "long",
+    "evidence": "p.10, Table 7 lnIT -0.59107***; p.7 text: 'internet subscriptions negatively impact GDP ... decrease in growth by 0.59%'"
+   },
+   {
+    "family": 1,
+    "indicator": "Elasticity of GDP with respect to medium and high technology exports, panel FMOLS/DOLS",
+    "direction": "null",
+    "estimate": "FMOLS 0.1331; DOLS 0.1241",
+    "uncertainty": "FMOLS SE 0.1214; DOLS SE 0.1491 (not significant)",
+    "horizon": "long",
+    "evidence": "p.10, Table 7 lnEX 0.133132 (0.12144)"
+   },
+   {
+    "family": 1,
+    "indicator": "Country-wise AMG coefficients on mobile subscriptions (10 countries)",
+    "direction": "mixed",
+    "estimate": "Significant positive in India 0.0759, Indonesia 0.0870, Malaysia 0.3128, Thailand 0.0587 (10%); significant negative in Bangladesh -0.0987 and Cambodia -0.1060; insignificant elsewhere",
+    "uncertainty": "Stars only (1/5/10% levels); no SEs reported",
+    "horizon": "long",
+    "evidence": "p.10, Table 8 lnMO column; p.8 text: 'mobile subscriptions also significantly impact ... Bangladesh, Cambodia, India, Indonesia, Malaysia, and Nepal'"
+   },
+   {
+    "family": 1,
+    "indicator": "Country-wise AMG coefficients on internet users (10 countries)",
+    "direction": "null",
+    "estimate": "Insignificant in 8 of 10 countries; significant negative in Malaysia -0.4137 and Thailand -0.2656",
+    "uncertainty": "Stars only (1/5/10% levels); no SEs reported",
+    "horizon": "long",
+    "evidence": "p.10, Table 8 lnIT column; p.8: 'impact of internet subscriptions is in fact insignificant is majority of the countries except for Malaysia and Thailand'"
+   },
+   {
+    "family": 1,
+    "indicator": "Dumitrescu-Hurlin Granger causality to GDP from internet, mobile, high-tech exports, electricity, energy use, income",
+    "direction": "positive",
+    "estimate": "Rejection of no-causality for all regressors: W-bar 3.79 (IN), 13.07 (MO), 4.28 (IT), 4.74 (EL), 7.96 (EN), 4.21 (EX)",
+    "uncertainty": "p = .0000 for all",
+    "horizon": "not reported",
+    "evidence": "p.9, Table 6 (GDP as dependent variable); only one causal direction is tabulated"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Country-specific AMG estimates differ strongly: mobile coefficient positive and significant in India, Indonesia, Malaysia and Thailand, negative in Bangladesh and Cambodia, insignificant in China, Philippines, Sri Lanka and Nepal. This contradicts the claim that results are consistent for all countries.",
+    "threshold_value": "none",
+    "evidence": "p.10, Table 8; abstract: 'the results are consistent for all the countries analyzed'"
+   },
+   {
+    "moderator": "income group",
+    "finding": "The discussion says the ICT effect differs across income groups but cites Yousefi (2011); the paper estimates no income-group split.",
+    "threshold_value": "none",
+    "evidence": "p.9, Section 5: 'impact of ICT on economic growth differs across different income group of countries (Yousefi, 2011)'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported (not in sample)",
+   "upper_middle": "not reported as a group; country AMG results for China, Malaysia, Thailand given in Table 8 (the paper does not classify them)",
+   "lower_middle": "not reported as a group; country AMG results for Bangladesh, Cambodia, India, Indonesia, Nepal, Philippines, Sri Lanka given in Table 8 (the paper does not classify them)",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 3 (FMOLS, DOLS, country-wise AMG with one equation each, plus causality tests); no robustness variants",
+  "headline_is_preferred_specification": "no",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language and policy advice, but no instrument or timing strategy. Authors themselves find bidirectional causality between ICT and GDP. GNI per capita (income index) is included as a regressor alongside GDP, a mechanically related variable. The small set of regressors omits capital, labour and human capital.",
+    "evidence": "p.3 Eq. 1-3 (model has no capital or labour terms); p.9 Section 5 'bidirectional causality between all the variables'"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users (% pop) and mobile subscriptions are standard adoption measures, but mobile is entered in absolute numbers (not per capita) so it partly scales with population. High-tech exports are a weak proxy for ICT capability.",
+    "evidence": "p.2 and p.5: 'MO (in numbers)'; medium and high technological export used 'due to nonavailability of ICT investment or ICT capital stock'"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Only 10 countries and 18 annual observations. Selection is described as 'highest current GDP' but Nepal and Cambodia are included and the countries are not named in the text. Text variously calls the sample 'emerging Asian', 'South Asian' and 'top 10 emerging South Asian' although it includes China, Indonesia and Thailand.",
+    "evidence": "p.1 abstract; p.5 Section 3.1; p.9 'South Asian countries under study'; p.10 Table 8"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "The dependent variable is current-price GDP in US dollars (levels), not real or per-capita GDP, so it mixes inflation and exchange-rate movements with output. The paper still calls it economic growth.",
+    "evidence": "p.5 Section 3.1: 'Y denotes the current GDP price in US dollars, as a measure of economic growth'; p.8 Table 1 GDP mean 856.34"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Panel with N=10 and T=18 uses FMOLS/DOLS/AMG with several nonstationarity and cointegration tests whose results are mixed (CIPS and Westerlund p-values 0.01-0.053, Gt only at 10%). First-generation unit root tests say all series are stationary at level, which conflicts with the cointegration framework. Variable-equation notation is inconsistent (beta3 and beta4 reused). No robustness checks.",
+    "evidence": "p.8 Tables 3-4; p.9 Table 5 (Gt p=.053); p.6 Eq. 3"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "The abstract and conclusion say internet and mobile subscriptions have a positive effect on growth, but Table 7 shows a significant negative internet coefficient (-0.59) and Table 8 shows internet insignificant in most countries and mobile negative in some. The abstract says bidirectional causality but only the GDP-dependent direction is tabulated.",
+    "evidence": "p.1 abstract and p.10 Section 6 vs p.10 Table 7 lnIT -0.59107***; p.9 Table 6 title 'ln_GDP as dependent variable'"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Headline claims conflict with the reported tables: the abstract states internet subscriptions have a positive impact, while Table 7 reports a negative and significant coefficient (about -0.59) and the AMG panel finds internet insignificant in 8 of 10 countries. The discussion also says the FMOLS/DOLS results show 'a significant impact' without noting direction. Energy outcomes (electricity use, energy use) are modelled as regressors for GDP, not as outcomes of ICT, so no family 6 result is extracted. Westerlund Z-values and p-values look inconsistent (Gt Z=-0.944 with p=.053). In Table 8, lnIN (income index) coefficients are large (up to 9.4) and Table 1 reports GDP mean 856 with max 12,062, suggesting GDP is in billions of US dollars; unit not stated. No injected instructions found in the text. Published in Journal of Public Affairs (Wiley, 2021).",
+  "quote_check": {
+   "verified": 7,
+   "checked": 11
+  },
+  "quote_flag": "needs human check"
+ },
+ {
   "idx": "63",
   "title": "Labor Market Exposure to AI: Cross-country Differences and Distributional Implications",
   "fulltext_decision": "context",
@@ -939,6 +1083,183 @@
    "checked": 10
   },
   "quote_flag": "needs human check"
+ },
+ {
+  "idx": "138",
+  "title": "Empirical Analysis of Inclusive Growth, Information and Communication Technology Adoption, and Institutional Quality",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of up to 193 countries (2010-2019) with explicit income-group comparison; exposure is mobile and fixed telephone subscriptions (ICT/mobile telephony); outcome is HDI (living standards beyond income, family 5).",
+  "stream": "H",
+  "technology": [
+   "mobile telephony (mobile cellular subscriptions)",
+   "fixed telephony (fixed telephone subscriptions)",
+   "ICT in general (internet users used as control)"
+  ],
+  "exposure_measure": "Natural log of mobile cellular subscriptions and of fixed telephone subscriptions (World Bank WDI). Summary statistics show absolute counts (mean 35.4 million mobile subscriptions), not per-capita penetration. Internet users (% of population) enters as a control. Also an institutional quality index (PCA of six WGI indicators) and its interaction with ICT.",
+  "sample": {
+   "n_economies": "193 stated (Section 3); effective estimation samples are smaller: 152 groups in Table 5 (mobile), 151 (fixed); 47/25/39/41 groups (high/low/lower-mid/upper-mid) in Table 8",
+   "economies_or_groups": "World-wide panel split by 2020 World Bank income classification (Appendix Table A1)",
+   "income_groups_covered": "high, upper-middle, lower-middle, low",
+   "years": "2010-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel fixed effects with Driscoll-Kraay (PSCC) standard errors; IV-GMM; simultaneous (bootstrap) quantile regression at 25th/50th/75th percentiles",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Year dummies; labour force participation, gross capital formation, inflation, trade openness, internet users; one-period lag of regressors used in PSCC-FE and IV-GMM; instruments for IV-GMM are not described in the text; Hansen J p-values reported"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "ln HDI on ln mobile subscriptions, full sample, PSCC-FE",
+    "direction": "positive",
+    "estimate": "0.0111 (Table 5 col 2); 0.0103 with IQI (col 3); 0.0112 with interaction (col 4); log-log so elasticity of HDI to mobile subscriptions about 0.01",
+    "uncertainty": "t = 4.922 (col 2), 4.288 (col 3); significant at 1%",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p. 10, row lnICT, cols 2-4; text: 'lnMOB exerts a positive and statistical effect at the 1% level'"
+   },
+   {
+    "family": 5,
+    "indicator": "ln HDI on ln fixed telephone subscriptions, full sample, PSCC-FE",
+    "direction": "negative",
+    "estimate": "-0.00480 (col 5); -0.00468 (col 6); -0.00257 (col 7)",
+    "uncertainty": "t = -4.122, -4.197, -2.991; significant at 1%",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p. 10, row lnICT, cols 5-7; text: 'that of lnFTEL is negative'"
+   },
+   {
+    "family": 5,
+    "indicator": "ln HDI on ln mobile subscriptions, full sample, IV-GMM",
+    "direction": "positive",
+    "estimate": "0.00708 (Table 6 col 3); 0.00673 (col 4); col 2 (ICT alone, no IQI) is -0.860 and insignificant",
+    "uncertainty": "t = 3.256 (col 3), 2.973 (col 4); col 2 t = -1.059",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p. 11, row lnICT; Hansen p = 0.319 (col 3)"
+   },
+   {
+    "family": 5,
+    "indicator": "ln HDI on ln fixed telephone subscriptions, full sample, IV-GMM",
+    "direction": "positive",
+    "estimate": "0.0659 (col 5, no IQI); 0.0194 (col 6); 0.0193 (col 7)",
+    "uncertainty": "t = 6.686, 12.23, 12.28",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p. 11, row lnICT, cols 5-7. Sign is opposite to PSCC-FE in Table 5 although the text says Table 6 'align[s] with those of Table 5'"
+   },
+   {
+    "family": 5,
+    "indicator": "ln HDI on ln mobile subscriptions across HDI quantiles (SQREG)",
+    "direction": "positive",
+    "estimate": "0.00763 / 0.00665 / 0.00624 at Q25/Q50/Q75 (ICT without IQI); 0.00713 / 0.00540 / 0.00933 with interaction",
+    "uncertainty": "t = 2.848 / 3.048 / 3.598; 3.451 / 3.103 / 4.913",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p. 12, upper panel, row lnMOB"
+   },
+   {
+    "family": 5,
+    "indicator": "ln HDI on ln mobile subscriptions by income group, PSCC-FE",
+    "direction": "mixed",
+    "estimate": "High 0.0137; Low 0.00147; Lower-middle 0.0143; Upper-middle 0.00534",
+    "uncertainty": "t = 3.837 (high, 1%); 0.181 (low, ns); 1.875 (LMI, 10%); 0.871 (UMI, ns)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, p. 13, row lnICT, mobile model"
+   },
+   {
+    "family": 5,
+    "indicator": "ln HDI on ln fixed telephone subscriptions by income group, PSCC-FE",
+    "direction": "mixed",
+    "estimate": "High 0.00758; Low -0.0108; Lower-middle 0.0116; Upper-middle -0.00638",
+    "uncertainty": "t = 2.026 (5%); -4.542 (1%); 3.513 (1%); -1.350 (ns)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, p. 13, row lnICT, fixed telephone model"
+   },
+   {
+    "family": 5,
+    "indicator": "ln HDI on ln mobile subscriptions by income group, IV-GMM",
+    "direction": "mixed",
+    "estimate": "High 0.0200; Low -0.00211; Lower-middle 0.0174; Upper-middle 0.00343",
+    "uncertainty": "t/z = 8.971 (1%); -0.0774 (ns); 4.933 (1%); 1.953 (10%)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9, p. 15, row lnICT, mobile model; text says 'positive impact in seven out of eight models'"
+   },
+   {
+    "family": 5,
+    "indicator": "Institutional quality x ICT interaction on ln HDI (PSCC-FE and IV-GMM, full sample)",
+    "direction": "mixed",
+    "estimate": "Mobile: 0.000561 (PSCC-FE, ns), 0.00128 (IV-GMM, 10%). Fixed telephone: 0.00150 (PSCC-FE, 5%), -0.000983 (IV-GMM, 10%)",
+    "uncertainty": "t = 0.726; 1.846; 2.213; -1.885",
+    "horizon": "contemporaneous",
+    "evidence": "Tables 5 and 6, row IQI*lnICT, col 4 and col 7; text: 'interaction effect is observed to be sensitive to the choice of ICT indicator' (abstract)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Mobile subscriptions are positively and significantly associated with HDI in high-income and lower-middle-income groups (PSCC-FE and IV-GMM); insignificant in low-income; upper-middle is insignificant in PSCC-FE and weakly positive (10%) in IV-GMM. Fixed telephones: negative in low-income, positive in high and lower-middle (PSCC-FE).",
+    "threshold_value": "none",
+    "evidence": "Table 8, p. 13 and Table 9, p. 15; text p. 12: 'high- and lower-middle-income countries show significant positive outcomes, while the effect is negative for low-income countries regarding fixed telephones'"
+   },
+   {
+    "moderator": "institutions",
+    "finding": "Institutional quality (IQI) is positive for HDI in the full sample and in high and upper-middle income countries; negative in lower-middle income (both estimators). ICT x IQI interaction is negative in high and upper-middle income (IV-GMM) and positive in lower-middle income, i.e. ICT narrows the institution gap in poorer groups. Interaction signs differ between PSCC-FE and IV-GMM for upper-middle (mobile), so the pattern is estimator-dependent.",
+    "threshold_value": "none",
+    "evidence": "Tables 8-9, pp. 13-15; text p. 13: 'ICT attenuates the impact of IQI in high and upper-middle-income countries but improves IQI in low- and lower-middle-income countries'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Quantile regression: mobile coefficient positive and similar in size at all three HDI quantiles (0.0062-0.0076); no clear gradient across the HDI distribution.",
+    "threshold_value": "none",
+    "evidence": "Table 7, p. 12, lnMOB row"
+   }
+  ],
+  "income_group_results": {
+   "high": "Mobile: +0.0137 (PSCC-FE, 1%), +0.0200 (IV-GMM, 1%). Fixed phone: +0.00758 (5%), +0.0209 (1%).",
+   "upper_middle": "Mobile: +0.00534 (ns, PSCC-FE), +0.00343 (10%, IV-GMM). Fixed phone: -0.00638 (ns), +0.00736 (1%, IV-GMM).",
+   "lower_middle": "Mobile: +0.0143 (10%, PSCC-FE), +0.0174 (1%, IV-GMM). Fixed phone: +0.0116 (1%), +0.0327 (1%).",
+   "low": "Mobile: +0.00147 (ns), -0.00211 (ns). Fixed phone: -0.0108 (1%, PSCC-FE); +0.886 (1%, IV-GMM, implausible magnitude, no year dummies, R2 = -7.735)."
+  },
+  "n_specifications_reported": "about 60 regression columns (Table 5: 7 mobile/fixed columns; Table 6: 7; Table 7: 18 quantile columns; Tables 8 and 9: 8 each, plus the three-estimator repetition)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "HDI is regressed on ICT and institutions with causal language ('impact', policy recommendations). Endogeneity is handled by one-period lags and an IV-GMM whose instruments are not described; lagging does not remove reverse causality (richer countries adopt more ICT). Hansen p-values are close to 0.05 for some groups (0.0566 low income; 0.0891 upper-middle). Country fixed effects are not clearly included (year dummies only are listed) although the estimator is called 'fixed effects'.",
+    "evidence": "Section 3.3 p. 8; Tables 5-6 notes 'Endogeneity corrected using one-period lag of the regressors'; Table 6 and 9 Hansen rows; text lists only year dummies"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "ICT is log of absolute number of subscriptions (mean 35.4 million, max 1.75 billion), not per capita, so the measure largely tracks population size. Mobile and fixed telephone penetration is narrow ICT. Internet users is included as a separate control, which absorbs part of the ICT effect.",
+    "evidence": "Table 4 p. 9 (summary statistics, lnMOB mean 35,446,936); Table 3 p. 6; Section 3.1 p. 7"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Stated sample is 193 countries but estimation samples cover about 150 countries and are unbalanced (e.g. 1322 obs. for 152 groups in a 10-year window; IV-GMM 1173). Short 10-year window. Choice based on data availability. Country list in Appendix A has an apparent duplicate (Congo, Dem. Rep. listed twice).",
+    "evidence": "Section 3 p. 5; Table 5 observations/groups; Table 6 observations; Table A1 p. 16 rows 39-40"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "HDI used as proxy for 'inclusive growth'; HDI is a composite of income, schooling and life expectancy that moves slowly and is partly interpolated; it does not measure distribution of gains, so 'inclusive' is a loose label. Fits family 5 (living standards beyond income) rather than distribution.",
+    "evidence": "Section 3.1 p. 6: 'we chose to proxy inclusive growth using the human development index from UNDP (2019)'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Many specifications across three estimators, two ICT indicators, with and without IQI, interactions, and four income groups. Sign of fixed telephone effect flips between PSCC-FE (negative) and IV-GMM (positive). Some IV-GMM sub-sample estimates are implausible (low income fixed phone IQI -3.315, ICT 0.886, R2 -7.735, no year dummies). Reported F-statistics of 10^6 in Table 5 suggest a specification or reporting problem. The text claims robustness although results differ.",
+    "evidence": "Tables 5, 6, 8, 9; Table 9 low-income fixed telephone column; text p. 11 'most of the findings of the IV-GMM results ... align with those of Table 5'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All specifications appear in tables, so nothing seems hidden, but the narrative stresses favourable results and glosses over sign reversals and inconsistencies between text and tables (e.g. text says IQI is negative in 'low' income in Table 9 while the table shows an insignificant positive; text describes the Table 5 interaction as 'positive though statistically significant' for fixed telephones only). No pre-registration or robustness beyond estimator switching.",
+    "evidence": "Text p. 13 (Table 9 discussion) versus Table 9 IQI row; abstract versus Tables 5-6"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Published in Economies (MDPI), 2023, 11(4), 124. Text-extraction is garbled in the figure and introduction pages (duplicated overlay text), but tables are readable. Odd content: the PCA paragraph reports 'explains 682.41% of the common variance' while Table 2 gives 0.8241 (typo). Labour force participation coefficient flips sign across estimators and income groups (Tables 5, 8, 9). The Table 5 note says endogeneity is corrected by lagging regressors, but the model equations are written contemporaneously. IV-GMM instruments not named in the text. The text calls the Table 6 interaction for fixed phones 'positive' while Table 6 col 7 shows -0.000983 and the Table 7 discussion says it is negative. No instructions to the reviewer or other embedded directives were found in the paper text.",
+  "quote_check": {
+   "verified": 9,
+   "checked": 10
+  },
+  "quote_flag": "ok"
  },
  {
   "idx": "162",
@@ -3728,6 +4049,160 @@
   "quote_check": {
    "verified": 0,
    "checked": 0
+  },
+  "quote_flag": "ok"
+ },
+ {
+  "idx": "535",
+  "title": "The Economic Value of Agentic AI: A Comparative Analysis of Its Impact on Growth and Business Productivity in Developed and Emerging Economies",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with own estimation of a composite AI adoption index (investment, adoption, patents) on firm productivity and GDP growth for 10 countries (above the 3-economy AI threshold), with an explicit developed vs emerging comparison. Meets all inclusion criteria, although data provenance and internal consistency are doubtful (see notes).",
+  "stream": "AI",
+  "technology": [
+   "artificial intelligence (composite AI adoption index; framed as 'agentic AI' but index is general AI)"
+  ],
+  "exposure_measure": "Country-year AI Adoption Index = equal-weighted mean of min-max normalised AI investment intensity, business adoption and AI-related patents (Section 3, p.32). Authors admit it 'does not isolate agentic systems' (p.28) and 'does not exclusively capture agentic systems' (p.40). Underlying series and exact sources for each component are not named beyond 'World Bank ... and OECD AI datasets'.",
+  "sample": {
+   "n_economies": "10",
+   "economies_or_groups": "Developed: United States, United Kingdom, Germany, Japan, South Korea. Emerging: India, Brazil, South Africa, Indonesia, Nigeria.",
+   "income_groups_covered": "mixed (developed vs emerging dichotomy; no World Bank income-group split; includes high-income and middle-income economies plus Nigeria, lower-middle)",
+   "years": "2015-2024",
+   "unit": "other (firm-level regressions for productivity, country-year for the mediation and growth models; number of firms and observations not reported)"
+  },
+  "design": {
+   "estimator": "Fixed-effects panel regression (firm FE for firm productivity; country FE for mediation, stage 1 and 2); interaction model AI x Developed dummy; quantile regression at tau 0.25, 0.50, 0.75; mediation by product of coefficients (no formal test).",
+   "identification": "none",
+   "key_controls_fixed_effects": "Firm models: firm size, capital intensity, firm FE. Macro models: capital formation, trade openness, inflation, country FE. Robust SEs. Time effects not mentioned. Table 7 interaction model: the Developed dummy main effect is not estimable with country FE and is not shown."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Firm-level productivity (revenue per employee), pooled",
+    "direction": "positive",
+    "estimate": "0.18 (units of outcome and AI index scaling not stated; log specification not stated)",
+    "uncertainty": "SE 0.05, t = 3.60, p < 0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.35: 'AI Adoption 0.18 0.05 3.60 ***'"
+   },
+   {
+    "family": 1,
+    "indicator": "Firm-level productivity by group (developed vs emerging)",
+    "direction": "positive",
+    "estimate": "Developed 0.24; Emerging 0.11",
+    "uncertainty": "Developed p < 0.01; Emerging p < 0.05; SEs not reported; no formal test of the difference reported",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.35: 'Developed 0.24*** / Emerging 0.11**'"
+   },
+   {
+    "family": 1,
+    "indicator": "Firm financial performance (return on assets)",
+    "direction": "not reported",
+    "estimate": "not reported",
+    "uncertainty": "not reported",
+    "horizon": "not reported",
+    "evidence": "ROA is defined in Section 3 (p.32) and the abstract/objectives refer to financial performance, but no ROA results table appears in Section 4 (pp.33-39)."
+   },
+   {
+    "family": 1,
+    "indicator": "Macro productivity (GDP per person employed), mediation stage 1",
+    "direction": "positive",
+    "estimate": "0.27 (units not stated)",
+    "uncertainty": "SE 0.06, t = 4.50, p < 0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.36: 'AI Adoption Index 0.27 0.06 4.50 ***'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP growth (annual %), effect of productivity (mediator), stage 2",
+    "direction": "positive",
+    "estimate": "Productivity 0.35",
+    "uncertainty": "SE 0.08, t = 4.38, p < 0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.37: 'Productivity 0.35 0.08 4.38 ***'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP growth (annual %), direct effect of AI index with productivity controlled",
+    "direction": "positive",
+    "estimate": "0.09; implied indirect effect 0.27 x 0.35 = about 0.095 (computed by reviewer, not reported by authors)",
+    "uncertainty": "SE 0.05, t = 1.80, p < 0.10; no test of the indirect effect",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.37: 'AI Adoption Index 0.09 0.05 1.80 *'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP growth: AI index in emerging economies (baseline) and interaction with Developed dummy",
+    "direction": "positive",
+    "estimate": "AI index 0.15 (emerging); AI x Developed 0.18; total effect developed about 0.33 (0.15 + 0.18)",
+    "uncertainty": "SE 0.05 and 0.06, both p < 0.01; SE of the sum not reported",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.37: 'AI Adoption Index 0.15 0.05 3.00 ***; AI x Developed Dummy 0.18 0.06 3.00 ***'; abstract: 'approximately 0.33 ... (approximately 0.15)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP growth, quantile regression effects of AI index",
+    "direction": "positive",
+    "estimate": "Developed: 0.12 (25th), 0.26 (50th), 0.42 (75th). Emerging: 0.04 (25th), 0.10 (50th), 0.17 (75th)",
+    "uncertainty": "Stars only: developed ** / *** / ***; emerging none / ** / **; SEs not reported",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, p.38"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Developed economies show about twice the productivity effect (0.24 vs 0.11) and growth effect (about 0.33 vs 0.15) of AI than emerging economies; effects rise across growth quantiles, more steeply in developed economies. Interpretation as structural conditions (infrastructure, human capital, institutions) is asserted but none of these is tested as a moderator.",
+    "threshold_value": "none",
+    "evidence": "Tables 4, 7, 8, pp.35-38; abstract: 'developed economies experiencing substantially stronger growth impacts (approximately 0.33) than emerging economies (approximately 0.15)'"
+   }
+  ],
+  "income_group_results": {
+   "high": "Developed group (US, UK, Germany, Japan, South Korea): firm productivity effect 0.24***; growth effect about 0.33 (0.15 + 0.18 interaction); quantile growth effects 0.12**, 0.26***, 0.42***.",
+   "upper_middle": "Not separated. Brazil, South Africa are in the pooled 'emerging' group: firm productivity 0.11**; growth 0.15***; quantile effects 0.04, 0.10**, 0.17**.",
+   "lower_middle": "Not separated. India, Indonesia and Nigeria are in the pooled 'emerging' group (same estimates as above).",
+   "low": "not reported (no low-income economy in the sample)"
+  },
+  "n_specifications_reported": "about 8 (firm FE pooled, firm FE by group, mediation stage 1 and 2, interaction, 3 quantiles by 2 groups); ROA models mentioned but not reported",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('impact', 'effect', 'drives') with FE only; no instrument, lags or event timing. Authors concede reverse causality 'cannot be fully eliminated'. Country-level AI index regressed on firm outcomes and on growth; AI investment and patents plausibly respond to productivity and growth. Mediation via sequential regressions treats the mediator as exogenous. Time FE not mentioned, so common trends could drive results.",
+    "evidence": "Section 3, p.32 ('control variables help mitigate potential endogeneity'); Section 6, p.40 ('reverse causality ... cannot be fully eliminated')"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Composite index not specific to agentic AI (authors admit this) yet the title, abstract and conclusions attribute effects to 'Agentic AI'. Components (investment, adoption, patents) have no named series, no units, and the 'business adoption' measure for Nigeria, Indonesia, South Africa etc. 2015-2024 is not documented. Min-max scaling applied within the sample would give a floor of 0 for the lowest country on each component, which is inconsistent with the reported index values (Nigeria 0.49 with the lowest value on all three components). Equal weighting is unvalidated.",
+    "evidence": "Section 3, pp.31-32; Table 1, p.33; Section 6, p.40 ('does not exclusively capture agentic systems')"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 10 hand-picked economies (5 developed, 5 emerging), chosen on 'data availability'; no low-income economy; very small cluster count for country FE and clustered or robust inference; group comparison rests on 5 vs 5 countries. Time coverage 2015-2024 claimed but AI adoption data of this kind are scarce for several of these countries and years.",
+    "evidence": "Section 3, p.31 ('Country selection is based on data availability')"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Revenue per employee (firm) and GDP per person employed and annual GDP growth (macro) are standard outcomes, but the firm data source (World Bank Enterprise Surveys, which are mostly cross-sectional with irregular waves) is poorly matched to a firm-level FE panel; number of firms, waves and units (log or level) are not reported. Revenue per employee is nominal and not deflated, as far as stated. A country-level AI index is matched to firm outcomes without discussion of clustering.",
+    "evidence": "Section 3, pp.31-32; Table 3 note, p.35"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "No observations or N, R-squared, clustering level, or time-effects reported; coefficient units unspecified; the Developed dummy is time-invariant and cannot enter a country-FE model, so the Table 7 specification is not as described; quantile regression with country FE not explained. Little robustness analysis despite the claim that 'additional model specifications confirm result stability' (none shown).",
+    "evidence": "Section 3, p.33 ('Additional model specifications confirm result stability'); Tables 3-8, pp.35-38"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "ROA (financial performance) is announced as an outcome in the abstract, objectives and methods but no results are shown. Group comparison (Table 4) reports stars only with no SEs and no test of difference. Indirect effect is never calculated or tested. Abstract states firm-level beta 0.18 and 'productivity channel (beta = 0.35)' which mixes a regression coefficient of the mediator with the mediated effect. Every estimate is significant and in the hypothesised direction.",
+    "evidence": "Abstract, p.25; Section 3 p.32 (ROA defined); Section 4 pp.35-38"
+   }
+  },
+  "overall_risk_of_bias": "critical",
+  "venue_quality_concern": "possible (Asian Journal of Research in Computer Science, a computer science outlet publishing an economics paper; accepted about 9 weeks after receipt; five authors from different fields; heavy self-citation of the authors' own group, e.g. Ogunmolu, Olutimehin, Olaniyi, Ejoh, Henry 2026 papers)",
+  "notes": "Decision rationale for risk rating: a 10-country sample with unreported N, no identification, an index that the authors say does not measure the stated exposure, and several internal inconsistencies make the conclusions untrustworthy. Internal inconsistencies noted: (1) Table 1 AI index values (e.g., Nigeria 0.49 with lowest raw values) are incompatible with min-max normalisation across the sample. (2) The country-level data are claimed to come from OECD AI and World Bank Enterprise Surveys for Nigeria, Indonesia, South Africa etc. for 2015-2024 with no data appendix; reported coefficients are round numbers, and t-statistics in every table equal coefficient/SE exactly (e.g., 0.18/0.05 = 3.60; 0.15/0.05 = 3.00), which is unusual for real estimates. (3) Firm-level pooled effect is 0.18 but the macro stage 1 effect is 0.27 on a different outcome with no reconciliation. (4) No figures for the number of firms, observations or years actually used. (5) Table 7 total developed effect 0.33 is computed by summation with no SE. Disclaimer states no generative AI was used in writing. No instruction-like text directed at the reader was found in the paper. Evidence quality for the review: use as low-weight evidence on the sign (positive) and on the developed vs emerging gap, but do not use the magnitudes.",
+  "quote_check": {
+   "verified": 12,
+   "checked": 13
   },
   "quote_flag": "ok"
  },
@@ -6849,6 +7324,124 @@
   "quote_flag": "ok"
  },
  {
+  "idx": "1192",
+  "title": "The Digital Maturity Paradox: The Divergent Impact of Network Readiness and FDI Across Development Tiers",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative cross-country OLS on 121 economies with an explicit developing vs developed comparison; exposure is the Network Readiness Index (ICT capability) and the outcome is GDP per capita growth (family 1).",
+  "stream": "H",
+  "technology": [
+   "ICT in general (composite Network Readiness Index)"
+  ],
+  "exposure_measure": "Network Readiness Index 2023 (Portulans Institute), 0-100 composite of ICT capability, min-max rescaled to [0,1] (NRIT). Composite index, not a direct adoption or investment measure.",
+  "sample": {
+   "n_economies": "121",
+   "economies_or_groups": "76 developing and 45 developed economies (2023 World Bank classification); Malta and Singapore flagged as outlier hubs and dropped in a robustness run (N=43)",
+   "income_groups_covered": "mixed (binary split developing vs developed; sub-groups of low, lower-middle, upper-middle not separated)",
+   "years": "2023 (single cross-section)",
+   "unit": "country-year (single year, cross-section)"
+  },
+  "design": {
+   "estimator": "Cross-sectional OLS with HC1 (White) robust standard errors, estimated separately for developing and developed cohorts; Chow breakpoint test for the split; VIF, RESET, BPG, Cook's D, DFBETAS diagnostics",
+   "identification": "none",
+   "key_controls_fixed_effects": "Only FDI inflows (% GDP, IHS-transformed) and trade openness (% GDP, IHS-transformed); no income level, human capital, institutions, investment or population controls; no fixed effects; no lags."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth (2023, IHS-transformed) on Network Readiness Index (NRIT), developing economies N=76",
+    "direction": "positive",
+    "estimate": "1.106 (coefficient on min-max NRI in IHS(growth) units; roughly a full-range move of NRI across the sample)",
+    "uncertainty": "p = 0.0027 (HC1); adj R2 = 0.2185",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.10: 'Normalized Network Readiness (NRIT) 1.106 *** (0.0027)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth on NRIT, developed economies N=45",
+    "direction": "negative",
+    "estimate": "-0.734",
+    "uncertainty": "p = 0.0895 (10% level only); adj R2 = 0.0161; overall F p = 0.3072",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.10: 'NRIT ... -0.734 * (0.0895)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth on NRIT, developed economies excluding Malta and Singapore N=43",
+    "direction": "null",
+    "estimate": "-0.693",
+    "uncertainty": "p = 0.1166; adj R2 = 0.0103",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.13: 'Normalized Network Readiness (NRIT) -0.734 * (0.0895) | -0.693 (0.1166)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth on FDI inflows (control, not the exposure of interest), developing / developed",
+    "direction": "mixed",
+    "estimate": "developing 0.246; developed 0.036 (N=43: -0.050)",
+    "uncertainty": "developing p = 0.0116; developed p = 0.6724; N=43 p = 0.5433",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.10 and Table 6, p.13"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "NRI coefficient is large and positive in developing economies and negative and weak (10% level) in developed economies; the sign reversal is read by the authors as saturation of digital returns. Chow test rejects equal coefficients across the split.",
+    "threshold_value": "none (exogenous split at the World Bank high-income boundary, observation 77; no endogenous threshold estimated)",
+    "evidence": "Section 4.3.4, p.13: 'Chow Breakpoint Test (CBPT) at the high-income transition boundary (Observation 77) ... F = 11.91, p < 0.01'"
+   }
+  ],
+  "income_group_results": {
+   "high": "Developed cohort (N=45): NRIT -0.734 (p=0.0895), not robust once Malta and Singapore are dropped (-0.693, p=0.1166); model jointly insignificant (F p=0.3072)",
+   "upper_middle": "not reported separately (pooled in developing cohort, NRIT +1.106, p=0.0027)",
+   "lower_middle": "not reported separately (pooled in developing cohort)",
+   "low": "not reported separately (pooled in developing cohort)"
+  },
+  "n_specifications_reported": "about 3 (developing, developed, developed excluding two outliers), plus diagnostics",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "critical",
+    "why": "Single-year cross-section of growth on a contemporaneous composite readiness index with only FDI and trade as controls; no income level, human capital, institutions or investment controls; no instrument or timing. NRI is strongly correlated with income and development, so it proxies for general development. Authors use causal language ('growth multiplier', 'catalysts', policy prescriptions).",
+    "evidence": "Section 3.5 Eq. (3), p.7; Section 5.2, p.15 policy prescriptions based on 'growth elasticity of network readiness (beta = 1.106)'"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "NRI is a composite that includes technology, people, governance and impact pillars; it is not a measure of ICT adoption or investment and may mix in outcomes. Min-max rescaling makes the coefficient hard to interpret.",
+    "evidence": "Table 2, p.6 and Eq. (2), p.7"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "One year (2023), 121 economies chosen by NRI availability; 2023 growth is a noisy single-year observation that includes post-pandemic rebound and shocks. Developed group includes small hubs (Malta, Singapore); developed mean growth of -0.37% in 2023 looks unusual and is not discussed. Sample splitting at the group boundary is then 'validated' by a Chow test at that same boundary.",
+    "evidence": "Section 3.2, p.6; Table 3, p.8; Section 4.3.4, p.13"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "WDI real GDP per capita growth is standard, but it is a one-year rate and is passed through an inverse hyperbolic sine transform, which is unusual for a growth rate near zero (approx. identity for small values) and complicates the reading of 'elasticity'.",
+    "evidence": "Table 2 and Section 3.3, p.6-7"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Missing trade values imputed with group medians (landlocked/coastal); split by development tier chosen by the authors; outlier exclusion after looking at diagnostics; very low explanatory power (adj R2 0.016 in developed cohort). Developed-cohort NRI result significant only at 10%. No test of the NRI coefficient difference with an interaction term beyond the Chow test.",
+    "evidence": "Section 3.4, p.7; Section 4.4, p.13; Table 4, p.10"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Few specifications and results are reported in full, including null ones, but the interpretation overstates weak evidence ('conclusive empirical weight', 'mathematically proves', 'fully supported') and the abstract headlines the 10%-level negative coefficient.",
+    "evidence": "Abstract and Section 4.4, p.14: 'The Fitness Gap mathematically proves that advanced economies have entirely outgrown infrastructure-led development'"
+   }
+  },
+  "overall_risk_of_bias": "critical",
+  "venue_quality_concern": "none",
+  "notes": "Treat as descriptive cross-sectional association, not causal. Internal inconsistencies: Section 4.1.2 states developing NRI std. dev. 10.37 and mean 41.6 while Table 3 gives 9.81 and 41.67; Table 5 reports BPG p < 0.10 / p < 0.05 for both cohorts as 'non-constant variance' while Section 4.3.3 says p = 0.0502 'marginal homoskedasticity'; abstract says R-squared < 2% for developed cohort but Table 4 R2 is 0.0832 (only adjusted R2 is 0.0161). Section 4.4 says '1.03%' for adj R2 0.0103, which is 1.03%, and the abstract cites baseline adj R2 1.61%. The 'sensitivity' run drops the NRI significance, so the headline negative developed coefficient is not robust. AI is mentioned only in policy discussion, not estimated. Publication date in the text (August 2026) is later than the recorded year field context; no instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 5,
+   "checked": 6
+  },
+  "quote_flag": "ok"
+ },
+ {
   "idx": "1354",
   "title": "Artificial Intelligence Adoption and Economic Growth: Evidence from a Global Cross-Country Panel (2015-2024)",
   "fulltext_decision": "exclude",
@@ -7626,6 +8219,139 @@
    "checked": 0
   },
   "quote_flag": "ok"
+ },
+ {
+  "idx": "1494",
+  "title": "Digital transformation and income disparities: A threshold analysis in developing countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with its own estimation (dynamic panel threshold, System GMM) of a composite ICT/digital index (internet, mobile, digital payments etc.) on Gini and Theil inequality across 45 economies, so it meets the exposure, sample (>=10 economies) and outcome (family 4) criteria.",
+  "stream": "H",
+  "technology": [
+   "ICT in general (composite digital economy index: internet use, mobile subscriptions, digital payments, secure servers, tertiary enrolment, years of schooling)"
+  ],
+  "exposure_measure": "Digital Economy Index (DIG), 0-1 scale, built with Entropy Weight-TOPSIS from six indicators: internet users %, mobile subscriptions per 100, tertiary enrolment, mean years of schooling, digital payments % adults, secure servers per million (Appendix B, A.2). Also used as the threshold variable.",
+  "sample": {
+   "n_economies": "45",
+   "economies_or_groups": "45 'developing' economies per World Bank classification (Appendix A): 12 Africa and Middle East, 7 East Asia and Pacific, 14 Europe and Central Asia, 12 Latin America and Caribbean (e.g. China, India absent; includes Chile, Uruguay, Romania, Bulgaria, Malaysia, Russia, Brazil, Nigeria, Kenya)",
+   "income_groups_covered": "mixed (described only as 'developing'; income-group breakdown not reported; sample appears to span lower-middle to upper-middle and some economies now classed high-income; no obvious low-income economies)",
+   "years": "2000-2023",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Dynamic panel threshold model (Hansen 1999 / Seo-Shin 2016 / Kremer et al. 2013 framing), threshold found by SSR grid search with 300-replication bootstrap; coefficients estimated by two-step System GMM (Blundell-Bond) with collapsed, limited instruments; lagged dependent variable included.",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Country effects (mu_i), lagged Gini/Theil, relative development (normalised GDP per capita), average years of schooling, trade openness, government expenditure % GDP, R&D % GDP, informal employment share. No time effects mentioned. Instruments are internal lags only."
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Gini coefficient, regime 1 (DIG below 0.48), dynamic threshold System GMM",
+    "direction": "positive",
+    "estimate": "beta1 = 0.125 (Gini on 0-1 scale per unit of DIG index, 0-1 scale); sign inferred from text 'positive and significant' because the minus/plus signs are lost in the converted table",
+    "uncertainty": "SE 0.048; p < 0.05",
+    "horizon": "contemporaneous",
+    "evidence": "p.60 Table 6 and Sec. 4.3.1: 'In Regime 1 (DIG < 0.48), the coefficient for digitalization is positive and significant (β1 = 0.125, p < 0.05)'"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini coefficient, regime 2 (DIG above 0.48), dynamic threshold System GMM",
+    "direction": "negative",
+    "estimate": "beta2 = -0.087 (magnitude 0.087 in Table 6; negative sign stated in text, lost in table conversion)",
+    "uncertainty": "SE 0.050; p < 0.10",
+    "horizon": "contemporaneous",
+    "evidence": "p.59 Sec. 4.3.1: 'The coefficient becomes negative and significant (β2 = 0.087, p < 0.10)'; p.60 Table 6"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini coefficient, linear (no threshold) System GMM full sample",
+    "direction": "null",
+    "estimate": "0.015 (sign not recoverable from converted table)",
+    "uncertainty": "SE 0.032; not significant",
+    "horizon": "contemporaneous",
+    "evidence": "p.59 Sec. 4.3: 'coefficient for digitalization is statistically insignificant (0.015)'; p.60 Table 6 column 3"
+   },
+   {
+    "family": 4,
+    "indicator": "Theil index, two regimes (threshold near DIG = 0.50), robustness",
+    "direction": "mixed",
+    "estimate": "regime 1: 0.095 (inequality-increasing); regime 2: 0.071 (inequality-reducing, sign from text); controls not shown",
+    "uncertainty": "stars only: regime 1 p < 0.05, regime 2 p < 0.10; SEs not reported",
+    "horizon": "contemporaneous",
+    "evidence": "p.61 Sec. 4.3.3 and Table 7: 'inequality-increasing effect below the threshold (β1 = 0.095) and an inequality-reducing effect above it (β2 = 0.071)'"
+   },
+   {
+    "family": 4,
+    "indicator": "Threshold existence test (Gini): single vs linear",
+    "direction": "mixed",
+    "estimate": "single threshold gamma = 0.48, 95% CI [0.45, 0.51]; F = 42.15. Double threshold F = 18.72, gamma = 0.65 [0.62, 0.68], not significant",
+    "uncertainty": "bootstrap p = 0.008 (single); p = 0.215 (double)",
+    "horizon": "not reported",
+    "evidence": "p.59 Table 5 and Sec. 4.2: 'F-statistic of 42.15 with a p-value of 0.008'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Effect of digitalization on Gini depends on the level of digital maturity: inequality-increasing below DIG = 0.48, inequality-reducing above (inverted-U 'Digital Kuznets Curve'). Mean DIG is 0.458, so roughly half the sample-years are in each regime (regime counts not reported).",
+    "threshold_value": "DIG = 0.48 (Gini), about 0.50 (Theil)",
+    "evidence": "p.59 Table 5; abstract: 'at low-to-moderate levels of digitalization (index <= 0.48), technological advancement exacerbates income disparity'"
+   },
+   {
+    "moderator": "other",
+    "finding": "R&D expenditure reduces inequality only in the high-digitalization regime (significant in regime 2, not regime 1); other controls have similar signs in both regimes (human capital and relative development inequality-reducing per text; informal employment inequality-increasing).",
+    "threshold_value": "none",
+    "evidence": "p.60-61 Sec. 4.3.2: 'research and development expenditure only exhibits a significant negative effect on inequality in the higher digitalization regime'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported (not separated; sample labelled developing)",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 4 (Gini linear and 2-regime threshold in Table 6, Theil 2-regime in Table 7; double-threshold test in Table 5)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "System GMM with internal instruments, AR(2) and Hansen tests are reported, but no information on instrument count or lag depth, no external instrument, and the threshold variable (DIG) is itself endogenous. How Hansen threshold search and System GMM are combined is not explained. Causal language ('exacerbates', 'mitigates') is used.",
+    "evidence": "p.57 Sec. 3.3.1-3.3.2; p.60 Table 6 diagnostics (Hansen p 0.281/0.315, AR(2) p 0.654/0.589)"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "DIG mixes ICT access/use with human capital (tertiary enrolment, mean years of schooling), which overlaps with the schooling control (CAP) and independently drives inequality. Definitions are inconsistent: Table 1 lists internet, mobile, digital payments and e-commerce readiness (sources ITU, Findex, WIPO), whereas Appendix B lists six different indicators (incl. schooling, secure servers) with no WIPO. Mean years of schooling is 15+ in Table 1 and 25+ in Appendix B. The threshold at 0.48 is an index-specific value with weights not reported.",
+    "evidence": "p.55 Table 1 and Sec. 3.2.2; p.67 Appendix B, A.2 table"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 'developing' economies are selected by the authors' own criterion, which includes economies such as Chile, Uruguay, Romania, Bulgaria and Malaysia. The panel is perfectly balanced over 2000-2023 for 45 countries, which is hard to reconcile with the sparse availability of survey-based Gini and Theil data. Country selection by 'data availability' is stated but not documented. Observation count of 1,035 equals 45 x 23, not 45 x 24, and is unexplained.",
+    "evidence": "p.54 Sec. 3.1; p.58 Table 4 (Obs 1,035); p.66 Appendix A"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Gini taken from the World Bank PIP and Theil from 'ILO Labour Statistics; National Surveys' with a full annual balanced panel and no description of interpolation, harmonisation, or income vs consumption basis. Gini and Theil are described as 'sensitive to middle/tails' with a citation (Schutz 1951) that does not support this. Descriptive statistics are unusually round (min/max of SUP 10.0/45.0, INF 30.0/80.0, DIG 0.12/0.78).",
+    "evidence": "p.55 Table 1 and Sec. 3.2.1; p.58 Table 4"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "A single main threshold specification with fixed set of six controls and no time effects; linear comparison is shown. Threshold regime coefficients on lagged dependent variable also vary by regime. Threshold search on the same variable used for causal claims and a bootstrap test designed for static panels (Hansen 1999) applied to a dynamic panel. No sensitivity to alternative index weights, sample or lag structure.",
+    "evidence": "p.56 Sec. 3.3 equations; p.57 Sec. 3.3.1; p.59 Sec. 4.2"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Gini results are reported in full (Table 6), but the Theil robustness table (Table 7) omits control coefficients, standard errors and the sign column, and only states diagnostics. Double-threshold estimate (0.65) is shown but dismissed. No alternative samples or exposure definitions reported, so absence of unfavourable results cannot be checked.",
+    "evidence": "p.61 Table 7 ('Controls included: Yes'); p.59 Table 5"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Text conversion dropped minus signs and replaced '=' with '5' (e.g. 'β2 5 0.087'); the signs of beta2 and of controls are taken from the verbal text (negative for regime 2, REL and CAP negative, INF positive), not from the tables, so check against the PDF. Abstract says DIG <= 0.48; Sec. 4.2 says DIG < 0.48. Table 5 reports a double-threshold value of 0.65 even though it is not significant. Regime-specific lagged dependent variable (0.854 vs 0.792) means the regimes are estimated as separate equations, which is not discussed. Number of observations per regime, instrument counts and bootstrap details are not reported. The paper states a 'quasi-experimental setting' but offers no quasi-experimental design. Reported data features (balanced annual Gini/Theil panel, round descriptive min/max, 1,035 obs for a 24-year window, mismatch between index definition in Table 1 and Appendix B) raise concerns about data provenance; a human should look at these before the headline threshold is used. Funding statement refers to an unrelated project on global public opinion in the AIGC era; first author affiliation is a vocational education company. No instructions embedded in the text were found. Journal is Acta Oeconomica (Akademiai Kiado), a recognised outlet, so no venue concern is recorded.",
+  "quote_check": {
+   "verified": 4,
+   "checked": 8
+  },
+  "quote_flag": "needs human check"
  },
  {
   "idx": "1495",

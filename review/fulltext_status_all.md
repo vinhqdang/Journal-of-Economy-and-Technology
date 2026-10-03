@@ -11,7 +11,7 @@
 | 42 | 2005 | Catching up or getting stuck? Europe's troubles to exploit ICT's productivity potential | included for assessment | abstract level only |
 | 45 | 2024 | Financial inclusion through digitalization and economic growth in Asia-Pacific countries | included for assessment | abstract level only |
 | 53 | 2024 | The impact of digital literacy and technology adoption on financial inclusion in Africa, Asia, and L | included for assessment | abstract level only |
-| 57 | 2020 | Nexus between energy consumption, information and communications technology, and economic growth: An | included for assessment | requested from author |
+| 57 | 2020 | Nexus between energy consumption, information and communications technology, and economic growth: An | included for assessment | provided by author |
 | 63 | 2023 | Labor Market Exposure to AI: Cross-country Differences and Distributional Implications | included for assessment | provided by author |
 | 67 | 2020 | How does the digital economy and society index (DESI) affect labor market indicators in EU countries | included for assessment | abstract level only |
 | 68 | 2022 | Enhancing human development in developing regions: Do ICT and transport infrastructure matter? | included for assessment | retrieved |
@@ -27,7 +27,7 @@
 | 117 | 2011 | Human Capital and Growth of Information and Communication Technology-intensive Industries: Empirical | included for assessment | abstract level only |
 | 118 | 2014 | Informality, Inequality, and ICT in Transition Economies | included for assessment | abstract level only |
 | 126 | 2023 | Job creation and destruction in the digital age: Assessing heterogeneous effects across European Uni | included for assessment | retrieved |
-| 138 | 2023 | Empirical Analysis of Inclusive Growth, Information and Communication Technology Adoption, and Insti | included for assessment | requested from author |
+| 138 | 2023 | Empirical Analysis of Inclusive Growth, Information and Communication Technology Adoption, and Insti | included for assessment | provided by author |
 | 140 | 2015 | What are the drivers of total factor productivity in the European Union? | included for assessment | abstract level only |
 | 153 | 2009 | Determinants of Labor Productivity: An Empirical Investigation of Productivity Divergence | included for assessment | requested from author |
 | 162 | 2024 | Impact of digitization on carbon productivity: an empirical analysis of 136 countries | included for assessment | retrieved |
@@ -80,7 +80,7 @@
 | 526 | 2017 | Digitalization at work, Job Tasks and Wages: Cross-Country evidence from PIAAC1 | included for assessment | abstract level only |
 | 532 | 2007 | The Effect of Human Capital on Output Growth in ICT Industries: Evidence from OECD Countries | included for assessment | abstract level only |
 | 534 | 2025 | Do robots impact artificial intelligence (AI)-related employment? Evidence from a cross-national stu | included for assessment | provided by author |
-| 535 | 2026 | The Economic Value of Agentic AI: A Comparative Analysis of Its Impact on Growth and Business Produc | included for assessment | requested from author |
+| 535 | 2026 | The Economic Value of Agentic AI: A Comparative Analysis of Its Impact on Growth and Business Produc | included for assessment | provided by author |
 | 536 | 2012 | Macroeconomic Effects of Information and Communication Technologies in Turkey and Other OECD Member  | included for assessment | abstract level only |
 | 542 | 2023 | Impact of ICT Access on Total Factor Productivity(TFP) in Asian Economies | included for assessment | retrieved |
 | 546 | 2014 | The Long-Run Decline in Labor Share: Technology versus Institutions | included for assessment | abstract level only |
@@ -151,7 +151,7 @@
 | 1117 | 2021 | ВПЛИВ ДІДЖИТАЛІЗАЦІЇ НА ТРАНСФОРМАЦІЮ СФЕРИ ЗАЙНЯТОСТІ У КРАЇНАХ ІЗ РІЗНИМ РІВНЕМ ДОХОДІВ | included for assessment | abstract level only |
 | 1152 | 2026 | Relative Development and the Intelligence Divide | included for assessment | abstract level only |
 | 1167 | 2026 | AI Preparedness and Economic Performance: Evidence from Selected Countries | included for assessment | abstract level only |
-| 1192 | 2026 | The Digital Maturity Paradox: The Divergent Impact of Network Readiness and FDI Across Development T | included for assessment | requested from author |
+| 1192 | 2026 | The Digital Maturity Paradox: The Divergent Impact of Network Readiness and FDI Across Development T | included for assessment | provided by author |
 | 1289 | 2025 | Impact of the Fourth Industrial Revolution on Society: A Global Perspective | included for assessment | requested from author |
 | 1353 | 2014 | Internet Education and Economic Growth: Evidence from Cross-Country Regressions | included for assessment | abstract level only |
 | 1354 | 2025 | Artificial Intelligence Adoption and Economic Growth: Evidence from a Global Cross-Country Panel (20 | included for assessment | retrieved |
@@ -180,7 +180,7 @@
 | 1486 | 2026 | Information and communication technologies and economic growth in West African economic and Monetary | included for assessment | abstract level only |
 | 1492 | 2025 | Digital Financial Inclusion and Economic Growth: A Cross Country Analysis of Emerging Markets | included for assessment | abstract level only |
 | 1493 | 2021 | Digital Financial Inclusion and Economic Growth: A Cross-country Study | included for assessment | abstract level only |
-| 1494 | 2026 | Digital transformation and income disparities: A threshold analysis in developing countries | included for assessment | requested from author |
+| 1494 | 2026 | Digital transformation and income disparities: A threshold analysis in developing countries | included for assessment | provided by author |
 | 1495 | 2025 | Modelling the Effect of Digital Financial Inclusion on Income Inequality in Developing Countries | included for assessment | retrieved |
 | 1497 | 2023 | Digital Inclusive Finance Helps Developing Countries Narrow the Urban-rural Income Gap Analysis——Tak | included for assessment | retrieved |
 | 1499 | 2026 | Digital technology and macroeconomic performance in developing Asian countries | included for assessment | abstract level only |
