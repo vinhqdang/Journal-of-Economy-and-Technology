@@ -35,54 +35,59 @@ def takeoff(thr):
         t[iso] = int(above.index.min()) if len(above) else None
     return t
 
-def att_table(isos, to, Y, treat_set, ks):
-    """Aggregate ATT(e) over cohorts for the economies in `isos` (bootstrap sample may repeat economies)."""
+YEARS = list(range(1995, END + 1))
+ISO = list(LY.index)
+POS = {i: n for n, i in enumerate(ISO)}
+
+def mat(Y):
+    return Y.reindex(index=ISO, columns=YEARS).to_numpy(dtype=float)
+
+def att_arr(idx, TO, YA, treat_mask, ks):
+    """Aggregate ATT(e) over cohorts. idx: array of economy positions (a bootstrap draw may repeat economies)."""
     out = {}
-    byg = {}
-    for i in isos:
-        g = to.get(i)
-        if g and i in treat_set and 1996 <= g <= 2014:
-            byg.setdefault(g, []).append(i)
+    tg = TO[idx]
     for e in ks:
         num = den = 0.0
-        for g, T in byg.items():
-            t, b = g + e, g - 1
-            if t < 1995 or t > END or len(T) < 3:
+        for g in np.unique(tg[treat_mask[idx] & np.isfinite(tg) & (tg >= 1996) & (tg <= 2014)]):
+            t, b = int(g) + e, int(g) - 1
+            if t < 1995 or t > END:
                 continue
-            C = [i for i in isos if (to.get(i) is None or to[i] > t) and i in Y.index]
-            Ti = [i for i in T if i in Y.index]
-            Tt = [i for i in Ti if pd.notna(Y.loc[i].get(t)) and pd.notna(Y.loc[i].get(b)) and pd.notna(Y.loc[i].get(1995))]
-            Cc = [i for i in C if pd.notna(Y.loc[i].get(t)) and pd.notna(Y.loc[i].get(b)) and pd.notna(Y.loc[i].get(1995))]
-            if len(Tt) < 3 or len(Cc) < 8:
+            ct, cb, c0 = YA[:, t - 1995], YA[:, b - 1995], YA[:, 0]
+            valid = np.isfinite(ct) & np.isfinite(cb) & np.isfinite(c0)
+            Ti = idx[(TO[idx] == g) & treat_mask[idx] & valid[idx]]
+            Ci = idx[(TO[idx] > t) & valid[idx]]
+            if len(Ti) < 3 or len(Ci) < 8:
                 continue
-            def X(ids):
-                y95 = np.array([Y.loc[i, 1995] for i in ids]); gr = np.array([(Y.loc[i, b] - Y.loc[i, 1995]) / (b - 1995) if b > 1995 else 0.0 for i in ids])
-                return np.column_stack([np.ones(len(ids)), y95, gr])
-            dC = np.array([Y.loc[i, t] - Y.loc[i, b] for i in Cc]); dT = np.array([Y.loc[i, t] - Y.loc[i, b] for i in Tt])
-            beta, *_ = np.linalg.lstsq(X(Cc), dC, rcond=None)
-            att = np.mean(dT - X(Tt) @ beta)
-            num += len(Tt) * att; den += len(Tt)
+            def X(ii):
+                gr = (cb[ii] - c0[ii]) / (b - 1995) if b > 1995 else np.zeros(len(ii))
+                return np.column_stack([np.ones(len(ii)), c0[ii], gr])
+            beta, *_ = np.linalg.lstsq(X(Ci), (ct - cb)[Ci], rcond=None)
+            att = np.mean((ct - cb)[Ti] - X(Ti) @ beta)
+            num += len(Ti) * att; den += len(Ti)
         out[e] = num / den if den else np.nan
     return out
 
 def run(thr, Y, treat_groups, label, ks):
     to = takeoff(thr)
-    allis = [i for i in to if i in Y.index]
-    treat = {i for i in allis if grp.get(i) in treat_groups and to[i]}
-    pt = att_table(allis, to, Y, treat, ks)
-    reps = []
-    for _ in range(BOOT):
-        draw = list(rng.choice(allis, size=len(allis), replace=True))
-        # repeated economies keep their identity; duplicates are handled by list repetition in means (approximation)
-        reps.append(att_table(draw, to, Y, treat & set(draw), ks))
+    YA = mat(Y)
+    TO = np.full(len(ISO), np.nan)
+    for i, g in to.items():
+        TO[POS[i]] = np.inf if g is None else g
+    pool = np.array([POS[i] for i in to if i in POS])
+    treat_mask = np.zeros(len(ISO), bool)
+    for i, g in to.items():
+        if g and i in POS and grp.get(i) in treat_groups:
+            treat_mask[POS[i]] = True
+    pt = att_arr(pool, TO, YA, treat_mask, ks)
+    reps = [att_arr(rng.choice(pool, size=len(pool), replace=True), TO, YA, treat_mask, ks) for _ in range(BOOT)]
     B = pd.DataFrame(reps)
     lo, hi = B.quantile(0.025), B.quantile(0.975)
     pre_keys = [k for k in ks if -5 <= k <= -2 and not np.isnan(pt[k])]
     pre_mean = np.mean([pt[k] for k in pre_keys]) if pre_keys else np.nan
     pre_boot = B[pre_keys].mean(axis=1) if pre_keys else pd.Series([np.nan])
     plo, phi = pre_boot.quantile(0.025), pre_boot.quantile(0.975)
-    n_t = len(treat)
-    return dict(label=label, thr=thr, n_treated=n_t, n_pool=len(allis), pt=pt, lo=lo, hi=hi, pre_mean=pre_mean, pre_ci=(plo, phi), pass_pre=(plo <= 0 <= phi) if pre_keys else False)
+    n_t = int(treat_mask.sum())
+    return dict(label=label, thr=thr, n_treated=n_t, n_pool=len(pool), pt=pt, lo=lo, hi=hi, pre_mean=pre_mean, pre_ci=(plo, phi), pass_pre=bool(plo <= 0 <= phi) if pre_keys else False)
 
 KS = [k for k in range(-5, 11) if k != -1]
 SETS = [("All economies", list(GR.values())), ("Low and lower-middle income", ["Low", "Lower-middle"]), ("Upper-middle income", ["Upper-middle"]), ("High income", ["High"])]

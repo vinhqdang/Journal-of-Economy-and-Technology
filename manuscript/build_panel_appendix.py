@@ -50,5 +50,12 @@ rows = section_table(os.path.join(A, "results.md"), "## A3 dose-response by base
 L.append(tab(rows, "Dose-response (A3): change in annual growth (pp) per +10 mobile subscriptions per 100, by baseline adoption level.", "tab:a3"))
 rows = section_table(os.path.join(A, "results.md"), "## A6 differences inside low and lower-middle income economies (mobile)")
 L.append(tab(rows, "Differences inside low and lower-middle income economies (A6).", "tab:a6"))
+
+for head, cap, lab in [("## Takeoff at 25 mobile subscriptions per 100", "Event study with takeoff at 25 mobile subscriptions per 100 (log GDP per capita $\\times100$; 400 bootstrap draws).", "tab:es25"),
+                       ("## Takeoff at 50 mobile subscriptions per 100", "Event study with takeoff at 50 mobile subscriptions per 100. Samples that fail the pre-trend rule are not interpreted.", "tab:es50"),
+                       ("## Secondary outcomes (takeoff at 10 per 100; only samples that pass the pre-trend rule)", "Event study, secondary outcomes (takeoff at 10 per 100): effects at five and ten years. Rows marked fails do not pass the pre-trend rule and are not interpreted.", "tab:essec")]:
+    rows = section_table(os.path.join(A, "results_event.md"), head)
+    if rows:
+        L.append(tab(rows, cap, lab))
 open(os.path.join(HERE, "app_panel.tex"), "w").write("\n".join(L))
 print("panel appendix done")
