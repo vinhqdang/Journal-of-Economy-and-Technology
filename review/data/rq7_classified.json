@@ -1150,5 +1150,77 @@
   "tested_formally": false,
   "note": "Effect by lag length, a specification feature rather than a moderator.",
   "idx": "9001"
+ },
+ {
+  "id": "9101-H1",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Mobile broadband negative in lower- and upper-middle, positive in high income (2 economies); fixed broadband differs; split only",
+  "idx": "9101"
+ },
+ {
+  "id": "9101-H2",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Internet users positive in lower-middle, negative in upper-middle and high; saturation reading not tested",
+  "idx": "9101"
+ },
+ {
+  "id": "9102-H1",
+  "moderator_type": "income_group",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Sign moves from positive (lower-middle) to negative and significant (high income); subsample estimates, no interaction",
+  "idx": "9102"
+ },
+ {
+  "id": "9103-H1",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Second-pass reading of Table 11: lagged ICT coefficient on RGDP positive in all groups and largest in high income (0.2751 against 0.015-0.022); the authors read the table differently",
+  "idx": "9103"
+ },
+ {
+  "id": "9103-H2",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Manufacturing-share results internally inconsistent in Table 11; Granger tests only",
+  "idx": "9103"
+ },
+ {
+  "id": "9104-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Regional split (MENA positive; entire sample, SSA, Latin America negative); not an income-group split",
+  "idx": "9104"
+ },
+ {
+  "id": "9105-H1",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "ICT index elasticity largest in middle income, then low, then high; for single indicators high-income coefficients are largest; subsamples, no interaction",
+  "idx": "9105"
+ },
+ {
+  "id": "9106-H1",
+  "moderator_type": "income_group",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Mobile effect larger in developing than developed countries; interaction insignificant for 3G/4G once regional controls added",
+  "idx": "9106"
+ },
+ {
+  "id": "9106-H2",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Effects larger where baseline fixed-line penetration is below the median",
+  "idx": "9106"
  }
 ]

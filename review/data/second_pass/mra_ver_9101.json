@@ -1,0 +1,96 @@
+[
+ {
+  "idx": "9101",
+  "paper_verdict": {
+   "estimator_family": "other (static panel PCSE/FGLS with AR(1); no FE, IV or dynamic terms)",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Outcome is log GDP per capita level (text calls it growth); ICT variables mix logs and levels (IUI, IRPTR unlogged), so log-log elasticities and level-log semi-elasticities are not comparable; FBPH/MBP appear as large counts not rates; I(1) variables with no cointegration (spurious regression risk, R-squared near 1); no N printed and stated '1000 observations' is inconsistent with 10 economies x 26 years; 2-economy subsamples; several variable labels are wrong in the text; same data feed overlapping estimates (model 4 PCSE and FGLS)."
+  },
+  "estimates": [
+   {
+    "estimate_id": "9101-1",
+    "verdict": "confirmed",
+    "quote": "lnFBPH 0.063 0.016 0.060 0.009",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 11, all 10 countries; n_obs not printed (the 1000 in text is implausible)."
+   },
+   {
+    "estimate_id": "9101-2",
+    "verdict": "confirmed",
+    "quote": "lnMBP \u22120.122 0.001 \u22120.138 0.000",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 11, all 10 countries; n_obs not printed (the 1000 in text is implausible)."
+   },
+   {
+    "estimate_id": "9101-3",
+    "verdict": "confirmed",
+    "quote": "IUI 0.001 0.060",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 11, all 10 countries; n_obs not printed (the 1000 in text is implausible)."
+   },
+   {
+    "estimate_id": "9101-4",
+    "verdict": "confirmed",
+    "quote": "lnFBPH 0.088 0.000 0.080 0.000",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 11, all 10 countries; n_obs not printed (the 1000 in text is implausible)."
+   },
+   {
+    "estimate_id": "9101-5",
+    "verdict": "confirmed",
+    "quote": "lnMBP \u22120.335 0.000 \u22120.331 0.000",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 11, all 10 countries; n_obs not printed (the 1000 in text is implausible)."
+   },
+   {
+    "estimate_id": "9101-6",
+    "verdict": "confirmed",
+    "quote": "lnFBPH 0.0749 0.0000 0.0332 0.0050",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 8; 6 lower-middle economies (n_countries not given in record)."
+   },
+   {
+    "estimate_id": "9101-7",
+    "verdict": "confirmed",
+    "quote": "lnMBP \u22120.0859 0.0000 \u22120.0645 0.0000",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 8; 6 lower-middle economies (n_countries not given in record)."
+   },
+   {
+    "estimate_id": "9101-8",
+    "verdict": "confirmed",
+    "quote": "IUI 0.0060 0.0000",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 8; 6 lower-middle economies (n_countries not given in record)."
+   },
+   {
+    "estimate_id": "9101-9",
+    "verdict": "confirmed",
+    "quote": "lnFBPH 0.0016 0.381 0.0036 0.012",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 9; 2 economies."
+   },
+   {
+    "estimate_id": "9101-10",
+    "verdict": "confirmed",
+    "quote": "lnMBP \u22120.1420 0.000 \u22120.1174 0.000",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 9; 2 economies."
+   },
+   {
+    "estimate_id": "9101-11",
+    "verdict": "confirmed",
+    "quote": "IUI \u22120.0017 0.000",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 9; 2 economies."
+   },
+   {
+    "estimate_id": "9101-12",
+    "verdict": "confirmed",
+    "quote": "lnFBPH \u22120.03707 0.220 \u22120.0266 0.333",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 10; 2 economies."
+   },
+   {
+    "estimate_id": "9101-13",
+    "verdict": "confirmed",
+    "quote": "lnMBP 0.2042 0.000 0.1895 0.000",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 10; 2 economies."
+   },
+   {
+    "estimate_id": "9101-14",
+    "verdict": "confirmed",
+    "quote": "IUI \u22120.0009 0.054",
+    "note": "Coefficient and p-value (table headers 'p>z'/'p>t') match; Model 4 column. Table 10; 2 economies."
+   }
+  ]
+ }
+]

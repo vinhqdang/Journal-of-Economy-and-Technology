@@ -1,0 +1,86 @@
+[
+ {
+  "idx": "9101",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (PCSE/FGLS); exposure is ICT/broadband/mobile/internet; 10 ASEAN economies plus explicit income-group comparison; outcome is GDP per capita (output family 1). Eligible.",
+  "sample_corrections": {
+   "years": "1995-2020 confirmed ('annual observations from 1995 to 2020'); the '1000 observations over 10 years' statement is internally inconsistent with 10 economies x 26 years (max 260) and should not be used as N",
+   "n_economies": "10 confirmed; subgroups 6 / 2 / 2 confirmed (Section 4.1 country list)"
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "quote": "lnFBPH 0.063 0.016 0.060 0.009 (Table 11, PCSE Model 4, p.17)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "quote": "lnMBP -0.122 0.001 -0.138 0.000 (Table 11, PCSE Model 4, p.17)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "quote": "IUI 0.001 0.060 (Table 11 PCSE Model 4); FGLS IUI 0.003 0.000"
+   },
+   {
+    "n": 4,
+    "verdict": "corrected",
+    "quote": "lnMCSMI 0.077 0.099 0.090 0.052 (PCSE); 0.316 0.000 0.317 0.000 (FGLS), Table 11",
+    "correction": "Numbers correct, but direction 'mixed' is wrong: both PCSE (0.090, p=0.052) and FGLS (0.317, p=0.000) are positive; PCSE is only borderline significant. Direction should be positive."
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "quote": "lnFBPH 0.0749 0.0000 0.0332 0.0050; lnMBP -0.0859 0.0000 -0.0645 0.0000 (Table 8, PCSE Model 4)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "quote": "lnMCSMI 0.1102 0.0000; IUI 0.0060 0.0000 (Table 8, PCSE Model 4)"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "quote": "lnFBPH 0.0036 0.012; lnMBP -0.1174 0.000; IUI -0.0017 0.000 (Table 9, PCSE Model 4)"
+   },
+   {
+    "n": 8,
+    "verdict": "confirmed",
+    "quote": "lnFBPH -0.0266 0.333; lnMBP 0.1895 0.000; IUI -0.0009 0.054 (Table 10, PCSE Model 4)"
+   },
+   {
+    "n": 9,
+    "verdict": "confirmed",
+    "quote": "lnRFLC 0.923 (T11), 0.5181 (T8), 1.0492 (T9), 0.3042 0.690 (T10); Model 4 PCSE. Variable is a fee, not remittances; not an ICT exposure per se"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "quote": "MBP shows strong positive effects in Models 3-4 (p < 0.01) (high-income paragraph); Tables 8-10 rows lnMBP"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "quote": "IUI 0.0060 (T8), -0.0017 (T9), -0.0009 p=0.054 (T10); 'its impact may not be linear. Beyond a certain threshold' (6.1.1) - no nonlinear term in tables"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "High/upper-middle/lower-middle coefficients in the record match Tables 8-10 PCSE Model 4 (e.g. lnMBP 0.1895, -0.1174, -0.0645; lnMCSMI -0.18344, 0.1061, 0.1102). No low-income economy.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree - static regressions, no instrument or lags; authors concede endogeneity and call results 'short-run associations'; price variables deflated by GDP per capita on the right-hand side.",
+   "exposure_measurement": "agree - variable labels mismatch (RFLC called remittances, FTSFLI fintech, FBPH/MBP described as rates but reported as large counts) and logging of IUI/IRPTR is unclear.",
+   "selection_of_countries_years": "too_harsh - the ASEAN-10 panel is the full region rather than a selected sample; the real weaknesses are 2-economy subgroups and an inconsistent observation count ('1000 observations'), which fit moderate.",
+   "outcome_measurement": "agree - World Bank GDP per capita in logs is a standard outcome, though text mislabels it as growth.",
+   "specification": "agree - I(1) variables regressed in levels without cointegration, R-squared near 1.000, no fixed effects reported, no preferred specification.",
+   "selective_reporting": "agree - all four models and both estimators are printed, but narrative cites 'b = 0.046, p = 0.001' for FBPH, which matches no Table 11 entry (0.060, p=0.009).",
+   "why": "Serious overall: causal wording with no strategy for reverse causation and spurious-regression risk from non-cointegrated I(1) levels, plus mislabelled exposure variables."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "Only one error: result 4 direction labelled mixed though both estimators are positive. Record's 'Table 7 sums imply about 144 country-years' is the extractor's own inference and not checked. Source mislabels (RFLC as remittances, FTSFLI as fintech) are real, as the record says."
+ }
+]

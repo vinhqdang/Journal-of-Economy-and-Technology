@@ -1,0 +1,108 @@
+[
+ {
+  "idx": "9103",
+  "eligibility_ok": true,
+  "eligibility_note": "Quantitative panel VAR-GMM, ICT/mobile/internet exposure, 171 economies with income-group comparison, outcomes GDP (family 1) and manufacturing share (family 2).",
+  "sample_corrections": {
+   "note_n_economies": "171 is as stated (Data, p. 2042) but Table 4 obs 3496 = 184 x 19 and group obs 1235/988/779/494 = 65/52/41/26 x 19 do not match; kept as stated",
+   "years": "2000-2018 confirmed"
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. ICT(t-1) -> RGDP(t), entire sample: 0.0389 (0.0000)***, positive; p in parentheses.",
+    "quote": "RGDP(t)  0.8001 (0.0000)***  0.0389 (0.0000)***  5.5741 (0.0000)***; Table 11, p. 2057"
+   },
+   {
+    "n": 2,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. HIC ICT(t-1) -> RGDP(t): 0.2751 (0.036)**, positive.",
+    "quote": "RGDP(t) 0.9124 (0.0000)*** 0.2751 (0.036)** 8.4905 (0.0020)***; Table 11 HIC"
+   },
+   {
+    "n": 3,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. UMIC ICT(t-1) -> RGDP(t): 0.0215 (0.0010)**, positive and significant (record said null).",
+    "quote": "RGDP(t) 0.8138 (0.0000)*** 0.0215 (0.0010)** -11.9536; Table 11 UMIC"
+   },
+   {
+    "n": 4,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. LMIC ICT(t-1) -> RGDP(t): 0.0149 (0.0000)***, positive.",
+    "quote": "RGDP(t) 0.8161 (0.0000)*** 0.0149 (0.0000)*** -5.6073; Table 11 LIMC"
+   },
+   {
+    "n": 5,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. LIC ICT(t-1) -> RGDP(t): 0.0175 (0.0000)***, positive (record said negative -0.7658, which is lagged RGDP -> ICT).",
+    "quote": "RGDP(t) 0.9421 (0.0000)*** 0.0175 (0.0000)*** -0.4733; Table 11 LIC"
+   },
+   {
+    "n": 6,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. MAV(t-1) -> RGDP(t), entire sample: 5.5741 (0.0000)***, positive (record -0.0007 is lagged RGDP -> MAV). Not the focal exposure.",
+    "quote": "RGDP(t) 0.8001 (0.0000)*** 0.0389 (0.0000)*** 5.5741 (0.0000)***; Table 11"
+   },
+   {
+    "n": 7,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. ICT(t-1) -> MAV(t), entire sample: 0.0002 (0.0830)*, weakly positive (record -34.3608 is lagged MAV -> ICT).",
+    "quote": "MAV(t) -0.0007 (0.0000)*** 0.0002 (0.0830)* 0.9628 (0.0000)***; Table 11"
+   },
+   {
+    "n": 8,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. HIC ICT(t-1) -> MAV(t): 0.0037 (0.044)**, positive (record 0.3804 is lagged MAV -> ICT).",
+    "quote": "MAV(t) -0.0017 (0.096)* 0.0037 (0.044)** 0.8417; Table 11 HIC"
+   },
+   {
+    "n": 9,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. UMIC ICT(t-1) -> MAV(t): 0.0005 (0.0020)**, positive (record 204.2836 is lagged MAV -> ICT).",
+    "quote": "MAV(t) -0.0007 (0.081)* 0.0005 (0.0020)** 0.3797; Table 11 UMIC"
+   },
+   {
+    "n": 10,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. LMIC ICT(t-1) -> MAV(t): 0.0009 (0.0000)***, positive (record 102.6019 is lagged MAV -> ICT).",
+    "quote": "MAV(t) -0.0033 (0.0000)** 0.0009 (0.0000)*** 0.3455; Table 11 LIMC"
+   },
+   {
+    "n": 11,
+    "verdict": "corrected",
+    "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. LIC ICT(t-1) -> MAV(t): 0.0019 (0.0220)**, positive (record 12.9477 is lagged MAV -> ICT).",
+    "quote": "MAV(t) -0.0079 (0.0000)*** 0.0019 (0.0220)** 0.9184; Table 11 LIC"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "corrected",
+    "correction": "Under the table's own layout, ICT(t-1) -> RGDP(t) is positive and significant in every group: 0.0389 full, 0.2751 HIC (0.036), 0.0215 UMIC (0.0010), 0.0149 LMIC, 0.0175 LIC (0.0000). No sign reversal in LIC and no insignificant UMIC; the authors' own text transposes the matrix.",
+    "quote": "ICT(t) -0.13799 (0.2380) vs Table 10 UMIC: RGDP not-> ICT 0.2380; Table 10 UMIC ICT not-> RGDP 0.0010***"
+   },
+   {
+    "n": 2,
+    "verdict": "corrected",
+    "correction": "ICT -> MAV is positive in all five samples (0.0002*, 0.0037**, 0.0005**, 0.0009***, 0.0019**), so there is no internal inconsistency in the full sample; the Granger part (ICT not-> MAV rejected in all groups, p 0.0830/0.0440/0.0020/0.0010/0.0220) is confirmed.",
+    "quote": "MAV(t) -0.0007 (0.0000)*** 0.0002 (0.0830)* 0.9628; Table 11 entire sample"
+   }
+  ],
+  "income_group_results": "corrected",
+  "income_group_note": "All income_group_results entries use the lagged-RGDP->ICT and lagged-MAV->ICT cells. Correct ICT->RGDP: high 0.2751 (0.036)**, upper-middle 0.0215 (0.0010)**, lower-middle 0.0149 (0.0000)***, low 0.0175 (0.0000)***. ICT->MAV: high 0.0037 (0.044)**, upper-middle 0.0005 (0.0020)**, lower-middle 0.0009 (0.0000)***, low 0.0019 (0.0220)**.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: lagged GMM only, no external instrument, causal wording ('impact'), bidirectional Granger causality found.",
+   "exposure_measurement": "too_harsh: a PCA index of mobile, fixed and internet use does capture ICT diffusion; the unit problem ('1% increase' of a mean-zero index) is an interpretation flaw, so moderate fits.",
+   "selection_of_countries_years": "agree: wide panel, but Table 4 obs (3496, 1235/988/779/494) imply more countries than the stated 171 (57/48/41/25).",
+   "outcome_measurement": "agree: RGDP level in US$ treated as growth, with Table 4 max 100 and min 0.0003 inconsistent with billions of dollars.",
+   "specification": "agree (serious): lag order unreported, authors misread the Table 11 row/column layout, stars inconsistent with p-values.",
+   "selective_reporting": "agree: one model per sample, no robustness, text signs conflict with table.",
+   "why": "Serious stands: causal framing, only internal lags for endogeneity, and the authors' headline numbers (0.007, -34) come from the wrong cells."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Core error: record follows the authors' transposed reading of Table 11, contradicted by Table 10 p-values (entire-sample ICT row RGDP col 0.0080 vs Table 10 RGDP not-> ICT p=0.7980 shows the authors' table is itself inconsistent there). Record's 'internal inconsistency' in signs disappears under the table layout. Record says outcome 'Real GDP' growth effect 0.007%, which is not supported. Stars in Table 11 are inconsistent with p (e.g. 0.0010**)."
+ }
+]

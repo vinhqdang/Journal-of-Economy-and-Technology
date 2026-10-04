@@ -1,0 +1,63 @@
+[
+ {
+  "idx": "9105",
+  "eligibility_ok": true,
+  "eligibility_note": "Own IV-GMM estimation on 123 economies (45 HIC, 58 MIC, 20 LIC) with explicit income-group comparison; exposure is mobile, internet, fixed broadband and a PCA ICT index; outcomes are GDP per capita and labour productivity (family 1).",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnict 0.094*** (0.032)  [Table 8, col 4, HIC; robust SE in parentheses]"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnict 0.422*** (0.023)  [Table 8, col 8, MIC]"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnict 0.158*** (0.028)  [Table 8, col 12, LIC]"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnmob 0.262*** (0.091) ... lnint 0.751*** (0.069) ... lnfbb 0.319*** (0.033) [Table 8]; SE range 0.013-0.091 correct"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnict 0.065*** (0.025) ... 0.374*** (0.028) ... 0.218*** (0.063)  [Table 9, cols 4, 8, 12]"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "The findings prove that MIC gains more than LIC and HIC from the ICT revolution. [Section 4, p. 8]; internet/fbb largest in HIC, mobile largest in MIC (Table 8)"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "HIC 0.094/0.065, MIC 0.422/0.374, LIC 0.158/0.218 match Tables 8 and 9; upper and lower middle are pooled in MIC (Table A1 lists a single MIC group).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal wording and IV with lags of investment (also a control) as instruments, only two controls, no fixed effects, ICT-lag instruments dropped after Hansen rejections.",
+   "exposure_measurement": "agree: group-specific PCA index of three logged access indicators, not comparable across income groups.",
+   "selection_of_countries_years": "agree: broad WDI sample of 123 economies, unbalanced (Table 8 obs 224-812), MIC pooled.",
+   "outcome_measurement": "agree: GDP per capita level is labelled 'economic growth'; labour productivity from Conference Board has fewer observations.",
+   "specification": "agree: instrument set changed after over-identification rejections and no sensitivity checks (arguably borderline between serious and moderate).",
+   "selective_reporting": "agree: only ICT coefficients shown 'for brevity', ICT-lag results in supplementary material, no test of group differences.",
+   "why": "Standard cross-country IV-GMM with weak, questionable instruments and causal claims, so serious is appropriate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "none material; record agrees with the text. Minor: Table 3 gives 720/928/320 obs for lngdp while Table 8 uses 630/812/280 or fewer (record notes this); n_specifications 24 correct; Hansen p-values 0.077 (col 3) and 0.062 (col 9) correct."
+ }
+]

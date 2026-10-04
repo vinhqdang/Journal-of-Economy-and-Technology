@@ -1,0 +1,96 @@
+[
+ {
+  "idx": "9105",
+  "paper_verdict": {
+   "estimator_family": "IV-GMM (robust), instruments are first and second lags of investment; cross-sectional-style pooled IV by income group, not dynamic-panel GMM",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Log-log elasticities of GDP per capita level (labelled 'economic growth'); ICT headline is a group-specific PCA index with non-comparable scale; authors read elasticities as percent changes; MIC pools upper and lower middle; component (mobile/internet/fbb) and index estimates come from the same samples, so they are not independent; no fixed effects stated; instruments questionable."
+  },
+  "estimates": [
+   {
+    "estimate_id": "9105-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnict 0.094*** (0.032) ... Observations 628 [Table 8 col 4]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnict 0.422*** (0.023) ... Observations 753 [Table 8 col 8]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower. MIC pools upper- and lower-middle."
+   },
+   {
+    "estimate_id": "9105-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnict 0.158*** (0.028) ... Observations 224 [Table 8 col 12]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnmob 0.262*** (0.091) ... Observations 630 [Table 8 col 1]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnint 0.751*** (0.069) ... Observations 630 [Table 8 col 2]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnmob 0.440*** (0.032) ... Observations 812 [Table 8 col 5]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnint 0.353*** (0.019) ... Observations 812 [Table 8 col 6]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnmob 0.091*** (0.020) ... Observations 280 [Table 8 col 9]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnint 0.149*** (0.021) ... Observations 275 [Table 8 col 10]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnict 0.065*** (0.025) ... Observations 572 [Table 9 col 4]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower. Outcome is labour productivity."
+   },
+   {
+    "estimate_id": "9105-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnict 0.374*** (0.028) ... Observations 587 [Table 9 col 8]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   },
+   {
+    "estimate_id": "9105-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "lnict 0.218*** (0.063) ... Observations 130 [Table 9 col 12]",
+    "note": "n_countries is the group size from the text (Section 3), not printed in the table; panel unbalanced so actual count may be lower."
+   }
+  ]
+ }
+]

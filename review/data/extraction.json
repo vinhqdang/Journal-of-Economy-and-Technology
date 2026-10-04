@@ -15166,5 +15166,1116 @@
    "corrections": [],
    "problems": "No invented numbers. Minor: sample years description of lags is imprecise (see corrections). The record rationale for the specification rating (lag length chosen post hoc) is not in the text. The paper's own Introduction (p. 258) states 0.003 and 0.02 'additional brain cancer deaths per 100,000', which conflicts with Table 2 (semi-elasticities 0.003 and 0.020; marginal effects 0.012 and 0.073); the record correctly uses the table. Table 2 and 3 notes say 'elasticities in braces' but values are printed in brackets."
   }
+ },
+ {
+  "idx": "9101",
+  "title": "ICT Infrastructure, Economic Growth and ASEAN Income Heterogeneity: A Panel Analysis",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Own panel estimation (FGLS and PCSE) of ICT infrastructure indicators (fixed and mobile broadband, mobile subscriptions, internet users, internet retail) on GDP per capita for 10 ASEAN economies, split into lower-middle, upper-middle and high income groups; family 1 outcome and an explicit income-group comparison, so E1 to E4 do not apply.",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "fixed broadband",
+   "mobile broadband",
+   "mobile telephony",
+   "internet use",
+   "fixed telephony"
+  ],
+  "exposure_measure": "World Bank indicators entered in logs (lnFBPH fixed broadband penetration per household, lnMBP mobile broadband penetration per population, lnMCSMI mobile cellular subscriptions per 100 people, lnFTSFLI fixed telephone subscriptions per 100 people) and apparently in levels (IRPTR internet retail % of retail, IUI individuals using the internet %), plus two price variables (lnRFLC residential fixed-line connection fee, lnMCPOC mobile prepaid connection fee, both adjusted for GDP per capita). Descriptive statistics show FBPH (mean 2,387,831) and MBP (mean 67,293,895) as very large numbers, not rates.",
+  "sample": {
+   "n_economies": "10",
+   "economies_or_groups": "ASEAN-10. High income: Brunei, Singapore. Upper-middle: Malaysia, Thailand. Lower-middle: Indonesia, Philippines, Vietnam, Laos, Cambodia, Myanmar (World Bank 2024 classification as stated by the authors).",
+   "income_groups_covered": "high, upper-middle, lower-middle (no low-income economy)",
+   "years": "1995-2020 (stated); text also says '1000 observations over 10 years'",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Static panel FGLS and PCSE (Beck-Katz) with AR(1) correction, four nested models per sample, estimated separately for lower-middle, upper-middle, high-income and all 10 ASEAN countries",
+   "identification": "none",
+   "key_controls_fixed_effects": "Controls: TRADE, FDI, INFL, EXPT. Equation (1) lists country and time fixed effects but the regression tables report none and the PCSE/FGLS estimators do not obviously include them. No education, institutions or capital controls (authors concede this in Limitations)."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita (log level); all 10 ASEAN countries, fixed broadband lnFBPH, PCSE Model 4",
+    "direction": "positive",
+    "estimate": "0.060 (log-log, ln GDP per capita on lnFBPH)",
+    "uncertainty": "p = 0.009",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11 (p.17), PCSE Model 4, row lnFBPH: '0.063 0.016 0.060 0.009' (Models 3 and 4)"
+   },
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita; all 10 ASEAN countries, mobile broadband lnMBP, PCSE Model 4",
+    "direction": "negative",
+    "estimate": "-0.138 (log-log)",
+    "uncertainty": "p = 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11 (p.17), PCSE Model 4, row lnMBP: '-0.122 0.001 -0.138 0.000'"
+   },
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita; all 10 ASEAN countries, individuals using the internet IUI, PCSE Model 4",
+    "direction": "positive",
+    "estimate": "0.001 (IUI appears to enter in levels, % of population; the diagnostic tables name it Iniui)",
+    "uncertainty": "p = 0.060 (PCSE); FGLS 0.003, p = 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11 (p.17), row IUI: '0.001 0.060'; FGLS row IUI '0.003 0.000'"
+   },
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita; all 10 ASEAN countries, mobile cellular subscriptions lnMCSMI, PCSE Model 4",
+    "direction": "mixed",
+    "estimate": "0.090 (PCSE Model 4); FGLS 0.317",
+    "uncertainty": "PCSE p = 0.052; FGLS p = 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11 (p.17), row lnMCSMI: PCSE '0.077 0.099 0.090 0.052'; FGLS '0.316 0.000 0.317 0.000'"
+   },
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita; lower-middle-income (6 economies), lnFBPH and lnMBP, PCSE Model 4",
+    "direction": "mixed",
+    "estimate": "lnFBPH 0.0332; lnMBP -0.0645",
+    "uncertainty": "p = 0.0050 and p = 0.0000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8 (p.14), PCSE Model 4: 'lnFBPH ... 0.0332 0.0050'; 'lnMBP ... -0.0645 0.0000'"
+   },
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita; lower-middle-income, mobile subscriptions lnMCSMI and internet users IUI, PCSE Model 4",
+    "direction": "positive",
+    "estimate": "lnMCSMI 0.1102; IUI 0.0060",
+    "uncertainty": "p = 0.0000 for both",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8 (p.14), PCSE Model 4 rows lnMCSMI '0.1102 0.0000' and IUI '0.0060 0.0000'"
+   },
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita; upper-middle-income (Malaysia, Thailand), lnFBPH, lnMBP and IUI, PCSE Model 4",
+    "direction": "mixed",
+    "estimate": "lnFBPH 0.0036; lnMBP -0.1174; IUI -0.0017",
+    "uncertainty": "p = 0.012; 0.000; 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9 (p.15), PCSE Model 4 rows lnFBPH '0.0036 0.012', lnMBP '-0.1174 0.000', IUI '-0.0017 0.000'"
+   },
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita; high-income (Brunei, Singapore), lnFBPH, lnMBP and IUI, PCSE Model 4",
+    "direction": "mixed",
+    "estimate": "lnFBPH -0.0266; lnMBP 0.1895; IUI -0.0009",
+    "uncertainty": "p = 0.333; 0.000; 0.054",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 (p.16), PCSE Model 4 rows lnFBPH '-0.0266 0.333', lnMBP '0.1895 0.000', IUI '-0.0009 0.054'"
+   },
+   {
+    "family": 1,
+    "indicator": "ln GDP per capita; connection-fee variable lnRFLC (called 'remittances' in the text), all samples",
+    "direction": "positive",
+    "estimate": "0.923 (all ASEAN, PCSE Model 4); 0.5181 (lower-middle); 1.0492 (upper-middle); 0.3042 (high, p = 0.690)",
+    "uncertainty": "p = 0.000 (all ASEAN, lower-middle, upper-middle); p = 0.690 (high)",
+    "horizon": "contemporaneous",
+    "evidence": "Tables 8-11, row lnRFLC, Model 4 PCSE. Table 2 and Section 2.6.2 define RFLC as 'residential fixed line connection fee adjusted for GDP per capita', but Section 4.1 and Conclusion call it 'remittances'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Mobile broadband (lnMBP) coefficient is negative in lower-middle (-0.0645) and upper-middle (-0.1174) groups but positive in the high-income group (0.1895, 2 economies). Fixed broadband (lnFBPH) is positive in lower- and upper-middle groups and insignificant in the high-income group. Signs differ across groups, with no formal interaction test.",
+    "threshold_value": "none",
+    "evidence": "Tables 8-10 (pp.14-16), PCSE Model 4 rows lnMBP; Section 4.1 high-income paragraph: 'MBP shows strong positive effects in Models 3-4'"
+   },
+   {
+    "moderator": "income group",
+    "finding": "Internet users (IUI) positive in lower-middle (0.0060), negative in upper-middle (-0.0017) and negative/borderline in high income (-0.0009, p = 0.054). Authors interpret as diminishing returns or saturation, but this is not tested with a threshold or nonlinear term.",
+    "threshold_value": "none",
+    "evidence": "Tables 8-10, PCSE Model 4 row IUI; Section 6.1.1 claims 'non-linear effect' but no squared or threshold term appears in any table"
+   }
+  ],
+  "income_group_results": {
+   "high": "Brunei and Singapore only (2 economies). PCSE Model 4: lnMBP +0.1895 (p=0.000), lnFBPH -0.0266 (p=0.333), lnFTSFLI -0.1212 (p=0.004), lnMCSMI -0.18344 (p=0.000), IUI -0.0009 (p=0.054). Table 10, p.16.",
+   "upper_middle": "Malaysia and Thailand only (2 economies). PCSE Model 4: lnFBPH +0.0036 (p=0.012), lnMBP -0.1174 (p=0.000), lnMCSMI +0.1061 (p=0.000), IUI -0.0017 (p=0.000). Table 9, p.15.",
+   "lower_middle": "Six economies. PCSE Model 4: lnFBPH +0.0332 (p=0.0050), lnMBP -0.0645 (p=0.0000), lnMCSMI +0.1102 (p=0.0000), IUI +0.0060 (p=0.0000). Table 8, p.14.",
+   "low": "not covered (no low-income economy in the ASEAN-10 sample)"
+  },
+  "n_specifications_reported": "32 (4 nested models x 2 estimators x 4 samples), all printed",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Static PCSE/FGLS regressions of GDP per capita on ICT indicators, with causal wording ('impact', 'affects'), no instrument, no lags and no strategy for reverse causation. The authors concede they cannot capture endogeneity and read results as 'short-run associations'. No controls for education, institutions or capital. A price variable deflated by GDP per capita (RFLC, MCPOC) sits on the right-hand side of a GDP per capita equation, which builds in a mechanical link (coefficient near 1 on lnRFLC in Tables 9 and 11).",
+    "evidence": "Section 6.2 Limitations (p.18-19); Section 2.6.2; Tables 9 and 11 row lnRFLC"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Several labels do not match the data or text. Descriptive statistics show FBPH and MBP as counts in the millions despite being called 'per household' and 'per population'. RFLC (a connection fee) is called 'remittances' in the results and conclusion, and FTSFLI (fixed telephone subscriptions) is called 'fintech'. IRPTR and IUI are logged in diagnostic tables (Inirptr, Iniui) but appear unlogged in regression tables. The tables therefore do not give a clean read of broadband or mobile adoption.",
+    "evidence": "Table 7 (p.13) means for FBPH and MBP; Table 2; Section 4.1 and Section 6 Conclusion; Tables 3a vs 8"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 10 ASEAN economies. The high- and upper-middle-income subsamples have 2 economies each, so subgroup coefficients rest on 2 countries. No low-income economy. Observation counts are inconsistent: text says '1000 observations over 10 years' while the panel is 10 countries over 1995-2020 and Table 7 sums imply about 144 country-years (my inference from the Sum and Mean rows). No N is printed in the regression tables.",
+    "evidence": "Section 3 and 4.1 (pp.4, 7); Table 7 (p.13); Section 4.1 country list"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP per capita from World Bank, used in logs. The text repeatedly describes the outcome as GDP 'growth' although it is a log level, and Equation (1) uses GDP. The mislabelling is a clarity problem more than a measurement failure.",
+    "evidence": "Tables 3a and 8-11 (lnGDP / lnGDPcapita); Section 6.1.1 'accelerate economic growth'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Variables are I(1) (level tests fail, first differences stationary) and the Westerlund test finds no cointegration, yet levels are regressed on levels, which risks spurious regression (R-squared 0.98 to 1.000). Four nested models, two estimators and four samples are run without a preferred specification. Coefficient signs change when variables are added (e.g. lnMCSMI, lnMBP). Equation (1) shows fixed effects that the reported tables do not include, and Equation (1) indices are mis-specified.",
+    "evidence": "Section 3.2.2 (p.6) 'static estimators such as FGLS and PCSE are generally appropriate'; Tables 3a-6a cointegration columns; Tables 8-11 R square rows"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All models and both estimators are printed, which limits selection. The narrative, however, selects and reinterprets: one ASEAN-level sentence reports 'FBPH ... b = 0.046, p = 0.001', which matches no entry in Table 11 (0.060, p=0.009). Text says FTSFLI is significant in the full sample while Table 11 shows it is not. Significance stars are described in the notes but not printed.",
+    "evidence": "Section 5 / 4.1 ASEAN-level paragraph (p.16-17) vs Table 11 (p.17)"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "No text addressed to a reader or model was found. Internal inconsistencies a reviewer should know: (1) RFLC defined as a connection fee but described as remittances; FTSFLI called fintech; (2) FBPH and MBP in Table 7 are large counts, not rates; (3) number of observations stated as 1000 over 10 years but Table 7 implies about 144 and no N appears in regression tables; (4) high-income correlation and diagnostic tables are cited as 'Table 10' and 'Table 11' in Section 3.2.1 although those are regression tables; (5) text claims of non-linear effects and 'optimal level of digital integration' are not backed by any quadratic or threshold specification; (6) Table 8 note says 'low- and middle-income countries' while the group is lower-middle income; (7) the Ethics and Consent statements refer to human participants and informed consent although only World Bank secondary data are used; (8) Indonesia is placed in the lower-middle group by the authors, while the World Bank 2024 list can differ, so the group assignment is unclear. Regression tables print p-values only, no standard errors; stars are not shown. Dependent variable is log GDP per capita (level), so coefficients on logged ICT variables read as elasticities, but several ICT variables may be in levels.",
+  "quote_check": {
+   "verified": 10,
+   "checked": 12
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 8,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (PCSE/FGLS); exposure is ICT/broadband/mobile/internet; 10 ASEAN economies plus explicit income-group comparison; outcome is GDP per capita (output family 1). Eligible.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "1995-2020 confirmed ('annual observations from 1995 to 2020'); the '1000 observations over 10 years' statement is internally inconsistent with 10 economies x 26 years (max 260) and should not be used as N",
+    "n_economies": "10 confirmed; subgroups 6 / 2 / 2 confirmed (Section 4.1 country list)"
+   },
+   "corrections": [
+    {
+     "n": 4,
+     "verdict": "corrected",
+     "quote": "lnMCSMI 0.077 0.099 0.090 0.052 (PCSE); 0.316 0.000 0.317 0.000 (FGLS), Table 11",
+     "correction": "Numbers correct, but direction 'mixed' is wrong: both PCSE (0.090, p=0.052) and FGLS (0.317, p=0.000) are positive; PCSE is only borderline significant. Direction should be positive."
+    }
+   ],
+   "problems": "Only one error: result 4 direction labelled mixed though both estimators are positive. Record's 'Table 7 sums imply about 144 country-years' is the extractor's own inference and not checked. Source mislabels (RFLC as remittances, FTSFLI as fintech) are real, as the record says."
+  }
+ },
+ {
+  "idx": "9102",
+  "title": "Internet and Economic Growth Across Income Levels: a Panel Data Analysis",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of 78 economies (LMI, UMI, high income) estimating the effect of internet use and fixed broadband on GDP per capita growth (family 1), with explicit income-group comparison. Meets all inclusion criteria.",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "fixed broadband"
+  ],
+  "exposure_measure": "Main: log of individuals using the Internet (% of population, WDI). Robustness: log of fixed-broadband subscribers (FbrdP, WDI; unit not stated in Table 2).",
+  "sample": {
+   "n_economies": "78",
+   "economies_or_groups": "22 lower-middle-income, 30 upper-middle-income, 26 high-income; low-income countries excluded for data gaps",
+   "income_groups_covered": "high, upper-middle, lower-middle (low excluded)",
+   "years": "1999-2021",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pooled OLS, fixed effects (preferred after Hausman test) and random effects, run by income group and full sample; country-clustered SEs",
+   "identification": "none",
+   "key_controls_fixed_effects": "Country FE; lagged dlnGDP per capita; ln gross capital formation, d ln wage/salaried workers, d ln broad money, d ln trade, ln youth employment ratio, d ln secondary enrolment; dummies for 2009 and pandemic year (equation also lists time effects but only dum09 and dum19 are reported)"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth (first difference of ln GDP per capita), full sample, ln internet users, FE",
+    "direction": "negative",
+    "estimate": "-0.012 (FE); pooled -0.006, RE -0.006",
+    "uncertainty": "FE se (0.005), ** p<0.05; pooled/RE se (0.002), *** p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p. 8625, lnIntUsage row, Models 10-12: '-0.006*** -0.012** -0.006***'; N=780, 78 countries"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth, lower-middle-income, ln internet users, FE",
+    "direction": "null",
+    "estimate": "0.006 (FE); pooled and RE 0.008*",
+    "uncertainty": "FE se (0.009), not significant; pooled/RE se (0.005), p<0.1",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p. 8625, lnIntUsage row, Models 1-3: '0.008* 0.006 0.008*'; N=99, 22 countries"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth, upper-middle-income, ln internet users, FE",
+    "direction": "null",
+    "estimate": "-0.012 (FE); pooled -0.001, RE -0.001",
+    "uncertainty": "FE se (0.009), not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p. 8625, lnIntUsage row, Models 4-6: '-0.001 -0.012 -0.001'; N=335, 30 countries"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth, high-income, ln internet users, FE",
+    "direction": "negative",
+    "estimate": "-0.021 (FE, p<0.1); pooled and RE -0.021***",
+    "uncertainty": "FE se (0.011); pooled/RE se (0.007)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p. 8625, lnIntUsage row, Models 7-9: '-0.021*** -0.021* -0.021***'; N=346, 26 countries"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth, ln fixed-broadband subscribers (robustness), full sample and income groups, FE",
+    "direction": "mixed",
+    "estimate": "FE: full -0.004**, LMI -0.003, UMI -0.003, HIC -0.005*",
+    "uncertainty": "FE se: full (0.002), LMI (0.004), UMI (0.003), HIC (0.003); only full sample (p<0.05) and HIC (p<0.1) significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p. 8629, lnFbrdP row, Models 2, 5, 8, 11: '-0.003 -0.003 -0.005* -0.004**'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Sign pattern shifts from positive and insignificant (LMI FE) to negative and insignificant (UMI FE) to negative and significant (HIC FE, p<0.1; pooled/RE p<0.01). Authors interpret as absorptive-capacity gaps in LMI and saturation in HIC. No formal test of coefficient equality across groups and no interaction term.",
+    "threshold_value": "none",
+    "evidence": "Section 'Effect of the Internet on EG', pp. 8623-8624; Table 3 p. 8625: 'negative association persists and is significant across the models' (HIC)"
+   }
+  ],
+  "income_group_results": {
+   "high": "Negative: FE -0.021* (se 0.011); pooled/RE -0.021*** (Table 3, Models 7-9). Broadband FE -0.005* (Table 4).",
+   "upper_middle": "Negative but insignificant: FE -0.012 (se 0.009) (Table 3, Model 5). Broadband FE -0.003 (se 0.003).",
+   "lower_middle": "Positive but insignificant in FE: 0.006 (se 0.009) (Table 3, Model 2); pooled/RE 0.008* (p<0.1). Broadband FE -0.003 (se 0.004).",
+   "low": "Not covered (excluded for fewer than ten countries with substantial data gaps, p. 8619)."
+  },
+  "n_specifications_reported": "24 (3 estimators x 4 samples x 2 ICT measures)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causality": {
+    "rating": "serious",
+    "why": "Mostly associational wording, but policy conclusions are causal-sounding. Only FE, a lagged dependent variable and controls; no instrument or timing design. FE with a lagged dependent variable and short T (about 4.5 obs per country in LMI) risks Nickell-type bias. Authors concede reverse causality remains.",
+    "evidence": "Methodology p. 8623 ('mitigate the risk by incorporating a lagged dependent variable'); Limitations p. 8632 ('reverse causality ... remains a limitation')"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Share of population using the internet is a standard but coarse diffusion proxy; broadband used as a second proxy. Levels of usage near saturation in high-income countries leave little variation, which authors themselves cite as the explanation.",
+    "evidence": "Data section pp. 8619-8620; Table 2"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Low-income countries dropped; sample cut from 985 to 959 to 780 observations after differencing, unit-root and lag requirements, so panel is unbalanced and thin (LMI: 99 obs for 22 countries). Selection rests on data availability; reduction to 780 is only loosely explained.",
+    "evidence": "Sample section pp. 8618-8619; Table 3 observation counts p. 8626"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita in constant 2015 US$ from WDI, a standard growth measure.",
+    "evidence": "Table 2, p. 8621"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Variable mix of logs, first differences and levels in the same regression; winsorising at 1/99 percent; only two year dummies reported although the equation includes time effects; choice of FE over RE via Hausman test (statistic not shown). Pooled, FE and RE are all reported, so no hiding of alternatives.",
+    "evidence": "Equation p. 8623; Sample p. 8618; Table 3 notes p. 8626"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Abstract and text describe a negative association for UMI countries although UMI coefficients are insignificant in all models; text also says LMI is 'potentially favourable' while some LMI pooled/RE estimates are significant at 10 percent. Hausman statistics, unit-root results and appendix tests are not shown in the main text. All pre-stated models are reported though.",
+    "evidence": "Abstract p. 8613 ('negative association emerges in upper-middle-income'); Results pp. 8623-8628"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "No instructions directed at the reader were found in the text. Internal inconsistencies: Table 3 and 4 label the dependent variable 'lnPCGDP' although the model is the first difference of ln GDP per capita; abstract/conclusion claim negative UMI effect while UMI estimates are insignificant, and the results text says LMI effects 'favour EG' then 'not significant'; observation counts of 985, 959 and 780 appear in the sample section. Coefficients are small semi-elasticity-type values: change in log-difference of GDP per capita per one-unit change in log internet use. Appendix tables A1-A6 (country lists, descriptive statistics, VIF) are not in the supplied text. AI is mentioned only in the introduction and future work; the study is non-AI.",
+  "quote_check": {
+   "verified": 9,
+   "checked": 10
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (pooled OLS, FE, RE) of internet users and fixed-broadband subscribers on GDP per capita growth (output outcome) for 78 economies with explicit LMI/UMI/HIC comparison; non-AI so the 10-economy threshold is met.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented or mixed-up content found; all extracted coefficients, standard errors, N and country counts match the text. Minor omissions: Table 4 pooled/RE broadband estimates (HIC and full sample significant at 5 percent) are not listed in result 5. The record's description of the lagged variable as 'lagged dlnGDP per capita' matches the tables (L.dlnPCGDP), but the printed equation uses ln(GDP t-1)."
+  }
+ },
+ {
+  "idx": "9103",
+  "title": "ICT Diffusion, Industrialisation and Economic Growth Nexus: an International Cross-country Analysis",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel VAR-GMM study of ICT diffusion (mobile, fixed telephone, internet) for 171 countries split into four World Bank income groups, with real GDP (family 1) and manufacturing value-added share (family 2) as outcomes. Meets exposure, sample and outcome criteria.",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "mobile telephony",
+   "fixed telephony",
+   "internet"
+  ],
+  "exposure_measure": "ICT diffusion index: first principal component of mobile-cellular subscriptions per 100, fixed-telephone subscriptions per 100 and % of individuals using the internet (ITU data); missing values filled by linear trend extrapolation and moving-average interpolation (Table 1, p. 2043).",
+  "sample": {
+   "n_economies": "171",
+   "economies_or_groups": "25 low, 41 lower-middle, 48 upper-middle, 57 high-income countries (Table 2, pp. 2044-2045)",
+   "income_groups_covered": "high, upper-middle, lower-middle, low",
+   "years": "2000-2018",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel VAR in GMM (Abrigo and Love 2016), forward orthogonal deviations; plus Johansen-Fisher and Westerlund cointegration, panel VAR Granger causality, FEVD and IRFs",
+   "identification": "other",
+   "key_controls_fixed_effects": "Three-variable system (ICT, MAV, RGDP), country-specific effects removed by Helmert transformation; no other controls; lag order not reported ('available upon request')."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Real GDP (constant 2010 US$ bn), full sample, response to ICT diffusion (as interpreted by authors)",
+    "direction": "positive",
+    "estimate": "0.0069 (Table 11 row ICT(t), column RGDP(t-1)); authors: 1% rise in ICT raises growth by 0.007%",
+    "uncertainty": "p = 0.0080 in parentheses (marked **)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p. 2057; text p. 2056: 'if ICT diffusion increase by 1%, economic growth will increase by 0.007% globally'. Table layout is ambiguous, see notes."
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP, high-income, response to ICT diffusion",
+    "direction": "positive",
+    "estimate": "0.0278",
+    "uncertainty": "p = 0.0000 (***)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, HIC row ICT(t), column RGDP(t-1), p. 2057"
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP, upper-middle-income, response to ICT diffusion",
+    "direction": "null",
+    "estimate": "-0.13799",
+    "uncertainty": "p = 0.2380 (no stars)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, UMIC row ICT(t), column RGDP(t-1), p. 2057"
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP, lower-middle-income, response to ICT diffusion",
+    "direction": "positive",
+    "estimate": "0.2134",
+    "uncertainty": "p = 0.0820 (*)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, 'LIMC' row ICT(t), column RGDP(t-1), p. 2057"
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP, low-income, response to ICT diffusion",
+    "direction": "negative",
+    "estimate": "-0.7658",
+    "uncertainty": "p = 0.0000 (***)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, LIC row ICT(t), column RGDP(t-1), p. 2057"
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP, full sample, response to industrialisation (MAV), not the focal exposure",
+    "direction": "negative",
+    "estimate": "-0.0007 (authors: 1% rise in industrialisation lowers growth by 0.001%)",
+    "uncertainty": "p = 0.0000 (***)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, entire sample row MAV(t), column RGDP(t-1); text p. 2056"
+   },
+   {
+    "family": 2,
+    "indicator": "Manufacturing value-added share of GDP (MAV), full sample, response to ICT diffusion",
+    "direction": "negative",
+    "estimate": "-34.3608 (authors: 1% rise in ICT lowers industrialisation by 34%)",
+    "uncertainty": "p = 0.0000 (***)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, entire sample row ICT(t), column MAV(t-1), p. 2057; text p. 2056 'fall by -34%'"
+   },
+   {
+    "family": 2,
+    "indicator": "MAV, high-income, response to ICT diffusion",
+    "direction": "positive",
+    "estimate": "0.3804",
+    "uncertainty": "p = 0.0520 (*)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, HIC row ICT(t), column MAV(t-1), p. 2057"
+   },
+   {
+    "family": 2,
+    "indicator": "MAV, upper-middle-income, response to ICT diffusion",
+    "direction": "positive",
+    "estimate": "204.2836",
+    "uncertainty": "p = 0.0000 (***)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, UMIC row ICT(t), column MAV(t-1), p. 2057. Sign contradicts IRF description (fall in UMIC, p. 2063)."
+   },
+   {
+    "family": 2,
+    "indicator": "MAV, lower-middle-income, response to ICT diffusion",
+    "direction": "positive",
+    "estimate": "102.6019",
+    "uncertainty": "p = 0.0000 (***)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, 'LIMC' row ICT(t), column MAV(t-1), p. 2057. Contradicts IRF text (fall in LMIC)."
+   },
+   {
+    "family": 2,
+    "indicator": "MAV, low-income, response to ICT diffusion",
+    "direction": "positive",
+    "estimate": "12.9477",
+    "uncertainty": "p = 0.0000 (***)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, LIC row ICT(t), column MAV(t-1), p. 2057. Contradicts IRF text (fall in LIC)."
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Effect of ICT on real GDP differs by group: positive and significant in HIC (0.0278) and LMIC (0.2134, p<0.10), insignificant in UMIC, negative in LIC (-0.7658); full sample 0.0069. Authors conclude effect is ambiguous in UMIC and LIC.",
+    "threshold_value": "none",
+    "evidence": "Table 11, p. 2057; Conclusion p. 2064: 'ICT diffusion can specifically improve economic growth in LIMC and HIC countries'"
+   },
+   {
+    "moderator": "income group",
+    "finding": "Effect of ICT on manufacturing share is negative in full sample but positive in all four income-group estimates in Table 11 (internally inconsistent); Granger causality ICT to MAV significant in all groups.",
+    "threshold_value": "none",
+    "evidence": "Table 11 and Table 10, pp. 2055-2057"
+   }
+  ],
+  "income_group_results": {
+   "high": "ICT to RGDP 0.0278*** ; ICT to MAV 0.3804*",
+   "upper_middle": "ICT to RGDP -0.13799 (p=0.238, null); ICT to MAV 204.2836***",
+   "lower_middle": "ICT to RGDP 0.2134*; ICT to MAV 102.6019***",
+   "low": "ICT to RGDP -0.7658***; ICT to MAV 12.9477***"
+  },
+  "n_specifications_reported": "5 (one three-variable PVAR per sample: full sample and four income groups); no alternative specifications",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Lagged PVAR in GMM is the only response to endogeneity, no external instrument, no control variables (investment, human capital, trade). Authors use causal language ('impact') and report bidirectional Granger causality.",
+    "evidence": "Methodology p. 2041; Table 10 p. 2055; Abstract"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "ICT is a PCA index with mean around zero (-2.72E-09) and no natural unit, yet results are read as '1% increase in ICT'. Index mixes mobile, fixed and internet indicators with extrapolated missing data; mobile loading is weak (0.399).",
+    "evidence": "Table 1 p. 2043; Table 3 p. 2045; Table 4 p. 2046; text p. 2056"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Broad 171-country panel, 2000-2018, but observation counts in Table 4 (3496; implies 184 countries over 19 years) do not match 171 countries (3249 max), and group obs imply 65/52/41/26 countries versus stated 57/48/41/25. Selection criteria not stated.",
+    "evidence": "Table 4 p. 2046; Data p. 2042"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Real GDP level (constant 2010 US$, said to be in billions) is used as a 'proxy for economic growth'; Table 4 RGDP mean 32.3, max 100 and min 0.0003 are not consistent with GDP in billions; transformation (levels, logs, differences) unclear since Eq. 2 shows differences but results are read in levels.",
+    "evidence": "Table 1 p. 2043; Table 4 p. 2046; Eq. 2 p. 2041"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Lag order, GMM instrument set and transformation of variables not reported; interpretation of Table 11 coefficients does not match table layout; significance stars inconsistent with p-values and legends inverted; coefficients combine variables of very different scale.",
+    "evidence": "Table 11 p. 2057; Table 5-9 legends; p. 2047 'optimum lag length results are not reported'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only one model per sample; no robustness checks with alternative ICT measures or lag choices; Table 11 and text and IRF descriptions disagree on signs; abstract reports global effects while subgroup signs are mixed.",
+    "evidence": "Table 11 p. 2057 vs IRF text p. 2063 and Conclusion p. 2063"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (Received 14 March 2021, accepted 2 April 2021; Declarations name 'Economic Change and Restructuring' as the target journal although published in Journal of the Knowledge Economy; many internal inconsistencies in tables)",
+  "notes": "No instructions aimed at the extractor were found in the text. Table 11 layout is ambiguous: columns are labelled lagged variables, rows dependent variables, but the authors' text reads the rows as the causing variable and the columns as the outcome (e.g. row ICT(t), column MAV(t-1) = -34.3608 is read as the effect of ICT on MAV; row RGDP(t), column ICT(t-1) = 0.0389 is read as growth raising ICT). I followed the authors' reading. Under the literal reading the ICT-to-RGDP coefficients would be 0.0389, 0.2751, 0.0215, 0.0149 and 0.0175 (all positive, significant). Table 10 shows RGDP does not Granger-cause ICT in the full sample (p=0.798) while Table 11 gives a significant coefficient. Stars in Tables 5-9 legends are inverted (*** said to be 10%). Table 8 header says 'telecommunication infrastructures'. Text claims in Fig. 3 discussion on signs conflict with Table 11. Descriptive RGDP values in Table 4 (max 100) do not look like GDP in billions. Also reports panel unit root, cointegration (Johansen-Fisher, Westerlund) and causality results, not coded as payoff estimates. Industrialisation (MAV) coded as family 2 (structural change).",
+  "quote_check": {
+   "verified": 3,
+   "checked": 3
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "corrected": 11
+   },
+   "heterogeneity": {
+    "corrected": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Quantitative panel VAR-GMM, ICT/mobile/internet exposure, 171 economies with income-group comparison, outcomes GDP (family 1) and manufacturing share (family 2).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "note_n_economies": "171 is as stated (Data, p. 2042) but Table 4 obs 3496 = 184 x 19 and group obs 1235/988/779/494 = 65/52/41/26 x 19 do not match; kept as stated",
+    "years": "2000-2018 confirmed"
+   },
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. ICT(t-1) -> RGDP(t), entire sample: 0.0389 (0.0000)***, positive; p in parentheses.",
+     "quote": "RGDP(t)  0.8001 (0.0000)***  0.0389 (0.0000)***  5.5741 (0.0000)***; Table 11, p. 2057"
+    },
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. HIC ICT(t-1) -> RGDP(t): 0.2751 (0.036)**, positive.",
+     "quote": "RGDP(t) 0.9124 (0.0000)*** 0.2751 (0.036)** 8.4905 (0.0020)***; Table 11 HIC"
+    },
+    {
+     "n": 3,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. UMIC ICT(t-1) -> RGDP(t): 0.0215 (0.0010)**, positive and significant (record said null).",
+     "quote": "RGDP(t) 0.8138 (0.0000)*** 0.0215 (0.0010)** -11.9536; Table 11 UMIC"
+    },
+    {
+     "n": 4,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. LMIC ICT(t-1) -> RGDP(t): 0.0149 (0.0000)***, positive.",
+     "quote": "RGDP(t) 0.8161 (0.0000)*** 0.0149 (0.0000)*** -5.6073; Table 11 LIMC"
+    },
+    {
+     "n": 5,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. LIC ICT(t-1) -> RGDP(t): 0.0175 (0.0000)***, positive (record said negative -0.7658, which is lagged RGDP -> ICT).",
+     "quote": "RGDP(t) 0.9421 (0.0000)*** 0.0175 (0.0000)*** -0.4733; Table 11 LIC"
+    },
+    {
+     "n": 6,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. MAV(t-1) -> RGDP(t), entire sample: 5.5741 (0.0000)***, positive (record -0.0007 is lagged RGDP -> MAV). Not the focal exposure.",
+     "quote": "RGDP(t) 0.8001 (0.0000)*** 0.0389 (0.0000)*** 5.5741 (0.0000)***; Table 11"
+    },
+    {
+     "n": 7,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. ICT(t-1) -> MAV(t), entire sample: 0.0002 (0.0830)*, weakly positive (record -34.3608 is lagged MAV -> ICT).",
+     "quote": "MAV(t) -0.0007 (0.0000)*** 0.0002 (0.0830)* 0.9628 (0.0000)***; Table 11"
+    },
+    {
+     "n": 8,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. HIC ICT(t-1) -> MAV(t): 0.0037 (0.044)**, positive (record 0.3804 is lagged MAV -> ICT).",
+     "quote": "MAV(t) -0.0017 (0.096)* 0.0037 (0.044)** 0.8417; Table 11 HIC"
+    },
+    {
+     "n": 9,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. UMIC ICT(t-1) -> MAV(t): 0.0005 (0.0020)**, positive (record 204.2836 is lagged MAV -> ICT).",
+     "quote": "MAV(t) -0.0007 (0.081)* 0.0005 (0.0020)** 0.3797; Table 11 UMIC"
+    },
+    {
+     "n": 10,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. LMIC ICT(t-1) -> MAV(t): 0.0009 (0.0000)***, positive (record 102.6019 is lagged MAV -> ICT).",
+     "quote": "MAV(t) -0.0033 (0.0000)** 0.0009 (0.0000)*** 0.3455; Table 11 LIMC"
+    },
+    {
+     "n": 11,
+     "verdict": "corrected",
+     "correction": "Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), column RGDP(t-1)), so the recorded cell is the effect of lagged RGDP on ICT, not ICT on RGDP. LIC ICT(t-1) -> MAV(t): 0.0019 (0.0220)**, positive (record 12.9477 is lagged MAV -> ICT).",
+     "quote": "MAV(t) -0.0079 (0.0000)*** 0.0019 (0.0220)** 0.9184; Table 11 LIC"
+    },
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Under the table's own layout, ICT(t-1) -> RGDP(t) is positive and significant in every group: 0.0389 full, 0.2751 HIC (0.036), 0.0215 UMIC (0.0010), 0.0149 LMIC, 0.0175 LIC (0.0000). No sign reversal in LIC and no insignificant UMIC; the authors' own text transposes the matrix.",
+     "quote": "ICT(t) -0.13799 (0.2380) vs Table 10 UMIC: RGDP not-> ICT 0.2380; Table 10 UMIC ICT not-> RGDP 0.0010***"
+    },
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "ICT -> MAV is positive in all five samples (0.0002*, 0.0037**, 0.0005**, 0.0009***, 0.0019**), so there is no internal inconsistency in the full sample; the Granger part (ICT not-> MAV rejected in all groups, p 0.0830/0.0440/0.0020/0.0010/0.0220) is confirmed.",
+     "quote": "MAV(t) -0.0007 (0.0000)*** 0.0002 (0.0830)* 0.9628; Table 11 entire sample"
+    }
+   ],
+   "problems": "Core error: record follows the authors' transposed reading of Table 11, contradicted by Table 10 p-values (entire-sample ICT row RGDP col 0.0080 vs Table 10 RGDP not-> ICT p=0.7980 shows the authors' table is itself inconsistent there). Record's 'internal inconsistency' in signs disappears under the table layout. Record says outcome 'Real GDP' growth effect 0.007%, which is not supported. Stars in Table 11 are inconsistent with p (e.g. 0.0010**)."
+  }
+ },
+ {
+  "idx": "9104",
+  "title": "Information and Communication Technology (ICT), Growth and Development in Developing Regions: Evidence from a Comparative Analysis and a New Approach",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel VAR-GMM study with its own estimation, ICT diffusion (mobile, fixed telephone, internet index) as exposure, 73 economies across three regions (SSA, MENA, LAAC), and outcomes real GDP (family 1) and the Human Development Index (family 5).",
+  "stream": "H",
+  "technology": [
+   "ICT in general (PCA index of mobile-cellular, fixed-telephone and internet use)",
+   "mobile telephony",
+   "internet"
+  ],
+  "exposure_measure": "ICT diffusion index: first principal component of mobile-cellular subscriptions per 100, fixed-telephone subscriptions per 100 and % of individuals using the Internet (ITU data); component 1 eigenvalue 2.319, 77.3% of variance (Table 3).",
+  "sample": {
+   "n_economies": "73",
+   "economies_or_groups": "Sub-Saharan Africa (40), MENA (14), Latin America and the Caribbean (19); described by authors as developing regions",
+   "income_groups_covered": "mixed (regional groups, not income groups; sample includes some high-income economies such as Israel, Kuwait, Bahrain, Saudi Arabia, Oman, Chile, Uruguay, Seychelles, Trinidad and Tobago, although no income classification is reported)",
+   "years": "2000-2018",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel VAR in GMM (Abrigo and Love 2016 Stata routine), forward orthogonal deviations; also Granger causality Wald tests, FEVD, IRFs; panel unit root and cointegration tests (Johansen-Fisher, Westerlund)",
+   "identification": "other",
+   "key_controls_fixed_effects": "Three-variable system only (ICT index, log real GDP, log HDI); country-specific effects removed by Helmert transformation; no other controls; lag order not reported (said to be available on request)."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Real GDP (constant 2010 US$; proxy for growth) response to lagged ICT index, entire sample",
+    "direction": "negative",
+    "estimate": "-0.437 (Table 11, RGDP(t) row, ICT(t-1) column)",
+    "uncertainty": "p = 0.000, *** (p-values in parentheses)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p.14728, Entire sample row RGDP(t): '-0.437 (0.000)***'. Text p.14727 reads the 0.01% effect as positive; policy section p.14738 notes 'negative impact of ICT on economic growth at the panel level'."
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP response to lagged ICT index, SSA",
+    "direction": "negative",
+    "estimate": "-0.548",
+    "uncertainty": "p = 0.044, **",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p.14728, SSA RGDP(t) row: '-0.548 (0.044)**'. Table 10 gives p = 0.000 for the same ICT-to-RGDP Granger test."
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP response to lagged ICT index, MENA",
+    "direction": "positive",
+    "estimate": "0.435",
+    "uncertainty": "p = 0.000, **",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p.14728, MENA RGDP(t) row: '0.435 (0.000)**'. Text says impact of ICT on growth is 'more pronounced' in MENA (p.14728)."
+   },
+   {
+    "family": 1,
+    "indicator": "Real GDP response to lagged ICT index, LAAC",
+    "direction": "negative",
+    "estimate": "-0.406",
+    "uncertainty": "p = 0.000, ***",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p.14728, LAAC RGDP(t) row: '-0.406 (0.000)***'."
+   },
+   {
+    "family": 1,
+    "indicator": "Authors' headline reading of ICT effect on growth, entire sample (text)",
+    "direction": "positive",
+    "estimate": "0.01% increase in growth per 1% increase in ICT (text only)",
+    "uncertainty": "'at a 1% significance level' (text); no coefficient in Table 11 matches",
+    "horizon": "not reported",
+    "evidence": "p.14727: 'if ICT diffusion increases by 1%, economic growth will increase by 0.01%'. Contradicts Table 11 sign for ICT(t-1) in RGDP equation."
+   },
+   {
+    "family": 5,
+    "indicator": "Human Development Index response to lagged ICT index, entire sample",
+    "direction": "positive",
+    "estimate": "0.697",
+    "uncertainty": "p = 0.010, **",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p.14728, Entire sample HDI(t) row: '0.697 (0.010)**'. Text p.14728 reports 0.01% rise per 1% ICT, which does not match."
+   },
+   {
+    "family": 5,
+    "indicator": "HDI response to lagged ICT index, SSA",
+    "direction": "positive",
+    "estimate": "0.972",
+    "uncertainty": "p = 0.036, **",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p.14728, SSA HDI(t) row: '0.972 (0.036)**'. Table 10 gives p = 0.001 for ICT to HDI."
+   },
+   {
+    "family": 5,
+    "indicator": "HDI response to lagged ICT index, MENA",
+    "direction": "negative",
+    "estimate": "-3.259",
+    "uncertainty": "p = 0.000, **",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p.14728, MENA HDI(t) row: '-3.259 (0.000)**'. Abstract says ICT is a positive predictor of development in all regions, so table and abstract conflict."
+   },
+   {
+    "family": 5,
+    "indicator": "HDI response to lagged ICT index, LAAC",
+    "direction": "positive",
+    "estimate": "1.803",
+    "uncertainty": "p = 0.000, ***",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11, p.14728, LAAC HDI(t) row: '1.803 (0.000)***'."
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Region differences only (no income-group split): ICT-to-growth coefficient is positive in MENA and negative in the entire sample, SSA and LAAC per Table 11; the authors state the effect on growth is larger in MENA and the effect on development larger in SSA.",
+    "threshold_value": "none",
+    "evidence": "p.14728: 'impact of ICT diffusion is more pronounced on growth in the MENA region'; 'For SSA, the impact of ICT diffusion is more pronounced on development'."
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "4 PVAR systems (entire sample, SSA, MENA, LAAC), each with 3 equations; one lag structure; no robustness variants of the PVAR",
+  "headline_is_preferred_specification": "no",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "All three variables treated as endogenous with internal GMM lag instruments, which addresses simultaneity only partly; no controls (investment, human capital, trade, institutions); series are I(1) and results are interpreted causally ('causal-effect relationship'); lag order and instrument validity tests not reported.",
+    "evidence": "Methodology p.14712-14713; p.14703 'causal-effect relationship'; p.14721 lag length 'not reported to save space'"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "PCA index mixes fixed-telephone, mobile and internet penetration, so the index units are arbitrary (mean about 0, SD 1.5) and the coefficient has no natural unit; interpolation and extrapolation used for missing data.",
+    "evidence": "Table 3 p.14717; Table 1 footnote p.14715-14716; Table 4 p.14718"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "73 countries in three regions chosen by region, 2000-2018, with interpolated data; labelled developing but includes some high-income economies; no income-group comparison.",
+    "evidence": "Table 2 p.14716; p.14713-14714"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Real GDP (apparently in logs, Table 4 means about 23.9, while Table 1 says billion dollars) is called a proxy for 'economic growth' although it is a level; HDI (log, negative values) is a slowly moving composite and used as 'development'; the variable transformation is not stated.",
+    "evidence": "Table 1 p.14715; Table 4 p.14718"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Lag order not reported; unit root results are inconsistent across tests (e.g. LLC results with implausible statistics); PVAR on I(1) series with cointegration found but no error-correction treatment; coefficient interpretation in text is inconsistent with the table.",
+    "evidence": "Table 5 p.14721-14722; Table 8 p.14725; p.14727"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Abstract and conclusion state ICT is a significant positive predictor of growth and development in all regions, but Table 11 gives negative ICT coefficients for growth (entire, SSA, LAAC) and for HDI in MENA; the text reads -0.437 as a growth-to-ICT effect and p-values and stars in Tables 10 and 11 do not match (e.g. SSA 0.044 vs 0.000; MENA '0.590***').",
+    "evidence": "Abstract p.14700; Table 10 p.14727; Table 11 p.14728; p.14737-14738"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Table 11 is laid out with equation variable in rows and lagged regressors in columns; I read coefficients under the ICT(t-1) column as the effect of lagged ICT on that row's variable, which matches the p-values in Table 10 (e.g. ICT to HDI entire sample p = 0.010; RGDP to ICT p = 0.088 appears at 0.018 in the ICT(t) row). The authors' text instead describes -0.437 as the effect of growth on ICT and states a positive 0.01% ICT-to-growth effect that is not in the table; the policy section (p.14738) separately says the ICT effect on growth is negative at the panel level. Reported effects are coefficients of a VAR with an ICT index and log levels, no marginal-effect units. No regression observation counts are printed (Table 4 lists 1387, 760, 266, 361 descriptive observations). Heavy self-citation of the authors' own work. No instructions directed at the reader were found in the text.",
+  "quote_check": {
+   "verified": 7,
+   "checked": 7
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 9
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own PVAR-GMM estimation; ICT (mobile, fixed, internet PCA index); 73 economies (>=10); outcomes real GDP (output) and HDI (living standards beyond income). Eligible.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Extractor's table reading is right: Table 11 signs are negative for ICT(t-1) in the RGDP equation (entire -0.437, SSA -0.548, LAAC -0.406) and positive only for MENA (0.435). Abstract, p.14727 text ('growth will increase by 0.01%') and conclusion ('positive and significant impact on growth') contradict the table; the authors also misread -0.437/-0.548/-0.406 as growth-to-ICT effects (p.14728), while their own policy section says 'negative impact of ICT on economic growth at the panel level' (p.14737) and 'significant negative impact of technology (ICT)' (p.14738). Notes field correctly says no regression n printed; Table 4 Obs are 1387/760/266/361. No invented content found."
+  }
+ },
+ {
+  "idx": "9105",
+  "title": "The impact of ICT on economic growth-Comparing rich and poor countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative IV-GMM panel of 123 economies (45 high, 58 middle, 20 low income) with an explicit income-group comparison; exposure is mobile, internet and fixed broadband (plus a PCA ICT index); outcomes are GDP per capita and labour productivity (family 1).",
+  "stream": "H",
+  "technology": [
+   "ICT (PCA index of mobile, internet, fixed broadband)",
+   "mobile telephony",
+   "internet",
+   "fixed broadband"
+  ],
+  "exposure_measure": "Logs of mobile subscriptions per 100 people, internet users (% of population), fixed broadband subscriptions per 100 people (WDI 2019), and a first-principal-component ICT index built from the three logged series, estimated separately for each income group (Table 2, Section 3.3).",
+  "sample": {
+   "n_economies": "123",
+   "economies_or_groups": "45 high-income, 58 middle-income, 20 low-income economies (Table A1)",
+   "income_groups_covered": "high, middle (upper and lower middle pooled), low",
+   "years": "2002-2017",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "IV-GMM (robust), estimated separately for HIC, MIC and LIC; Hansen over-identification test; Pedroni cointegration and LLC/IPS unit-root tests reported",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Controls are log investment (gross fixed capital formation) and log labour force; instruments are the first and second lags of investment (lags of ICT were first tried but Hansen test rejected in some cases); no country or year fixed effects mentioned (p. 5, Eq. 6)."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita (constant 2010 US$), elasticity w.r.t. log ICT index, HIC",
+    "direction": "positive",
+    "estimate": "0.094***",
+    "uncertainty": "robust SE (0.032)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, col 4, p. 9: 'lnict 0.094*** (0.032)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita, elasticity w.r.t. log ICT index, MIC",
+    "direction": "positive",
+    "estimate": "0.422***",
+    "uncertainty": "robust SE (0.023)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, col 8, p. 9: 'lnict 0.422*** (0.023)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita, elasticity w.r.t. log ICT index, LIC",
+    "direction": "positive",
+    "estimate": "0.158***",
+    "uncertainty": "robust SE (0.028)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, col 12, p. 9: 'lnict 0.158*** (0.028)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log GDP per capita, individual indicators (mobile, internet, fixed broadband) by group",
+    "direction": "positive",
+    "estimate": "HIC: mobile 0.262, internet 0.751, fbb 0.319; MIC: 0.440, 0.353, 0.192; LIC: 0.091, 0.149, 0.091 (all ***)",
+    "uncertainty": "robust SEs 0.013-0.091 in parentheses",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, cols 1-3, 5-7, 9-11, p. 9"
+   },
+   {
+    "family": 1,
+    "indicator": "Log labour productivity (output per worker, Conference Board), elasticity w.r.t. log ICT index (HIC / MIC / LIC)",
+    "direction": "positive",
+    "estimate": "HIC 0.065***; MIC 0.374***; LIC 0.218***",
+    "uncertainty": "robust SE (0.025); (0.028); (0.063)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9, cols 4, 8, 12, p. 10: 'lnict 0.065*** (0.025) ... 0.374*** (0.028) ... 0.218*** (0.063)'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "ICT-index elasticity for GDP per capita is largest in MIC (0.422), then LIC (0.158), then HIC (0.094); authors conclude poor countries gain more. For internet and fixed broadband the HIC coefficients are the largest, and for mobile MIC is largest. No formal test of coefficient differences is reported.",
+    "threshold_value": "none",
+    "evidence": "Section 4, p. 8: 'MIC gains more than LIC and HIC from the ICT revolution'; Table 8, p. 9"
+   }
+  ],
+  "income_group_results": {
+   "high": "ICT index elasticity 0.094*** (SE 0.032) for GDP per capita; 0.065*** for labour productivity",
+   "upper_middle": "not reported separately (pooled in MIC: 0.422*** GDP per capita; 0.374*** labour productivity)",
+   "lower_middle": "not reported separately (pooled in MIC)",
+   "low": "ICT index elasticity 0.158*** (SE 0.028) for GDP per capita; 0.218*** for labour productivity"
+  },
+  "n_specifications_reported": "24 (12 per outcome: 4 ICT measures x 3 income groups) in Tables 8 and 9; further specifications with ICT-lag instruments are in supplementary material, not seen",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('ICT increases economic growth'). Instruments are lags of investment, which is also an included control, and have no stated link to ICT beyond persistence; ICT-lag instruments were abandoned after Hansen rejections. Only two controls (investment, labour); no human capital or institutions; no stated fixed effects. Hansen p-values of 0.062 and 0.077 in some models are marginal.",
+    "evidence": "Section 3.2, p. 5; Table 8 Hansen rows, p. 9"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "PCA index of three logged indicators with group-specific weights, so index scales are not comparable across income groups; cross-group comparison of elasticities is therefore fragile. Index elasticity in HIC (0.094) is far below each component's (0.26-0.75), which is unexplained.",
+    "evidence": "Section 3.3, Tables 4-5, pp. 5, 11; Table 8, p. 9"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "123 economies over 2002-2017 from WDI, broad coverage, but panel is unbalanced (observations in Table 8 are below 45 x 16 = 720 for HIC and as low as 224 for LIC); MIC pooled upper and lower middle; the stated income thresholds are applied to a fixed list with no explanation of year of classification.",
+    "evidence": "Table 3, p. 6; Table 8 observations row, p. 9; Table A1 footnote, p. 14"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP per capita level (constant 2010 US$, in logs) is labelled 'economic growth'; this is a level, not a growth rate. Labour productivity is from the Conference Board and has fewer observations.",
+    "evidence": "Table 2, p. 6; Section 4.1 and footnote 4, p. 11"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Instrument set was changed after over-identification tests rejected in some models; unit-root results say variables are stationary though several IPS(0) statistics are not significant; one specification per measure and group; no sensitivity to controls, lags or estimators.",
+    "evidence": "Section 3.2, p. 5; Table 6, p. 12; Section 3.4, p. 6"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only ICT coefficients shown ('For brevity'); first-stage and ICT-lag results relegated to supplementary material; conclusion that poor countries gain more rests on the index and mobile while internet and fixed broadband coefficients are largest in HIC; no test of group differences.",
+    "evidence": "Section 4, p. 6 and p. 8; Table 8, p. 9"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "No instruction-like text aimed at the reader was found. Oddities for a reviewer: (1) the authors read elasticities as percent changes ('increases HIC economic growth by 0.26%'); (2) Table 3 reports lnk with a max of 25.177 for HIC, implausible for a log of investment % of GDP; (3) the Section 4.1 text says 'MIC economic growth' where labour productivity is meant; (4) Table 8 observation counts (e.g. 630 for 45 HIC) imply about 14 years per country, not 16; (5) Section 3.4 states variables are stationary although IPS(0) is not significant for several series; (6) Table A1 leaves Guinea-Bissau's code blank and the list is classified under a single set of income thresholds; (7) 'poor countries gain more' is not supported for internet and fixed broadband. Supplementary material with ICT-lag instruments was not available in the text.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 5
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own IV-GMM estimation on 123 economies (45 HIC, 58 MIC, 20 LIC) with explicit income-group comparison; exposure is mobile, internet, fixed broadband and a PCA ICT index; outcomes are GDP per capita and labour productivity (family 1).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "none material; record agrees with the text. Minor: Table 3 gives 720/928/320 obs for lngdp while Table 8 uses 630/812/280 or fewer (record notes this); n_specifications 24 correct; Hansen p-values 0.077 (col 3) and 0.062 (col 9) correct."
+  }
+ },
+ {
+  "idx": "9106",
+  "title": "Mobile Phones and Local Economic Development: A Global Evidence",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Own quantitative estimation of mobile network (2G/3G/4G) coverage on district-level economic activity in about 120 countries; the outcome (nightlights) is treated as an output proxy under family 1, per the assignment instruction.",
+  "stream": "H",
+  "technology": [
+   "mobile telephony",
+   "mobile broadband (3G/4G)"
+  ],
+  "exposure_measure": "Share of district population living in areas covered by 2G, 3G/4G or any mobile network (0-1), from GSMA/Collins Bartholomew coverage maps combined with 1km population grids",
+  "sample": {
+   "n_economies": "120 (abstract/intro); 106 in main IV regressions with controls (119 in Table 1 col 1; 86 for 3G/4G)",
+   "economies_or_groups": "Global, over 34,000 second-level administrative districts; developing vs developed split at baseline World Bank income class",
+   "income_groups_covered": "mixed (high, upper-middle, lower-middle, low; grouped as developed = HIC+UMIC, developing = LIC+LMIC)",
+   "years": "1998-2018 (2G); 2006-2018 (3G/4G)",
+   "unit": "other (district-year)"
+  },
+  "design": {
+   "estimator": "TWFE; De Chaisemartin-D'Haultfoeuille heterogeneity-robust DiD; 2SLS with leave-one-out regional lagged coverage instrument; second 2SLS with instrument interacted with lightning-intensity quintiles",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "District and year FE; temperature, precipitation, trends x distance to coast/lat/long; Polity IV, baseline income class, resource dependence, no-universal-electricity dummy x trends; regional spatially weighted GDP growth and trade; SE clustered by district"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Growth in nightlight intensity (output proxy), district level, IV 2SLS, mobile coverage (all), full controls",
+    "direction": "positive",
+    "estimate": "0.0777 (per 1 pp... coverage measured as share 0-1; text: 10 pp increase -> 0.78 pp growth in nightlights)",
+    "uncertainty": "SE 0.0098, *** (p<0.01)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 col 2, p.30; p.16: 'a 10 pp increase in mobile phone coverage results in a 0.6 pp increase' (col 1: 0.0596, SE 0.0078)"
+   },
+   {
+    "family": 1,
+    "indicator": "Implied GDP growth elasticity to mobile coverage (author back-of-envelope using Henderson et al. 2012 nightlight-GDP elasticity 0.3; not separately estimated)",
+    "direction": "positive",
+    "estimate": "0.018-0.023 pp GDP growth per 1 pp coverage (derived by author)",
+    "uncertainty": "not reported",
+    "horizon": "contemporaneous",
+    "evidence": "Abstract and p.3, p.17: 'GDP growth - mobile penetration elasticity of 0.018 - 0.023'"
+   },
+   {
+    "family": 1,
+    "indicator": "Nightlight growth, 2G coverage, IV",
+    "direction": "positive",
+    "estimate": "0.0351 (col 3), 0.0321 (col 4)",
+    "uncertainty": "SE 0.0181 (*), 0.0183 (*)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 cols 3-4, p.30"
+   },
+   {
+    "family": 1,
+    "indicator": "Nightlight growth, 3G/4G coverage, IV",
+    "direction": "mixed",
+    "estimate": "0.0169 (col 5, no regional controls, not significant), 0.0707*** (col 6)",
+    "uncertainty": "SE 0.0194; 0.0217",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 cols 5-6, p.30"
+   },
+   {
+    "family": 1,
+    "indicator": "Nightlight growth, alternative lightning-interaction IV, mobile coverage (all)",
+    "direction": "positive",
+    "estimate": "0.0447*** (col 1), 0.0464*** (col 2)",
+    "uncertainty": "SE 0.0063; 0.0077",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.31"
+   },
+   {
+    "family": 1,
+    "indicator": "Nightlight growth, TWFE and C&D heterogeneity-robust estimators",
+    "direction": "positive",
+    "estimate": "TWFE 0.0179*** / 0.0136*** (all coverage); C&D 0.0052** / 0.0058**; 3G/4G TWFE -0.0008 (ns) in col 5",
+    "uncertainty": "SE 0.0010; 0.0010; 0.0026; 0.0027",
+    "horizon": "contemporaneous",
+    "evidence": "Table 1 Panels A and C, p.28"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Mobile (all) effect larger in developing (LIC+LMIC) than developed countries; 2G effect only in developing; 3G/4G effect positive in both, interaction insignificant once regional controls added",
+    "threshold_value": "none",
+    "evidence": "Table 5, p.32; p.18: '0.5 pp growth in nightlights in developed ... compared to a 0.9 pp increase in developing'. Interactions: all 0.0387*** / 0.0395***; 2G 0.0255*** / 0.0265***; 3G/4G 0.0969** / 0.0577 (ns)"
+   },
+   {
+    "moderator": "infrastructure",
+    "finding": "Effects larger where baseline fixed-line telephone penetration is below median; 2G effect significant only there",
+    "threshold_value": "below-median baseline fixed telephone penetration",
+    "evidence": "Table 6, p.33; interactions all 0.0352*** / 0.0332***; 2G 0.0469*** / 0.0439***; 3G/4G 0.2412*** / 0.2019***"
+   }
+  ],
+  "income_group_results": {
+   "high": "Developed (HIC+UMIC pooled): mobile (all) 0.0510*** (col 2, SE 0.0083); 2G not significant; 3G/4G 0.0868***",
+   "upper_middle": "pooled with high income",
+   "lower_middle": "Developing (LIC+LMIC pooled): mobile (all) 0.0510+0.0395=about 0.09 per text ('0.9 pp' per 10 pp); 2G effect present",
+   "low": "pooled with lower-middle; no separate low-income estimate"
+  },
+  "n_specifications_reported": "about 40 (6 columns each in Tables 1-6, plus A2, A4)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "Author concedes TWFE/C&D are not causal (pre-trends, endogenous rollout). IV uses regional leave-one-out coverage; exclusion restriction plausible but contestable (common regional shocks, regional policy and trade/GDP controls only). Second instrument gives smaller estimates (0.0464 vs 0.0777).",
+    "evidence": "pp.9-11, 14-17; Tables 3-4"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Coverage share from operator-submitted maps, not usage or subscriptions; 2005 and 2010 coverage interpolated; coverage shows population-weighted area access, not adoption.",
+    "evidence": "Section 2.1, p.5-6, fn.7"
+   },
+   "selection_of_countries_years": {
+    "rating": "low",
+    "why": "Near-global district panel (106-120 countries); sample varies by specification (86 countries for 3G/4G). Leave-one-country-out check reported in appendix figure.",
+    "evidence": "Tables 1-3; Section 5"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Nightlights are a proxy for economic activity; GDP-growth interpretation relies on an external 0.3 elasticity from Henderson et al. 2012; DMSP/VIIRS harmonised series; lights may reflect electrification, not output (partly controlled by electricity-access trend).",
+    "evidence": "Section 2.2 p.6-7; p.17"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Several instruments, controls, and technology splits; preferred spec stated (cols 2,4,6). Estimates sensitive: 3G/4G col 5 insignificant, 2G TWFE and IV differ; Table A4 2G/3G estimates much larger than main.",
+    "evidence": "Tables 3, A4"
+   },
+   "selective_reporting": {
+    "rating": "low",
+    "why": "Reports null/insignificant and pre-trend placebo failures openly; mixed results shown.",
+    "evidence": "Table 1 Panel C, p.10-11"
+   }
+  },
+  "overall_risk_of_bias": "moderate",
+  "venue_quality_concern": "possible (World Bank Policy Research Working Paper, not peer reviewed; some table notes contain draft artefacts such as stray '....')",
+  "notes": "Nightlights treated as an output proxy under family 1 (per assignment). No GDP outcome estimated directly; GDP elasticity 0.018-0.023 is a back-of-envelope conversion using an external elasticity. Table 1 has mislabelled panels (Panel A then 'Panel C'; text says panel B) and Table 1 3G/4G TWFE col 5 is -0.0008 (ns). Table 5 title duplicates Table 6 title and its note mentions 'Low Fixed Telephone Penetration' (copy-paste). DIDpl,2 for 3G/4G shows 0.0525*** and -0.0536*** in cols 5-6 (sign inconsistency, possibly typo). Text says 'mobile broadband (3G/4G) ... 2.1 pp increase' loosely. The developing-country 'about 0.9 pp' is from text, not a printed coefficient. No instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 3,
+   "checked": 3
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (TWFE, C&D DiD, 2SLS) of mobile 2G/3G/4G coverage; 106-120 countries (>=10) with explicit developing vs developed income-group comparison. Outcome is district nightlight growth, which the paper uses as a proxy for local economic activity (Henderson et al. 2011, 2012). Reading it as a family-1 output proxy is acceptable: nightlights are a standard, validated proxy for subnational activity, and the paper itself says it measures activity, not GDP. Two caveats: lights can also capture electrification or lighting rather than value added, and the GDP elasticity of 0.018-0.023 is an external back-of-envelope conversion (0.3 from Henderson et al.), not an estimate. Eligibility holds; the nightlight outcome should be flagged as a proxy.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "Record is correct: abstract/intro say 120 countries (p.1, p.3); Table 1 col 1 has 119, main IV tables 106 (105 for 2G, 86 for 3G/4G); Table 6 has 104/103/85. 'over 34,000 districts' confirmed (34,387 in Table 1 col 1).",
+    "years": "Record correct: 2G 1998-2018, 3G/4G 2006-2018 (Sec 2.1). Add: 2005 and 2010 coverage is linearly interpolated (fn 7); Table A4 robustness restricts to 1998-2013.",
+    "income_groups_covered": "Record correct: HIC+UMIC pooled as 'developed', LIC+LMIC pooled as 'developing' at baseline World Bank class (fn 31); no separate four-way estimates."
+   },
+   "corrections": [],
+   "problems": "Estimate field of result 1 is garbled but numbers are right. Result 2 is a derived conversion, not an estimate. Result 6 'positive' overlooks the null 3G/4G TWFE in col 5. Paper has typos (Table 1 panel labels, Table 5 note copied from Table 6, 'DIDpl,2' printed twice, DIDpl,2 3G/4G shows 0.0525*** and -0.0536*** in cols 5-6, as printed). Nothing invented or mixed with another paper. Venue is a World Bank working paper (PRWP 10526, July 2023). No instruction-like text in the paper."
+  }
  }
 ]

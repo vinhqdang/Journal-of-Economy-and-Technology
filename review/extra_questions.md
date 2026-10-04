@@ -4,13 +4,13 @@ Specified in `extra_questions_spec.md` before the analyses were run. Exploratory
 
 ## RQ2 to RQ4: extra moderators in the meta-regression
 
-Same weighted regression as the pilot (103 estimates, 18 papers, standard errors clustered by paper), adding one variable at a time to `lowmid`, `gmm`, `mobile` and `internet`.
+Same weighted regression as the pilot (125 estimates, 20 papers, standard errors clustered by paper), adding one variable at a time to `lowmid`, `gmm`, `mobile` and `internet`.
 
 | Question | Added variable | Share of estimates with variable = 1 (or mean) | Coefficient | Clustered SE | p | Papers with variation |
 |---|---|---|---|---|---|---|
-| RQ2 measurement | composite index as exposure | 0.16 | 0.0706 | 0.1056 | 0.50 | 1 of 18 |
-| RQ3 outcome form | growth-rate outcome | 0.45 | 0.0425 | 0.1008 | 0.67 | 1 of 18 |
-| RQ4 time | sample midyear, centred (per year) | -0.00 | -0.0142 | 0.0089 | 0.11 | 17 of 17 |
+| RQ2 measurement | composite index as exposure | 0.13 | 0.0526 | 0.0942 | 0.58 | 1 of 20 |
+| RQ3 outcome form | growth-rate outcome | 0.45 | -0.0315 | 0.1046 | 0.76 | 1 of 20 |
+| RQ4 time | sample midyear, centred (per year) | -0.00 | -0.0127 | 0.0084 | 0.13 | 19 of 19 |
 
 A coefficient on `composite` or `growth` is the average difference in partial correlation relative to single-indicator or level estimates. Several papers contribute estimates with the same value of the added variable, so these tests rest on between-paper contrasts and are weak.
 
@@ -18,33 +18,33 @@ A coefficient on `composite` or `growth` is the average difference in partial co
 
 | Outcome | Studies listing a low-income economy | Studies not listing one | Odds ratio | Fisher p |
 |---|---|---|---|---|
-| No identification strategy (versus any) | 8 of 20 (40%) | 29 of 51 (57%) | 0.51 | 0.29 |
-| Moderate risk of bias (versus serious or critical) | 2 of 20 (10%) | 6 of 51 (12%) | 0.83 | 1.00 |
+| No identification strategy (versus any) | 9 of 24 (38%) | 30 of 53 (57%) | 0.46 | 0.14 |
+| Moderate risk of bias (versus serious or critical) | 3 of 24 (12%) | 6 of 53 (11%) | 1.12 | 1.00 |
 
-20 of 71 studies list at least one low-income economy; studies that report no income coverage are counted as not listing one, which biases the comparison toward the second column.
+24 of 77 studies list at least one low-income economy; studies that report no income coverage are counted as not listing one, which biases the comparison toward the second column.
 
 ## RQ6: does study quality go with the reported direction for output?
 
-- all family-1 results positive: moderate-risk studies 1 of 1; serious or critical 8 of 37; odds ratio inf, Fisher p = 0.24.
-- at least one negative or null family-1 result: moderate-risk studies 0 of 1; serious or critical 21 of 37; odds ratio 0.00, Fisher p = 0.45.
+- all family-1 results positive: moderate-risk studies 1 of 2; serious or critical 9 of 42; odds ratio 3.67, Fisher p = 0.41.
+- at least one negative or null family-1 result: moderate-risk studies 0 of 2; serious or critical 25 of 42; odds ratio 0.00, Fisher p = 0.18.
 
-Base: 38 studies with at least one output or productivity result. Most studies report several results, so "all positive" is a demanding criterion.
+Base: 44 studies with at least one output or productivity result. Most studies report several results, so "all positive" is a demanding criterion.
 
 ## RQ7: which enabling conditions are tested, and in which direction?
 
 | Moderator | Studies | Entries | Amplifies | Dampens | Mixed | Null | Unclear | Formally tested entries |
 |---|---|---|---|---|---|---|---|---|
-| other_country_characteristic | 28 | 35 | 4 | 7 | 16 | 2 | 6 | 15 |
-| income_group | 19 | 20 | 7 | 3 | 3 | 5 | 2 | 5 |
+| other_country_characteristic | 29 | 36 | 4 | 7 | 17 | 2 | 6 | 15 |
+| income_group | 24 | 27 | 8 | 5 | 7 | 5 | 2 | 6 |
 | human_capital | 14 | 15 | 8 | 3 | 4 | 0 | 0 | 8 |
+| infrastructure_connectivity | 9 | 9 | 5 | 2 | 1 | 0 | 1 | 5 |
 | institutions_governance | 8 | 9 | 3 | 2 | 4 | 0 | 0 | 6 |
 | sector_structure | 8 | 8 | 0 | 1 | 6 | 0 | 1 | 3 |
-| infrastructure_connectivity | 8 | 8 | 5 | 1 | 1 | 0 | 1 | 4 |
 | trade_openness | 6 | 6 | 3 | 2 | 1 | 0 | 0 | 6 |
 | financial_development | 5 | 5 | 2 | 1 | 1 | 0 | 1 | 3 |
 | time_period | 4 | 4 | 0 | 1 | 2 | 1 | 0 | 0 |
 
-144 heterogeneity entries from 71 studies; 34 are not moderation tests (robustness, control sensitivity or descriptive remarks) and are left out of the table. Classification by one model reader; a second reader classified a random 20% sample (n = 28) and agreed on the moderator type in 86% of entries (kappa 0.83), on the direction in 71% (kappa 0.64) and on whether the test was formal in 96% (kappa 0.93). Direction counts are therefore indicative only.
+153 heterogeneity entries from 77 studies; 34 are not moderation tests (robustness, control sensitivity or descriptive remarks) and are left out of the table. Classification by one model reader; a second reader classified a random 20% sample (n = 28) and agreed on the moderator type in 86% of entries (kappa 0.83), on the direction in 71% (kappa 0.64) and on whether the test was formal in 96% (kappa 0.93). Direction counts are therefore indicative only.
 
 ## RQ8: thresholds stated by the studies
 
@@ -74,6 +74,7 @@ Base: 38 studies with at least one output or productivity result. Most studies r
 | 1469 | other | 100 mobile subs per 100; internet 50% (primary), 65% (secondary) |
 | 1494 | other | DIG = 0.48 (Gini), about 0.50 (Theil) |
 | 1798 | institutions | 0.300 (voice and accountability), 0.300 (government effectiveness), 0.250 (rule of law); 2.500 (economic gover |
+| 9106 | infrastructure | below-median baseline fixed telephone penetration |
 
 Thresholds are in different units and rest on one study each. They are listed, not pooled. Where two studies state a threshold for the same variable they do not agree in an obvious way (human capital: composite index of 2.35 in Africa, median splits elsewhere).
 
@@ -83,24 +84,24 @@ A study counts in every income group its sample lists. Studies that report no in
 
 | Outcome family | Low | Lower-middle | Upper-middle | High | Coverage not reported | Studies |
 |---|---|---|---|---|---|---|
-| Output and productivity | 11 | 11 | 11 | 23 | 9 | 38 |
-| Structural change | 3 | 3 | 3 | 3 | 1 | 5 |
+| Output and productivity | 15 | 16 | 15 | 29 | 9 | 44 |
+| Structural change | 4 | 4 | 4 | 4 | 1 | 6 |
 | Labour market | 3 | 5 | 6 | 11 | 2 | 14 |
 | Poverty and distribution | 2 | 1 | 3 | 7 | 4 | 11 |
-| Living standards | 4 | 4 | 4 | 7 | 5 | 14 |
+| Living standards | 4 | 4 | 4 | 8 | 5 | 15 |
 | Resource cost | 2 | 1 | 2 | 6 | 0 | 6 |
 
 ## RQ10: AI stream versus historical-wave stream
 
 | Measure | Historical waves (H) | AI (AI or both) |
 |---|---|---|
-| Moderate risk of bias | 6 of 56 (11%) | 2 of 15 (13%) |
-| Critical risk of bias | 5 of 56 (9%) | 4 of 15 (27%) |
-| No identification strategy | 28 of 56 (50%) | 9 of 15 (60%) |
-| Compares income groups or regions | 22 of 56 (39%) | 6 of 15 (40%) |
-| Lists a low-income economy | 18 of 56 (32%) | 2 of 15 (13%) |
-| Median number of economies | 28.5 (n = 56) | 16 (n = 15) |
-| Median first sample year | 2000 (n = 56) | 2012 (n = 15) |
+| Moderate risk of bias | 7 of 62 (11%) | 2 of 15 (13%) |
+| Critical risk of bias | 5 of 62 (8%) | 4 of 15 (27%) |
+| No identification strategy | 30 of 62 (48%) | 9 of 15 (60%) |
+| Compares income groups or regions | 27 of 62 (44%) | 6 of 15 (40%) |
+| Lists a low-income economy | 22 of 62 (35%) | 2 of 15 (13%) |
+| Median number of economies | 32 (n = 62) | 16 (n = 15) |
+| Median first sample year | 2000 (n = 62) | 2012 (n = 15) |
 
-Low-income coverage, AI against historical: Fisher p = 0.20. Counts are small (AI n = 15).
+Low-income coverage, AI against historical: Fisher p = 0.13. Counts are small (AI n = 15).
 

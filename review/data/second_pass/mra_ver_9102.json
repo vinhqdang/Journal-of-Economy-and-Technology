@@ -1,0 +1,22 @@
+[
+ {
+  "idx": "9102",
+  "paper_verdict": {
+   "estimator_family": "FE (panel fixed effects with lagged dependent variable; pooled OLS and RE also reported)",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Outcome is the first difference of ln GDP per capita (growth rate; table labels it 'lnPCGDP') and exposure is a log level, so coefficients are semi-elasticity-type and not comparable to level or elasticity estimates. Pooled, FE and RE rows and the full-sample/subsample rows use the same data, so they are not independent; broadband rows reuse the same sample. Only the lagged dependent variable is lagged, exposure is contemporaneous; authors concede reverse causality remains and describe results as associations."
+  },
+  "estimates": [
+   {"estimate_id": "9102-1", "verdict": "confirmed", "corrections": {}, "quote": "lnIntUsage ... −0.006*** −0.012** −0.006*** (0.002) (0.005) (0.002)", "note": "Table 3 Model 11 FE, SE in parentheses (note: 'Standard errors in parentheses'); 780 obs, 78 countries."},
+   {"estimate_id": "9102-2", "verdict": "confirmed", "corrections": {}, "quote": "lnIntUsage 0.008* 0.006 0.008* (0.005) (0.009) (0.005)", "note": "Table 3 Model 2 FE; 99 obs, 22 countries."},
+   {"estimate_id": "9102-3", "verdict": "confirmed", "corrections": {}, "quote": "−0.001 −0.012 −0.001 (0.005) (0.009) (0.005)", "note": "Table 3 Model 5 FE; 335 obs, 30 countries."},
+   {"estimate_id": "9102-4", "verdict": "confirmed", "corrections": {}, "quote": "−0.021*** −0.021* −0.021*** (0.007) (0.011) (0.007)", "note": "Table 3 Model 8 FE; 346 obs, 26 countries."},
+   {"estimate_id": "9102-5", "verdict": "confirmed", "corrections": {}, "quote": "−0.006*** −0.012** −0.006***  (0.002) (0.005) (0.002)", "note": "Table 3 Model 10 pooled OLS; 780 obs, 78 countries. Same sample as 9102-1 and 9102-6."},
+   {"estimate_id": "9102-6", "verdict": "confirmed", "corrections": {}, "quote": "−0.006*** −0.012** −0.006***  (0.002) (0.005) (0.002)", "note": "Table 3 Model 12 RE; same sample as 9102-1 and 9102-5."},
+   {"estimate_id": "9102-7", "verdict": "confirmed", "corrections": {}, "quote": "−0.001** −0.004** −0.001** (0.001) (0.002) (0.001)", "note": "Table 4 Model 11 FE, lnFbrdP; 780 obs, 78 countries. Exposure unit for fixed-broadband subscribers not stated in Table 2 or Table 4 note ('FbrdP FB subscribers')."},
+   {"estimate_id": "9102-8", "verdict": "confirmed", "corrections": {}, "quote": "−0.000 −0.003 −0.000 (0.002) (0.004) (0.002)", "note": "Table 4 Model 2 FE; 99 obs, 22 countries."},
+   {"estimate_id": "9102-9", "verdict": "confirmed", "corrections": {}, "quote": "−0.001 −0.003 −0.001 (0.001) (0.003) (0.001)", "note": "Table 4 Model 5 FE; 335 obs, 30 countries."},
+   {"estimate_id": "9102-10", "verdict": "confirmed", "corrections": {}, "quote": "−0.001** −0.005* −0.001** (0.001) (0.003) (0.001)", "note": "Table 4 Model 8 FE; 346 obs, 26 countries."}
+  ]
+}
+]

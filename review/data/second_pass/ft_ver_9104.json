@@ -1,0 +1,87 @@
+[
+ {
+  "idx": "9104",
+  "eligibility_ok": true,
+  "eligibility_note": "Own PVAR-GMM estimation; ICT (mobile, fixed, internet PCA index); 73 economies (>=10); outcomes real GDP (output) and HDI (living standards beyond income). Eligible.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Direction and value as printed. Table 11 is laid out with the equation in rows and lagged regressors in columns (diagonal persistence terms, and p-values for HDI(t-1) in the RGDP and ICT rows match Table 10), so this cell is the ICT-to-RGDP coefficient.",
+    "quote": "Entire sample RGDP(t): 0.734 (0.000)*** \u22120.437 (0.000)*** \u22120.019 (0.005)***"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "As printed. The p=0.044 differs from p=0.000 for ICT->RGDP in Table 10 (paper-internal inconsistency, not an extraction error).",
+    "quote": "SSA RGDP(t): 0.883 (0.000)*** \u22120.548 (0.044)** 0.032 (0.088)*"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "As printed. Stars (**) do not match p=0.000 (paper inconsistency).",
+    "quote": "MENA RGDP(t): 0.551 (0.000)* 0.435 (0.000)** 0.008 (0.211)***"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "As printed.",
+    "quote": "LAAC RGDP(t): 0.473 (0.000)** \u22120.406 (0.000)*** \u22120.024 (0.322)***"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Correctly recorded as the authors' text claim, not a table value; direction positive is the text's, the table shows negative. Do not pool.",
+    "quote": "if ICT diffusion increases by 1%, economic growth will increase by 0.01% in the developing countries under study (p.14727)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "As printed; text p.14728 says 0.01% rise, which does not match 0.697.",
+    "quote": "Entire sample HDI(t): 0.537 (0.000)*** 0.697 (0.010)** 0.934 (0.000)***"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "As printed.",
+    "quote": "SSA HDI(t): 0.185 (0.008)*** 0.972 (0.036)** 0.697 (0.000)***"
+   },
+   {
+    "n": 8,
+    "verdict": "confirmed",
+    "correction": "As printed; conflicts with the abstract claim of a positive effect on development across regions.",
+    "quote": "MENA HDI(t): \u22120.631 (0.084)*** \u22123.259 (0.000)** 0.878 (0.0000)***"
+   },
+   {
+    "n": 9,
+    "verdict": "confirmed",
+    "correction": "As printed.",
+    "quote": "LAAC HDI(t): 1.725 (0.000)*** 1.803 (0.000)*** 0.881 (0.000)***"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "Regional signs per Table 11 (positive MENA; negative entire, SSA, LAAC for ICT in RGDP row) and authors' 'more pronounced' statements are correctly reported; no income-group split and no threshold.",
+    "quote": "the impact of ICT diffusion is more pronounced on growth in the MENA region when compared to the other regions"
+   }
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group results; regional groups only (SSA 40, MENA 14, LAAC 19 = 73 per Table 2). Future work is said to differentiate income groups (p.14740).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: internal GMM lags only, no controls, causal wording ('causal-effect relationship'), lag order unreported.",
+   "exposure_measurement": "agree: PCA index of fixed, mobile and internet, arbitrary units, interpolation used.",
+   "selection_of_countries_years": "agree: region-based sample of 73 incl. high-income economies, interpolation, 2000-2018.",
+   "outcome_measurement": "agree: RGDP level (apparently logged, Table 4 mean 23.899 vs 'billion dollars' in Table 1) used as growth proxy; HDI composite.",
+   "specification": "agree: serious; lag order not reported, I(1) series with cointegration and no ECM, unit-root tables erratic.",
+   "selective_reporting": "agree: serious; abstract, text and conclusion claim positive ICT effects on growth in all regions while Table 11 prints negative coefficients (entire, SSA, LAAC), and p-values/stars are inconsistent with Table 10.",
+   "why": "Serious overall is appropriate: causal framing without exogenous variation, no controls, and abstract/text contradict the printed table."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Extractor's table reading is right: Table 11 signs are negative for ICT(t-1) in the RGDP equation (entire -0.437, SSA -0.548, LAAC -0.406) and positive only for MENA (0.435). Abstract, p.14727 text ('growth will increase by 0.01%') and conclusion ('positive and significant impact on growth') contradict the table; the authors also misread -0.437/-0.548/-0.406 as growth-to-ICT effects (p.14728), while their own policy section says 'negative impact of ICT on economic growth at the panel level' (p.14737) and 'significant negative impact of technology (ICT)' (p.14738). Notes field correctly says no regression n printed; Table 4 Obs are 1387/760/266/361. No invented content found."
+ }
+]

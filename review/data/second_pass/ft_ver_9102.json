@@ -1,0 +1,33 @@
+[
+ {
+  "idx": "9102",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (pooled OLS, FE, RE) of internet users and fixed-broadband subscribers on GDP per capita growth (output outcome) for 78 economies with explicit LMI/UMI/HIC comparison; non-AI so the 10-economy threshold is met.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "lnIntUsage ... −0.006*** −0.012** −0.006*** (0.002) (0.005) (0.002); Observations 780, Number of Countries 78 (Table 3, Models 10-12)"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "lnIntUsage 0.008* 0.006 0.008* (0.005) (0.009) (0.005); Observations 99, Countries 22 (Table 3, Models 1-3)"},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "lnIntUsage −0.001 −0.012 −0.001 (0.005) (0.009) (0.005); Observations 335, Countries 30 (Table 3, Models 4-6)"},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "lnIntUsage −0.021*** −0.021* −0.021*** (0.007) (0.011) (0.007); Observations 346, Countries 26 (Table 3, Models 7-9)"},
+   {"n": 5, "verdict": "confirmed", "correction": "FE values and standard errors match Table 4. Direction 'mixed' is defensible (significant negative for full sample and HIC, insignificant for LMI and UMI), although every FE coefficient is negative. The record omits the pooled/RE Table 4 values: HIC and full sample are -0.001** (0.001) in pooled and RE, LMI is -0.000 and UMI -0.001.", "quote": "lnFbrdP −0.000 −0.003 −0.000 −0.001 −0.003 −0.001 −0.001** −0.005* −0.001** −0.001** −0.004** −0.001** (Table 4)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Sign pattern and significance as described. No interaction term or equality test appears in the text; threshold none is correct. The text itself says HIC is significant 'across the models', whereas FE is only p<0.1.", "quote": "In HICs (Models 7–9), the negative association persists and is significant across the models."}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "High, upper-middle and lower-middle entries match Tables 3 and 4 (FE and pooled/RE values, standard errors, significance stars). Low-income exclusion is stated: 'the low-income group contained fewer than ten countries with substantial data gaps' (p. 8619).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causality": "agree: serious. Only a lagged dependent variable, FE and macro controls; the exposure is contemporaneous and no IV or GMM is used, and the authors concede 'reverse causality between ICT adoption and growth remains a limitation'.",
+   "exposure_measurement": "agree: moderate. Internet users (% of population) is a standard but coarse diffusion proxy; fixed-broadband subscribers (unit not stated) is a second proxy.",
+   "selection_of_countries_years": "agree: moderate. Low-income countries are dropped, and the sample falls from 985 to 959 to 780 observations after differencing, unit-root and lag requirements; LMI has only 99 observations for 22 countries.",
+   "outcome_measurement": "agree: low. GDP per capita (constant 2015 US$, WDI), first-differenced in logs, is a standard growth measure; tables label the dependent variable 'lnPCGDP' although the equation uses the log difference.",
+   "specification": "agree: moderate. FE with a lagged dependent variable and short T, mixed logs and first differences, winsorising at 1/99 percent, and an equation with time effects μt while only two year dummies are reported. The equation shows ln(GDP t-1) but the tables report L.dlnPCGDP.",
+   "selective_reporting": "agree: moderate. The abstract says 'a negative association emerges in upper-middle-income' although every UMI coefficient is insignificant (the main text says so). Hausman, unit-root and diagnostic statistics are not shown. All models are reported.",
+   "why": "Standard WDI panel with reasonable controls, but exogeneity is not established and the conclusions and policy recommendations are phrased causally, which supports serious overall."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented or mixed-up content found; all extracted coefficients, standard errors, N and country counts match the text. Minor omissions: Table 4 pooled/RE broadband estimates (HIC and full sample significant at 5 percent) are not listed in result 5. The record's description of the lagged variable as 'lagged dlnGDP per capita' matches the tables (L.dlnPCGDP), but the printed equation uses ln(GDP t-1)."
+ }
+]

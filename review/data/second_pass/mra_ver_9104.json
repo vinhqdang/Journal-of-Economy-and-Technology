@@ -1,0 +1,40 @@
+[
+ {
+  "idx": "9104",
+  "paper_verdict": {
+   "estimator_family": "other (panel VAR-GMM, internal instruments)",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "PVAR coefficient on lagged ICT PCA index (arbitrary units) with RGDP in apparent log levels (not stated; Table 1 says billion dollars); no elasticity or marginal-effect units, so not comparable with growth regressions; abstract/text claim positive effects but Table 11 prints negative for entire, SSA and LAAC; no regression n printed; p-values not SEs; stars inconsistent with p-values and Table 10."
+  },
+  "estimates": [
+   {
+    "estimate_id": "9104-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Entire sample RGDP(t): 0.734 (0.000)*** \u22120.437 (0.000)*** \u22120.019 (0.005)***",
+    "note": "Coefficient and p-value (table note: 'p values in parenthesis') match; row = equation RGDP(t), column ICT(t-1). Sign as printed: negative. Regression n_obs not printed (Table 4 descriptive Obs 1387/760/266/361); n_countries as in Table 2."
+   },
+   {
+    "estimate_id": "9104-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "SSA RGDP(t): 0.883 (0.000)*** \u22120.548 (0.044)** 0.032 (0.088)*",
+    "note": "Coefficient and p-value (table note: 'p values in parenthesis') match; row = equation RGDP(t), column ICT(t-1). Sign as printed: negative. Regression n_obs not printed (Table 4 descriptive Obs 1387/760/266/361); n_countries as in Table 2."
+   },
+   {
+    "estimate_id": "9104-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "MENA RGDP(t): 0.551 (0.000)* 0.435 (0.000)** 0.008 (0.211)***",
+    "note": "Coefficient and p-value (table note: 'p values in parenthesis') match; row = equation RGDP(t), column ICT(t-1). Sign as printed: positive. Regression n_obs not printed (Table 4 descriptive Obs 1387/760/266/361); n_countries as in Table 2."
+   },
+   {
+    "estimate_id": "9104-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "LAAC RGDP(t): 0.473 (0.000)** \u22120.406 (0.000)*** \u22120.024 (0.322)***",
+    "note": "Coefficient and p-value (table note: 'p values in parenthesis') match; row = equation RGDP(t), column ICT(t-1). Sign as printed: negative. Regression n_obs not printed (Table 4 descriptive Obs 1387/760/266/361); n_countries as in Table 2."
+   }
+  ]
+ }
+]

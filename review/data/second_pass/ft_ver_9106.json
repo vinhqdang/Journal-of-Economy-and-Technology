@@ -1,0 +1,39 @@
+[
+ {
+  "idx": "9106",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (TWFE, C&D DiD, 2SLS) of mobile 2G/3G/4G coverage; 106-120 countries (>=10) with explicit developing vs developed income-group comparison. Outcome is district nightlight growth, which the paper uses as a proxy for local economic activity (Henderson et al. 2011, 2012). Reading it as a family-1 output proxy is acceptable: nightlights are a standard, validated proxy for subnational activity, and the paper itself says it measures activity, not GDP. Two caveats: lights can also capture electrification or lighting rather than value added, and the GDP elasticity of 0.018-0.023 is an external back-of-envelope conversion (0.3 from Henderson et al.), not an estimate. Eligibility holds; the nightlight outcome should be flagged as a proxy.",
+  "sample_corrections": {
+   "n_economies": "Record is correct: abstract/intro say 120 countries (p.1, p.3); Table 1 col 1 has 119, main IV tables 106 (105 for 2G, 86 for 3G/4G); Table 6 has 104/103/85. 'over 34,000 districts' confirmed (34,387 in Table 1 col 1).",
+   "years": "Record correct: 2G 1998-2018, 3G/4G 2006-2018 (Sec 2.1). Add: 2005 and 2010 coverage is linearly interpolated (fn 7); Table A4 robustness restricts to 1998-2013.",
+   "income_groups_covered": "Record correct: HIC+UMIC pooled as 'developed', LIC+LMIC pooled as 'developing' at baseline World Bank class (fn 31); no separate four-way estimates."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Coefficients and SEs match Table 3 cols 1-2 (0.0596*** SE 0.0078; 0.0777*** SE 0.0098). The estimate string is garbled ('per 1 pp...'): coverage is a 0-1 share, so a 10 pp rise gives 0.78 pp (col 2) or 0.6 pp (col 1) higher nightlight growth, as the text says. Direction positive, correct.", "quote": "a 10 pp increase in mobile phone coverage results in a 0.6 pp increase in the growth rate in nightlight intensity. The effect increases to 0.78 pp (Sec 3.2.1, p.16)"},
+   {"n": 2, "verdict": "confirmed", "correction": "Derived, not estimated: 0.3 x 0.0596 and 0.3 x 0.0777 gives 0.018-0.023 pp GDP growth per 1 pp coverage. No uncertainty is given. Should not be counted as an independent estimate.", "quote": "a 1 pp expansion mobile network coverage leads to 0.018 – 0.023 pp increase in GDP growth respectively (p.17)"},
+   {"n": 3, "verdict": "confirmed", "correction": "Table 3 cols 3-4: 0.0351* (SE 0.0181), 0.0321* (SE 0.0183). Only significant at 10 percent; direction positive correct.", "quote": "a 10 pp increase in the 2G network coverage is associated with a 0.32 pp increase in the rate of growth in nightlight intensity (column 4)"},
+   {"n": 4, "verdict": "confirmed", "correction": "Table 3 col 5: 0.0169 (SE 0.0194), not significant; col 6: 0.0707*** (SE 0.0217). 'Mixed' fits (null without regional controls, positive with). The text rounds col 6 to 0.7 pp per 10 pp.", "quote": "a 10 pp increase in 3G/4G coverage generates a 0.7 pp growth in nightlight intensity (column 6)"},
+   {"n": 5, "verdict": "confirmed", "correction": "Table 4 col 1 0.0447*** (SE 0.0063), col 2 0.0464*** (SE 0.0077). Also available: 2G 0.0315***/0.0265**, 3G/4G 0.0338***/0.0561***. Text: smaller than Table 3.", "quote": "a 10 pp increase in mobile network penetration is associated with a 0.46 pp increase in growth in nightlight intensity (p.17)"},
+   {"n": 6, "verdict": "confirmed", "correction": "Values match Table 1: TWFE 0.0179***/0.0136*** (SE 0.0010 each), C&D 0.0052**/0.0058** (SE 0.0026/0.0027), 3G/4G TWFE col 5 -0.0008 (SE 0.0021). 'Positive' is a simplification: 3G/4G TWFE is null in col 5 but 0.0059*** in col 6, and C&D 3G/4G is 0.0436***/0.0411***. Paper says these are associations and are not causal because of pre-trends; the Panel A / Panel C labelling mismatch with the text (panel B) is correct as noted by the record.", "quote": "the estimates are unlikely to be causal due to the plausibly endogenous rollout of the mobile network expansion (p.11)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table 5 interactions: all 0.0387***/0.0395***; 2G 0.0255***/0.0265*** (main 2G 0.0106/0.0015 not significant); 3G/4G 0.0969** (col 5) and 0.0577 ns (col 6) with main 0.0382***/0.0868***. Text ~0.5 pp developed vs ~0.9 pp developing per 10 pp. No numeric threshold; developed/developing split by baseline WB class.", "quote": "0.5 pp growth in nightlights in developed (high and upper middle income) countries, compared to a 0.9 pp increase in developing (p.18)"},
+   {"n": 2, "verdict": "confirmed", "correction": "Table 6: interactions all 0.0352***/0.0332***; 2G 0.0469***/0.0439*** (2G main negative, ns); 3G/4G 0.2412***/0.2019***. Threshold: baseline fixed telephone penetration below the sample median (dummy). Note country counts drop to 104/103/85.", "quote": "a dummy variable equal to 1 for countries where the penetration rate at the baseline is below the median and 0 for those above the median (p.19)"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Developed (HIC+UMIC) 0.0510*** (col 2), 2G ns, 3G/4G 0.0868*** match Table 5. Developing 'about 0.09' is the sum 0.0510+0.0395; the paper reports only the '0.9 pp' in text and no SE for the sum, so the developing-group 2G and 3G/4G effects are derived and their significance is not reported. No separate LIC, LMIC or UMIC estimates, as the record states.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (moderate): the author concedes TWFE/C&D are not causal (significant pre-trends, endogenous rollout) and uses a lagged regional leave-one-out IV with regional GDP/trade controls, but the exclusion restriction is contestable and IV estimates (0.0777) are about 6x TWFE (0.0136).",
+   "exposure_measurement": "agree (moderate): operator-submitted coverage maps combined with population grids measure population covered, not adoption or use; 2005 and 2010 are interpolated.",
+   "selection_of_countries_years": "agree (low): near-global district panel with leave-one-country-out check; sample shrinks from 120 to 106 (86 for 3G/4G) with controls but this is disclosed.",
+   "outcome_measurement": "too_harsh (record says serious; moderate fits): district nightlight growth is a standard, validated proxy for local activity and the paper claims only that; the weakness is the electrification confound and the external 0.3 elasticity used for the GDP translation, which is flagged as derived.",
+   "specification": "agree (moderate): several instruments, controls and technology splits with a stated preferred specification; estimates vary widely (A4 3G/4G about 0.29 vs 0.07 in Table 3).",
+   "selective_reporting": "agree (low): null and pre-trend placebo failures are reported openly, though table labelling and notes are sloppy.",
+   "why": "Credible-ish IV design with openly reported weaknesses and standard but not strongly exogenous identification; exogeneity not established, so moderate is right. Only the outcome domain is rated too harshly."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "Estimate field of result 1 is garbled but numbers are right. Result 2 is a derived conversion, not an estimate. Result 6 'positive' overlooks the null 3G/4G TWFE in col 5. Paper has typos (Table 1 panel labels, Table 5 note copied from Table 6, 'DIDpl,2' printed twice, DIDpl,2 3G/4G shows 0.0525*** and -0.0536*** in cols 5-6, as printed). Nothing invented or mixed with another paper. Venue is a World Bank working paper (PRWP 10526, July 2023). No instruction-like text in the paper."
+ }
+]

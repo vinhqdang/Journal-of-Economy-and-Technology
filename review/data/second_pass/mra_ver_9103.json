@@ -1,0 +1,67 @@
+[
+ {
+  "idx": "9103",
+  "paper_verdict": {
+   "estimator_family": "GMM (panel VAR, Helmert transformation)",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Outcome is RGDP level in constant US$ (implausible descriptives), exposure is a mean-zero PCA index, effects are VAR lag-1 coefficients whose units are not elasticities; authors misread Table 11; regression N not reported; poorly suited for pooling."
+  },
+  "estimates": [
+   {
+    "estimate_id": "9103-1",
+    "verdict": "corrected",
+    "corrections": {
+     "coef_printed": "0.0389 ***",
+     "uncertainty_printed": "(0.0000)",
+     "note_cell": "row RGDP(t), column ICT(t-1)"
+    },
+    "quote": "RGDP(t) 0.8001 (0.0000)*** 0.0389 (0.0000)*** 5.5741 (0.0000)***",
+    "note": "Recorded value is row ICT(t), column RGDP(t-1), i.e. lagged RGDP -> ICT. Table 10 Granger p-values match the row=equation, column=lagged-regressor layout. n_obs/n_countries are Table 4 descriptive counts, not regression N; group obs imply different country counts than stated."
+   },
+   {
+    "estimate_id": "9103-2",
+    "verdict": "corrected",
+    "corrections": {
+     "coef_printed": "0.2751 **",
+     "uncertainty_printed": "(0.036)",
+     "note_cell": "row RGDP(t), column ICT(t-1)"
+    },
+    "quote": "RGDP(t) 0.9124 (0.0000)*** 0.2751 (0.036)** 8.4905 (0.0020)***",
+    "note": "Recorded value is row ICT(t), column RGDP(t-1), i.e. lagged RGDP -> ICT. Table 10 Granger p-values match the row=equation, column=lagged-regressor layout. n_obs/n_countries are Table 4 descriptive counts, not regression N; group obs imply different country counts than stated."
+   },
+   {
+    "estimate_id": "9103-3",
+    "verdict": "corrected",
+    "corrections": {
+     "coef_printed": "0.0215 **",
+     "uncertainty_printed": "(0.0010)",
+     "note_cell": "row RGDP(t), column ICT(t-1)"
+    },
+    "quote": "RGDP(t) 0.8138 (0.0000)*** 0.0215 (0.0010)** -11.9536 (0.0000)***",
+    "note": "Recorded value is row ICT(t), column RGDP(t-1), i.e. lagged RGDP -> ICT. Table 10 Granger p-values match the row=equation, column=lagged-regressor layout. n_obs/n_countries are Table 4 descriptive counts, not regression N; group obs imply different country counts than stated."
+   },
+   {
+    "estimate_id": "9103-4",
+    "verdict": "corrected",
+    "corrections": {
+     "coef_printed": "0.0149 ***",
+     "uncertainty_printed": "(0.0000)",
+     "note_cell": "row RGDP(t), column ICT(t-1)"
+    },
+    "quote": "RGDP(t) 0.8161 (0.0000)*** 0.0149 (0.0000)*** -5.6073 (0.0000)",
+    "note": "Recorded value is row ICT(t), column RGDP(t-1), i.e. lagged RGDP -> ICT. Table 10 Granger p-values match the row=equation, column=lagged-regressor layout. n_obs/n_countries are Table 4 descriptive counts, not regression N; group obs imply different country counts than stated."
+   },
+   {
+    "estimate_id": "9103-5",
+    "verdict": "corrected",
+    "corrections": {
+     "coef_printed": "0.0175 ***",
+     "uncertainty_printed": "(0.0000)",
+     "note_cell": "row RGDP(t), column ICT(t-1)"
+    },
+    "quote": "RGDP(t) 0.9421 (0.0000)*** 0.0175 (0.0000)*** -0.4733 (0.0000)***",
+    "note": "Recorded value is row ICT(t), column RGDP(t-1), i.e. lagged RGDP -> ICT. Table 10 Granger p-values match the row=equation, column=lagged-regressor layout. n_obs/n_countries are Table 4 descriptive counts, not regression N; group obs imply different country counts than stated."
+   }
+  ]
+ }
+]
