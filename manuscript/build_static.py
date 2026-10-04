@@ -47,7 +47,7 @@ S += textwrap.wrap(q, 110) + [r"\end{verbatim}}", "",
       r"\subsection*{Crossref and NBER searches}",
       "Technology terms: internet; broadband; mobile phones; information and communication technology; digital technology; artificial intelligence; generative AI; machine learning; cryptocurrency; bitcoin; technology diffusion; general purpose technology. Context terms: cross-country panel economic growth; developing countries income groups; digital divide; poverty and inequality countries; productivity emerging economies; employment and wages across countries; absorptive capacity human capital; financial inclusion. All pairs (12 by 8 = 96) were run from 1995.", "",
       r"\subsection*{Records by source}",
-      r"\begin{tabular}{@{}lr@{}}\toprule Source & Distinct records\\\midrule OpenAlex & 1,840\\ Crossref & 1,285\\ NBER working papers & 579\\ arXiv & 0 (attempted, not completed)\\ Scopus, Web of Science, EconLit & 0 (not run)\\ Google Scholar (query G1, first page) & 10 results, 9 not in the main search\\\bottomrule\end{tabular}"]
+      r"\begin{tabular}{@{}lr@{}}\toprule Source & Distinct records\\\midrule OpenAlex & 1,840\\ Crossref & 1,285\\ NBER working papers & 579\\ arXiv & 0 (attempted, not completed)\\ Scopus, Web of Science, EconLit & 0 (not run)\\ Google Scholar (queries G1, G2, G4, first page each) & 30 results, 22 not in the main search\\\bottomrule\end{tabular}"]
 open(os.path.join(HERE, "app_search.tex"), "w").write("\n".join(S) + "\n")
 
 # ---------------- criteria ----------------
@@ -80,7 +80,7 @@ items = [("1", "Title", "Identifies the report as a systematic review", "Yes", "
  ("3", "Rationale", "Rationale in context of existing knowledge", "Yes", "Introduction; Conceptual background"),
  ("4", "Objectives", "Explicit objectives and questions", "Yes", "Introduction; Conceptual background"),
  ("5", "Eligibility criteria", "Inclusion and exclusion criteria", "Yes", "Methods (eligibility); Appendix D"),
- ("6", "Information sources", "Databases, dates, last search", "Partly", "Methods (sources); Scopus, Web of Science and EconLit not searched; Google Scholar only the first page of one query"),
+ ("6", "Information sources", "Databases, dates, last search", "Partly", "Methods (sources); Scopus, Web of Science and EconLit not searched; Google Scholar only the first page of three queries"),
  ("7", "Search strategy", "Full strategy for all sources", "Yes", "Appendix C"),
  ("8", "Selection process", "How records were screened, number of reviewers", "Partly", "Methods (screening); one assisted reviewer plus a blind model re-screen of a random sample (Results, cross-checks)"),
  ("9", "Data collection process", "Methods of extraction, number of reviewers", "Partly", "Methods (extraction, second pass); machine extraction, machine second pass, blind re-extraction of 16 studies, author hand check of a random sample"),

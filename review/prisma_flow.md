@@ -32,14 +32,15 @@ Status: counts for the main search (OpenAlex, Crossref, NBER) are in the first t
 
 | Stage | n | Note |
 |---|---|---|
-| Query G1, first page of results (pasted by the author) | 10 | Other queries (`google_scholar_queries.md`) have not been run |
-| Already among the 3,612 records of the main search | 1 | Adeleye et al. 2022, excluded at abstract stage (too few economies) |
-| Not among the 3,612 records | 9 | `data/scholar_g1_page1.csv` |
-| Of these, obtained and read at full text | 6 | Free full texts supplied by the author |
-| Not obtained | 3 | Chavula 2013, Torero et al. 2006, Omer and Ghanim 2026 (a preprint); the author could not download them |
-| Included | 6 | 9101 to 9106, all verified by the second pass |
+| Queries run, first page each (pasted by the author) | 3 queries (G1, G2, G4), 30 results | The other twelve queries (`google_scholar_queries.md`) have not been run |
+| Results already included or already among the 3,612 records | 8 | Including Yin and Choi 2023, which was among the 3,612 but removed by the stage-1 rule |
+| Results not among the 3,612 records | 22 | `data/scholar_g1_page1.csv`, `scholar_g2_page1.csv`, `scholar_g4_page1.csv` |
+| Obtained and read at full text (from G1 and G2) | 10 | 9101 to 9106 and 9201 to 9204; free full texts supplied by the author |
+| Not obtained (G1) | 3 | Chavula 2013, Torero et al. 2006, Omer and Ghanim 2026 (a preprint; the published version was read) |
+| Included | 9 | 9202 (five countries) was excluded at full text; all others verified by the second pass |
+| Requested from G4, awaiting extraction | 5 | 9301 to 9305 |
 
-The six are counted in the full-text stage below. The first page of one query is not a search: it shows that the main search had low recall, and its yield (6 includable studies from 10 results) suggests that the remaining Google Scholar queries would add more.
+The ten read studies are counted in the full-text stage below. The first pages of three queries are not a search: they show that the main search had low recall, and they suggest that the remaining queries would add more.
 
 ## Screening method and its limits
 
@@ -51,8 +52,8 @@ The six are counted in the full-text stage below. The first page of one query is
 
 | Stage | n | Note |
 |---|---|---|
-| Full texts read | 118 | 118 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
-| Excluded at full text | 40 | E1 13, E2 5, E3 1, E4 21 |
+| Full texts read | 122 | 122 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
+| Excluded at full text | 41 | E1 14, E2 5, E3 1, E4 21 |
 | Context only (no payoff outcome estimated) | 1 | |
-| **Included, preliminary** | **77** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 32 are flagged for human check |
+| **Included, preliminary** | **80** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 34 are flagged for human check |
 

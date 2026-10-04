@@ -1,0 +1,44 @@
+[
+ {
+  "idx": "9201",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (DK-POLS/FE/RE, IV-GMM, LSDVC); exposure is internet use, mobile and fixed broadband subscriptions; 19 G20 economies (>=10) and an explicit high- vs middle-income comparison (Table 3); outcome is income inequality (Gini, Atkinson, Palma), family 4. Quote: 'we divided these 19 countries into two groups based on the World Bank's country classification' (Section 3.2).",
+  "sample_corrections": {
+   "n_economies": "19 (correct)",
+   "years": "2002-2018 (correct; Table 1 shows 323 obs for regressors = 19 x 17, 302 for Gini; Atkinson/Palma from GCIP cover 2002-2015)",
+   "income_groups_covered": "High and middle income (two-group World Bank split); the text does not name which countries fall in each group nor split middle into upper/lower"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "a 1% growth in Internet use contributes to a 0.013% reduction in income inequality (Section 4.1; Table 2 col 3: -0.013** (0.005))"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "Table 2 col 6 LnMOB -0.004 (0.005); text: 'mobile subscriptions and broadband subscriptions have no significant impact'"},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "Table 2 col 8 (DK-FE) LnBROAD -0.004 (0.003); Hausman p=0.007 so FE reported for broadband (Section 4.1)"},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "Table 2 col 12: LnINTER*LnTR -0.003* (0.001); LnINTER*LnFDI -0.007*** (0.002); text 'significant at the 10% and 1% levels'"},
+   {"n": 5, "verdict": "confirmed", "correction": "", "quote": "Table 3 col 1: LnINTER 0.047*** (0.009) for high income (FE)"},
+   {"n": 6, "verdict": "confirmed", "correction": "", "quote": "Table 3: LnMOB 0.053*** (0.008); LnBROAD 0.009*** (0.003)"},
+   {"n": 7, "verdict": "confirmed", "correction": "", "quote": "Table 3 col 7: LnINTER -0.020*** (0.006), middle income (RE)"},
+   {"n": 8, "verdict": "confirmed", "correction": "", "quote": "Table 3: LnMOB -0.011 (0.006) unstarred; LnBROAD -0.009*** (0.003); text 'Mobile subscriptions have no direct impact'"},
+   {"n": 9, "verdict": "confirmed", "correction": "", "quote": "Table 4 col 1: LnINTER -0.094*** (0.031); Hansen's J p-value 0.646"},
+   {"n": 10, "verdict": "confirmed", "correction": "Estimate matches; note it is a short-run coefficient in a model with LnGINI(-1) of 0.982 (near unit root), so not comparable in size with the static results.", "quote": "Table 4 col 4: LnINTER -0.003** (0.002)"},
+   {"n": 11, "verdict": "confirmed", "correction": "", "quote": "Table 4: Atkinson col 10 -0.042*** (0.011); Palma col 13 -0.095*** (0.019); GCIP data for 2002-2015 (Section 4.3.2)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "increased digitalization widens income inequality in high-income countries, while in middle-income countries, the development of digitalization narrows income inequality (Section 4.2)"},
+   {"n": 2, "verdict": "corrected", "correction": "High-income trade interactions are 0.015 (Internet), 0.014 (mobile) and 0.005 (broadband), so the range is 0.005 to 0.015, not 0.014 to 0.015. FDI interactions lower inequality in high-income only for Internet (-0.014***) and broadband (-0.010***); mobile*FDI is 0.001 (0.003), not significant. In middle income all six interactions are significant and negative (trade -0.004***, -0.003*, -0.002***; FDI -0.008**, -0.009**, -0.004***).", "quote": "interaction term of FDI with mobile subscription has no impact (Section 4.2); Table 3 col 5: LnMOB*LnFDI 0.001 (0.003)"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "High and middle income estimates are correct. The split into 'upper_middle' and 'lower_middle' is the extractor's inference: the paper only has one 'middle-income' group and does not list members or classify them further; 'low: not covered' is implied by the two-group split rather than stated. The claim in the notes that Table 3 combines upper- and lower-middle economies is not in the text. Note the text's statement that the FDI interaction effect is larger in high- than middle-income countries does not hold for mobile (0.001 n.s. vs -0.009**).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal wording ('contributes to', 'leads to') with only own-lag IV/LSDVC/lagged-regressor checks; the authors acknowledge reverse causality but own lags of a persistent diffusion variable are weak exclusion restrictions, and only a few controls are used.",
+   "exposure_measurement": "agree: WDI internet users, mobile and fixed broadband per 100 are standard national access proxies and entered one at a time; they do not capture use intensity (mobile max 191 per 100 in Table 1).",
+   "selection_of_countries_years": "too_harsh: G20 is a defined policy-relevant group with 19 economies and 17 years not selected on the outcome, so moderate is more apt; the limitation is generalisability, and the two-group income split is coarse.",
+   "outcome_measurement": "agree: SWIID Gini is a model-based harmonised series (302 vs 323 obs), with Atkinson and Palma (GCIP, 2002-2015) as checks.",
+   "specification": "agree: moderate. Estimator picked by Hausman per equation, technologies entered one at a time, large swings across estimators (POLS -0.069 vs FE -0.014 for Internet), and Driscoll-Kraay SEs with T=17 and N=19 are of doubtful reliability.",
+   "selective_reporting": "agree: headline stresses the one significant direct effect (Internet) and emphasises alternative-measure results where mobile and broadband become significant; magnitudes range from -0.003 to -0.094.",
+   "why": "Standard panel with causal framing; reverse causality only weakly handled by lag-based instruments and lagged regressors, so exogeneity is not established and 'serious' is defensible under the guide."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "(1) n_specifications_reported says 'about 100' but the stated columns sum to 63 (18+12+18+15); use 63 columns. (2) Heterogeneity item 2 misstates the high-income trade range and overstates FDI result (see above). (3) 'upper_middle'/'lower_middle' labels and the notes' claim about combining them are inferred, not in the text. (4) Record calls the panel unbalanced, which is the authors' wording; regressors have 323 = 19x17 obs (balanced) and only Gini (302) is incomplete. (5) 'identification: other' and stream/horizon fields not checked against text beyond consistency. Otherwise no invented numbers; all 11 results match Tables 2-4 and the text."
+ }
+]

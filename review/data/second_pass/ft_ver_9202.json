@@ -1,0 +1,28 @@
+[
+ {
+  "idx": "9202",
+  "eligibility_ok": false,
+  "eligibility_note": "Exclusion E1 is right. The sample is five economies (Egypt, India, Kenya, Saudi Arabia, Sudan), well under the 10-economy minimum for non-AI exposure; Sec. 4.1.1: 'Our analysis is restricted to five countries.' The paper does present a Table 7 split by income group, but the groups contain 1, 3 and 1 countries, and the authors say it is 'descriptive country-specific evidence instead of systematic evidence of income-group heterogeneity' (Sec. 6.1). Table 7 note: 'NOT systematic evidence of income-group heterogeneity.' So there is no explicit income-group comparison that meets the alternative criterion.",
+  "sample_corrections": {
+    "n_economies": "Record is correct: 5 (Egypt, India, Kenya, Saudi Arabia, Sudan); Sec. 4.1.1: 'Our analysis is restricted to five countries.'",
+    "income_groups_covered": "Record is correct: Sec. 4.1.1 gives Sudan low, Egypt/India/Kenya lower-middle, Saudi Arabia high; Table 7 header says 'Upper-Middle' for the Saudi column, so the labels conflict."
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": "none",
+  "income_group_note": "Not applicable for the excluded record. Table 7 reports 1/3/1-country splits that the authors label descriptive, so the record's 'not applicable' entries are fine.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "not applicable (excluded)",
+    "exposure_measurement": "not applicable (excluded)",
+    "selection_of_countries_years": "not applicable (excluded)",
+    "outcome_measurement": "not applicable (excluded)",
+    "specification": "not applicable (excluded)",
+    "selective_reporting": "not applicable (excluded)",
+    "why": "Risk of bias is not rated because the paper is excluded; 'not applicable' is the correct entry."
+  },
+  "causal_language": "not assessed",
+  "reverse_causality_addressed": "not assessed",
+  "problems": "No fabricated content found in the exclusion rationale or sample facts; they match the text. The record's note on Table 7 versus text coefficient mismatches is also right: the Table 7 note gives N = 12, 36 and 11 while the table shows 10, 30 and 10 observations, and the Sec. 6.1 text gives Sudan MOB 0.041 versus 0.038 in the table. Sudan INT is 0.018 in the text versus 0.021 in the table. Minor: the record's decision_rationale says 'four in the baseline after dropping Sudan'; this was not checked beyond the five-country count, and it does not change the decision."
+ }
+]

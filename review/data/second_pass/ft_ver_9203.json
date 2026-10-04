@@ -1,0 +1,43 @@
+[
+ {
+  "idx": "9203",
+  "eligibility_ok": true,
+  "eligibility_note": "Own OLS/FE/system-GMM estimation; exposure is internet, broadband, fixed telephone and secure servers (ICT infrastructure); 85 economies (27 low, 58 high) with explicit income-group comparison; outcome is GDP per capita (output). Meets all criteria.",
+  "sample_corrections": {
+   "n_economies": "85 confirmed (27 low + 58 high), 2000-2019 confirmed",
+   "economies_or_groups": "Country lists ARE in the text: Appendix Table 12 'Name of sampled countries' (the Syrian Arab Republic is printed twice, so 27 unique low-income entries)",
+   "n_obs": "Table 7: LIC OLS/FE 540, LIC GMM 513, HIC 1160; Tables 8-9 LIC 540 (Table 9 prints no obs row); Tables 10-11 HIC 1102"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "internet 0.005** (0.002) 0.018*** (0.004) 0.001** (0.001)", "note": "Table 7 LIC GMM 0.001** (0.001); Table 8 Model1 0.002** (0.001). Brackets are labelled 'Std. dev'."},
+   {"n": 2, "verdict": "corrected", "correction": "Direction is mixed across specifications, not negative: Table 8 Model 2 prints a positive significant coefficient 0.05*** (.010) and Model 6 prints -0.037 (0.028). Negative only in Table 7 GMM (-0.020** (0.037)) and Table 9 Model 10 (-0.008*** (0.010)).", "quote": "Secure Internet  -  0.05*** (.010)", "note": "Table 8 p.7086; Table 7 and Table 9 values in the record are correct as printed."},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "broadband -0.012*** (0.060) -0.146*** (0.040) 0.007** (0.038)", "note": "Table 7 LIC GMM 0.007** (0.038); Table 8 Model3 -0.006** (0.008); Table 9 Model 11 -0.009*** (0.009). Mixed is right."},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "telephone 0.033** (0.003) 0.002** (0.006) 0.004* (0.007)", "note": "Table 7 LIC GMM 0.004* (0.007); Table 8 Model4 0.003** (0.006). Table 8 Model 8 telephone .983 (0.011) is anomalous but not used."},
+   {"n": 5, "verdict": "confirmed", "correction": "", "quote": "internet 0.125*** (0.016) 0.054** (0.009) 0.006* (0.007)", "note": "Table 7 HIC GMM 0.006* (0.007); Table 10 Model1 0.002** (0.006)."},
+   {"n": 6, "verdict": "confirmed", "correction": "", "quote": "Secure Internet 0.199*** (0.054) -0.032** (0.027) 0.041*** (0.025)", "note": "Table 7 HIC GMM 0.041*** (0.025); Table 10 Model2 0.040** (0.027). Table 11 Model10 prints .457** (0.034), another positive."},
+   {"n": 7, "verdict": "confirmed", "correction": "", "quote": "broadband -0.033** (0.015) 0.041** (0.011) -0.003*** (0.008)", "note": "Table 7 HIC GMM -0.003*** (0.008); Table 10 Model3 0.001** (0.007). Mixed is right."},
+   {"n": 8, "verdict": "confirmed", "correction": "", "quote": "telephone 0.010* (0.027) -0.347** (0.027) 0.036** (0.013)", "note": "Table 7 HIC GMM 0.036** (0.013); Table 10 Model4 0.034** (0.012)."},
+   {"n": 9, "verdict": "confirmed", "correction": "", "quote": "FD*internet 0.025** (0.029); FD* secure Internet 0.101*** (0.091); FD*broadband 0.056*** (0.100)", "note": "All values match Tables 8 and 10 (LIC FD*telephone -0.023*** (0.019); HIC FD*internet -0.003*** (0.289), FD*secure 0.015*** (0.162), FD*broadband -0.035 (0.052), FD*telephone -0.032** (0.057) in Model5 column and 0.083*** (0.082) in Model8). Column placement in Table 10 is garbled (FD*telephone printed under Model5), and the text says internet*FD is positive in HICs, contradicting -0.003***. Brackets for HIC FD*telephone omitted from the record's uncertainty field."},
+   {"n": 10, "verdict": "confirmed", "correction": "", "quote": "FD*internet*TO .638*** (0.015); FD* secure internet* TO 0.103*** (0.205)", "note": "LIC Table 9 and HIC Table 11 values and brackets all match; signs positive in LIC, negative in HIC. Several stars are inconsistent with the brackets (e.g. 0.103*** (0.205))."}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Caveat: the 'secure Internet negative in LICs' statement holds for Table 7 GMM and Table 9 but Table 8 Model 2 is positive (0.05***); the authors' text on Table 8 also says secure Internet is positive and significant in LICs.", "quote": "the results are reversed in the HICs context", "note": "Abstract; Tables 7-11."},
+   {"n": 2, "verdict": "confirmed", "correction": "Per the tables HIC FD*internet is -0.003*** and FD*broadband -0.035 (insignificant), as recorded; the text instead states internet*FD has a positive impact in HICs, so text and table disagree.", "quote": "FD works as a harmonizer for the ICT infrastructure", "note": "Tables 8 and 10; Conclusion p.7091. Threshold none is right."}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "High and low Table 7 GMM coefficients and signs of three-way interactions match; middle-income groups genuinely not covered (Limitations p.7093).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: only internal lagged instruments, no instrument count, Sargan 543.16 vs Hansen 34.86 in HICs and AR(2) -4.21 contradict validity, while causal wording is used.",
+   "exposure_measurement": "agree: moderate is reasonable since fixed telephone and secure servers per million (HIC max 277,133.7) are weak proxies and mobile is absent.",
+   "selection_of_countries_years": "agree: moderate fits since only the extreme low and high income groups are used, middle-income excluded for data reasons, and obs counts differ (1160 vs 1102).",
+   "outcome_measurement": "agree: GDP per capita is a standard output measure, but data were normalised before estimation and units/transform of the dependent variable are unclear.",
+   "specification": "agree: serious is justified by one-proxy-at-a-time models, trade openness divided by GDP per capita, sign flips across models, and stars that do not match brackets; critical could be argued.",
+   "selective_reporting": "agree: moderate is fair because all models are shown but the text conclusions contradict the tables in several places.",
+   "why": "Dynamic GMM with unverified instruments and internal table inconsistencies leaves exogeneity unestablished and causal claims ('impact', 'proved') overreach; serious fits, with critical a defensible alternative."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "(a) Record's note that 'Appendix Table 12 was not in the converted text' is wrong: Appendix Table 12 (sampled-country list) is present at the end of the text; the Results text confusingly cites 'Appendix Table 12' as a model table. (b) n_specifications_reported 'about 50' is inconsistent with its own breakdown: Table 7 six columns + 8+4 LIC + 8+4 HIC = 30. (c) Result 2 omits the positive Table 8 Model 2 estimate. (d) Table 9 prints no observation/country rows. (e) Table 10 FD*telephone -0.032** sits in the Model5 column although telephone is not in that model. No invented numbers found; no cross-paper mix-up."
+ }
+]

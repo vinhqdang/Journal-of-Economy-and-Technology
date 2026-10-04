@@ -16282,5 +16282,654 @@
    "corrections": [],
    "problems": "Estimate field of result 1 is garbled but numbers are right. Result 2 is a derived conversion, not an estimate. Result 6 'positive' overlooks the null 3G/4G TWFE in col 5. Paper has typos (Table 1 panel labels, Table 5 note copied from Table 6, 'DIDpl,2' printed twice, DIDpl,2 3G/4G shows 0.0525*** and -0.0536*** in cols 5-6, as printed). Nothing invented or mixed with another paper. Venue is a World Bank working paper (PRWP 10526, July 2023). No instruction-like text in the paper."
   }
+ },
+ {
+  "idx": "9201",
+  "title": "Does digitalization contribute to lesser income inequality? Evidence from G20 countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of internet use, mobile and fixed broadband subscriptions in 19 G20 countries with an explicit high- versus middle-income comparison; outcome is income inequality (family 4).",
+  "stream": "H",
+  "technology": [
+   "internet use",
+   "mobile subscriptions",
+   "fixed broadband subscriptions"
+  ],
+  "exposure_measure": "Individuals using the Internet (%), mobile cellular subscriptions per 100 people, fixed broadband subscriptions per 100 people (WDI); all in natural logs (Section 3.2).",
+  "sample": {
+   "n_economies": "19",
+   "economies_or_groups": "G20 members excluding the EU (Argentina, Australia, Brazil, Canada, China, Germany, France, UK, Indonesia, India, Italy, Japan, South Korea, Mexico, Russia, Saudi Arabia, Turkey, US, South Africa)",
+   "income_groups_covered": "high and middle (World Bank two-group split)",
+   "years": "2002-2018 (unbalanced)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pooled OLS, FE, RE with Driscoll-Kraay standard errors (Hausman test picks FE or RE); robustness with IV-GMM (1-3 period lags as instruments), LSDVC, one-year lagged regressors",
+   "identification": "other",
+   "key_controls_fixed_effects": "Log GDP per capita, trade openness, FDI inflows, political stability; robustness adds unemployment and urbanization; country effects in FE/RE"
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Gini index (SWIID), log; direct effect of log Internet use, full sample, RE (Table 2 col 3)",
+    "direction": "negative",
+    "estimate": "-0.013 (log-log; text: 1% rise in Internet use lowers inequality by 0.013%)",
+    "uncertainty": "SE 0.005, ** (5%)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 col (3), p.71; Section 4.1: 'a 1% growth in Internet use contributes to a 0.013% reduction in income inequality'"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; log mobile subscriptions, full sample, RE (Table 2 col 6)",
+    "direction": "null",
+    "estimate": "-0.004",
+    "uncertainty": "SE 0.005, not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 col (6), p.71; text: 'mobile subscriptions and broadband subscriptions have no significant impact'"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; log fixed broadband, full sample, FE (Table 2 col 8)",
+    "direction": "null",
+    "estimate": "-0.004",
+    "uncertainty": "SE 0.003, not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 col (8), p.71"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; Internet x trade openness and Internet x FDI interactions, full sample, RE (Table 2 col 12)",
+    "direction": "negative",
+    "estimate": "LnINTER*LnTR -0.003*; LnINTER*LnFDI -0.007***",
+    "uncertainty": "SE 0.001; 0.002",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 col (12), p.71; Section 4.1"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; Internet use, high-income G20, FE (Table 3 col 1)",
+    "direction": "positive",
+    "estimate": "0.047***",
+    "uncertainty": "SE 0.009",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 col (1), p.72: 'LnINTER 0.047*** (0.009)'"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; mobile and broadband, high-income G20 (Table 3 cols 2-3)",
+    "direction": "positive",
+    "estimate": "LnMOB 0.053***; LnBROAD 0.009***",
+    "uncertainty": "SE 0.008; 0.003",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 cols (2),(3), p.72"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; Internet use, middle-income G20, RE (Table 3 col 7)",
+    "direction": "negative",
+    "estimate": "-0.020***",
+    "uncertainty": "SE 0.006",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 col (7), p.72: 'LnINTER -0.020*** (0.006)'"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; mobile and broadband, middle-income G20 (Table 3 cols 8-9)",
+    "direction": "mixed",
+    "estimate": "LnMOB -0.011 (n.s.); LnBROAD -0.009***",
+    "uncertainty": "SE 0.006; 0.003",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 cols (8),(9), p.72"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; Internet use, IV-GMM with 1-3 lags as instruments (Table 4 col 1)",
+    "direction": "negative",
+    "estimate": "-0.094***",
+    "uncertainty": "robust SE 0.031; Hansen J p = 0.646",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 col (1), p.75"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini; Internet use, LSDVC dynamic (Table 4 col 4)",
+    "direction": "negative",
+    "estimate": "-0.003**",
+    "uncertainty": "SE 0.002",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 col (4), p.75"
+   },
+   {
+    "family": 4,
+    "indicator": "Alternative inequality measures (Atkinson, Palma), Internet use (Table 4 cols 10, 13)",
+    "direction": "negative",
+    "estimate": "Atkinson -0.042***; Palma -0.095***",
+    "uncertainty": "SE 0.011; 0.019",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 cols (10),(13), p.75"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Digitalization widens Gini in G20 high-income countries (all three measures positive, 1% level) but narrows it in middle-income countries (Internet, broadband significant; mobile not).",
+    "threshold_value": "none",
+    "evidence": "Table 3, p.72; Section 4.2 'increased digitalization widens income inequality in high-income countries'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Interaction with trade openness raises inequality in high-income countries (0.014 to 0.015) but lowers it in middle-income countries; interaction with FDI lowers inequality in both groups.",
+    "threshold_value": "none",
+    "evidence": "Table 3 cols (4)-(6), (10)-(12), p.72"
+   }
+  ],
+  "income_group_results": {
+   "high": "Internet 0.047***, mobile 0.053***, broadband 0.009*** on log Gini (widening)",
+   "upper_middle": "Pooled 'middle income' group: Internet -0.020***, broadband -0.009***, mobile -0.011 n.s. (narrowing); not split further",
+   "lower_middle": "Pooled with upper-middle in 'middle income' group; not reported separately",
+   "low": "not covered (no low-income country in G20 sample)"
+  },
+  "n_specifications_reported": "about 100 (18 columns Table 2, 12 Table 3, 18 Table 4, 15 Table 5)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Main results are DK-POLS/FE/RE with causal language; the IV-GMM uses only own lags as instruments and lagged-regressor checks do not remove reverse causation. Few controls.",
+    "evidence": "Section 4.3.1, p.74; Table 4 cols (1)-(3)"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet use, mobile and fixed broadband penetration are standard WDI proxies for digitalization but capture access, not use intensity; mobile subscriptions exceed 100 per 100 in some countries.",
+    "evidence": "Section 3.2, p.69; Table 1, p.70"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 19 G20 countries, unbalanced panel, and only two income groups (high, middle); no low-income countries; results hard to generalise.",
+    "evidence": "Section 3.2, p.69"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "SWIID Gini is a model-based harmonised series (302 obs vs 323 for regressors); alternative Atkinson and Palma from GCIP for 2002-2015 used as checks.",
+    "evidence": "Section 3.2 p.69; Section 4.3.2 p.77"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Estimator chosen by Hausman test per equation, three technology proxies entered one at a time, many columns; small sample with Driscoll-Kraay SEs (which need long T); interaction models omit separate technology main effect.",
+    "evidence": "Section 3.1, p.68-69; Tables 2-5"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Headline highlights Internet use, the only significant direct full-sample effect; mobile and broadband insignificant in main but significant under alternative measures, which the text emphasises. Robustness coefficients differ notably in magnitude (-0.013 vs -0.094 vs -0.003).",
+    "evidence": "Section 4.3, pp.74-77"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Outcome is income inequality only (family 4); no output or productivity outcome (GDP per capita is a control). Digitalization is proxied by internet, mobile and broadband separately. In middle-income group Hausman selects RE; high-income FE. Table 3 is reported for 'middle income', combining upper- and lower-middle G20 economies. Interpretation of coefficients as percent effects is the authors' log-log reading. No instructions aimed at the extractor found in the text.",
+  "quote_check": {
+   "verified": 3,
+   "checked": 5
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 11
+   },
+   "heterogeneity": {
+    "confirmed": 1,
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (DK-POLS/FE/RE, IV-GMM, LSDVC); exposure is internet use, mobile and fixed broadband subscriptions; 19 G20 economies (>=10) and an explicit high- vs middle-income comparison (Table 3); outcome is income inequality (Gini, Atkinson, Palma), family 4. Quote: 'we divided these 19 countries into two groups based on the World Bank's country classification' (Section 3.2).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "19 (correct)",
+    "years": "2002-2018 (correct; Table 1 shows 323 obs for regressors = 19 x 17, 302 for Gini; Atkinson/Palma from GCIP cover 2002-2015)",
+    "income_groups_covered": "High and middle income (two-group World Bank split); the text does not name which countries fall in each group nor split middle into upper/lower"
+   },
+   "corrections": [
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "High-income trade interactions are 0.015 (Internet), 0.014 (mobile) and 0.005 (broadband), so the range is 0.005 to 0.015, not 0.014 to 0.015. FDI interactions lower inequality in high-income only for Internet (-0.014***) and broadband (-0.010***); mobile*FDI is 0.001 (0.003), not significant. In middle income all six interactions are significant and negative (trade -0.004***, -0.003*, -0.002***; FDI -0.008**, -0.009**, -0.004***).",
+     "quote": "interaction term of FDI with mobile subscription has no impact (Section 4.2); Table 3 col 5: LnMOB*LnFDI 0.001 (0.003)"
+    }
+   ],
+   "problems": "(1) n_specifications_reported says 'about 100' but the stated columns sum to 63 (18+12+18+15); use 63 columns. (2) Heterogeneity item 2 misstates the high-income trade range and overstates FDI result (see above). (3) 'upper_middle'/'lower_middle' labels and the notes' claim about combining them are inferred, not in the text. (4) Record calls the panel unbalanced, which is the authors' wording; regressors have 323 = 19x17 obs (balanced) and only Gini (302) is incomplete. (5) 'identification: other' and stream/horizon fields not checked against text beyond consistency. Otherwise no invented numbers; all 11 results match Tables 2-4 and the text."
+  }
+ },
+ {
+  "idx": "9202",
+  "title": "Heterogeneous Effects of Digital Infrastructure on Sustainable Economic Growth: Panel Fixed Effects Evidence from Developing Countries (2014-2025)",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E1",
+  "decision_rationale": "Quantitative panel study of internet, mobile broadband and fixed broadband (non-AI) on GDP per capita growth, but the sample is only five economies (four in the baseline after dropping Sudan), below the 10-economy minimum. The income-group comparison (Table 7) is a split of 1, 3 and 1 countries that the authors themselves say is descriptive country-specific evidence, not a systematic income-group comparison, so the income-group alternative is not accepted.",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "mobile broadband",
+   "fixed broadband"
+  ],
+  "exposure_measure": "Internet users (% of population), mobile broadband subscriptions per 100, fixed broadband subscriptions per 100 (ITU via WDI)",
+  "sample": {
+   "n_economies": "5 (Egypt, India, Kenya, Saudi Arabia, Sudan); 4 in the baseline excluding Sudan",
+   "economies_or_groups": "purposively selected five developing countries; authors call it case-based evidence, not representative",
+   "income_groups_covered": "Table 1: low (Sudan), lower-middle (Egypt, India, Kenya), high (Saudi Arabia); Table 7 labels the Saudi column 'upper-middle' and the abstract calls Kenya low-income, so labels are inconsistent",
+   "years": "2014-2025 (2024-2025 described as IMF projections used only for out-of-sample validation)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel fixed effects with country and year effects and Driscoll-Kraay standard errors; exploratory Random Forest; IV robustness check",
+   "identification": "other",
+   "key_controls_fixed_effects": "GCF, human capital, openness, inflation, population growth; country and year FE"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": {
+   "confounding_reverse_causality": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "possible (MDPI Sustainability; many internal numerical inconsistencies, see notes)",
+  "notes": "Eligibility: fails the at-least-10-economies rule (p.11 Sec. 4.1.1: 'Our analysis is restricted to five countries'). Outcome is GDP per capita growth (family 1); no family 5 or 6 outcome is estimated, only discussed. Borderline point for a human reviewer: Table 7 splits the panel by income group (low = Sudan only, lower-middle = Egypt/India/Kenya, high = Saudi Arabia only), but the authors state 'NOT systematic evidence of income-group heterogeneity', so excluded as E1. Internal inconsistencies: sample size reported as 48 (Table 4), 50 (Sec. 4.1.2), 60 (Sec. 4.1.4, Table 9) while 2024-2025 are said to be projections excluded from the main regressions; Table 7 observation counts (10/30/10) differ from its note (N=12, 36, 11); text coefficients for Table 7 (Sudan MOB 0.041, INT 0.018; lower-middle INT 0.051, MOB 0.032) differ from the table (0.038, 0.021; 0.044, 0.029); Table 7 header says 'Upper-Middle' for Saudi Arabia, which Table 1 calls High; Table 3 and Table 5 give different correlations (INT-GDPG 0.22 vs 0.382); Table 6 Model A INT 0.035 differs from Table 4; Sec. 5.4 equation includes lagged GDPG although Sec. 4.4.2 says the model is static; Table 8 'Excluding Sudan (Baseline)' INT 0.034 differs from baseline 0.031; the baseline drops Sudan (a low-income economy), so the baseline sample contains no low-income country; the text refers to Southeast Asia and Latin America regional figures not in the sample; cross-references to Sections 6.3.3/6.3.5 are mismatched. Interaction 'six-year threshold' is illustrative per authors. No instructions aimed at the extractor were found in the text.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {},
+   "heterogeneity": {},
+   "eligibility_ok": false,
+   "eligibility_note": "Exclusion E1 is right. The sample is five economies (Egypt, India, Kenya, Saudi Arabia, Sudan), well under the 10-economy minimum for non-AI exposure; Sec. 4.1.1: 'Our analysis is restricted to five countries.' The paper does present a Table 7 split by income group, but the groups contain 1, 3 and 1 countries, and the authors say it is 'descriptive country-specific evidence instead of systematic evidence of income-group heterogeneity' (Sec. 6.1). Table 7 note: 'NOT systematic evidence of income-group heterogeneity.' So there is no explicit income-group comparison that meets the alternative criterion.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "Record is correct: 5 (Egypt, India, Kenya, Saudi Arabia, Sudan); Sec. 4.1.1: 'Our analysis is restricted to five countries.'",
+    "income_groups_covered": "Record is correct: Sec. 4.1.1 gives Sudan low, Egypt/India/Kenya lower-middle, Saudi Arabia high; Table 7 header says 'Upper-Middle' for the Saudi column, so the labels conflict."
+   },
+   "corrections": [],
+   "problems": "No fabricated content found in the exclusion rationale or sample facts; they match the text. The record's note on Table 7 versus text coefficient mismatches is also right: the Table 7 note gives N = 12, 36 and 11 while the table shows 10, 30 and 10 observations, and the Sec. 6.1 text gives Sudan MOB 0.041 versus 0.038 in the table. Sudan INT is 0.018 in the text versus 0.021 in the table. Minor: the record's decision_rationale says 'four in the baseline after dropping Sudan'; this was not checked beyond the five-country count, and it does not change the decision."
+  }
+ },
+ {
+  "idx": "9203",
+  "title": "Impact of ICT Infrastructure, Financial Development, and Trade Openness on Economic Growth: New Evidence from Low- and High-Income Countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study (OLS, FE, system GMM) of ICT infrastructure (internet, broadband, fixed telephone, secure servers) on GDP per capita in 85 countries with an explicit low- versus high-income comparison.",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "broadband",
+   "fixed telephone",
+   "secure internet servers (ICT infrastructure)"
+  ],
+  "exposure_measure": "Individuals using the Internet (% of population); fixed broadband subscriptions per 100; fixed telephone subscriptions per 100; secure Internet servers per 1 million people (ITU); interacted with financial development (private credit % GDP) and trade openness",
+  "sample": {
+   "n_economies": "85",
+   "economies_or_groups": "27 low-income and 58 high-income countries (country lists not given in the main text); middle-income excluded",
+   "income_groups_covered": "low, high",
+   "years": "2000-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "OLS, fixed effects, and system GMM (dynamic panel with lagged dependent variable)",
+   "identification": "other",
+   "key_controls_fixed_effects": "Lagged GDP per capita, financial development, trade openness, capital formation, government consumption, population growth; internal GMM instruments (instrument count not reported)"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "GDP per capita (normalised level), low-income countries, system GMM, internet users",
+    "direction": "positive",
+    "estimate": "0.001** (Table 7 GMM); 0.002** (Table 8 Model 1)",
+    "uncertainty": "Std. dev in brackets (0.001); stars at 5%",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.7084, LICs GMM column: 'internet 0.001** (0.001)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, low-income countries, system GMM, secure Internet servers",
+    "direction": "negative",
+    "estimate": "-0.020** (Table 7 GMM); -0.008*** (Table 9 Model 10)",
+    "uncertainty": "(0.037) in Table 7",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.7084: 'Secure Internet -0.020** (0.037)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, low-income countries, system GMM, broadband",
+    "direction": "mixed",
+    "estimate": "0.007** (Table 7 GMM, (0.038)); -0.006** (Table 8 Model 3, (0.008))",
+    "uncertainty": "see estimate",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7 p.7084 and Table 8 p.7086; sign differs by specification"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, low-income countries, system GMM, fixed telephone",
+    "direction": "positive",
+    "estimate": "0.004* (Table 7 GMM); 0.003** (Table 8 Model 4)",
+    "uncertainty": "(0.007) in Table 7",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.7084: 'telephone 0.033** ... 0.004* (0.007)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, high-income countries, system GMM, internet users",
+    "direction": "positive",
+    "estimate": "0.006* (Table 7 GMM); 0.002** (Table 10 Model 1)",
+    "uncertainty": "(0.007) in Table 7",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.7084, HICs GMM: 'internet ... 0.006* (0.007)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, high-income countries, system GMM, secure Internet servers",
+    "direction": "positive",
+    "estimate": "0.041*** (Table 7 GMM); 0.040** (Table 10 Model 2)",
+    "uncertainty": "(0.025) in Table 7",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.7084: 'Secure Internet ... 0.041*** (0.025)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, high-income countries, system GMM, broadband",
+    "direction": "mixed",
+    "estimate": "-0.003*** (Table 7 GMM, (0.008)); 0.001** (Table 10 Model 3, (0.007))",
+    "uncertainty": "see estimate",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7 p.7084 and Table 10 p.7089; sign differs by specification"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, high-income countries, system GMM, fixed telephone",
+    "direction": "positive",
+    "estimate": "0.036** (Table 7 GMM); 0.034** (Table 10 Model 4)",
+    "uncertainty": "(0.013) in Table 7",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p.7084: 'telephone ... 0.036** (0.013)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, ICT x financial development interactions",
+    "direction": "mixed",
+    "estimate": "LIC: FD*internet 0.025**, FD*secure 0.101***, FD*broadband 0.056***, FD*telephone -0.023***; HIC: FD*internet -0.003***, FD*secure 0.015***, FD*broadband -0.035, FD*telephone -0.032** (Model 5) / 0.083*** (Model 8)",
+    "uncertainty": "brackets, e.g. (0.029), (0.091), (0.100), (0.019); (0.289), (0.162), (0.052)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8 p.7086 and Table 10 p.7089"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita, ICT x FD x trade openness three-way interactions",
+    "direction": "mixed",
+    "estimate": "LIC: .638***, 0.103***, 0.096***, 0.031*; HIC: -0.116***, -0.225***, -0.160***, -0.194***",
+    "uncertainty": "LIC brackets (0.015), (0.205), (0.164), (0.074); HIC (0.151), (0.618), (0.215), (0.235)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9 p.7088 and Table 11 p.7091; positive in LICs, negative in HICs"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Individual ICT effects are small and mostly positive in both groups; secure Internet is negative in LICs and positive in HICs; broadband sign is unstable in both. The three-way ICT x FD x TO term is positive in LICs and negative in HICs.",
+    "threshold_value": "none",
+    "evidence": "Tables 7-11, pp.7084-7091; 'results are reversed in the HICs context' (Abstract)"
+   },
+   {
+    "moderator": "other",
+    "finding": "Financial development interaction: FD complements ICT in LICs (internet, secure, broadband positive); in HICs positive for secure internet and telephone, negative or insignificant for internet and broadband (Model 5/7).",
+    "threshold_value": "none",
+    "evidence": "Tables 8 and 10; 'FD works as a harmonizer for the ICT infrastructure' p.7091"
+   }
+  ],
+  "income_group_results": {
+   "high": "Table 7 GMM: internet 0.006*, secure 0.041***, broadband -0.003***, telephone 0.036**; three-way interactions negative",
+   "upper_middle": "not covered",
+   "lower_middle": "not covered",
+   "low": "Table 7 GMM: internet 0.001**, secure -0.020**, broadband 0.007**, telephone 0.004*; three-way interactions positive (low-income group of 27 countries)"
+  },
+  "n_specifications_reported": "about 50 (Table 7 six columns plus 8+4 models for LICs and 8+4 for HICs, plus Appendix Table 12 not seen in text)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM with lagged-level and difference instruments is the only strategy; instrument counts not reported, Sargan/Hansen statistics are printed without p-values, and AR(2) is significant in HICs (-4.2), which questions validity; causal language ('impact', 'proved').",
+    "evidence": "Tables 7, 10, 11 AR(2) rows; p.7075 text on GMM"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Four separate infrastructure proxies (fixed telephone, fixed broadband, internet users, secure servers); mobile telephony not used; secure servers per million has extreme range in HICs (max 277,134) and is a weak proxy.",
+    "evidence": "Table 2 p.7079; Table 4 p.7080"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Only 27 low-income and 58 high-income countries, middle-income excluded for data reasons; country lists not given; HICs have 1160 obs in Table 4 but 1102 in Tables 10-11 and LIC GMM has 513.",
+    "evidence": "Limitations p.7092; Tables 4, 7, 10"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP per capita (constant US$) from WDI but data were 'normalised' before estimation and coefficients are tiny and uninterpretable in units; dependent variable labelled '1st diff' in Table 7.",
+    "evidence": "Table 7 p.7084; p.7078 'after normalizing the data'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Many model variants (one ICT proxy per model, with and without interactions), trade openness defined as trade divided by GDP per capita, population growth variable with a max of 11,916; coefficient signs for same variable flip across specifications.",
+    "evidence": "Tables 2, 4, 7-11"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All twelve models per group are shown, but stars do not match the printed brackets (e.g. 0.001** (0.001), 0.638*** (0.015) versus 0.103*** (0.205)); text conclusions are stronger than tables support; Appendix Table 12 not available in text.",
+    "evidence": "Tables 7-11; Results pp.7083-7085"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (internally inconsistent significance stars versus standard errors, garbled cells such as '0.041*0.(014)', and text claims that contradict tables)",
+  "notes": "No instruction-like text found in the paper. Brackets are labelled 'Std. dev' in the table notes and treated as standard errors; labels unclear. Text and tables disagree: Results (p.7083) says secure Internet negative in LICs and broadband negative in HICs under Table 7, and the text for Table 8 says broadband negative and significant while Table 8 Model 3 shows -0.006**; the abstract says telephone is not positive in LICs but Tables 7-8 show positive. Table 8 Model 8 'telephone .983 (0.011)' looks like a typo or lagged-dependent-variable error. Table 3 gives EG mean 625.845 versus 625.856 in text. Appendix Table 12 was not in the converted text. Table 7 also shows OLS and FE columns.",
+  "quote_check": {
+   "verified": 6,
+   "checked": 7
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 9,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own OLS/FE/system-GMM estimation; exposure is internet, broadband, fixed telephone and secure servers (ICT infrastructure); 85 economies (27 low, 58 high) with explicit income-group comparison; outcome is GDP per capita (output). Meets all criteria.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "85 confirmed (27 low + 58 high), 2000-2019 confirmed",
+    "economies_or_groups": "Country lists ARE in the text: Appendix Table 12 'Name of sampled countries' (the Syrian Arab Republic is printed twice, so 27 unique low-income entries)",
+    "n_obs": "Table 7: LIC OLS/FE 540, LIC GMM 513, HIC 1160; Tables 8-9 LIC 540 (Table 9 prints no obs row); Tables 10-11 HIC 1102"
+   },
+   "corrections": [
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "Direction is mixed across specifications, not negative: Table 8 Model 2 prints a positive significant coefficient 0.05*** (.010) and Model 6 prints -0.037 (0.028). Negative only in Table 7 GMM (-0.020** (0.037)) and Table 9 Model 10 (-0.008*** (0.010)).",
+     "quote": "Secure Internet  -  0.05*** (.010)",
+     "note": "Table 8 p.7086; Table 7 and Table 9 values in the record are correct as printed."
+    }
+   ],
+   "problems": "(a) Record's note that 'Appendix Table 12 was not in the converted text' is wrong: Appendix Table 12 (sampled-country list) is present at the end of the text; the Results text confusingly cites 'Appendix Table 12' as a model table. (b) n_specifications_reported 'about 50' is inconsistent with its own breakdown: Table 7 six columns + 8+4 LIC + 8+4 HIC = 30. (c) Result 2 omits the positive Table 8 Model 2 estimate. (d) Table 9 prints no observation/country rows. (e) Table 10 FD*telephone -0.032** sits in the Model5 column although telephone is not in that model. No invented numbers found; no cross-paper mix-up."
+  }
+ },
+ {
+  "idx": "9204",
+  "title": "The Effects of Information and Communication Technology (ICT) Use on Human Development: A Macroeconomic Approach",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel (system GMM) study of ICT use on the Human Development Index (health, education, income composite) across 130 countries split by income group; outcome falls in family 5 (living standards beyond income).",
+  "stream": "H",
+  "technology": [
+   "ICT in general (internet, broadband, mobile, fixed telephony composite)"
+  ],
+  "exposure_measure": "ICTuse: variable from WEF Global Competitiveness Report built from several indicators (internet users, fixed broadband, internet bandwidth, mobile broadband, mobile telephone and fixed telephone subscriptions); aggregation method and units not explained (Table 2 mean 3.16, range -2.16 to 9.78, so apparently a standardised index)",
+  "sample": {
+   "n_economies": "130 (text); Table 3 panels sum to 112 and Table 2 reports n=161 for HDI",
+   "economies_or_groups": "High 38, upper-middle 31, lower-middle 28, low 15 panels (Table 3); country list not given",
+   "income_groups_covered": "high, upper-middle, lower-middle, low",
+   "years": "2007-2019 (GINI and ICTuse linearly extrapolated for 2018 and 2019)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Two-step system GMM, estimated separately for each World Bank income group (Table 3, columns 1-4)",
+   "identification": "other",
+   "key_controls_fixed_effects": "Lagged HDI, GINI, Rule of Law, year fixed effects; identification by internal (lagged) instruments only"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Human Development Index (composite of life expectancy, education, GDP per capita), high-income countries",
+    "direction": "null",
+    "estimate": "ICTuse -0.000134",
+    "uncertainty": "se (0.000770), not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, col (1), p. 8: 'ICTuse -0.000134 (0.000770)'"
+   },
+   {
+    "family": 5,
+    "indicator": "HDI, upper-middle-income countries",
+    "direction": "null",
+    "estimate": "ICTuse 0.00730",
+    "uncertainty": "se (4.392), not significant; degenerate column (L.HDI = 0 (0), Hansen p-value 0.000)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, col (2), p. 8: 'ICTuse 0.00730 (4.392)'; Hansen statistic 270.28, p 0.000"
+   },
+   {
+    "family": 5,
+    "indicator": "HDI, lower-middle-income countries",
+    "direction": "positive",
+    "estimate": "ICTuse 0.00566*",
+    "uncertainty": "se (0.00302), p<0.1",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, col (3), p. 8: 'ICTuse 0.00566 * (0.00302)'. Text p. 8 says p<0.01 for this group, which conflicts with a single star"
+   },
+   {
+    "family": 5,
+    "indicator": "HDI, low-income countries",
+    "direction": "positive",
+    "estimate": "ICTuse 0.0537***",
+    "uncertainty": "se (0.00675), p<0.01; degenerate column (L.HDI = 0, Hansen 0, p=1; 15 panels)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, col (4), p. 8: 'ICTuse 0.0537 *** (0.00675)'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "ICT coefficient is larger in lower-income groups: 0.0537 (low), 0.00566 (lower-middle), insignificant in upper-middle and high; authors conclude that the less developed the country, the greater the ICT effect. No formal test of coefficient differences, and models are estimated separately.",
+    "threshold_value": "none",
+    "evidence": "Section 6, p. 8: 'the less developed the country, the greater the impact of ICT on human development'"
+   }
+  ],
+  "income_group_results": {
+   "high": "-0.000134 (0.000770), not significant",
+   "upper_middle": "0.00730 (4.392), not significant",
+   "lower_middle": "0.00566* (0.00302)",
+   "low": "0.0537*** (0.00675)"
+  },
+  "n_specifications_reported": "4 (one per income group, single table)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM with lags is the only strategy; ICT is not treated as endogenous (text says only HDI is endogenous); two of four columns have the lagged dependent variable dropped or zero, so the GMM structure fails; causal-sounding policy conclusions",
+    "evidence": "Section 3, p. 6: 'In our case, the endogenous variable is the HDI'; Table 3 cols (2),(4) L.HDI = 0"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "ICTuse is an unexplained aggregate of six indicators with no stated weighting, scale or aggregation method; mixes fixed telephony and mobile broadband; extrapolated for 2018-2019",
+    "evidence": "Table 1, p. 6; Section 4, p. 6 extrapolation"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Unbalanced panel; country counts inconsistent (130 in text, 112 summed in Table 3, 161 in Table 2); countries not listed; income groups fixed at 2020 classification",
+    "evidence": "Section 4, p. 6; Table 2 p. 7; Table 3 p. 8"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "HDI is a standard but slow-moving composite that includes GDP per capita; within-country variation is very small (within SD 0.02); authors acknowledge limitations",
+    "evidence": "Table 2, p. 7; Section 7, p. 10"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Four separate small-N regressions, no robustness checks, no AR(1)/AR(2) tests reported, Hansen statistics implausible (270.28, p=0.000 in col 2; 0 and p=1 in col 4; p=0.950 and p=1 elsewhere signal instrument proliferation); absurd standard errors (4.392, 9.756, 23.80) in col 2",
+    "evidence": "Table 3, p. 8, Hansen rows and col (2)"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only one specification reported, no alternative models; no evidence of selective reporting but nothing to compare against; text misdescribes significance (says p<0.01 for lower-middle; Table shows p<0.1)",
+    "evidence": "Section 5, p. 8 vs Table 3 col (3)"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Outcome is HDI, which includes GDP per capita as one component, so it is not a pure output or productivity outcome (family 5, not 1). Paper reports no GDP or productivity regression. Text states results for rule of law inconsistently (says not significant in middle and low-income countries, and also significant negative). Text says L.HDI omitted because yearly effects correlated with it, and that its effect is positive for high and lower-middle only. Authors say effects are 'significant (p<0.01)' for lower-middle but table shows * only. No embedded instructions directed at the reader found.",
+  "quote_check": {
+   "verified": 2,
+   "checked": 6
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own quantitative estimation (two-step system GMM, Table 3). Exposure is a composite ICT-use index (internet users, broadband, bandwidth, mobile broadband, mobile and fixed telephone; Table 1), which counts as ICT in general. At least 10 economies per group and an explicit income-group comparison (Table 3 panels 38/31/28/15). Outcome is the Human Development Index, a living-standards-beyond-income outcome (family 5); the paper reports no output or productivity regression, so family 5 is correct.",
+   "risk_of_bias_overall_opinion": "too_lenient",
+   "sample_corrections": {
+    "n_economies": "130 (Section 4 and abstract: 'database that includes 130 countries'). The count cannot be reconciled with the tables. Table 3 panels sum to 112 (38+31+28+15). Table 2 reports between-unit n = 161 for HDI, 145 for GINI, 148 for ICTuse and 179 for Rule of Law. The text gives 130 only as the sample size and does not say which count applies to the regressions. Treat 112 as the number actually estimated.",
+    "observations": "Table 3 estimation observations sum to 1179 (434+339+270+136), against N = 2077 for HDI in Table 2. The record does not report this gap.",
+    "years": "2007-2019 confirmed (Section 4). GINI and ICTuse linearly extrapolated for 2018 and 2019, so those years are not observed for these two variables.",
+    "income_groups_covered": "high, upper-middle, lower-middle, low (World Bank 2020 classification) confirmed; groups are fixed by the 2020 classification, not time-varying."
+   },
+   "corrections": [],
+   "problems": "No invented or mixed-up content found; the record matches the paper's tables and text. Points the record under-weights: (1) the sample counts are left unreconciled in the text and cannot be resolved from it (130 text; 112 Table 3 panels; Table 2 n = 161 for HDI, 145 GINI, 148 ICTuse, 179 Rule of Law), and the estimation observations are 1179 against N = 2077 in Table 2; (2) the specification and overall risk-of-bias ratings look too lenient given the degenerate columns (see the specification entry); (3) the text claims p < 0.01 for lower-middle-income countries while Table 3 shows p < 0.1, and the abstract's 'highly significant' for that group is unsupported; (4) the text says RuleofLaw is insignificant in middle and low-income countries and also significant and negative for low and middle income, which is internally inconsistent; the table shows a significant negative effect only in col (4) and a significant positive effect in col (3) (0.0163***); (5) the 'monotonic' reading of the income gradient is not supported by the upper-middle point estimate. Nothing in the text is aimed at the reader."
+  }
  }
 ]

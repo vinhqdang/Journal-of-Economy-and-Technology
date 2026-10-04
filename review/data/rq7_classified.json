@@ -1222,5 +1222,45 @@
   "tested_formally": true,
   "note": "Effects larger where baseline fixed-line penetration is below the median",
   "idx": "9106"
+ },
+ {
+  "id": "9201-H1",
+  "moderator_type": "income_group",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Digitalisation widens the Gini coefficient in high-income G20 economies and narrows it in middle-income ones; split samples, no interaction",
+  "idx": "9201"
+ },
+ {
+  "id": "9201-H2",
+  "moderator_type": "trade_openness",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Interaction with trade openness raises inequality in high-income and lowers it in middle-income economies; FDI interaction lowers it in the middle-income group only on the second-pass reading",
+  "idx": "9201"
+ },
+ {
+  "id": "9203-H1",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Individual ICT effects small and mostly positive in both low- and high-income samples; secure internet negative in low-income and positive in high-income; split samples",
+  "idx": "9203"
+ },
+ {
+  "id": "9203-H2",
+  "moderator_type": "financial_development",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Financial development complements ICT in low-income economies; in high-income economies mixed across indicators",
+  "idx": "9203"
+ },
+ {
+  "id": "9204-H1",
+  "moderator_type": "income_group",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "ICT coefficient on HDI larger in low and lower-middle income groups, insignificant in upper-middle and high; no formal test of the difference",
+  "idx": "9204"
  }
 ]

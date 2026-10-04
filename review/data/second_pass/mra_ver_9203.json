@@ -1,0 +1,26 @@
+[
+ {
+  "idx": "9203",
+  "paper_verdict": {
+   "estimator_family": "system GMM (dynamic panel; OLS and FE also shown in Table 7)",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Data were normalised before estimation and units are not stated, so coefficients are sign/significance only, not elasticities; dependent variable is GDP per capita level with a lagged DV (long-run effects differ from coefficients); brackets labelled 'Std. dev' and many stars do not match the brackets (e.g. 0.103*** (0.205)); exposures are heterogeneous (internet %, servers per million, per-100 subscriptions); interaction coefficients (FD*ICT, FD*ICT*TO) are not marginal effects; same sample repeated across many specifications; Table 9 prints no n_obs/n_countries; internal instrument validity doubtful in HICs (AR(2) -4.21)."
+  },
+  "estimates": [
+   {"estimate_id": "9203-1", "verdict": "confirmed", "corrections": {}, "quote": "internet 0.005** (0.002) 0.018*** (0.004) 0.001** (0.001)", "note": "Table 7 LIC GMM (third column); n 513, 27 countries printed. Brackets labelled 'Std. dev', treated as SE."},
+   {"estimate_id": "9203-2", "verdict": "confirmed", "corrections": {}, "quote": "Secure Internet -0.043*** (0.064) 0.072*** (0.041) -0.020** (0.037)", "note": "Table 7 LIC GMM; 513 / 27."},
+   {"estimate_id": "9203-3", "verdict": "confirmed", "corrections": {}, "quote": "broadband -0.012*** (0.060) -0.146*** (0.040) 0.007** (0.038)", "note": "Table 7 LIC GMM; 513 / 27."},
+   {"estimate_id": "9203-4", "verdict": "confirmed", "corrections": {}, "quote": "telephone 0.033** (0.003) 0.002** (0.006) 0.004* (0.007)", "note": "Table 7 LIC GMM; 513 / 27."},
+   {"estimate_id": "9203-5", "verdict": "confirmed", "corrections": {}, "quote": "internet 0.125*** (0.016) 0.054** (0.009) 0.006* (0.007)", "note": "Table 7 HIC GMM; 1160 / 58."},
+   {"estimate_id": "9203-6", "verdict": "confirmed", "corrections": {}, "quote": "Secure Internet 0.199*** (0.054) -0.032** (0.027) 0.041*** (0.025)", "note": "Table 7 HIC GMM; 1160 / 58."},
+   {"estimate_id": "9203-7", "verdict": "confirmed", "corrections": {}, "quote": "broadband -0.033** (0.015) 0.041** (0.011) -0.003*** (0.008)", "note": "Table 7 HIC GMM; 1160 / 58."},
+   {"estimate_id": "9203-8", "verdict": "confirmed", "corrections": {}, "quote": "telephone 0.010* (0.027) -0.347** (0.027) 0.036** (0.013)", "note": "Table 7 HIC GMM; 1160 / 58."},
+   {"estimate_id": "9203-9", "verdict": "confirmed", "corrections": {}, "quote": "Internet 0.002** (0.001)", "note": "Table 8 Model1; 540 / 27 printed."},
+   {"estimate_id": "9203-10", "verdict": "confirmed", "corrections": {}, "quote": "internet 0.002** (0.006)", "note": "Table 10 Model1; 1102 / 58 printed."},
+   {"estimate_id": "9203-11", "verdict": "confirmed", "corrections": {}, "quote": "FD*internet - - - - 0.025** (0.029)", "note": "Table 8 Model5; 540 / 27. Interaction term, not a marginal effect of the technology; poolability doubtful."},
+   {"estimate_id": "9203-12", "verdict": "confirmed", "corrections": {}, "quote": "FD*internet - - - - −0.003*** (0.289)", "note": "Table 10 Model5; 1102 / 58. Interaction term; star is inconsistent with the 0.289 bracket."},
+   {"estimate_id": "9203-13", "verdict": "confirmed", "corrections": {}, "quote": "FD*internet*TO .638*** (0.015)", "note": "Table 9 Model9; coefficient and bracket correct, but Table 9 prints no n_obs/n_countries, so 540/27 is inferred from Table 8. Three-way interaction, poolability doubtful."},
+   {"estimate_id": "9203-14", "verdict": "confirmed", "corrections": {}, "quote": "FD*internet*TO −0.116*** (0.151)", "note": "Table 11 Model9; 1102 / 58 printed. Three-way interaction, poolability doubtful."}
+  ]
+}
+]

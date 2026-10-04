@@ -1,0 +1,67 @@
+[
+ {
+  "idx": "9204",
+  "eligibility_ok": true,
+  "eligibility_note": "Own quantitative estimation (two-step system GMM, Table 3). Exposure is a composite ICT-use index (internet users, broadband, bandwidth, mobile broadband, mobile and fixed telephone; Table 1), which counts as ICT in general. At least 10 economies per group and an explicit income-group comparison (Table 3 panels 38/31/28/15). Outcome is the Human Development Index, a living-standards-beyond-income outcome (family 5); the paper reports no output or productivity regression, so family 5 is correct.",
+  "sample_corrections": {
+   "n_economies": "130 (Section 4 and abstract: 'database that includes 130 countries'). The count cannot be reconciled with the tables. Table 3 panels sum to 112 (38+31+28+15). Table 2 reports between-unit n = 161 for HDI, 145 for GINI, 148 for ICTuse and 179 for Rule of Law. The text gives 130 only as the sample size and does not say which count applies to the regressions. Treat 112 as the number actually estimated.",
+   "observations": "Table 3 estimation observations sum to 1179 (434+339+270+136), against N = 2077 for HDI in Table 2. The record does not report this gap.",
+   "years": "2007-2019 confirmed (Section 4). GINI and ICTuse linearly extrapolated for 2018 and 2019, so those years are not observed for these two variables.",
+   "income_groups_covered": "high, upper-middle, lower-middle, low (World Bank 2020 classification) confirmed; groups are fixed by the 2020 classification, not time-varying."
+  },
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "ICTuse -0.000134 (0.000770)",
+    "locator": "Table 3, col (1), p. 8. Robust SE, no star. Hansen 23.30, p = 0.950."
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "Direction 'null' is right (no star), but the column is degenerate and the estimate is uninformative rather than a precise null: SE 4.392, L.HDI = 0 (0), Hansen 270.28 with p = 0.000.",
+    "quote": "ICTuse 0.00730 (4.392); Hansen statistics 270.28; Hansen p-value 0.000",
+    "locator": "Table 3, col (2), p. 8"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Coefficient, SE and the single star (p < 0.1) are as printed. The text and abstract say p < 0.01 / 'highly significant' for lower-middle-income countries. The table shows only *, so the text overstates significance. The record already notes this conflict. Use p < 0.1.",
+    "quote": "ICTuse 0.00566 * (0.00302); Robust standard errors in parentheses. *** p < 0.01, ** p < 0.05, * p < 0.1",
+    "locator": "Table 3, col (3) and table note, p. 8; Section 5 text, p. 8"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "Coefficient and SE as printed. The column is degenerate (L.HDI = 0 (0), Hansen = 0 with p = 1, 15 panels, 136 observations), so the *** is not credible evidence.",
+    "quote": "ICTuse 0.0537 *** (0.00675); Number of panels 15; Hansen statistics 0; Hansen p-value 1",
+    "locator": "Table 3, col (4), p. 8"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "The authors do draw this conclusion and the point estimates for low (0.0537) and lower-middle (0.00566) are right. There is no test of coefficient differences, and each group is a separate regression. The 'less developed, greater effect' ordering is not monotonic in the point estimates: upper-middle (0.00730) exceeds lower-middle (0.00566), although it is insignificant with SE 4.392. The low-income and upper-middle columns are degenerate. Thresholds are the World Bank 2020 income-group boundaries (high > USD 12,535; upper-middle USD 4046-12,535; lower-middle USD 1036-4045; low < USD 1036), not estimated thresholds, so threshold_value 'none' is correct.",
+    "quote": "the less developed the country, the greater the impact of ICT on human development",
+    "locator": "Section 6, p. 8"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "All four entries match Table 3 (high -0.000134 (0.000770); upper-middle 0.00730 (4.392); lower-middle 0.00566* (0.00302); low 0.0537*** (0.00675)). Caveat: the upper-middle and low-income columns have L.HDI dropped (shown as 0 (0)) and implausible Hansen statistics.",
+  "risk_of_bias": {
+   "overall": "too_lenient",
+   "confounding_reverse_causation": "agree (serious): the text states only HDI is endogenous ('the endogenous variable is the HDI'), so ICTuse is not instrumented and no other strategy for reverse causation is offered; the paper's policy conclusions are causal.",
+   "exposure_measurement": "agree (serious): ICTuse is an unexplained composite of six WEF indicators with no stated weighting or scale, it mixes fixed telephony with mobile broadband, and it is extrapolated for 2018-2019.",
+   "selection_of_countries_years": "agree (moderate): the counts of 130 in the text, 112 in the Table 3 panels and 161 in Table 2 are unreconciled, no country list is given, and groups are fixed at the 2020 classification.",
+   "outcome_measurement": "agree (moderate): HDI is a standard but slow-moving composite that includes GDP per capita (within SD 0.0202 in Table 2), and the authors acknowledge its limits.",
+   "specification": "too_lenient (critical-leaning): in cols (2) and (4) L.HDI is dropped (0 (0)), and col (2) has Hansen 270.28 with p = 0.000 and SEs of 4.392 and 9.756. Hansen p-values of 1 and 0.950 in the other columns suggest instrument proliferation. No AR(1)/AR(2) tests and no robustness checks are reported, so the system-GMM structure does not hold in the columns that carry the headline results.",
+   "selective_reporting": "agree (moderate): a single specification per group, so nothing to compare against; the text overstates the lower-middle significance (p < 0.01 in text versus * in the table).",
+   "why": "Two of four columns, including the low-income column that carries the main finding (0.0537***), are degenerate; the lower-middle result is significant only at 10%. The instrument set is not credible and ICT is not treated as endogenous, while the paper uses causal language. The positive-effect conclusion therefore cannot be trusted, which fits critical rather than serious. Cols (1) and (3) are weak but usable."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented or mixed-up content found; the record matches the paper's tables and text. Points the record under-weights: (1) the sample counts are left unreconciled in the text and cannot be resolved from it (130 text; 112 Table 3 panels; Table 2 n = 161 for HDI, 145 GINI, 148 ICTuse, 179 Rule of Law), and the estimation observations are 1179 against N = 2077 in Table 2; (2) the specification and overall risk-of-bias ratings look too lenient given the degenerate columns (see the specification entry); (3) the text claims p < 0.01 for lower-middle-income countries while Table 3 shows p < 0.1, and the abstract's 'highly significant' for that group is unsupported; (4) the text says RuleofLaw is insignificant in middle and low-income countries and also significant and negative for low and middle income, which is internally inconsistent; the table shows a significant negative effect only in col (4) and a significant positive effect in col (3) (0.0163***); (5) the 'monotonic' reading of the income gradient is not supported by the upper-middle point estimate. Nothing in the text is aimed at the reader."
+ }
+]
