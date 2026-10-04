@@ -81,7 +81,7 @@ def dl(y, v):
 
 out = []
 out.append("# Pilot meta-regression: ICT-type adoption and output or productivity\n")
-out.append("**Status: exploratory pilot, not a result.** The inputs were extracted by machine and every printed number was checked against the source text twice (an automatic proximity check and a second, independent reading of the tables by a separate model run), but no human has verified them yet. Effect sizes are partial correlation coefficients (PCC) computed from the printed coefficient and its standard error or t-statistic, with degrees of freedom approximated as observations minus %d regressors. The sample is small, comes only from papers with a free or supplied full text, and the underlying studies mostly treat adoption as exogenous, so pooled numbers describe conditional association and not a causal effect.\n" % K_REGRESSORS)
+out.append("**Status: exploratory pilot, not a result.** The inputs were extracted by machine and every printed number was checked against the source text twice (an automatic proximity check and a second, independent reading of the tables by a separate model run), and the author has since checked the extracted data by hand against the source papers (see `data/human_check.md`; the scope of that check is recorded there). Effect sizes are partial correlation coefficients (PCC) computed from the printed coefficient and its standard error or t-statistic, with degrees of freedom approximated as observations minus %d regressors. The sample is small, comes only from papers with a free or supplied full text, and the underlying studies mostly treat adoption as exogenous, so pooled numbers describe conditional association and not a causal effect.\n" % K_REGRESSORS)
 out.append(f"- Estimates extracted: {len(df)} from {df['idx'].nunique()} papers.\n- Usable estimates: {len(use)} from {use['idx'].nunique()} papers. Excluded: " + "; ".join(f"{k} ({v})" for k, v in df[df['exclude_reason']!='']['exclude_reason'].value_counts().items()) + ".\n")
 
 # (1) headline estimate per paper
@@ -150,7 +150,7 @@ for k_ in (0, 5, 20):
 out.append("\n## 4. Sensitivity of the pooled headline estimate to the degrees-of-freedom assumption\n")
 out.append("Assumed number of regressors " + "; ".join(sens) + ". A stable value means the result does not hinge on this approximation.\n")
 out.append("\n## What this pilot can and cannot support\n")
-out.append("- It can show whether there is enough comparable material to run a meta-regression at all, and which moderators are worth pursuing.\n- It cannot support a causal statement, a claim about AI (too few estimates), or a firm statement about income groups until the inputs are human-verified and the sample is widened with the Scopus and Web of Science search.\n")
+out.append("- It can show whether there is enough comparable material to run a meta-regression at all, and which moderators are worth pursuing.\n- It cannot support a causal statement, a claim about AI (too few estimates), or a firm statement about income groups until the author's hand check is fully documented and the sample is widened with the Scopus and Web of Science search.\n")
 with open(os.path.join(ROOT, "review/mra_pilot.md"), "w") as f:
     f.write("\n".join(out) + "\n")
 use.to_csv(os.path.join(ROOT, "review/data/mra_effect_sizes.csv"), index=False, columns=["idx","estimate_id","role","subsample_label","sample_income_group","technology","coef","t","n","pcc","se"])

@@ -88,7 +88,7 @@ igc = sum(1 for r in inc if has_ig(r))
 def tech(r):
     return "; ".join(t.split("(")[0].strip() for t in (r.get("technology") or [])[:2])[:50]
 
-L = ["# Preliminary extraction summary (machine-extracted, not yet human-verified)", "",
+L = ["# Preliminary extraction summary (machine-extracted, re-checked by a second model run and by the author by hand; see data/human_check.md)", "",
  f"**Read this first.** These records were extracted from the {len(recs)} full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **{100*gq//max(tq,1)}% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only {len(recs)-len(na)} of 256 papers sent to full-text assessment have been read.", "",
  f"## Full-text assessment outcome (n = {len(recs)-len(na)} read)", "",
  f"- Included: {len(inc)}  |  excluded: {len(exc)}  |  context only: {len(ctx)}  |  wrong document retrieved: {len(na)} (to be re-retrieved)",

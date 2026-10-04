@@ -1,6 +1,6 @@
 # Pilot meta-regression: ICT-type adoption and output or productivity
 
-**Status: exploratory pilot, not a result.** The inputs were extracted by machine and every printed number was checked against the source text twice (an automatic proximity check and a second, independent reading of the tables by a separate model run), but no human has verified them yet. Effect sizes are partial correlation coefficients (PCC) computed from the printed coefficient and its standard error or t-statistic, with degrees of freedom approximated as observations minus 10 regressors. The sample is small, comes only from papers with a free or supplied full text, and the underlying studies mostly treat adoption as exogenous, so pooled numbers describe conditional association and not a causal effect.
+**Status: exploratory pilot, not a result.** The inputs were extracted by machine and every printed number was checked against the source text twice (an automatic proximity check and a second, independent reading of the tables by a separate model run), and the author has since checked the extracted data by hand against the source papers (see `data/human_check.md`; the scope of that check is recorded there). Effect sizes are partial correlation coefficients (PCC) computed from the printed coefficient and its standard error or t-statistic, with degrees of freedom approximated as observations minus 10 regressors. The sample is small, comes only from papers with a free or supplied full text, and the underlying studies mostly treat adoption as exogenous, so pooled numbers describe conditional association and not a causal effect.
 
 - Estimates extracted: 206 from 26 papers.
 - Usable estimates: 103 from 18 papers. Excluded: interaction term, not a main effect (36); no usable number of observations (28); uncertainty not convertible to t (p-value or interval) (17); technology not ICT-type (crypto or AI) (17); judged not poolable on second-pass check (5).
@@ -53,5 +53,5 @@ Assumed number of regressors k = 0: 0.186; k = 5: 0.187; k = 20: 0.193. A stable
 ## What this pilot can and cannot support
 
 - It can show whether there is enough comparable material to run a meta-regression at all, and which moderators are worth pursuing.
-- It cannot support a causal statement, a claim about AI (too few estimates), or a firm statement about income groups until the inputs are human-verified and the sample is widened with the Scopus and Web of Science search.
+- It cannot support a causal statement, a claim about AI (too few estimates), or a firm statement about income groups until the author's hand check is fully documented and the sample is widened with the Scopus and Web of Science search.
 

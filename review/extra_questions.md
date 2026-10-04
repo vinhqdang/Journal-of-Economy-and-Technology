@@ -1,6 +1,6 @@
 # Additional research questions: results (exploratory)
 
-Specified in `extra_questions_spec.md` before the analyses were run. Exploratory: no multiplicity correction, machine-extracted inputs, no human verification. A single p-value below 0.10 among these tests is a hypothesis, not a finding.
+Specified in `extra_questions_spec.md` before the analyses were run. Exploratory: no multiplicity correction, machine-extracted inputs (checked by the author by hand; see `data/human_check.md`). A single p-value below 0.10 among these tests is a hypothesis, not a finding.
 
 ## RQ2 to RQ4: extra moderators in the meta-regression
 
