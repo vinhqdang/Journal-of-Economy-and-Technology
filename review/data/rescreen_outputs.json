@@ -1,0 +1,2042 @@
+[
+ {
+  "sid": "S3-123",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1797",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-oa:W4376119459",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.2753/ree1540-496x470101",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-963",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-612",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-887",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-991",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-884",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1798",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1228",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-657",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-547",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1356",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1656",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-908",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w7846",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-633",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.5172/ijpl.2011.152",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-152",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-67",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1649",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.3390/economies6030047",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1900",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1497",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1743",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-300",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-78",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w20025",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1129",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1999",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1657",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-459",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-2053",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w28681",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-538",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-745",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-535",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1371/journal.pone.0323862",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w6892",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-240",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.5296/ber.v13i2.20764",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1693",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1390",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1450",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-2043",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1047",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-893",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-572",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1708",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w27151",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w35372",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-892",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1108/jide-07-2024-0027",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.hlpt.2013.09.005",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.1109/mic.2005.78",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-84",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1111/coep.12456",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-878",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-305",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-208",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.33423/jaf.v23i2.6090",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-68",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-80",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1288",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-445",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-311",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-478",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.32996/jcsts.2025.7.3.28",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.21511/ee.16(3).2025.06",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.3390/economies14090401",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w21235",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-805",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-600",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1377",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-401",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-879",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1967",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.1080/10875549.2019.1678553",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1242",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-oa:W4390238391",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.5210/fm.v7i10.996",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1060",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1353",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1428",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-498",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-937",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1647",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w11190",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w24245",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-106",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-394",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w8140",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-339",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1658",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w22176",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-948",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-687",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1007/s10639-013-9248-x",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-oa:W131450420",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1674",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1145",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1769",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-2014",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-977",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-oa:W1591205790",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.56726/irjmets92604",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-751",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1666",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w17129",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-376",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-711",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1449",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1699",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-827",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1986",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.artint.2025.104296",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w29289",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-338",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w27235",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-474",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w17184",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-720",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1783",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-668",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-970",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-928",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1759",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.respol.2019.05.012",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-721",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-2059",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1775",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-oa:W4389855071",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-495",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-370",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-653",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w21547",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-30",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w33908",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1957",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.1108/edi-05-2016-0040",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-614",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1055",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.irfa.2022.102385",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1002/itdj.20019",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1773",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-448",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1469",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w31445",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-564",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-566",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1220",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-407",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-408",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1673",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1444",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1764",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1275",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1598",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1698",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-685",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w17270",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1080/10610154.2016.1294432",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w35437",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-789",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-826",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1879",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-173",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1053",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-811",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1002/j.1681-4835.2012.tb00367.x",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1549",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-169",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.2304/elea.2006.3.3.271",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-2031",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1774",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-704",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1310",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-913",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.2139/ssrn.3005432",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1931",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1471",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1294",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-oa:W3202125217",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-703",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1090",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.intell.2015.04.013",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1625",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-412",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1325",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-177",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-195",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.2478/fiqf-2021-0023",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-266",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1007/s41649-025-00395-9",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-2023",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.1002/j.1681-4835.2000.tb00004.x",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.intell.2020.101515",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1891",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1114",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-16",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.25157/jgsrd.v4i1.3091",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1951",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-586",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w7115",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-757",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1026",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-467",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-196",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w33054",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-629",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1670",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1002/j.1681-4835.2003.tb00078.x",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1093/occmed/51.1.25",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w30603",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.51265/gfr.2023.4.1.91",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-883",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-885",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1633",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1037",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1733",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1948",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w34504",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1412",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-998",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1354",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-423",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-324",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-976",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.14299/ijser.2020.12.01",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1504/ijepee.2019.104639",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1991",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w35347",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-277",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1007",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-2028",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1680",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-485",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1426",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1610",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.56284/4q8kch30",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1760",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1436",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1002/isd2.12314",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w34530",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.system.2026.104037",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1904",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.65150/ep-jsshrs/v2e9/2026-04",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w23569",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1629",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1915",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w32866",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1516",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-304",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1351",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-oa:W7167068885",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w32547",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-43",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1016/s1350-4789(05)70722-4",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1961",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w24689",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1336",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1494",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1720",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-97",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-149",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1140",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-722",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1157",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w8067",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-244",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.resglo.2025.100277",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-536",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-755",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-790",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-615",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-532",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1016/j.tele.2023.102026",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1103",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1282",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-367",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1481",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-940",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1593",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-oa:W4388752038",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-882",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-295",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1252",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-825",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1452",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1746",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-1619",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1321",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-935",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-888",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.56334/sei/8.3.56",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-902",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w30133",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-891",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.7176/rjfa/14-16-07",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1706",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-603",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-699",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-439",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1637",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1339",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-oa:W4411957643",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-158",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.3390/jrfm18090475",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1108/jsma-01-2025-0010",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-296",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1107",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-oa:W2222353289",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-828",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.64006/jetim/1203",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.18282/hrms5921",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w30777",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.1504/ijepee.2024.10063298",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.2139/ssrn.3018960",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "title"
+ },
+ {
+  "sid": "S3-1028",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-905",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-56",
+  "decision": "EXC",
+  "reason": "E3",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1842",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S2-333",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-320",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-nber:w13636",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-88",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-1695",
+  "decision": "CTX",
+  "reason": "none",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1836",
+  "decision": "INC",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-nber:w34854",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1840",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.1136/bmj.329.7475.1186-a",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S1-doi:10.5267/j.msl.2020.10.034",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-810",
+  "decision": "EXC",
+  "reason": "E2",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1577",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1277",
+  "decision": "EXC",
+  "reason": "E1",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1805",
+  "decision": "UNSURE",
+  "reason": "none",
+  "basis": "title"
+ },
+ {
+  "sid": "S1-doi:10.2478/fiqf-2019-0013",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S2-1251",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ },
+ {
+  "sid": "S3-780",
+  "decision": "EXC",
+  "reason": "E4",
+  "basis": "abstract"
+ }
+]
