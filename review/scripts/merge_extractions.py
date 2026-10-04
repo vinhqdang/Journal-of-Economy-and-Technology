@@ -10,6 +10,9 @@ csv.field_size_limit(sys.maxsize)
 SP = sys.argv[1]
 ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
 rows = {r["idx"]: r for r in csv.DictReader(open(os.path.join(ROOT, "review/data/abstract_stage_decisions.csv"), encoding="utf-8"))}
+for _r in csv.DictReader(open(os.path.join(ROOT, "review/data/added_records.csv"), encoding="utf-8")):
+    rows.setdefault(_r["idx"], _r)
+
 adj = json.load(open(os.path.join(ROOT, "review/data/adjustments.json")))
 
 def clean(t):

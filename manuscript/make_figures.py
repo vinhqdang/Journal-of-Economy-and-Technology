@@ -32,9 +32,9 @@ box(0.3, 5.8, 4.4, 1.0, "Assessed at abstract level\n456")
 box(5.3, 5.2, 4.4, 2.0, "Excluded at abstract level 121\nDuplicates 8; context 46\nenvironmental-only 22; reviews 9\nsupplementary micro evidence 3", fc="#f4f4f4")
 box(0.3, 4.2, 4.4, 1.0, "Sent to full-text assessment\n247")
 box(5.3, 3.0, 4.4, 1.4, "Not read: no free full text\nor venue judged unreliable\n141 of 247 (about)", fc="#f6e9e9")
-box(0.3, 2.6, 4.4, 1.0, "Full texts read\n107 (106 of the 247 and one review)")
-box(5.3, 1.1, 4.4, 1.4, "Excluded at full text 39\nE1 too few economies 12; E2 exposure 5\nE3 outcome 1; E4 no own estimation 21\nContext only 1", fc="#f4f4f4")
-box(0.3, 1.0, 4.4, 1.0, "Studies included\n67 (54 historical waves, 11 AI, 2 both)", fc="#e6f2e8")
+box(0.3, 2.6, 4.4, 1.0, "Full texts read\n112 (106 of the 247, one review,\nfive added after re-screening)")
+box(5.3, 1.1, 4.4, 1.4, "Excluded at full text 40\nE1 too few economies 13; E2 exposure 5\nE3 outcome 1; E4 no own estimation 21\nContext only 1", fc="#f4f4f4")
+box(0.3, 1.0, 4.4, 1.0, "Studies included\n71 (56 historical waves, 13 AI, 2 both)", fc="#e6f2e8")
 for y1, y2 in [(10.6, 10.0), (9.0, 8.4), (7.4, 6.8), (5.8, 5.2), (4.2, 3.6), (2.6, 2.0)]:
     arrow(2.5, y1, 2.5, y2)
 for y in (9.5, 7.9, 6.2, 3.7, 1.8):
@@ -72,6 +72,8 @@ plt.tight_layout(); plt.savefig(os.path.join(HERE, "fig_rob.png"), dpi=170); plt
 import csv, sys
 csv.field_size_limit(sys.maxsize)
 yr = {r["idx"]: int(r["year"]) for r in csv.DictReader(open(os.path.join(ROOT, "review/data/abstract_stage_decisions.csv"), encoding="utf-8"))}
+for _r in csv.DictReader(open(os.path.join(ROOT, "review/data/added_records.csv"), encoding="utf-8")):
+    yr.setdefault(_r["idx"], int(_r["year"]))
 bins = list(range(2003, 2028, 4))
 fig, ax = plt.subplots(figsize=(6.0, 3.0))
 H = [yr[x["idx"]] for x in ext if x["stream"] == "H"]; A = [yr[x["idx"]] for x in ext if x["stream"] != "H"]

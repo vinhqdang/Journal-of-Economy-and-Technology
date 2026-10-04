@@ -1086,5 +1086,69 @@
   "tested_formally": true,
   "note": "Positive significant internet x governance interactions for most indicators",
   "idx": "1798"
+ },
+ {
+  "id": "448-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Split by technology type, not a country or sample characteristic.",
+  "idx": "448"
+ },
+ {
+  "id": "448-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Claimed complementarities not estimated; variables only additive controls.",
+  "idx": "448"
+ },
+ {
+  "id": "755-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Smooth-transition threshold on FDI; negative emissions association only in high-FDI regime.",
+  "idx": "755"
+ },
+ {
+  "id": "755-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "amplifies",
+  "tested_formally": false,
+  "note": "Descriptive regime mapping by FDI; only Singapore lies above thresholds.",
+  "idx": "755"
+ },
+ {
+  "id": "891-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Renewable share interaction negative with ICT proxy, positive with AI investment.",
+  "idx": "891"
+ },
+ {
+  "id": "891-H2",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Inverted-U in AI-energy use; insignificant in A2, significant in B2.",
+  "idx": "891"
+ },
+ {
+  "id": "9001-H1",
+  "moderator_type": "income_group",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "OECD vs non-OECD marginal effects reported similar; subsample comparison only.",
+  "idx": "9001"
+ },
+ {
+  "id": "9001-H2",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Effect by lag length, a specification feature rather than a moderator.",
+  "idx": "9001"
  }
 ]

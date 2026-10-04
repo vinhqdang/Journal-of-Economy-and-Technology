@@ -10,8 +10,8 @@
 
 ## Full-text records (papers still included or excluded after this check)
 
-- Included records checked: 67. Results: confirmed 362, corrected 19, unverifiable 5. Heterogeneity items: confirmed 123, corrected 13.
-- The checker's view of the overall risk-of-bias rating: agree 58, too lenient 3, too harsh 6. The ratings in the record were not changed; the differences are listed below for a human to settle.
+- Included records checked: 71. Results: confirmed 392, corrected 19, unverifiable 5. Heterogeneity items: confirmed 130, corrected 14.
+- The checker's view of the overall risk-of-bias rating: agree 62, too lenient 3, too harsh 6. The ratings in the record were not changed; the differences are listed below for a human to settle.
 
 | Paper | Record says | Checker says |
 |---|---|---|
@@ -32,6 +32,7 @@ Three papers were moved from include to exclude after this check (reversible, hu
 Checker's eligibility notes:
 
 - 298 (exclude): Borderline, lean exclude. The paper is a descriptive growth-accounting and shift-share decomposition (an accounting identity, no statistical estimation, no standard errors or uncertainty) whose numbers are taken from Van
+- 474 (exclude): Judgement call. The exposure actually measured is ICT investment/GDP (OECD), i.e. ICT in general, not AI; the record itself rates the measure 'critical' because it does not capture AI. Under the non-AI rule at least 10 e
 - 878 (exclude): Quantitative with own FE and convergence estimation, AI exposure (government AI readiness), 28 economies with explicit AE vs EMDE comparison, so the economy-count and design criteria hold. The outcome criterion fails: th
 - 1428 (include): Own panel cointegration (AMG) and Granger estimation, 11 economies, mobile and internet exposure: those criteria hold. The outcomes, though, are the IMF financial institutions access index (bank branches and ATMs per 100
 - 1495 (exclude): Eligibility not established. The text never gives the number of economies (only 'several developing countries'; Table 1 is a 30-row country-year excerpt showing India, Indonesia, Kenya), so the 10-economy threshold canno
@@ -60,6 +61,7 @@ Each item below is a result or heterogeneity entry where the checker found the r
 - **802**: Low-wage group is five countries including Russia (Estonia, Poland, Czech Republic, Slovakia, Russian Federation), not five plus Russia. High = Norway, Denmark, Belgium, 
 - **803**: Estimates are right (-0.001, -0.009, -0.013, SE 0.004 each; observed -0.075 in Table 6) but direction 'null' is only right for the exogenous case. With unit-elastic labou
 - **879**: Range is wrong at the low end: Table 11 flow-based coefficients are 0.0693, 0.0654, 0.0684, 0.0708, 0.0716, 0.0681, so the range is 0.0654 to 0.0716 (not 0.0681 to 0.0716
+- **891**: B2 turning point 21.4 is correct. The A2 turning point is an arithmetic error in the paper: with the printed -0.0026 and 0.0003, 2 x 0.0003 = 0.0006 (printed as 0.00006),
 - **957**: The OECD direct internet coefficient is not in Table 5 (blank INTERNET row, three columns) while the text says all OECD ICT effects but mobile are positive and significan
 - **988**: Numbers are right (0.093 in col 3 to 0.040 in col 4, institutions 0.033, t 1.95, 10 percent), but this is a control-sensitivity result, not heterogeneity: there is no int
 - **1026**: Table 10 lists seven alternative specifications (patent stock, electricity access, excluding oil exporters, excluding 2008-10, 2SLS, Bartik, spatial lag) plus the baselin

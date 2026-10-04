@@ -4,6 +4,9 @@ import csv, json, os, re, sys
 csv.field_size_limit(sys.maxsize)
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 rows = {r["idx"]: r for r in csv.DictReader(open(os.path.join(ROOT, "review/data/abstract_stage_decisions.csv"), encoding="utf-8"))}
+for _r in csv.DictReader(open(os.path.join(ROOT, "review/data/added_records.csv"), encoding="utf-8")):
+    rows.setdefault(_r["idx"], _r)
+
 ext = [x for x in json.load(open(os.path.join(ROOT, "review/data/extraction.json"))) if x["fulltext_decision"] == "include"]
 ext.sort(key=lambda x: int(x["idx"]))
 

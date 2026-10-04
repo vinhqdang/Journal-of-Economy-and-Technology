@@ -6388,6 +6388,383 @@
   }
  },
  {
+  "idx": "448",
+  "title": "Unraveling the digital technologies and banking inclusion nexus in Sub Saharan Africa",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of mobile phone and internet penetration (non-AI ICT) in 45 Sub-Saharan African economies (36 in the estimation sample per Sect. 4.3), above the 10-economy threshold; outcome is banking inclusion (family 5, financial inclusion).",
+  "stream": "H",
+  "technology": [
+   "mobile telephony",
+   "internet"
+  ],
+  "exposure_measure": "Mobile phone subscriptions per 100 people and internet users per 100 people, each entered as a normalised (0-1) index (Sect. 4.2, p. 8).",
+  "sample": {
+   "n_economies": "45 (stated in abstract and Sect. 4.1); Sect. 4.3 says estimation uses an unbalanced panel of 36 countries; Wooldridge test df F(1,32) implies 33 panels",
+   "economies_or_groups": "Sub-Saharan African countries only; country list not given",
+   "income_groups_covered": "not reported (SSA only; no income-group breakdown)",
+   "years": "2000-2023 in abstract; 2000-2022 in Sect. 4.1 (inconsistent)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Three-stage least squares (3SLS) on a two-equation simultaneous system (IBI and ICT adoption); SURE as robustness. Table 4 is captioned 'Estimates of fixed effects models' but text describes it as 3SLS.",
+   "identification": "other",
+   "key_controls_fixed_effects": "IBI equation: telecom/transport infrastructure, financial freedom, real interest rate, inflation, human capital. ICT equation: electricity, human capital, GDP growth, inflation, trade, exchange rate, education expenditure. Table 2 reports a time fixed effects test, but no FE specification is clearly reported in the results tables. The exclusion restrictions are theory-based and not tested."
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Institutional Banking Inclusion Index (0-1 composite of deposit accounts per 1000 adults, bank branches per 100,000, domestic credit to private sector % GDP); effect of mobile phone penetration",
+    "direction": "positive",
+    "estimate": "0.035 (Table 4, Model 1); text on p. 11 says 'a 0.041-point rise', which does not match the table",
+    "uncertainty": "SE 0.008, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p. 10: 'Mobile phone (Phone) 0.035*** (0.008)'; text p. 11: 'one-point increase associated with a 0.041-point rise in the inclusion index'"
+   },
+   {
+    "family": 5,
+    "indicator": "Institutional Banking Inclusion Index; effect of internet penetration (3SLS headline table)",
+    "direction": "null",
+    "estimate": "-0.003 (Table 4, Model 2)",
+    "uncertainty": "SE 0.0274, not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p. 10: 'Internet -0.003 (0.0274)'. Text p. 11 claims the internet effect is 0.118 and significant; 0.118 is actually the Income (Gdp) coefficient in Model 2."
+   },
+   {
+    "family": 5,
+    "indicator": "Institutional Banking Inclusion Index, SURE robustness; mobile phone",
+    "direction": "positive",
+    "estimate": "0.033 (Table 5, col 1)",
+    "uncertainty": "SE 0.006, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p. 13: 'Phone Mobile (Phone) 0.033*** (0.006)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Institutional Banking Inclusion Index, SURE robustness; internet",
+    "direction": "positive",
+    "estimate": "0.078 (Table 5, col 3)",
+    "uncertainty": "SE 0.021, p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p. 13: 'Internet 0.078*** (0.021)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Availability of banking services (branches per 100,000); phone and internet",
+    "direction": "positive",
+    "estimate": "Phone 0.041; Internet 0.127 (Table 6, Models 1 and 3)",
+    "uncertainty": "SE 0.002 and 0.012, both p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p. 16: 'Phone 0.041*** (0.002)'; 'Internet 0.127*** (0.012)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Access to banking services (deposit accounts per 1000 adults); phone and internet",
+    "direction": "positive",
+    "estimate": "Phone '1,165' and Internet '6,324' as printed (Table 7); number formatting looks like decimal commas, so scale is unclear",
+    "uncertainty": "SE (0.272) and (1,187), both p<0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, p. 17: 'Phone 1,165*** (0.272)'; 'Internet 6,324*** (1,187)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Use of banking services (domestic credit to private sector, % of GDP); phone and internet",
+    "direction": "mixed",
+    "estimate": "Phone 0.041 (significant); Internet 0.081 (not significant) (Table 8, Models 1 and 3)",
+    "uncertainty": "SE 0.0131 (p<0.01) and 0.068 (not significant)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, p. 18: 'Phone 0.041*** (0.0131)'; 'Internet 0.081 (0.068)'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Technology type: mobile phone raises all three sub-dimensions; internet raises availability and access but not use (credit). Within the headline 3SLS table the internet coefficient is insignificant, though SURE gives a positive significant effect.",
+    "threshold_value": "none",
+    "evidence": "Sect. 6.2, p. 14: 'positive but not significant effect of penetration online on the use of banking services'"
+   },
+   {
+    "moderator": "infrastructure",
+    "finding": "Abstract and introduction claim complementarities and threshold effects with infrastructure, human capital and electricity, but no interaction or threshold model is estimated; these variables enter only as additive controls.",
+    "threshold_value": "none",
+    "evidence": "Introduction p. 2: 'revealing threshold effects where IT's benefits only materialize above certain infrastructure and education levels'; no such estimation in Sect. 5-6"
+   }
+  ],
+  "income_group_results": {
+   "high": "not applicable (SSA sample)",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 12 (Table 4: 2; Table 5: 4 columns; Tables 6-8: 4 columns each)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Claims causal identification via 3SLS, but the instruments are the ICT-equation controls (electricity, GDP growth, trade, etc.), with no exclusion-restriction or overidentification tests. Electricity and human capital plausibly affect banking inclusion directly. The Table 4 caption says 'fixed effects' while the text says 3SLS, so the estimator is unclear. Country and time fixed effects are not clearly included.",
+    "evidence": "Sect. 4.2 Eq. 4, p. 8; Sect. 4.3, p. 9-10; Table 4 caption, p. 10"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mobile subscriptions and internet users per 100 are standard WDI proxies, but they are normalised and are not mobile money or digital banking, which the narrative emphasises.",
+    "evidence": "Sect. 4.2, p. 8: 'normalized value of the number of subscribers out of 100'"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Sample size is inconsistent: 45 countries in the abstract, 36 in Sect. 4.3, about 33 implied by test df, and only 176-178 observations in the headline table (of up to about 800 country-years). Years are given as 2000-2023 in the abstract and 2000-2022 in Sect. 4.1. Country list and the reasons for dropped observations are not provided.",
+    "evidence": "Abstract; Sect. 4.1 p. 6; Sect. 4.3 p. 10; Table 4 Obs 176/178"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "The composite IBI mixes deposit accounts, branches and domestic credit/GDP with no stated weights or aggregation method. The credit/GDP component is a financial-depth measure, not inclusion. Some appendix coefficients are printed with decimal commas and implausible scale, e.g. 1,165 and 51.41 on a 0-1 index.",
+    "evidence": "Sect. 4.2, p. 8; Table 7, p. 17"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Text contradicts tables: the text cites phone 0.041 and internet 0.118, while Table 4 shows 0.035 and -0.003 (insignificant). Table 2 shows the random-effects test not rejecting (p=1.0) while the Hausman test is used to choose FE. The tests report chi2(55) for cross-sectional dependence and chi2(11) for heteroscedasticity, which is not coherent with the stated panel. Section 4.3 says IBI means 'Innovative Business Practices'. Appendix tables are cited as A1-A3 but are labelled 6-8.",
+    "evidence": "Sect. 5 p. 11 vs Table 4 p. 10; Table 2 p. 9; Sect. 4.3 p. 10; Sect. 6.2 p. 12"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "The text overstates the internet effect relative to Table 4, where it is null. The abstract and introduction claim threshold and complementarity effects that are not estimated. No full first-stage ICT equation results are shown for the 3SLS system, only the second stage.",
+    "evidence": "Sect. 5, p. 11; Introduction p. 2; Abstract"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (open-access Discover Sustainability, Springer Nature; manuscript has multiple internal inconsistencies between text and tables, a copy-paste error 'Innovative Business Practices', and mislabelled appendix tables; the reference list contains entries with unusual or unverifiable details, not checked)",
+  "notes": "Outcome is financial (banking) inclusion, not output or productivity; GDP growth appears only as a control. No text in the paper attempts to direct the reviewer. Key inconsistencies for human checking: (1) text reports internet effect 0.118*** on the IBI, but Table 4 shows internet -0.003 (0.0274) and 0.118 is the Income coefficient; (2) text phone effect 0.041 vs table 0.035; (3) Table 4 caption says fixed effects but text says 3SLS; (4) 45 vs 36 countries; 2000-2023 vs 2000-2022; (5) no income-group or regional breakdown despite SSA heterogeneity framing in the title; (6) decimal-comma formatting in Tables 5, 7 and 8 (e.g. 1,496***; 1717***; (1,354)) leaves the true coefficient magnitude unclear.",
+  "quote_check": {
+   "verified": 14,
+   "checked": 14
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 7
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (3SLS, SURE); exposure is mobile subscriptions and internet users per 100; 45 SSA countries stated (36 in estimation), above the 10-economy threshold; outcome is banking inclusion, family 5 (financial inclusion) per the assignment note. No income-group comparison, but the economy count suffices.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "45 in abstract and Sect. 4.1; Sect. 4.3 says 'an unbalanced panel of 36 countries'; Wooldridge F(1,32) implies about 33 panels",
+    "panel_type": "Sect. 4.1 says 'balanced panel' of 45 countries 2000-2022; Sect. 4.3 says unbalanced panel of 36",
+    "n_obs": "Table 4 Obs 176 (Phone) and 178 (Internet); appendix tables 104-175"
+   },
+   "corrections": [],
+   "problems": "No invented numbers; all table values match. Issues the record did not fully capture: (1) Table 4 includes the ICT-equation variables (Elec, Trade, Chang, Expenses_edu) as regressors in the IBI equation, which contradicts the exclusion restrictions of Eq. 4, so the identification claim cannot be sustained. (2) Table 4 is described in the text as having columns 1-4 but shows only Models 1-2. (3) SURE is presented as handling 'ambiguity' but is not an identification strategy. (4) Tables 6-8 estimator is not stated. (5) Abstract states 2000 to 2023 but Sect. 4.1 states 2000 to 2022 (record notes this)."
+  }
+ },
+ {
+  "idx": "474",
+  "title": "Artificial intelligence, automation and employment dynamics: empirical evidence from G7 economies",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E1",
+  "decision_rationale": "Exposure is total ICT investment relative to GDP (labelled AI by the author) in 7 high-income economies, below the 10-economy minimum for non-AI exposures; the AI label is not accepted. Reclassified from include after the second-pass check. Reversible: a human reviewer should confirm.",
+  "stream": "AI",
+  "technology": [
+   "AI (proxied by ICT investment)",
+   "industrial robots"
+  ],
+  "exposure_measure": "AII = ratio of ICT investment to GDP (OECD), used as proxy for AI investment and entered in logs; text elsewhere describes it as ICT investment in million USD (Table 2). Robot density = industrial robots per 10,000 manufacturing workers (IFR), in logs.",
+  "sample": {
+   "n_economies": "7",
+   "economies_or_groups": "G7: USA, UK, Germany, France, Italy, Canada, Japan",
+   "income_groups_covered": "high",
+   "years": "2010-2024",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Main: panel ARDL / pooled mean group (PMG). Robustness: pooled OLS, fixed effects with Driscoll-Kraay SE, CCE (Pesaran), country-specific time-series regressions (Newey-West SE), Dumitrescu-Hurlin causality",
+   "identification": "none",
+   "key_controls_fixed_effects": "ln wage, labour productivity (real GDP per hour, 2015=100), education spending (% GDP); country fixed effects in static model"
+  },
+  "results": [
+   {
+    "family": 3,
+    "indicator": "Employment rate (15-64, %), response to ln AI investment proxy, PMG long run",
+    "direction": "negative",
+    "estimate": "-1.410 (long-run coefficient on lnAII; employment rate in % points per unit of ln)",
+    "uncertainty": "SE 0.472, p = 0.003",
+    "horizon": "long",
+    "evidence": "Table 6, p.8 (section 4.2.1): 'long-run coefficient of lnAII is negative and statistically significant at the 1% level (-1.410)'"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate, response to ln AI investment proxy, PMG short run",
+    "direction": "null",
+    "estimate": "-0.007",
+    "uncertainty": "SE 0.009, p = 0.433",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, lnAII short-run column"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate, response to ln robot density, PMG long run",
+    "direction": "positive",
+    "estimate": "0.634",
+    "uncertainty": "SE 0.083, p = 0.000",
+    "horizon": "long",
+    "evidence": "Table 6; section 4.2.2: 'positive and significant long-run effect on employment (0.634)'"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate, response to ln robot density, PMG short run",
+    "direction": "null",
+    "estimate": "0.726",
+    "uncertainty": "SE 0.657, p = 0.269",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, lnROBOT short-run column"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate, ln AI investment proxy, static FE with Driscoll-Kraay SE (n=105)",
+    "direction": "negative",
+    "estimate": "-1.467",
+    "uncertainty": "SE 0.583 (p-values not printed; stars lost in text conversion)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, FE (Driscoll-Kraay) column, lnAII: '-1.467 (0.583)'"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate, ln AI investment proxy, CCE",
+    "direction": "negative",
+    "estimate": "-1.542",
+    "uncertainty": "SE 0.615",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, CCE column, lnAII: '-1.542 (0.615)'"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate, ln AI investment proxy, pooled OLS",
+    "direction": "negative",
+    "estimate": "-1.732",
+    "uncertainty": "SE 0.724",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7, pooled OLS, lnAII: '-1.732 (0.724)'"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate, ln robot density, static FE / CCE / OLS",
+    "direction": "null",
+    "estimate": "-2.937 (FE-DK); -3.026 (CCE); -2.861 (OLS)",
+    "uncertainty": "SE 2.142; 2.173; 2.354",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7 lnROBOT row; text p.9: 'effect of ROBOT becomes statistically insignificant in the static models'"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate, ln AI investment proxy, country-specific time-series regressions",
+    "direction": "mixed",
+    "estimate": "USA -1.752; England -2.143; Germany -1.364; France -0.978; Italy -1.215; Canada -1.436; Japan -0.832 (all negative; none individually below p=0.037)",
+    "uncertainty": "p-values 0.042, 0.037, 0.068, 0.183, 0.157, 0.076, 0.247 (T=15 each)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8, lnAII column"
+   },
+   {
+    "family": 3,
+    "indicator": "Granger-type causality AI investment -> employment (Dumitrescu-Hurlin)",
+    "direction": "mixed",
+    "estimate": "W-bar 5.482, Z-bar 6.482 (AII->EMP); reverse direction Z-bar 1.854",
+    "uncertainty": "p = 0.013 (AII->EMP); p = 0.174 (EMP->AII); robots->EMP p = 0.087",
+    "horizon": "not reported",
+    "evidence": "Table 9, p.11"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Country-specific regressions: AI-investment coefficient is negative in all seven G7 countries but significant at 5% only in USA and UK; Japan, France, Italy not significant. Robot coefficients are negative in all seven countries in Table 8 (significant only for Japan, p=0.033, and Germany at 10%), contrary to the PMG positive long-run result.",
+    "threshold_value": "none",
+    "evidence": "Table 8, p.10"
+   },
+   {
+    "moderator": "income group",
+    "finding": "No income-group comparison possible; all economies are high income.",
+    "threshold_value": "none",
+    "evidence": "Section 3.1, p.5: G7 sample"
+   },
+   {
+    "moderator": "human capital",
+    "finding": "Education spending: positive short-run effect, negative long-run effect in PMG (long-run coefficient -8169.277, implausibly large), positive in static models. Not tested as a formal interaction with AI.",
+    "threshold_value": "none",
+    "evidence": "Table 6, Table 7; section 4.2.5"
+   }
+  ],
+  "income_group_results": {
+   "high": "AI investment proxy negatively associated with employment (PMG long run -1.410; FE-DK -1.467)",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "about 6 (PMG, pooled OLS, FE-DK, CCE, 7 country regressions, DH causality)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Contemporaneous country-year associations with no instrument or quasi-experiment; causal and 'technological determinism' language is used. Granger tests with T=15 and 2 lags are not identification. The authors themselves list IV/quasi-experimental designs as future work. Employment rate level regressed on levels of wage and productivity (which are jointly determined with employment).",
+    "evidence": "Section 6 p.12; section 5.3 p.11: 'AI and AI adoption act as exogenous drivers of labor market restructuring'"
+   },
+   "exposure_measurement": {
+    "rating": "critical",
+    "why": "AI investment is proxied by total ICT investment/GDP, which does not capture AI. Definition is inconsistent (ratio to GDP in Table 1 versus million USD in Table 2, mean 6195, max 113839). Robot density is manufacturing-specific.",
+    "evidence": "Table 1, Table 2, section 3.1 p.5; abstract: 'AI investment (proxied by ICT investment)'"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 7 countries and 15 years (105 obs); chosen for data quality and tech leadership; PMG with five regressors and country-specific lags on T=15 is badly under-powered. Results cannot generalise beyond G7.",
+    "evidence": "Section 3.1, p.5: 'balanced panel ... 105 country-year entries'"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "OECD employment rate for ages 15-64 is a standard measure, but descriptives (mean 80.4, min 46.3, max 96.1) look implausible for G7 15-64 employment rates, suggesting a data or definition problem.",
+    "evidence": "Table 1; Table 2 EMP row: 'min 46.33, max 96.05'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Mixed I(0)/I(1) variables, unreported lag selection for PMG, extreme coefficients (lnEDU long run -8169.277; lnPROD -31.761) indicate a poorly conditioned model. Error-correction term is printed as positive 0.0021 yet described as negative and significant. Unit-root table does not support the text claims that AII and PROD are I(0) (CIPS values for lnAII -1.284). Education entered inconsistently (EDU vs lnEDU).",
+    "evidence": "Table 6 EC Term row; Table 5; section 4.1 p.7"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Several textual claims contradict the tables: text gives wage coefficient -10.44 but Table 6 shows -0.441; text says productivity has small positive long-run effect but Table 6 shows -31.761; Germany robots positive/significant and Japan AI positive in text, but Table 8 shows negative coefficients for both; text says DH causality significant at 1% and 5% for the same test (p=0.013); significance stars missing so statements cannot be checked. Robot result is positive in PMG but negative in every static model and country regression.",
+    "evidence": "Section 4.2.3 p.8 vs Table 6; section 5.2 p.10 vs Table 8; section 5.3 p.11"
+   }
+  },
+  "overall_risk_of_bias": "critical",
+  "venue_quality_concern": "none",
+  "notes": "Journal of Economic Studies (Emerald), 2025. Headline PMG estimate is on employment rate (not output); labour productivity is only a control. Table 8 label 'England' rather than UK. Text and tables are internally inconsistent in several places (see selective_reporting and specification). Text states AI investment 'proxied by ICT investment', so inference about AI specifically is not supported. Statistical significance stars were lost in text conversion; p-values taken where printed. No attempt by the text to direct the reader or reviewer was found. Supplementary material (limitations, abbreviations) not available in the text.",
+  "quote_check": {
+   "verified": 5,
+   "checked": 7
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 9,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": false,
+   "eligibility_note": "Judgement call. The exposure actually measured is ICT investment/GDP (OECD), i.e. ICT in general, not AI; the record itself rates the measure 'critical' because it does not capture AI. Under the non-AI rule at least 10 economies are needed, but the sample is 7 high-income G7 countries and there is no income-group comparison, so the paper fails. It passes only if the authors' AI label is accepted at face value (3-economy rule). Robot density is not an eligible exposure, so the robot results (record results 3, 4, 8) fall outside the exposure list.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 9,
+     "verdict": "corrected",
+     "correction": "All seven point estimates are negative, so direction should be 'negative' with heterogeneous significance: p < 0.05 only for USA (0.042) and England (0.037); p < 0.10 also for Germany (0.068) and Canada (0.076); France, Italy, Japan not significant. 'Mixed' is not a sign pattern.",
+     "quote": "USA -1.752 (p 0.042); England -2.143 (0.037); Germany -1.364 (0.068); France -0.978 (0.183); Italy -1.215 (0.157); Canada -1.436 (0.076); Japan -0.832 (0.247) (Table 8)"
+    }
+   ],
+   "problems": "Record numbers all match the tables. Items to flag: (1) eligibility, see note; the AI exposure label rests on an ICT-investment proxy. (2) Record results 3, 4, 8 concern robot density, outside the eligible exposure list. (3) The text's 'AI investment... consistently negative' is only partly borne out: in Table 8 only 2 of 7 countries are significant at 5%. (4) The record's rating of outcome measurement as moderate understates the implausible EMP descriptives it cites itself."
+  }
+ },
+ {
   "idx": "534",
   "title": "Do robots impact artificial intelligence (AI)-related employment? Evidence from a cross-national study",
   "fulltext_decision": "exclude",
@@ -7573,6 +7950,191 @@
   }
  },
  {
+  "idx": "755",
+  "title": "Artificial intelligence investment and renewable energy for environmental sustainability in ASEAN-5 under the foreign direct investment threshold",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel estimation (PSTR) of private AI investment on carbon emissions, carbon intensity and GHG in 5 economies; AI studies need at least 3 economies and the outcome is a resource-cost (carbon) indicator.",
+  "stream": "AI",
+  "technology": [
+   "artificial intelligence (private-market AI investment)"
+  ],
+  "exposure_measure": "IAI: private investment in artificial intelligence (venture capital, private equity, acquisitions of AI companies; excludes public R&D and listed Big Tech), inflation-adjusted US dollars, natural log; source Our World in Data (Table 1, p. 12).",
+  "sample": {
+   "n_economies": "5",
+   "economies_or_groups": "ASEAN-5: Thailand, Indonesia, Malaysia, Philippines, Singapore",
+   "income_groups_covered": "not reported (paper does not classify; Singapore is clearly high-income, the others are middle-income, so mixed)",
+   "years": "2015-2023 (annual data interpolated to quarterly)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel Smooth Transition Regression (PSTR), fixed effects, nonlinear least squares, single logistic transition (r=1) with FDI inflow (% of GDP, log) as transition variable; linear FE benchmark; cluster-robust (national level) HAC standard errors",
+   "identification": "threshold model",
+   "key_controls_fixed_effects": "Country fixed effects; regressors are only log GDP per capita, log AI investment and log renewable energy share; no other controls, no time effects; no instruments or GMM (authors say IV-PSTR left for future work)"
+  },
+  "results": [
+   {
+    "family": 6,
+    "indicator": "Carbon emissions per capita (ln MTCO2PC), AI investment elasticity, low-FDI regime (beta0)",
+    "direction": "null",
+    "estimate": "0.007 (log-log elasticity)",
+    "uncertainty": "t = 1.423 (not significant)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p. 20: 'IAI 0.007 1.423'; text p. 20 'statistically insignificant in this regime'"
+   },
+   {
+    "family": 6,
+    "indicator": "Carbon emissions per capita (ln MTCO2PC), AI investment, high-FDI regime interaction term (beta1) and net effect",
+    "direction": "negative",
+    "estimate": "beta1 = -0.048***; total net effect (beta0+beta1) = -0.041 (elasticity)",
+    "uncertainty": "t = -5.848 for beta1; no test reported for the net effect",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p. 20: 'IAI ... -0.048*** -5.848 -0.041'; p. 21 '2.5% reduction ... per one-standard-deviation increase in AI investment'"
+   },
+   {
+    "family": 6,
+    "indicator": "Carbon emissions per capita (ln MTCO2PC), AI investment, linear fixed-effects benchmark",
+    "direction": "negative",
+    "estimate": "-0.021***",
+    "uncertainty": "stars only (no se or t reported for linear model)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p. 20: 'IAI -0.021*** (linear model, fixed effect)'"
+   },
+   {
+    "family": 6,
+    "indicator": "Carbon intensity of GDP (ln CARIN), AI investment, low-FDI regime (beta0)",
+    "direction": "null",
+    "estimate": "0.007",
+    "uncertainty": "t = 1.432 (not significant)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p. 20: 'IAI 0.007 1.432'"
+   },
+   {
+    "family": 6,
+    "indicator": "Carbon intensity of GDP (ln CARIN), AI investment, high-FDI regime beta1 and net effect",
+    "direction": "negative",
+    "estimate": "beta1 = -0.048***; total net effect = -0.041",
+    "uncertainty": "t = -5.834 for beta1",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p. 20: 'IAI ... -0.048*** -5.834 -0.041'"
+   },
+   {
+    "family": 6,
+    "indicator": "Carbon intensity (ln CARIN), AI investment, linear FE benchmark",
+    "direction": "null",
+    "estimate": "-0.014",
+    "uncertainty": "no stars; se/t not reported",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p. 20: 'IAI -0.014 (linear model)'"
+   },
+   {
+    "family": 6,
+    "indicator": "Greenhouse gas emissions (ln GHG), AI investment, low-FDI regime (beta0)",
+    "direction": "null",
+    "estimate": "0.006",
+    "uncertainty": "t = 1.265 (not significant)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p. 20: 'IAI 0.006 1.265'"
+   },
+   {
+    "family": 6,
+    "indicator": "Greenhouse gas emissions (ln GHG), AI investment, high-FDI regime beta1 and net effect",
+    "direction": "negative",
+    "estimate": "beta1 = -0.025***; total net effect = -0.019",
+    "uncertainty": "t = -3.574 for beta1",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p. 20: 'IAI ... -0.025*** -3.574 -0.019'"
+   },
+   {
+    "family": 6,
+    "indicator": "Greenhouse gas emissions (ln GHG), AI investment, linear FE benchmark",
+    "direction": "null",
+    "estimate": "0.002",
+    "uncertainty": "no stars; se/t not reported",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p. 20: 'IAI 0.002 (linear model)'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "FDI inflow (% of GDP, log) as smooth-transition variable: AI investment has no significant association with emissions in the low-FDI regime but a significant negative association (small elasticity, about -0.04 for per-capita CO2 and carbon intensity, -0.019 for GHG) in the high-FDI regime.",
+    "threshold_value": "c = 0.442 (Model 1, MTCO2PC), 0.441 (Model 2, CARIN), 0.358 (Model 3, GHG) in log FDIIF; slope gamma = 7.930, 7.918, 24.307",
+    "evidence": "Tables 4-6, pp. 20-23; p. 21 'IAI and RENEW reduce emissions only when FDI exceeds the threshold'"
+   },
+   {
+    "moderator": "income group",
+    "finding": "Authors map countries onto regimes: only Singapore (average FDIIF 0.812) lies above the thresholds; Malaysia (0.261), Philippines (0.220), Indonesia (0.124), Thailand (0.082) below. The AI benefit therefore effectively rests on one country.",
+    "threshold_value": "see above",
+    "evidence": "Fig. 8 text, p. 23: 'Singapore (0.812) is the sole economy securely positioned within the upper regime'"
+   }
+  ],
+  "income_group_results": {
+   "high": "Singapore only (above FDI threshold, high-FDI regime): AI investment net elasticity about -0.041 on CO2 per capita; not estimated separately by income group",
+   "upper_middle": "not reported separately (Thailand, Malaysia, Indonesia sit in low-FDI regime, AI effect insignificant)",
+   "lower_middle": "not reported separately (Philippines in low-FDI regime, AI effect insignificant)",
+   "low": "not covered"
+  },
+  "n_specifications_reported": "about 3 PSTR models plus 3 linear FE benchmarks (one per dependent variable)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal and policy language, but only country fixed effects and three regressors; no instruments, no time effects, no lag structure; AI investment, GDP, renewables and FDI are plausibly co-trending. Authors dismiss IV/GMM as impractical and list it as a limitation.",
+    "evidence": "Section 4.3.5, p. 17 'incorporating formal instrumental variables or dynamic GMM structures ... practical application is significantly limited'; Conclusion p. 28"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Private-market AI investment (venture capital etc.) is a narrow proxy for AI adoption or capability; excludes public and corporate spending. Authors acknowledge this. Log of FDI inflow is used as transition variable although descriptive minimum for FDIIF is negative (-0.544), which suggests the stated log transform is inconsistent.",
+    "evidence": "Table 1, p. 12; Table 2, p. 17 'FDIIF Minimum -0.544'; Conclusion p. 28 'AI investment metric primarily monitors private-market venture capital'"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only five countries and nine annual observations per country (2015-2023); thresholds are identified largely from cross-country differences, with Singapore as the only high-FDI economy. Annual series converted to quarterly by interpolation, so apparent sample size is inflated and within-year variation is artificial.",
+    "evidence": "Section 4.2, p. 11 'balanced panel ... ASEAN-5 ... 2015 to 2023 ... annual data are transformed to a quarterly frequency'; Fig. 8 text p. 23"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Standard WDI emissions indicators, but Table 1 labels per-capita CO2 as 'Mt CO2 per capita' and GHG as Mt CO2e; the three outcomes are not independent. Interpolated quarterly data for annual emissions.",
+    "evidence": "Table 1, p. 12; Section 4.2 p. 11"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Single transition variable (FDI) chosen after considering other candidates (financial development, institutions) that were 'not retained'; high flexibility of threshold model with tiny N; no robustness checks; no confidence interval for threshold. Identical IAI and RENEW coefficients across Models 1 and 2 raise doubts about the computations.",
+    "evidence": "Section 2.3, p. 8 'We considered domestic financial development and institutional quality as alternative threshold candidates, but neither was retained'; Tables 4-5, p. 20"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All three dependent variables are reported in full, but there are no robustness checks or alternative specifications; text claims go beyond the tables (for example 'institutional quality' discussed as a regressor, 'GDPPC positive in both regimes' for Model 2 where Regime 1 is insignificant).",
+    "evidence": "Section 5.3, p. 20 'relationship between economic growth, institutional quality, renewable energy consumption'; Table 5 p. 20 'GDPPC -0.007 -0.097'"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Included on the AI stream: 5 economies, outcome in family 6 (carbon emissions, carbon intensity, GHG). GDP per capita is a regressor only, so no family 1 results are recorded. Reported coefficients are log-log elasticities; net effect in Regime 2 is the sum beta0+beta1 with no separate test. Anomalies for the reviewer: (1) Tables 4 and 5 report identical beta0 and beta1 for IAI and RENEW (0.007/-0.048, -0.035/-0.142) and GDPPC beta1 (0.123) despite different dependent variables (per-capita CO2 vs carbon intensity), with t-statistics differing only in the third decimal; this looks like a copy or computation error. (2) Text mentions 'institutional quality' as a regressor but none is in the model. (3) Text refers to 'the attached study' and 'the reference article', drafting leftovers. (4) FDI inflow minimum is negative yet variables are said to be logged. (5) Thresholds are in log-FDI units and no confidence intervals for them are given. (6) Renewable energy consumption is a co-focal variable (net elasticity -0.177 for CO2 per capita, -0.065 for GHG in high-FDI regime) but is outside the AI exposure and not recorded in results. (7) The abstract speaks of 'compelling evidence' and conclusion calls findings 'strong evidence' despite N=5 countries. No instructions aimed at the extractor were found in the text. Income group classification not reported by the authors; my own gloss (Singapore high, Malaysia/Thailand/Indonesia upper-middle, Philippines lower-middle) is not in the text.",
+  "quote_check": {
+   "verified": 10,
+   "checked": 20
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 9
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own PSTR panel estimation; exposure is private AI investment (AI stream); 5 economies meets the 3-economy AI threshold; outcomes are carbon emissions per capita, carbon intensity and GHG (family 6, resource cost). Eligible.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "unit": "Estimation unit is country-quarter: the annual 2015-2023 series (5 x 9 = 45 country-years) were converted to quarterly frequency by quadratic match-sum interpolation (Sec 4.2, p.11), so 'country-year' is not the estimation unit. Economies (5), years (2015-2023) and income coverage (not classified by the authors) are correct."
+   },
+   "corrections": [],
+   "problems": "(1) Models 1 and 2 are mechanically linked: Table 5 Regime-1 GDPPC (-0.007) is Table 4's 0.994 minus about 1, beta1 for GDPPC (0.123), IAI (0.007/-0.048) and RENEW (-0.035/-0.142) are identical and c/gamma nearly so, consistent with ln CARIN = ln CO2pc - ln GDPpc. Results 4-5 therefore do not add independent evidence to results 1-2; the record's suggestion of a computation error is unfounded. However, the linear FE benchmark does not follow this relation (GDPPC 0.662 in Table 4 vs -0.001 in Table 5; RENEW -0.008 vs -0.068), an unexplained inconsistency in the paper. (2) Record's selective-reporting evidence claims text says 'GDPPC positive in both regimes' for Model 2; the paper says the opposite for Model 2 (insignificant in low-FDI regime). (3) Record's inference from FDIIF minimum -0.544 about log-transform inconsistency is not valid; units of the log FDI transition variable and of IAI (mean 4.254) are unclear and cannot be verified. (4) Unit should be country-quarter (interpolated). Otherwise no invented numbers found."
+  }
+ },
+ {
   "idx": "802",
   "title": "Differences in Job De-Routinization in OECD Countries: Evidence from PIAAC",
   "fulltext_decision": "include",
@@ -8509,6 +9071,174 @@
    "checked": 0
   },
   "quote_flag": "ok"
+ },
+ {
+  "idx": "891",
+  "title": "Can Artificial Intelligence Drive Sustainable Growth? Empirical Evidence on the AI-Energy-Growth Nexus in Advanced Economies",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with its own estimation (fixed effects, Driscoll-Kraay SEs) of AI investment (an ICT-trade proxy and Stanford private AI investment) on GDP per capita and energy use per capita in 9 economies (G7, China, South Korea). Meets the AI threshold of at least 3 economies and has outcomes in families 1 and 6.",
+  "stream": "AI",
+  "technology": [
+   "artificial intelligence (AI investment)",
+   "ICT (goods and services export shares used as an AI proxy)"
+  ],
+  "exposure_measure": "Models A1/A2: 'AIProxy' = mean of ICT goods exports (% of goods exports) and ICT service exports (% of service exports), an ICT-trade composite used as a proxy for AI investment (first-differenced). Models B1/B2: log of real total AI private investment (Stanford Global AI Vibrancy Tool, nominal USD deflated by US CPI). Interacted with renewable electricity capacity share (RE).",
+  "sample": {
+   "n_economies": "9",
+   "economies_or_groups": "G7 countries (USA, Japan, Germany, UK, France, Italy, Canada), China, South Korea",
+   "income_groups_covered": "not reported explicitly (described as 'advanced and emerging economies'; G7 and Korea high-income, China emerging)",
+   "years": "Models A: 2010-2025 (T=16, 144 obs); Models B: 2017-2025 stated in estimation sections (2017-2024 stated in data/model sections), T=9; some recent-year values extrapolated",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Country fixed effects with Driscoll-Kraay robust standard errors (Stata xtscc, lag 2); no cointegration found so short-run models only; some variables first-differenced, others in levels",
+   "identification": "none",
+   "key_controls_fixed_effects": "Country FE; controls: ln energy use per capita, ln CO2 per capita, R&D % GDP, IMF financial development index, trade % GDP, ln energy price level (PPP), GFCF % GDP; AI x renewable-share interaction"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Model A1: change in AIProxy (ICT export-share composite) on change in ln GDP per capita",
+    "direction": "null",
+    "estimate": "coefficient not printed in text (Table S16 is in the supplement); text says p = 0.807; Discussion describes sign as 'positive but not statistically significant'",
+    "uncertainty": "p = 0.807",
+    "horizon": "contemporaneous",
+    "evidence": "Sec 5.1, p.23-24: 'changes in AI activity (ΔAIProxy) do not have a statistically significant direct effect on economic growth in the short run (p = 0.807)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Model A1: interaction DeltaAIProxy x RE (renewable capacity share) on change in ln GDP per capita",
+    "direction": "negative",
+    "estimate": "beta = -0.0002",
+    "uncertainty": "p < 0.10 (weakly significant)",
+    "horizon": "contemporaneous",
+    "evidence": "Sec 5.1, p.24: 'negative and weakly significant coefficient (β = −0.0002, p < 0.10)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Model B1: ln AI private investment on ln GDP per capita (level)",
+    "direction": "null",
+    "estimate": "beta = -0.0134",
+    "uncertainty": "p > 0.10",
+    "horizon": "contemporaneous",
+    "evidence": "Sec 5.2, p.27: 'negative but statistically insignificant coefficient (β = −0.0134, p > 0.10)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Model B1: interaction lnAIInvest x RE on ln GDP per capita",
+    "direction": "positive",
+    "estimate": "beta = 0.0004",
+    "uncertainty": "p < 0.01",
+    "horizon": "contemporaneous",
+    "evidence": "Sec 5.2, p.27: 'highly significant and positive (β = 0.0004, p < 0.01)'"
+   },
+   {
+    "family": 6,
+    "indicator": "Model A2: change in AIProxy and its square on change in ln energy use per capita",
+    "direction": "null",
+    "estimate": "not reported in text (both terms insignificant; turning point arithmetic uses -0.0026 and 0.0003)",
+    "uncertainty": "not reported (described as statistically insignificant)",
+    "horizon": "contemporaneous",
+    "evidence": "Sec 5.1, p.24: 'coefficients of both AI activity (ΔAIProxy) and its squared term (ΔAIProxy2) are statistically insignificant'"
+   },
+   {
+    "family": 6,
+    "indicator": "Model B2: ln AI investment and its square on ln energy use per capita",
+    "direction": "mixed",
+    "estimate": "linear beta = 0.0898; squared beta = -0.0021 (inverted U, turning point about 21.4)",
+    "uncertainty": "p < 0.05 for both",
+    "horizon": "contemporaneous",
+    "evidence": "Sec 5.2, p.28: 'positive and statistically significant effect on energy demand (β = 0.0898, p < 0.05)'; squared 'β = −0.0021, p < 0.05'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Renewable electricity capacity share as moderator of AI on GDP per capita: interaction weakly negative with the ICT-trade proxy (Model A1) but positive and significant with Stanford AI investment (Model B1); sign flips across the two AI measures and samples.",
+    "threshold_value": "none",
+    "evidence": "Sec 5.1 p.24 (A1 beta -0.0002, p<0.10) vs Sec 5.2 p.27 (B1 beta 0.0004, p<0.01)"
+   },
+   {
+    "moderator": "other",
+    "finding": "Nonlinear AI-energy use relation (inverted U): insignificant in A2 (implied turning point 43.3 as printed), significant in B2 (turning point about 21.4).",
+    "threshold_value": "21.4 (Model B2); 43.3 as printed for Model A2",
+    "evidence": "Sec 5.2, p.28: 'AIInvest* = 0.0898/0.0042 ≈ 21.4'; Sec 5.1 p.25 'ΔAIProxy* ≈ 43.3'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported (pooled sample; no split)",
+   "upper_middle": "not reported (China only, pooled)",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "4 main models (A1, A2, B1, B2), one specification each; no further robustness tables in the main text",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Contemporaneous FE regressions with N=9 and no instrument, lag or timing strategy; GDP per capita and AI investment/ICT exports likely co-determined. Energy use per capita (itself an outcome in other models) is a control in the growth model. Interpretation uses causal language ('effects').",
+    "evidence": "Sec 4.5 Eq. 9-12; Sec 4.6 p.19-20"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Models A use ICT goods and services export shares (trade composition) as an 'AI proxy', which does not measure AI adoption or investment; the authors concede it 'may capture broader digitalisation effects'. Models B use Stanford private AI investment (nominal USD deflated by US CPI), a narrow flow measure that is closer to AI investment but covers only 2017-2024/25.",
+    "evidence": "Sec 4.1, p.12-13: 'AIProxy may capture broader digitalisation effects beyond pure investment'"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Nine hand-picked economies (G7, China, Korea), so little scope for generalisation; data-availability driven windows; missing recent values (including the whole of 2025 for several series) filled by growth-rate extrapolation and a moving-average smoother, so part of the sample is imputed.",
+    "evidence": "Sec 4.1 p.15 and Sec 4.2 p.15-16: 'missing observations ... completed using standard and conservative extrapolation methods'"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "WDI real GDP per capita and energy use per capita are standard, but the 2025 values and some inputs are extrapolated; A1 uses first differences of log GDPpc while B1 uses the log level, so the outcomes are not comparable across models.",
+    "evidence": "Sec 4.6 p.20: variables 'in first differences' (A) vs 'levels' (B)"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Mix of differenced and level variables chosen per model by unit-root tests with admitted unreliable CIPS at T=9; lag(2) Driscoll-Kraay SEs with T=9 and N=9; very high within R2 and F-stat (14,482.80) in B1 suggest overfitting or level-variable issues; two different AI proxies and samples; no robustness exercises beyond switching proxy.",
+    "evidence": "Sec 4.6 p.20; Sec 5.2 p.27: 'F(10,15) = 14,482.80'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Abstract highlights the positive significant AI x renewable interaction (B1) while the A1 interaction is negative and weak; the headline is not clearly pre-specified. Full regression tables are in the Supplement; the main text reports only selected coefficients.",
+    "evidence": "Abstract vs Sec 5.1 p.24 and Sec 6 p.29"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (MDPI Sustainability; sloppy details such as a mis-expanded abbreviation list, an arithmetic error in a turning-point calculation, Figure 1 produced by an AI tool, and heavy data extrapolation)",
+  "notes": "Regression tables (S16, S17, S23, S24) are in supplementary material and not in the text file, so only coefficients quoted in the prose are extracted. Internal inconsistencies: Model B window is given as 2017-2025 (Sec 4.6, 5.2) and 2017-2024 (Sec 4.1, 4.4); B2 text mixes 'AIProxy' and 'lnAIInvest'; Sec 4.1 says the main analysis used a long-run proxy but Sec 4.6 says first-differenced short-run models; the A2 turning point as printed (0.0026/0.00006 = 43.3) appears to mis-compute 2 x 0.0003 (which is 0.0006, giving about 4.3), and the sign of the A2 squared term is not stated; in Sec 5.2 the first sentence of Table S24 discussion refers to 'AIProxy' though Model B2 uses lnAIInvest; Sec 6 says A1 AIProxy coefficient is positive while it is not printed. Abbreviation list has misassigned definitions (e.g. G7, OECD, FMOLS). The author used an AI tool to draw Figure 1 (stated in its caption). Energy use per capita is the family 6 outcome (resource cost); AI exposure in Models A is an ICT-trade measure, so stream is AI but the A-model evidence is effectively about ICT export intensity. No text in the paper attempted to direct the extraction.",
+  "quote_check": {
+   "verified": 11,
+   "checked": 13
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 1,
+    "corrected": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own FE estimation with Driscoll-Kraay SEs; exposure is AI (Stanford private AI investment in B models; ICT export-share composite, an ICT measure, in A models); 9 economies >= 3 for AI; outcomes are GDP per capita (output) and energy use per capita (resource cost). Eligible, although the A-model exposure is an ICT-trade composite and not a measure of AI.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "B models: abstract, Sec 5.2 and Table S18 text give 2017-2025 (T = 9, consistent with 9 years), whereas Sec 4.1, 4.4 and 4.5 say 2017-2024; the T = 9 count supports 2017-2025. A models 2010-2025 (T = 16, 144 obs) is correct.",
+    "controls": "Energy models (A2, B2) also include ln GDP per capita and RE as regressors, and growth models (A1, B1) include ln energy demand; the record's control list omits that GDPpc is a regressor in the energy equations."
+   },
+   "corrections": [
+    {
+     "n": 2,
+     "verdict": "corrected",
+     "correction": "B2 turning point 21.4 is correct. The A2 turning point is an arithmetic error in the paper: with the printed -0.0026 and 0.0003, 2 x 0.0003 = 0.0006 (printed as 0.00006), giving 0.0026/0.0006 = 4.33, not 43.3. Both A2 terms are insignificant, so no turning point is estimated; the authors' claim that 43.3 lies 'well beyond the observed range' rests on the erroneous number. Record should say 'as printed, erroneous'.",
+     "quote": "0.0026 / 0.00006 ≈ 43.3"
+    }
+   ],
+   "problems": "No invented numbers found. Points to flag: (1) A2 turning point 43.3 is an arithmetic error (should be about 4.33 from the printed coefficients); the record kept 'as printed' but heterogeneity item should carry the correction. (2) B-model sample years inconsistent within the paper (2017-2024 vs 2017-2025); T = 9 supports 2017-2025. (3) Record controls list omits that GDPpc/energy cross-enter the two equation types. (4) Main text does not print the A1 and A2 coefficients (supplement), so only p-values and signs are verifiable for results 1 and 5. (5) The paper's text calls the B2 exposure 'AIProxy' although B2 uses Stanford AI investment; record handles this correctly."
+  }
  },
  {
   "idx": "903",
@@ -14259,5 +14989,182 @@
    "checked": 0
   },
   "quote_flag": "ok"
+ },
+ {
+  "idx": "9001",
+  "title": "The association between mobile phones and the risk of brain cancer mortality: a 25-year cross-country analysis",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study with own estimation of mobile subscriptions (per 100 people) on brain cancer mortality in 88 countries, 1990-2015. Outcome is health (family 5, living standards beyond income); sample exceeds 10 economies. Included for the health payoff, not for output.",
+  "stream": "H",
+  "technology": [
+   "mobile telephony"
+  ],
+  "exposure_measure": "Mobile cellular subscriptions per 100 people (World Bank), lagged 5 to 25 years, or averaged in 5-year lag bins (0-4, 5-9, ..., 20-24 years).",
+  "sample": {
+   "n_economies": "88",
+   "economies_or_groups": "88 countries with WHO cause-specific mortality data; the full country list is in an appendix table not in the text. OECD and non-OECD split reported only in Appendix Table 3.",
+   "income_groups_covered": "mixed (income groups not reported in the main text; OECD and non-OECD only)",
+   "years": "1990-2015 (mortality); mobile subscriptions lagged back to the 1960s-1990s",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Two-way fixed effects (difference-in-differences style) regression of log cause-specific mortality rate on lagged mobile subscriptions; population-weighted; SEs clustered by country. Differential-effects models stack brain cancer with other causes and add cause-by-country and cause-by-year FE.",
+   "identification": "other",
+   "key_controls_fixed_effects": "Country and year FE, country-specific linear time trends; controls for smoking, alcohol, CO2, health spending, real GDP per capita, internet use, education spending, population shares (female, 15-65, over 65). Falsification outcomes (other cancers, ischemic heart disease) and differential-effects model used as checks."
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Brain cancer mortality rate (log, per 100,000), mobile subscriptions lagged 15 years",
+    "direction": "positive",
+    "estimate": "0.003 (semi-elasticity; 0.3% per extra subscription per 100 people); marginal effect [0.012] deaths per 100,000",
+    "uncertainty": "SE (0.001), ** (5% level)",
+    "horizon": "long",
+    "evidence": "Table 2, 15 Years column, p. 265: '0.003** (0.001) [0.012]'; text p. 264: 'associated with a 0.3% increase in the brain cancer death rate 15 years later'"
+   },
+   {
+    "family": 5,
+    "indicator": "Brain cancer mortality rate (log), mobile subscriptions lagged 20 years",
+    "direction": "positive",
+    "estimate": "0.020 (semi-elasticity; 2% per extra subscription per 100 people); marginal effect [0.073]",
+    "uncertainty": "SE (0.005), *** (1% level)",
+    "horizon": "long",
+    "evidence": "Table 2, 20 Years column, p. 265: '0.020*** (0.005) [0.073]'"
+   },
+   {
+    "family": 5,
+    "indicator": "Brain cancer mortality, short lags (5 and 10 years) and 25-year lag",
+    "direction": "null",
+    "estimate": "5 years: -0.001*; 10 years: 0.002; 25 years: 0.032",
+    "uncertainty": "SE: (0.001), (0.001), (0.023)",
+    "horizon": "medium",
+    "evidence": "Table 2, p. 265: 'We find small coefficients for 5- and 10-year lags'; 25-year coefficient not significant"
+   },
+   {
+    "family": 5,
+    "indicator": "Falsification outcomes: rectal, pancreatic, stomach, lung, breast cancer and ischemic heart disease mortality",
+    "direction": "mixed",
+    "estimate": "Mostly small and insignificant at 15 and 20 years (e.g. rectal 15y -0.002*, lung 15y 0.001, heart disease 20y 0.002); positive significant at 10-year lag for pancreatic 0.001**, stomach 0.001**, lung 0.002**",
+    "uncertainty": "SEs in parentheses, e.g. (0.001), (0.005), (0.009)",
+    "horizon": "long",
+    "evidence": "Table 3, p. 265; text p. 264: 'we do find positive associations for some cancers and cell phones with a 10 year lag'"
+   },
+   {
+    "family": 5,
+    "indicator": "Differential effect, brain cancer relative to other causes, lag 15-19 years (main differential model)",
+    "direction": "positive",
+    "estimate": "Brain cancer x cell use lagged 15-19 years: 0.006* (main); 0.150* (no country weights); 0.002 (not logging); 0.007** (excluding country trends); 0.148* (no log, unweighted, no trends)",
+    "uncertainty": "SE: (0.003), (0.091), (0.003), (0.003), (0.079)",
+    "horizon": "long",
+    "evidence": "Table 4, row 'Brain cancer x Cell use lagged 15-19 years', p. 266: '0.006* ... 0.150* ... 0.002 ... 0.007** ... 0.148*'"
+   },
+   {
+    "family": 5,
+    "indicator": "Differential effect, brain cancer relative to other causes, lag 20-24 years",
+    "direction": "null",
+    "estimate": "0.002 (main); 0.480; 0.002; 0.001; -0.008",
+    "uncertainty": "SE: (0.009), (0.469), (0.005), (0.009), (0.204)",
+    "horizon": "long",
+    "evidence": "Table 4, row 'Brain cancer x Cell use lagged 20-24 years', p. 266"
+   },
+   {
+    "family": 5,
+    "indicator": "Brain cancer only, 5-year-bin lags (Equation 2), lags 15-19 and 20-24",
+    "direction": "positive",
+    "estimate": "15-19 years: 0.005*; 20-24 years: 0.025**",
+    "uncertainty": "SE (0.003); (0.013)",
+    "horizon": "long",
+    "evidence": "Table 4, column 'Brain Cancer Only', p. 266"
+   },
+   {
+    "family": 5,
+    "indicator": "Robustness: dropping country-specific linear trends",
+    "direction": "null",
+    "estimate": "not reported in main text (Appendix Table A4 not in the text)",
+    "uncertainty": "not reported",
+    "horizon": "long",
+    "evidence": "p. 264: 'removing country-specific linear time trends reduces the magnitude of the coefficients and removes the statistically significant relationship'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "OECD vs non-OECD split: authors report 'similar-sized marginal effects for both groups'; numbers are in Appendix Table 3, not in the supplied text.",
+    "threshold_value": "none",
+    "evidence": "p. 264: 'We also split our sample into current OECD and non-OECD countries and find similar-sized marginal effects for both groups'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Effect grows with lag length: small/insignificant at 5-10 years, significant at 15-20 years, larger but imprecise at 25 years.",
+    "threshold_value": "none",
+    "evidence": "Table 2, p. 265"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported separately (OECD pooled; Appendix Table 3 not in text)",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 40 (5 lags x brain cancer, 6 falsification outcomes x 5 lags, 6 differential-effects columns); further appendix specifications not shown",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Reverse causation is not an issue for a 15-25 year lag, but omitted time-varying confounders (CT scanning, diagnosis and registration quality, development) remain. The authors concede results are sensitive to country-specific trends and that 'omitted variables do remain a concern'. Mortality data coverage varies by country and year.",
+    "evidence": "p. 264 and p. 267 caveats: 'we cannot make an unambiguous claim of causality'; 'removes the statistically significant relationship'"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Subscriptions per 100 people proxy for use; multiple subscriptions, prepaid cards, use intensity and handset radiation changes are not captured. Early lags (back to 1965-1975) rely on interpolated or zero values.",
+    "evidence": "p. 267, Discussion: 'Subscription rates do not correspond directly to rates of actual mobile phone users'"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Only 88 countries with WHO mortality data; N = 1,766 country-years of an unbalanced panel (average about 20 years per country), likely tilted to higher-income countries. Cut at 2015 because of missing 2016.",
+    "evidence": "Abstract and Table 1 (N = 1,766), p. 262; p. 262: 'many countries are missing for 2016'"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "WHO cause-of-death statistics vary in quality and ICD coding across countries and time; log(deaths+1) used for the rate; brain cancer used in place of tumour incidence.",
+    "evidence": "p. 261 footnote 1; Appendix Table 1 ICD codes (not in text)"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Lag length (5-25 years) chosen after looking at results; different lag structures (single lag vs 5-year bins); results vary by weighting, country trends and functional form; statistical significance appears only in a subset of the specifications.",
+    "evidence": "Tables 2 and 4, pp. 265-266; p. 266: 'we lose statistical significance when not using country weights'"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Main text is transparent about nulls and falsification positives, but several robustness tables (A3, A4) and the 'results available upon request' are not shown; Table 2 shows only the lags that were pre-set to 5 intervals.",
+    "evidence": "p. 261 footnote 1: 'results, available upon request'; p. 264 refers to Appendix Tables 3 and A4"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Health outcome only (brain cancer mortality); no GDP, growth or productivity outcome is estimated (real GDP per capita is a control). Authors explicitly disclaim causality, but the abstract and discussion use suggestive language ('risk of brain cancer', practical advice on speaker phone use). Table 2 header says elasticities in 'braces' but values are in square brackets; they are marginal effects (coefficient times mean mortality). Introduction describes coefficients 0.003 and 0.02 as 'additional brain cancer deaths per 100,000', which conflicts with the Results text that identifies them as semi-elasticities (marginal effects 0.012 and 0.073 deaths per 100,000). In Table 4 column 'Main', the non-interaction coefficient on 15-19 years lag is negative (-0.004***) while the interaction is +0.006*, so the net differential effect for brain cancer is about +0.002; the text does not discuss this. Table 4 columns are inferred from header layout (garbled in the text conversion). No instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 14
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 8
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation; exposure is mobile subscriptions per 100 people; 88 countries (N = 1,766 country-years), well above 10 economies; outcome is cause-specific mortality (health), which belongs to family 5 (living standards beyond income) per the assignment note.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "Mortality 1990-2015 (N = 1,766 country-years). Mobile subscription lags of 5-25 years in Eq. 1, plus a 0-4 year bin in Eq. 2, so subscriptions run from about 1965 to 2015, not '1960s-1990s'.",
+    "n_obs": "1,766 country-years (Table 1, Table 2)"
+   },
+   "corrections": [],
+   "problems": "No invented numbers. Minor: sample years description of lags is imprecise (see corrections). The record rationale for the specification rating (lag length chosen post hoc) is not in the text. The paper's own Introduction (p. 258) states 0.003 and 0.02 'additional brain cancer deaths per 100,000', which conflicts with Table 2 (semi-elasticities 0.003 and 0.020; marginal effects 0.012 and 0.073); the record correctly uses the table. Table 2 and 3 notes say 'elasticities in braces' but values are printed in brackets."
+  }
  }
 ]

@@ -28,5 +28,10 @@
   "decision": "exclude",
   "reason": "E3",
   "note": "Outcomes are trade-to-GDP ratios and cross-country dispersion of those ratios, which belong to none of the six outcome families. Reclassified from include after the second-pass check. Reversible: a human reviewer should confirm."
+ },
+ "474": {
+  "decision": "exclude",
+  "reason": "E1",
+  "note": "Exposure is total ICT investment relative to GDP (labelled AI by the author) in 7 high-income economies, below the 10-economy minimum for non-AI exposures; the AI label is not accepted. Reclassified from include after the second-pass check. Reversible: a human reviewer should confirm."
  }
 }

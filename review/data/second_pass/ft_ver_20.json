@@ -1,0 +1,76 @@
+[
+ {
+  "idx": "755",
+  "eligibility_ok": true,
+  "eligibility_note": "Own PSTR panel estimation; exposure is private AI investment (AI stream); 5 economies meets the 3-economy AI threshold; outcomes are carbon emissions per capita, carbon intensity and GHG (family 6, resource cost). Eligible.",
+  "sample_corrections": {
+    "unit": "Estimation unit is country-quarter: the annual 2015-2023 series (5 x 9 = 45 country-years) were converted to quarterly frequency by quadratic match-sum interpolation (Sec 4.2, p.11), so 'country-year' is not the estimation unit. Economies (5), years (2015-2023) and income coverage (not classified by the authors) are correct."
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "", "quote": "statistically insignificant in this regime (t = 1.423 and t =  − 0.997, respectively)"},
+    {"n": 2, "verdict": "confirmed", "correction": "Values and direction correct; net effect -0.041 is simply beta0+beta1 with no separate test reported.", "quote": "IAI − 0.021*** 0.007 1.423 − 0.048*** − 5.848 − 0.041"},
+    {"n": 3, "verdict": "confirmed", "correction": "Linear FE coefficient -0.021*** is significant and negative (stars only); direction 'negative' is correct.", "quote": "IAI − 0.021*** 0.007 1.423"},
+    {"n": 4, "verdict": "confirmed", "correction": "Numbers match Table 5. Note these are an arithmetic restatement of Model 1 (see problems), not independent evidence.", "quote": "IAI − 0.014 0.007 1.432 − 0.048*** − 5.834 − 0.041"},
+    {"n": 5, "verdict": "confirmed", "correction": "Same caveat as result 4: beta1 and net effect identical to Model 1.", "quote": "IAI − 0.014 0.007 1.432 − 0.048*** − 5.834 − 0.041"},
+    {"n": 6, "verdict": "confirmed", "correction": "Linear FE IAI = -0.014 with no stars in Table 5; null is correct.", "quote": "IAI − 0.014 0.007 1.432"},
+    {"n": 7, "verdict": "confirmed", "correction": "", "quote": "IAI 0.002 0.006 1.265 − 0.025*** − 3.574 − 0.019"},
+    {"n": 8, "verdict": "confirmed", "correction": "Values match Table 6.", "quote": "IAI 0.002 0.006 1.265 − 0.025*** − 3.574 − 0.019"},
+    {"n": 9, "verdict": "confirmed", "correction": "Linear FE IAI = 0.002, no stars in Table 6.", "quote": "IAI 0.002 0.006 1.265"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Thresholds c = 0.442 / 0.441 / 0.358 and gamma = 7.930 / 7.918 / 24.307 match Tables 4-6 (units: log of FDI inflow, % of GDP).", "quote": "nonlinear dynamics are activated when FDIIF exceeds approximately 0.442"},
+    {"n": 2, "verdict": "confirmed", "correction": "Country averages (Singapore 0.812; Malaysia 0.261; Philippines 0.220; Indonesia 0.124; Thailand 0.082) match the text. The statement that the AI benefit 'rests on one country' is the extractor's inference, but is consistent with the authors' mapping. Authors label this an FDI-regime split, not an income-group split.", "quote": "Singapore (0.812) is the sole economy securely positioned within the upper regime spectrum across all formulations."}
+  ],
+  "income_group_results": "corrected",
+  "income_group_note": "The paper reports no income-group results and no country-specific estimates. The record's 'high: Singapore only ... net elasticity about -0.041' reads as a Singapore estimate, but -0.041 is the pooled high-FDI-regime net coefficient; Singapore is only mapped onto that regime by its average FDI. Upper/lower-middle entries are likewise only regime mappings. Should be recorded as 'no income-group estimates'.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree (serious): country FE and three regressors only, no instruments, lags or time effects; authors explicitly set aside IV/GMM and claim FE 'safeguard against ... endogeneity violations' while listing simultaneity as a limitation.",
+    "exposure_measurement": "agree (moderate): private-market AI investment is a narrow proxy for AI, as the authors concede; but the record's supporting point is invalid, since a negative minimum of the log FDI variable (-0.544) just means a value below 1, and it concerns the transition variable, not the exposure.",
+    "selection_of_countries_years": "agree (serious): 5 economies x 9 years, interpolated to quarterly (inflating the apparent N and t-statistics, with only 5 clusters for the cluster-robust SEs), and the high-FDI regime is effectively Singapore.",
+    "outcome_measurement": "agree (moderate): standard WDI indicators, but annual emissions are interpolated to quarters and the three outcomes are not independent (carbon intensity is essentially per-capita CO2 minus log GDPpc).",
+    "specification": "agree (serious): single transition variable chosen with alternatives 'not retained', no robustness checks beyond linearity/no-remaining-nonlinearity tests, no threshold CI; but the record's doubt that identical IAI/RENEW coefficients in Models 1 and 2 signal miscomputation is unfounded, as they follow from ln(CARIN)=ln(CO2pc)-ln(GDPpc).",
+    "selective_reporting": "agree (moderate): all three outcomes fully reported with both regimes; the record's evidence is partly wrong because the text does say GDPPC is insignificant in the low-FDI regime of Model 2 ('partially supports H1'); the stray 'institutional quality' mention in Sec 5.3 is genuine.",
+    "why": "Causal and policy language, tiny effective sample inflated by interpolation, no strategy for simultaneity, effect rests on one high-FDI country; serious is appropriate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "(1) Models 1 and 2 are mechanically linked: Table 5 Regime-1 GDPPC (-0.007) is Table 4's 0.994 minus about 1, beta1 for GDPPC (0.123), IAI (0.007/-0.048) and RENEW (-0.035/-0.142) are identical and c/gamma nearly so, consistent with ln CARIN = ln CO2pc - ln GDPpc. Results 4-5 therefore do not add independent evidence to results 1-2; the record's suggestion of a computation error is unfounded. However, the linear FE benchmark does not follow this relation (GDPPC 0.662 in Table 4 vs -0.001 in Table 5; RENEW -0.008 vs -0.068), an unexplained inconsistency in the paper. (2) Record's selective-reporting evidence claims text says 'GDPPC positive in both regimes' for Model 2; the paper says the opposite for Model 2 (insignificant in low-FDI regime). (3) Record's inference from FDIIF minimum -0.544 about log-transform inconsistency is not valid; units of the log FDI transition variable and of IAI (mean 4.254) are unclear and cannot be verified. (4) Unit should be country-quarter (interpolated). Otherwise no invented numbers found."
+ },
+ {
+  "idx": "891",
+  "eligibility_ok": true,
+  "eligibility_note": "Own FE estimation with Driscoll-Kraay SEs; exposure is AI (Stanford private AI investment in B models; ICT export-share composite, an ICT measure, in A models); 9 economies >= 3 for AI; outcomes are GDP per capita (output) and energy use per capita (resource cost). Eligible, although the A-model exposure is an ICT-trade composite and not a measure of AI.",
+  "sample_corrections": {
+    "years": "B models: abstract, Sec 5.2 and Table S18 text give 2017-2025 (T = 9, consistent with 9 years), whereas Sec 4.1, 4.4 and 4.5 say 2017-2024; the T = 9 count supports 2017-2025. A models 2010-2025 (T = 16, 144 obs) is correct.",
+    "controls": "Energy models (A2, B2) also include ln GDP per capita and RE as regressors, and growth models (A1, B1) include ln energy demand; the record's control list omits that GDPpc is a regressor in the energy equations."
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Coefficient is only in Supplementary Table S16 (not in the text); p = 0.807 and 'positive but not significant' both stated in text.", "quote": "do not have a statistically significant direct effect on economic growth in the short run (p = 0.807)"},
+    {"n": 2, "verdict": "confirmed", "correction": "", "quote": "(β = −0.0002, p < 0.10)"},
+    {"n": 3, "verdict": "confirmed", "correction": "", "quote": "negative but statistically insignificant coefficient (β = −0.0134, p > 0.10)"},
+    {"n": 4, "verdict": "confirmed", "correction": "", "quote": "highly significant and positive (β = 0.0004, p < 0.01)"},
+    {"n": 5, "verdict": "confirmed", "correction": "No coefficients printed in text; both terms described as insignificant (Table S17 in supplement).", "quote": "coefficients of both AI activity (∆AIProxy) and its squared term (∆AIProxy2 ) are statistically insignificant"},
+    {"n": 6, "verdict": "confirmed", "correction": "Direction 'mixed' reflects the inverted U (positive linear, negative squared, both p < 0.05); turning point 0.0898/0.0042 = about 21.4 is correct; text mislabels the variable 'AIProxy' in this B2 paragraph.", "quote": "positive and statistically significant effect on energy demand (β = 0.0898, p < 0.05)"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "", "quote": "interaction term (lnAIInvest × RE) is highly significant and positive (β = 0.0004, p < 0.01)"},
+    {"n": 2, "verdict": "corrected", "correction": "B2 turning point 21.4 is correct. The A2 turning point is an arithmetic error in the paper: with the printed -0.0026 and 0.0003, 2 x 0.0003 = 0.0006 (printed as 0.00006), giving 0.0026/0.0006 = 4.33, not 43.3. Both A2 terms are insignificant, so no turning point is estimated; the authors' claim that 43.3 lies 'well beyond the observed range' rests on the erroneous number. Record should say 'as printed, erroneous'.", "quote": "0.0026 / 0.00006 ≈ 43.3"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "Pooled sample of G7, China and South Korea; no income-group split or comparison. Record entries are all 'not reported', which is correct.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree (serious): contemporaneous FE regressions with N = 9, no instrument or timing strategy; energy use is a regressor in the growth equation and GDPpc in the energy equation (the paper itself describes growth and energy as 'reinforce each other'); causal wording throughout.",
+    "exposure_measurement": "agree (serious): A models use ICT goods and services export shares as an 'AI proxy', which is not AI investment (authors concede it may capture 'broader digitalisation effects'); B models use Stanford private AI investment, a narrow flow measure, deflated by US CPI for all countries.",
+    "selection_of_countries_years": "agree (serious): nine hand-picked advanced and emerging economies, T = 9 in B models, and 2025 values (and other recent gaps) filled by growth-rate extrapolation and a moving-average smoother.",
+    "outcome_measurement": "agree (moderate): WDI GDP per capita and energy use per capita are standard, but outcomes are first-differenced in A1 and in levels in B1, and imputed recent values are mixed in.",
+    "specification": "agree (serious): per-model mix of differenced and level variables with admitted unstable CIPS tests, lag-2 Driscoll-Kraay SEs with T = 9, and reported F(10,15) in B models is not consistent with T = 9 (a D-K denominator df of about T-1 = 8 would be expected), plus F = 14,482.80 for B1; two different proxies and samples, no further robustness.",
+    "selective_reporting": "agree (moderate): the paper reports null and negative results openly (A1 interaction negative, A2 insignificant), but the abstract features only the positive B1 interaction, and full tables are in the Supplement, not the main text.",
+    "why": "Causal framing with no handling of simultaneity, weak and heterogeneous AI measures, 9 economies and imputed data; serious is appropriate."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented numbers found. Points to flag: (1) A2 turning point 43.3 is an arithmetic error (should be about 4.33 from the printed coefficients); the record kept 'as printed' but heterogeneity item should carry the correction. (2) B-model sample years inconsistent within the paper (2017-2024 vs 2017-2025); T = 9 supports 2017-2025. (3) Record controls list omits that GDPpc/energy cross-enter the two equation types. (4) Main text does not print the A1 and A2 coefficients (supplement), so only p-values and signs are verifiable for results 1 and 5. (5) The paper's text calls the B2 exposure 'AIProxy' although B2 uses Stanford AI investment; record handles this correctly."
+ }
+]

@@ -1,0 +1,116 @@
+[
+ {
+  "idx": "9001",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation; exposure is mobile subscriptions per 100 people; 88 countries (N = 1,766 country-years), well above 10 economies; outcome is cause-specific mortality (health), which belongs to family 5 (living standards beyond income) per the assignment note.",
+  "sample_corrections": {
+    "years": "Mortality 1990-2015 (N = 1,766 country-years). Mobile subscription lags of 5-25 years in Eq. 1, plus a 0-4 year bin in Eq. 2, so subscriptions run from about 1965 to 2015, not '1960s-1990s'.",
+    "n_obs": "1,766 country-years (Table 1, Table 2)"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "15 Years: 0.003** (0.001) [0.012]; text: 'associated with a 0.3% increase in the brain cancer death rate 15 years later' (Table 2, p. 265; p. 264). Note the Introduction (p. 258) misdescribes the coefficients as deaths per 100,000."},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "20 Years: 0.020*** (0.005) [0.073] (Table 2, p. 265)"},
+   {"n": 3, "verdict": "confirmed", "correction": "Values match Table 2 (-0.001*, 0.002, 0.032 with SEs 0.001, 0.001, 0.023). Note the 5-year coefficient is negative and significant at 10%, so 'null' is a loose label for that lag.", "quote": "5 Years -0.001* (0.001); 10 Years 0.002 (0.001); 25 Years 0.032 (0.023) (Table 2, p. 265)"},
+   {"n": 4, "verdict": "confirmed", "correction": "All quoted cells match Table 3 (rectal 15y -0.002*; lung 15y 0.001; heart disease 20y 0.002; pancreatic, stomach 10y 0.001**; lung 10y 0.002**).", "quote": "'we do find positive associations for some cancers and cell phones with a 10 year lag' (p. 264)"},
+   {"n": 5, "verdict": "confirmed", "correction": "", "quote": "Brain cancer x Cell use lagged 15-19 years: 0.006* (0.003); 0.150* (0.091); 0.002 (0.003); 0.007** (0.003); 0.148* (0.079) (Table 4, p. 266)"},
+   {"n": 6, "verdict": "confirmed", "correction": "", "quote": "Brain cancer x Cell use lagged 20-24 years: 0.002 (0.009); 0.480 (0.469); 0.002 (0.005); 0.001 (0.009); -0.008 (0.204) (Table 4, p. 266)"},
+   {"n": 7, "verdict": "confirmed", "correction": "", "quote": "Brain Cancer Only column: lagged 15-19 years 0.005* (0.003); lagged 20-24 years 0.025** (0.013) (Table 4, p. 266)"},
+   {"n": 8, "verdict": "confirmed", "correction": "Only the verbal statement is verifiable (Appendix A4 is not in the text). Note that in the differential-effects model of Table 4, dropping country trends keeps brain cancer x cell 15-19 at 0.007**, so the loss of significance applies to the Table 2 type single-cause model only.", "quote": "'removing country-specific linear time trends reduces the magnitude of the coefficients and removes the statistically significant relationship' (p. 264)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "'split our sample into current OECD and non-OECD countries and find similar-sized marginal effects for both groups' (p. 264)"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "'small coefficients for 5- and 10-year lags, but larger ... and statistically significant coefficients for 15- and 20-year lags' (p. 264)"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Only an OECD / non-OECD split is mentioned, with numbers in Appendix Table 3 that is not in the text; the record correctly reports no income-group values.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: reverse causation is implausible at 15-25 year lags, but the headline result loses significance without country-specific trends or weights, falsification outcomes show positives at the 10-year lag, and the authors concede omitted variables (CT scans).",
+   "exposure_measurement": "agree: subscriptions per 100 people is an ecological proxy for use and radiation dose, which the authors themselves say 'do not correspond directly to rates of actual mobile phone users'.",
+   "selection_of_countries_years": "agree: 88 countries with WHO mortality coverage and an unbalanced N = 1,766 is a moderate, plausibly non-random selection (the claim that it tilts to high income is the record's inference, not stated).",
+   "outcome_measurement": "agree: WHO cause-of-death data across ICD revisions with log(deaths + 1) for zeros (footnote 1, only 11 zeros) is moderately noisy.",
+   "specification": "agree with serious, but the record's reason 'lag length chosen after looking at results' is not supported: lags are a fixed 5-year grid from 5 to 25. The valid reason is that significance depends on weights, trends and functional form.",
+   "selective_reporting": "agree: nulls and falsification positives are reported openly; some robustness results are only 'available upon request' (footnote 1) or in appendices. The record's remark that Table 2 shows 'lags pre-set to 5 intervals' is not a reporting problem.",
+   "why": "Standard country-year TWFE with controls and falsification tests, but the main result is fragile to trends, weights and functional form and exogeneity is not established; the paper disclaims causality, which tempers but does not remove the concern."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers. Minor: sample years description of lags is imprecise (see corrections). The record rationale for the specification rating (lag length chosen post hoc) is not in the text. The paper's own Introduction (p. 258) states 0.003 and 0.02 'additional brain cancer deaths per 100,000', which conflicts with Table 2 (semi-elasticities 0.003 and 0.020; marginal effects 0.012 and 0.073); the record correctly uses the table. Table 2 and 3 notes say 'elasticities in braces' but values are printed in brackets."
+ },
+ {
+  "idx": "474",
+  "eligibility_ok": false,
+  "eligibility_note": "Judgement call. The exposure actually measured is ICT investment/GDP (OECD), i.e. ICT in general, not AI; the record itself rates the measure 'critical' because it does not capture AI. Under the non-AI rule at least 10 economies are needed, but the sample is 7 high-income G7 countries and there is no income-group comparison, so the paper fails. It passes only if the authors' AI label is accepted at face value (3-economy rule). Robot density is not an eligible exposure, so the robot results (record results 3, 4, 8) fall outside the exposure list.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "lnAII long run -1.410, SE 0.472, p 0.003 (Table 6, p. 8)"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "lnAII short run -0.007, SE 0.009, p 0.433 (Table 6)"},
+   {"n": 3, "verdict": "confirmed", "correction": "Exposure is robot density, not an eligible exposure.", "quote": "lnROBOT long run 0.634, SE 0.083, p 0.000 (Table 6)"},
+   {"n": 4, "verdict": "confirmed", "correction": "Exposure is robot density, not an eligible exposure.", "quote": "lnROBOT short run 0.726, SE 0.657, p 0.269 (Table 6)"},
+   {"n": 5, "verdict": "confirmed", "correction": "Stars are missing from the text but the text says the lnAII coefficient 'remains negative and statistically significant'; t = 2.52.", "quote": "lnAII Fixed effects (Driscoll-Kraay SE): -1.467 (0.583) (Table 7)"},
+   {"n": 6, "verdict": "confirmed", "correction": "", "quote": "lnAII CCE (Pesaran): -1.542 (0.615) (Table 7)"},
+   {"n": 7, "verdict": "confirmed", "correction": "", "quote": "lnAII Pooled OLS: -1.732 (0.724) (Table 7)"},
+   {"n": 8, "verdict": "confirmed", "correction": "Exposure is robot density, not an eligible exposure.", "quote": "lnROBOT: -2.861 (2.354) OLS; -2.937 (2.142) FE-DK; -3.026 (2.173) CCE (Table 7)"},
+   {"n": 9, "verdict": "corrected", "correction": "All seven point estimates are negative, so direction should be 'negative' with heterogeneous significance: p < 0.05 only for USA (0.042) and England (0.037); p < 0.10 also for Germany (0.068) and Canada (0.076); France, Italy, Japan not significant. 'Mixed' is not a sign pattern.", "quote": "USA -1.752 (p 0.042); England -2.143 (0.037); Germany -1.364 (0.068); France -0.978 (0.183); Italy -1.215 (0.157); Canada -1.436 (0.076); Japan -0.832 (0.247) (Table 8)"},
+   {"n": 10, "verdict": "confirmed", "correction": "Values are as printed. Note the printed p-values are not consistent with the Z-bar statistics under a normal approximation (Z-bar 6.482 gives p near 0), and the text calls the same result significant at 5% and at 1%. A Granger-type test is not identification.", "quote": "ln(AII) -> EMP W-bar 5.482, Z-bar 6.482, p 0.013; EMP -> ln(AII) 1.854, p 0.174; lnROBOT -> EMP p 0.087 (Table 9)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Robot coefficients in Table 8 are negative in all seven countries (p 0.033 for Japan, 0.093 for Germany), contradicting the text, which says Germany robots are positive and significant and Japan AI is positive.", "quote": "Table 8 lnROBOT: Germany -4.187 (0.093); Japan -5.142 (0.033). Text: 'Germany: ROBOT has a positive and significant effect on employment'"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "'Study employs a balanced panel ... G7 countries' (Sect. 3.1); no income-group comparison is possible with a high-income-only sample"},
+   {"n": 3, "verdict": "confirmed", "correction": "Values: PMG lnEDU long run -8169.277 (1314.258), short run 17.252 (3.997); static EDU 2.128 (0.751), 1.974 (0.684), 2.015 (0.697). No interaction with AI is estimated although the research question asks about moderating roles.", "quote": "'Education expenditure retains a positive and significant effect in the static models-opposite to the long-run PMG result' (Sect. 5.1)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "All seven economies are high income; the 'high' entry merely restates the pooled AII coefficients and no income-group comparison exists.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): contemporaneous correlations on 105 observations, no instrument, and causal language ('exogenous drivers', 'technological determinism') with only a Granger-type test offered for reverse causation.",
+   "exposure_measurement": "agree (critical): total ICT investment/GDP is not an AI measure, and Table 1 (ratio to GDP) conflicts with Table 2 (mean 6195.63, max 113839.09, described as million USD).",
+   "selection_of_countries_years": "too_harsh: G7 only and T = 15 limit generalisability and power, but this is a small-sample issue rather than selection bias, so moderate is more apt.",
+   "outcome_measurement": "too_lenient: the EMP descriptives (mean 80.38, min 46.33, max 96.05) are not plausible for a 15-64 employment rate in G7 countries, which points to a data or definition problem and merits serious.",
+   "specification": "agree (serious, arguably critical): mixed I(0)/I(1) variables, Table 5 CIPS values (e.g. lnAII -1.284) do not support the stated I(0) classification, lnEDU long-run -8169.277, and a positive EC term of 0.0021 described as negative.",
+   "selective_reporting": "agree (serious): text contradicts tables (wage -10.44 vs -0.441 in Table 6; productivity described as positive vs -31.761; Germany robots and Japan AI signs in Sect. 5.2 vs Table 8; DH result called significant at both 5% and 1%).",
+   "why": "Conclusions cannot be trusted: the exposure does not measure AI, the outcome descriptives are implausible, the PMG output is ill-conditioned and the text reports signs and magnitudes that the tables do not show."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "Record numbers all match the tables. Items to flag: (1) eligibility, see note; the AI exposure label rests on an ICT-investment proxy. (2) Record results 3, 4, 8 concern robot density, outside the eligible exposure list. (3) The text's 'AI investment... consistently negative' is only partly borne out: in Table 8 only 2 of 7 countries are significant at 5%. (4) The record's rating of outcome measurement as moderate understates the implausible EMP descriptives it cites itself."
+ },
+ {
+  "idx": "448",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (3SLS, SURE); exposure is mobile subscriptions and internet users per 100; 45 SSA countries stated (36 in estimation), above the 10-economy threshold; outcome is banking inclusion, family 5 (financial inclusion) per the assignment note. No income-group comparison, but the economy count suffices.",
+  "sample_corrections": {
+    "n_economies": "45 in abstract and Sect. 4.1; Sect. 4.3 says 'an unbalanced panel of 36 countries'; Wooldridge F(1,32) implies about 33 panels",
+    "panel_type": "Sect. 4.1 says 'balanced panel' of 45 countries 2000-2022; Sect. 4.3 says unbalanced panel of 36",
+    "n_obs": "Table 4 Obs 176 (Phone) and 178 (Internet); appendix tables 104-175"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Table value is 0.035; the text's 0.041 is the text-table mismatch noted by the record.", "quote": "Mobile phone (Phone) 0.035*** (0.008) (Table 4, Model 1); text: 'one-point increase associated with a 0.041-point rise' (p. 11)"},
+   {"n": 2, "verdict": "confirmed", "correction": "0.118 in the text matches Income (Gdp) 0.118*** (0.038) in Model 2, not Internet.", "quote": "Internet -0.003 (0.0274) (Table 4, Model 2); text: 'improving the inclusion index by 0.118 points'"},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "Phone Mobile (Phone) 0.033*** (0.006) (Table 5, col. 1)"},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "Internet 0.078*** (0.021) (Table 5, col. 3)"},
+   {"n": 5, "verdict": "confirmed", "correction": "Text gives 0.0406 and 0.127.", "quote": "Phone 0.041*** (0.002); Internet 0.127*** (0.012) (Table 6, Models 1 and 3)"},
+   {"n": 6, "verdict": "confirmed", "correction": "Values are as printed; reading '1,165' and '6,324' as decimal commas (1.165, 6.324) gives t-ratios of about 4.3 and 5.3, consistent with the stars, but the scale remains unverified.", "quote": "Phone 1,165*** (0.272); Internet 6,324*** (1,187) (Table 7, Models 1 and 3)"},
+   {"n": 7, "verdict": "confirmed", "correction": "", "quote": "Phone 0.041*** (0.0131); Internet 0.081 (0.068) (Table 8, Models 1 and 3)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "'positive but not significant effect of penetration online on the use of banking services' (Sect. 6.2)"},
+   {"n": 2, "verdict": "confirmed", "correction": "Infrastructure, human capital and electricity enter only additively; no interaction or threshold model appears in Sect. 5-6.", "quote": "'revealing threshold effects where IT's benefits only materialize above certain infrastructure and education levels' (Introduction)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "SSA-only sample, no income-group comparison or breakdown; the 'not applicable / not reported' entries are accurate.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree (serious): the paper claims causal identification by 3SLS, but no exclusion or overidentification tests are shown and Table 4 includes Elec, Trade, Chang and Expenses_edu as regressors alongside the IBI covariates, so Table 4 is not the Eq. 4 system; SURE does not itself address simultaneity.",
+   "exposure_measurement": "agree: normalised subscriptions and internet users per 100 are standard WDI proxies and do not measure mobile money or digital banking.",
+   "selection_of_countries_years": "agree (serious): 45 vs 36 vs about 33 countries, 'balanced' vs 'unbalanced', 2000-2022 vs 2000-2023, 176-178 observations in the headline table, and no country list.",
+   "outcome_measurement": "agree: the composite IBI mixes accounts, branches and credit/GDP with no weights or aggregation method; the credit/GDP component is depth, not inclusion.",
+   "specification": "agree (serious): text-table mismatches in Table 4 (internet 0.118 and 'significant' in the text vs -0.003; education 'strong and significant (p < 0.01)' vs Hum_cap 0.015 in Model 1; interest rate 'significant negative' vs -0.015), Table 4 caption says fixed effects while the text says 3SLS, and chi2 df in the preliminary tests do not match the stated panel.",
+   "selective_reporting": "agree (serious): the text claims a significant internet effect in the headline table that Table 4 does not show, and the abstract claims complementarity and threshold effects that are not estimated.",
+   "why": "Headline phone effect is positive and consistent across Tables 4-8, but identification is not credible, the sample and estimator descriptions are inconsistent, and the internet result is overstated in the text, so serious rather than moderate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers; all table values match. Issues the record did not fully capture: (1) Table 4 includes the ICT-equation variables (Elec, Trade, Chang, Expenses_edu) as regressors in the IBI equation, which contradicts the exclusion restrictions of Eq. 4, so the identification claim cannot be sustained. (2) Table 4 is described in the text as having columns 1-4 but shows only Models 1-2. (3) SURE is presented as handling 'ambiguity' but is not an identification strategy. (4) Tables 6-8 estimator is not stated. (5) Abstract states 2000 to 2023 but Sect. 4.1 states 2000 to 2022 (record notes this)."
+ }
+]

@@ -37,8 +37,8 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 
 | Stage | n | Note |
 |---|---|---|
-| Full texts read | 107 | 107 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
-| Excluded at full text | 39 | E1 12, E2 5, E3 1, E4 21 |
+| Full texts read | 112 | 112 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
+| Excluded at full text | 40 | E1 13, E2 5, E3 1, E4 21 |
 | Context only (no payoff outcome estimated) | 1 | |
-| **Included, preliminary** | **67** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 29 are flagged for human check |
+| **Included, preliminary** | **71** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 31 are flagged for human check |
 
