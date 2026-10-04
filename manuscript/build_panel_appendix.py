@@ -23,13 +23,13 @@ def section_table(path, heading):
 def tab(rows, caption, label):
     n = len(rows[0])
     spec = "@{}l" + "r" * (n - 2) + "p{6.4cm}@{}" if n == 4 else "@{}" + "l" * n + "@{}"
-    out = [r"\begin{table}[H]\centering\footnotesize", rf"\caption{{{caption}}}\label{{{label}}}", rf"\begin{{tabular}}{{{spec}}}\toprule", " & ".join(esc(c) for c in rows[0]) + r" \\ \midrule"]
+    out = [r"\begin{table}[!ht]\centering\footnotesize", rf"\caption{{{caption}}}\label{{{label}}}", rf"\begin{{tabular}}{{{spec}}}\toprule", " & ".join(esc(c) for c in rows[0]) + r" \\ \midrule"]
     for r in rows[1:]:
         out.append(" & ".join(esc(c) for c in r) + r" \\")
     out += [r"\bottomrule\end{tabular}\end{table}", ""]
     return "\n".join(out)
 
-L = [r"\subsection*{Variables}", r"\begin{table}[H]\centering\footnotesize\caption{World Bank WDI indicators used.}\label{tab:wdi}\begin{tabular}{@{}lll@{}}\toprule Role & Variable & WDI code\\\midrule",
+L = [r"\subsection*{Variables}", r"\begin{table}[!ht]\centering\footnotesize\caption{World Bank WDI indicators used.}\label{tab:wdi}\begin{tabular}{@{}lll@{}}\toprule Role & Variable & WDI code\\\midrule",
      "Technology & Mobile cellular subscriptions per 100 people & IT.CEL.SETS.P2\\\\", "Technology & Individuals using the internet, \\% of population & IT.NET.USER.ZS\\\\", "Technology & Fixed broadband subscriptions per 100 people & IT.NET.BBND.P2\\\\",
      "Outcome & GDP per capita, constant 2015 US\\$ & NY.GDP.PCAP.KD\\\\", "Outcome & Life expectancy at birth & SP.DYN.LE00.IN\\\\", "Outcome & Under-5 mortality rate & SH.DYN.MORT\\\\", "Outcome & Unemployment, \\% of labour force & SL.UEM.TOTL.ZS\\\\",
      "Outcome & Agriculture, value added \\% of GDP & NV.AGR.TOTL.ZS\\\\", "Outcome & Electric power consumption per capita & EG.USE.ELEC.KH.PC\\\\", "Control or moderator & School enrolment, secondary, gross & SE.SEC.ENRR\\\\",

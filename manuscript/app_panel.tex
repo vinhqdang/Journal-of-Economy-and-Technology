@@ -1,5 +1,5 @@
 \subsection*{Variables}
-\begin{table}[H]\centering\footnotesize\caption{World Bank WDI indicators used.}\label{tab:wdi}\begin{tabular}{@{}lll@{}}\toprule Role & Variable & WDI code\\\midrule
+\begin{table}[!ht]\centering\footnotesize\caption{World Bank WDI indicators used.}\label{tab:wdi}\begin{tabular}{@{}lll@{}}\toprule Role & Variable & WDI code\\\midrule
 Technology & Mobile cellular subscriptions per 100 people & IT.CEL.SETS.P2\\
 Technology & Individuals using the internet, \% of population & IT.NET.USER.ZS\\
 Technology & Fixed broadband subscriptions per 100 people & IT.NET.BBND.P2\\
@@ -18,7 +18,7 @@ Other & Population, total & SP.POP.TOTL\\
 
 Income groups follow the World Bank's current classification of 217 economies (25 low, 47 lower-middle, 59 upper-middle and 86 high income; the analysis sample is smaller because of missing data). Aggregates were removed. CO$_2$ emissions per capita could not be retrieved from the API and are not analysed.
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Internet use and growth, same period (A1): change in annual growth (pp) per +10 points of users.}\label{tab:a1net}
 \begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
 Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
@@ -28,7 +28,7 @@ Upper-middle & 51 & 184 & 0.370 [-0.040, 0.779] (p=0.08) \\
 High & 60 & 223 & -0.089 [-0.340, 0.162] (p=0.49) \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Internet use and growth, previous period (A2).}\label{tab:a2net}
 \begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
 Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
@@ -38,7 +38,7 @@ Upper-middle & 49 & 150 & -0.209 [-0.582, 0.165] (p=0.27) \\
 High & 60 & 210 & -0.306 [-0.509, -0.102] (p=0.00) \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Fixed broadband and growth, same period (A1). Not interpreted: extrapolation from few observations.}\label{tab:a1bb}
 \begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
 Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
@@ -48,7 +48,7 @@ Upper-middle & 47 & 122 & 1.830 [0.623, 3.036] (p=0.00) \\
 High & 62 & 192 & -0.057 [-0.589, 0.474] (p=0.83) \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Sensitivity: mobile adoption and growth, same period (A1), sample extended to 2023 (last period 2015--23).}\label{tab:a1m23}
 \begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
 Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
@@ -58,7 +58,7 @@ Upper-middle & 51 & 186 & 0.053 [-0.048, 0.154] (p=0.31) \\
 High & 61 & 227 & 0.134 [0.031, 0.238] (p=0.01) \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Sensitivity: previous-period specification (A2), sample extended to 2023.}\label{tab:a2m23}
 \begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
 Income group & Economies & Observations & Effect of +10 on annual growth (pp) \\ \midrule
@@ -68,7 +68,7 @@ Upper-middle & 51 & 160 & -0.047 [-0.195, 0.101] (p=0.53) \\
 High & 62 & 217 & -0.187 [-0.302, -0.072] (p=0.00) \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Dose-response (A3): change in annual growth (pp) per +10 mobile subscriptions per 100, by baseline adoption level.}\label{tab:a3}
 \begin{tabular}{@{}lrrp{6.4cm}@{}}\toprule
 Sample & Baseline bin & Obs & Effect of +10 on annual growth (pp) \\ \midrule
@@ -86,7 +86,7 @@ Upper-middle and high income & 40-80 & 70 & 0.120 [-0.008, 0.247] (p=0.07) \\
 Upper-middle and high income & >80 & 214 & 0.159 [0.052, 0.266] (p=0.00) \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Differences inside low and lower-middle income economies (A6).}\label{tab:a6}
 \begin{tabular}{@{}lll@{}}\toprule
 Moderator (at start of period) & Interaction with +10 mobile (pp growth per SD) & Obs \\ \midrule
@@ -96,7 +96,7 @@ private credit & -0.074 [-0.295, 0.147] (p=0.51) & 204 \\
 log GDP per capita & 0.237 [-0.128, 0.602] (p=0.20) & 233 \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Event study with takeoff at 25 mobile subscriptions per 100 (log GDP per capita $\times100$; 400 bootstrap draws).}\label{tab:es25}
 \begin{tabular}{@{}llllllll@{}}\toprule
 Sample & Treated & Pool & Pre-trend: mean of effects at -5..-2 [95\% CI] & Passes pre-trend rule & Effect at +3 & Effect at +5 & Effect at +10 \\ \midrule
@@ -106,7 +106,7 @@ Upper-middle income & 56 & 188 & -0.9 [-2.3, 0.6] & yes & 7.5 [-0.5, 14.7] & 7.8
 High income & 66 & 188 & 0.0 [-1.1, 0.6] & yes & 9.3 [3.9, 15.9] & 15.7 [6.5, 28.8] & 31.8 [-0.5, 96.2] \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Event study with takeoff at 50 mobile subscriptions per 100. Samples that fail the pre-trend rule are not interpreted.}\label{tab:es50}
 \begin{tabular}{@{}llllllll@{}}\toprule
 Sample & Treated & Pool & Pre-trend: mean of effects at -5..-2 [95\% CI] & Passes pre-trend rule & Effect at +3 & Effect at +5 & Effect at +10 \\ \midrule
@@ -116,7 +116,7 @@ Upper-middle income & 53 & 188 & -1.9 [-3.5, -0.3] & no & 5.3 [-1.6, 9.9] & 10.5
 High income & 66 & 188 & -0.6 [-1.5, 0.2] & yes & 4.9 [0.2, 10.7] & 8.9 [-0.8, 20.8] & 22.4 [-10.7, 65.4] \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[H]\centering\footnotesize
+\begin{table}[!ht]\centering\footnotesize
 \caption{Event study, secondary outcomes (takeoff at 10 per 100): effects at five and ten years. Rows marked fails do not pass the pre-trend rule and are not interpreted.}\label{tab:essec}
 \begin{tabular}{@{}llllll@{}}\toprule
 Outcome & Sample & Treated & Pre-trend mean [95\% CI] & Effect at +5 & Effect at +10 \\ \midrule
