@@ -1,0 +1,33 @@
+[
+ {
+  "idx": "71",
+  "paper_verdict": {
+   "estimator_family": "Heterogeneous-slope, cross-sectionally dependent dynamic panel (CS-ARDL main; DCCEMG robustness); not IV/GMM",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Exposure LICT is a composite index (average of fixed telephone, mobile and internet use, all logged), so units differ from single-indicator ICT measures. Outcome is log GDP per capita (elasticity). Small sample of 11 MENA economies of mixed income (Algeria, Egypt, Iran, Iraq, Jordan, Lebanon, Mauritania, Morocco, Syria, Tunisia, Turkey), 1980-2018, 429 obs in Table 1; no income group stated. Reverse causality only partly handled: CS-ARDL claimed robust to weak endogeneity and Dumitrescu-Hurlin tests show bidirectional LICT <-> LGDP_PC causality (Table 9), but no instruments. Short-run coefficient is on level LICT while other regressors are differenced. Table 7 long-run and short-run results are two estimates from the same model; Tables 7 and 8 share the same sample so are not independent."
+  },
+  "estimates": [
+   {
+    "estimate_id": "71-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "LICT 0.050* 0.030 1.68 0.093",
+    "note": "Table 7 long-run block (columns Coefficient, Std. Err., Z-statistics, P-value). Uncertainty is SE. n_obs left blank by extractor; Table 1 reports 429 obs for the full panel (11 countries x 39 years), but the paper does not state the estimation n for Table 7, so blank is acceptable. n_countries 11 correct. Income group not stated in paper."
+   },
+   {
+    "estimate_id": "71-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "LICT 0.062* 0.034 1.83 0.068",
+    "note": "Table 7 short-run block; LICT enters in level here. SE confirmed by column header. n_obs blank (Table 1 reports 429 for the panel; estimation n not stated)."
+   },
+   {
+    "estimate_id": "71-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "LICT 0.298*** 0.084 3.55 0.000",
+    "note": "Table 8 DCCEMG, dependent variable LGDP_PC; columns Coefficient, Std. Err., Z-statistics, P-value. Single (long-run-type) coefficient. n_obs blank (Table 1: 429; estimation n not stated)."
+   }
+  ]
+ }
+]

@@ -1,0 +1,107 @@
+[
+ {
+  "idx": "71",
+  "eligibility_ok": true,
+  "eligibility_note": "Own CS-ARDL/DCCEMG estimation; exposure is a general ICT index (fixed telephone, mobile, internet); 11 economies (>=10); outcome is GDP per capita (output). All criteria hold, but the 10-economy threshold is only just met.",
+  "sample_corrections": {
+    "n_economies": "11 confirmed (Algeria, Egypt, Iran, Iraq, Jordan, Lebanon, Mauritania, Morocco, Syria, Tunisia, Turkey) - p.1118",
+    "years": "1980-2018 confirmed; Table 1 shows 429 obs = 11 x 39, i.e. balanced panel",
+    "income_groups_covered": "Record is right that the paper gives no income classification; no change"
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Direction, coefficient, SE, z and p all match Table 7 long-run row (10% significance only).", "quote": "LICT 0.050* 0.030 1.68 0.093 (Table 7, p.1121)"},
+    {"n": 2, "verdict": "confirmed", "correction": "Matches Table 7 short-run row; LICT enters in levels (I(0)) while other regressors are differenced.", "quote": "LICT 0.062* 0.034 1.83 0.068 (Table 7, p.1121)"},
+    {"n": 3, "verdict": "confirmed", "correction": "Matches Table 8 DCCEMG; sign and significance agree, magnitude about six times the CS-ARDL long-run estimate.", "quote": "LICT 0.298*** 0.084 3.55 0.000 (Table 8, p.1123)"}
+  ],
+  "heterogeneity": [],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis or classification in the paper; all four fields correctly 'not reported'. Heterogeneity list correctly empty (slope-heterogeneity test in Table 2 is a specification test, not an effect-heterogeneity finding).",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree - serious: causal wording with no identification, and Table 9 shows GDP Granger-causes ICT (Z-bar 5.074, p=0.000) as well as the reverse.",
+    "exposure_measurement": "agree - moderate: unweighted average of fixed-line, mobile and internet per-capita measures (Table 1) is a crude composite of different units.",
+    "selection_of_countries_years": "agree - moderate: 11 MENA economies chosen on data availability ('Country selection was based on data availability'), regional only; the conflict-period remark in the record is the extractor's inference, not stated in the paper.",
+    "outcome_measurement": "agree - low: GDP per capita, constant 2010 US$, WDI.",
+    "specification": "too_harsh - moderate would fit: CS-ARDL with CCE augmentation and cross-section dependence/slope-heterogeneity/cointegration tests is a standard, well-tested panel specification; weak points (single specification, no lag selection reported, 10% significance, estimator sensitivity 0.050 vs 0.298) are real but not 'serious' under the guide.",
+    "selective_reporting": "agree - moderate: abstract claims about job creation and environmental quality are not tested; text calls the effect 'positive and statistically significant' though the CS-ARDL estimates are significant only at 10%.",
+    "why": "Overall serious is consistent with the guide: causal language ('stimulates', 'impact') with no strategy for reverse causality and the paper's own causality tests show bidirectionality."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "No invented or mixed-up content found. Minor: record's 'Iraq and Syria include conflict periods' is not in the paper (reviewer inference). Authors state short- and long-run CS-ARDL results are 'similar in both magnitude and signs'; 0.062 vs 0.050 is consistent with that."
+ },
+ {
+  "idx": "278",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (OLS/FE/RE/GMM) for 48 SSA countries 2005-2020; exposure is a PCA composite ICT index (internet, mobile, broadband, fixed telephone, secure servers plus schooling items, so impure); outcome is a composite inclusive-growth index including poverty headcount, Gini and living-standard items (poverty/distribution, living standards). Eligible, but exposure and outcome are both weak composites.",
+  "sample_corrections": {
+    "n_economies": "48 confirmed (p.11227; abstract)",
+    "years": "2005-2020 confirmed; unbalanced (Table 8: 767 IGR obs, 752 ICT obs; regressions 367 (static) and 346 (GMM))",
+    "income_groups_covered": "No income split; SSA only. No change.",
+    "exposure_measure": "Record is accurate that text says twelve indicators and Table 3 lists eight (three of which are education items); Appendix 2 lists twelve rows with duplicated labels (e.g. mobile, broadband, fixed telephone, secure servers appear twice)."
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Estimate, SE and text quote correct. Horizon should read one-period lag, not contemporaneous: Eq. 2 uses ICT at t-1 in the dynamic models.", "quote": "ICT 0.034*** (0.011) [col 4]; 'a 1% increase in ICT results in a 0.03% increase in inclusive growth'"},
+    {"n": 2, "verdict": "confirmed", "correction": "Numbers match Table 9 col 5; horizon is ICT at t-1 (Eq. 3), not contemporaneous.", "quote": "ICT 0.05*** (0.014) [col 5]"},
+    {"n": 3, "verdict": "confirmed", "correction": "Coefficient and SE match; the printed single star is inconsistent with 3.74/1.10 (t about 3.4), as the record notes. Horizon is lag t-1. Text reads the coefficient as a percent improvement although IGR is a PCA index.", "quote": "TRAD*ICT 3.74* (1.10); text: 'an interaction effect of ICT on trade openness can cause a 3.741% improvement in inclusive growth'"},
+    {"n": 4, "verdict": "confirmed", "correction": "Matches Table 9 col 2. Authors reject FE because the Wooldridge test (p=0.00) shows strict exogeneity fails.", "quote": "ICT 0.154*** (0.012) [Fixed effects]"},
+    {"n": 5, "verdict": "confirmed", "correction": "Both values and SEs match Table 9 cols 1 and 3.", "quote": "ICT 0.05*** (0.02) [Pooled-OLS]; 0.137*** (0.012) [Random effects]"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Supported: TRAD is -2.822*** (baseline GMM) and -5.20*** (interaction GMM), interaction +3.74*; no income, human-capital or institutional split. Note TRAD is positive in pooled OLS (2.07**) and RE (2.911**), so the 'negative trade effect' holds only in FE/GMM columns. Interaction is a moderation estimate on one coefficient, not a threshold analysis.", "quote": "TRAD 2.07** (0.98) [OLS]; -5.820*** (0.211) [FE]; -2.822*** (0.011) [GMM col 4]"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Paper has no income-group analysis (SSA only); all entries correctly not reported. 'high: not applicable' is fine.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree - serious: authors acknowledge reverse causality and use only internal GMM instruments with no instrument counts or reported exogenous/endogenous/predetermined classification, while using causal language.",
+    "exposure_measurement": "agree - serious: PCA index mixes ICT with schooling items (secondary enrolment, gender parity, tertiary enrolment) and Appendix 2 duplicates indicators; 'twelve' versus eight listed.",
+    "selection_of_countries_years": "agree - moderate: 48 SSA countries, 2005 start chosen for data availability, large unbalanced loss (767 to 346 obs; SOC_PROT only 421 obs).",
+    "outcome_measurement": "agree - serious: PCA composite of heterogeneous items (poverty, GDP per capita, Gini, institutions, spending, rule of law, labour force) overlapping with controls (vulnerable employment, social protection); Appendix 1 shows igr-Vul_empl correlation of -0.9439, indicating that vulnerable employment is nearly a component of the outcome.",
+    "specification": "agree - serious: both GMM columns headed 'One-step difference GMM' while the methods say 'we use the system GMM'; 'exhaustive model search'; Table 8 TRAD mean -7.98 outside printed min/max (-3.20 to 2.60); implausible SE (0.011) on TRAD -2.822; percent interpretations of index coefficients.",
+    "selective_reporting": "agree - moderate: no robustness checks or instrument counts; star level inconsistent on interaction.",
+    "why": "Serious overall is appropriate (causal claims, weak composites, internal inconsistencies); not critical because signs are stable across estimators and diagnostics are reported."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invention or paper mix-up. Corrections: ICT and TRAD enter the dynamic models lagged one period (Eq. 2-3), so 'contemporaneous' horizon for results 1-3 is not accurate. Record says 'Appendix 2 lists twelve' - correct as to content (heading 'Correlation matrix for ICT index indicators'), though the main text points to Appendix 1/2 inconsistently. Hansen p-values 0.289/0.492 and AR(2) 0.537/0.782 confirmed. Text describes the study as dynamic though three of five columns are static."
+ },
+ {
+  "idx": "341",
+  "eligibility_ok": true,
+  "eligibility_note": "Own system GMM estimation; exposure is a PCA ICT index (fixed telephone, internet, fixed broadband, mobile) plus UNCTAD ICT index; 100-110 emerging/developing economies with explicit high/upper-middle versus low/lower-middle comparison; outcome is export concentration/diversification (structural change). All criteria hold.",
+  "sample_corrections": {
+    "n_economies": "110 in abstract, Section 4.2 and Appendix 2 Table B1 (110 countries listed); regressions use 100 to 106 (Table 6/7: 102; Table 9: 100; Table 10: 106; Table 12: 102; Table 13: 106; Table 11 subgroups 45/50 high, 51/50 low)",
+    "years": "2000-2019 (abstract and Section 4.2; 2200 obs = 110 x 20 in Table 3). The conclusion's '1995 to 2019' is an inconsistency in the paper, not the sample.",
+    "economies_or_groups": "Record says the country list is not in the text; it is: Appendix 2, Table B1 (p.162) lists 110 countries",
+    "income_groups_covered": "Mixed: list includes high-income economies (e.g. Bahrain, Qatar, Saudi Arabia, United Arab Emirates, Chile, Poland, Hungary, Uruguay, Barbados, Trinidad and Tobago) as well as low-income ones (e.g. Burundi, Chad, Niger); paper splits into high+upper-middle vs low+lower-middle by World Bank class."
+  },
+  "results": [
+    {"n": 1, "verdict": "confirmed", "correction": "Matches Table 6 (N=1208, 102 countries). Note ICT index is rescaled 0-1, so one unit equals the full observed range.", "quote": "ICT Index -0.0473*** (0.0142) one-step; -0.0339** (0.0161) two-step (Table 6)"},
+    {"n": 2, "verdict": "confirmed", "correction": "Matches Table 9 (N=1052, 100 countries). For this index higher means more concentrated (less aligned with world structure), so negative sign means more diversification.", "quote": "ICT Index -0.0908*** (0.0259) one-step; -0.0968*** (0.0289) two-step (Table 9)"},
+    {"n": 3, "verdict": "confirmed", "correction": "Values and p-values as printed in Table 14; no SEs. The derivation is not described in the text, but the numbers equal the two-step short-run coefficient divided by one minus the lag coefficient (-0.0339/(1-0.7928) is about -0.164; -0.0968/(1-0.7172) is about -0.342), my own check.", "quote": "ICT Index -0.1638 0.006; ICT Index -0.3424 0.000 (Table 14, p.154)"},
+    {"n": 4, "verdict": "confirmed", "correction": "Matches Table 10 (N=1484, 106 countries); UNCTAD index runs 1 to 81.23.", "quote": "ICT -0.0012*** (0.0005) one-step; -0.0011** (0.0004) two-step (Table 10)"},
+    {"n": 5, "verdict": "confirmed", "correction": "Matches Table 12 (N=1551, 102 countries); lagged DV with unit and year effects.", "quote": "ICT Index -0.0393** (0.0165) (Table 12)"},
+    {"n": 6, "verdict": "confirmed", "correction": "All four coefficients, SEs and N match Table 11; countries 45/50 (high) and 51/50 (low) can be added.", "quote": "ICT Index -0.0204** (0.0098) -0.0591** (0.0257) -0.1550** (0.0770) -0.1090** (0.0514) (Table 11)"}
+  ],
+  "heterogeneity": [
+    {"n": 1, "verdict": "confirmed", "correction": "Supported; authors state coefficients are higher for low-income group. No test of difference is reported, and with SE 0.0770 on -0.1550 the gap to -0.0204 is within roughly 1.7 SE, so it is not clearly different.", "quote": "The coefficients of the ICT index are higher for low-income countries"},
+    {"n": 2, "verdict": "confirmed", "correction": "Values correct (Table 7: 0.0008 insignificant one-step, 0.0015*** two-step; Table 13: 0.00002***). The record's sign reading is right: a positive interaction on a concentration index means the diversifying effect of ICT weakens with enrolment, contradicting the abstract's 'higher levels of human capital enhance ICT's effects'. Note two-step ICT main effect -0.1834*** so the net effect stays negative at enrolment near 100.", "quote": "with higher school enrollment rates, the adverse effect of the ICT index on the export concentration index becomes less pronounced or even reversed"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Pooled groups per Table 11 are correctly reported (high+upper-middle vs low+lower-middle); no four-way split exists. Numbers and SEs verified.",
+  "risk_of_bias": {
+    "overall": "agree",
+    "confounding_reverse_causation": "agree - moderate: system GMM with internal instruments plus trade/FDI/electricity as extra instruments (not justified as excluded), Hansen p 0.14-0.55 and AR(2) fine, but no instrument counts and causal wording ('impact', 'accelerates'); treatment of ICT as endogenous is not stated.",
+    "exposure_measurement": "agree - moderate: PCA of four WDI indicators rescaled 0-1 (unit = full range); UNCTAD index robustness helps, though its construction is nearly identical.",
+    "selection_of_countries_years": "agree - moderate: developing/emerging countries only, dropped for missing data ('Various cutoffs'), unbalanced (1052-1551 of 2200 obs), count varies 100-106 while text says 110.",
+    "outcome_measurement": "agree - low: standard UNCTAD HHI and deviation-from-world-structure indices; merchandise only. Naming of 'diversification index' (higher = more concentrated) is confusing but definitions are clear.",
+    "specification": "agree - moderate: controls differ across tables (school enrolment omitted in Table 12; trade a control only there); lagged DV with FE in Table 12; ICT unit scale; one-unit effect equals whole range.",
+    "selective_reporting": "agree - moderate: long-run coefficients without SEs or described derivation, and the interaction is interpreted in the opposite direction to its sign.",
+    "why": "Standard system GMM with sensible diagnostics and a consistent negative ICT coefficient across estimators and indices, but exogeneity of ICT is not established and reporting has internal inconsistencies, hence moderate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "(1) Record says Appendix 2 country list is 'not in the extracted text'; it is present as Table B1 (110 countries), so the extractor should fill economies_or_groups. (2) Years: sample is 2000-2019; the conclusion's 1995-2019 is the paper's own inconsistency (2200 obs = 110 x 20). (3) Abstract and conclusion misdescribe the interaction result (positive sign on concentration index read as ICT being enhanced by human capital); record handles this correctly. No numbers invented; all quoted coefficients match tables."
+ }
+]

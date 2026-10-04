@@ -4,14 +4,14 @@
 
 ## Regression estimates for the meta-regression
 
-- Estimates checked: 203 from 25 papers. Confirmed: 202; corrected: 1; unverifiable: 0; not applicable: 0.
+- Estimates checked: 206 from 26 papers. Confirmed: 205; corrected: 1; unverifiable: 0; not applicable: 0.
 - The one correction (245-10) changes the income label to a combined middle-income group. Five further estimates were excluded as not poolable (`data/mra_exclusions.csv`): 358 (exposure is fintech credit, not ICT adoption), 88-11 to 88-14 (growth outcome mixed with level outcomes) and 988-5 (TFP index in levels).
 - Many papers carry pooling warnings in `data/second_pass/mra_ver_*.json` (composite indices instead of single technologies, conditional main effects when interactions are present, overlapping specifications on one sample, generated TFP outcomes). 302 and 323 share authors, panel and index, so they are not independent.
 
 ## Full-text records (papers still included or excluded after this check)
 
-- Included records checked: 64. Results: confirmed 348, corrected 19, unverifiable 5. Heterogeneity items: confirmed 120, corrected 13.
-- The checker's view of the overall risk-of-bias rating: agree 55, too lenient 3, too harsh 6. The ratings in the record were not changed; the differences are listed below for a human to settle.
+- Included records checked: 67. Results: confirmed 362, corrected 19, unverifiable 5. Heterogeneity items: confirmed 123, corrected 13.
+- The checker's view of the overall risk-of-bias rating: agree 58, too lenient 3, too harsh 6. The ratings in the record were not changed; the differences are listed below for a human to settle.
 
 | Paper | Record says | Checker says |
 |---|---|---|

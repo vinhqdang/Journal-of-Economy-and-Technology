@@ -23,3 +23,5 @@ B and C were set aside as too narrow or too close to a calculation. Their litera
 [review/extra_questions_spec.md](review/extra_questions_spec.md) and [review/extra_questions.md](review/extra_questions.md): nine additional research questions specified before analysis, and their exploratory results.
 
 [analysis/](analysis/): original macro-panel analysis of World Bank data for the questions the literature cannot yet answer ([plan](analysis/spec.md), [results](analysis/results.md), [summary](analysis/summary.md)). Fixed-effects associations only, not causal effects.
+
+Independent cross-checks: [second pass](review/second_pass_verification.md), [blind re-extraction of 16 studies](review/double_extraction.md) and [blind re-screening of 340 records](review/rescreening.md).

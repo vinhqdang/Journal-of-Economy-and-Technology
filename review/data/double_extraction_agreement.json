@@ -1,0 +1,1003 @@
+{
+ "fields": {
+  "n_economies": {
+   "agree": 13,
+   "n": 16
+  },
+  "year_first": {
+   "agree": 15,
+   "n": 16
+  },
+  "year_last": {
+   "agree": 15,
+   "n": 16
+  },
+  "estimator_class": {
+   "agree": 12,
+   "n": 16
+  },
+  "gmm_vs_not": {
+   "agree": 13,
+   "n": 16
+  },
+  "identification_none_vs_some": {
+   "agree": 14,
+   "n": 16
+  },
+  "outcome_families_exact": {
+   "agree": 16,
+   "n": 16
+  },
+  "headline_direction": {
+   "agree": 14,
+   "n": 16
+  },
+  "income_group_comparison": {
+   "agree": 12,
+   "n": 16
+  },
+  "low_income_listed": {
+   "agree": 5,
+   "n": 5
+  },
+  "overall_risk_of_bias": {
+   "agree": 11,
+   "n": 16
+  },
+  "outcome_families_mean_jaccard": 1.0
+ },
+ "rows": [
+  {
+   "idx": "320",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": false,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     20,
+     20
+    ],
+    "years": [
+     [
+      2005,
+      2020
+     ],
+     [
+      2005,
+      2020
+     ]
+    ],
+    "est": [
+     "FE_RE_OLS",
+     "FE_RE_OLS"
+    ],
+    "ident": [
+     "none",
+     "none"
+    ],
+    "fam": [
+     [
+      5
+     ],
+     [
+      5
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     true,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "88",
+   "n_economies": false,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": true,
+   "overall_risk_of_bias": false,
+   "detail": {
+    "n": [
+     94,
+     99
+    ],
+    "years": [
+     [
+      1983,
+      1997
+     ],
+     [
+      1983,
+      1997
+     ]
+    ],
+    "est": [
+     "FE_RE_OLS",
+     "FE_RE_OLS"
+    ],
+    "ident": [
+     "instrument",
+     "internal_instruments"
+    ],
+    "fam": [
+     [
+      1
+     ],
+     [
+      1
+     ]
+    ],
+    "dir": [
+     "positive",
+     "positive"
+    ],
+    "rob": [
+     "serious",
+     "moderate"
+    ],
+    "low": [
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "idx": "802",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": false,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     22,
+     22
+    ],
+    "years": [
+     [
+      2011,
+      2012
+     ],
+     [
+      2011,
+      2012
+     ]
+    ],
+    "est": [
+     "FE_RE_OLS",
+     "FE_RE_OLS"
+    ],
+    "ident": [
+     "none",
+     "none"
+    ],
+    "fam": [
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     false,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "1372",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": false,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     57,
+     57
+    ],
+    "years": [
+     [
+      2012,
+      2016
+     ],
+     [
+      2012,
+      2016
+     ]
+    ],
+    "est": [
+     "FE_RE_OLS",
+     "accounting_DEA_other"
+    ],
+    "ident": [
+     "none",
+     "none"
+    ],
+    "fam": [
+     [
+      4
+     ],
+     [
+      4
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     true,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "269",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": false,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     41,
+     41
+    ],
+    "years": [
+     [
+      2000,
+      2019
+     ],
+     [
+      2000,
+      2019
+     ]
+    ],
+    "est": [
+     "ARDL_coint_het",
+     "ARDL_coint_het"
+    ],
+    "ident": [
+     "other (Granger-type predictive causality only; no instrument or exogenous variation)",
+     "none"
+    ],
+    "fam": [
+     [
+      1
+     ],
+     [
+      1
+     ]
+    ],
+    "dir": [
+     "null",
+     "null"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     false,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "442",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": false,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": null,
+   "overall_risk_of_bias": false,
+   "detail": {
+    "n": [
+     22,
+     22
+    ],
+    "years": [
+     [
+      2000,
+      2022
+     ],
+     [
+      2000,
+      2021
+     ]
+    ],
+    "est": [
+     "ARDL_coint_het",
+     "ARDL_coint_het"
+    ],
+    "ident": [
+     "none",
+     "none"
+    ],
+    "fam": [
+     [
+      3
+     ],
+     [
+      3
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "critical",
+     "serious"
+    ],
+    "low": [
+     false,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "174",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     67,
+     67
+    ],
+    "years": [
+     [
+      1995,
+      2019
+     ],
+     [
+      1995,
+      2019
+     ]
+    ],
+    "est": [
+     "GMM",
+     "GMM"
+    ],
+    "ident": [
+     "instrument",
+     "internal_instruments"
+    ],
+    "fam": [
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      6
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     false,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "1428",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     11,
+     11
+    ],
+    "years": [
+     [
+      1996,
+      2017
+     ],
+     [
+      1996,
+      2017
+     ]
+    ],
+    "est": [
+     "ARDL_coint_het",
+     "ARDL_coint_het"
+    ],
+    "ident": [
+     "none",
+     "none"
+    ],
+    "fam": [
+     [
+      5
+     ],
+     [
+      5
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     false,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "1026",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": false,
+   "low_income_listed": true,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     64,
+     64
+    ],
+    "years": [
+     [
+      2000,
+      2019
+     ],
+     [
+      2000,
+      2019
+     ]
+    ],
+    "est": [
+     "GMM",
+     "GMM"
+    ],
+    "ident": [
+     "other",
+     "internal_instruments"
+    ],
+    "fam": [
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      6
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "idx": "1013",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     8,
+     8
+    ],
+    "years": [
+     [
+      2012,
+      2023
+     ],
+     [
+      2012,
+      2023
+     ]
+    ],
+    "est": [
+     "ARDL_coint_het",
+     "ARDL_coint_het"
+    ],
+    "ident": [
+     "none",
+     "none"
+    ],
+    "fam": [
+     [
+      5
+     ],
+     [
+      5
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     false,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "952",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": false,
+   "gmm_vs_not": false,
+   "identification_none_vs_some": false,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": true,
+   "overall_risk_of_bias": false,
+   "detail": {
+    "n": [
+     17,
+     17
+    ],
+    "years": [
+     [
+      2005,
+      2022
+     ],
+     [
+      2005,
+      2022
+     ]
+    ],
+    "est": [
+     "GMM",
+     "FE_RE_OLS"
+    ],
+    "ident": [
+     "threshold model",
+     "none"
+    ],
+    "fam": [
+     [
+      1,
+      3
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "dir": [
+     "positive",
+     "positive"
+    ],
+    "rob": [
+     "serious",
+     "moderate"
+    ],
+    "low": [
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "idx": "126",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": false,
+   "gmm_vs_not": false,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     27,
+     27
+    ],
+    "years": [
+     [
+      1995,
+      2019
+     ],
+     [
+      1995,
+      2019
+     ]
+    ],
+    "est": [
+     "GMM",
+     "FE_RE_OLS"
+    ],
+    "ident": [
+     "instrument",
+     "internal_instruments"
+    ],
+    "fam": [
+     [
+      3
+     ],
+     [
+      3
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "moderate",
+     "moderate"
+    ],
+    "low": [
+     false,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "408",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": false,
+   "income_group_comparison": false,
+   "low_income_listed": null,
+   "overall_risk_of_bias": false,
+   "detail": {
+    "n": [
+     41,
+     41
+    ],
+    "years": [
+     [
+      2000,
+      2021
+     ],
+     [
+      2000,
+      2021
+     ]
+    ],
+    "est": [
+     "GMM",
+     "GMM"
+    ],
+    "ident": [
+     "other",
+     "internal_instruments"
+    ],
+    "fam": [
+     [
+      1
+     ],
+     [
+      1
+     ]
+    ],
+    "dir": [
+     "negative",
+     "mixed"
+    ],
+    "rob": [
+     "serious",
+     "moderate"
+    ],
+    "low": [
+     true,
+     null
+    ]
+   }
+  },
+  {
+   "idx": "138",
+   "n_economies": false,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": false,
+   "gmm_vs_not": false,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": true,
+   "overall_risk_of_bias": false,
+   "detail": {
+    "n": [
+     193,
+     152
+    ],
+    "years": [
+     [
+      2010,
+      2019
+     ],
+     [
+      2010,
+      2019
+     ]
+    ],
+    "est": [
+     "GMM",
+     "FE_RE_OLS"
+    ],
+    "ident": [
+     "instrument",
+     "internal_instruments"
+    ],
+    "fam": [
+     [
+      5
+     ],
+     [
+      5
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "serious",
+     "moderate"
+    ],
+    "low": [
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "idx": "341",
+   "n_economies": false,
+   "year_first": false,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": true,
+   "income_group_comparison": true,
+   "low_income_listed": true,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     110,
+     102
+    ],
+    "years": [
+     [
+      1995,
+      2019
+     ],
+     [
+      2000,
+      2019
+     ]
+    ],
+    "est": [
+     "GMM",
+     "GMM"
+    ],
+    "ident": [
+     "other",
+     "internal_instruments"
+    ],
+    "fam": [
+     [
+      2
+     ],
+     [
+      2
+     ]
+    ],
+    "dir": [
+     null,
+     "not_applicable"
+    ],
+    "rob": [
+     "moderate",
+     "moderate"
+    ],
+    "low": [
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "idx": "1713",
+   "n_economies": true,
+   "year_first": true,
+   "year_last": true,
+   "estimator_class": true,
+   "gmm_vs_not": true,
+   "identification_none_vs_some": true,
+   "outcome_families_exact": true,
+   "outcome_families_jaccard": 1.0,
+   "headline_direction": false,
+   "income_group_comparison": true,
+   "low_income_listed": null,
+   "overall_risk_of_bias": true,
+   "detail": {
+    "n": [
+     14,
+     14
+    ],
+    "years": [
+     [
+      1995,
+      2005
+     ],
+     [
+      1995,
+      2005
+     ]
+    ],
+    "est": [
+     "accounting_DEA_other",
+     "accounting_DEA_other"
+    ],
+    "ident": [
+     "none",
+     "none"
+    ],
+    "fam": [
+     [
+      1
+     ],
+     [
+      1
+     ]
+    ],
+    "dir": [
+     "positive",
+     "mixed"
+    ],
+    "rob": [
+     "serious",
+     "serious"
+    ],
+    "low": [
+     false,
+     null
+    ]
+   }
+  }
+ ]
+}

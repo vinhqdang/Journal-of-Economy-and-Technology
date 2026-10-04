@@ -1,0 +1,551 @@
+[
+ {
+  "idx": "320",
+  "n_economies": 20,
+  "year_first": 2005,
+  "year_last": 2020,
+  "estimator_class": "FE_RE_OLS",
+  "identification": "none",
+  "outcome_families": [
+   5
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "mixed",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "internet",
+   "mobile",
+   "other"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Sec. IV.A, p.4",
+    "quote": "balanced dataset that spanned across 16 years and 20 countries"
+   },
+   "estimator_class": {
+    "locator": "Abstract / Table III, p.6",
+    "quote": "we employed Pooled OLS and Feasible Generalized Least Squares estimators"
+   },
+   "headline_output_direction": {
+    "locator": "Whole paper (outcome is financial inclusion; GDP growth only a control)",
+    "quote": "GDP growth rate has significant negative relationship with Financial Inclusion"
+   }
+  }
+ },
+ {
+  "idx": "269",
+  "n_economies": 41,
+  "year_first": 2000,
+  "year_last": 2019,
+  "estimator_class": "ARDL_coint_het",
+  "identification": "none",
+  "outcome_families": [
+   1
+  ],
+  "headline_output_direction": "null",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "ICT",
+   "mobile",
+   "internet",
+   "broadband"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Sec. 3.1, p.9 and Table 1 (820 obs = 41 x 20; abstract/conclusion say 42)",
+    "quote": "The current study covered 41 Sub-Saharan African economies from 2000 to 2019"
+   },
+   "estimator_class": {
+    "locator": "Sec. 3.2, p.11",
+    "quote": "the panel causality test suggested by Dumitrescu and Hurlin (DH) [2012] to investigate these relationships"
+   },
+   "headline_output_direction": {
+    "locator": "Table 7, p.13",
+    "quote": "LICT -> LGDP W-bar 1.90, Z-bar -0.30, p-value 0.77"
+   }
+  }
+ },
+ {
+  "idx": "1026",
+  "n_economies": 64,
+  "year_first": 2000,
+  "year_last": 2019,
+  "estimator_class": "GMM",
+  "identification": "internal_instruments",
+  "outcome_families": [
+   5,
+   6
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": false,
+  "low_income_economy_listed": false,
+  "causal_language": "mixed",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "AI"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Abstract and Sec. 3.1, p.9",
+    "quote": "a balanced panel covering 64 countries from 2000 to 2019, comprising 1,280 country-year observations"
+   },
+   "estimator_class": {
+    "locator": "Abstract, p.1; Sec. 3.3.3",
+    "quote": "Employing two-way fixed effects and system GMM estimations with Lind and Mehlum U-shape tests"
+   },
+   "headline_output_direction": {
+    "locator": "Whole paper (outcome is energy poverty; GDPpc only a control)",
+    "quote": "industrial-robot adoption is initially associated with higher energy poverty at low penetration levels"
+   }
+  }
+ },
+ {
+  "idx": "408",
+  "n_economies": 41,
+  "year_first": 2000,
+  "year_last": 2021,
+  "estimator_class": "GMM",
+  "identification": "internal_instruments",
+  "outcome_families": [
+   1
+  ],
+  "headline_output_direction": "mixed",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "moderate",
+  "technology_class": [
+   "ICT",
+   "mobile",
+   "internet",
+   "broadband"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Table 2, p.13 (text, p.12 and conclusion say N=54 unbalanced)",
+    "quote": "Observations 779; Number of countries 41"
+   },
+   "estimator_class": {
+    "locator": "Abstract, p.1",
+    "quote": "we use general method moment system estimation techniques for our analysis"
+   },
+   "headline_output_direction": {
+    "locator": "Table 2 model 4, Sec. 5, p.14",
+    "quote": "Digital economy -0.127; Digital economy x human capital 0.0540"
+   }
+  }
+ },
+ {
+  "idx": "88",
+  "n_economies": 99,
+  "year_first": 1983,
+  "year_last": 1997,
+  "estimator_class": "FE_RE_OLS",
+  "identification": "internal_instruments",
+  "outcome_families": [
+   1
+  ],
+  "headline_output_direction": "positive",
+  "income_group_comparison": true,
+  "low_income_economy_listed": true,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "moderate",
+  "technology_class": [
+   "ICT",
+   "mobile",
+   "internet"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Table 1, last column (composite index, 1983-1997), Countries row",
+    "quote": "Countries 94 88 47 47 94 100 99"
+   },
+   "estimator_class": {
+    "locator": "p.16, Section 3.2; Table 2",
+    "quote": "fixed effect panel results confirm the robustness of the significance of the technological variable (Table 2)"
+   },
+   "headline_output_direction": {
+    "locator": "Abstract; Table 1",
+    "quote": "telephone lines, personal computers, mobile phones and internet hosts significantly affect levels and growth of income per worker across countries"
+   }
+  }
+ },
+ {
+  "idx": "442",
+  "n_economies": 22,
+  "year_first": 2000,
+  "year_last": 2021,
+  "estimator_class": "ARDL_coint_het",
+  "identification": "none",
+  "outcome_families": [
+   3
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "internet",
+   "mobile",
+   "ICT"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Abstract; Dataset and Variables section, p.68",
+    "quote": "panel data set that includes 22 chosen OECD nations"
+   },
+   "estimator_class": {
+    "locator": "Table 6, p.74",
+    "quote": "Applying Westerlund's (2007) panel co-integration analysis addresses heterogeneity among OECD nations"
+   },
+   "headline_output_direction": {
+    "locator": "Table 1 and Findings; outcome is women's labour force participation, not output",
+    "quote": "Women's Labor Force participation rate: Percentage of the female population aged 15-64"
+   }
+  }
+ },
+ {
+  "idx": "1013",
+  "n_economies": 8,
+  "year_first": 2012,
+  "year_last": 2023,
+  "estimator_class": "ARDL_coint_het",
+  "identification": "none",
+  "outcome_families": [
+   5
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "AI"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Section III Methodology, p.422",
+    "quote": "using data from eight countries (N=8, T=12) that are prominent in robot numbers"
+   },
+   "estimator_class": {
+    "locator": "Abstract; Table V",
+    "quote": "long- and short-term relationships are analyzed using the CS-ARDL model"
+   },
+   "headline_output_direction": {
+    "locator": "Table I and Table V; outcome is Human Development Index, PCI is a control",
+    "quote": "AI investments have a significant and positive impact on HDI in the long run"
+   }
+  }
+ },
+ {
+  "idx": "138",
+  "n_economies": 152,
+  "year_first": 2010,
+  "year_last": 2019,
+  "estimator_class": "FE_RE_OLS",
+  "identification": "internal_instruments",
+  "outcome_families": [
+   5
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": true,
+  "low_income_economy_listed": true,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "moderate",
+  "technology_class": [
+   "ICT",
+   "mobile"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Table 5 (full sample, Number of groups); Abstract states 193 countries",
+    "quote": "Number of groups 152 152 152 152 151 151 151"
+   },
+   "estimator_class": {
+    "locator": "Abstract; Section 3.3",
+    "quote": "panel spatial correlation consistent (PSCC-FE), instrumental variable-generalized method of moments (IV-GMM), and simultaneous quantile regressions (SQREG)"
+   },
+   "headline_output_direction": {
+    "locator": "Section 3.1; Table 5 (dependent variable lnHDI, not output)",
+    "quote": "we chose to proxy inclusive growth using the human development index from UNDP (2019)"
+   }
+  }
+ },
+ {
+  "idx": "802",
+  "n_economies": 22,
+  "year_first": 2011,
+  "year_last": 2012,
+  "estimator_class": "FE_RE_OLS",
+  "identification": "none",
+  "outcome_families": [
+   3,
+   4
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": true,
+  "low_income_economy_listed": null,
+  "causal_language": "mixed",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "ICT"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "p.6, Data section",
+    "quote": "carried out by the OECD in 2011 and 2012 in 22 participating countries"
+   },
+   "estimator_class": {
+    "locator": "p.18, Section IV Empirical Strategy",
+    "quote": "a pooled linear model with country fixed effects"
+   },
+   "headline_output_direction": {
+    "locator": "Abstract / Tables 7-8 (outcome is routine task intensity and wages, not output)",
+    "quote": "ICT use at work explains 41% (25%) of the cross-country unconditional (conditional) differences in de-routinization"
+   }
+  }
+ },
+ {
+  "idx": "174",
+  "n_economies": 67,
+  "year_first": 1995,
+  "year_last": 2019,
+  "estimator_class": "GMM",
+  "identification": "internal_instruments",
+  "outcome_families": [
+   4,
+   6
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "AI"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Abstract",
+    "quote": "impact of artificial intelligence (AI) on carbon inequality (CI) in 67 countries from 1995 to 2019"
+   },
+   "estimator_class": {
+    "locator": "Table 6 caption, Section 5.2",
+    "quote": "POLS and SYS-GMM estimation results for the impact of AI on inter-country and intra-country carbon inequalities"
+   },
+   "headline_output_direction": {
+    "locator": "Abstract (outcome is carbon inequality; AI proxied by industrial robot stock)",
+    "quote": "AI significantly amplifies CI both between and within countries"
+   }
+  }
+ },
+ {
+  "idx": "952",
+  "n_economies": 17,
+  "year_first": 2005,
+  "year_last": 2022,
+  "estimator_class": "FE_RE_OLS",
+  "identification": "none",
+  "outcome_families": [
+   1,
+   3
+  ],
+  "headline_output_direction": "positive",
+  "income_group_comparison": true,
+  "low_income_economy_listed": true,
+  "causal_language": "no",
+  "overall_risk_of_bias": "moderate",
+  "technology_class": [
+   "ICT",
+   "internet",
+   "broadband"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Section 3.1, Table 1 and Table 4",
+    "quote": "annual panel of 17 Asia-Pacific economies over 2005\u20132022"
+   },
+   "estimator_class": {
+    "locator": "Section 3.3.1",
+    "quote": "dynamic panel models with the lagged dependent variable, entity fixed effects, and time fixed effects"
+   },
+   "headline_output_direction": {
+    "locator": "Section 4.4, Table 4 Model 5",
+    "quote": "the DIGI \u00d7 GREEN interaction is positive and highly significant (\u03b2 = 1.685, p < 0.01)"
+   }
+  }
+ },
+ {
+  "idx": "341",
+  "n_economies": 102,
+  "year_first": 2000,
+  "year_last": 2019,
+  "estimator_class": "GMM",
+  "identification": "internal_instruments",
+  "outcome_families": [
+   2
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": true,
+  "low_income_economy_listed": true,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "moderate",
+  "technology_class": [
+   "ICT"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Table 6 (main system GMM); text and abstract cite 110 countries",
+    "quote": "Number of countries 102 102"
+   },
+   "estimator_class": {
+    "locator": "Table 6 title",
+    "quote": "One-step and two-step system GMM estimation results on the effect of ICT index on export concentration index"
+   },
+   "headline_output_direction": {
+    "locator": "Abstract (outcome is export concentration/diversification, not output)",
+    "quote": "ICT development significantly accelerates export diversification in developing countries"
+   }
+  }
+ },
+ {
+  "idx": "1372",
+  "n_economies": 57,
+  "year_first": 2012,
+  "year_last": 2016,
+  "estimator_class": "other",
+  "identification": "none",
+  "outcome_families": [
+   4
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "internet",
+   "ICT"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Section 3.1, p.7",
+    "quote": "The focus of the research is on 57 developing nations using an unbalanced panel data from 2012 to 2016"
+   },
+   "estimator_class": {
+    "locator": "Abstract / Section 3.2, p.9",
+    "quote": "a doubled censored Tobit regression strategy is adopted for this research"
+   },
+   "headline_output_direction": {
+    "locator": "Abstract; outcome is poverty headcount, no output/productivity outcome",
+    "quote": "inequality unconditionally increases poverty while 'virtual social networks' and 'internet access in schools' negatively moderate"
+   }
+  }
+ },
+ {
+  "idx": "1428",
+  "n_economies": 11,
+  "year_first": 1996,
+  "year_last": 2017,
+  "estimator_class": "ARDL_coint_het",
+  "identification": "none",
+  "outcome_families": [
+   5
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "mobile",
+   "internet"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Abstract / Section 2.1, p.728",
+    "quote": "Our sample consists of eleven post-communist EU countries"
+   },
+   "estimator_class": {
+    "locator": "Section 3, p.733 (Tables 7a, 7b)",
+    "quote": "The cointegration coefficients were estimated through AMG method developed by Teal and Eberhardt (2010)"
+   },
+   "headline_output_direction": {
+    "locator": "Outcomes are financial institution/market access indices; no output outcome",
+    "quote": "mobile phones and Internet development generally had a positive impact on the financial inclusion"
+   }
+  }
+ },
+ {
+  "idx": "126",
+  "n_economies": 27,
+  "year_first": 1995,
+  "year_last": 2019,
+  "estimator_class": "IV_2SLS",
+  "identification": "internal_instruments",
+  "outcome_families": [
+   3
+  ],
+  "headline_output_direction": "not_applicable",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "mixed",
+  "overall_risk_of_bias": "moderate",
+  "technology_class": [
+   "ICT"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Table 4, p.6",
+    "quote": "Observations (ID-countries) 594 (27)"
+   },
+   "estimator_class": {
+    "locator": "Section 4.2, p.5-6 (Table 4 column IV)",
+    "quote": "Two-Stage Residual Inclusion Estimation (2SRI)"
+   },
+   "headline_output_direction": {
+    "locator": "Outcome is employment growth (Table 4); no output or productivity outcome",
+    "quote": "average positive net effect of ICT investment on total employment"
+   }
+  }
+ },
+ {
+  "idx": "1713",
+  "n_economies": 14,
+  "year_first": 1995,
+  "year_last": 2005,
+  "estimator_class": "accounting_DEA",
+  "identification": "none",
+  "outcome_families": [
+   1
+  ],
+  "headline_output_direction": "mixed",
+  "income_group_comparison": false,
+  "low_income_economy_listed": null,
+  "causal_language": "yes",
+  "overall_risk_of_bias": "serious",
+  "technology_class": [
+   "ICT"
+  ],
+  "evidence": {
+   "n_economies": {
+    "locator": "Section 3, p.10",
+    "quote": "The introduction of ICT capital restricted the sample to 14 countries."
+   },
+   "estimator_class": {
+    "locator": "Section 2.1, p.3",
+    "quote": "This study used an approach based on DEA to analyse the impact of ICT capital on labour productivity change"
+   },
+   "headline_output_direction": {
+    "locator": "Conclusion, p.17",
+    "quote": "an increase through capital accumulation and a decrease through technological change"
+   }
+  }
+ }
+]

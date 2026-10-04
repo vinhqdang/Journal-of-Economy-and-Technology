@@ -1,0 +1,182 @@
+[
+ {
+  "sid": "S2-612",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "ICT investment only a modifier; many-country panel, labour productivity outcome."
+ },
+ {
+  "sid": "S1-nber:w7846",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "Abstract truncated; technology type and country count unknown."
+ },
+ {
+  "sid": "S3-538",
+  "verdict": "fails",
+  "failed_criterion": "3",
+  "note": "East African countries only, a handful of economies."
+ },
+ {
+  "sid": "S1-doi:10.1111/coep.12456",
+  "verdict": "meets",
+  "failed_criterion": "",
+  "note": "88-country panel, mobile subscriptions, brain cancer mortality (health)."
+ },
+ {
+  "sid": "S3-445",
+  "verdict": "meets",
+  "failed_criterion": "",
+  "note": "24 Asian countries, ICT, SYS-GMM, labour productivity."
+ },
+ {
+  "sid": "S3-474",
+  "verdict": "meets",
+  "failed_criterion": "",
+  "note": "G7 panel, AI investment via ICT proxy, employment outcome."
+ },
+ {
+  "sid": "S3-495",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "Growth accounting with ICT; number of comparison countries not stated."
+ },
+ {
+  "sid": "S2-448",
+  "verdict": "meets",
+  "failed_criterion": "",
+  "note": "45 SSA countries, mobile/internet, 3SLS, financial inclusion."
+ },
+ {
+  "sid": "S2-1774",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "No abstract; bioenergy outcome may not be resource cost."
+ },
+ {
+  "sid": "S2-1325",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "62 countries, embodied CO2; DGVC participation as ICT exposure uncertain."
+ },
+ {
+  "sid": "S2-324",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "ICT investment minor regressor; number of countries unstated."
+ },
+ {
+  "sid": "S1-doi:10.1016/j.resglo.2025.100277",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "108 countries, poverty; Fintech moderator is borderline ICT exposure."
+ },
+ {
+  "sid": "S2-367",
+  "verdict": "meets",
+  "failed_criterion": "",
+  "note": "18 countries, digital economy index, growth and CO2; retracted."
+ },
+ {
+  "sid": "S3-891",
+  "verdict": "meets",
+  "failed_criterion": "",
+  "note": "AI investment, eight economies, growth and energy demand, panel FE."
+ },
+ {
+  "sid": "S2-1836",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "No abstract; G7 AI and sustainability, outcome measure unclear."
+ },
+ {
+  "sid": "S2-908",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "AI panel, advanced economies; ecological footprint only loosely resource cost; country count unstated"
+ },
+ {
+  "sid": "S1-nber:w28681",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "Abstract truncated; exposure and method unclear"
+ },
+ {
+  "sid": "S2-1708",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "No abstract; sample size not given"
+ },
+ {
+  "sid": "S3-208",
+  "verdict": "fails",
+  "failed_criterion": "2",
+  "note": "Exposure is digitizable product trade, not ICT adoption or investment"
+ },
+ {
+  "sid": "S2-600",
+  "verdict": "fails",
+  "failed_criterion": "3",
+  "note": "East Asian nations only, a handful; outcome is sustainable development index"
+ },
+ {
+  "sid": "S1-oa:W4389855071",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "No abstract; title insufficient"
+ },
+ {
+  "sid": "S3-614",
+  "verdict": "fails",
+  "failed_criterion": "2",
+  "note": "Focus on tangible non-ICT capital intensity; EU countries only"
+ },
+ {
+  "sid": "S3-811",
+  "verdict": "fails",
+  "failed_criterion": "2",
+  "note": "Exposure is digital trade, not ICT adoption or capability"
+ },
+ {
+  "sid": "S1-oa:W3202125217",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "No abstract; euro area digitalisation, method unknown"
+ },
+ {
+  "sid": "S2-1951",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "No abstract; likely single-country mobile phone study"
+ },
+ {
+  "sid": "S1-oa:W7167068885",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "No abstract; Global Findex suggests cross-country but exposure unclear"
+ },
+ {
+  "sid": "S2-755",
+  "verdict": "meets",
+  "failed_criterion": "",
+  "note": "AI investment, 5 economies, PSTR, carbon emissions outcomes"
+ },
+ {
+  "sid": "S2-940",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "Arab panel; internet and mobile use determinants of financial inclusion; country count unstated"
+ },
+ {
+  "sid": "S2-333",
+  "verdict": "probably",
+  "failed_criterion": "",
+  "note": "Top ten emitters, digital economy and CO2; digital economy measure unclear"
+ },
+ {
+  "sid": "S2-1805",
+  "verdict": "cannot_tell",
+  "failed_criterion": "",
+  "note": "No abstract; ASEAN resilience, title insufficient"
+ }
+]

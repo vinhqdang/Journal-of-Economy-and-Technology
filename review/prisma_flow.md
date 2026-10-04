@@ -29,7 +29,7 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 
 ## Screening method and its limits
 
-- One assisted screener (automated rules plus a single reader). **No independent second screener, so no agreement statistic yet.** A random verification sample of 90 decisions is in `data/verification_sample.csv` for the author to check. Agreement will be reported once it is returned.
+- One assisted screener (automated rules plus a single reader). **No human second screener.** A blind model re-screening of a random sample of 340 records gave 79% agreement at the abstract stage (kappa 0.59) and suggests that screening missed records (see `rescreening.md`). A random verification sample of 90 decisions is in `data/verification_sample.csv` for the author to check. Agreement will be reported once it is returned.
 - Title screening was generous (the aim was not to lose relevant records). Abstract screening applied the eligibility table in the protocol.
 - Source tiers: a few open-access links point to journals that have not been checked against predatory-journal lists. That check belongs to the full-text stage.
 

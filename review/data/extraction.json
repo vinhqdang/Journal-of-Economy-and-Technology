@@ -1223,7 +1223,23 @@
    "verified": 3,
    "checked": 6
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {},
+   "eligibility_ok": true,
+   "eligibility_note": "Own CS-ARDL/DCCEMG estimation; exposure is a general ICT index (fixed telephone, mobile, internet); 11 economies (>=10); outcome is GDP per capita (output). All criteria hold, but the 10-economy threshold is only just met.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "11 confirmed (Algeria, Egypt, Iran, Iraq, Jordan, Lebanon, Mauritania, Morocco, Syria, Tunisia, Turkey) - p.1118",
+    "years": "1980-2018 confirmed; Table 1 shows 429 obs = 11 x 39, i.e. balanced panel",
+    "income_groups_covered": "Record is right that the paper gives no income classification; no change"
+   },
+   "corrections": [],
+   "problems": "No invented or mixed-up content found. Minor: record's 'Iraq and Syria include conflict periods' is not in the paper (reviewer inference). Authors state short- and long-run CS-ARDL results are 'similar in both magnitude and signs'; 0.062 vs 0.050 is consistent with that."
+  }
  },
  {
   "idx": "88",
@@ -3918,7 +3934,26 @@
    "verified": 3,
    "checked": 3
   },
-  "quote_flag": "ok"
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (OLS/FE/RE/GMM) for 48 SSA countries 2005-2020; exposure is a PCA composite ICT index (internet, mobile, broadband, fixed telephone, secure servers plus schooling items, so impure); outcome is a composite inclusive-growth index including poverty headcount, Gini and living-standard items (poverty/distribution, living standards). Eligible, but exposure and outcome are both weak composites.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "48 confirmed (p.11227; abstract)",
+    "years": "2005-2020 confirmed; unbalanced (Table 8: 767 IGR obs, 752 ICT obs; regressions 367 (static) and 346 (GMM))",
+    "income_groups_covered": "No income split; SSA only. No change.",
+    "exposure_measure": "Record is accurate that text says twelve indicators and Table 3 lists eight (three of which are education items); Appendix 2 lists twelve rows with duplicated labels (e.g. mobile, broadband, fixed telephone, secure servers appear twice)."
+   },
+   "corrections": [],
+   "problems": "No invention or paper mix-up. Corrections: ICT and TRAD enter the dynamic models lagged one period (Eq. 2-3), so 'contemporaneous' horizon for results 1-3 is not accurate. Record says 'Appendix 2 lists twelve' - correct as to content (heading 'Correlation matrix for ICT index indicators'), though the main text points to Appendix 1/2 inconsistently. Hansen p-values 0.289/0.492 and AR(2) 0.537/0.782 confirmed. Text describes the study as dynamic though three of five columns are static."
+  }
  },
  {
   "idx": "285",
@@ -5030,7 +5065,26 @@
    "verified": 6,
    "checked": 12
   },
-  "quote_flag": "needs human check"
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own system GMM estimation; exposure is a PCA ICT index (fixed telephone, internet, fixed broadband, mobile) plus UNCTAD ICT index; 100-110 emerging/developing economies with explicit high/upper-middle versus low/lower-middle comparison; outcome is export concentration/diversification (structural change). All criteria hold.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "110 in abstract, Section 4.2 and Appendix 2 Table B1 (110 countries listed); regressions use 100 to 106 (Table 6/7: 102; Table 9: 100; Table 10: 106; Table 12: 102; Table 13: 106; Table 11 subgroups 45/50 high, 51/50 low)",
+    "years": "2000-2019 (abstract and Section 4.2; 2200 obs = 110 x 20 in Table 3). The conclusion's '1995 to 2019' is an inconsistency in the paper, not the sample.",
+    "economies_or_groups": "Record says the country list is not in the text; it is: Appendix 2, Table B1 (p.162) lists 110 countries",
+    "income_groups_covered": "Mixed: list includes high-income economies (e.g. Bahrain, Qatar, Saudi Arabia, United Arab Emirates, Chile, Poland, Hungary, Uruguay, Barbados, Trinidad and Tobago) as well as low-income ones (e.g. Burundi, Chad, Niger); paper splits into high+upper-middle vs low+lower-middle by World Bank class."
+   },
+   "corrections": [],
+   "problems": "(1) Record says Appendix 2 country list is 'not in the extracted text'; it is present as Table B1 (110 countries), so the extractor should fill economies_or_groups. (2) Years: sample is 2000-2019; the conclusion's 1995-2019 is the paper's own inconsistency (2200 obs = 110 x 20). (3) Abstract and conclusion misdescribe the interaction result (positive sign on concentration index read as ICT being enhanced by human capital); record handles this correctly. No numbers invented; all quoted coefficients match tables."
+  }
  },
  {
   "idx": "358",
