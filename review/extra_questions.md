@@ -25,8 +25,8 @@ A coefficient on `composite` or `growth` is the average difference in partial co
 
 ## RQ6: does study quality go with the reported direction for output?
 
-- all family-1 results positive: moderate-risk studies 1 of 2; serious or critical 9 of 42; odds ratio 3.67, Fisher p = 0.41.
-- at least one negative or null family-1 result: moderate-risk studies 0 of 2; serious or critical 25 of 42; odds ratio 0.00, Fisher p = 0.18.
+- all family-1 results positive: moderate-risk studies 1 of 2; serious or critical 10 of 42; odds ratio 3.20, Fisher p = 0.44.
+- at least one negative or null family-1 result: moderate-risk studies 0 of 2; serious or critical 24 of 42; odds ratio 0.00, Fisher p = 0.20.
 
 Base: 44 studies with at least one output or productivity result. Most studies report several results, so "all positive" is a demanding criterion.
 

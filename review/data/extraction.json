@@ -15226,11 +15226,12 @@
    {
     "family": 1,
     "indicator": "ln GDP per capita; all 10 ASEAN countries, mobile cellular subscriptions lnMCSMI, PCSE Model 4",
-    "direction": "mixed",
+    "direction": "positive",
     "estimate": "0.090 (PCSE Model 4); FGLS 0.317",
     "uncertainty": "PCSE p = 0.052; FGLS p = 0.000",
     "horizon": "contemporaneous",
-    "evidence": "Table 11 (p.17), row lnMCSMI: PCSE '0.077 0.099 0.090 0.052'; FGLS '0.316 0.000 0.317 0.000'"
+    "evidence": "Table 11 (p.17), row lnMCSMI: PCSE '0.077 0.099 0.090 0.052'; FGLS '0.316 0.000 0.317 0.000'",
+    "direction_first_pass": "mixed"
    },
    {
     "family": 1,
@@ -15556,11 +15557,12 @@
    {
     "family": 1,
     "indicator": "Real GDP, upper-middle-income, response to ICT diffusion",
-    "direction": "null",
+    "direction": "positive",
     "estimate": "-0.13799",
     "uncertainty": "p = 0.2380 (no stars)",
     "horizon": "contemporaneous",
-    "evidence": "Table 11, UMIC row ICT(t), column RGDP(t-1), p. 2057"
+    "evidence": "Table 11, UMIC row ICT(t), column RGDP(t-1), p. 2057",
+    "direction_first_pass": "null"
    },
    {
     "family": 1,
@@ -15574,29 +15576,32 @@
    {
     "family": 1,
     "indicator": "Real GDP, low-income, response to ICT diffusion",
-    "direction": "negative",
+    "direction": "positive",
     "estimate": "-0.7658",
     "uncertainty": "p = 0.0000 (***)",
     "horizon": "contemporaneous",
-    "evidence": "Table 11, LIC row ICT(t), column RGDP(t-1), p. 2057"
+    "evidence": "Table 11, LIC row ICT(t), column RGDP(t-1), p. 2057",
+    "direction_first_pass": "negative"
    },
    {
     "family": 1,
     "indicator": "Real GDP, full sample, response to industrialisation (MAV), not the focal exposure",
-    "direction": "negative",
+    "direction": "positive",
     "estimate": "-0.0007 (authors: 1% rise in industrialisation lowers growth by 0.001%)",
     "uncertainty": "p = 0.0000 (***)",
     "horizon": "contemporaneous",
-    "evidence": "Table 11, entire sample row MAV(t), column RGDP(t-1); text p. 2056"
+    "evidence": "Table 11, entire sample row MAV(t), column RGDP(t-1); text p. 2056",
+    "direction_first_pass": "negative"
    },
    {
     "family": 2,
     "indicator": "Manufacturing value-added share of GDP (MAV), full sample, response to ICT diffusion",
-    "direction": "negative",
+    "direction": "positive",
     "estimate": "-34.3608 (authors: 1% rise in ICT lowers industrialisation by 34%)",
     "uncertainty": "p = 0.0000 (***)",
     "horizon": "contemporaneous",
-    "evidence": "Table 11, entire sample row ICT(t), column MAV(t-1), p. 2057; text p. 2056 'fall by -34%'"
+    "evidence": "Table 11, entire sample row ICT(t), column MAV(t-1), p. 2057; text p. 2056 'fall by -34%'",
+    "direction_first_pass": "negative"
    },
    {
     "family": 2,

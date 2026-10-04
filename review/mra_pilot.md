@@ -53,5 +53,5 @@ Assumed number of regressors k = 0: 0.165; k = 5: 0.167; k = 20: 0.172. A stable
 ## What this pilot can and cannot support
 
 - It can show whether there is enough comparable material to run a meta-regression at all, and which moderators are worth pursuing.
-- It cannot support a causal statement, a claim about AI (too few estimates), or a firm statement about income groups until the author's hand check is fully documented and the sample is widened with the Scopus and Web of Science search.
+- It cannot support a causal statement, a claim about AI (too few estimates), or a firm statement about income groups until the author's hand check is fully documented and the sample is widened beyond the studies found so far (the search had low recall; see google_scholar_results.md).
 

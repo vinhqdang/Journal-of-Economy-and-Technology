@@ -14,41 +14,41 @@
 \contentsline {subsection}{\numberline {3.9}Pilot meta-regression}{9}{subsection.3.9}%
 \contentsline {subsection}{\numberline {3.10}Additional exploratory questions}{9}{subsection.3.10}%
 \contentsline {subsection}{\numberline {3.11}Macro-panel analysis}{10}{subsection.3.11}%
-\contentsline {section}{\numberline {4}Results of the review and the meta-regression}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Study selection}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Characteristics of included studies}{11}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Risk of bias}{12}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Accuracy of the extraction}{12}{subsection.4.4}%
+\contentsline {section}{\numberline {4}Results of the review and the meta-regression}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Study selection}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Characteristics of included studies}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Risk of bias}{13}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Accuracy of the extraction}{13}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Independent cross-checks of screening and extraction}{13}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Output and productivity}{14}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Structural change}{14}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Labour market}{15}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Poverty and distribution}{15}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}Living standards beyond income and resource cost}{15}{subsection.4.10}%
-\contentsline {subsection}{\numberline {4.11}Do gains differ by income level?}{16}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}Evidence on AI}{16}{subsection.4.12}%
-\contentsline {subsection}{\numberline {4.13}Pilot meta-regression: ICT-type adoption and output}{17}{subsection.4.13}%
-\contentsline {subsection}{\numberline {4.14}Exploratory analyses of additional questions}{18}{subsection.4.14}%
-\contentsline {section}{\numberline {5}Results of the macro-panel analysis}{19}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Mobile adoption and growth by income group (A1, A2)}{19}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Dose-response and differences inside low-income economies (A3, A6)}{20}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Event study around mobile takeoff (A4b)}{20}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Local projections (A7)}{21}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Consistency across designs}{22}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Discussion}{22}{section.6}%
-\contentsline {subsection}{\numberline {6.1}What the evidence supports}{22}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Reconciling the review with the panel analysis}{23}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}AI}{24}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Implications}{24}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Research agenda}{24}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Limitations}{24}{section.7}%
-\contentsline {section}{\numberline {8}Conclusion}{25}{section.8}%
-\contentsline {section}{\numberline {A}Included studies}{27}{appendix.A}%
-\contentsline {section}{\numberline {B}Results by outcome family}{32}{appendix.B}%
-\contentsline {section}{\numberline {C}Search strategy}{35}{appendix.C}%
-\contentsline {section}{\numberline {D}Eligibility, extraction form and risk-of-bias criteria}{36}{appendix.D}%
-\contentsline {section}{\numberline {E}Meta-regression inputs}{37}{appendix.E}%
-\contentsline {section}{\numberline {F}Second-pass check}{39}{appendix.F}%
-\contentsline {section}{\numberline {G}Macro-panel data and additional results}{41}{appendix.G}%
-\contentsline {section}{\numberline {H}Protocol amendments}{44}{appendix.H}%
-\contentsline {section}{\numberline {I}PRISMA 2020 checklist}{44}{appendix.I}%
+\contentsline {subsection}{\numberline {4.7}Structural change}{15}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Labour market}{16}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Poverty and distribution}{16}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Living standards beyond income and resource cost}{16}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Do gains differ by income level?}{17}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Evidence on AI}{17}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}Pilot meta-regression: ICT-type adoption and output}{18}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.14}Exploratory analyses of additional questions}{20}{subsection.4.14}%
+\contentsline {section}{\numberline {5}Results of the macro-panel analysis}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Mobile adoption and growth by income group (A1, A2)}{21}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Dose-response and differences inside low-income economies (A3, A6)}{22}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Event study around mobile takeoff (A4b)}{22}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Local projections (A7)}{23}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Consistency across designs}{23}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Discussion}{24}{section.6}%
+\contentsline {subsection}{\numberline {6.1}What the evidence supports}{24}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Reconciling the review with the panel analysis}{25}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}AI}{25}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Implications}{26}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Research agenda}{26}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Limitations}{26}{section.7}%
+\contentsline {section}{\numberline {8}Conclusion}{27}{section.8}%
+\contentsline {section}{\numberline {A}Included studies}{29}{appendix.A}%
+\contentsline {section}{\numberline {B}Results by outcome family}{34}{appendix.B}%
+\contentsline {section}{\numberline {C}Search strategy}{37}{appendix.C}%
+\contentsline {section}{\numberline {D}Eligibility, extraction form and risk-of-bias criteria}{39}{appendix.D}%
+\contentsline {section}{\numberline {E}Meta-regression inputs}{40}{appendix.E}%
+\contentsline {section}{\numberline {F}Second-pass check}{42}{appendix.F}%
+\contentsline {section}{\numberline {G}Macro-panel data and additional results}{44}{appendix.G}%
+\contentsline {section}{\numberline {H}Protocol amendments}{47}{appendix.H}%
+\contentsline {section}{\numberline {I}PRISMA 2020 checklist}{48}{appendix.I}%

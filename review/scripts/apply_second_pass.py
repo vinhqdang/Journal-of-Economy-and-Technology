@@ -23,6 +23,19 @@ for f in glob.glob(os.path.join(D, "second_pass/mra_ver_*.json")):
     for p in json.load(open(f)):
         mra[p["idx"]] = p
 
+# Direction fixes where the second pass found the first-pass direction wrong against the printed numbers
+# (study 9103: a panel-VAR table read from the wrong cell; study 9101: both estimates positive).
+# The first-pass value is kept in direction_first_pass. Idempotent.
+DIRECTION_FIXES = {"9101": {4: "positive"}, "9103": {n: "positive" for n in range(1, 12)}}
+for idx, fixes in DIRECTION_FIXES.items():
+    rec = by.get(idx)
+    if rec:
+        for n, d in fixes.items():
+            r = rec["results"][n - 1]
+            if r["direction"] != d:
+                r.setdefault("direction_first_pass", r["direction"])
+                r["direction"] = d
+
 for idx, p in ft.items():
     rec = by.get(idx)
     if not rec:
@@ -57,7 +70,7 @@ L = ["# Second-pass check of the extractions", "",
      "**What this is.** After the first extraction, every included paper's record and every regression estimate used in the pilot meta-regression was checked a second time against the converted full text by a separate model run that had the record and the text, not the first run's reasoning. This catches transcription and reading errors. It is not a human check, it uses the same family of model as the first pass, and it reads the same machine-converted text (garbled tables stay garbled). The author's own hand check of a random sample against the source papers is recorded in `data/human_check.md`.", "",
      "## Regression estimates for the meta-regression", "",
      f"- Estimates checked: {sum(mra_c.values())} from {len(mra)} papers. Confirmed: {mra_c['confirmed']}; corrected: {mra_c['corrected']}; unverifiable: {mra_c['unverifiable']}; not applicable: {mra_c['not_applicable']}.",
-     "- The one correction (245-10) changes the income label to a combined middle-income group. Five further estimates were excluded as not poolable (`data/mra_exclusions.csv`): 358 (exposure is fintech credit, not ICT adoption), 88-11 to 88-14 (growth outcome mixed with level outcomes) and 988-5 (TFP index in levels).",
+     f"- {mra_c['corrected']} estimates were corrected: 245-10 (income label changed to a combined middle-income group) and the five estimates of study 9103, which had been read from the wrong cell of a panel-VAR table (rows are equations, columns are lagged regressors; the paper itself reads the table the other way). Study 9103 reports p-values, so its estimates are not converted in the pilot in any case. Five further estimates were excluded as not poolable (`data/mra_exclusions.csv`): 358 (exposure is fintech credit, not ICT adoption), 88-11 to 88-14 (growth outcome mixed with level outcomes) and 988-5 (TFP index in levels).",
      "- Many papers carry pooling warnings in `data/second_pass/mra_ver_*.json` (composite indices instead of single technologies, conditional main effects when interactions are present, overlapping specifications on one sample, generated TFP outcomes). 302 and 323 share authors, panel and index, so they are not independent.", "",
      "## Full-text records (papers still included or excluded after this check)", "",
      f"- Included records checked: {len(inc)}. Results: confirmed {res_tot['confirmed']}, corrected {res_tot['corrected']}, unverifiable {res_tot['unverifiable']}. Heterogeneity items: confirmed {het_tot['confirmed']}, corrected {het_tot['corrected']}.",
@@ -65,7 +78,7 @@ L = ["# Second-pass check of the extractions", "",
 if rob_diff:
     L += ["| Paper | Record says | Checker says |", "|---|---|---|"] + [f"| {a} | {b} | {c} |" for a, b, c in sorted(rob_diff, key=lambda t: int(t[0]))] + [""]
 L += ["## Eligibility changes and flags", "",
-      "Three papers were moved from include to exclude after this check (reversible, human to confirm): 298 (no own estimation, E4), 1495 (number of economies never stated, E1) and 878 (outcomes are trade ratios, not in the six families, E3). Other papers flagged as borderline and still included: 442 (no effect estimate reported; only Granger and cointegration tests), 1645 (methods written in the future tense; no coefficients in the tables), 392 (accounting decomposition, not regression), 1026 and 174 (industrial robots as the AI measure), 913 (called AI by the author; built from innovation questions), 320 and 1428 (financial-inclusion outcomes, which the protocol counts as family 5).", "",
+      "Four papers were moved from include to exclude after this check (reversible, human to confirm): 298 (no own estimation, E4), 1495 (number of economies never stated, E1), 878 (outcomes are trade ratios, not in the six families, E3) and 474 (too few economies, E1). Other papers flagged as borderline and still included: 442 (no effect estimate reported; only Granger and cointegration tests), 1645 (methods written in the future tense; no coefficients in the tables), 392 (accounting decomposition, not regression), 1026 and 174 (industrial robots as the AI measure), 913 (called AI by the author; built from innovation questions), 320 and 1428 (financial-inclusion outcomes, which the protocol counts as family 5).", "",
       "Checker's eligibility notes:", ""] + [f"- {i} ({d}): {n}" for i, d, n in elig] + [""]
 L += ["## Corrections by paper", "", "Each item below is a result or heterogeneity entry where the checker found the record wrong or unsupported. Full text of each correction, with quotes and locators, is in `data/extraction.json` under `second_pass.corrections`.", ""]
 for x in sorted(inc, key=lambda t: int(t["idx"])):

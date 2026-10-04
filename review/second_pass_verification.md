@@ -5,7 +5,7 @@
 ## Regression estimates for the meta-regression
 
 - Estimates checked: 251 from 31 papers. Confirmed: 245; corrected: 6; unverifiable: 0; not applicable: 0.
-- The one correction (245-10) changes the income label to a combined middle-income group. Five further estimates were excluded as not poolable (`data/mra_exclusions.csv`): 358 (exposure is fintech credit, not ICT adoption), 88-11 to 88-14 (growth outcome mixed with level outcomes) and 988-5 (TFP index in levels).
+- 6 estimates were corrected: 245-10 (income label changed to a combined middle-income group) and the five estimates of study 9103, which had been read from the wrong cell of a panel-VAR table (rows are equations, columns are lagged regressors; the paper itself reads the table the other way). Study 9103 reports p-values, so its estimates are not converted in the pilot in any case. Five further estimates were excluded as not poolable (`data/mra_exclusions.csv`): 358 (exposure is fintech credit, not ICT adoption), 88-11 to 88-14 (growth outcome mixed with level outcomes) and 988-5 (TFP index in levels).
 - Many papers carry pooling warnings in `data/second_pass/mra_ver_*.json` (composite indices instead of single technologies, conditional main effects when interactions are present, overlapping specifications on one sample, generated TFP outcomes). 302 and 323 share authors, panel and index, so they are not independent.
 
 ## Full-text records (papers still included or excluded after this check)
@@ -27,7 +27,7 @@
 
 ## Eligibility changes and flags
 
-Three papers were moved from include to exclude after this check (reversible, human to confirm): 298 (no own estimation, E4), 1495 (number of economies never stated, E1) and 878 (outcomes are trade ratios, not in the six families, E3). Other papers flagged as borderline and still included: 442 (no effect estimate reported; only Granger and cointegration tests), 1645 (methods written in the future tense; no coefficients in the tables), 392 (accounting decomposition, not regression), 1026 and 174 (industrial robots as the AI measure), 913 (called AI by the author; built from innovation questions), 320 and 1428 (financial-inclusion outcomes, which the protocol counts as family 5).
+Four papers were moved from include to exclude after this check (reversible, human to confirm): 298 (no own estimation, E4), 1495 (number of economies never stated, E1), 878 (outcomes are trade ratios, not in the six families, E3) and 474 (too few economies, E1). Other papers flagged as borderline and still included: 442 (no effect estimate reported; only Granger and cointegration tests), 1645 (methods written in the future tense; no coefficients in the tables), 392 (accounting decomposition, not regression), 1026 and 174 (industrial robots as the AI measure), 913 (called AI by the author; built from innovation questions), 320 and 1428 (financial-inclusion outcomes, which the protocol counts as family 5).
 
 Checker's eligibility notes:
 

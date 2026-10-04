@@ -1,6 +1,6 @@
-# PRISMA 2020 flow (pilot run, 2 October 2026)
+# PRISMA 2020 flow (updated 4 October 2026)
 
-Status: **no study has been included yet.** The counts below stop at the full-text request stage. Nothing has been assessed at full text, and no data have been extracted.
+Status: counts for the main search (OpenAlex, Crossref, NBER) are in the first table and the full-text stage is at the end; records from the supplementary Google Scholar search are listed in a separate table because they entered outside the main flow.
 
 | Stage | n | Note |
 |---|---|---|
@@ -8,7 +8,8 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 | Records identified, Crossref | 1,285 distinct (2,880 rows) | 96 technology-by-context queries, journal articles from 1995 |
 | Records identified, NBER working papers | 579 distinct (2,671 rows) | Same 96 queries, from 1995 |
 | Records identified, arXiv | 0 | **Attempted, not completed.** The service did not respond in a usable time and the job was stopped |
-| Records identified, Scopus, Web of Science, EconLit | 0 | **Not yet run.** Needs institutional access |
+| Records identified, Scopus, Web of Science, EconLit | 0 | **Not run.** Needs institutional access |
+| Records identified, Google Scholar | Supplementary, reported separately below | Added on 4 October after a first-page check showed that the main search had missed relevant studies |
 | Distinct records before cross-source deduplication | 3,704 | |
 | Duplicates removed across sources | 92 | DOI, then normalised title and year |
 | Records after deduplication | 3,612 | |
@@ -26,6 +27,19 @@ Status: **no study has been included yet.** The counts below stop at the full-te
 | Full texts retrieved automatically and verified against title | 72 of 256 (included plus reviews) | Open-access links, repository copies, preprints, publisher pages |
 | Full texts requested from the author | 25 | Short list in `fulltext_requests.md` |
 | Without full text, kept at abstract level only | 151 | Flagged, not pooled, no bias rating (amendment 6) |
+
+## Supplementary Google Scholar search (not part of the counts above)
+
+| Stage | n | Note |
+|---|---|---|
+| Query G1, first page of results (pasted by the author) | 10 | Other queries (`google_scholar_queries.md`) have not been run |
+| Already among the 3,612 records of the main search | 1 | Adeleye et al. 2022, excluded at abstract stage (too few economies) |
+| Not among the 3,612 records | 9 | `data/scholar_g1_page1.csv` |
+| Of these, obtained and read at full text | 6 | Free full texts supplied by the author |
+| Not obtained | 3 | Chavula 2013, Torero et al. 2006, Omer and Ghanim 2026 (a preprint); the author could not download them |
+| Included | 6 | 9101 to 9106, all verified by the second pass |
+
+The six are counted in the full-text stage below. The first page of one query is not a search: it shows that the main search had low recall, and its yield (6 includable studies from 10 results) suggests that the remaining Google Scholar queries would add more.
 
 ## Screening method and its limits
 

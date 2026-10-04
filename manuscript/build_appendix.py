@@ -28,7 +28,7 @@ def techs(x):
             out.append(k)
     return ", ".join(out) or "Other"
 
-lines = [r"{\footnotesize", r"\begin{longtable}{@{}r r p{4.9cm} p{1.5cm} r l p{3.7cm}@{}}",
+lines = [r"{\scriptsize", r"\begin{longtable}{@{}r r p{4.9cm} p{1.5cm} r l p{3.7cm}@{}}",
          r"\caption{Studies included in the synthesis (n = %d). Authors are not listed because the extraction database does not store them; the DOI identifies each record. n.r. = not reported. RoB = overall risk of bias in the first-pass rating (moderate, serious, critical); no study was rated low.}\label{tab:included}\\" % len(ext),
          r"\toprule ID & Year & Title & Technology & Econ. & RoB & DOI \\ \midrule \endfirsthead",
          r"\toprule ID & Year & Title & Technology & Econ. & RoB & DOI \\ \midrule \endhead", r"\bottomrule \endfoot"]

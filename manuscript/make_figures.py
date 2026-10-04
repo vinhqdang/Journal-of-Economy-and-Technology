@@ -23,7 +23,7 @@ def box(x, y, w, h, txt, fc="#eef3f8"):
 def arrow(x1, y1, x2, y2):
     ax.annotate("", xy=(x2, y2), xytext=(x1, y1), arrowprops=dict(arrowstyle="->", color="#44546a", lw=0.9))
 box(0.3, 10.6, 4.4, 1.0, "Records identified\nOpenAlex 1,840; Crossref 1,285; NBER 579\n(3,704 before cross-source deduplication)")
-box(5.3, 10.6, 4.4, 1.0, "Not searched\narXiv (attempted, not completed)\nScopus, Web of Science, EconLit", fc="#f6e9e9")
+box(5.3, 10.4, 4.4, 1.4, "Not searched: arXiv (attempted), Scopus,\nWeb of Science, EconLit. Google Scholar:\none page of one query (10 results),\n9 not in the main search, 6 obtained", fc="#f6e9e9")
 box(0.3, 9.0, 4.4, 1.0, "Records after deduplication\n3,612 (92 duplicates removed)")
 box(5.3, 9.0, 4.4, 1.0, "Excluded by automated stage-1 rules\n1,545", fc="#f4f4f4")
 box(0.3, 7.4, 4.4, 1.0, "Read at title level\n2,067")
@@ -32,9 +32,9 @@ box(0.3, 5.8, 4.4, 1.0, "Assessed at abstract level\n456")
 box(5.3, 5.2, 4.4, 2.0, "Excluded at abstract level 121\nDuplicates 8; context 46\nenvironmental-only 22; reviews 9\nsupplementary micro evidence 3", fc="#f4f4f4")
 box(0.3, 4.2, 4.4, 1.0, "Sent to full-text assessment\n247")
 box(5.3, 3.0, 4.4, 1.4, "Not read: no free full text\nor venue judged unreliable\n141 of 247 (about)", fc="#f6e9e9")
-box(0.3, 2.6, 4.4, 1.0, "Full texts read\n112 (106 of the 247, one review,\nfive added after re-screening)")
+box(0.3, 2.6, 4.4, 1.0, "Full texts read\n118 (106 of the 247, one review,\nfive added after re-screening,\nsix from Google Scholar)")
 box(5.3, 1.1, 4.4, 1.4, "Excluded at full text 40\nE1 too few economies 13; E2 exposure 5\nE3 outcome 1; E4 no own estimation 21\nContext only 1", fc="#f4f4f4")
-box(0.3, 1.0, 4.4, 1.0, "Studies included\n71 (56 historical waves, 13 AI, 2 both)", fc="#e6f2e8")
+box(0.3, 1.0, 4.4, 1.0, "Studies included\n77 (62 historical waves, 13 AI, 2 both)", fc="#e6f2e8")
 for y1, y2 in [(10.6, 10.0), (9.0, 8.4), (7.4, 6.8), (5.8, 5.2), (4.2, 3.6), (2.6, 2.0)]:
     arrow(2.5, y1, 2.5, y2)
 for y in (9.5, 7.9, 6.2, 3.7, 1.8):

@@ -150,7 +150,7 @@ for k_ in (0, 5, 20):
 out.append("\n## 4. Sensitivity of the pooled headline estimate to the degrees-of-freedom assumption\n")
 out.append("Assumed number of regressors " + "; ".join(sens) + ". A stable value means the result does not hinge on this approximation.\n")
 out.append("\n## What this pilot can and cannot support\n")
-out.append("- It can show whether there is enough comparable material to run a meta-regression at all, and which moderators are worth pursuing.\n- It cannot support a causal statement, a claim about AI (too few estimates), or a firm statement about income groups until the author's hand check is fully documented and the sample is widened with the Scopus and Web of Science search.\n")
+out.append("- It can show whether there is enough comparable material to run a meta-regression at all, and which moderators are worth pursuing.\n- It cannot support a causal statement, a claim about AI (too few estimates), or a firm statement about income groups until the author's hand check is fully documented and the sample is widened beyond the studies found so far (the search had low recall; see google_scholar_results.md).\n")
 with open(os.path.join(ROOT, "review/mra_pilot.md"), "w") as f:
     f.write("\n".join(out) + "\n")
 use.to_csv(os.path.join(ROOT, "review/data/mra_effect_sizes.csv"), index=False, columns=["idx","estimate_id","role","subsample_label","sample_income_group","technology","coef","t","n","pcc","se"])

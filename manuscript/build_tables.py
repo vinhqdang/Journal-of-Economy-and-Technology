@@ -44,7 +44,7 @@ SYM = {"positive": r"$+$", "negative": r"$-$", "null": "0", "mixed": "mixed", "n
 L = []
 for f, name in FAM.items():
     ps = [x for x in ext if any(r["family"] == f for r in x["results"])]
-    L += [r"{\footnotesize", r"\begin{longtable}{@{}r l r l l p{3.6cm} l@{}}",
+    L += [r"{\scriptsize", r"\begin{longtable}{@{}r l r l l p{3.6cm} l@{}}",
           rf"\caption{{Studies reporting {name.lower()} outcomes (n = {len(ps)}). ``Directions'' counts the study's results in this family: $+$ positive, $-$ negative, 0 null, m mixed. Technology codes as in Table~\ref{{tab:included}}.}}\label{{tab:fam{f}}}\\",
           r"\toprule ID & Tech. & Econ. & Years & Estimator & Directions & RoB \\ \midrule \endfirsthead",
           r"\toprule ID & Tech. & Econ. & Years & Estimator & Directions & RoB \\ \midrule \endhead", r"\bottomrule \endfoot"]
@@ -59,8 +59,8 @@ open(os.path.join(HERE, "app_families.tex"), "w").write("\n".join(L))
 d = pd.read_csv(os.path.join(ROOT, "review/data/mra_effect_sizes.csv"), dtype={"idx": str})
 d["k"] = d["idx"].astype(int)
 d = d.sort_values(["k", "estimate_id"])
-L = [r"{\footnotesize", r"\begin{longtable}{@{}l l l r r r r@{}}",
-     r"\caption{Estimates used in the meta-regression (103 estimates from 18 studies): partial correlation (PCC) and its standard error, computed from the printed coefficient and uncertainty with degrees of freedom equal to observations minus 10.}\label{tab:mrainputs}\\",
+L = [r"{\scriptsize", r"\begin{longtable}{@{}l l l r r r r@{}}",
+     r"\caption{Estimates used in the meta-regression (" + f"{len(d)} estimates from {d['idx'].nunique()} studies" + r"): partial correlation (PCC) and its standard error, computed from the printed coefficient and uncertainty with degrees of freedom equal to observations minus 10.}\label{tab:mrainputs}\\",
      r"\toprule Estimate & Role & Technology & Obs. & $t$ & PCC & SE \\ \midrule \endfirsthead",
      r"\toprule Estimate & Role & Technology & Obs. & $t$ & PCC & SE \\ \midrule \endhead", r"\bottomrule \endfoot"]
 for _, r in d.iterrows():
@@ -69,7 +69,7 @@ L += [r"\end{longtable}", "}"]
 open(os.path.join(HERE, "app_mra.tex"), "w").write("\n".join(L))
 
 # second pass summary
-L = [r"{\footnotesize", r"\begin{longtable}{@{}r r r r r l@{}}",
+L = [r"{\scriptsize", r"\begin{longtable}{@{}r r r r r l@{}}",
      r"\caption{Second-pass check by study: results confirmed (C), corrected (X) or unverifiable (U), heterogeneity entries corrected, and the second reader's view of the overall risk-of-bias rating.}\label{tab:secondpass}\\",
      r"\toprule ID & C & X & U & Het. X & RoB view \\ \midrule \endfirsthead", r"\toprule ID & C & X & U & Het. X & RoB view \\ \midrule \endhead", r"\bottomrule \endfoot"]
 for x in ext:
