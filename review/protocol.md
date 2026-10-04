@@ -25,7 +25,7 @@
 | 6 | 2026-10-02 | Full-text stage | Records with no free full text and not on the short request list are kept as an abstract-level evidence map: study characteristics and the headline direction are recorded from the abstract and flagged, but they are excluded from pooled estimates and from risk-of-bias ratings, and certainty for them is rated very low | About 160 papers are paywalled; asking the author to retrieve all of them is not workable |
 | 7 | 2026-10-03 | Full-text stage | Papers whose only available venue the author judged unreliable after visiting the journal site are not read at full text and are not used as evidence (idx 153, 892 and 1556; idx 1289 was also left out because the venue was doubtful and the author did not supply it). Source quality is checked at this point for every paper, not only at the venue-flag stage | The venue-quality screen is a stated criterion; a manual look at the journal is more reliable than the automated flag |
 **Support:** no external funding declared. **Role of funder:** none.
-**Use of AI tools:** screening and extraction are planned with automated assistance. The exact wording of the disclosure, required by the journal's policy on generative AI, is to be completed by the author before submission.
+**Use of AI tools:** screening and extraction are planned with automated assistance. The disclosure required by the journal's policy on generative AI is in the manuscript (Declarations) and was worded by the author.
 
 ## Rationale
 
