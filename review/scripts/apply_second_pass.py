@@ -26,7 +26,7 @@ for f in glob.glob(os.path.join(D, "second_pass/mra_ver_*.json")):
 # Direction fixes where the second pass found the first-pass direction wrong against the printed numbers
 # (study 9103: a panel-VAR table read from the wrong cell; study 9101: both estimates positive).
 # The first-pass value is kept in direction_first_pass. Idempotent.
-DIRECTION_FIXES = {"9101": {4: "positive"}, "9103": {n: "positive" for n in range(1, 12)}}
+DIRECTION_FIXES = {"9101": {4: "positive"}, "9103": {n: "positive" for n in range(1, 12)}, "9203": {2: "mixed"}, "9302": {5: "mixed"}}
 for idx, fixes in DIRECTION_FIXES.items():
     rec = by.get(idx)
     if rec:

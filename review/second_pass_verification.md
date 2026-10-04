@@ -4,14 +4,14 @@
 
 ## Regression estimates for the meta-regression
 
-- Estimates checked: 265 from 32 papers. Confirmed: 259; corrected: 6; unverifiable: 0; not applicable: 0.
+- Estimates checked: 313 from 36 papers. Confirmed: 307; corrected: 6; unverifiable: 0; not applicable: 0.
 - 6 estimates were corrected: 245-10 (income label changed to a combined middle-income group) and the five estimates of study 9103, which had been read from the wrong cell of a panel-VAR table (rows are equations, columns are lagged regressors; the paper itself reads the table the other way). Study 9103 reports p-values, so its estimates are not converted in the pilot in any case. Five further estimates were excluded as not poolable (`data/mra_exclusions.csv`): 358 (exposure is fintech credit, not ICT adoption), 88-11 to 88-14 (growth outcome mixed with level outcomes) and 988-5 (TFP index in levels).
 - Many papers carry pooling warnings in `data/second_pass/mra_ver_*.json` (composite indices instead of single technologies, conditional main effects when interactions are present, overlapping specifications on one sample, generated TFP outcomes). 302 and 323 share authors, panel and index, so they are not independent.
 
 ## Full-text records (papers still included or excluded after this check)
 
-- Included records checked: 80. Results: confirmed 449, corrected 32, unverifiable 5. Heterogeneity items: confirmed 141, corrected 17.
-- The checker's view of the overall risk-of-bias rating: agree 70, too lenient 4, too harsh 6. The ratings in the record were not changed; the differences are listed below for a human to settle.
+- Included records checked: 84. Results: confirmed 465, corrected 34, unverifiable 5. Heterogeneity items: confirmed 148, corrected 17.
+- The checker's view of the overall risk-of-bias rating: agree 74, too lenient 4, too harsh 6. The ratings in the record were not changed; the differences are listed below for a human to settle.
 
 | Paper | Record says | Checker says |
 |---|---|---|
@@ -38,6 +38,7 @@ Checker's eligibility notes:
 - 1428 (include): Own panel cointegration (AMG) and Granger estimation, 11 economies, mobile and internet exposure: those criteria hold. The outcomes, though, are the IMF financial institutions access index (bank branches and ATMs per 100
 - 1495 (exclude): Eligibility not established. The text never gives the number of economies (only 'several developing countries'; Table 1 is a 30-row country-year excerpt showing India, Indonesia, Kenya), so the 10-economy threshold canno
 - 9202 (exclude): Exclusion E1 is right. The sample is five economies (Egypt, India, Kenya, Saudi Arabia, Sudan), well under the 10-economy minimum for non-AI exposure; Sec. 4.1.1: 'Our analysis is restricted to five countries.' The paper
+- 9301 (exclude): Exclusion E4 is right. The paper is a differential-equation model of labour productivity (Eqs. 10-27) with simulated projections to 2042. The only data use is a US-based technological-progress curve built from BLS and Gr
 
 ## Corrections by paper
 
@@ -78,3 +79,5 @@ Each item below is a result or heterogeneity entry where the checker found the r
 - **9103**: Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Table 11 columns are lagged regressors and rows are dependent variables at t (Table 10 Granger p-values match this: e.g. UMIC RGDP-/->ICT p=0.2380 equals row ICT(t), colu | Under the table's own layout, ICT(t-1) -> RGDP(t) is positive and significant in every group: 0.0389 full, 0.2751 HIC (0.036), 0.0215 UMIC (0.0010), 0.0149 LMIC, 0.0175 L | ICT -> MAV is positive in all five samples (0.0002*, 0.0037**, 0.0005**, 0.0009***, 0.0019**), so there is no internal inconsistency in the full sample; the Granger part 
 - **9201**: High-income trade interactions are 0.015 (Internet), 0.014 (mobile) and 0.005 (broadband), so the range is 0.005 to 0.015, not 0.014 to 0.015. FDI interactions lower ineq
 - **9203**: Direction is mixed across specifications, not negative: Table 8 Model 2 prints a positive significant coefficient 0.05*** (.010) and Model 6 prints -0.037 (0.028). Negati
+- **9302**: Direction should be mixed, predominantly positive: Table 4 also prints significant negatives. Model 12 Ln[e-government x internet users] -0.0081*** (0.002); Model 16 Ln[e
+- **9304**: Mobile figures correct (col 1: 0.001** (0.020), -4.94e-06** (0.040); col 2: 0.002*** and -9.86e-06***; col 5: -0.002*). But 'internet terms insignificant' is not fully ri

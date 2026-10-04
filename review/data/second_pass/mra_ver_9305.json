@@ -1,0 +1,110 @@
+[
+ {
+  "idx": "9305",
+  "paper_verdict": {
+   "estimator_family": "Panel FE/RE production function on first-differenced logs (random effects preferred), with 2SLS and AR(1) robustness; classic panel regression, not a pure IV design",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Coefficient is an output elasticity of IT hardware capital stock from a Cobb-Douglas model with labour and non-IT capital held fixed, estimated on first-differenced logs (growth-on-growth), so not comparable with level or penetration-based ICT estimates. Estimates 1-11 reuse the same 45-country panel (all/developing/developed x FE/RE/2SLS/AR(1)), so they are not independent; the full sample overlaps the two subsamples. Estimates 12-14 are interaction coefficients on mean-centred variables, not elasticities, and should not be pooled with main effects. Table 6 immigration N (283/51) is inconsistent with Table 4. 'Developing' group is IMF classification, upper-income only per authors; 'developed' includes Korea, Taiwan, Hong Kong, Singapore. Outcome is GDP level (PPP), not TFP or labour productivity."
+  },
+  "estimates": [
+   {
+    "estimate_id": "9305-1",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "\u03b2IT 0.150*** 0.150*** 0.145*** (0.018) (0.040) (0.017); N 557 (Table 4, All countries, Random effects)",
+    "note": ""
+   },
+   {
+    "estimate_id": "9305-2",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4 All countries, Fixed effects: \u03b2IT 0.150*** (0.018)",
+    "note": ""
+   },
+   {
+    "estimate_id": "9305-3",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4 Developing, Random effects: \u03b2IT 0.125*** (0.030); N 219",
+    "note": ""
+   },
+   {
+    "estimate_id": "9305-4",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4 Developed, Random effects: \u03b2IT 0.104*** (0.025); N 338",
+    "note": "Values correct. sample_income_group 'not stated' is inconsistent with 'developing' for the sibling subsample; paper labels the group 'developed' (IMF), i.e. high-income."
+   },
+   {
+    "estimate_id": "9305-5",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4 Developing, Fixed effects: \u03b2IT 0.137*** (0.032)",
+    "note": ""
+   },
+   {
+    "estimate_id": "9305-6",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 4 Developed, Fixed effects: \u03b2IT 0.103*** (0.027)",
+    "note": "Same income-group labelling remark as 9305-4."
+   },
+   {
+    "estimate_id": "9305-7",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5 All countries 2SLS: \u03b2IT 0.105* (0.048); N 557",
+    "note": ""
+   },
+   {
+    "estimate_id": "9305-8",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5 Developing 2SLS: \u03b2IT 0.129* (0.068); N 219",
+    "note": ""
+   },
+   {
+    "estimate_id": "9305-9",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5 Developed 2SLS: \u03b2IT 0.082* (0.041); N 338",
+    "note": "Same income-group labelling remark as 9305-4."
+   },
+   {
+    "estimate_id": "9305-10",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5 Developing AR(1): \u03b2IT 0.162*** (0.037); N 219",
+    "note": ""
+   },
+   {
+    "estimate_id": "9305-11",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 5 Developed AR(1): \u03b2IT 0.081** (0.028); N 338",
+    "note": "Same income-group labelling remark as 9305-4."
+   },
+   {
+    "estimate_id": "9305-12",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 6 \u03b2IT *Edu 0.351 0.809* \u20130.016 (0.246) (0.405) (0.288); N 518 206 312",
+    "note": "Interaction term (mean-centred), not an elasticity; n_countries not reported in table (19 developing implied by sample but N=206 is the only count printed). Not poolable with main effects."
+   },
+   {
+    "estimate_id": "9305-13",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 7 \u03b2IT *FDI 0.044** 0.058* 0.036** (0.014) (0.030) (0.013); N 515 206 268",
+    "note": "Interaction term, not an elasticity; countries not reported in table."
+   },
+   {
+    "estimate_id": "9305-14",
+    "verdict": "confirmed",
+    "corrections": {},
+    "quote": "Table 8 bIT *Cost \u20130.032 \u20130.039*** 0.041 (0.071) (0.010) (0.141); N 539 211 328",
+    "note": "Interaction with telephone cost, not an elasticity; countries not reported in table."
+   }
+  ]
+ }
+]

@@ -1,0 +1,18 @@
+[
+ {
+  "idx": "9303",
+  "paper_verdict": {
+   "estimator_family": "OLS (pooled translog regression, no fixed effects, intercept suppressed)",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Outcome is log GDP in current US$ levels (not growth, per capita or PPP). Exposure is telecom investment (% of GDP) in a translog with squared and interaction terms, so the linear and interaction coefficients are not elasticities and are not comparable to standard estimates. Only p-values are printed, no SEs. Table 1 prints no minus signs (text says the Followers interaction is negative). Leaders rows repeat the complete-set coefficients 42.8020 and 57.4954, probably a table error. Leaders and Followers splits come from earlier DEA/cluster work. Not suitable for pooling with elasticity or growth estimates."
+  },
+  "estimates": [
+   {"estimate_id": "9303-1", "verdict": "confirmed", "corrections": {}, "quote": "ANNU_EL1*FULL_2KW 57.4954 0.8156", "note": "Table 1, complete set, p. 477. Coefficient, p-value type (column 'p-Value', two-tailed per text p. 475) and n=180, 18 countries, 1993-2002 match. Sign not printed. Interaction term of a translog."},
+   {"estimate_id": "9303-2", "verdict": "confirmed", "corrections": {}, "quote": "ANNU_EL1 42.8020 0.8613 0.8655 H10 accepted", "note": "Table 1, complete set, p. 477. Matches. Sign not printed."},
+   {"estimate_id": "9303-3", "verdict": "confirmed", "corrections": {}, "quote": "ANNU_EL1 42.8020 o.0001 0.9167 H20 rejected", "note": "Table 1, Leaders (66 data points). Matches as printed ('o.0001' is a garbled <.0001); n_countries is not stated for the subgroup. Coefficient is identical to the complete-set row, which looks like a table error."},
+   {"estimate_id": "9303-4", "verdict": "confirmed", "corrections": {}, "quote": "ANNU_EL1*FULL_2KW 57.4954 o.0001", "note": "Table 1, Leaders, p. 477. Matches; positive per text p. 476 ('complementarity is positive for the Leaders'). Identical to the complete-set interaction coefficient, a likely table error."},
+   {"estimate_id": "9303-5", "verdict": "confirmed", "corrections": {}, "quote": "ANNU_EL1 2.6459 0.0008 0.9874 H30 rejected", "note": "Table 1, Followers (114 data points), p. 477. Matches. Sign not printed."},
+   {"estimate_id": "9303-6", "verdict": "confirmed", "corrections": {}, "quote": "ANNU_EL1*FULL_2KW 2.1280 0.0087", "note": "Table 1, Followers, p. 477. Value and p match as printed, but the text states 'is negative for the Followers' (p. 476) while the table shows no minus, so the true coefficient is probably -2.1280. Do not pool as positive."}
+  ]
+ }
+]

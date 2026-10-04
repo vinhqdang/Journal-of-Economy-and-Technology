@@ -16626,11 +16626,12 @@
    {
     "family": 1,
     "indicator": "GDP per capita, low-income countries, system GMM, secure Internet servers",
-    "direction": "negative",
+    "direction": "mixed",
     "estimate": "-0.020** (Table 7 GMM); -0.008*** (Table 9 Model 10)",
     "uncertainty": "(0.037) in Table 7",
     "horizon": "contemporaneous",
-    "evidence": "Table 7, p.7084: 'Secure Internet -0.020** (0.037)'"
+    "evidence": "Table 7, p.7084: 'Secure Internet -0.020** (0.037)'",
+    "direction_first_pass": "negative"
    },
    {
     "family": 1,
@@ -16930,6 +16931,686 @@
    },
    "corrections": [],
    "problems": "No invented or mixed-up content found; the record matches the paper's tables and text. Points the record under-weights: (1) the sample counts are left unreconciled in the text and cannot be resolved from it (130 text; 112 Table 3 panels; Table 2 n = 161 for HDI, 145 GINI, 148 ICTuse, 179 Rule of Law), and the estimation observations are 1179 against N = 2077 in Table 2; (2) the specification and overall risk-of-bias ratings look too lenient given the degenerate columns (see the specification entry); (3) the text claims p < 0.01 for lower-middle-income countries while Table 3 shows p < 0.1, and the abstract's 'highly significant' for that group is unsupported; (4) the text says RuleofLaw is insignificant in middle and low-income countries and also significant and negative for low and middle income, which is internally inconsistent; the table shows a significant negative effect only in col (4) and a significant positive effect in col (3) (0.0163***); (5) the 'monotonic' reading of the income gradient is not supported by the upper-middle point estimate. Nothing in the text is aimed at the reader."
+  }
+ },
+ {
+  "idx": "9301",
+  "title": "The Human Component as a Determining Factor of Labor Productivity in the Digital Economy",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E4",
+  "decision_rationale": "The paper proposes a mathematical (differential-equation) model of labor productivity under human+intelligent-machine symbiosis and reports calibrated model projections; it has no econometric estimation on observed multi-country data.",
+  "stream": "both",
+  "technology": [
+   "digital technologies",
+   "intelligent machines (AI)"
+  ],
+  "exposure_measure": "not applicable",
+  "sample": {
+   "n_economies": "not applicable",
+   "economies_or_groups": "not applicable",
+   "income_groups_covered": "not applicable",
+   "years": "not applicable",
+   "unit": "other"
+  },
+  "design": {
+   "estimator": "not applicable",
+   "identification": "none",
+   "key_controls_fixed_effects": "not applicable"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "none",
+  "notes": "Abstract (p. 29): 'The authors propose a mathematical model for calculating labor productivity in the digital economy'; Eqs. 16-27, Figs. 1-3 are model calibrations/projections (US-based technological progress curve, 2018-2042 forecast), with a mean squared approximation error of 1.95% reported only for the technological-progress curve (p. 33). Claim of 3% productivity growth in developed countries by mid-2020s is a model projection. No text directed at the reader was found.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {},
+   "heterogeneity": {},
+   "eligibility_ok": false,
+   "eligibility_note": "Exclusion E4 is right. The paper is a differential-equation model of labour productivity (Eqs. 10-27) with simulated projections to 2042. The only data use is a US-based technological-progress curve built from BLS and Groningen series, checked against the model with a 1.95% mean squared approximation error. There are no regressions and no multi-country estimation, and no income-group comparison.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "none. Record is consistent with the text (abstract; US-based calibration, p. 33: 'the mean squared error of approximation is 1.95%')."
+  }
+ },
+ {
+  "idx": "9302",
+  "title": "The effect of the digital economy on total factor productivity in European regions",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Own system-GMM estimation of internet use, e-commerce and e-government on TFP. Regions are nested in 27 EU member states (Table A1), so the 10-economy rule is met when economies are counted as countries, not as the 182 NUTS regions.",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "internet (household internet access/use)",
+   "e-commerce",
+   "e-government"
+  ],
+  "exposure_measure": "Eurostat regional shares (percent): individuals using internet for e-government, individuals ordering online, households with home internet access; also pairwise products (log) and one-year lags",
+  "sample": {
+   "n_economies": "27",
+   "economies_or_groups": "EU27 member states; 182 regions (173 NUTS2 regions plus 9 countries (HR, CY, EE, LV, LT, LU, IE, MT, SI) entered as single NUTS1/country units)",
+   "income_groups_covered": "not reported (EU member states; no income-group split or classification given)",
+   "years": "2006-2020",
+   "unit": "other (region-year, NUTS2)"
+  },
+  "design": {
+   "estimator": "System GMM (xtabond2), lagged dependent variable, robust SE; Tornqvist TFP with Malmquist TFP as robustness",
+   "identification": "other",
+   "key_controls_fixed_effects": "lagged TFP, tertiary education, lagged ln GDP, year dummies; regional effects removed by GMM; TFP and GDP treated as endogenous (lags 2-3 as instruments)"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Tornqvist TFP (ln) on e-government, e-commerce, household internet (contemporaneous, baseline Model 1)",
+    "direction": "positive",
+    "estimate": "e-government 0.0008; e-commerce 0.0001; internet users 0.0008 (percent-share regressors, TFP index)",
+    "uncertainty": "** (5%) for all three; SE printed as (0.000)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 col (1), p.10: 'e-government 0.0008** (0.000)'; text p.8 reads it as 0.08 percent per 1 percent"
+   },
+   {
+    "family": 1,
+    "indicator": "Tornqvist TFP on lagged digital proxies (Model 2)",
+    "direction": "positive",
+    "estimate": "e-gov t-1 0.0001; e-com t-1 0.0001; internet t-1 0.0003; contemporaneous terms 0.0000/-0.0000/0.0001 insignificant",
+    "uncertainty": "** for lagged terms; SE (0.000) or (0.001)",
+    "horizon": "medium",
+    "evidence": "Table 3 col (2), p.10: 'Internet users (t-1) 0.0003** (0.000)'"
+   },
+   {
+    "family": 1,
+    "indicator": "Malmquist TFP, contemporaneous and lagged (Models 3-4)",
+    "direction": "positive",
+    "estimate": "Model 3: e-gov 0.0002, internet 0.0012; Model 4: internet 0.0005, internet t-1 0.0006",
+    "uncertainty": "*** or ** ; SE (0.000)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 cols (3),(4), p.10"
+   },
+   {
+    "family": 1,
+    "indicator": "Models with one proxy at a time (5)-(10)",
+    "direction": "mixed",
+    "estimate": "lag terms 0.0001 to 0.0003; Model 9 e-commerce t-1 0.0000 (0.000) insignificant; contemporaneous terms mostly 0 or insignificant",
+    "uncertainty": "mostly ***/**",
+    "horizon": "medium",
+    "evidence": "Table 3 cols (5)-(10), p.10; text p.8: 'with only exceptions in model 9'"
+   },
+   {
+    "family": 1,
+    "indicator": "Interactions among proxies, Tornqvist and Malmquist TFP (Models 11-18)",
+    "direction": "mixed",
+    "estimate": "e.g. Model 11 ln(e-com x internet) 0.0048, t-1 0.0058; ln(e-gov x internet) t-1 0.0055; Model 12 ln(e-gov x internet) -0.0081***",
+    "uncertainty": "mostly ** or ***; SE (0.001)-(0.003)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.12; text p.11 'positive, significant, and larger impact'",
+    "direction_first_pass": "positive"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Complementarity among digital proxies (interaction terms). No split by income, institutions or infrastructure. Only descriptive statements that Eastern regions are less digitalised with lower TFP (scatterplots).",
+    "threshold_value": "none",
+    "evidence": "Section 4.2 p.9-11; Conclusion p.12"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "18 (Tables 3-4)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('effect', 'accelerates TFP') but digital proxies are not stated as instrumented; only TFP and GDP lags (t-2,t-3) used as instruments; authors say causality is beyond scope; instrument count and AR(2) not reported",
+    "evidence": "Section 3.3 p.5; Section 4.3 p.11; Table 3 notes AR-1/AR-3/Hansen only"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Three survey-based percentage proxies (e-government use, online purchasing, home internet); none measures investment or capability; authors admit partial coverage",
+    "evidence": "Table 1 p.8; Section 4.3 p.11"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "All 27 EU states but 9 countries enter as single NUTS1/country units; unbalanced (2362 obs for 182 regions); no income-group comparison",
+    "evidence": "Section 3.1 p.4; Table A1; Table 3 p.10"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Tornqvist TFP with assumed fixed 2/3 labour, 1/3 capital shares; capital stock built by perpetual inventory and updated to 2020; Malmquist used as robustness",
+    "evidence": "Eq (1)-(2) p.3-4"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "18 models, proxies entered singly, with and without lags and interactions; tiny coefficients with SE printed as 0.000 so precision is unclear; internal inconsistencies between text and tables",
+    "evidence": "Tables 3-4, p.10-12"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Text says results are robust across all estimations although several coefficients are insignificant or negative; data stated to be confidential",
+    "evidence": "Section 4.3 p.11; Data availability p.13"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Counting: 182 'economies' would be regions; correct count is 27 countries (Table A1 sums to 182 regions). Rule E1 holds on countries. Text interprets 0.0008 as 0.08 percent for a 1 percent rise, which does not match the units in Table 1 (percent shares) and Table 3 (index). Table 3 text says no serial correlation but AR-2 is not reported (AR-1 and AR-3 only). Table 4 model 15 shows '0077***' (leading zero missing). Table 4 shows 2266 obs against 2362 in Table 3. No instructions to the reader found in the text.",
+  "quote_check": {
+   "verified": 3,
+   "checked": 4
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 4,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own system-GMM estimation; exposures are household internet access/use plus e-government and e-commerce use (ICT in general/internet); outcome is TFP (output/productivity); 27 EU member states counted as economies (Table A1 lists 27 countries summing to 182 regions), so the 10-economy rule is met on countries.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "27 is correct (Table A1)",
+    "regions_detail": "Record's '173 NUTS2 plus 9 single units' is derived, not printed; paper says nine countries use 'NUTS1-level data' while Table A1 prints 'Total NUTS2 region = 182'. Quote (p.4): 'treats countries such as Croatia, Cyprus, Estonia, Latvia, Lithuania, Luxembourg, Ireland, Malta and Slovenia using NUTS1-level data'",
+    "years": "2006-2020 is correct (Section 3.2, Conclusion)",
+    "income_groups_covered": "not reported is correct"
+   },
+   "corrections": [
+    {
+     "n": 5,
+     "verdict": "corrected",
+     "correction": "Direction should be mixed, predominantly positive: Table 4 also prints significant negatives. Model 12 Ln[e-government x internet users] -0.0081*** (0.002); Model 16 Ln[e-commerce x e-government] t-1 -0.0004*** (0.000); Model 11 Ln[e-government x internet users] -0.0000 (0.003). Cited positives are correct: Model 11 e-com x internet 0.0048** (0.001), t-1 0.0058** (0.002); e-gov x internet t-1 0.0055** (0.002). Observations 2266, not 2362.",
+     "quote": "Ln [e-government × internet users] 0.0000 ... − 0.0081*** (0.002)  [Table 4, row Ln[e-government x internet users]]"
+    }
+   ],
+   "problems": "(a) Record says the 0.08 percent reading 'does not match the units'; this is too strong: dependent variable is ln TFP (eq. 2) and regressors are percentage shares, so 0.0008 is a semi-elasticity, roughly 0.08 percent per percentage point (text wording '1 percent rise' is loose). (b) Result 5 direction should be mixed. (c) '173 NUTS2' is inferred (182 minus 9). (d) Other record notes verified: text claims no serial correlation but only AR-1/AR-3 printed; Table 4 col (15) prints '0077***'; Table 4 has 2266 obs vs 2362. No invented numbers or mixed-up papers found; no instructions to the reader in the text."
+  }
+ },
+ {
+  "idx": "9303",
+  "title": "An exploration of the effects of the interaction between ICT and labor force on economic growth in transition economies",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative regression study of telecom investment (ICT) and telecom staff interaction on GDP in 18 transition economies (at least 10 economies, non-AI technology, outcome family 1).",
+  "stream": "H",
+  "technology": [
+   "ICT (investment in telecommunications)"
+  ],
+  "exposure_measure": "Annual telecom investment (% of GDP, ITU Yearbook of Statistics 2004, expressed as share of GDP) and full-time telecom staff (% of total labor force); both entered in logs with squares and a log-by-log interaction (translog).",
+  "sample": {
+   "n_economies": "18",
+   "economies_or_groups": "Albania, Armenia, Azerbaijan, Belarus, Bulgaria, Czech Republic, Estonia, Hungary, Kazakhstan, Kyrgyzstan, Latvia, Lithuania, Moldova, Poland, Romania, Slovakia, Slovenia, Ukraine (transition economies); split into Leaders and Followers from earlier DEA/cluster work",
+   "income_groups_covered": "not reported (transition economies of mixed income; no income-group analysis)",
+   "years": "1993-2002",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pooled multiple regression (translog production function; SAS Enterprise Miner Regression node, general linear model, intercept suppressed); no panel estimator",
+   "identification": "none",
+   "key_controls_fixed_effects": "None reported: no country or year effects, no other controls; capital and labour proxies are telecom-sector variables only."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "GDP (current US$, log) - interaction of log telecom investment x log telecom staff, complete set (180 data points)",
+    "direction": "null",
+    "estimate": "57.4954 (sign as extracted; no sign printed in text)",
+    "uncertainty": "p = 0.8156",
+    "horizon": "contemporaneous",
+    "evidence": "Table 1, Complete set row, p. 477: 'ANNU_EL1*FULL_2KW 57.4954 0.8156 ... H10 accepted'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP (current US$, log) - interaction term, Leaders (66 data points)",
+    "direction": "positive",
+    "estimate": "57.4954 (sign not visible in extracted table; text says complementarity is positive for Leaders)",
+    "uncertainty": "p < .0001 (printed 'o.0001')",
+    "horizon": "contemporaneous",
+    "evidence": "Table 1, Leaders row, p. 477; text p. 476: 'complementarity is positive for the Leaders, and is negative for the Followers'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP (current US$, log) - interaction term, Followers (114 data points)",
+    "direction": "negative",
+    "estimate": "2.1280 (sign not visible in extracted table; text says negative for Followers)",
+    "uncertainty": "p = 0.0087",
+    "horizon": "contemporaneous",
+    "evidence": "Table 1, Followers row, p. 477: 'ANNU_EL1*FULL_2KW 2.1280 0.0087 ... H30 rejected'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP - main term log annual telecom investment, complete set",
+    "direction": "null",
+    "estimate": "42.8020",
+    "uncertainty": "p = 0.8613",
+    "horizon": "contemporaneous",
+    "evidence": "Table 1, Complete set row, p. 477: 'ANNU_EL1 42.8020 0.8613'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Direction of the investment-by-staff interaction differs by prior DEA cluster: positive (complementary) for Leaders, negative for Followers, not significant in the full sample; authors infer a level-dependent threshold but do not estimate one.",
+    "threshold_value": "none",
+    "evidence": "Abstract and p. 476: 'differ in terms of the direction of the interaction effect'; Table 2 p. 477 gives averaged ratio of investment to staff 2.2770 (Leaders) vs 1.3031 (Followers)"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "3 (one translog regression each for complete set, Leaders, Followers)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "critical",
+    "why": "Pooled regression of GDP level on two telecom variables with no controls, no fixed effects, no strategy for reverse causation; larger economies mechanically differ in telecom variables; Leaders/Followers split was derived from efficiency analyses in earlier work on the same data.",
+    "evidence": "Section 4, p. 475-476; Table 1"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Telecom investment (% of GDP) and telecom staff (% of labour force) are sector inputs, a narrow proxy for ICT; the text states data were computed as shares by the authors from ITU/WDI series.",
+    "evidence": "Section 2, p. 472-473"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Seven of 25 transition economies dropped for missing data (Croatia, FYR Macedonia, Georgia, Russia, Tajikistan, Turkmenistan, Uzbekistan); short 1993-2002 window; subgroup split not reported by country.",
+    "evidence": "Section 2, p. 472"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP in current US$ levels (not per capita, not PPP, not growth), exposed to exchange-rate effects in transition years; title speaks of growth but the outcome is a level.",
+    "evidence": "Section 2, p. 473: 'GDP (in current US $)'"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Translog with squared terms but only three coefficients printed; intercept suppressed; Complete-set and Leaders rows print identical estimates (42.8020, 43.9723, 57.4954) with different p-values, which is internally inconsistent; no standard errors or R2 for the full set beyond adjusted R2; subgroup definition borrowed from prior analyses.",
+    "evidence": "Table 1, p. 477; Section 4, p. 475"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Only the interaction and two main terms reported; squared terms and the intercept omitted; no robustness checks.",
+    "evidence": "Table 1, p. 477"
+   }
+  },
+  "overall_risk_of_bias": "critical",
+  "venue_quality_concern": "none",
+  "notes": "Signs of coefficients are not visible in the extracted Table 1 (minus signs may have been lost in conversion); directions are taken from the prose on p. 476. Complete set and Leaders rows show identical estimates for all three terms, probably a table error. 'o.0001' reads as '<.0001'. Authors explicitly say they do not study thresholds. No text in the paper attempted to direct the extractor.",
+  "quote_check": {
+   "verified": 4,
+   "checked": 6
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own regression (translog, SAS Enterprise Miner); exposure is telecom investment and telecom staff (ICT in general); 18 transition economies (>=10); outcome is GDP (output family 1, not family 5 or 6). Eligible, though the exposure is a narrow sector proxy and the outcome is GDP in current US$ levels.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Table 1 prints identical coefficients for the complete set and Leaders (42.8020, 43.9723, 57.4954) with different p-values, a probable table error. No minus signs appear anywhere in the extracted table; directions rest on the prose. Leaders have 66 and Followers 114 data points (sum 180), so groups are not a whole number of 10-year country series. Title says growth but the dependent variable is log GDP in current US$ levels. The record's notes already flag the sign and duplicate-row issues. Nothing else invented or mixed up."
+  }
+ },
+ {
+  "idx": "9304",
+  "title": "Enhancing ICT for productivity in sub-Saharan Africa: Thresholds for complementary policies",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative GMM study of mobile phone and internet penetration on four TFP outcomes in 24-25 sub-Saharan African economies (more than 10 economies, non-AI technology, family 1 outcome).",
+  "stream": "H",
+  "technology": [
+   "mobile telephony",
+   "internet"
+  ],
+  "exposure_measure": "Mobile phone subscriptions per 100 people and internet subscriptions per 100 people (WDI), entered with a quadratic (ICT x ICT) term.",
+  "sample": {
+   "n_economies": "25 in text and abstract; 24 in the Countries row of Tables 1-4",
+   "economies_or_groups": "Sub-Saharan Africa (list in note 1, e.g. Benin, Kenya, Nigeria, South Africa, Mauritius, Zimbabwe)",
+   "income_groups_covered": "mixed (income groups not reported; no comparison across groups)",
+   "years": "1980-2014 (five 7-year non-overlapping averages)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "GMM with forward orthogonal deviations (Roodman 2009 extension of Arellano-Bover), lagged dependent variable, quadratic ICT term",
+   "identification": "other",
+   "key_controls_fixed_effects": "Only one control per specification (FDI, population, inflation, education or government expenditure); time effects; country effects removed by orthogonal deviations; 18 instruments, 24 countries, 82-96 observations"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Total factor productivity (PWT), level; mobile phone penetration",
+    "direction": "positive",
+    "estimate": "Mobile 0.002*** with Mobile x Mobile -0.00001***; net effect 0.001 at mean penetration, 'threshold' 100 per 100 people",
+    "uncertainty": "p-values in parentheses, (0.000)",
+    "horizon": "not reported",
+    "evidence": "Table 1 cols 1-3 (mobile), p.836; text p.835: 'net effect of enhancing mobile phone penetration is 0.001'"
+   },
+   {
+    "family": 1,
+    "indicator": "Real TFP growth; mobile and internet",
+    "direction": "null",
+    "estimate": "Mobile 0.0003 (col 1), Mobile x Mobile -9.36e-06; internet terms mostly insignificant",
+    "uncertainty": "p=0.737 and 0.135 (Table 2 col 1)",
+    "horizon": "not reported",
+    "evidence": "Table 2, p.837; text p.835: 'no significant findings are apparent from the relevance of increasing ICT on real TFP growth'"
+   },
+   {
+    "family": 1,
+    "indicator": "Welfare TFP; mobile phone penetration",
+    "direction": "mixed",
+    "estimate": "Mobile 0.001** and Mobile x Mobile -4.94e-06** (col 1); 0.002*** and -9.86e-06*** (col 2); col 5 negative linear term -0.002*; internet terms insignificant",
+    "uncertainty": "p=0.020, 0.040 (col 1)",
+    "horizon": "not reported",
+    "evidence": "Table 3, p.838: 'Mobile 0.001** ... Mobile x Mobile -4.94e-06**'"
+   },
+   {
+    "family": 1,
+    "indicator": "Welfare real TFP; internet penetration",
+    "direction": "positive",
+    "estimate": "Internet 0.006* (col 6), 0.007*** (col 8); Internet x Internet -0.0002** / -0.0002***; net effect 0.0047 and 0.0057; 'threshold' 15 per 100 people",
+    "uncertainty": "p=0.056, 0.001",
+    "horizon": "not reported",
+    "evidence": "Table 4, p.839; Net Effects 0.0047 and 0.0057"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Inverted-U (concave) relation: positive linear and negative quadratic terms imply net effect turns negative beyond about 100 mobile subscriptions per 100 (TFP), about 101.2-101.4 (welfare TFP) and about 15 internet users per 100 (welfare real TFP). No income, institution or human-capital moderators are tested.",
+    "threshold_value": "100 (mobile, TFP); 101.214-101.419 (mobile, welfare TFP); 15 (internet, welfare real TFP)",
+    "evidence": "Abstract p.831 and p.840: 'thresholds are: 100 mobile phone penetration (per 100 people) for TFP'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "40 (4 dependent variables x 10 columns; 5 mobile and 5 internet per table)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Lagged-dependent GMM with internal instruments only, N=24 and T=5, years as the only strictly exogenous variable, 18 instruments for 24 countries; text uses causal language ('digital revolution is relevant in boosting productivity'). Many columns fail AR(2)/Hansen tests.",
+    "evidence": "p.834-835 identification section; Tables 1-4 AR(2), Hansen rows"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Subscriptions per 100 people is a standard diffusion proxy but ignores usage quality; mobile subscriptions can exceed 100.",
+    "evidence": "Appendix A1, p.845; max 142.98 in Appendix A2"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Countries selected on data availability; 25 in text but 24 in table rows; only five 7-year averages (~96 obs).",
+    "evidence": "note 1 p.841; p.833 'constraints in the availability of data'"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "PWT TFP measures; the 'real TFP growth' series has the same mean (0.539) as TFP in Appendix A2, and the Table 4 header reads 'Welfare Total Factor Productivity (Welfare real TFP)', so labelling is unclear.",
+    "evidence": "Appendix A2, p.845; Table 4 header, p.839"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Only one control per model, 40 models, quadratic specification, thresholds derived post hoc from significant columns; some invalid models discussed as findings; net-effect and threshold rows are inconsistent with printed coefficients and text column references.",
+    "evidence": "Tables 1-4; p.835 'four models are invalid in Table 1'; Table 4 thresholds"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All columns are printed, but the headline thresholds come from selected columns (including ones flagged invalid, or cited to a column that differs from the table), and net effects are shown only where significant.",
+    "evidence": "Table 1 Net Effects row vs text p.835 'second column'; Table 4 p.839 vs p.840 'seventh column'"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (reference list contains many unrelated decision-making and machine-learning methods citations (Kou et al.) and heavy author self-citation; one-control-at-a-time models)",
+  "notes": "No instructions aimed at the reader were found in the text. Inconsistencies: abstract and text say 25 countries, tables say 24; text cites 'second column of Table 1' for net effect 0.001 and threshold 100, while the table prints these in columns 1 and 3 and marks column 2 as 'nsa'; text cites Table 4 'seventh column' for threshold 15 (0.006/[2x0.0002]) whereas the table prints 0.0047 in the sixth column and 'nsa' in the seventh; Table 4 col 8 (0.007, -0.0002) printed threshold 15.000 although 0.007/0.0004 would be 17.5. Abstract reports threshold 100% for mobile and 15% for internet, but variables are per 100 people (not percent of population). Welfare real TFP internet result is the only significant internet result. The outcomes are TFP indices, which I tagged family 1.",
+  "quote_check": {
+   "verified": 2,
+   "checked": 7
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 3,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own GMM estimation; exposure is mobile phone and internet penetration; 25 sub-Saharan economies (listed in note 1, 24 in table Countries rows) which is at least 10; outcomes are PWT TFP measures (output/productivity).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "No change needed: 25 in abstract/text and note 1 (25 names listed); 24 in the Countries row of Tables 1-4 (record already states both)",
+    "years": "No change: 1980-2014, five 7-year non-overlapping averages (1980-1986 ... 2008-2014)",
+    "income_groups_covered": "No change: no income-group split or income classification reported"
+   },
+   "corrections": [
+    {
+     "n": 3,
+     "verdict": "corrected",
+     "correction": "Mobile figures correct (col 1: 0.001** (0.020), -4.94e-06** (0.040); col 2: 0.002*** and -9.86e-06***; col 5: -0.002*). But 'internet terms insignificant' is not fully right: Internet x Internet is 0.0001* (0.079) in col 7 and 0.0001** (0.027) in col 9, with insignificant linear internet terms.",
+     "quote": "Internet × Internet 0.00007 | 0.0001* | 0.0001 | 0.0001** | 0.0001 (p-values 0.490, 0.079, 0.407, 0.027, 0.292)",
+     "locator": "Table 3 p.838, internet channel"
+    }
+   ],
+   "problems": "No invented or mixed-up content found. Only substantive correction is result 3 (internet quadratic terms are significant at 10% in col 7 and 5% in col 9). Record notes about 25 vs 24 countries, the 'second column' and 'seventh column' citation mismatches, and 17.5 vs 15.000 are all accurate. Minor: record says many columns fail AR(2)/Hansen; in Table 1 only a few do (e.g. AR(2) 0.053 col 4, Hansen 0.063 col 2 and 0.072 col 8 at 10%), failures are more common in Tables 2 and 4 (Sargan)."
+  }
+ },
+ {
+  "idx": "9305",
+  "title": "Information Technology and Productivity in Developed and Developing Countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative cross-country panel production-function study (45 economies, 1994-2007, developed vs developing split) of IT capital stock and GDP output; meets exposure, sample (>=10 economies, income-group comparison) and outcome (family 1) criteria.",
+  "stream": "H",
+  "technology": [
+   "ICT in general (IT hardware capital stock; PCs and peripherals, data communications spending)"
+  ],
+  "exposure_measure": "IT capital stock: IDC IT hardware (and data-communications) spending, deflated with the US BEA quality-adjusted computers and peripherals price index, converted to constant international dollars, summed over ten years with depreciation (Doms et al.); entered in logs (first-differenced).",
+  "sample": {
+   "n_economies": "45",
+   "economies_or_groups": "19 developing (e.g. Argentina, Brazil, China, Egypt, India, Indonesia, Philippines, South Africa, Turkey) and 26 developed (e.g. US, Germany, Japan, Korea, Taiwan, Hong Kong, Singapore), IMF classification (Table 2)",
+   "income_groups_covered": "mixed (developed and developing; authors say developing group is upper-income only, but Table 2 also lists India, Egypt, Indonesia, Philippines)",
+   "years": "1994-2007",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Cobb-Douglas production function on first-differenced logs; fixed effects, FE with two-dimensional cluster-corrected SE, random effects (preferred per LM/Hausman tests), AR(1), and 2SLS",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Labour hours and non-IT capital stock; year dummies and country effects; moderators (tertiary education, immigration, imports/GDP, FDI/GDP, telephone cost, cellular and Internet penetration) entered one at a time with mean-centred interactions with IT capital"
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "GDP (output elasticity of IT capital stock), all 45 countries, random effects (preferred)",
+    "direction": "positive",
+    "estimate": "betaIT = 0.145***",
+    "uncertainty": "SE (0.017); p < 0.001",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.110, row betaIT, 'All countries' random effects: '0.145*** (0.017)'; N=557"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP (output elasticity of IT capital stock), developing countries, random effects",
+    "direction": "positive",
+    "estimate": "betaIT = 0.125***",
+    "uncertainty": "SE (0.030); p < 0.001",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.110, Developing countries random effects: '0.125*** (0.030)'; N=219"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP (output elasticity of IT capital stock), developed countries, random effects",
+    "direction": "positive",
+    "estimate": "betaIT = 0.104***",
+    "uncertainty": "SE (0.025); p < 0.001",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.110, Developed countries random effects: '0.104*** (0.025)'; N=338"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP, 2SLS (instruments lagged labour hours and PC average selling price), developing countries",
+    "direction": "positive",
+    "estimate": "betaIT = 0.129*",
+    "uncertainty": "SE (0.068); p < 0.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.112, Developing 2SLS: '0.129* (0.068)'; Durbin-Wu-Hausman 1.27 (not significant)"
+   },
+   {
+    "family": 1,
+    "indicator": "Difference between developed and developing IT-capital effect",
+    "direction": "null",
+    "estimate": "not reported (chi2 = 0.34)",
+    "uncertainty": "p > 0.05",
+    "horizon": "contemporaneous",
+    "evidence": "p.110-111: 'This produces a chi2 = 0.34, p > 0.05, indicating there is no significant difference between developed and developing countries'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "human capital",
+    "finding": "IT x tertiary education interaction positive and significant for developing countries only (0.809*, SE 0.405); not significant for developed (-0.016) or all (0.351); developed-developing difference significant (chi2 = 4.23, p < 0.05). Immigration interaction not significant in any sample.",
+    "threshold_value": "none",
+    "evidence": "Table 6, p.113 and text p.113-114: 'positive and significant for the developing countries only'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Openness: IT x FDI/GDP positive in all samples (all 0.044**, developing 0.058*, developed 0.036**), no developed-developing difference (chi2 = 0.13); IT x net imports not significant.",
+    "threshold_value": "none",
+    "evidence": "Table 7, p.114: 'IT*FDI 0.044** (0.014)'; text p.115"
+   },
+   {
+    "moderator": "infrastructure",
+    "finding": "IT x telephone cost negative and significant for developing countries only (-0.039***); IT x cellular penetration positive for developed (0.032*) and all-sample (0.018*); IT x Internet penetration positive only in the all-countries sample (0.016**).",
+    "threshold_value": "none",
+    "evidence": "Table 8, p.115: 'bIT*Cost -0.032 -0.039*** 0.041'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Time: year-specific IT coefficients (Figure 2) dip 1998-2000 (dot-com period) and rise after 2001, more strongly for developing countries; shown only graphically, no numbers.",
+    "threshold_value": "none",
+    "evidence": "Figure 2 and text p.112: 'effect of IT capital post-2001 appears to be growing more strongly for developing countries'"
+   }
+  ],
+  "income_group_results": {
+   "high": "Developed group (26 economies, IMF): RE betaIT 0.104*** (0.025); FE 0.103*** (0.027) (Table 4)",
+   "upper_middle": "Developing group (19 economies; authors describe it as upper-income developing): RE betaIT 0.125*** (0.030); FE 0.137*** (0.032) (Table 4). Not split further by World Bank income band.",
+   "lower_middle": "not reported (no separate estimate; some lower-middle economies such as India, Egypt, Indonesia, Philippines sit in the pooled developing group)",
+   "low": "not covered (authors state low-income countries are excluded for lack of IT capital data, p.118)"
+  },
+  "n_specifications_reported": "approximately 40 (3 samples x 3 estimators in Table 4, 6 in Table 5, 3 samples x 6 moderator models in Tables 6-8, plus unreported per-capita and subsample checks)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "Country and year effects and first differences, plus a 2SLS check; but instruments (lagged labour hours, PC average selling price) are weakly justified, no first-stage statistics reported, the endogeneity test is non-significant (low power), and wording such as 'payoff' and 'productivity gains from IT investment' is causal.",
+    "evidence": "p.111 2SLS paragraph; Table 5, p.112"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "IT stock is built from hardware (and data communications) spending, excluding software and telecom equipment, deflated with a single US quality-adjusted price index for all countries and depreciated with assumed rates; imperfect capture of IT use, especially in developing countries.",
+    "evidence": "Data and Variables, p.107-108; note 3, p.119"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "45 countries chosen by IT-spending data availability; developing group is upper-income only and no low-income country; Korea and Taiwan classed as developed throughout; short 1994-2007 panel.",
+    "evidence": "Table 2 p.107; note 4 p.119; Future Research p.118"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP (PWT 6.3, PPP) is the output measure in a Cobb-Douglas function, not a direct productivity measure; capital stock extended to 2007 by assumed 5% depreciation; labour hours partly imputed from regional averages.",
+    "evidence": "Data and Variables, p.106-108"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Many estimators and moderators tried; RE chosen through Hausman and LM tests; variables first-differenced after unit-root tests (FDI, Int, Cel kept in levels); interactions tested one at a time without multiplicity adjustment; some checks (per-capita, Dewan-Kraemer subsample) only 'available upon request'.",
+    "evidence": "p.105-106, p.108; note 7, p.119"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Main tables report all samples and estimators, but per-capita and Dewan-Kraemer-subsample robustness are not shown, Figure 2 gives no numbers, and some printed stars and text claims do not match (see notes).",
+    "evidence": "Note 7, p.119; Table 7, p.114; Table 8, p.115"
+   }
+  },
+  "overall_risk_of_bias": "moderate",
+  "venue_quality_concern": "none",
+  "notes": "No instruction-like text found in the paper. Internal inconsistencies for a reviewer: (1) Table 7 FDI interaction for developing is 0.058* with SE 0.030 (ratio under 2, star looks generous). (2) Table 8 developed Internet-penetration betaIT SE printed as (0.003), implausibly small beside 0.025-0.037 elsewhere. (3) Table 7 betaK printed as '0.3639***' (extra digit). (4) Table 6 immigration columns give N = 283 (developing) and 51 (developed), inconsistent with the 219 developing and 338 developed observations in Table 4. (5) Text says developing effect is 'stronger' than developed although the formal test finds no significant difference. (6) Authors say variables were first-differenced, so betaIT is an elasticity of output growth to IT-stock growth; yet the text calls it a production-function elasticity. (7) Authors call the developing group 'upper-income' but Table 2 includes India, Egypt, Indonesia and the Philippines. (8) Text says Internet interaction significant only in the full sample, Table 8 agrees (0.016**).",
+  "quote_check": {
+   "verified": 4,
+   "checked": 6
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 4
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (Cobb-Douglas, FE/RE/2SLS/AR(1)); exposure is IT hardware capital stock (ICT in general); 45 economies with explicit developed vs developing comparison (chi2 test); outcome is GDP output (family 1). Note: the 'developing' group is described by authors as upper-income only and low-income countries are excluded, but the eligibility conditions are still met.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "No invented numbers or paper mix-ups found. Table-internal oddities noted by the extractor are real: Table 4 columns FE/2D/RE order is as recorded; Table 7 βK printed '0.3639***'; Table 8 developed Internet βIT SE printed (0.003); Table 6 immigration N = 283 and 51 do not match 219/338 in Table 4. The stronger developing-country effect is not statistically supported (chi2 = 0.34). Minor: the record's n_specifications (~40) is an estimate, not stated in the paper; 2D-cluster-SE columns in Table 4 (0.150*** (0.040), 0.137** (0.044), 0.103* (0.053)) are not in results but not misreported."
   }
  }
 ]

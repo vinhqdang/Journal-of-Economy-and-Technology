@@ -1,0 +1,32 @@
+[
+ {
+  "idx": "9303",
+  "eligibility_ok": true,
+  "eligibility_note": "Own regression (translog, SAS Enterprise Miner); exposure is telecom investment and telecom staff (ICT in general); 18 transition economies (>=10); outcome is GDP (output family 1, not family 5 or 6). Eligible, though the exposure is a narrow sector proxy and the outcome is GDP in current US$ levels.",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "none. Interaction, complete set: 57.4954, p = 0.8156, not significant, so null is right. Table prints no sign.", "quote": "ANNU_EL1*FULL_2KW 57.4954 0.8156 ... H10 accepted (Table 1, p. 477)"},
+   {"n": 2, "verdict": "confirmed", "correction": "none. Value 57.4954 and p 'o.0001' (read as <.0001) match Table 1; positive direction comes from the text, not the table. Note the value is identical to the complete-set row, which looks like a table error.", "quote": "complementarity is positive for the Leaders, and is negative for the Followers (Section 4, p. 476)"},
+   {"n": 3, "verdict": "confirmed", "correction": "none. Followers interaction 2.1280, p = 0.0087 as printed; negative direction from text because the table shows no minus sign.", "quote": "ANNU_EL1*FULL_2KW 2.1280 0.0087 (Table 1, p. 477)"},
+   {"n": 4, "verdict": "confirmed", "correction": "none. Main term complete set 42.8020, p = 0.8613, not significant. Sign not printed. Same 42.8020 is printed again for Leaders.", "quote": "ANNU_EL1 42.8020 0.8613 0.8655 H10 accepted (Table 1, p. 477)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "none. Positive for Leaders, negative for Followers, not significant in the full set. The authors say the sign change 'suggests the presence of the threshold' but explicitly do not estimate one, so threshold none is right. Table 2 ratios 2.2770 vs 1.3031 are as printed.", "quote": "This change in the direction of the effect suggests the presence of the threshold. (p. 476)"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group analysis; the only split is Leaders vs Followers from earlier DEA/cluster work.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree",
+   "exposure_measurement": "agree",
+   "selection_of_countries_years": "agree",
+   "outcome_measurement": "agree",
+   "specification": "too_lenient",
+   "selective_reporting": "too_harsh",
+   "why": "Overall critical is fair: pooled GDP-level regression with no controls or fixed effects and no reverse-causality strategy; confounding (critical, agree): no controls or strategy; exposure (serious, agree): telecom investment and staff are sector inputs, a partial proxy for ICT; selection (serious, agree): 7 of 25 economies dropped for missing data and the Leaders/Followers split was derived from earlier efficiency analyses of the same data; outcome (moderate, agree): GDP in current US$ levels, not per capita, not growth; specification (too_lenient, should be critical): the Leaders row repeats the complete-set coefficients (42.8020, 43.9723, 57.4954) with different p-values, the intercept is suppressed, and signs are not printed, so Table 1 cannot be trusted; selective reporting (too_harsh, moderate): all three pre-stated hypotheses H10, H20 and H30 are reported, though squared terms and the intercept are omitted and there are no robustness checks."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "Table 1 prints identical coefficients for the complete set and Leaders (42.8020, 43.9723, 57.4954) with different p-values, a probable table error. No minus signs appear anywhere in the extracted table; directions rest on the prose. Leaders have 66 and Followers 114 data points (sum 180), so groups are not a whole number of 10-year country series. Title says growth but the dependent variable is log GDP in current US$ levels. The record's notes already flag the sign and duplicate-row issues. Nothing else invented or mixed up."
+ }
+]

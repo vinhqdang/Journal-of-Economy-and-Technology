@@ -1,0 +1,81 @@
+[
+ {
+  "idx": "9305",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (Cobb-Douglas, FE/RE/2SLS/AR(1)); exposure is IT hardware capital stock (ICT in general); 45 economies with explicit developed vs developing comparison (chi2 test); outcome is GDP output (family 1). Note: the 'developing' group is described by authors as upper-income only and low-income countries are excluded, but the eligibility conditions are still met.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "\u03b2IT 0.150*** 0.150*** 0.145*** ... (0.018) (0.040) (0.017); N 557 (Table 4, All countries, Random effects)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 4 Developing random effects: \u03b2IT 0.125*** (0.030); N 219"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 4 Developed random effects: \u03b2IT 0.104*** (0.025); N 338"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 5 Developing 2SLS: \u03b2IT 0.129* (0.068); Hausman 1.27; N 219"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "Direction null is right for the IT-capital difference test (RE with developed dummy). Context: a separate F-test of equal production-function coefficients across groups is significant (F(14,484)=2.21, p<0.01).",
+    "quote": "This produces a \u03c72 = 0.34, p > 0.05, indicating there is no significant difference between developed and developing countries (pp.110-111)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 6 \u03b2IT*Edu 0.351 / 0.809* (0.405) / \u20130.016; text: 'significant difference as well (\u03c72 = 4.23, p < 0.05)'; immigration interactions 0.097, 0.043, 0.452 all non-significant"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 7 \u03b2IT*FDI 0.044** 0.058* 0.036**; text 'no significant difference ... (\u03c72 = 0.13, p > 0.05)'; \u03b2IT*Imp 0.011, \u20130.004, 0.017 n.s."
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Values match Table 8. Note the paper's text says cellular interaction is significant 'only for the developed countries' but Table 8 also stars the all-countries column (0.018*); the record follows the table, which is right. Cost interaction developing -0.039*** (0.010); Internet 0.016** all only.",
+    "quote": "Table 8 bIT*Cel 0.018* 0.014 0.032*; bIT*Int 0.016** 0.017 0.011; bIT*Cost \u20130.032 \u20130.039*** 0.041"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "effect of IT capital post-2001 appears to be growing more strongly for developing countries than developed countries (p.112; Figure 2)"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Developed RE 0.104*** (0.025), FE 0.103*** (0.027); developing RE 0.125*** (0.030), FE 0.137*** (0.032) match Table 4. Mapping the developing group to 'upper_middle' is the extractor's inference: authors say 'only upper-income developing countries' (p.118) but Table 2 includes India, Indonesia, Philippines, Egypt; low income excluded as stated. Group labels are IMF developed/developing, not World Bank bands.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: country/year effects, first differences and a 2SLS check, but instruments (lagged labour hours, PC average selling price) are weakly justified, no first-stage reported, and the Hausman test is non-significant, so exogeneity is not established (moderate).",
+   "exposure_measurement": "agree: hardware (plus data-communications) spending deflated with a single US quality-adjusted index and depreciated by assumed rates only partly captures IT use.",
+   "selection_of_countries_years": "agree: 45 countries chosen by IT-spending data availability, no low-income country, Korea/Taiwan classed developed (note 4), 14-year panel.",
+   "outcome_measurement": "agree: GDP from PWT 6.3 is output rather than productivity; capital stock extended 2005-2007 with assumed 5% depreciation and regional-average labour hours imputed.",
+   "specification": "agree: several estimators, interaction models one at a time, first differences after unit-root tests with FDI/Int/Cel in levels, no multiplicity adjustment.",
+   "selective_reporting": "agree: main tables show all samples and estimators, but per-capita and Dewan-Kraemer-subsample checks are only 'available upon request' (note 7) and Figure 2 has no numbers.",
+   "why": "Standard cross-country panel with reasonable controls and a modest IV check but exogeneity not established, so moderate is appropriate."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers or paper mix-ups found. Table-internal oddities noted by the extractor are real: Table 4 columns FE/2D/RE order is as recorded; Table 7 \u03b2K printed '0.3639***'; Table 8 developed Internet \u03b2IT SE printed (0.003); Table 6 immigration N = 283 and 51 do not match 219/338 in Table 4. The stronger developing-country effect is not statistically supported (chi2 = 0.34). Minor: the record's n_specifications (~40) is an estimate, not stated in the paper; 2D-cluster-SE columns in Table 4 (0.150*** (0.040), 0.137** (0.044), 0.103* (0.053)) are not in results but not misreported."
+ }
+]

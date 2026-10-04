@@ -1,0 +1,26 @@
+[
+ {
+  "idx": "9304",
+  "paper_verdict": {
+   "estimator_family": "GMM-system (xtabond2-style forward orthogonal deviations, levels and difference instrument sets)",
+   "reverse_causality_addressed": "partly",
+   "pooling_concerns": "Outcomes are Penn World Table TFP indices (means 0.54-0.98), not log output or elasticities; each ICT effect is split over a linear and a quadratic term so single coefficients are not marginal effects; the 'real TFP growth' series has the same mean (0.539) as TFP in Appendix A2, so it is probably a level despite its label; one control per model; only 24 countries and five 7-year averages; ICT in subscriptions per 100 people."
+  },
+  "estimates": [
+   {"estimate_id": "9304-1", "verdict": "confirmed", "corrections": {}, "quote": "Mobile 0.002*** 0.002*** 0.002*** 0.005*** −0.0009 / (0.000)", "note": "Table 1 col 1; Countries 24, Observations 96."},
+   {"estimate_id": "9304-2", "verdict": "confirmed", "corrections": {}, "quote": "Mobile × Mobile −0.00001*** −0.00001*** −0.00001*** −0.00003*** 7.97e-07 / (0.000)", "note": "Table 1 col 1; quadratic term."},
+   {"estimate_id": "9304-3", "verdict": "confirmed", "corrections": {}, "quote": "Mobile 0.002*** ... (0.000); Observations 96 96 94 82 94", "note": "Table 1 col 3 (inflation control), 94 obs."},
+   {"estimate_id": "9304-4", "verdict": "confirmed", "corrections": {}, "quote": "Mobile × Mobile −0.00001*** −0.00001*** −0.00001*** ... (0.000) (0.000) (0.002)", "note": "Table 1 col 3, p=0.002."},
+   {"estimate_id": "9304-5", "verdict": "confirmed", "corrections": {}, "quote": "Internet – – – – – 0.003 −0.003 0.003 0.001 0.001 / (0.305)", "note": "Table 1 col 6, 96 obs."},
+   {"estimate_id": "9304-6", "verdict": "confirmed", "corrections": {}, "quote": "Internet × Internet ... −0.00003 0.0001** −0.00004 / (0.767)", "note": "Table 1 col 6."},
+   {"estimate_id": "9304-7", "verdict": "confirmed", "corrections": {}, "quote": "Mobile 0.0003 0.001 0.0006 0.001 0.00009 / (0.737)", "note": "Table 2 col 1. Dependent variable labelled 'Real TFP growth' but Appendix A2 mean equals TFP; outcome_transform 'level' is plausible but unverified; flag for pooling."},
+   {"estimate_id": "9304-8", "verdict": "confirmed", "corrections": {}, "quote": "Mobile × Mobile −9.36e-06 −0.00001* −8.88e-06 / (0.135)", "note": "Table 2 col 1."},
+   {"estimate_id": "9304-9", "verdict": "confirmed", "corrections": {}, "quote": "Mobile 0.001** 0.002*** 0.0008 0.004*** −0.002* / (0.020)", "note": "Table 3 col 1, 96 obs."},
+   {"estimate_id": "9304-10", "verdict": "confirmed", "corrections": {}, "quote": "Mobile × Mobile −4.94e-06** −9.86e-06*** −4.88e-06 / (0.040)", "note": "Table 3 col 1."},
+   {"estimate_id": "9304-11", "verdict": "confirmed", "corrections": {}, "quote": "Internet – – – – – 0.006* 0.006** 0.007*** 0.003 0.001 / (0.056)", "note": "Table 4 col 6, 96 obs. Table 4 header reads 'Welfare Total Factor Productivity (Welfare real TFP)'."},
+   {"estimate_id": "9304-12", "verdict": "confirmed", "corrections": {}, "quote": "Internet × Internet ... −0.0002** −0.0002** −0.0002*** −0.0001* / (0.025)", "note": "Table 4 col 6."},
+   {"estimate_id": "9304-13", "verdict": "confirmed", "corrections": {}, "quote": "Internet ... 0.006* 0.006** 0.007*** 0.003 0.001 / (0.001)", "note": "Table 4 col 8 (inflation control); Observations 96 96 94 82 94 for internet cols 6-10 gives 94 for col 8."},
+   {"estimate_id": "9304-14", "verdict": "confirmed", "corrections": {}, "quote": "Internet × Internet −0.0002** −0.0002** −0.0002*** −0.0001* −0.00008 / (0.000)", "note": "Table 4 col 8, 94 obs."}
+  ]
+}
+]

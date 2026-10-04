@@ -1262,5 +1262,61 @@
   "tested_formally": false,
   "note": "ICT coefficient on HDI larger in low and lower-middle income groups, insignificant in upper-middle and high; no formal test of the difference",
   "idx": "9204"
+ },
+ {
+  "id": "9302-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Interactions among digital proxies (e-government, e-commerce, internet users); no split by income or institutions; East-West gap only in scatterplots",
+  "idx": "9302"
+ },
+ {
+  "id": "9303-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Investment-by-staff interaction positive for DEA-cluster Leaders, negative for Followers, insignificant in the full sample; level-dependent but not tested as a threshold",
+  "idx": "9303"
+ },
+ {
+  "id": "9304-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Inverted U: effect of mobile and internet turns negative beyond about 100 mobile subscriptions and about 15 internet users per 100 (diffusion level as moderator)",
+  "idx": "9304"
+ },
+ {
+  "id": "9305-H1",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "IT by tertiary education interaction positive for developing countries only; developed-developing difference significant",
+  "idx": "9305"
+ },
+ {
+  "id": "9305-H2",
+  "moderator_type": "trade_openness",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "IT by FDI positive in all samples with no developed-developing difference; IT by net imports not significant",
+  "idx": "9305"
+ },
+ {
+  "id": "9305-H3",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Telephone cost interaction negative for developing countries only; cellular and internet penetration interactions positive in some samples",
+  "idx": "9305"
+ },
+ {
+  "id": "9305-H4",
+  "moderator_type": "time_period",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Year-specific IT coefficients dip around the dot-com period and rise after 2001, more strongly for developing countries; graphical only",
+  "idx": "9305"
  }
 ]

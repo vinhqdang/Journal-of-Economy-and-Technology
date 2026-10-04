@@ -1,0 +1,27 @@
+[
+ {
+  "idx": "9302",
+  "paper_verdict": {
+   "estimator_family": "GMM-system (xtabond2 system GMM, lagged dependent variable, robust SE)",
+   "reverse_causality_addressed": "no",
+   "pooling_concerns": "Outcome is ln TFP (Tornqvist, or DEA-Malmquist-based) in logs, regressors are percentage shares (e-government, e-commerce, household internet), so coefficients are semi-elasticities of tiny size with SE printed as 0.000 (precision lost). Dynamic model with lagged dependent variable: coefficients are short-run, not long-run. Regions (182 NUTS regions in 27 countries), not countries; 9 countries enter as one unit. Table 4 estimates are on log products of two shares (interactions), not comparable to single-technology effects, and use 2266 obs. Digital proxies not instrumented; paper disclaims causality. Table 3 cols (7) and (10) print both contemporaneous and lagged internet terms. Table 4 col (15) prints '0077***'."
+  },
+  "estimates": [
+   {"estimate_id": "9302-1", "verdict": "confirmed", "corrections": {}, "quote": "e-government 0.0008** (0.000)", "note": "Table 3 col (1); table note: robust standard errors in parentheses; 2362 obs; n_countries null but table prints Regions 182 (27 countries per Table A1). e-government use is an ICT-use proxy recorded as 'other'."},
+   {"estimate_id": "9302-2", "verdict": "confirmed", "corrections": {}, "quote": "e-commerce 0.0001** (0.000)", "note": "Table 3 col (1); 2362 obs, 182 regions."},
+   {"estimate_id": "9302-3", "verdict": "confirmed", "corrections": {}, "quote": "Internet users 0.0008** (0.000)", "note": "Table 3 col (1); 2362 obs, 182 regions."},
+   {"estimate_id": "9302-4", "verdict": "confirmed", "corrections": {}, "quote": "e-government (t-1) 0.0001** (0.000)", "note": "Table 3 col (2); contemporaneous term in same column is 0.0000(0.000)."},
+   {"estimate_id": "9302-5", "verdict": "confirmed", "corrections": {}, "quote": "e-commerce (t-1) 0.0001** (0.001)", "note": "Table 3 col (2); SE (0.001) printed under this row."},
+   {"estimate_id": "9302-6", "verdict": "confirmed", "corrections": {}, "quote": "Internet users (t-1) 0.0003** (0.000)", "note": "Table 3 col (2)."},
+   {"estimate_id": "9302-7", "verdict": "confirmed", "corrections": {}, "quote": "Internet users 0.0012*** (0.000)", "note": "Table 3 col (3), Malmquist TFP; col grouping checked by header positions."},
+   {"estimate_id": "9302-8", "verdict": "confirmed", "corrections": {}, "quote": "Internet users (t-1) 0.0006*** (0.000)", "note": "Table 3 col (4), Malmquist TFP."},
+   {"estimate_id": "9302-9", "verdict": "confirmed", "corrections": {}, "quote": "Internet users (t-1) 0.0003*** (0.000)", "note": "Table 3 col (7), Tornqvist TFP group (cols 5-7). Same column also prints contemporaneous Internet users 0.0002*** (0.001), so it is not a lag-only model."},
+   {"estimate_id": "9302-10", "verdict": "confirmed", "corrections": {}, "quote": "Internet users (t-1) 0.0001** (0.000)", "note": "Table 3 col (10), Malmquist TFP group (cols 8-10). Same column also prints contemporaneous Internet users 0.0002*** (0.000)."},
+   {"estimate_id": "9302-11", "verdict": "confirmed", "corrections": {}, "quote": "Ln [e-commerce × e-government] 0.0028 (0.003)", "note": "Table 4 col (11), 2266 obs, 182 regions. Interaction of two shares in logs, not a single-technology effect; flag for pooling."},
+   {"estimate_id": "9302-12", "verdict": "confirmed", "corrections": {}, "quote": "Ln [e-commerce × internet users] 0.0048** (0.001)", "note": "Table 4 col (11), 2266 obs; interaction term."},
+   {"estimate_id": "9302-13", "verdict": "confirmed", "corrections": {}, "quote": "Ln [e-government × internet users] t-1 0.0055** (0.002)", "note": "Table 4 col (11), 2266 obs; interaction term."},
+   {"estimate_id": "9302-14", "verdict": "confirmed", "corrections": {}, "quote": "Ln [e-government × internet users] t-1 0.0090** (0.003)", "note": "Table 4 col (12), Malmquist TFP, 2266 obs; interaction term."}
+  ]
+}
+
+]

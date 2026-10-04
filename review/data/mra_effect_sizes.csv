@@ -134,3 +134,15 @@ idx,estimate_id,role,subsample_label,sample_income_group,technology,coef,t,n,pcc
 9203,9203-8,subsample,high-income countries,high,telecom,0.036,2.769230769230769,1160.0,0.08138924394903835,0.02939056031493052
 9203,9203-9,baseline,"low-income countries, internet only model",low,internet,0.002,2.0,540.0,0.08654846448158308,0.04327423224079155
 9203,9203-10,baseline,"high-income countries, internet only model",high,internet,0.002,0.3333333333333333,1102.0,0.01008661240061378,0.03025983720184134
+9302,9302-5,headline,full sample,mixed,other (e-commerce),0.0001,0.1,2362.0,0.0020619608636902624,0.020619608636902622
+9305,9305-1,headline,full sample (all countries),mixed,"other (IT capital stock, hardware and data communications)",0.145,8.52941176470588,557.0,0.3426182638402841,0.04016903782955056
+9305,9305-2,baseline,full sample (all countries),mixed,"other (IT capital stock, hardware and data communications)",0.15,8.333333333333334,557.0,0.33563850846315924,0.040276621015579106
+9305,9305-3,subsample,developing countries,developing,"other (IT capital stock, hardware and data communications)",0.125,4.166666666666667,219.0,0.27694137860068735,0.06646593086416495
+9305,9305-4,subsample,developed countries,not stated,"other (IT capital stock, hardware and data communications)",0.104,4.159999999999999,338.0,0.22386774250461863,0.05381436117899487
+9305,9305-5,robustness,developing countries,developing,"other (IT capital stock, hardware and data communications)",0.137,4.28125,219.0,0.28395078330552287,0.06632427055311484
+9305,9305-6,robustness,developed countries,not stated,"other (IT capital stock, hardware and data communications)",0.103,3.8148148148148144,338.0,0.2061150443010401,0.05403015724396198
+9305,9305-7,robustness,"full sample (all countries), 2SLS",mixed,"other (IT capital stock, hardware and data communications)",0.105,2.1875,557.0,0.09312430725691277,0.04257111188887441
+9305,9305-8,robustness,"developing countries, 2SLS",developing,"other (IT capital stock, hardware and data communications)",0.129,1.8970588235294117,219.0,0.1301069093029844,0.06858348707444141
+9305,9305-9,robustness,"developed countries, 2SLS",not stated,"other (IT capital stock, hardware and data communications)",0.082,2.0,338.0,0.10976425998969035,0.05488212999484517
+9305,9305-10,robustness,"developing countries, AR(1)",developing,"other (IT capital stock, hardware and data communications)",0.162,4.378378378378379,219.0,0.2898570257647836,0.06620191329195674
+9305,9305-11,robustness,"developed countries, AR(1)",not stated,"other (IT capital stock, hardware and data communications)",0.081,2.892857142857143,338.0,0.15773179629774445,0.05452457155971413

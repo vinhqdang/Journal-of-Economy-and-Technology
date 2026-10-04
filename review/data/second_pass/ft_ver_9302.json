@@ -1,0 +1,38 @@
+[
+ {
+  "idx": "9302",
+  "eligibility_ok": true,
+  "eligibility_note": "Own system-GMM estimation; exposures are household internet access/use plus e-government and e-commerce use (ICT in general/internet); outcome is TFP (output/productivity); 27 EU member states counted as economies (Table A1 lists 27 countries summing to 182 regions), so the 10-economy rule is met on countries.",
+  "sample_corrections": {
+    "n_economies": "27 is correct (Table A1)",
+    "regions_detail": "Record's '173 NUTS2 plus 9 single units' is derived, not printed; paper says nine countries use 'NUTS1-level data' while Table A1 prints 'Total NUTS2 region = 182'. Quote (p.4): 'treats countries such as Croatia, Cyprus, Estonia, Latvia, Lithuania, Luxembourg, Ireland, Malta and Slovenia using NUTS1-level data'",
+    "years": "2006-2020 is correct (Section 3.2, Conclusion)",
+    "income_groups_covered": "not reported is correct"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "Table 3 col (1): e-government 0.0008** (0.000); e-commerce 0.0001** (0.000); Internet users 0.0008** (0.000); s.e. in parentheses, ** = 5%"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "Table 3 col (2): e-government (t-1) 0.0001** (0.000); e-commerce (t-1) 0.0001** (0.001); Internet users (t-1) 0.0003** (0.000); contemporaneous 0.0000 / -0.0000 / 0.0001 all (0.000)"},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "Table 3 col (3): e-government 0.0002***, Internet users 0.0012***; col (4): Internet users 0.0005**, Internet users (t-1) 0.0006*** (all s.e. 0.000)"},
+   {"n": 4, "verdict": "confirmed", "correction": "Mixed label is defensible (col 9 e-commerce t-1 0.0000(0.000) insignificant). Note cols (7) and (10) print both a contemporaneous internet term (0.0002***) and a t-1 term, although text describes models 5-10 as lag-only.", "quote": "positive and significant impact on TFP across European regions (with only exceptions in model 9)"},
+   {"n": 5, "verdict": "corrected", "correction": "Direction should be mixed, predominantly positive: Table 4 also prints significant negatives. Model 12 Ln[e-government x internet users] -0.0081*** (0.002); Model 16 Ln[e-commerce x e-government] t-1 -0.0004*** (0.000); Model 11 Ln[e-government x internet users] -0.0000 (0.003). Cited positives are correct: Model 11 e-com x internet 0.0048** (0.001), t-1 0.0058** (0.002); e-gov x internet t-1 0.0055** (0.002). Observations 2266, not 2362.", "quote": "Ln [e-government × internet users] 0.0000 ... − 0.0081*** (0.002)  [Table 4, row Ln[e-government x internet users]]"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Only interaction terms among proxies and descriptive scatterplot remarks; no subgroup estimation, no threshold. Authors state sector/geographic heterogeneity is left for future work.", "quote": "we do not provide sector-wise analysis while the empirical literature reveals a heterogeneous impact on productivity"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group split or classification; EU27 only.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal wording ('increases TFP', 'accelerates') while only lagged TFP and GDP (t-2, t-3) are declared endogenous and instrumented; digital proxies are not, and authors disclaim causality.",
+   "exposure_measurement": "agree: moderate; three Eurostat percent-of-individuals/households shares capture use but not investment or quality, and authors admit partial coverage.",
+   "selection_of_countries_years": "agree: moderate; all 27 states but nine enter as one unit, unbalanced panel (2362 obs vs 2266 in Table 4), no income comparison.",
+   "outcome_measurement": "agree: moderate; eq. (1) uses fixed 2/3 and 1/3 factor shares although text claims a changing-weight translog index; Malmquist 'robustness' reuses the same fixed-share construction (eq. 6); lnTFP built from lnGDP, which also enters as lagged control.",
+   "specification": "agree: serious; instrument count and AR(2) not reported (AR-1 and AR-3 only), mechanical TFP/GDP link, proxies entered one at a time because of collinearity, some printed stars inconsistent with SEs (e.g. Ln GDP 0.3067** (0.013)).",
+   "selective_reporting": "agree: moderate; all 18 models shown, but text says results hold across all estimations despite insignificant/negative terms; data stated to be confidential.",
+   "why": "Standard dynamic-panel set-up without exogeneity of the digital proxies established and with causal framing; serious is appropriate."
+  },
+  "causal_language": "mixed",
+  "reverse_causality_addressed": "no",
+  "problems": "(a) Record says the 0.08 percent reading 'does not match the units'; this is too strong: dependent variable is ln TFP (eq. 2) and regressors are percentage shares, so 0.0008 is a semi-elasticity, roughly 0.08 percent per percentage point (text wording '1 percent rise' is loose). (b) Result 5 direction should be mixed. (c) '173 NUTS2' is inferred (182 minus 9). (d) Other record notes verified: text claims no serial correlation but only AR-1/AR-3 printed; Table 4 col (15) prints '0077***'; Table 4 has 2266 obs vs 2362. No invented numbers or mixed-up papers found; no instructions to the reader in the text."
+ }
+]
