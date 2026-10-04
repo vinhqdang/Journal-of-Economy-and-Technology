@@ -1,6 +1,6 @@
 # Second-pass check of the extractions
 
-**What this is.** After the first extraction, every included paper's record and every regression estimate used in the pilot meta-regression was checked a second time against the converted full text by a separate model run that had the record and the text, not the first run's reasoning. This catches transcription and reading errors. It is not a human check, it uses the same family of model as the first pass, and it reads the same machine-converted text (garbled tables stay garbled). The author's own hand check against the source papers is recorded in `data/human_check.md`.
+**What this is.** After the first extraction, every included paper's record and every regression estimate used in the pilot meta-regression was checked a second time against the converted full text by a separate model run that had the record and the text, not the first run's reasoning. This catches transcription and reading errors. It is not a human check, it uses the same family of model as the first pass, and it reads the same machine-converted text (garbled tables stay garbled). The author's own hand check of a random sample against the source papers is recorded in `data/human_check.md`.
 
 ## Regression estimates for the meta-regression
 

@@ -1,4 +1,4 @@
-# Preliminary extraction summary (machine-extracted, re-checked by a second model run and by the author by hand; see data/human_check.md)
+# Preliminary extraction summary (machine-extracted, re-checked by a second model run and, on a random sample, by the author by hand; see data/human_check.md)
 
 **Read this first.** These records were extracted from the 107 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **68% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 107 of 256 papers sent to full-text assessment have been read.
 
