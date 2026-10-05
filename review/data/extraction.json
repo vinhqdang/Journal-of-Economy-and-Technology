@@ -13322,6 +13322,185 @@
   }
  },
  {
+  "idx": "1580",
+  "title": "Implications of AI innovation on economic growth: a panel data study",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative cross-country panel study (up to 217 economies, 1970-2019) estimating the effect of AI patenting (an AI capability/innovation measure) on real GDP per capita growth, with advanced versus less advanced comparison. Meets AI criteria (at least 3 economies) and family 1 outcome.",
+  "stream": "AI",
+  "technology": [
+   "artificial intelligence (AI patents)"
+  ],
+  "exposure_measure": "Log of AI-related patents per million people (5-year total patents divided by 5-year average population); AI patents identified by text search (e.g. 'artificial intelligence', 'machine learning', 'face recognition') in Google Patents Public Data. Total patents per million used as comparison.",
+  "sample": {
+   "n_economies": "122 in main AI models (Table 3); up to 217 in descriptive data (Table 1); 144 in total-patents models",
+   "economies_or_groups": "Unbalanced cross-country panel; 91 advanced and 165 less advanced economies in Table 2 (advanced = 5-year average real GDP per capita above USD 10,000)",
+   "income_groups_covered": "mixed (advanced vs less advanced split at USD 10,000; not the four World Bank groups)",
+   "years": "1970-2019 (ten 5-year periods)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Pooled OLS, fixed effects, Anderson-Hsiao, system/difference GMM (Arellano-Bond, Blundell-Bond), and FE-IV using cited non-patent literature as instrument",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Lagged growth, log lagged GDP per capita, population growth, capital formation growth, government expenditure growth, trade openness, inflation, human capital index growth, advanced dummy and its interaction with patents, period dummies; country FE in FE/FE-IV."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "5-year average real GDP per capita growth rate (%), effect of log AI patents per million people, full sample",
+    "direction": "positive",
+    "estimate": "OLS 0.178; FE 0.264; AH 0.246; GMM 0.275 (growth-rate points per unit of log AI patents per million people)",
+    "uncertainty": "SE: OLS (0.067)***, FE (0.078)***, AH (0.089)***, GMM (0.152)*",
+    "horizon": "medium",
+    "evidence": "Table 3, cols 1-4, p. 17: 'Log of AI patents per million people 0.178*** 0.264*** 0.246*** 0.275*'; N=616, n=122"
+   },
+   {
+    "family": 1,
+    "indicator": "Same outcome, advanced economies only, log AI patents",
+    "direction": "positive",
+    "estimate": "OLS 0.223; FE 0.367; AH 0.354; GMM 0.299",
+    "uncertainty": "SE: (0.086)***, (0.116)***, (0.096)***, (0.121)**",
+    "horizon": "medium",
+    "evidence": "Table 6, cols 1-4, p. 25; N=299, n=53"
+   },
+   {
+    "family": 1,
+    "indicator": "Same outcome, less advanced economies only, log AI patents",
+    "direction": "null",
+    "estimate": "OLS 0.031; FE 0.087; AH 0.076; GMM 0.265",
+    "uncertainty": "SE: (0.073), (0.080), (0.122), (0.208); none significant",
+    "horizon": "medium",
+    "evidence": "Table 7, cols 1-4, p. 26; N=301, n=83"
+   },
+   {
+    "family": 1,
+    "indicator": "Same outcome, FE-IV with cited non-patent literature as instrument, log AI patents",
+    "direction": "positive",
+    "estimate": "FE-IV 0.499 (FE 0.668; GMM 0.535; OLS 0.222) on a reduced sample",
+    "uncertainty": "SE (0.256)* for FE-IV; Kleibergen-Paap p=0.000; Sargan-Hansen p=0.138; endogeneity test p=0.605",
+    "horizon": "medium",
+    "evidence": "Table 8, col 4, p. 27: 'Log of AI patents ... 0.499*'; N=326, n=65"
+   },
+   {
+    "family": 1,
+    "indicator": "Same outcome, subperiod estimates, log AI patents",
+    "direction": "mixed",
+    "estimate": "1970-1994: OLS 0.113, FE 0.151, AH 0.142, GMM -0.186 (all insignificant). 1995-2019: OLS 0.124, FE 0.207**, AH 0.256**, GMM 0.741**",
+    "uncertainty": "1970-1994 SE (0.118),(0.130),(0.156),(0.252); 1995-2019 SE (0.085),(0.098),(0.104),(0.371)",
+    "horizon": "medium",
+    "evidence": "Table 4 p. 21 and Table 5 p. 23; 'the effect of AI on growth is not statistically significant for the period 1970-1994'"
+   },
+   {
+    "family": 1,
+    "indicator": "Annual (short-run) real GDP per capita growth, log AI patents",
+    "direction": "positive",
+    "estimate": "OLS 0.181; FE 0.360; AH 0.359; GMM 0.426",
+    "uncertainty": "SE (0.069)***, (0.113)***, (0.490) not significant, (0.253)*",
+    "horizon": "contemporaneous",
+    "evidence": "Table 9, cols 1-4, p. 30; N=2261, n=120"
+   },
+   {
+    "family": 1,
+    "indicator": "Comparison: total patents (non-AI) on 5-year growth, full sample",
+    "direction": "positive",
+    "estimate": "OLS 0.172; FE 0.131; AH 0.124; GMM 0.197 (GMM insignificant)",
+    "uncertainty": "SE (0.048)***, (0.071)*, (0.069)*, (0.177)",
+    "horizon": "medium",
+    "evidence": "Table 3, cols 5-8, p. 17; not AI exposure, recorded for the comparison the paper emphasises"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "AI patents significantly raise growth among advanced economies (Table 6) but have no significant effect among less advanced economies (Table 7). Interaction of advanced dummy with AI patents is negative, significant only in GMM (-0.227*) in Table 3 and in FE-IV (-0.375***) in Table 8, so the full-sample interaction is mostly insignificant.",
+    "threshold_value": "USD 10,000 5-year average real GDP per capita (ad hoc, from Kim and Lee 2015)",
+    "evidence": "Section 5.1, p. 20: 'does not entail any implication on long-run growth among less advanced or emerging economies in Table 7'"
+   },
+   {
+    "moderator": "other",
+    "finding": "Period: AI effect insignificant in 1970-1994 and significant in 1995-2019 (FE, AH, GMM); total patents show the opposite pattern.",
+    "threshold_value": "split at 1995",
+    "evidence": "Section 5.1, p. 19: 'effect of AI has become increasingly evident toward the latter years'"
+   },
+   {
+    "moderator": "infrastructure",
+    "finding": "Author attributes weaker effect in less advanced economies to missing infrastructure and institutions; this is asserted, not tested.",
+    "threshold_value": "none",
+    "evidence": "p. 20: 'viable infrastructures and institutions, which may only be available in developed countries, are necessary'"
+   }
+  ],
+  "income_group_results": {
+   "high": "Positive and significant: AI patents coefficient 0.223-0.367 (OLS/FE/AH/GMM) among advanced economies (Table 6)",
+   "upper_middle": "not reported separately (included in 'less advanced' group)",
+   "lower_middle": "not reported separately (included in 'less advanced' group)",
+   "low": "not reported separately; less advanced group (below USD 10,000) shows insignificant 0.031-0.265 (Table 7)"
+  },
+  "n_specifications_reported": "about 90 (8 columns in each of Tables 3-10, plus first-stage table)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('AI drives long-run growth'). GMM instruments are internal lags with many instruments (65 in Table 3 col 4, close to n=122 groups) and were tuned to pass Sargan-Hansen and AR(2) tests. The external instrument (cited non-patent literature) plausibly affects growth directly via scientific knowledge, as the author concedes, and is used on a smaller sample. AR(1) significant but GMM coefficient is only 10% significant.",
+    "evidence": "Section 4 p. 12-13; footnote 42 p. 18; Section 5.1 p. 20-22; Table 8"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "AI patents per million people identified by keyword text search of patent text; measures patenting (invention), not adoption or use of AI, and can be affected by classification error and country patent-filing practices (e.g. Chinese patent subsidies). Author notes measurement error and that AI and non-AI components of patents cannot be separated.",
+    "evidence": "footnote 30 p. 11; footnote 8 p. 3; footnote 46 p. 19"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Unbalanced panel; AI patent data sparse before 1995 and for developing countries (n=122 for AI vs 144 for total patents); sample restricted to countries with AI patents. Advanced/less advanced threshold of USD 10,000 is ad hoc and defined on contemporaneous income.",
+    "evidence": "Table 1 p. 14, Table 3 N/n p. 18, Section 5.1 p. 19"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Standard 5-year average real GDP per capita growth from UN National Accounts (constant 2015 USD).",
+    "evidence": "Section 4 p. 11; Table 12 p. 34"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Many estimators, subsamples and periods; GMM lag depth chosen so models pass diagnostics; log intensity form chosen. Results are directionally consistent across estimators in the full and advanced samples. Footnote 40 reports alternative log-count specification qualitatively.",
+    "evidence": "footnote 42 p. 18; footnote 40 p. 16; Tables 3-10"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All reported tables show the full set of estimators, including insignificant results (1970-1994, less advanced economies, total patents GMM). Abstract and conclusion emphasise the positive significant findings and the 'higher than total patents' comparison without testing the difference formally. Table 10 shows that adding internet growth makes the AI GMM coefficient larger (0.769**) while total patents flip sign, which is not discussed in the text.",
+    "evidence": "Abstract p. 1; Table 10 p. 32; Section 5 p. 16"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "AI-stream paper (patent-based AI innovation measure). Causal wording is stronger than the identification supports. Coefficients are in growth-rate percentage points per log unit of AI patents per million people. Several tables have small typesetting inconsistencies (for example Table 6 col 8 population growth printed '0.19 (0.790)' and government expenditure '-0.0391'). The claim that the AI effect is 'higher than' total patents is not formally tested. Controls include lagged GDP per capita and lagged growth with FE (Nickell bias). Income classification is two groups only. No text in the paper attempted to direct the extraction.",
+  "quote_check": {
+   "verified": 5,
+   "checked": 6
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 7
+   },
+   "heterogeneity": {
+    "corrected": 1,
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (OLS, FE, AH, GMM, FE-IV); exposure is AI (patents per million people); 122 economies in main AI models (at least 3 required) with explicit advanced vs less advanced comparison; outcome is real GDP per capita growth (output/productivity).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 1,
+     "verdict": "corrected",
+     "correction": "Advanced/less-advanced split and USD 10,000 threshold are correct, as are Table 3 interaction (-0.227* GMM only) and Table 8 FE-IV (-0.375***). But 'only ... in Table 8 FE-IV' is incomplete: Table 8 FE interaction is -0.743*** (0.189); Table 9 (short-run) interactions are -0.370**, -0.681**; Table 10 GMM -1.043***. The text itself says interactions are mostly insignificant in the two period tables (4 and 5).",
+     "quote": "effect of AI is strongly and positively significant among advanced economies in columns 1-4 in Table 6, but does not entail any implication ... in Table 7"
+    }
+   ],
+   "problems": "No invented numbers or mixed-up papers found; all quoted coefficients, SEs, N and n match Tables 3-9 and the 'Table 10 AI GMM 0.769**' claim matches. Issues: (1) heterogeneity 1 understates where the advanced x AI interaction is significant (Table 8 FE, Table 9, Table 10); (2) '65 instruments close to n=122' overstated, while Table 9 GMM (121 instruments, n=120) is the real proliferation problem; (3) result 7 is a non-AI comparator; (4) sample_corrections none needed (122 / 217 / 144 economies, 1970-2019 confirmed). Table 10 is only referenced in footnote 41, so 'not discussed' is correct."
+  }
+ },
+ {
   "idx": "1595",
   "title": "Generative AI, productivity, and inequality in the Global South",
   "fulltext_decision": "exclude",
@@ -17611,6 +17790,570 @@
    "sample_corrections": {},
    "corrections": [],
    "problems": "No invented numbers or paper mix-ups found. Table-internal oddities noted by the extractor are real: Table 4 columns FE/2D/RE order is as recorded; Table 7 βK printed '0.3639***'; Table 8 developed Internet βIT SE printed (0.003); Table 6 immigration N = 283 and 51 do not match 219/338 in Table 4. The stronger developing-country effect is not statistically supported (chi2 = 0.34). Minor: the record's n_specifications (~40) is an estimate, not stated in the paper; 2D-cluster-SE columns in Table 4 (0.150*** (0.040), 0.137** (0.044), 0.103* (0.053)) are not in results but not misreported."
+  }
+ },
+ {
+  "idx": "9401",
+  "title": "Exploring the growth effects of Artificial Intelligence in developing countries in Africa using a semi-endogenous growth model",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Panel GMM study of 48 (estimation samples 34-42) sub-Saharan African economies with GDP per capita growth as outcome (family 1). AI is not measured directly; the exposures are AI-readiness proxies (UNCTAD Frontier Tech Index, which the paper links to AI, plus an ICT index and high-tech import share), so inclusion is borderline and rests on capability/readiness proxies and the ICT index.",
+  "stream": "H",
+  "technology": [
+   "artificial intelligence (readiness/absorptive-capacity proxies only)",
+   "frontier technology readiness",
+   "ICT"
+  ],
+  "exposure_measure": "No direct AI measure ('the direct impact of AI-technology could not be assessed because of data limitations', p.24). Proxies: science and technology imports as % of total imports (UN Comtrade SITC), UNCTAD Frontier Tech Readiness Index (rescaled 0-100), ICT index, R&D index, Skills index, Industrial activity index, Financial access index.",
+  "sample": {
+   "n_economies": "48 listed (Table A1); estimation samples 34-42",
+   "economies_or_groups": "sub-Saharan African countries (Table A1 list of 48)",
+   "income_groups_covered": "not reported (all sub-Saharan Africa, described as developing/low R&D)",
+   "years": "2007-2020",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Fixed effects (Table 3 cols 1-6); two-step system GMM (Table 3 cols 7-12, Table 4)",
+   "identification": "other",
+   "key_controls_fixed_effects": "Lagged dependent variable, GCF, population growth, corruption, financial institution efficiency, education (varying by column); year FE. Internal instruments only."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth rate; technology-intensive import share (system GMM, full controls col 12)",
+    "direction": "positive",
+    "estimate": "0.224* (col 12); other GMM columns 0.31*** to 0.782**",
+    "uncertainty": "se 0.12 (col 12); se 0.087 to 0.321 across cols 7-12",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.20, Import_comtrade row, cols 7-12: '.31*** .577** .782** .454*** .639*** .224*'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth rate; technology-intensive import share (fixed effects)",
+    "direction": "positive",
+    "estimate": "0.229*** (col 1) to 0.129* (col 6)",
+    "uncertainty": "se 0.084 to 0.066",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.20, Import_comtrade row cols 1-6"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth rate; UNCTAD Frontier Tech Readiness Index (system GMM)",
+    "direction": "positive",
+    "estimate": "0.394*** (points of annual growth per index point, 0-100 scale)",
+    "uncertainty": "se 0.121",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.21, col 1 'Front_technology index .394*** (.121)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth rate; ICT index (system GMM)",
+    "direction": "positive",
+    "estimate": "0.434**",
+    "uncertainty": "se 0.164",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.21, col 3 'ICT index .434** (.164)'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth rate; R&D index (system GMM)",
+    "direction": "positive",
+    "estimate": "0.15**",
+    "uncertainty": "se 0.067",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.21, col 5"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth rate; Skills index (system GMM)",
+    "direction": "positive",
+    "estimate": "0.273***",
+    "uncertainty": "se 0.086",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.21, col 6"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth rate; Industrial activities index (system GMM)",
+    "direction": "negative",
+    "estimate": "-0.254**",
+    "uncertainty": "se 0.096",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.21, col 4"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita growth rate; Access to finance index (system GMM)",
+    "direction": "null",
+    "estimate": "0.085",
+    "uncertainty": "se 0.171",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.21, col 2"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "18 (6 FE + 6 GMM in Table 3, 6 GMM in Table 4)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('impact of ... on economic growth'); only internal GMM lags as instruments, instrument counts of 26-39 with 34-42 countries, Hansen p-values high (0.13-0.78) which is a classic instrument proliferation symptom; no external instrument.",
+    "evidence": "Section 4.1 p.13-14; Table 3 p.20 Instruments and Hansen rows; Table 4 p.21"
+   },
+   "exposure_measurement": {
+    "rating": "critical",
+    "why": "Paper states AI could not be measured. Main exposure is high-tech import share, used as a proxy for skilled labour growth and also for technology engagement; Frontier Tech Index is a generic readiness index. Neither captures AI adoption.",
+    "evidence": "p.24 'direct impact of AI-technology could not be assessed'; Section 4.2 p.14-15"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "48 SSA countries listed but samples are 34-42 countries and 320-434 observations depending on column; 2007-2020 includes crisis years (min growth -36.78); reasons for missing countries not given.",
+    "evidence": "Table A1 p.28; Table 2 p.17; Tables 3-4"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita growth from WDI, standard.",
+    "evidence": "Section 4.2 p.14"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Each technology proxy enters one at a time in separate models; control sets and instrument counts change across columns; coefficients on the import variable vary 0.22 to 0.78 across GMM columns; Table 1 describes Financial inst. efficiency as 'Total natural resources rents (% of GDP)', a definition error.",
+    "evidence": "Table 3 p.20; Table 1 p.16"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Alternative columns are all reported, but ICT index has a positive significant coefficient in Table 4 while its pairwise correlation with growth is -0.21 (Table A2); the text calls Frontier Tech Index significant despite correlation -0.11; no discussion. Table 4 controls not shown.",
+    "evidence": "Table 4 p.21 'Controls YES'; Table A2 p.28"
+   }
+  },
+  "overall_risk_of_bias": "critical",
+  "venue_quality_concern": "possible (conference paper, 2024 AEA/ASSA AFEA session; headline AI claims not supported by an AI measure; internal inconsistencies such as variable definitions and 'Given Equation (10)' reference)",
+  "notes": "Text appears complete (28 pages incl. appendix), not a truncated preview. Abstract and conclusion draw AI conclusions although the paper admits AI was not measured; the import share is interpreted as a skilled-labour proxy, which is an untested assumption. Table 3 'Import' wording in text: 'positive across all models'. Population growth mean 2.38 and some text items (e.g. 'your study finds', 'Need not restate it') look like unedited drafting. Table 3 col 12 education coefficient -0.076***. No text attempting to instruct the reader was found. ICT index (Table 4 col 3) is a generic ICT exposure and is the main basis for ICT-eligibility if the AI proxies are judged not to count.",
+  "quote_check": {
+   "verified": 2,
+   "checked": 4
+  },
+  "quote_flag": "needs human check",
+  "stream_first_pass": "AI",
+  "second_pass": {
+   "results": {
+    "confirmed": 8
+   },
+   "heterogeneity": {},
+   "eligibility_ok": true,
+   "eligibility_note": "Borderline, eligible on the ICT index only. The paper never measures AI ('direct impact of AI-technology could not be assessed because of data limitations', p.23-24), so the AI stream label is not met and the study should be coded as ICT-in-general (non-AI rule, at least 10 economies: 34-42 SSA countries, passes). The exposure criterion is met only by the generic ICT index (Table 1: 'availability of ICT infrastructure and users'; Table 4 col 3, result 4). It is NOT met by the S&T import share (Table 3; the paper itself calls it a proxy for skilled-labour growth/technology engagement, not ICT, mobile, internet or AI) nor by the Frontier Tech Readiness Index (generic readiness to adopt leading technologies, not AI or ICT as measured); results 1-3 should not be pooled as AI/ICT exposure. Results 5-8 (R&D, skills, industrial activity, finance indices) are other indices, not ICT/AI exposures. Quantitative own estimation (FE and two-step system GMM) and outcome family 1 (GDP per capita growth, output) hold. No financial inclusion/health (family 5) or carbon/energy (family 6) outcome is estimated; the Financial access index is an exposure-side regressor, not an outcome.",
+   "risk_of_bias_overall_opinion": "too_harsh",
+   "sample_corrections": {
+    "n_economies": "Table A1 is titled '48 countries' but lists only 42 names (21 per column); text says 'analyzing data from 48 sub-Saharan African countries' (p.3). Estimation samples: 37-42 countries (Table 3), 34-35 (Table 4); observations 320-434 (Table 3), 380-391 (Table 4).",
+    "income_groups_covered": "Not reported by the paper (confirmed). Country list mixes low-income states with higher-income ones (e.g., Mauritius, Seychelles, South Africa, Botswana, Gabon), so 'all low/developing' is the record's gloss, not a stated fact.",
+    "years": "2007-2020 confirmed (Table 2 note: 'Data is from 2007 to 2020')."
+   },
+   "corrections": [],
+   "problems": "(1) Stream label 'AI' is not supported: AI is never measured; code as ICT (generic ICT index) and treat results 1-3 and 5-8 as non-eligible exposures. (2) Table A1 lists 42 countries, not 48 as the title and introduction state; the record repeats '48 listed' without noting this. (3) The record's claim that the paper links the Frontier index to AI is supported only as 'proxy variables of AI-technology absorptive capacity and readiness' (p.15), an assertion, not a validated link. (4) Table 1 gives no source for the ICT index. Other record details (Table 3/4 values, Hansen/instrument counts, Table 1 mislabel, A2 correlations, drafting artefacts such as 'Need not restate it' and 'your study finds') check out against the text. No instruction-like text aimed at the reader found."
+  }
+ },
+ {
+  "idx": "9402",
+  "title": "Digital transformation, development and productivity in developing countries: is artificial intelligence a curse or a blessing?",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative cross-section regression of 25 developing countries; exposure is a composite digital index (general ICT/digital capability, not AI) and outcomes are labour productivity, GNI per capita and employment. Meets the non-AI sample threshold (>=10 economies).",
+  "stream": "H",
+  "technology": [
+   "ICT in general (composite digital evolution index)"
+  ],
+  "exposure_measure": "Digital Evolution Index (DEI, Tufts/Mastercard 'Digital Planet' 2017; variable dei, range 1.51-2.91), a composite of supply conditions, demand conditions, institutional environment and innovation/change (>100 indicators). The exposure variable is dei. It is NOT a measure of AI adoption or capability; AI appears only in the framing, literature review and policy discussion.",
+  "sample": {
+   "n_economies": "25",
+   "economies_or_groups": "Developing countries: Algeria, Bolivia, Brazil, China, Chile, Colombia, Cameroon, Bangladesh, Malaysia, Saudi Arabia, Turkey, Jordan, Thailand, South Africa, Indonesia, Mexico, Vietnam, Peru, Morocco, Kenya, India, Egypt, Nigeria, Pakistan, Philippines",
+   "income_groups_covered": "mixed (low to high-income per Saudi Arabia/Chile; classified by the author as developing; income groups not reported)",
+   "years": "2017 (cross-section; DEI 2017)",
+   "unit": "other (country cross-section)"
+  },
+  "design": {
+   "estimator": "Robust OLS and feasible GLS (FGLS) on a single cross-section, reported side by side",
+   "identification": "none",
+   "key_controls_fixed_effects": "Human capital index, investment (GFCF/GDP), log population (eq 2); labour cost, log real GDP, log population (eq 3-4). No fixed effects; no instruments."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "Labour productivity (real GDP per employee)",
+    "direction": "positive",
+    "estimate": "FGLS DEI coef 18990.47 (OLS 19032.87), level units of the productivity variable per one DEI point; no standardisation",
+    "uncertainty": "FGLS p=0.000***; OLS p=0.001***",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, Equation (1), p.251: 'Digital Evolution Index (DEI) 19032.87 0.001*** 18990.47 0.000***'"
+   },
+   {
+    "family": 1,
+    "indicator": "Log per capita GNI (economic development)",
+    "direction": "positive",
+    "estimate": "FGLS DEI coef 1.450012 (OLS 1.319593) on log GNI per capita",
+    "uncertainty": "FGLS p=0.001***; OLS p=0.002***",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, Equation (2), p.251: 'DEI 1.319593 0.002*** 1.450012 0.001***'"
+   },
+   {
+    "family": 3,
+    "indicator": "Employment rate (employed share of population, total)",
+    "direction": "positive",
+    "estimate": "FGLS DEI coef 28.26779 (OLS 10.50348, not significant; printed signs may be lost in text conversion)",
+    "uncertainty": "FGLS p=0.001***; OLS p=0.341",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, Equation (3), p.251: 'Digital Evolution Index (DEI) 10.50348 0.341 28.26779 0.001***'"
+   },
+   {
+    "family": 3,
+    "indicator": "Female employment rate",
+    "direction": "positive",
+    "estimate": "FGLS Wdei 23.74237",
+    "uncertainty": "robust SE 9.989596, t=2.38, p=0.027",
+    "horizon": "contemporaneous",
+    "evidence": "Appendix Table A1, p.256: 'Wdei 23.74237 9.989596 2.38 0.027'"
+   },
+   {
+    "family": 3,
+    "indicator": "Male employment rate",
+    "direction": "null",
+    "estimate": "FGLS Wdei 1.763946",
+    "uncertainty": "robust SE 6.764366, t=0.26, p=0.797",
+    "horizon": "contemporaneous",
+    "evidence": "Appendix Table A1, p.256: 'Wdei 1.763946 6.764366 0.26 0.797'"
+   },
+   {
+    "family": 3,
+    "indicator": "Vulnerable employment (total, male, female)",
+    "direction": "null",
+    "estimate": "Total: OLS 9.435915, FGLS 5.400603; male wdei 0.5598; female wdei 7.09464",
+    "uncertainty": "Total p=0.507 (OLS), 0.623 (FGLS); male p=0.931; female p=0.479",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 Eq (4) p.251; Table A2 p.256"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Gender: DEI is positively and significantly related to female employment but not to male employment (FGLS).",
+    "threshold_value": "none",
+    "evidence": "Appendix Table A1, p.256; text p.251: 'this result held true for female employment, while it is not significant for male employment'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 6-8 (four equations, each by OLS and FGLS, plus gender-split appendix regressions)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Single cross-section of a composite index regressed on levels of income and productivity with few controls; no instrument or lag; reverse causality (richer countries score higher on digital indices) not addressed, yet policy conclusions are causal-sounding ('digital transformation increases productivity').",
+    "evidence": "Section 4.2-4.3, pp.248-252; Table 2"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "DEI is a broad composite that includes institutional environment, innovation and demand; it overlaps conceptually with income and institutions and does not measure AI although the paper frames its findings as about AI.",
+    "evidence": "Section 3, p.244; Table 1 definition of dei; conclusion p.253"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "25 countries chosen by availability and to span the 'Digital Planet' zones; one year only (2017); selection of developing countries by the author, no income-group split; very small N.",
+    "evidence": "Section 4 p.244; Section 4.1 p.247; Note 1 p.254"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Labour productivity as real GDP per employee and GNI per capita from WDI are standard, but the employment-rate series mixes years/modelled ILO data and labour cost uses 'most recent figure'.",
+    "evidence": "Table 1, p.250"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "The author chose DEI over DAI/EDI partly because of better R-squared in scatterplots; the FGLS procedure (weights added as an explanatory variable) is non-standard; very small N relative to controls; specifications differ across equations.",
+    "evidence": "p.247 ('better fit of the data (in terms of the higher R squared)'); Table 2 note, p.251"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All four equations are reported, but only DEI is estimated in the regressions; the two rejected indices (DAI, EDI) were not used in the regressions, and no robustness checks are given.",
+    "evidence": "Section 4.2-4.3, pp.248-252"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Title and conclusions emphasise AI, but the only exposure variable estimated is the DEI (general digital composite); I therefore coded stream H, not AI. Table 2 as converted shows no minus signs (e.g. 'Constant 26707.24' in eq 1, 'Log Population 0.0117252'); signs of control and constant coefficients may be lost in conversion, so only DEI signs inferred from the authors' text (positive for productivity, GNI per capita, employment). Table 2 note says '*,** and *** indicates 90, 95 and 99%' while 'Weights' row shows 0.031*** and 0.085**, inconsistent with the stated scheme. Vulnerable-employment equations include 'Vulnerable employment' among controls in the text description although absent from the equation. Text contains no instructions aimed at a reader/extractor. Descriptive section (Figs 1-3) shows bivariate R-squared 0.22-0.57 for GNI/productivity and about 0.003-0.013 for employment.",
+  "quote_check": {
+   "verified": 7,
+   "checked": 7
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Exposure criterion met as ICT in general: the only estimated exposure is the Digital Evolution Index (composite of digital supply, demand, institutions, innovation; text: 'DEI will be used as a proxy of digital transformation'). It is not an AI measure; AI appears only in title, abstract framing and policy discussion, so stream H (general ICT/digital), not AI, is right and the 3-economy AI rule does not apply. 25 economies >= 10; own OLS/FGLS estimation; outcomes labour productivity, GNI per capita and employment qualify. Caveat: eligibility rests on a broad digital composite that also loads on institutions and innovation.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "25 (confirmed; Note 1 lists 25 names)",
+    "years": "2017 for DEI (confirmed); reference year of the WDI outcome and control variables is not stated in the text",
+    "income_groups_covered": "mixed developing economies (confirmed; no income-group split reported)",
+    "other": "Record says DEI has >100 indicators; text says '170 indicator'. Table 2 prints no N or R-squared; N=25 comes from Note 1 and Figure 4. Country name printed as 'Cameron' (Cameroon)."
+   },
+   "corrections": [],
+   "problems": "No invented numbers or paper mix-ups found. Minor: record says >100 indicators vs '170 indicator' in text; Table 2 reports no N/R-squared (N=25 inferred); signs are lost in the converted table so directions rely on the authors' text; Table 2 note's star scheme ('90, 95 and 99%') is inconsistent with the Weights row stars (as the record noted); OLS is not significant for employment, so the positive employment finding holds only under FGLS."
+  }
+ },
+ {
+  "idx": "9403",
+  "title": "Artificial Intelligence, Mobile Telephony, and Technology Leapfrogging in Developing Economies: Africa versus Non-African Developing Countries",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E4",
+  "decision_rationale": "All coefficients in Tables 2-7 are estimated on a calibrated synthetic (simulated) panel, not observed data; the paper is a theoretical framework and methodological demonstration with no real empirical estimation.",
+  "stream": "both",
+  "technology": [
+   "mobile telephony",
+   "artificial intelligence (national AI strategy adoption)"
+  ],
+  "exposure_measure": "Planned: binary mobile threshold (>50 subscriptions per 100) and binary national AI strategy adoption; applied only to simulated data",
+  "sample": {
+   "n_economies": "24 (planned, 12 African and 12 non-African developing); synthetic panel",
+   "economies_or_groups": "Africa vs matched non-Africa developing countries",
+   "income_groups_covered": "not reported",
+   "years": "2000-2025 (synthetic)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Two-way FE difference-in-differences (illustrative on synthetic data)",
+   "identification": "event timing",
+   "key_controls_fixed_effects": "country and year FE; capital formation, schooling, trade, electricity, urbanization"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "possible (working-paper style preprint with synthetic results, no real data)",
+  "notes": "Abstract and Section 5.1 (p. 11-12) state: 'every coefficient, standard error, and diagnostic reported in Tables 2-7 is estimated on a calibrated synthetic panel... not drawn from observed data... should not be cited'. Synthetic estimates (e.g. Table 4 col 1 Mobile 0.0062, Africa x Mobile 0.0125***) must not be used as evidence. Section 8 contains no real results.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {},
+   "heterogeneity": {},
+   "eligibility_ok": false,
+   "eligibility_note": "Exclusion E4 is correct. Section 5.1 says real data collection (WDI, ITU, UNDP, OECD, WGI) 'has not yet been completed' and that every coefficient in Tables 2-7 comes from a 'calibrated synthetic panel: a simulated country-year dataset'. Section 9 ('Data Architecture') is future tense, and Section 8 says the real data will be assembled later. The paper does no estimation on observed World Bank or other real data, so it fails the own-empirical-estimation criterion.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "24 planned; the estimated panel is simulated (N = 624 country-years)",
+    "years": "2000-2025 simulated, no observed data"
+   },
+   "corrections": [],
+   "problems": "none; record matches the text. Verbatim: 'every coefficient, standard error, and diagnostic reported in Tables 2-7 is estimated on a calibrated synthetic panel' (Sec 5.1, p. 11)."
+  }
+ },
+ {
+  "idx": "9404",
+  "title": "Artificial intelligence (AI)-poverty-economic growth nexus in selected BRICS-Plus countries: does the moderating role of governance matter?",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study (DOLS, Dumitrescu-Hurlin causality, CS-ARDL) of AI capital investment on GDP per capita and poverty headcount in five economies (Brazil, Russia, India, China, South Africa), which meets the 3-economy minimum for AI. Outcomes fall in family 1 (GDP per capita) and family 4 (poverty).",
+  "stream": "AI",
+  "technology": [
+   "artificial intelligence (capital investment in AI)"
+  ],
+  "exposure_measure": "LAI = log of capital investments in AI (OECD database); Table 1 p. 4731",
+  "sample": {
+   "n_economies": "5",
+   "economies_or_groups": "Brazil, Russia, India, China, South Africa (labelled 'BRICS-Plus' but only these five are analysed)",
+   "income_groups_covered": "not reported",
+   "years": "2012-2023",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel CS-ARDL (Chudik-Pesaran) as main model; DOLS for long run; Dumitrescu-Hurlin causality; FMOLS mentioned but not tabulated",
+   "identification": "none",
+   "key_controls_fixed_effects": "Growth model: FDI, gross fixed capital formation, primary school enrolment, governance (overall, six WGI indicators, PCA dimensions) and AI x governance interactions. Poverty model: Gini, primary enrolment, governance and interactions. No fixed effects stated."
+  },
+  "results": [
+   {
+    "family": 1,
+    "indicator": "GDP per capita (log, constant 2015 US$), effect of log AI capital investment, DOLS, model without interaction",
+    "direction": "positive",
+    "estimate": "0.016 (0.016% increase in GDP per capita for a 1% increase in AI investment, per text)",
+    "uncertainty": "SE (0.007), ** (p<0.05)",
+    "horizon": "long",
+    "evidence": "Table 11 Panel A col 1, p. 4744; p. 4738: 'a 1% increase in capital investments in AI is associated with a 0.016% increase in GDP per capita'"
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita (log), effect of log AI investment, CS-ARDL, model 1 (no interaction), short run and long run",
+    "direction": "positive",
+    "estimate": "short run 0.002; long run 0.002",
+    "uncertainty": "short run SE (0.000), ***; long run SE (0.001), ***",
+    "horizon": "contemporaneous",
+    "evidence": "Table 13 col 1 rows dLAI and LR_LAI, p. 4750-4751: '0.002***'. Text and Fig. 7 describe AI as positive and significant in short and long run."
+   },
+   {
+    "family": 1,
+    "indicator": "GDP per capita (log), AI with overall governance interaction, CS-ARDL model 2",
+    "direction": "mixed",
+    "estimate": "dLAI -0.015; LR_LAI -0.014 (both insignificant); interaction LR_LAI x OGV -0.018***",
+    "uncertainty": "SE (0.027) for AI; (0.006) for interaction",
+    "horizon": "long",
+    "evidence": "Table 13 col 2, p. 4750-4751. With the interaction included AI alone is not significant; interaction negative."
+   },
+   {
+    "family": 4,
+    "indicator": "Poverty headcount ratio at societal poverty line (log), effect of log AI investment, DOLS",
+    "direction": "negative",
+    "estimate": "-0.016***",
+    "uncertainty": "SE (0.005)",
+    "horizon": "long",
+    "evidence": "Table 11 Panel B col 1, p. 4745-4746; text p. 4748: 'AI significantly reduces poverty (-0.016, p<0.01)'"
+   },
+   {
+    "family": 4,
+    "indicator": "Poverty headcount ratio (log), effect of log AI investment, CS-ARDL model 1",
+    "direction": "positive",
+    "estimate": "short run 0.019; long run 0.018 (AI raises poverty)",
+    "uncertainty": "short run SE (0.006), ***; long run SE (0.006), ***",
+    "horizon": "long",
+    "evidence": "Table 14 col 1, p. 4753-4754; text p. 4756: 'AI continues to modestly worsen poverty (0.018)'"
+   },
+   {
+    "family": 4,
+    "indicator": "Poverty headcount ratio (log), AI in interaction models 2-11, CS-ARDL",
+    "direction": "mixed",
+    "estimate": "mostly insignificant; negative significant in cols 6, 7, 9 (e.g. LR_LAI -0.039 col 6), positive significant in col 8 (0.017)",
+    "uncertainty": "SE e.g. (0.021) col 6",
+    "horizon": "long",
+    "evidence": "Table 14 LR_LAI row, p. 4754"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "institutions",
+    "finding": "Governance moderates AI effects. Growth model: AI x overall, political, economic governance, corruption control, government effectiveness, regulatory quality, rule of law interactions negative; AI x institutional governance, political stability and voice/accountability positive (growth). Poverty model: most interactions negative (governance mitigates AI's poverty-raising effect), but AI x political governance and AI x economic governance positive in the CS-ARDL.",
+    "threshold_value": "none",
+    "evidence": "Tables 13-14, Figs. 7-8, pp. 4750-4759: 'AI x governance quality (- & significant)'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 44 (11 CS-ARDL growth, 11 CS-ARDL poverty, 11 DOLS growth, 11 DOLS poverty, each with short and long run in CS-ARDL)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Author's own Dumitrescu-Hurlin test finds causality running from GDP to AI, yet the paper uses causal language and treats AI as driving growth. CS-ARDL has no external instrument. Poverty and growth results for AI have opposite sign between DOLS and CS-ARDL.",
+    "evidence": "Table 12 p. 4748: 'LGDPPC -> LAI'; DOLS Table 11 vs CS-ARDL Table 14"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Log of capital investment in AI from OECD database is a reasonable proxy for AI investment but is not further described (source series, currency, coverage of the five countries); Table 2 note cites 'ITU data' inconsistently.",
+    "evidence": "Table 1 p. 4731; Table 2 note p. 4740"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only five countries over 12 years (60 country-years) and label 'BRICS-Plus' without additional countries. Tables report 220-240 observations, which is impossible for a 5 x 12 panel without explanation. Missing data interpolated and extrapolated.",
+    "evidence": "Section 3.3 p. 4737; Table 3 'Obs 240'; Table 1 note p. 4731"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "WDI GDP per capita is standard. Poverty headcount at the societal poverty line is sparse for these countries in annual data, so interpolation likely matters.",
+    "evidence": "Table 1 p. 4731"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Many alternative governance moderators (11 models per outcome), two estimators with conflicting signs, I(1) variables, T=12, a lag length selection with conflicting criteria, and implausible CS-ARDL error correction terms below -1 (e.g. -1.058, -1.305), indicating possible misspecification.",
+    "evidence": "Tables 13-14 ECT row, pp. 4750-4755; Table 8 p. 4744"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "FMOLS and some equations announced but not shown; text and tables diverge (DOLS says AI reduces poverty, CS-ARDL says it raises it, abstract and conclusions emphasise the latter and cite the DOLS as 'opposite effect'). Conclusions highlight selected interactions.",
+    "evidence": "Section 4.2 p. 4748 vs. p. 4756; Conclusion p. 4759"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Several internal inconsistencies for a human check: (1) 240 observations for a 5-country, 12-year panel; (2) text on PCA says first component explains '3.31%, 1.16%...' while Table 2 shows 55.12% (eigenvalue 3.31); (3) Table 11 footnote says 'probability values in bracket' while the CS-ARDL tables say standard errors; (4) significance-star footnotes in Tables 6, 7, 10 and 13 are mislabelled (e.g. '*,**,***... 1%, 5%, 10%'); (5) Table 11 LAI x OGV growth DOLS coefficient is -0.001 but Table 13 reports -0.018; (6) Table 14 col 2 short-run interaction '-0.001*** (0.006)' has a standard error larger than the coefficient yet starred; (7) some SEs printed with coefficient but with different magnitudes (e.g. LGFCF -0.157*** with SE 0.179); (8) Table 13 col 1 ECT reported as -1.058 (beyond -1) and text says R-squared above 50%. The text says RQE and RLW CS-ARDL growth coefficients are identical (0.162/0.154), suggesting a copy error. No instructions aimed at the extractor were found in the text. Income group results not reported. Governance moderation is the main focus. Short- and long-run CS-ARDL coefficients are near-identical.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 4
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 6
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Eligible. Quantitative panel study with own estimation (DOLS, Dumitrescu-Hurlin, CS-ARDL). Exposure is AI, measured as LAI = log of capital investments in AI (OECD database; Table 1, p. 4731). The sample is five economies (Brazil, Russia, India, China, South Africa), labelled 'BRICS-Plus' but with no additional countries, which meets the 3-economy minimum for AI. Outcomes are GDP per capita (family 1) and poverty headcount (family 4). Caveat: only five economies and about 60 country-years.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "5 (confirmed: 'the 5-BRICS countries, namely Brazil, Russia, India, China, and South Africa', Sect. 3.3, p. 4737)",
+    "years": "2012-2023 (confirmed)",
+    "income_groups_covered": "not reported (confirmed; no income-group classification or comparison in text)",
+    "observations_note": "Tables report 220-240 observations (Table 3: 'Obs 240'; Tables 13-14: 226-235) for a 5 x 12 = 60 country-year panel; text does not explain this. Record already flags it."
+   },
+   "corrections": [],
+   "problems": "No invented or mixed-up content found; every extracted number checked against Tables 11, 13 and 14 and the text. Additional text-versus-table inconsistencies: (a) the conclusion says AI-to-poverty causality (Table 12) while DOLS says AI reduces poverty and CS-ARDL says it raises poverty; (b) the text says 'R-squared values for all the models ... exceed 50%' which holds (min 0.58, 0.59); (c) Table 13 col 3 ECT is -0.192 while other columns are below -1, and the text lists it; (d) the poverty text for DOLS describes positive INSTG/ECOG coefficients as 'positively influence poverty reduction', which misreads the sign; (e) Table 14 col 8 ΔLAI x GEF '-0.039* (0.000)' has an implausible SE. Record's note that Table 2 PCA text says '3.31%, 1.16%...' (p. 4738 text) versus Table 2 proportion 0.5512 is correct; the 'ITU data' note is in Table 2's source line."
   }
  }
 ]

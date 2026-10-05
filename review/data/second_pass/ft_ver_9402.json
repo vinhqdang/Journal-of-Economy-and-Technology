@@ -1,0 +1,28 @@
+[
+ {"idx":"9402","eligibility_ok":true,
+  "eligibility_note":"Exposure criterion met as ICT in general: the only estimated exposure is the Digital Evolution Index (composite of digital supply, demand, institutions, innovation; text: 'DEI will be used as a proxy of digital transformation'). It is not an AI measure; AI appears only in title, abstract framing and policy discussion, so stream H (general ICT/digital), not AI, is right and the 3-economy AI rule does not apply. 25 economies >= 10; own OLS/FGLS estimation; outcomes labour productivity, GNI per capita and employment qualify. Caveat: eligibility rests on a broad digital composite that also loads on institutions and innovation.",
+  "sample_corrections":{"n_economies":"25 (confirmed; Note 1 lists 25 names)","years":"2017 for DEI (confirmed); reference year of the WDI outcome and control variables is not stated in the text","income_groups_covered":"mixed developing economies (confirmed; no income-group split reported)","other":"Record says DEI has >100 indicators; text says '170 indicator'. Table 2 prints no N or R-squared; N=25 comes from Note 1 and Figure 4. Country name printed as 'Cameron' (Cameroon)."},
+  "results":[
+   {"n":1,"verdict":"confirmed","correction":"","quote":"Digital Evolution Index (DEI) 19032.87 0.001*** 18990.47 0.000***"},
+   {"n":2,"verdict":"confirmed","correction":"Coefficients and p-values match Table 2 Eq (2); minus signs are not visible in the converted table, positive direction rests on text ('result is positive and significant').","quote":"DEI 1.319593 0.002*** 1.450012 0.001***"},
+   {"n":3,"verdict":"confirmed","correction":"Values match Table 2 Eq (3); sign not printed in converted table, positive direction from text ('positive contribution of digital transformation toward employment rate'). Only FGLS is significant; OLS p=0.341.","quote":"Digital Evolution Index (DEI) 10.50348 0.341 28.26779 0.001***"},
+   {"n":4,"verdict":"confirmed","correction":"Coef, SE, t, p match Table A1 (weighted female employment); direction positive per text.","quote":"Wdei 23.74237 9.989596 2.38 0.027"},
+   {"n":5,"verdict":"confirmed","correction":"","quote":"Wdei 1.763946 6.764366 0.26 0.797"},
+   {"n":6,"verdict":"confirmed","correction":"Eq (4) total: OLS 9.435915 p=0.507, FGLS 5.400603 p=0.623; Table A2 male wdei 0.5598 p=0.931, female wdei 7.09464 p=0.479. All insignificant; signs not visible.","quote":"DEI 9.435915 0.507 5.400603 0.623"}
+  ],
+  "heterogeneity":[
+   {"n":1,"verdict":"confirmed","correction":"Supported (female significant, male not, FGLS). Note the paper compares significance levels only and does not test the difference between male and female coefficients.","quote":"this result held true for female employment, while it is not significant for male employment"}
+  ],
+  "income_group_results":"none","income_group_note":"No income-group split or interaction is reported; the record's 'not reported' entries are right.",
+  "risk_of_bias":{
+   "overall":"agree",
+   "confounding_reverse_causation":"agree: single 2017 cross-section, 3-4 controls, no instrument or lag, richer countries score higher on digital indices, yet text says 'digital transformation increases productivity'.",
+   "exposure_measurement":"too_harsh: a composite digital index, while overlapping with institutions and income, does capture general ICT/digital evolution, and the AI mismatch is a framing issue, not a measurement failure for the ICT-in-general claim; moderate fits better.",
+   "selection_of_countries_years":"agree: 25 author-chosen developing countries spanning Digital Planet zones, one year, N too small for the controls used.",
+   "outcome_measurement":"agree: WDI productivity and GNI per capita are standard; ILO modelled employment and 'most recent figure' labour cost add noise.",
+   "specification":"agree: non-standard FGLS (weights added as a regressor), N=25 with up to 4 regressors, no robustness checks, equations with differing controls; index chosen partly for higher R-squared.",
+   "selective_reporting":"agree: all four equations and gender splits reported, but no robustness or alternative indices in regressions; moderate is fair.",
+   "why":"Serious overall is right because causal-sounding conclusions rest on a tiny cross-section with no strategy for reverse causation; the exposure domain alone could be moderate."},
+ "causal_language":"mixed","reverse_causality_addressed":"no",
+ "problems":"No invented numbers or paper mix-ups found. Minor: record says >100 indicators vs '170 indicator' in text; Table 2 reports no N/R-squared (N=25 inferred); signs are lost in the converted table so directions rely on the authors' text; Table 2 note's star scheme ('90, 95 and 99%') is inconsistent with the Weights row stars (as the record noted); OLS is not significant for employment, so the positive employment finding holds only under FGLS."}
+]

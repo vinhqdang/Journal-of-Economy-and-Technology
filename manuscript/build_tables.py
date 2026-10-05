@@ -59,12 +59,16 @@ open(os.path.join(HERE, "app_families.tex"), "w").write("\n".join(L))
 d = pd.read_csv(os.path.join(ROOT, "review/data/mra_effect_sizes.csv"), dtype={"idx": str})
 d["k"] = d["idx"].astype(int)
 d = d.sort_values(["k", "estimate_id"])
-L = [r"{\scriptsize", r"\begin{longtable}{@{}l l l r r r r@{}}",
-     r"\caption{Estimates used in the meta-regression (" + f"{len(d)} estimates from {d['idx'].nunique()} studies" + r"): partial correlation (PCC) and its standard error, computed from the printed coefficient and uncertainty with degrees of freedom equal to observations minus 10.}\label{tab:mrainputs}\\",
-     r"\toprule Estimate & Role & Technology & Obs. & $t$ & PCC & SE \\ \midrule \endfirsthead",
-     r"\toprule Estimate & Role & Technology & Obs. & $t$ & PCC & SE \\ \midrule \endhead", r"\bottomrule \endfoot"]
-for _, r in d.iterrows():
-    L.append(f"{r['estimate_id']} & {esc(r['role'])} & {esc(str(r['technology'])[:22])} & {int(r['n']) if pd.notna(r['n']) else 'n.r.'} & {r['t']:.2f} & {r['pcc']:.3f} & {r['se']:.3f}" + r" \\")
+rows = [f"{r['estimate_id']} & {esc(r['role'])} & {int(r['n']) if pd.notna(r['n']) else 'n.r.'} & {r['pcc']:.3f} & {r['se']:.3f}" for _, r in d.iterrows()]
+half = (len(rows) + 1) // 2
+left, right = rows[:half], rows[half:] + [""] * (half - len(rows[half:]))
+HDR = r"Estimate & Role & Obs. & PCC & SE"
+L = [r"{\scriptsize", r"\begin{longtable}{@{}l l r r r@{\hspace{1.2em}}l l r r r@{}}",
+     r"\caption{Estimates used in the meta-regression (" + f"{len(d)} estimates from {d['idx'].nunique()} studies" + r"): partial correlation (PCC) and its standard error, computed from the printed coefficient and uncertainty with degrees of freedom equal to observations minus 10. The second half of the list continues in the right-hand block; $t$-statistics are in the repository file \texttt{mra\_effect\_sizes.csv}.}\label{tab:mrainputs}\\",
+     r"\toprule " + HDR + " & " + HDR + r" \\ \midrule \endfirsthead",
+     r"\toprule " + HDR + " & " + HDR + r" \\ \midrule \endhead", r"\bottomrule \endfoot"]
+for l, r in zip(left, right):
+    L.append(l + " & " + (r if r else " & & & & ") + r" \\")
 L += [r"\end{longtable}", "}"]
 open(os.path.join(HERE, "app_mra.tex"), "w").write("\n".join(L))
 

@@ -1,0 +1,38 @@
+[
+ {
+  "idx": "9401",
+  "eligibility_ok": true,
+  "eligibility_note": "Borderline, eligible on the ICT index only. The paper never measures AI ('direct impact of AI-technology could not be assessed because of data limitations', p.23-24), so the AI stream label is not met and the study should be coded as ICT-in-general (non-AI rule, at least 10 economies: 34-42 SSA countries, passes). The exposure criterion is met only by the generic ICT index (Table 1: 'availability of ICT infrastructure and users'; Table 4 col 3, result 4). It is NOT met by the S&T import share (Table 3; the paper itself calls it a proxy for skilled-labour growth/technology engagement, not ICT, mobile, internet or AI) nor by the Frontier Tech Readiness Index (generic readiness to adopt leading technologies, not AI or ICT as measured); results 1-3 should not be pooled as AI/ICT exposure. Results 5-8 (R&D, skills, industrial activity, finance indices) are other indices, not ICT/AI exposures. Quantitative own estimation (FE and two-step system GMM) and outcome family 1 (GDP per capita growth, output) hold. No financial inclusion/health (family 5) or carbon/energy (family 6) outcome is estimated; the Financial access index is an exposure-side regressor, not an outcome.",
+  "sample_corrections": {
+   "n_economies": "Table A1 is titled '48 countries' but lists only 42 names (21 per column); text says 'analyzing data from 48 sub-Saharan African countries' (p.3). Estimation samples: 37-42 countries (Table 3), 34-35 (Table 4); observations 320-434 (Table 3), 380-391 (Table 4).",
+   "income_groups_covered": "Not reported by the paper (confirmed). Country list mixes low-income states with higher-income ones (e.g., Mauritius, Seychelles, South Africa, Botswana, Gabon), so 'all low/developing' is the record's gloss, not a stated fact.",
+   "years": "2007-2020 confirmed (Table 2 note: 'Data is from 2007 to 2020')."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "Values match Table 3 cols 7-12 (se .087, .214, .321, .104, .167, .12). Exposure is S&T import share, not ICT/AI: not an eligible exposure.", "quote": "Import_comtrade .31*** .577** .782** .454*** .639*** .224* (Table 3, p.20)"},
+   {"n": 2, "verdict": "confirmed", "correction": "FE cols 1-6: .229***, .226***, .209**, .201**, .16**, .129* with se .084 to .066 as recorded. Not an eligible exposure.", "quote": "Import_comtrade .229*** .226*** .209** .201** .16** .129* (Table 3, p.20)"},
+   {"n": 3, "verdict": "confirmed", "correction": "Estimate and se match Table 4 col 1. Frontier Tech index is generic readiness, not AI or ICT as measured; do not code as AI exposure.", "quote": "Front_technology index .394*** (.121) (Table 4, p.21)"},
+   {"n": 4, "verdict": "confirmed", "correction": "Matches Table 4 col 3 (34 countries, 380 obs, ar2p .078, Hansen p .776, 26 instruments). This is the only result whose exposure meets the ICT-in-general criterion; 'Controls YES' but control set not shown.", "quote": "ICT index .434** (.164) (Table 4, p.21)"},
+   {"n": 5, "verdict": "confirmed", "correction": "Matches Table 4 col 5. R&D index is not an ICT/AI exposure.", "quote": "R&D index .15** (.067) (Table 4, p.21)"},
+   {"n": 6, "verdict": "confirmed", "correction": "Matches Table 4 col 6. Skills index is not an ICT/AI exposure.", "quote": "Skills index .273*** (.086) (Table 4, p.21)"},
+   {"n": 7, "verdict": "confirmed", "correction": "Matches Table 4 col 4. Industrial activity index is not an ICT/AI exposure.", "quote": "Industrial activities index -.254** (.096) (Table 4, p.21)"},
+   {"n": 8, "verdict": "confirmed", "correction": "Matches Table 4 col 2 (35 countries, 391 obs). Null is correct (.085 with se .171). Financial access is not an ICT/AI exposure.", "quote": "Access to finance index .085 (.171) (Table 4, p.21)"}
+  ],
+  "heterogeneity": [],
+  "income_group_results": "none",
+  "income_group_note": "No income-group or other subgroup analysis in the paper; the record's 'not reported' entries are correct. Sample is sub-Saharan Africa only.",
+  "risk_of_bias": {
+   "overall": "too_harsh",
+   "confounding_reverse_causation": "agree: causal wording with only internal GMM lags as instruments, no external instrument; instrument counts (e.g., 37 instruments with 37 countries in Table 3 col 12) make high Hansen p-values uninformative.",
+   "exposure_measurement": "too_harsh: critical is right for the AI headline (no AI measure) but the ICT index that makes the paper eligible does measure ICT generally (though source and construction are blank in Table 1), so serious is the fairer rating for the eligible claim.",
+   "selection_of_countries_years": "agree: moderate; Table A1 lists 42 names under a '48 countries' title, estimation samples shrink to 34-42 with no explanation of missing countries.",
+   "outcome_measurement": "agree: GDP per capita growth from WDI is standard.",
+   "specification": "agree: each index enters alone, control sets and instrument counts change across columns, Table 4 controls not shown, and Table 1 mislabels Financial inst. efficiency as natural resource rents.",
+   "selective_reporting": "agree: all columns appear reported, but the ICT coefficient is positive and significant while its correlation with growth is -0.21 (Table A2) and ar2p is .078, with no discussion.",
+   "why": "Overall is set to serious rather than critical because, once scoped to the ICT index, the exposure is a real if generic ICT measure; the paper still uses causal language without a credible reverse-causality strategy, so the ICT result is not low or moderate. Critical remains appropriate only for the AI claims in abstract and conclusion."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "(1) Stream label 'AI' is not supported: AI is never measured; code as ICT (generic ICT index) and treat results 1-3 and 5-8 as non-eligible exposures. (2) Table A1 lists 42 countries, not 48 as the title and introduction state; the record repeats '48 listed' without noting this. (3) The record's claim that the paper links the Frontier index to AI is supported only as 'proxy variables of AI-technology absorptive capacity and readiness' (p.15), an assertion, not a validated link. (4) Table 1 gives no source for the ICT index. Other record details (Table 3/4 values, Hansen/instrument counts, Table 1 mislabel, A2 correlations, drafting artefacts such as 'Need not restate it' and 'your study finds') check out against the text. No instruction-like text aimed at the reader found."
+ }
+]

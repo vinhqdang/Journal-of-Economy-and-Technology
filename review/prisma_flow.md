@@ -32,14 +32,14 @@ Status: counts for the main search (OpenAlex, Crossref, NBER) are in the first t
 
 | Stage | n | Note |
 |---|---|---|
-| Queries run, first page each (pasted by the author) | 3 queries (G1, G2, G4), 30 results | The other twelve queries (`google_scholar_queries.md`) have not been run |
-| Results already included or already among the 3,612 records | 8 | Including Yin and Choi 2023, which was among the 3,612 but removed by the stage-1 rule |
-| Results not among the 3,612 records | 22 | `data/scholar_g1_page1.csv`, `scholar_g2_page1.csv`, `scholar_g4_page1.csv` |
-| Obtained and read at full text | 15 | 9101 to 9106, 9201 to 9204 and 9301 to 9305; free full texts supplied by the author |
+| Queries run, first page each (pasted by the author) | 4 queries (G1, G2, G4, G7), 40 results | The other eleven queries (`google_scholar_queries.md`) have not been run |
+| Results not among the 3,612 records | 29 | `data/scholar_g1_page1.csv`, `scholar_g2_page1.csv`, `scholar_g4_page1.csv`, `scholar_g7_page1.csv` |
+| Results already among the 3,612 records but removed by the stage-1 rule or never read | 2 | Yin and Choi 2023 (stage-1 rule); Gonzales 2023 (no free full text at the time) |
+| Obtained and read at full text | 20 | 9101 to 9106, 9201 to 9204, 9301 to 9305, 9401 to 9404 and 1580; free full texts supplied by the author |
 | Not obtained (G1) | 3 | Chavula 2013, Torero et al. 2006, Omer and Ghanim 2026 (a preprint; the published version was read) |
-| Included | 13 | 9202 (five countries) and 9301 (a mathematical model without estimation) were excluded at full text; all others verified by the second pass |
+| Included | 17 | 9202 (five countries), 9301 (a mathematical model) and 9403 (simulated panel only) were excluded at full text; study 9401 is kept on its generic ICT index because it never measures AI; all verified by the second pass |
 
-The fifteen read studies are counted in the full-text stage below. The first pages of three queries are not a search: they show that the main search had low recall, and they suggest that the remaining queries would add more.
+The twenty read studies are counted in the full-text stage below. The first pages of four queries are not a search: they show that the main search had low recall, and they suggest that the remaining queries would add more. The author and the reviewer agreed to stop requesting from Google Scholar after G7.
 
 ## Screening method and its limits
 
@@ -51,8 +51,8 @@ The fifteen read studies are counted in the full-text stage below. The first pag
 
 | Stage | n | Note |
 |---|---|---|
-| Full texts read | 127 | 127 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
-| Excluded at full text | 42 | E1 14, E2 5, E3 1, E4 22 |
+| Full texts read | 132 | 132 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
+| Excluded at full text | 43 | E1 14, E2 5, E3 1, E4 23 |
 | Context only (no payoff outcome estimated) | 1 | |
-| **Included, preliminary** | **84** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 38 are flagged for human check |
+| **Included, preliminary** | **88** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 40 are flagged for human check |
 

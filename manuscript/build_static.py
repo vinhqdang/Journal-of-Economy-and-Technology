@@ -47,7 +47,7 @@ S += textwrap.wrap(q, 110) + [r"\end{verbatim}}", "",
       r"\subsection*{Crossref and NBER searches}",
       "Technology terms: internet; broadband; mobile phones; information and communication technology; digital technology; artificial intelligence; generative AI; machine learning; cryptocurrency; bitcoin; technology diffusion; general purpose technology. Context terms: cross-country panel economic growth; developing countries income groups; digital divide; poverty and inequality countries; productivity emerging economies; employment and wages across countries; absorptive capacity human capital; financial inclusion. All pairs (12 by 8 = 96) were run from 1995.", "",
       r"\subsection*{Records by source}",
-      r"\begin{tabular}{@{}lr@{}}\toprule Source & Distinct records\\\midrule OpenAlex & 1,840\\ Crossref & 1,285\\ NBER working papers & 579\\ arXiv & 0 (attempted, not completed)\\ Scopus, Web of Science, EconLit & 0 (not run)\\ Google Scholar (queries G1, G2, G4, first page each) & 30 results, 22 not in the main search\\\bottomrule\end{tabular}"]
+      r"\begin{tabular}{@{}lr@{}}\toprule Source & Distinct records\\\midrule OpenAlex & 1,840\\ Crossref & 1,285\\ NBER working papers & 579\\ arXiv & 0 (attempted, not completed)\\ Scopus, Web of Science, EconLit & 0 (not run)\\ Google Scholar (queries G1, G2, G4, G7, first page each) & 40 results, 29 not in the main search\\\bottomrule\end{tabular}"]
 open(os.path.join(HERE, "app_search.tex"), "w").write("\n".join(S) + "\n")
 
 # ---------------- criteria ----------------

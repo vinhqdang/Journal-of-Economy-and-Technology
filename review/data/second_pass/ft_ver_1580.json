@@ -1,0 +1,87 @@
+[
+ {
+  "idx": "1580",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (OLS, FE, AH, GMM, FE-IV); exposure is AI (patents per million people); 122 economies in main AI models (at least 3 required) with explicit advanced vs less advanced comparison; outcome is real GDP per capita growth (output/productivity).",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Log of AI patents per million people 0.178*** 0.264*** 0.246*** 0.275* (0.067)(0.078)(0.089)(0.152); N 616, n 122 (Table 3)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Log of AI patents 0.223*** 0.367*** 0.354*** 0.299**; SE (0.086)(0.116)(0.096)(0.121); N 299 n 53 (Table 6)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Log of AI patents 0.031 0.087 0.076 0.265; SE (0.073)(0.080)(0.122)(0.208); N 301 n 83 (Table 7)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Log of AI patents 0.222*** 0.668*** 0.535* 0.499*; FE-IV SE (0.256); Endogeneity test 0.605; N 326 n 65 (Table 8)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 4: AI 0.113 0.151 0.142 -0.186 insignificant; Table 5: 0.124 0.207** 0.256** 0.741** (SE 0.085, 0.098, 0.104, 0.371)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "Numbers correct. Direction positive is fair but the AH estimate (0.359, SE 0.490) is insignificant, as the record states; GMM is only 10%. Table 9 GMM uses 121 instruments for n=120 groups (not noted in record).",
+    "quote": "Log of AI patents 0.181*** 0.360*** 0.359 0.426*; SE (0.069)(0.113)(0.490)(0.253); N 2261 n 120 (Table 9)"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "Numbers correct. This is a non-AI comparator (total patents), so it should not be counted as an AI exposure result.",
+    "quote": "Log of total patents 0.172*** 0.131* 0.124* 0.197; SE (0.048)(0.071)(0.069)(0.177); N 1140 n 144 (Table 3)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "corrected",
+    "correction": "Advanced/less-advanced split and USD 10,000 threshold are correct, as are Table 3 interaction (-0.227* GMM only) and Table 8 FE-IV (-0.375***). But 'only ... in Table 8 FE-IV' is incomplete: Table 8 FE interaction is -0.743*** (0.189); Table 9 (short-run) interactions are -0.370**, -0.681**; Table 10 GMM -1.043***. The text itself says interactions are mostly insignificant in the two period tables (4 and 5).",
+    "quote": "effect of AI is strongly and positively significant among advanced economies in columns 1-4 in Table 6, but does not entail any implication ... in Table 7"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "effect of AI on growth is not statistically significant for the period 1970-1994 ... total patents is significant and positive during the same period"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "Correctly recorded as asserted, not tested.",
+    "quote": "This suggests that viable infrastructures and institutions, which may only be available in developed countries, are necessary to leverage AI"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Table 6 (advanced, 0.223-0.367) and Table 7 (less advanced, 0.031-0.265, none significant) match. Only a two-way split at USD 10,000 5-year average GDP per capita is used, defined on contemporaneous income; Table 2 groups (91 + 165 = 256) exceed 217 economies because countries switch groups across periods. Record's note that World Bank groups are not used is right.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "too_harsh",
+   "exposure_measurement": "agree",
+   "selection_of_countries_years": "agree",
+   "outcome_measurement": "agree",
+   "specification": "agree",
+   "selective_reporting": "agree",
+   "why": "Overall serious is defensible because patents measure invention not AI use and causal wording ('AI-related innovation drives long-run economic growth') outruns the design. The confounding domain is a little harsh: the paper does address reverse causality (internal-lag GMM, FE-IV with cited non-patent literature, Sargan-Hansen and endogeneity tests), so moderate is closer, though exclusion is doubtful and lags were tuned to pass tests (footnote 42). Record's 'close to n=122' for 65 instruments is overstated (it is close for the advanced sample, 42 vs 53, footnote 47); the real excess is Table 9 GMM with 121 instruments for n=120. Exposure: serious fits (text search patents, footnotes 8, 30, 46). Selective reporting: all estimators and insignificant results are shown; moderate is acceptable."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers or mixed-up papers found; all quoted coefficients, SEs, N and n match Tables 3-9 and the 'Table 10 AI GMM 0.769**' claim matches. Issues: (1) heterogeneity 1 understates where the advanced x AI interaction is significant (Table 8 FE, Table 9, Table 10); (2) '65 instruments close to n=122' overstated, while Table 9 GMM (121 instruments, n=120) is the real proliferation problem; (3) result 7 is a non-AI comparator; (4) sample_corrections none needed (122 / 217 / 144 economies, 1970-2019 confirmed). Table 10 is only referenced in footnote 41, so 'not discussed' is correct."
+ }
+]

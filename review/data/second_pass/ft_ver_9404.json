@@ -1,0 +1,39 @@
+[
+ {
+  "idx": "9404",
+  "eligibility_ok": true,
+  "eligibility_note": "Eligible. Quantitative panel study with own estimation (DOLS, Dumitrescu-Hurlin, CS-ARDL). Exposure is AI, measured as LAI = log of capital investments in AI (OECD database; Table 1, p. 4731). The sample is five economies (Brazil, Russia, India, China, South Africa), labelled 'BRICS-Plus' but with no additional countries, which meets the 3-economy minimum for AI. Outcomes are GDP per capita (family 1) and poverty headcount (family 4). Caveat: only five economies and about 60 country-years.",
+  "sample_corrections": {
+   "n_economies": "5 (confirmed: 'the 5-BRICS countries, namely Brazil, Russia, India, China, and South Africa', Sect. 3.3, p. 4737)",
+   "years": "2012-2023 (confirmed)",
+   "income_groups_covered": "not reported (confirmed; no income-group classification or comparison in text)",
+   "observations_note": "Tables report 220-240 observations (Table 3: 'Obs 240'; Tables 13-14: 226-235) for a 5 x 12 = 60 country-year panel; text does not explain this. Record already flags it."
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "Table 11 Panel A col 1: LAI 0.016** (0.007); text: 'a 1% increase in capital investments in AI is associated with a 0.016% increase in GDP per capita' (p. 4738)"},
+   {"n": 2, "verdict": "confirmed", "correction": "Minor: horizon is labelled contemporaneous but the entry covers both short run (dLAI 0.002*** (0.000)) and long run (LR_LAI 0.002*** (0.001)); both values match Table 13 col 1.", "quote": "Table 13 col 1: 'ΔLAI 0.002*** (0.000)'; 'LR_LAI 0.002*** (0.001)'"},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "Table 13 col 2: 'ΔLAI -0.015 (0.027)'; 'LR_LAI -0.014 (0.027)'; 'LR_LAI x OGV -0.018*** (0.006)'"},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "Table 11 Panel B col 1: LAI '-0.016*** (0.005)'; text p. 4748: 'AI significantly reduces poverty (-0.016, p < 0.01)'"},
+   {"n": 5, "verdict": "confirmed", "correction": "", "quote": "Table 14 col 1: 'ΔLAI 0.019*** (0.006)'; 'LR_LAI 0.018*** (0.006)'; p. 4756: 'AI continues to modestly worsen poverty (0.018)'"},
+   {"n": 6, "verdict": "confirmed", "correction": "Cols 6, 7, 9 negative and significant (-0.039**, -0.021**, -0.042*), col 8 positive 0.017* (10% level only); all other columns insignificant. Matches the record; the record could add that col 8 is significant only at 10%.", "quote": "Table 14 LR_LAI: '-0.039** ... -0.021** 0.017* -0.042*'; col 6 SE (0.021)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "Growth LR interactions: negative in OGV, POLG, ECOG, CRT, GEF, RQE, RLW; positive in INSTG, POLV, VCAC (Table 13). Poverty LR interactions: negative in OGV, INSTG, CRT, POLV, GEF, RQE, RLW, VCAC; positive in POLG (0.002**) and ECOG (0.001*) (Table 14). No thresholds estimated (threshold 'none' is right). Caution: in many interaction models the AI main effect is insignificant, so 'governance mitigates AI's poverty-raising effect' is the authors' interpretation, not a tested mediation.", "quote": "Text p. 4756: 'interactions between AI and governance variables such as political stability and voice/accountability has a positive and significant impact on economic growth'"}
+  ],
+  "income_group_results": "none",
+  "income_group_note": "No income-group comparison or reporting in the text; the record's 'not reported' entries are correct.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: Table 12 shows 'LGDPPC -> LAI' (reverse direction for growth), yet the paper uses causal language and has no instrument or other identification strategy; serious fits.",
+   "exposure_measurement": "agree: log AI capital investment (OECD) is a plausible but undocumented proxy for AI exposure; Table 2 source note cites 'WDI, WGI and ITU data', inconsistent with Table 1.",
+   "selection_of_countries_years": "agree: five countries, 12 years, interpolation/extrapolation of missing data (Table 1 note) and 220-240 reported observations that cannot arise from a 5 x 12 panel.",
+   "outcome_measurement": "agree: WDI GDP per capita is standard; poverty headcount at the societal poverty line is a standard WDI series but interpolation is acknowledged ('very few missing data'), so moderate is acceptable.",
+   "specification": "agree: DOLS and CS-ARDL give opposite signs for AI on poverty, T=12, ECT values below -1 (e.g. -1.058, -1.305), 11 governance variants per outcome; the claim that R-squared above 50% shows models 'appropriately specified' is unsupported.",
+   "selective_reporting": "agree: FMOLS announced but not tabulated; abstract highlights the CS-ARDL poverty result while DOLS gives the opposite sign; star legends mislabelled (e.g. '*,**,***... 1%, 5%, 10%').",
+   "why": "Serious is appropriate: causal language, no strategy for reverse causation (own causality test shows GDP -> AI), tiny country panel, and conflicting estimators."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented or mixed-up content found; every extracted number checked against Tables 11, 13 and 14 and the text. Additional text-versus-table inconsistencies: (a) the conclusion says AI-to-poverty causality (Table 12) while DOLS says AI reduces poverty and CS-ARDL says it raises poverty; (b) the text says 'R-squared values for all the models ... exceed 50%' which holds (min 0.58, 0.59); (c) Table 13 col 3 ECT is -0.192 while other columns are below -1, and the text lists it; (d) the poverty text for DOLS describes positive INSTG/ECOG coefficients as 'positively influence poverty reduction', which misreads the sign; (e) Table 14 col 8 ΔLAI x GEF '-0.039* (0.000)' has an implausible SE. Record's note that Table 2 PCA text says '3.31%, 1.16%...' (p. 4738 text) versus Table 2 proportion 0.5512 is correct; the 'ITU data' note is in Table 2's source line."
+ }
+]

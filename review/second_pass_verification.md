@@ -4,14 +4,14 @@
 
 ## Regression estimates for the meta-regression
 
-- Estimates checked: 313 from 36 papers. Confirmed: 307; corrected: 6; unverifiable: 0; not applicable: 0.
+- Estimates checked: 317 from 37 papers. Confirmed: 311; corrected: 6; unverifiable: 0; not applicable: 0.
 - 6 estimates were corrected: 245-10 (income label changed to a combined middle-income group) and the five estimates of study 9103, which had been read from the wrong cell of a panel-VAR table (rows are equations, columns are lagged regressors; the paper itself reads the table the other way). Study 9103 reports p-values, so its estimates are not converted in the pilot in any case. Five further estimates were excluded as not poolable (`data/mra_exclusions.csv`): 358 (exposure is fintech credit, not ICT adoption), 88-11 to 88-14 (growth outcome mixed with level outcomes) and 988-5 (TFP index in levels).
 - Many papers carry pooling warnings in `data/second_pass/mra_ver_*.json` (composite indices instead of single technologies, conditional main effects when interactions are present, overlapping specifications on one sample, generated TFP outcomes). 302 and 323 share authors, panel and index, so they are not independent.
 
 ## Full-text records (papers still included or excluded after this check)
 
-- Included records checked: 84. Results: confirmed 465, corrected 34, unverifiable 5. Heterogeneity items: confirmed 148, corrected 17.
-- The checker's view of the overall risk-of-bias rating: agree 74, too lenient 4, too harsh 6. The ratings in the record were not changed; the differences are listed below for a human to settle.
+- Included records checked: 88. Results: confirmed 492, corrected 34, unverifiable 5. Heterogeneity items: confirmed 152, corrected 18.
+- The checker's view of the overall risk-of-bias rating: agree 77, too lenient 4, too harsh 7. The ratings in the record were not changed; the differences are listed below for a human to settle.
 
 | Paper | Record says | Checker says |
 |---|---|---|
@@ -25,6 +25,7 @@
 | 1031 | serious | too_lenient |
 | 1469 | serious | too_harsh |
 | 9204 | serious | too_lenient |
+| 9401 | critical | too_harsh |
 
 ## Eligibility changes and flags
 
@@ -39,6 +40,7 @@ Checker's eligibility notes:
 - 1495 (exclude): Eligibility not established. The text never gives the number of economies (only 'several developing countries'; Table 1 is a 30-row country-year excerpt showing India, Indonesia, Kenya), so the 10-economy threshold canno
 - 9202 (exclude): Exclusion E1 is right. The sample is five economies (Egypt, India, Kenya, Saudi Arabia, Sudan), well under the 10-economy minimum for non-AI exposure; Sec. 4.1.1: 'Our analysis is restricted to five countries.' The paper
 - 9301 (exclude): Exclusion E4 is right. The paper is a differential-equation model of labour productivity (Eqs. 10-27) with simulated projections to 2042. The only data use is a US-based technological-progress curve built from BLS and Gr
+- 9403 (exclude): Exclusion E4 is correct. Section 5.1 says real data collection (WDI, ITU, UNDP, OECD, WGI) 'has not yet been completed' and that every coefficient in Tables 2-7 comes from a 'calibrated synthetic panel: a simulated count
 
 ## Corrections by paper
 
@@ -71,6 +73,7 @@ Each item below is a result or heterogeneity entry where the checker found the r
 - **1031**: Agriculture short-run LNTO in Table 9 is 0.0940, 0.1066, 0.0768, 0.1232* so the range is 0.0768 to 0.1232 (record says 0.0940 to 0.1232); SE 0.0701 to 0.1445 is right. No | Negative significant interactions are TO_IUI, TO_MCS, TO_ICTINF only; TO_FTS in Tables 10-11 is +0.0026 {0.0019}, insignificant, although the text says all four are negat
 - **1428**: Stated FIA numbers are right (Mobile to FIA: Hungary 0.000899, Latvia 0.0070361, Lithuania, Poland, Slovenia positive; Czech Republic -0.0014063; Internet to FIA: Latvia  | Statistics and p-values are right (DMOBILE to DFIA W 4.77462, Zbar 2.93274, p 0.0034; DINTERNET to DFIA Zbar 2.07345, p 0.0381; DFIA to DINTERNET Zbar 1.97332, p 0.0485; 
 - **1494**: Threshold 0.48 (Gini) and about 0.50 (Theil) are right, but the claim that 'roughly half the sample-years are in each regime' is the extractor's inference: regime counts 
+- **1580**: Advanced/less-advanced split and USD 10,000 threshold are correct, as are Table 3 interaction (-0.227* GMM only) and Table 8 FE-IV (-0.375***). But 'only ... in Table 8 F
 - **1652**: Directions are right but the record says no statistics are available; Appendix A (p.421, after references) does give Dumitrescu-Hurlin W-bar/Z-bar/p: BTCV not-> GDP W=2.8
 - **1670**: Text states only that the path is significant; no sign, coefficient or SE appears in the text (Figure 2 is an image). The direction label 'mixed' is a placeholder and sho | Text says the indirect path is significant but gives no sign or size; 'positive' is inferred by the record (and acknowledged in its own evidence field). FII -> MOBILE is 
 - **1713**: Supported as descriptive remarks, but the Finland +20% TFP figure is from the m1 (aggregate capital) decomposition, not from the ICT-separated model m2; the Korea/Japan I

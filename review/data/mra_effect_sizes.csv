@@ -146,3 +146,4 @@ idx,estimate_id,role,subsample_label,sample_income_group,technology,coef,t,n,pcc
 9305,9305-9,robustness,"developed countries, 2SLS",not stated,"other (IT capital stock, hardware and data communications)",0.082,2.0,338.0,0.10976425998969035,0.05488212999484517
 9305,9305-10,robustness,"developing countries, AR(1)",developing,"other (IT capital stock, hardware and data communications)",0.162,4.378378378378379,219.0,0.2898570257647836,0.06620191329195674
 9305,9305-11,robustness,"developed countries, AR(1)",not stated,"other (IT capital stock, hardware and data communications)",0.081,2.892857142857143,338.0,0.15773179629774445,0.05452457155971413
+9401,9401-1,headline,"full sample (sub-Saharan Africa), ICT index, two-step system GMM",developing,ICT,0.434,2.646341463414634,380.0,0.13629295493760443,0.05150240693494731

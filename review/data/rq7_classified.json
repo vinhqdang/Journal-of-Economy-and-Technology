@@ -1318,5 +1318,45 @@
   "tested_formally": false,
   "note": "Year-specific IT coefficients dip around the dot-com period and rise after 2001, more strongly for developing countries; graphical only",
   "idx": "9305"
+ },
+ {
+  "id": "9402-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Digital index associated with female but not male employment; an outcome split, not a moderation of the effect by a country condition",
+  "idx": "9402"
+ },
+ {
+  "id": "9404-H1",
+  "moderator_type": "institutions_governance",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Governance interactions: negative for several indicators, positive for others, in the growth and poverty models",
+  "idx": "9404"
+ },
+ {
+  "id": "1580-H1",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "AI patents raise growth in advanced economies and not in less advanced ones; interaction negative and significant only in GMM",
+  "idx": "1580"
+ },
+ {
+  "id": "1580-H2",
+  "moderator_type": "time_period",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "AI effect insignificant in 1970-1994 and significant in 1995-2019; total patents show the opposite pattern",
+  "idx": "1580"
+ },
+ {
+  "id": "1580-H3",
+  "moderator_type": "infrastructure_connectivity",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Weaker effect in less advanced economies attributed to infrastructure and institutions; asserted, not tested",
+  "idx": "1580"
  }
 ]

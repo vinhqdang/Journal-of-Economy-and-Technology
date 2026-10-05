@@ -1,0 +1,11 @@
+[
+ {"idx":"9402",
+  "paper_verdict":{"estimator_family":"OLS (cross-sectional robust OLS and FGLS, no panel, no instruments)","reverse_causality_addressed":"no",
+   "pooling_concerns":"Single 2017 cross-section of 25 developing countries; exposure is an unstandardised composite index (range 1.51-2.91) so coefficients are per index point; productivity outcome is in levels (real GDP per employee), GNI per capita in logs (semi-elasticity), so units differ and are not comparable with elasticities; table reports no N or R-squared; FGLS adds OLS weights as a regressor (non-standard) and the OLS and FGLS rows use the same data (duplicates, not independent); table prints p-values, not SEs, so SEs must be derived; signs are lost in the converted text (direction taken from authors' statement of positive relations); the model is a conditional correlation framed partly causally."},
+  "estimates":[
+   {"estimate_id":"9402-1","verdict":"confirmed","corrections":{},"quote":"Digital Evolution Index (DEI) 19032.87 0.001*** 18990.47 0.000***","note":"FGLS column of Table 2 Eq (1); p-value confirmed by the table header 'p-value'; n_obs not printed (null correct); n_countries 25 from Note 1."},
+   {"estimate_id":"9402-2","verdict":"confirmed","corrections":{},"quote":"Digital Evolution Index (DEI) 19032.87 0.001***","note":"Robust OLS column of Table 2 Eq (1); p-value 0.001."},
+   {"estimate_id":"9402-3","verdict":"confirmed","corrections":{},"quote":"DEI 1.319593 0.002*** 1.450012 0.001***","note":"FGLS Eq (2), log per capita GNI (income level, treated as output-type outcome); p-value 0.001. Outcome is a log-level and not strictly productivity, so flag for pooling."},
+   {"estimate_id":"9402-4","verdict":"confirmed","corrections":{},"quote":"DEI 1.319593 0.002*** 1.450012 0.001***","note":"Robust OLS Eq (2); p-value 0.002."}
+  ]}
+]

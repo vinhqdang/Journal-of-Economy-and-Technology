@@ -27,6 +27,12 @@ for f in glob.glob(os.path.join(D, "second_pass/mra_ver_*.json")):
 # (study 9103: a panel-VAR table read from the wrong cell; study 9101: both estimates positive).
 # The first-pass value is kept in direction_first_pass. Idempotent.
 DIRECTION_FIXES = {"9101": {4: "positive"}, "9103": {n: "positive" for n in range(1, 12)}, "9203": {2: "mixed"}, "9302": {5: "mixed"}}
+# Stream fixes: study 9401 never measures AI (second pass), its only eligible exposure is a generic ICT index.
+STREAM_FIXES = {"9401": "H"}
+for idx, st in STREAM_FIXES.items():
+    if idx in by and by[idx]["stream"] != st:
+        by[idx].setdefault("stream_first_pass", by[idx]["stream"])
+        by[idx]["stream"] = st
 for idx, fixes in DIRECTION_FIXES.items():
     rec = by.get(idx)
     if rec:
