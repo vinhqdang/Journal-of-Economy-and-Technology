@@ -46,6 +46,13 @@ import textwrap
 S += textwrap.wrap(q, 110) + [r"\end{verbatim}}", "",
       r"\subsection*{Crossref and NBER searches}",
       "Technology terms: internet; broadband; mobile phones; information and communication technology; digital technology; artificial intelligence; generative AI; machine learning; cryptocurrency; bitcoin; technology diffusion; general purpose technology. Context terms: cross-country panel economic growth; developing countries income groups; digital divide; poverty and inequality countries; productivity emerging economies; employment and wages across countries; absorptive capacity human capital; financial inclusion. All pairs (12 by 8 = 96) were run from 1995.", "",
+      r"\subsection*{Google Scholar queries run (4 October 2026, first page of 10 results each)}",
+      r"{\scriptsize\begin{itemize}[leftmargin=1.2em,itemsep=1pt]",
+      r"\item G1: (``mobile phones'' OR ``mobile telephony'' OR internet OR broadband OR ICT) ``economic growth'' ``developing countries'' ``income groups'' panel cross-country",
+      r"\item G2: ``information and communication technology'' growth ``low-income'' ``middle-income'' ``high-income'' countries panel GMM",
+      r"\item G4: (internet OR mobile OR ICT) ``labor productivity'' OR ``total factor productivity'' countries ``human capital'' OR institutions interaction OR threshold",
+      r"\item G7: ``artificial intelligence'' ``economic growth'' OR productivity countries panel ``developing countries'' OR ``emerging economies'' OR ``income''",
+      r"\end{itemize}}",
       r"\subsection*{Records by source}",
       r"\begin{tabular}{@{}lr@{}}\toprule Source & Distinct records\\\midrule OpenAlex & 1,840\\ Crossref & 1,285\\ NBER working papers & 579\\ arXiv & 0 (attempted, not completed)\\ Scopus, Web of Science, EconLit & 0 (not run)\\ Google Scholar (queries G1, G2, G4, G7, first page each) & 40 results, 29 not in the main search\\\bottomrule\end{tabular}"]
 open(os.path.join(HERE, "app_search.tex"), "w").write("\n".join(S) + "\n")
@@ -98,10 +105,10 @@ items = [("1", "Title", "Identifies the report as a systematic review", "Yes", "
  ("21", "Reporting biases", "Assessments of reporting bias", "Yes", "Results (meta-regression)"),
  ("22", "Certainty of evidence", "Certainty for each outcome", "No", "Not done"),
  ("23", "Discussion", "Interpretation, limitations, implications", "Yes", "Discussion; Limitations"),
- ("24", "Registration and protocol", "Registration number, protocol access", "Partly", "Protocol in repository; not registered"),
+ ("24", "Registration and protocol", "Registration number, protocol access", "Partly", "Protocol available with the data and code; not registered"),
  ("25", "Support", "Funding and sponsors", "Yes", "Declarations (author to confirm)"),
  ("26", "Competing interests", "Declared", "No", "Author to complete"),
- ("27", "Availability of data and code", "Public availability", "Yes", "Declarations; repository")]
+ ("27", "Availability of data and code", "Public availability", "Yes", "Declarations")]
 P = [r"{\scriptsize\begin{longtable}{@{}l p{2.7cm} p{4.6cm} l p{5.3cm}@{}}", r"\caption{PRISMA 2020 checklist: where each item is reported. Section numbers refer to this paper.}\label{tab:prismacheck}\\",
      r"\toprule Item & Topic & Requirement & Reported & Where \\ \midrule \endfirsthead", r"\toprule Item & Topic & Requirement & Reported & Where \\ \midrule \endhead", r"\bottomrule \endfoot"]
 for it in items:

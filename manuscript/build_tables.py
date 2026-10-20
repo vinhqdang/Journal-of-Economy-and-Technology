@@ -64,7 +64,7 @@ half = (len(rows) + 1) // 2
 left, right = rows[:half], rows[half:] + [""] * (half - len(rows[half:]))
 HDR = r"Estimate & Role & Obs. & PCC & SE"
 L = [r"{\scriptsize", r"\begin{longtable}{@{}l l r r r@{\hspace{1.2em}}l l r r r@{}}",
-     r"\caption{Estimates used in the meta-regression (" + f"{len(d)} estimates from {d['idx'].nunique()} studies" + r"): partial correlation (PCC) and its standard error, computed from the printed coefficient and uncertainty with degrees of freedom equal to observations minus 10. The second half of the list continues in the right-hand block; $t$-statistics are in the repository file \texttt{mra\_effect\_sizes.csv}.}\label{tab:mrainputs}\\",
+     r"\caption{Estimates used in the meta-regression (" + f"{len(d)} estimates from {d['idx'].nunique()} studies" + r"): partial correlation (PCC) and its standard error, computed from the printed coefficient and uncertainty with degrees of freedom equal to observations minus 10. The second half of the list continues in the right-hand block; $t$-statistics are available with the data and code.}\label{tab:mrainputs}\\",
      r"\toprule " + HDR + " & " + HDR + r" \\ \midrule \endfirsthead",
      r"\toprule " + HDR + " & " + HDR + r" \\ \midrule \endhead", r"\bottomrule \endfoot"]
 for l, r in zip(left, right):
