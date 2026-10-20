@@ -26,7 +26,7 @@ tp = r"""\documentclass[11pt,a4paper]{article}
 
 \textbf{ORCID:} 0000-0002-3877-8024
 
-\textbf{Keywords:} digital technology; ICT; artificial intelligence; income level; systematic review; meta-regression; event study
+\textbf{Keywords:} digital technology; artificial intelligence; income level; systematic review; meta-regression
 
 \textbf{JEL codes:} O33, O47, O11, L96
 
