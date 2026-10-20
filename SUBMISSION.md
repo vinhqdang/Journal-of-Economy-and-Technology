@@ -5,7 +5,8 @@
 - **Files submitted:** `manuscript/Anonymous_Manuscript_v2026-10-19.pdf` (44 pages, anonymised) and `manuscript/Title_Page_v2026-10-19.pdf`
 - **Source of the submitted version:** commit `52a3a4c` on `main`; the full (non-anonymous) manuscript is `manuscript/Dang_Digital-waves-income-gaps_manuscript_v2026-10-19.pdf`
 - **Content at submission:** 88 included studies; pilot meta-regression on 22 studies with a headline estimate; World Bank macro-panel analysis; search stated as incomplete (OpenAlex, Crossref, NBER, first page of four Google Scholar queries)
-- **Manuscript ID / decision / reviewer comments:** to be added when received
+- **Manuscript ID:** JETECH-D-26-00130 (Editorial Manager)
+- **Decision / reviewer comments:** none yet
 
 ## Open items declared in the paper
 - Hand check of the extractions: several random samples, sizes and corrections not logged
@@ -14,3 +15,7 @@
 
 ## Before revising
 Any revision should start from the files in `review/` and `manuscript/`, rerun `review/scripts/*` (merge, second pass, pilot, exploratory questions), rebuild with `manuscript/build_*.py` and `manuscript/build_submission.py`, and save new dated PDFs rather than overwriting these.
+
+## Correspondence
+- **20 Oct 2026, editorial office, initial administrative screening:** topic in scope, declarations present, no duplicate references. One request: the keywords in the submission metadata (digital technology; artificial intelligence; income level; systematic review; meta-regression) differ from those in the manuscript (digital technology; ICT; artificial intelligence; income level; systematic review; meta-regression; event study). The editors recommend the full manuscript set and will send the paper to external review once the metadata is standardised and the submission is resubmitted.
+- **Action (author, on the submission site):** replace the metadata keywords with the manuscript set: `digital technology; ICT; artificial intelligence; income level; systematic review; meta-regression; event study`, then resubmit. The manuscript itself needs no change.
