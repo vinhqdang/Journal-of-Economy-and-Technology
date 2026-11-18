@@ -1,0 +1,20 @@
+[
+ {
+  "idx": "9701",
+  "title": "ICT and income inequality: a cross-national perspective",
+  "paper_level": {
+   "estimator_family": "FE",
+   "identification": "lagged regressors only",
+   "reverse_causality_addressed": "partly",
+   "causal_language": "mixed",
+   "sample_description": "109 countries, 2001-2014, all income levels",
+   "n_countries_main": "109",
+   "n_obs_main": "830",
+   "technology_measure_main": "InternetUse, Broadband, Mobile per 100",
+   "outcome_main": "GiniNet and GiniMarket (SWIID)",
+   "units_note": "not stated"
+  },
+  "estimates": [],
+  "notes": "Outcome is income inequality (Gini), not output or productivity; GDP per capita is only a control. Empty estimates list."
+ }
+]

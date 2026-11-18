@@ -1,0 +1,50 @@
+[
+ {
+  "idx": "9705",
+  "title": "Harnessing digital technologies for poverty reduction. Evidence for low-income and lower-middle income countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Own panel estimation (FE, FE with interactions, IV-2SLS, GMM) on 40 low and lower-middle income countries, 1990-2019. Exposure is mobile cellular subscriptions and internet users; outcome is the $5.50/day poverty headcount ratio (family 4).",
+  "stream": "H",
+  "technology": ["mobile telephony", "internet"],
+  "exposure_measure": "Mobile-cellular subscriptions per 100 inhabitants (MCS) and share of individuals using the internet (IU); both logged (Table 1, Table 3 note 'all values are logged'). ICT goods and ICT services imports are included as controls.",
+  "sample": {
+   "n_economies": "40",
+   "economies_or_groups": "13 low-income and 27 lower-middle-income countries (Table A1)",
+   "income_groups_covered": "low, lower-middle",
+   "years": "1990-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Country fixed effects (10 specs, Table 3); FE with MCS/IU x GDP per capita and x Human Capital Index interactions (8 specs, Table 4); IV-2SLS (Table 5) and GMM (Table 6) with GDP per capita as the sole instrument for MCS or IU",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Country FE plus a Low-income dummy; controls vary by specification (GDP per capita, primary/secondary enrolment, vulnerable/self-employment, youth employment, ICT goods and services imports, economic freedom, HCI). Regressors are mixed and matched across specifications."
+  },
+  "results": [
+   {"family": 4, "indicator": "Poverty headcount ratio at $5.50/day (log), effect of mobile subscriptions (MCS)", "direction": "negative", "estimate": "FE: -0.007 (spec 1), -0.002 (spec 2), -0.002 (spec 6); IV-2SLS: -0.19 (spec 1), -0.13, -0.18, -0.17, -0.23 (spec 5)", "uncertainty": "SE in brackets: FE [0.03], [0.03], [0.00]; IV [0.02], [0.01], [0.04], [0.01], [0.04]. FE coefficients are not marked significant in the FE table; IV ones are described as significant.", "horizon": "contemporaneous", "evidence": "Table 3 MCS row; Table 5 MCS row, p.10 and p.12. 'results for two selected ICT indicators ... if instrumented with gross per capita income are negative and significant in all cases'"},
+   {"family": 4, "indicator": "Poverty headcount ratio at $5.50/day (log), effect of internet users (IU)", "direction": "negative", "estimate": "FE: -0.11 (spec 4), -0.12 (spec 7), -0.07 (spec 8), -0.03 (spec 9), mixed/insignificant in others (+0.005 spec 3); IV-2SLS: -0.18, -0.12, -0.13, -0.16, -0.18", "uncertainty": "SE in brackets: FE [0.02], [0.04], [0.00], [0.00]; IV [0.02], [0.01], [0.03], [0.01], [0.02]", "horizon": "contemporaneous", "evidence": "Table 3 IU row; Table 5 IU row, pp.10, 12. 'access to Internet network ... enhances drops in poverty rates'"},
+   {"family": 4, "indicator": "Poverty headcount, GMM with GDP per capita as instrument for MCS or IU", "direction": "negative", "estimate": "MCS -0.19, -0.13, -0.17, -0.17, -0.23; IU -0.18, -0.12, -0.13, -0.16, -0.18", "uncertainty": "SE [0.02], [0.01], [0.04], [0.02], [0.04]; [0.02], [0.01], [0.03], [0.01], [0.02]", "horizon": "contemporaneous", "evidence": "Table 6, p.13. Virtually identical to the IV-2SLS columns."},
+   {"family": 4, "indicator": "Poverty headcount, ICT x GDP per capita interaction (FE)", "direction": "negative", "estimate": "MCS x GDP: -0.04 and -0.09; IU x GDP: -0.11 and -0.006. Unconditional MCS/IU coefficients in these columns are positive (MCS +0.34, +0.69; IU +0.85, +0.69)", "uncertainty": "SE [0.01], [0.02]; [0.02], [0.00]", "horizon": "contemporaneous", "evidence": "Table 4 FE_I(1),(2),(5),(6), p.11. Net effects are 'n.a.' because the unconditional ICT effect has the wrong sign."},
+   {"family": 4, "indicator": "Poverty headcount, ICT x Human Capital Index interaction (FE)", "direction": "negative", "estimate": "MCS x HCI: -0.08, -0.10; IU x HCI: -0.17, -0.12. Net effects of HCI -0.064, -0.275, -0.3835 in three specs", "uncertainty": "SE [0.02], [0.03]; [0.04], [0.03]", "horizon": "contemporaneous", "evidence": "Table 4 FE_I(3),(4),(7),(8), p.11"}
+  ],
+  "heterogeneity": [
+   {"moderator": "income group", "finding": "Low-income dummy is positive and significant in only 4 of 10 FE specs and insignificant in the other 6; the authors conclude low-income countries are 'not discriminated'. No separate subsample estimates by income group were run.", "threshold_value": "none", "evidence": "Table 3 Low row and p.10-11"},
+   {"moderator": "human capital", "finding": "Interactions of ICT with HCI are negative and significant, read as larger poverty reduction at higher human capital. Net effects are computed in only 3 of 8 specs.", "threshold_value": "none (thresholds reported as 'Negative synergy' or n.a.)", "evidence": "Table 4, p.11"},
+   {"moderator": "other", "finding": "Interactions of ICT with GDP per capita are negative and significant, read as a 'poverty trap' in which low income impedes the ICT effect. The unconditional ICT coefficient is positive in those columns.", "threshold_value": "none", "evidence": "Table 4, p.11. 'in materially relatively poorer countries the potential effects of ICT deployment on poverty reduction is impeded'"}
+  ],
+  "income_group_results": {"high": "not applicable (not in sample)", "upper_middle": "not applicable (not in sample)", "lower_middle": "pooled with low-income; 27 countries; no separate estimate", "low": "pooled with lower-middle; 13 countries; only a Low dummy (positive in 4 of 10 FE specs)"},
+  "n_specifications_reported": "about 36 (10 FE, 8 FE-interaction, 10 IV-2SLS, 10 GMM)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {"rating": "serious", "why": "Country FE only. The sole instrument is GDP per capita, which affects poverty directly, so the exclusion restriction fails. In IV and GMM GDP is 'omitted' from the second stage, so its direct effect is pushed into the ICT coefficient. The GMM table repeats the IV numbers almost exactly and no GMM details (lags, AR tests, instrument counts) are given. Causal language is used.", "evidence": "Tables 5-6 notes; p.12 'GDP_PPP_pc used to instrument MCS and IU'"},
+   "exposure_measurement": {"rating": "low", "why": "Standard ITU mobile subscriptions per 100 and internet-user share. Subscriptions can exceed 100 and do not capture use quality.", "evidence": "Table 1; Table 2 (MCS max 154.7)"},
+   "selection_of_countries_years": {"rating": "moderate", "why": "40 countries chosen by income class and data availability. Small island states, conflict-affected countries and economies with gaps were dropped. Poverty is linearly interpolated, and the panel is described as balanced although observation counts vary from 187 to 776.", "evidence": "Section 3, p.4; Table 2 note; Table 3 obs row"},
+   "outcome_measurement": {"rating": "serious", "why": "Poverty headcount at $5.50/day (2011 PPP) is linearly interpolated between sparse survey years. The Table 2 mean of 75.9 and min/max of 2-100 look odd for an average of 34% in 2019 (p.5). Interpolation creates artificial smoothness and inflates serial correlation.", "evidence": "Table 2 note; p.5"},
+   "specification_and_researcher_degrees_of_freedom": {"rating": "serious", "why": "Many specifications with different regressor subsets and different observation counts (187-776). Most coefficients are insignificant or have unexpected signs (economic freedom positive, HCI insignificant). No joint model with both MCS and IU in most columns, and no clear preferred specification. Hausman tests reject RE in most cases but the FE tables report no clustering information.", "evidence": "Tables 3-6"},
+   "selective_reporting": {"rating": "moderate", "why": "Net effects reported only where signs fit expectations ('to avoid drawing misleading conclusions'). Text states that all interaction coefficients are negative and significant, while Table 4 shows some interaction columns with positive unconditional effects. Some Table 3 FE coefficients for ICT are insignificant yet the text says both ICT indicators 'demonstrate the negative relationship'.", "evidence": "p.11-12; Table 3, Table 4 notes"}
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Typographical oddities: Table 5-6 notes say 'omitted' for GDP; decimal commas in Table 5-6 Low row; Table A3 caption says 1990-2021 and Fig. A1 caption says 1990-2021 while the text says 1990-2019; text cites 'Table A2' for correlations (it is Table A3). Table 3 note says bold marks significance at 5% but bolding is lost in the text extraction, so significance cannot be read per cell. Poverty is the dependent variable in logs, so coefficients are elasticities of the headcount ratio with respect to ICT. Outcome is poverty (family 4). School enrolment and vulnerable employment are controls, not outcomes. No instruction-like text found in the paper."
+ }
+]

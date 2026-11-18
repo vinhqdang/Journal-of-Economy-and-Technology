@@ -1,0 +1,136 @@
+[
+ {
+  "idx": "9703",
+  "title": "ICT dynamics for gender inclusive intermediary education: minimum poverty and inequality thresholds in developing countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Own system-GMM estimation of ICT indicators on gender parity in school enrolment (family 5) in 57 developing countries; exposure and sample criteria met.",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "mobile telephony",
+   "internet",
+   "broadband"
+  ],
+  "exposure_measure": "Six indicators: internet access in schools (GITR index), use of virtual social networks (GITR index), internet users per 100, fixed broadband per 100, % persons with PC, mobile subscriptions per 100; interacted with Gini, Atkinson, Palma ratio, poverty headcount (national lines)",
+  "sample": {
+   "n_economies": "57",
+   "economies_or_groups": "57 developing countries (Table 2 list), Asia, Africa, Latin America, E. Europe",
+   "income_groups_covered": "mixed (low and middle income; text says 'developing'; no per-group split, Table 2 income levels not shown in text)",
+   "years": "2012-2016",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Interactive system GMM (Roodman-type, lagged dependent variable), 33 instruments",
+   "identification": "other",
+   "key_controls_fixed_effects": "Lagged DV, remittances/GDP, time effects; inequality or poverty term and ICT x inequality interaction"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Gender parity index, gross primary+secondary enrolment; internet access in school",
+    "direction": "mixed",
+    "estimate": "Table 4 col1 (Gini): ICT 0.0309; Gini x ICT -0.0550; threshold 0.5618; poverty col4: ICT 0.0128, Poverty x ICT -0.00038, threshold 33.6842; Atkinson col: ICT -0.0190",
+    "uncertainty": "p=0.002 (Gini col); p=0.000 (poverty col); p=0.000 (Atkinson col, marked **)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.13: 'ICT in school 0.0309 (0.002)***'; 'Gini x ICTschool -0.0550 (0.007)***'"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; use of virtual social network",
+    "direction": "mixed",
+    "estimate": "Table 4: Network 0.0074 (Gini col), 0.0026 (Atkinson), 0.00474 (Palma), -0.0032 (poverty)",
+    "uncertainty": "p=0.436, 0.035, 0.000, 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.13; Palma threshold 9.1153 lies outside sample range (max 8.4098, p.12)"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; internet penetration",
+    "direction": "null",
+    "estimate": "Table 5: Internet 0.0004 (Gini), 0.00012, 0.000286 (Palma), 0.000035",
+    "uncertainty": "p=0.143, 0.575, 0.019, 0.767",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.14; only Palma col significant, threshold 3.3766"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; fixed broadband",
+    "direction": "null",
+    "estimate": "Table 5: BroadB 0.00056, -0.00406, 0.00035, 0.000256",
+    "uncertainty": "p=0.799, 0.001, 0.453, 0.434",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.14; no valid threshold"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; personal computers",
+    "direction": "positive",
+    "estimate": "Table 6: Computer 0.000899 (Gini), 0.00012 (Atk), 0.00024 (Palma), 0.00039 (Poverty); thresholds 0.4781, 3.5294, 17.7272",
+    "uncertainty": "p=0.000, 0.245, 0.000, 0.038",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.15: 'Computer 0.000899 (0.000)***'"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; mobile phone penetration",
+    "direction": "null",
+    "estimate": "Table 6: Mobile 0.0001, 0.0002, -0.00007, -0.00004",
+    "uncertainty": "p=0.167, 0.605, 0.017, 0.261",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.15; all thresholds na"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Inequality (Gini, Palma) and poverty dampen ICT effect on gender parity; interaction mostly negative for school internet, computers; critical thresholds reported",
+    "threshold_value": "Gini 0.5618 (school internet), 0.4781 (PCs); poverty 33.6842 (school internet), 17.7272 (PCs); Palma 3.3766 (internet), 3.5294 (PCs)",
+    "evidence": "Abstract, p.2; Tables 4-6"
+   }
+  ],
+  "income_group_results": {
+   "high": "not applicable (developing only)",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "48 (6 ICT x 4 inequality/poverty measures x 2 tables of 8... ie 6 x 4 = 24 regressions)",
+  "headline_is_preferred_specification": "no",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language and thresholds; only internal GMM instruments, few controls (remittances only), Sargan rejects in several columns, AR(1) p near 0.09",
+    "evidence": "Tables 4-6 Sargan/Hansen rows"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mixed survey-index (GITR) and WDI measures; PC variable and school internet are weak proxies; text describes Table 3 label inconsistently",
+    "evidence": "Table 1, p.8"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 5 years (2012-2016), unbalanced, 57 countries chosen by data availability; N=285 with 33 instruments",
+    "evidence": "Sec 3.2, p.9; Table 4 foot"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Gross enrolment GPI measures parity not quality; values above 1 possible",
+    "evidence": "Table 1, p.8"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "24 ICT x moderator specifications, thresholds computed only where signs fit hypotheses; Fisher stats huge, near-unit-root lagged DV coefficients (up to 1.005)",
+    "evidence": "Tables 4-6; p.12"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Thresholds reported only for hypotheses-consistent columns; text says models 'valid overwhelmingly' though Sargan p<0.05 in many; abstract highlights favourable results",
+    "evidence": "p.11-12; abstract"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (working paper version of single-author-network research with templated design; threshold computed from point estimates without uncertainty)",
+  "notes": "Poverty/inequality are moderators, not outcomes; outcome is family 5 (schooling parity). Table 3 notes mislabel PALM as poverty headcount and POV blank; Table 2 referred to as summary stats and correlation numbering inconsistent. Table 4 Palma threshold 9.1153 exceeds sample max and abstract does not claim it. Some stars in Table 4 inconsistent with printed p. No instructions embedded in text."
+ }
+]

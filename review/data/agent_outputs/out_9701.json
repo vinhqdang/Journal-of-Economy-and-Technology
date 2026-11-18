@@ -1,0 +1,165 @@
+[
+ {
+  "idx": "9701",
+  "title": "ICT and income inequality: a cross-national perspective",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Panel of 109 countries, 2001-2014, own FE estimation of internet, broadband and mobile on Gini indices (family 4), with income-group splits.",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "fixed broadband",
+   "mobile telephony"
+  ],
+  "exposure_measure": "ITU internet users per 100, fixed broadband subscriptions per 100, mobile subscriptions per 100; lagged one year",
+  "sample": {
+   "n_economies": "109",
+   "economies_or_groups": "109 countries, all development levels and regions",
+   "income_groups_covered": "high, upper-middle, lower-middle, low (low and lower-middle pooled)",
+   "years": "2001-2014",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Two-way fixed effects with Driscoll-Kraay standard errors",
+   "identification": "none",
+   "key_controls_fixed_effects": "Country and year FE; ln GDP pc and square, female LFP, urbanisation, birth rate, population 65+, governance indicators, secondary enrolment, health expenditure share; regressors lagged 1 year"
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Gini net (post-tax) ~ InternetUse (per 100, lagged)",
+    "direction": "negative",
+    "estimate": "-0.030*",
+    "uncertainty": "s.e. 0.016 (Driscoll-Kraay)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, InternetUse row, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini market ~ InternetUse",
+    "direction": "negative",
+    "estimate": "-0.036**",
+    "uncertainty": "s.e. 0.014",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini net ~ Broadband (fixed per 100)",
+    "direction": "positive",
+    "estimate": "0.107***",
+    "uncertainty": "s.e. 0.022",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini market ~ Broadband",
+    "direction": "positive",
+    "estimate": "0.133***",
+    "uncertainty": "s.e. 0.033",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini net ~ Mobile (subs per 100)",
+    "direction": "negative",
+    "estimate": "-0.015**",
+    "uncertainty": "s.e. 0.005",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini market ~ Mobile",
+    "direction": "negative",
+    "estimate": "-0.012**",
+    "uncertainty": "s.e. 0.005",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini net, middle-income subsample, Broadband",
+    "direction": "positive",
+    "estimate": "0.169**",
+    "uncertainty": "s.e. 0.060",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6a p.208"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini market, middle-income, Mobile",
+    "direction": "negative",
+    "estimate": "-0.029***",
+    "uncertainty": "s.e. 0.005",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6b p.209"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Broadband raises Gini in middle- and high-income subsamples, barely detectable in low income; Mobile reduces Gini mainly in middle-income; InternetUse mostly insignificant in splits",
+    "threshold_value": "none",
+    "evidence": "Tables 6a-6b, pp.208-210"
+   },
+   {
+    "moderator": "income group",
+    "finding": "Marginal effect of Broadband on Gini turns from negative at 25th percentile GDP pc to positive at 75th",
+    "threshold_value": "none",
+    "evidence": "Table 5, p.206; text p.207"
+   },
+   {
+    "moderator": "institutions",
+    "finding": "ICT effects conditional on urbanisation, stability, governance, rule of law",
+    "threshold_value": "none",
+    "evidence": "Table 5, Section 4.2, pp.203-207"
+   }
+  ],
+  "income_group_results": {
+   "high": "Broadband +0.080*** (GiniNet), +0.126*** (GiniMarket); Internet and Mobile insignificant",
+   "upper_middle": "Broadband +0.169**/+0.190***; Mobile -0.032***/-0.029***; Internet n.s.",
+   "lower_middle": "pooled with low: Broadband n.s.; Mobile -0.014*/-0.011*; Internet n.s. (GiniNet), -0.091* (GiniMarket)",
+   "low": "pooled with lower-middle (41 countries)"
+  },
+  "n_specifications_reported": "about 10 (baseline, 3 interaction sets x 2 DVs, 3 splits x 2 DVs)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "One-year lags only; no instrument, causal-sounding language; inequality could drive adoption",
+    "evidence": "Section 3, p.198: 'lagged one year to guard against simultaneity bias'"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Subscription/use per 100 are standard but crude proxies; mobile subs exceed 100 per 100",
+    "evidence": "Table 1, p.199"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Unbalanced panel, 830 obs from 109 countries over 14 years because of SWIID coverage; short span",
+    "evidence": "Section 3, p.198"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "SWIID imputed Gini, mean of 100 imputations; imputation error ignored",
+    "evidence": "Section 3, p.198"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Quadratic GDP, many interactions chosen post hoc; collinearity noted; split-sample drops quadratic",
+    "evidence": "fn5 p.211; Section 4.3 p.207"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only interactions with substantive implications reported; other controls tried and dropped",
+    "evidence": "fn3, fn5, fn6 p.211"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Text says 107 countries in the introduction, 109 elsewhere. Table 2 Hausman p-value 0.011 for GiniMarket. Coefficients on Gini points per 1 unit of ICT per 100. No injected instructions found."
+ }
+]

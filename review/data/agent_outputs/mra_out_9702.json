@@ -1,0 +1,6 @@
+[{
+ "idx":"9702","title":"ICT, gender inequality, and income inequality: a panel data analysis across countries",
+ "paper_level":{"estimator_family":"other","identification":"none","reverse_causality_addressed":"no","causal_language":"yes","sample_description":"86 countries, 2013-2016, mixed income","n_countries_main":"86","n_obs_main":null,"technology_measure_main":"ICT latent construct from mobile subs/100, internet users %, fixed broadband subs/100","outcome_main":"Gini index; gender inequality index","units_note":"standardized PLS path coefficients"},
+ "estimates":[],
+ "notes":"Outcome is income inequality (Gini) and gender inequality; no output, GDP growth or productivity outcome (GDP per capita only appears as a control). Empty estimates list."
+}]

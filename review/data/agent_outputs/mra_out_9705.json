@@ -1,0 +1,19 @@
+[
+ {
+  "idx": "9705",
+  "title": "Harnessing digital technologies for poverty reduction. Evidence for low-income and lower-middle income countries",
+  "paper_level": {
+   "estimator_family": "FE",
+   "identification": "other",
+   "reverse_causality_addressed": "partly",
+   "causal_language": "yes",
+   "sample_description": "40 low and lower-middle-income countries, 1990-2019",
+   "n_countries_main": "40", "n_obs_main": null,
+   "technology_measure_main": "Mobile subscriptions per 100 (MCS) and internet users % (IU), logged",
+   "outcome_main": "Poverty headcount ratio at $5.50/day (log)",
+   "units_note": "not stated"
+  },
+  "estimates": [],
+  "notes": "Outcome is poverty headcount (outcome family 4), not output or productivity. GDP per capita appears only as a control and as the instrument for ICT, never as the dependent variable, so no output or productivity estimate is reported."
+ }
+]
