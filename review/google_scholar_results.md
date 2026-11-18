@@ -21,3 +21,7 @@ Data: `data/scholar_g7_page1.csv`. Of the 10 results, 1 is already included (156
 ## Query G3, first page (10 results), pasted by the author on 18 November 2026
 
 Data: `data/scholar_g3_page1.csv`. Of the 10 results, 3 are already included (Samariya et al., Abdelhak et al., Yin and Choi), 2 are the Omer et al. paper already read and excluded (published and preprint versions), 1 covers one country (Ruan et al., Chinese provinces) and 1 is a student thesis (Ibrahim). Three are new and were requested: Wang and Shen 2024, Donnibe et al. 2026 and Bergantino and Nademi. The raw list of 3,612 records of the main search was not available in this session, so novelty was checked against the screening files that remain (abstract and title stages), not against the full list.
+
+## Query G6, first page (10 results), pasted by the author on 18 November 2026
+
+Data: `data/scholar_g6_page1.csv`. Of the 10 results, 2 are already included, 1 was excluded at abstract stage (fewer than 10 economies) and 1 has financial inclusion as its exposure, not ICT. Four are new and requested (Oyedotun and Makoni 2026, Kouladoum et al. 2022, Alimi and Okunade 2020, Anifowose and Chummun 2025); two more are optional (Onyejiaku et al. 2026, digital financial inclusion as exposure; Gebrehiwot and Makina 2015, mobile penetration as one determinant).
