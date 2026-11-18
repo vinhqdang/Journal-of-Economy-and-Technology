@@ -1,0 +1,74 @@
+[
+ {
+  "idx": "9603",
+  "eligibility_ok": true,
+  "eligibility_note": "Panel GMM/IV-Tobit, 43 SSA economies, ICT exposure, financial inclusion outcome (family 5); meets the 10-economy rule.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Internet users 0.0413*** (0.00235)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Mobile phone 0.0147*** (0.00125)"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Fixed broadband 0.0554*** (0.0137)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Digitalization 0.0431*** (0.00317)"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Internet users 0.218*** (0.0228)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Internet users 0.639*** (0.0311)"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Digitalization 0.0447*** (0.00129)"
+   },
+   {
+    "n": 8,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Digitalization 0.0407*** (0.00438)"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": "none",
+  "income_group_note": "No income-group split; region-only sample.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: regressors treated as exogenous with causal language; reverse causality not credibly handled.",
+   "exposure_measurement": "agree: standard WDI subscription counts, composite construction vague.",
+   "selection_of_countries_years": "agree: data-availability sample, effective N 28-37 countries.",
+   "outcome_measurement": "too_harsh: bank accounts, branches and ATMs are conventional supply-side access proxies, so moderate fits better than serious.",
+   "specification": "agree: lagged DV coefficients at or above 1 (1.003 to 1.050) and marginal AR2 in Table 7 are valid concerns.",
+   "selective_reporting": "agree: credit, deposits and loans outcomes are mentioned but not tabulated.",
+   "why": "Overall serious holds because exogeneity is assumed and causal claims are made."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "none; minor: Table 5 col 2 internet SE (0.00235) differs from Table 2 (0.00368), which is correct because they are different estimators."
+ }
+]

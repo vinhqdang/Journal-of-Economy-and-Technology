@@ -1,11 +1,11 @@
 # Preliminary extraction summary (machine-extracted, re-checked by a second model run and, on a random sample, by the author by hand; see data/human_check.md)
 
-**Read this first.** These records were extracted from the 134 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **68% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 134 of 256 papers sent to full-text assessment have been read.
+**Read this first.** These records were extracted from the 138 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **68% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 138 of 256 papers sent to full-text assessment have been read.
 
-## Full-text assessment outcome (n = 134 read)
+## Full-text assessment outcome (n = 138 read)
 
-- Included: 90  |  excluded: 43  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
-- Reasons for exclusion: E1 14, E2 5, E3 1, E4 23 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
+- Included: 93  |  excluded: 44  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
+- Reasons for exclusion: E1 14, E2 6, E3 1, E4 23 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
 - Post-merge adjustments are listed with reasons in `data/adjustments.json`.
 - About a third of the papers that looked eligible on the abstract failed at full text. The same attrition should be expected for the papers not yet read.
 
@@ -103,6 +103,9 @@
 | 9404 | 2025 | AI | artificial intelligence | 5 | 2012-2023 | serious | needs human check |
 | 9501 | 2024 | H | ICT in general; internet and broadband | 97 (27 developed,  | 2010-2020 | serious | needs human check |
 | 9502 | 2027 | H | internet | 28 | 2010-2025 | moderate | ok |
+| 9601 | 2025 | H | internet | 45 stated; 34 cros | 1999-2024 (24 pe | serious | ok |
+| 9602 | 2020 | H | internet; mobile telephony | 27 | 2004-2017 (abstr | serious | ok |
+| 9603 | 2022 | H | ICT in general; mobile telephony | 43 | 2004-2019 | serious | ok |
 
 ## Direction of reported results by outcome family
 
@@ -113,31 +116,31 @@ Counts of reported results (a paper can contribute several), not of papers, and 
 | 1. Output and productivity | 157 | 46 | 40 | 23 |
 | 2. Structural change | 14 | 0 | 5 | 14 |
 | 3. Labour market | 34 | 9 | 16 | 14 |
-| 4. Poverty and distribution | 25 | 12 | 10 | 22 |
-| 5. Living standards beyond income | 43 | 15 | 13 | 13 |
+| 4. Poverty and distribution | 27 | 12 | 13 | 22 |
+| 5. Living standards beyond income | 52 | 15 | 13 | 14 |
 | 6. Resource cost | 6 | 3 | 6 | 5 |
 
 ## Risk of bias (adapted ROBINS-I-style tool, 6 domains)
 
 | Domain | Low | Moderate | Serious | Critical |
 |---|---|---|---|---|
-| confounding reverse causation | 0 | 15 | 67 | 7 |
-| exposure measurement | 5 | 57 | 25 | 3 |
-| selection of countries years | 2 | 57 | 31 | 0 |
-| outcome measurement | 22 | 52 | 15 | 1 |
-| specification and researcher degrees of freedom | 0 | 35 | 53 | 2 |
-| selective reporting | 9 | 62 | 16 | 3 |
+| confounding reverse causation | 0 | 15 | 70 | 7 |
+| exposure measurement | 5 | 60 | 25 | 3 |
+| selection of countries years | 2 | 60 | 31 | 0 |
+| outcome measurement | 22 | 52 | 18 | 1 |
+| specification and researcher degrees of freedom | 0 | 35 | 56 | 2 |
+| selective reporting | 9 | 64 | 17 | 3 |
 | confounding reverse causality | 0 | 0 | 1 | 0 |
 
-Overall: low 0, moderate 11, serious 68, critical 11. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
+Overall: low 0, moderate 11, serious 71, critical 11. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
 
-Venue check: 37 of 90 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
+Venue check: 39 of 93 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
 
 ## Heterogeneity reported
 
 Moderators examined (counts of findings): other 84, income group 40, human capital 16, institutions 13, infrastructure 12, sector structure 8.
 
-45 of 90 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
+45 of 93 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
 
 ## Papers flagged for human check
 

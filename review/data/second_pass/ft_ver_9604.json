@@ -1,0 +1,34 @@
+[
+ {
+  "idx": "9604",
+  "eligibility_ok": false,
+  "eligibility_note": "Own system-GMM estimation, 29-30 SSA economies and a family-5 outcome (financial inclusion) are fine. The exposure is not ICT. FT is a PCA index of MOB, INT, population density (POD) and population size (POS). Component 1 (47% of variance) is mobile/internet, but component 2 (25%) is almost all population size (POS loading 0.981). Eq. 14 carries both components, so a large part of the index is demographic and the paper never isolates mobile or internet. The index is labelled 'fintech' but contains no fintech or mobile-money measure. Borderline; I recommend exclusion under the exposure criterion. If the screener keeps it, it should be flagged as a mixed ICT-demographic index.",
+  "sample_corrections": {
+   "n_economies": "30 SSA countries per text ('secondary data from 30 SSA countries'); Table 10 shows 29 groups, 512 obs (Table 3 descriptives show 540 obs). Record is accurate.",
+   "years": "2004-2021 confirmed",
+   "income_groups_covered": "not reported, confirmed"
+  },
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "none", "quote": "FI: FT 1.2134** (0.4995)", "locator": "Table 10 col (4)"},
+   {"n": 2, "verdict": "confirmed", "correction": "none", "quote": "FT 2.2170** (0.8405)", "locator": "Table 10 col (1) AC"},
+   {"n": 3, "verdict": "confirmed", "correction": "none", "quote": "0.7438*** (0.1844)", "locator": "Table 10 col (2) US"},
+   {"n": 4, "verdict": "confirmed", "correction": "none; text agrees", "quote": "availability does not have a significant impact", "locator": "Results text, p.10, and Table 10 col (3) 0.3381 (0.2506)"}
+  ],
+  "heterogeneity": [],
+  "income_group_results": "none",
+  "income_group_note": "SSA only, no income-group split. Record's 'not reported' entries are accurate.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: serious. Causal wording with only internal system-GMM instruments, and Sargan p=.008 in the US model and AR(2) p=.065 in the FI model.",
+   "exposure_measurement": "agree: serious, and arguably critical for the ICT question. About a quarter of the variance sits on a population-size component, so the index is not a technology measure.",
+   "selection_of_countries_years": "agree: moderate. Countries are dropped by data availability, and gaps are filled with regional means and 3-year moving averages.",
+   "outcome_measurement": "agree: serious. The FI index is built from ATM and bank-branch supply counts, so it omits accounts and digital finance.",
+   "specification": "agree: moderate. PCA weights and instrument counts are discretionary, and the observation counts are inconsistent (540 vs 512).",
+   "selective_reporting": "agree: moderate. One specification per outcome and no robustness checks.",
+   "why": "Serious is fair given an exposure that does not capture ICT and no credible strategy for reverse causation."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "No invented numbers found. All four Table 10 FT coefficients and SEs match. Minor: the record's Eq. 14 / Table 8 mention is fine, but Table 8 prints MOB comp1 as 0.668 while Eq. 14 prints 0.688, a typo in the paper. Minus signs print as '2' in the converted text, which the record handles correctly. The exposure_measure field in the record is accurate but understates how much the index is demographic. Recommend flipping the decision from include to exclude (exposure not ICT) or flagging it as borderline."
+ }
+]

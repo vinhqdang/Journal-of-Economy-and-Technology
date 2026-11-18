@@ -10,8 +10,8 @@
 
 ## Full-text records (papers still included or excluded after this check)
 
-- Included records checked: 90. Results: confirmed 506, corrected 34, unverifiable 6. Heterogeneity items: confirmed 155, corrected 18.
-- The checker's view of the overall risk-of-bias rating: agree 79, too lenient 4, too harsh 7. The ratings in the record were not changed; the differences are listed below for a human to settle.
+- Included records checked: 93. Results: confirmed 521, corrected 34, unverifiable 6. Heterogeneity items: confirmed 155, corrected 18.
+- The checker's view of the overall risk-of-bias rating: agree 82, too lenient 4, too harsh 7. The ratings in the record were not changed; the differences are listed below for a human to settle.
 
 | Paper | Record says | Checker says |
 |---|---|---|
@@ -41,6 +41,7 @@ Checker's eligibility notes:
 - 9202 (exclude): Exclusion E1 is right. The sample is five economies (Egypt, India, Kenya, Saudi Arabia, Sudan), well under the 10-economy minimum for non-AI exposure; Sec. 4.1.1: 'Our analysis is restricted to five countries.' The paper
 - 9301 (exclude): Exclusion E4 is right. The paper is a differential-equation model of labour productivity (Eqs. 10-27) with simulated projections to 2042. The only data use is a US-based technological-progress curve built from BLS and Gr
 - 9403 (exclude): Exclusion E4 is correct. Section 5.1 says real data collection (WDI, ITU, UNDP, OECD, WGI) 'has not yet been completed' and that every coefficient in Tables 2-7 comes from a 'calibrated synthetic panel: a simulated count
+- 9604 (exclude): Own system-GMM estimation, 29-30 SSA economies and a family-5 outcome (financial inclusion) are fine. The exposure is not ICT. FT is a PCA index of MOB, INT, population density (POD) and population size (POS). Component 
 
 ## Corrections by paper
 

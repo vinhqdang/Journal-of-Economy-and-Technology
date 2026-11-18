@@ -1,0 +1,56 @@
+[
+ {
+  "idx": "9602",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel ARDL estimation, 27 SSA economies, internet and mobile exposure, consumption-as-poverty outcome (families 4/5).",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "IP 0.000779*** (0.000159), Table 3 PMG long run"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "IP short run -0.00276 (0.0221), no stars; abstract claims short-run significance"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "MP long run 0.000215 (0.000144)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "MP short run -3.6605 (0.00178), as printed; likely misprint"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "COM 0.00556*** (0.00125) long; 0.0191** (0.00862) short"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": "none",
+  "income_group_note": "No income-group results reported; SSA only.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal language, no instruments, only two controls.",
+   "exposure_measurement": "agree: standard per-100 measures; branches a crude inclusion proxy.",
+   "selection_of_countries_years": "agree: data-availability sample, period stated inconsistently (2004-2017 vs 2004-2016), 351 vs 324 obs.",
+   "outcome_measurement": "agree: consumption per capita is a loose poverty proxy; Table 1 POV min 0.",
+   "specification": "agree: PMG homogeneity with T about 14, MG/DFE differ, lag selection unreported.",
+   "selective_reporting": "too_harsh: text-table contradictions look like errors more than selective reporting; moderate would fit.",
+   "why": "Standard panel ARDL with causal claims and no identification, plus outcome proxy issues."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "no",
+  "problems": "Text contradicts Table 3: abstract/conclusion say IP significant in short run, none in long run (table shows the reverse); text says COM short run negative but table shows +0.0191**; text says IP short run negative while table shows no significant effect. Observations 351 (Table 1) vs 324 (Table 3). Record handles these correctly."
+ }
+]

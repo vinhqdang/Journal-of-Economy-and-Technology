@@ -33,5 +33,10 @@
   "decision": "exclude",
   "reason": "E1",
   "note": "Exposure is total ICT investment relative to GDP (labelled AI by the author) in 7 high-income economies, below the 10-economy minimum for non-AI exposures; the AI label is not accepted. Reclassified from include after the second-pass check. Reversible: a human reviewer should confirm."
+ },
+ "9604": {
+  "decision": "exclude",
+  "reason": "E2",
+  "note": "The fintech exposure is a principal-component index built from mobile and internet subscriptions together with population density and population size, so about a quarter of its variance is demographic and it does not measure ICT adoption. Reclassified from include after the cross-check, consistent with the earlier exclusion of a fintech-credit exposure."
  }
 }

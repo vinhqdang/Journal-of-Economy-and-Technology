@@ -51,8 +51,8 @@ The twenty read studies are counted in the full-text stage below. The first page
 
 | Stage | n | Note |
 |---|---|---|
-| Full texts read | 134 | 134 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
-| Excluded at full text | 43 | E1 14, E2 5, E3 1, E4 23 |
+| Full texts read | 138 | 138 files received; 0 was the wrong document (idx 242) and needs re-retrieval |
+| Excluded at full text | 44 | E1 14, E2 6, E3 1, E4 23 |
 | Context only (no payoff outcome estimated) | 1 | |
-| **Included, preliminary** | **90** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 41 are flagged for human check |
+| **Included, preliminary** | **93** | Machine-extracted, quotes partly verified, see `extraction_summary.md`. 41 are flagged for human check |
 

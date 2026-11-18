@@ -18701,5 +18701,532 @@
    "corrections": [],
    "problems": "none; record's 'serious' confounding rating is slightly harsh given non-causal framing. Record's note that only main text was read is superseded: appendices (Tables A1-G2) consistent with record. Record omits the 2-threshold test (p=0.765), linearity bootstrap p=0.032, and GAM average slopes 0.035/-0.032 (minor)."
   }
+ },
+ {
+  "idx": "9601",
+  "title": "A Panel Data Analysis of Determinants of Financial Inclusion in Sub-Saharan Africa (SSA) Countries from 1999 to 2024",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Empirical panel regression where internet users (internet diffusion) is a regressor for financial inclusion (family 5); the paper states 45 SSA countries (Table 5 uses 34 cross-sections), above the 10-economy minimum. Internet is one of several determinants rather than the sole focus, so inclusion is borderline.",
+  "stream": "H",
+  "technology": [
+   "internet"
+  ],
+  "exposure_measure": "USERS: number of internet users (WDI; descriptive mean 11.183, likely per 100 people but unit not stated); also SERVER: secure internet servers",
+  "sample": {
+   "n_economies": "45 stated; 34 cross-sections in Table 5",
+   "economies_or_groups": "Sub-Saharan Africa",
+   "income_groups_covered": "not reported (SSA, mainly low and lower-middle)",
+   "years": "1999-2024 (24 periods in Table 5)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel least squares, pooled regression (no fixed effects reported)",
+   "identification": "none",
+   "key_controls_fixed_effects": "GDP per capita, inflation, interest rate, Islamic banking dummy, money supply, credit; no country or time effects reported"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Financial inclusion (AFII; depositors with commercial banks per 1000 adults) on internet users",
+    "direction": "positive",
+    "estimate": "0.459388",
+    "uncertainty": "SE 0.07508; t 6.118623; p 0.0000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.11 USERS row: 'USERS 0.459388 0.07508 6.118623 0.0000'"
+   },
+   {
+    "family": 5,
+    "indicator": "Financial inclusion on secure internet servers",
+    "direction": "negative",
+    "estimate": "-4.63 x 10^-6",
+    "uncertainty": "SE 8.59 x 10^-7; t -5.391912; p 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.11 SERVER row"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "1",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('enhance') with pooled OLS, no fixed effects or instruments; reverse causation and omitted variables unaddressed. Durbin-Watson 0.12 indicates strong residual autocorrelation.",
+    "evidence": "Table 5, p.11"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users unit not defined; secure servers is a weak proxy and is negative.",
+    "evidence": "Sec. 3, p.8"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "45 countries stated but 34 cross-sections and 598 unbalanced obs used; unexplained.",
+    "evidence": "Table 5"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Outcome defined as depositors per 1000 adults in text but labelled AFII in table; mean 21.4 inconsistent with scale of some regressors; inconsistent reporting.",
+    "evidence": "Sec. 3 and Table 5"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Unit root tests run but pooled levels regression estimated anyway; no fixed effects despite stated need for panel methods; R-squared line garbled (1436).",
+    "evidence": "Tables 4-5"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only one specification reported, so little room to judge.",
+    "evidence": "Table 5"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (MDPI journal; internal inconsistencies in tables and variable definitions)",
+  "notes": "Abstract mentions Panel Least Squares and three periods (pre-COVID, COVID, post-COVID) but no period-specific results reported. Table 5 reports pooled results only, though the text says panel methods are needed. Table 2/3 headers use GRO for GDP per capita and ISIC/ISMAIC inconsistently. No instruction-like text found.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 1
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 2
+   },
+   "heterogeneity": {},
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel least squares estimation; exposure is internet users (and secure internet servers); 45 SSA countries stated (34 cross-sections, 598 obs in Table 5), above 10; outcome is financial inclusion (family 5). Internet being one of several regressors does not disqualify it because it is a reported exposure coefficient. Eligible but weak (pooled, no identification).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Record minor: unit of USERS ambiguous (Table 2 mean 11.183 suggests per 100). Abstract lists three periods but no period-specific results; the record notes this. Nothing invented or mixed up."
+  }
+ },
+ {
+  "idx": "9602",
+  "title": "Financial Inclusion, ICT Diffusion and Poverty Reduction: Evidence from Sub-Sahara African Countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel ARDL (PMG/MG/DFE) on 27 SSA economies; exposures are internet and mobile phone penetration; outcome is household consumption per capita used as poverty proxy (families 4 and 5).",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "mobile telephony"
+  ],
+  "exposure_measure": "Internet penetration (IP) and mobile phone subscriptions (MP), per 100 people (World Bank WDI); financial inclusion proxied by commercial bank branches per 100,000 adults (COM)",
+  "sample": {
+   "n_economies": "27",
+   "economies_or_groups": "27 sub-Saharan African countries (Appendix 1), chosen on data availability",
+   "income_groups_covered": "not reported (SSA only; mostly low and lower-middle, some upper-middle e.g. Botswana, Gabon, Mauritius, South Africa, Namibia)",
+   "years": "2004-2017 (abstract, Section 3.2); conclusion and introduction say 2004-2016",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel ARDL: pooled mean group (PMG, preferred via Hausman), mean group, dynamic fixed effects",
+   "identification": "none",
+   "key_controls_fixed_effects": "Log GDP per capita, inflation; country fixed effects/heterogeneous intercepts"
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Household final consumption expenditure per capita (poverty proxy) vs internet penetration, PMG long run",
+    "direction": "positive",
+    "estimate": "0.000779***",
+    "uncertainty": "SE 0.000159",
+    "horizon": "long",
+    "evidence": "Table 3, PMG long run, row IP; text p.147: 'internet penetration reduces poverty in the long run'"
+   },
+   {
+    "family": 4,
+    "indicator": "Household consumption per capita vs internet penetration, PMG short run",
+    "direction": "null",
+    "estimate": "-0.00276",
+    "uncertainty": "SE 0.0221",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, PMG short run, row D IP; no stars, yet abstract says significant short-run reduction"
+   },
+   {
+    "family": 4,
+    "indicator": "Household consumption per capita vs mobile phone penetration, PMG long run",
+    "direction": "null",
+    "estimate": "0.000215",
+    "uncertainty": "SE 0.000144",
+    "horizon": "long",
+    "evidence": "Table 3, PMG long run, row MP; text: 'no impact on poverty reduction both short and long run'"
+   },
+   {
+    "family": 4,
+    "indicator": "Household consumption per capita vs mobile phone penetration, PMG short run",
+    "direction": "null",
+    "estimate": "-3.6605",
+    "uncertainty": "SE 0.00178",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, PMG short run, row D MP; printed -3.6605 with SE 0.00178 and no stars, internally implausible (likely typo)"
+   },
+   {
+    "family": 4,
+    "indicator": "Household consumption per capita vs commercial bank branches (financial inclusion), PMG long run and short run",
+    "direction": "positive",
+    "estimate": "long run 0.00556***; short run 0.0191**",
+    "uncertainty": "SE 0.00125 (long); SE 0.00862 (short)",
+    "horizon": "long",
+    "evidence": "Table 3, PMG rows COM and D COM; text calls short-run effect negative, contradicting positive printed sign"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "3 estimators (PMG, MG, DFE); MG and DFE show no significant ICT effects except DFE MP long run 0.000895**",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('exert a significant reduction in poverty'); PMG ARDL with no instruments; reverse causality (consumption driving internet/bank access) not handled; only two controls",
+    "evidence": "Section 3.1, Table 3"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet and mobile subscriptions per 100 people are standard; bank branches is a crude financial inclusion proxy",
+    "evidence": "Section 3.2, Table 1 note"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "27 SSA countries picked on data availability; 14 annual obs per country; period inconsistently reported (2004-2016 vs 2017); obs 351 in Table 1 vs 324 in Table 3",
+    "evidence": "Section 3.2, Appendix 1, Table 3"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Household final consumption per capita is a living-standard proxy, not a poverty measure; interpretation of positive coefficient as 'poverty reduction' is loose; min value 0 in Table 1 suggests data gaps coded as zero",
+    "evidence": "Section 3.2, Table 1"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "PMG imposes long-run homogeneity with T=14; MG/DFE show different results; unit-root tests report variables I(1) yet no cointegration test beyond ECT; lag selection not reported",
+    "evidence": "Sections 3.1, 4.1, Table 3"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Text and abstract contradict Table 3 (short-run COM sign, short-run IP significance); conclusions emphasise PMG significant results only",
+    "evidence": "Abstract, p.147 vs Table 3"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (low-visibility journal with multiple text-table inconsistencies, typographical errors in specification and variable definitions)",
+  "notes": "Outcome is household consumption per capita (poverty proxy), so classed as family 4 with overlap to family 5. Abstract says IP reduces poverty in the short run but not long run, whereas Table 3 shows IP significant in the long run and not in the short run; conclusion repeats the short-run claim. Text says COM short-run effect is negative but Table 3 shows +0.0191**. Mobile MP short-run coefficient -3.6605 with SE 0.00178 looks like a misprint. Observations 351 (Table 1) vs 324 (Table 3). No instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 2,
+   "checked": 2
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {},
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel ARDL estimation, 27 SSA economies, internet and mobile exposure, consumption-as-poverty outcome (families 4/5).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Text contradicts Table 3: abstract/conclusion say IP significant in short run, none in long run (table shows the reverse); text says COM short run negative but table shows +0.0191**; text says IP short run negative while table shows no significant effect. Observations 351 (Table 1) vs 324 (Table 3). Record handles these correctly."
+  }
+ },
+ {
+  "idx": "9603",
+  "title": "Digital technologies and financial inclusion in Sub-Saharan Africa",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study (system GMM and IV-Tobit) of ICT indicators (internet, mobile, fixed broadband, fixed telephone, composite) in 43 economies; outcome is financial inclusion (family 5).",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "mobile telephony",
+   "internet or broadband"
+  ],
+  "exposure_measure": "Internet users, fixed broadband, fixed telephone and mobile cellular subscriptions (per 100 people, WDI) and a composite digitalization indicator; each entered separately",
+  "sample": {
+   "n_economies": "43",
+   "economies_or_groups": "43 Sub-Saharan African countries (listed in footnote 1)",
+   "income_groups_covered": "not reported (region-only sample; no income-group split)",
+   "years": "2004-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "System GMM (forward orthogonal deviations, time dummies) as main; IV-Tobit as baseline",
+   "identification": "other",
+   "key_controls_fixed_effects": "FDI, GDP per capita, consumption, savings, inflation, trade; time effects; lagged dependent variable; explanatory variables treated as exogenous; internal (lag-residual) instruments in IV-Tobit"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Bank accounts per 100,000 adults (system GMM, internet users)",
+    "direction": "positive",
+    "estimate": "0.0413***",
+    "uncertainty": "SE 0.00235",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col 2, p.11; 'Internet users 0.0413*** (0.00235)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank accounts (system GMM, mobile phone)",
+    "direction": "positive",
+    "estimate": "0.0147***",
+    "uncertainty": "SE 0.00125",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col 3, p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank accounts (system GMM, fixed broadband)",
+    "direction": "positive",
+    "estimate": "0.0554***",
+    "uncertainty": "SE 0.0137",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col 4, p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank accounts (system GMM, composite digitalization)",
+    "direction": "positive",
+    "estimate": "0.0431***",
+    "uncertainty": "SE 0.00317",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col 5, p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank branches (system GMM, internet users)",
+    "direction": "positive",
+    "estimate": "0.218***",
+    "uncertainty": "SE 0.0228",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6 col 2, p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "ATMs per 100,000 adults (system GMM, internet users)",
+    "direction": "positive",
+    "estimate": "0.639***",
+    "uncertainty": "SE 0.0311",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7 col 2, p.12"
+   },
+   {
+    "family": 5,
+    "indicator": "Financial inclusion index, PCA composite (system GMM, digitalization)",
+    "direction": "positive",
+    "estimate": "0.0447***",
+    "uncertainty": "SE 0.00129",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8 col 5, p.12"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank accounts (IV-Tobit, digitalization)",
+    "direction": "positive",
+    "estimate": "0.0407***",
+    "uncertainty": "SE 0.00438",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 col 5, p.9"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 35 (5 technology measures x 4 outcomes in GMM, 3 outcomes in IV-Tobit)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('digital technology increases financial inclusion'); GMM with all regressors declared exogenous and only time dummies as instruments; internal IV-Tobit instruments are lags. Reverse causality not credibly handled.",
+    "evidence": "Section 4.2, p.7: 'all our explanatory are treated as exogenous'"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Standard WDI subscription counts, adequate for ICT diffusion; composite indicator construction not detailed.",
+    "evidence": "Section 4.1.2, p.6"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "43 SSA countries chosen by data availability; effective sample falls to 29-37 countries; some countries dropped.",
+    "evidence": "Section 4.1, p.6; Tables 5-8 'Number of id'"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Financial inclusion proxied by supply-side bank accounts, branches and ATMs; mixed units (per 100,000 adults) and min-max normalisation; variables such as deposits and credit are financial depth, not inclusion. Text also states bank-account figures 'per 100,000 people' and 'mobile money subscribers' inconsistently.",
+    "evidence": "Section 4.1.1.1, p.6; Table 1"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Lagged dependent variable coefficients near or above 1 (1.003, 1.031, 1.050), indicating unit root/non-stationarity; AR(2) and Hansen p-values marginal in places (Table 7); instrument count 24-25; many specifications.",
+    "evidence": "Table 6 col 2; Table 7, p.11-12"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All reported technology coefficients positive and significant; robustness composite index results reported only partly; credit, deposits and loans outcomes mentioned in text but not tabulated.",
+    "evidence": "Section 5.1 and Section 6, p.12-13"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Telecommunications Policy 2022. Digital technology effect is on financial inclusion only; GDP per capita is a control, not an outcome. Dependent variables min-max normalised to 0-1 while coefficients are on different scales across tables. The text states country-count discrepancies (43 countries; 'individuals greater than time series'). No text aimed at the extractor found.",
+  "quote_check": {
+   "verified": 2,
+   "checked": 2
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 8
+   },
+   "heterogeneity": {},
+   "eligibility_ok": true,
+   "eligibility_note": "Panel GMM/IV-Tobit, 43 SSA economies, ICT exposure, financial inclusion outcome (family 5); meets the 10-economy rule.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "none; minor: Table 5 col 2 internet SE (0.00235) differs from Table 2 (0.00368), which is correct because they are different estimators."
+  }
+ },
+ {
+  "idx": "9604",
+  "title": "Nexus Between Financial Technology and Financial Inclusion in Sub-Saharan Africa: A Dynamic Panel Technique",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E2",
+  "decision_rationale": "The fintech exposure is a principal-component index built from mobile and internet subscriptions together with population density and population size, so about a quarter of its variance is demographic and it does not measure ICT adoption. Reclassified from include after the cross-check, consistent with the earlier exclusion of a fintech-credit exposure.",
+  "stream": "H",
+  "technology": [
+   "mobile telephony",
+   "internet"
+  ],
+  "exposure_measure": "Financial technology index (FT): PCA composite of mobile subscriptions per 100 (MOB), internet subscriptions per 100 (INT), population density (POD) and population size (POS); min-max normalised. The first component loads mainly on MOB and INT, the second on POS (Table 8, Eq. 14). The exposure variable is therefore mobile/internet penetration blended with demographic variables, not a direct measure of fintech products.",
+  "sample": {
+   "n_economies": "30 (text); 29 groups in regressions (Table 10)",
+   "economies_or_groups": "selected Sub-Saharan African countries (list not given in the text read)",
+   "income_groups_covered": "not reported (SSA only; no income-group split)",
+   "years": "2004-2021",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "two-step system GMM (dynamic panel); Hansen and Sargan tests, AR(1)/AR(2)",
+   "identification": "other",
+   "key_controls_fixed_effects": "lnRGDP, trade openness, inflation, human capital (primary enrolment), deposit interest rate, lnremittances, government consumption, real interest rate, institutional quality"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Financial inclusion index (FI), PCA of ATMs and commercial bank branches (levels, per adults, per km2)",
+    "direction": "positive",
+    "estimate": "1.2134** (FT coefficient)",
+    "uncertainty": "SE 0.4995; p<.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 col (4) FI, p.11: 'FT 1.2134** (0.4995)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Accessibility sub-index (AC)",
+    "direction": "positive",
+    "estimate": "2.2170**",
+    "uncertainty": "SE 0.8405; p<.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 col (1), p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Usage sub-index (US)",
+    "direction": "positive",
+    "estimate": "0.7438***",
+    "uncertainty": "SE 0.1844; p<.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 col (2), p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Availability sub-index (AV)",
+    "direction": "null",
+    "estimate": "0.3381",
+    "uncertainty": "SE 0.2506; not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 col (3), p.11; text p.10 'availability does not have a significant impact'"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "4 (one per dependent variable)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('effect', 'determinant'), but the only strategy is internal system-GMM instruments with 12-14 instruments for 29 groups; reverse causality is acknowledged (authors claim bi-directional causality) but no causality test is shown. Sargan p=.008 in the usage model, AR(2) p=.065 in the FI model.",
+    "evidence": "Table 10 diagnostics, p.11; Conclusion p.13"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "FT index mixes mobile and internet penetration with population density and size, and the second retained component is dominated by population size; it does not purely capture technology adoption and is not fintech/mobile money use.",
+    "evidence": "Tables 7-8, Eq. 14, pp.9"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "30 SSA countries chosen by data availability; missing values filled with regional means and 3-year moving averages, which can induce artificial smoothness.",
+    "evidence": "Methodology p.5"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "FI index built only from supply-side ATM and commercial-bank branch counts (and per capita/per km2 versions); omits account ownership, mobile money and digital finance, which is the channel of interest. Usage and availability sub-indices are built from overlapping variables.",
+    "evidence": "Table 1, Eqs. 10-13, pp.5,8"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Two-step PCA weights, imputation, and instrument-set choices are discretionary; text refers to ARDL and unit-root tests that are not used in the final estimator; inconsistent counts of countries and observations.",
+    "evidence": "pp.5-10"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only one specification per outcome and no robustness checks; conclusion text contradicts Table 10 on several points (see notes).",
+    "evidence": "Table 10 vs Conclusion p.12-13"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (open-access SAGE Open; large internal inconsistencies between text and tables)",
+  "notes": "Eligibility judgement: fintech as labelled is not itself an eligible exposure, but the operational variable is a mobile/internet penetration index (MOB and INT dominate component 1), so included as mobile/internet exposure; reviewer may reasonably flag as borderline. Outcome is financial inclusion only (family 5); no output or productivity outcome (real GDP is a control). Inconsistencies: 30 countries stated but 29 groups and 512 obs in Table 10 vs 540 obs in Table 3; conclusion says HC significant at 1% and negative, but Table 10 shows HC insignificant for FI; Conclusion says FT significant for availability whereas Table 10 shows 0.3381 insignificant; FT said to be I(1) in some unit-root tests yet GMM described as conforming to ARDL; Findex 2021 is cited as a source but the index uses FAS supply data. Minus signs appear as '2' in the converted text (e.g. '20.0980' = -0.0980), so FT coefficients printed without a leading 2 are read as positive; the minus-sign reading of the control coefficients is a conversion artefact. No text aimed at the extractor was found.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 2
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 4
+   },
+   "heterogeneity": {},
+   "eligibility_ok": false,
+   "eligibility_note": "Own system-GMM estimation, 29-30 SSA economies and a family-5 outcome (financial inclusion) are fine. The exposure is not ICT. FT is a PCA index of MOB, INT, population density (POD) and population size (POS). Component 1 (47% of variance) is mobile/internet, but component 2 (25%) is almost all population size (POS loading 0.981). Eq. 14 carries both components, so a large part of the index is demographic and the paper never isolates mobile or internet. The index is labelled 'fintech' but contains no fintech or mobile-money measure. Borderline; I recommend exclusion under the exposure criterion. If the screener keeps it, it should be flagged as a mixed ICT-demographic index.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "30 SSA countries per text ('secondary data from 30 SSA countries'); Table 10 shows 29 groups, 512 obs (Table 3 descriptives show 540 obs). Record is accurate.",
+    "years": "2004-2021 confirmed",
+    "income_groups_covered": "not reported, confirmed"
+   },
+   "corrections": [],
+   "problems": "No invented numbers found. All four Table 10 FT coefficients and SEs match. Minor: the record's Eq. 14 / Table 8 mention is fine, but Table 8 prints MOB comp1 as 0.668 while Eq. 14 prints 0.688, a typo in the paper. Minus signs print as '2' in the converted text, which the record handles correctly. The exposure_measure field in the record is accurate but understates how much the index is demographic. Recommend flipping the decision from include to exclude (exposure not ICT) or flagging it as borderline."
+  }
  }
 ]
