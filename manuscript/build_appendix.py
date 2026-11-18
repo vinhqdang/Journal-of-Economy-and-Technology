@@ -8,7 +8,8 @@ for _r in csv.DictReader(open(os.path.join(ROOT, "review/data/added_records.csv"
     rows.setdefault(_r["idx"], _r)
 
 ext = [x for x in json.load(open(os.path.join(ROOT, "review/data/extraction.json"))) if x["fulltext_decision"] == "include"]
-ext.sort(key=lambda x: int(x["idx"]))
+from citekeys import CIT, key
+ext.sort(key=lambda x: key(x["idx"]).lower())
 
 def esc(s):
     s = str(s)
@@ -28,14 +29,24 @@ def techs(x):
             out.append(k)
     return ", ".join(out) or "Other"
 
-lines = [r"{\scriptsize", r"\begin{longtable}{@{}r r p{4.9cm} p{1.5cm} r l p{3.7cm}@{}}",
-         r"\caption{Studies included in the synthesis (n = %d). Authors are not listed because the extraction database does not store them; the DOI identifies each record. n.r. = not reported. RoB = overall risk of bias in the first-pass rating (moderate, serious, critical); no study was rated low.}\label{tab:included}\\" % len(ext),
-         r"\toprule ID & Year & Title & Technology & Econ. & RoB & DOI \\ \midrule \endfirsthead",
-         r"\toprule ID & Year & Title & Technology & Econ. & RoB & DOI \\ \midrule \endhead", r"\bottomrule \endfoot"]
+def refline(i, x):
+    c = CIT[i]
+    au = [a.strip() for a in c["authors"].split(";") if a.strip()]
+    def ini(a):
+        fam, _, giv = a.partition(",")
+        g = "".join(p[0] + "." for p in re.split(r"[ -]+", giv.strip()) if p)
+        return f"{fam.strip()}, {g}"
+    names = "; ".join(ini(a) for a in au)
+    return rf"\textbf{{{esc(key(i))}}}. {esc(names)} ({c['year']}). {esc(c['title'])}. \emph{{{esc(c['venue'])}}}."
+
+lines = [r"{\scriptsize", r"\begin{longtable}{@{}p{7.4cm} p{1.3cm} r l p{3.4cm}@{}}",
+         r"\caption{Studies included in the evidence map (n = %d), in alphabetical order of the in-text citation. Technology: AI, ICT in general, mobile, internet or broadband, crypto-assets. Econ. = number of economies (n.r. = not reported). RoB = overall risk of bias (moderate, serious, critical); no study was rated low. Authors and years follow the Crossref record or, where none exists, the paper itself.}\label{tab:included}\\" % len(ext),
+         r"\toprule Reference & Technology & Econ. & RoB & DOI \\ \midrule \endfirsthead",
+         r"\toprule Reference & Technology & Econ. & RoB & DOI \\ \midrule \endhead", r"\bottomrule \endfoot"]
 for x in ext:
     r = rows[x["idx"]]
-    doi = r["doi"] or ""
-    lines.append(" & ".join([x["idx"], r["year"], esc(x["title"]), techs(x), n_econ(x["sample"]), esc(x["overall_risk_of_bias"]), (r"\url{https://doi.org/%s}" % doi.replace("%", r"\%").replace("#", r"\#")) if doi else "n.a."]) + r" \\")
+    doi = CIT[x["idx"]]["doi"] or r["doi"] or ""
+    lines.append(" & ".join([refline(x["idx"], x), techs(x), n_econ(x["sample"]), esc(x["overall_risk_of_bias"]), (r"\url{https://doi.org/%s}" % doi.replace("%", r"\%").replace("#", r"\#")) if doi else "n.a."]) + r" \\")
 lines += [r"\end{longtable}", "}"]
 open(os.path.join(os.path.dirname(__file__), "appendix_studies.tex"), "w").write("\n".join(lines) + "\n")
-print(len(ext), "studies;", sum(1 for x in ext if not rows[x['idx']]['doi']), "without DOI")
+print(len(ext), "studies;", sum(1 for x in ext if not (CIT[x['idx']]['doi'] or rows[x['idx']]['doi'])), "without DOI")

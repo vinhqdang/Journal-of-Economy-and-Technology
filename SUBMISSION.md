@@ -30,3 +30,13 @@ The manuscript cannot go to peer review in its present form. Points raised:
 5. Not publication-ready: studies are cited by internal IDs (e.g. study 9102) instead of author-year; process-log language ("garbled tables stay garbled").
 6. Single reviewer, no registration, model-based adjudication: noted as a design choice, flagged under PRISMA 2020.
 7. For resubmission the editor expects: (i) a substantially expanded search or a reframing as a pilot mapping exercise rather than a systematic review; (ii) removal or major rework of the unstable moderator analysis; (iii) a clearer contribution from the panel section or its reduction to a supplementary exercise; (iv) full human verification of all extracted effect sizes; (v) a complete rewrite without internal IDs or process-log language.
+
+## Revision for resubmission (18 Nov 2026, draft)
+Direction agreed with the author: reframe the paper as a **pilot evidence map**, not a systematic review.
+- Title: *Do the gains from digital technology waves differ by income level? A pilot evidence map of cross-country studies*. Keywords (5): digital technology; artificial intelligence; income level; evidence map; productivity.
+- Meta-regression demoted to one descriptive pooled figure (0.16, 22 studies) with its instability stated; moderator regressions, small-study tests and sensitivity moved to Appendix `app:sens` and not interpreted; hypotheses H1 to H6 replaced by four questions.
+- Macro-panel analysis reduced to a one-page supplementary check; full tables moved to the appendix; the ten-year event-study estimates are no longer discussed in the main text.
+- Studies cited by author and year (data: `review/data/study_citations.csv`; seven authors were completed by web search and should be confirmed); internal IDs and process-log wording removed; appendix of included studies is now the reference list.
+- **Still open before resubmitting:** the author's check of the 22 headline estimates against the source papers (`review/verification/human_verification_sheet.pdf`). The Methods contain a marked placeholder for the number of studies verified and corrections; the Abstract and Limitations already say the author verified these estimates, so they must not be submitted until the check is done.
+- Draft PDFs: `manuscript/Anonymous_Manuscript_v2026-11-18-evidence-map-DRAFT.pdf`, `manuscript/Title_Page_v2026-11-18-evidence-map-DRAFT.pdf`, `manuscript/Full_Manuscript_v2026-11-18-evidence-map-DRAFT.pdf`.
+- The title and keywords in the submission system must be changed to match.

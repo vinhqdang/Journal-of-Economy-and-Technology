@@ -8,6 +8,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from citekeys import short
 from matplotlib.patches import FancyBboxPatch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -49,7 +50,7 @@ fig, ax = plt.subplots(figsize=(6.4, 0.32 * len(h) + 1.2))
 y = np.arange(len(h))
 ax.errorbar(h["pcc"], y, xerr=1.96 * h["se"], fmt="o", ms=4, color=PAL["a"], ecolor="#9db7d3", capsize=2)
 ax.axvline(0, color="grey", lw=0.8)
-ax.set_yticks(y); ax.set_yticklabels([f"Study {i}" for i in h["idx"]], fontsize=7)
+ax.set_yticks(y); ax.set_yticklabels([short(i) for i in h["idx"]], fontsize=7)
 ax.set_xlabel("Partial correlation (headline estimate, 95% interval)", fontsize=8)
 plt.tight_layout(); plt.savefig(os.path.join(HERE, "fig_forest.png"), dpi=170); plt.close()
 

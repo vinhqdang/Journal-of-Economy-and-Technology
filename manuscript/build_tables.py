@@ -8,7 +8,8 @@ import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 ext = [x for x in json.load(open(os.path.join(ROOT, "review/data/extraction.json"))) if x["fulltext_decision"] == "include"]
-ext.sort(key=lambda x: int(x["idx"]))
+from citekeys import short
+ext.sort(key=lambda x: short(x["idx"]).lower())
 
 def esc(s):
     s = str(s)
@@ -44,14 +45,14 @@ SYM = {"positive": r"$+$", "negative": r"$-$", "null": "0", "mixed": "mixed", "n
 L = []
 for f, name in FAM.items():
     ps = [x for x in ext if any(r["family"] == f for r in x["results"])]
-    L += [r"{\scriptsize", r"\begin{longtable}{@{}r l r l l p{3.6cm} l@{}}",
+    L += [r"{\scriptsize\setlength{\tabcolsep}{3pt}", r"\begin{longtable}{@{}p{3.1cm} p{1.9cm} r l p{2.4cm} p{2.3cm} l@{}}",
           rf"\caption{{Studies reporting {name.lower()} outcomes (n = {len(ps)}). ``Directions'' counts the study's results in this family: $+$ positive, $-$ negative, 0 null, m mixed. Technology codes as in Table~\ref{{tab:included}}.}}\label{{tab:fam{f}}}\\",
-          r"\toprule ID & Tech. & Econ. & Years & Estimator & Directions & RoB \\ \midrule \endfirsthead",
-          r"\toprule ID & Tech. & Econ. & Years & Estimator & Directions & RoB \\ \midrule \endhead", r"\bottomrule \endfoot"]
+          r"\toprule Study & Tech. & Econ. & Years & Estimator & Directions & RoB \\ \midrule \endfirsthead",
+          r"\toprule Study & Tech. & Econ. & Years & Estimator & Directions & RoB \\ \midrule \endhead", r"\bottomrule \endfoot"]
     for x in ps:
         c = {k: sum(1 for r in x["results"] if r["family"] == f and r["direction"] == k) for k in ("positive", "negative", "null", "mixed")}
         dirs = ", ".join(f"{v}{s}" for v, s in [(c["positive"], "+"), (c["negative"], "$-$"), (c["null"], "0"), (c["mixed"], "m")] if v)
-        L.append(" & ".join([x["idx"], tech(x), neco(x["sample"] and x), yrs(x), estclass(x), dirs, x["overall_risk_of_bias"]]) + r" \\")
+        L.append(" & ".join([esc(short(x["idx"])), tech(x), neco(x["sample"] and x), yrs(x), estclass(x), dirs, x["overall_risk_of_bias"]]) + r" \\")
     L += [r"\end{longtable}", "}", ""]
 open(os.path.join(HERE, "app_families.tex"), "w").write("\n".join(L))
 
@@ -59,11 +60,11 @@ open(os.path.join(HERE, "app_families.tex"), "w").write("\n".join(L))
 d = pd.read_csv(os.path.join(ROOT, "review/data/mra_effect_sizes.csv"), dtype={"idx": str})
 d["k"] = d["idx"].astype(int)
 d = d.sort_values(["k", "estimate_id"])
-rows = [f"{r['estimate_id']} & {esc(r['role'])} & {int(r['n']) if pd.notna(r['n']) else 'n.r.'} & {r['pcc']:.3f} & {r['se']:.3f}" for _, r in d.iterrows()]
+rows = [f"{esc(short(r['idx']))} \\#{r['estimate_id'].split('-')[-1]} & {esc(r['role'])} & {int(r['n']) if pd.notna(r['n']) else 'n.r.'} & {r['pcc']:.3f} & {r['se']:.3f}" for _, r in d.iterrows()]
 half = (len(rows) + 1) // 2
 left, right = rows[:half], rows[half:] + [""] * (half - len(rows[half:]))
 HDR = r"Estimate & Role & Obs. & PCC & SE"
-L = [r"{\scriptsize", r"\begin{longtable}{@{}l l r r r@{\hspace{1.2em}}l l r r r@{}}",
+L = [r"{\scriptsize\setlength{\tabcolsep}{3pt}", r"\begin{longtable}{@{}p{3.0cm} l r r r@{\hspace{0.8em}}p{3.0cm} l r r r@{}}",
      r"\caption{Estimates used in the meta-regression (" + f"{len(d)} estimates from {d['idx'].nunique()} studies" + r"): partial correlation (PCC) and its standard error, computed from the printed coefficient and uncertainty with degrees of freedom equal to observations minus 10. The second half of the list continues in the right-hand block; $t$-statistics are available with the data and code.}\label{tab:mrainputs}\\",
      r"\toprule " + HDR + " & " + HDR + r" \\ \midrule \endfirsthead",
      r"\toprule " + HDR + " & " + HDR + r" \\ \midrule \endhead", r"\bottomrule \endfoot"]
@@ -73,16 +74,16 @@ L += [r"\end{longtable}", "}"]
 open(os.path.join(HERE, "app_mra.tex"), "w").write("\n".join(L))
 
 # second pass summary
-L = [r"{\scriptsize", r"\begin{longtable}{@{}r r r r r l@{}}",
+L = [r"{\scriptsize\setlength{\tabcolsep}{3pt}", r"\begin{longtable}{@{}p{4cm} r r r r l@{}}",
      r"\caption{Second-pass check by study: results confirmed (C), corrected (X) or unverifiable (U), heterogeneity entries corrected, and the second reader's view of the overall risk-of-bias rating.}\label{tab:secondpass}\\",
-     r"\toprule ID & C & X & U & Het. X & RoB view \\ \midrule \endfirsthead", r"\toprule ID & C & X & U & Het. X & RoB view \\ \midrule \endhead", r"\bottomrule \endfoot"]
+     r"\toprule Study & C & X & U & Het. X & RoB view \\ \midrule \endfirsthead", r"\toprule Study & C & X & U & Het. X & RoB view \\ \midrule \endhead", r"\bottomrule \endfoot"]
 for x in ext:
     s = x.get("second_pass")
     if not s:
-        L.append(rf"{x['idx']} & \multicolumn{{5}}{{l}}{{not second-passed}} \\")
+        L.append(rf"{esc(short(x['idx']))} & \multicolumn{{5}}{{l}}{{not second-passed}} \\")
         continue
     r_, h_ = s["results"], s["heterogeneity"]
-    L.append(f"{x['idx']} & {r_.get('confirmed', 0)} & {r_.get('corrected', 0)} & {r_.get('unverifiable', 0)} & {h_.get('corrected', 0)} & {esc((s['risk_of_bias_overall_opinion'] or '').replace('_', ' '))}" + r" \\")
+    L.append(f"{esc(short(x['idx']))} & {r_.get('confirmed', 0)} & {r_.get('corrected', 0)} & {r_.get('unverifiable', 0)} & {h_.get('corrected', 0)} & {esc((s['risk_of_bias_overall_opinion'] or '').replace('_', ' '))}" + r" \\")
 L += [r"\end{longtable}", "}"]
 open(os.path.join(HERE, "app_secondpass.tex"), "w").write("\n".join(L))
 print("tables done", len(ext))

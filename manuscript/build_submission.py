@@ -16,7 +16,7 @@ tp = r"""\documentclass[11pt,a4paper]{article}
 \thispagestyle{empty}
 {\large\textbf{Title page}}
 
-\textbf{Title:} Do the gains from digital technology waves differ by income level? A systematic review, a pilot meta-regression and a macro-panel analysis
+\textbf{Title:} Do the gains from digital technology waves differ by income level? A pilot evidence map of cross-country studies
 
 \textbf{Author:} Quang-Vinh Dang
 
@@ -26,7 +26,7 @@ tp = r"""\documentclass[11pt,a4paper]{article}
 
 \textbf{ORCID:} 0000-0002-3877-8024
 
-\textbf{Keywords:} digital technology; artificial intelligence; income level; systematic review; meta-regression
+\textbf{Keywords:} digital technology; artificial intelligence; income level; evidence map; productivity
 
 \textbf{JEL codes:} O33, O47, O11, L96
 
