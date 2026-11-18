@@ -1,0 +1,20 @@
+[
+ {
+  "idx": "9604",
+  "title": "Nexus Between Financial Technology and Financial Inclusion in Sub-Saharan Africa: A Dynamic Panel Technique",
+  "paper_level": {
+   "estimator_family": "GMM-system",
+   "identification": "internal instruments (GMM lags)",
+   "reverse_causality_addressed": "partly",
+   "causal_language": "yes",
+   "sample_description": "30 SSA countries (29 groups in regressions), 2004-2021, SSA only, no income-group split",
+   "n_countries_main": "29",
+   "n_obs_main": "512",
+   "technology_measure_main": "FT: PCA index of mobile subscriptions per 100, internet subscriptions per 100, population density, population size",
+   "outcome_main": "Financial inclusion index (ATM and bank-branch based PCA); sub-indices accessibility, usage, availability. Not output or productivity",
+   "units_note": "not stated; index units"
+  },
+  "estimates": [],
+  "notes": "Outcome is financial inclusion (family 5), not output or productivity; real GDP appears only as a control, so no estimates are extracted. No text aimed at the extractor was found."
+ }
+]

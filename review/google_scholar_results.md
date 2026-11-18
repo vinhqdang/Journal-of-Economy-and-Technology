@@ -25,3 +25,7 @@ Data: `data/scholar_g3_page1.csv`. Of the 10 results, 3 are already included (Sa
 ## Query G6, first page (10 results), pasted by the author on 18 November 2026
 
 Data: `data/scholar_g6_page1.csv`. Of the 10 results, 2 are already included, 1 was excluded at abstract stage (fewer than 10 economies) and 1 has financial inclusion as its exposure, not ICT. Four are new and requested (Oyedotun and Makoni 2026, Kouladoum et al. 2022, Alimi and Okunade 2020, Anifowose and Chummun 2025); two more are optional (Onyejiaku et al. 2026, digital financial inclusion as exposure; Gebrehiwot and Makina 2015, mobile penetration as one determinant).
+
+## Query G5, first page (10 results), pasted by the author on 18 November 2026
+
+Data: `data/scholar_g5_page1.csv`. Of the 10 results, 2 are already included, 1 (Omar and Inaba) was seen in G6 and is not eligible because financial inclusion is its exposure. Five are new and requested (Popowska 2022, Phan 2023, Asongu et al. 2021, Shah and Krishnan 2024, Richmond and Triplett 2018); two are optional (Polloni-Silva et al. 2021, financial inclusion as exposure; Yilmaz and Koyuncu 2018, venue to be judged).

@@ -1,0 +1,109 @@
+[
+ {
+  "idx": "9604",
+  "title": "Nexus Between Financial Technology and Financial Inclusion in Sub-Saharan Africa: A Dynamic Panel Technique",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Own two-step system GMM estimation on 29-30 SSA economies. Exposure is a PCA index of mobile subscriptions and internet subscriptions (plus population density and size), which meets the mobile/internet exposure criterion; outcome is financial inclusion (family 5). Borderline on exposure because the label is 'fintech' and two of four index inputs are demographic.",
+  "stream": "H",
+  "technology": [
+   "mobile telephony",
+   "internet"
+  ],
+  "exposure_measure": "Financial technology index (FT): PCA composite of mobile subscriptions per 100 (MOB), internet subscriptions per 100 (INT), population density (POD) and population size (POS); min-max normalised. The first component loads mainly on MOB and INT, the second on POS (Table 8, Eq. 14). The exposure variable is therefore mobile/internet penetration blended with demographic variables, not a direct measure of fintech products.",
+  "sample": {
+   "n_economies": "30 (text); 29 groups in regressions (Table 10)",
+   "economies_or_groups": "selected Sub-Saharan African countries (list not given in the text read)",
+   "income_groups_covered": "not reported (SSA only; no income-group split)",
+   "years": "2004-2021",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "two-step system GMM (dynamic panel); Hansen and Sargan tests, AR(1)/AR(2)",
+   "identification": "other",
+   "key_controls_fixed_effects": "lnRGDP, trade openness, inflation, human capital (primary enrolment), deposit interest rate, lnremittances, government consumption, real interest rate, institutional quality"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Financial inclusion index (FI), PCA of ATMs and commercial bank branches (levels, per adults, per km2)",
+    "direction": "positive",
+    "estimate": "1.2134** (FT coefficient)",
+    "uncertainty": "SE 0.4995; p<.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 col (4) FI, p.11: 'FT 1.2134** (0.4995)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Accessibility sub-index (AC)",
+    "direction": "positive",
+    "estimate": "2.2170**",
+    "uncertainty": "SE 0.8405; p<.05",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 col (1), p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Usage sub-index (US)",
+    "direction": "positive",
+    "estimate": "0.7438***",
+    "uncertainty": "SE 0.1844; p<.01",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 col (2), p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Availability sub-index (AV)",
+    "direction": "null",
+    "estimate": "0.3381",
+    "uncertainty": "SE 0.2506; not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 10 col (3), p.11; text p.10 'availability does not have a significant impact'"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "4 (one per dependent variable)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('effect', 'determinant'), but the only strategy is internal system-GMM instruments with 12-14 instruments for 29 groups; reverse causality is acknowledged (authors claim bi-directional causality) but no causality test is shown. Sargan p=.008 in the usage model, AR(2) p=.065 in the FI model.",
+    "evidence": "Table 10 diagnostics, p.11; Conclusion p.13"
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "FT index mixes mobile and internet penetration with population density and size, and the second retained component is dominated by population size; it does not purely capture technology adoption and is not fintech/mobile money use.",
+    "evidence": "Tables 7-8, Eq. 14, pp.9"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "30 SSA countries chosen by data availability; missing values filled with regional means and 3-year moving averages, which can induce artificial smoothness.",
+    "evidence": "Methodology p.5"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "FI index built only from supply-side ATM and commercial-bank branch counts (and per capita/per km2 versions); omits account ownership, mobile money and digital finance, which is the channel of interest. Usage and availability sub-indices are built from overlapping variables.",
+    "evidence": "Table 1, Eqs. 10-13, pp.5,8"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Two-step PCA weights, imputation, and instrument-set choices are discretionary; text refers to ARDL and unit-root tests that are not used in the final estimator; inconsistent counts of countries and observations.",
+    "evidence": "pp.5-10"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only one specification per outcome and no robustness checks; conclusion text contradicts Table 10 on several points (see notes).",
+    "evidence": "Table 10 vs Conclusion p.12-13"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (open-access SAGE Open; large internal inconsistencies between text and tables)",
+  "notes": "Eligibility judgement: fintech as labelled is not itself an eligible exposure, but the operational variable is a mobile/internet penetration index (MOB and INT dominate component 1), so included as mobile/internet exposure; reviewer may reasonably flag as borderline. Outcome is financial inclusion only (family 5); no output or productivity outcome (real GDP is a control). Inconsistencies: 30 countries stated but 29 groups and 512 obs in Table 10 vs 540 obs in Table 3; conclusion says HC significant at 1% and negative, but Table 10 shows HC insignificant for FI; Conclusion says FT significant for availability whereas Table 10 shows 0.3381 insignificant; FT said to be I(1) in some unit-root tests yet GMM described as conforming to ARDL; Findex 2021 is cited as a source but the index uses FAS supply data. Minus signs appear as '2' in the converted text (e.g. '20.0980' = -0.0980), so FT coefficients printed without a leading 2 are read as positive; the minus-sign reading of the control coefficients is a conversion artefact. No text aimed at the extractor was found."
+ }
+]
