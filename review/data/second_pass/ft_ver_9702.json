@@ -1,0 +1,24 @@
+[
+ {"idx":"9702","eligibility_ok":true,
+  "eligibility_note":"Own PLS estimation, ICT (mobile, internet, broadband) exposure, 86 economies, Gini outcome (family 4). Weakly eligible: ICT is linked to Gini only indirectly via gender inequality, and the income-group moderation concerns the gender-Gini link, not ICT.",
+  "sample_corrections":{"n_economies":"86 in abstract and data section; Limitations say 'we limited the number of countries in our research to 85' (p.722) - record already flags this"},
+  "results":[
+   {"n":1,"verdict":"confirmed","correction":"Values and p-values match Table 4. Only T1 is significant at 5%; T2-T4 are at 10% only. Standardized betas, not elasticities.","quote":"ICT (T1) -> Gender inequality (T1) -> Income inequality (T1) -0.737 0.000","locator":"Table 4, p.720"},
+   {"n":2,"verdict":"confirmed","correction":"Matches Table 2 and Table 5 (ICT-GII rows). This is ICT to gender inequality, not to Gini, so it is not a family 4 outcome of ICT. T2-T4 p>0.05.","quote":"ICT (T3) -> Gender inequality (T3) -0.017 0.054","locator":"Table 2, p.717"},
+   {"n":3,"verdict":"confirmed","correction":"Matches Table 2. Exposure is gender inequality, not ICT, so it should not count as an ICT effect on Gini.","quote":"Gender inequality (T2) -> Income inequality (T2) 0.210 0.027","locator":"Table 2, p.717"}
+  ],
+  "heterogeneity":[
+   {"n":1,"verdict":"confirmed","correction":"Interaction values and p-values match Table 5. Moderator is development status (larger value for developed, lower for developing), no threshold given. Moderates the gender-Gini path, not the ICT effect.","quote":"Development status (T3) * Gender inequality (T3) -> Income inequality (T3) 0.076 0.008","locator":"Table 5, p.721"}
+  ],
+  "income_group_results":"confirmed","income_group_note":"No separate group estimates; only a developed/developing moderator on the gender-Gini path. Record says 'not reported' for each group, which is correct.",
+  "risk_of_bias":{"overall":"agree",
+   "confounding_reverse_causation":"agree - causal language and policy advice with no strategy for reverse causation.",
+   "exposure_measurement":"agree - composite of mobile, internet, broadband is reasonable adoption proxy; the authors concede it does not capture all ICT dimensions.",
+   "selection_of_countries_years":"too_harsh - 86 countries is a decent cross-section and the four-year window is short but not a selection problem; moderate fits better, though the 85/86 inconsistency is minor.",
+   "outcome_measurement":"agree - World Bank Gini and UNDP GII are standard but sparse across countries.",
+   "specification":"agree - separate per-year standardized paths, ICT absent from the Gini equation, and a T1 versus T2-T4 gap in magnitude make estimates hard to interpret.",
+   "selective_reporting":"agree - p of 0.054-0.099 described as significant.",
+   "why":"Serious overall is fair: causal framing, no identification, and only indirect ICT-Gini evidence."},
+  "causal_language":"yes","reverse_causality_addressed":"no",
+  "problems":"No invented numbers found. All table values match the text. Result 3 (and result 2, which is labelled family 4) are not ICT effects on Gini; only result 1 is an ICT-Gini estimate and it is an indirect mediation effect."}
+]

@@ -10,8 +10,8 @@
 
 ## Full-text records (papers still included or excluded after this check)
 
-- Included records checked: 93. Results: confirmed 521, corrected 34, unverifiable 6. Heterogeneity items: confirmed 155, corrected 18.
-- The checker's view of the overall risk-of-bias rating: agree 82, too lenient 4, too harsh 7. The ratings in the record were not changed; the differences are listed below for a human to settle.
+- Included records checked: 97. Results: confirmed 542, corrected 35, unverifiable 6. Heterogeneity items: confirmed 163, corrected 18.
+- The checker's view of the overall risk-of-bias rating: agree 86, too lenient 4, too harsh 7. The ratings in the record were not changed; the differences are listed below for a human to settle.
 
 | Paper | Record says | Checker says |
 |---|---|---|
@@ -42,6 +42,7 @@ Checker's eligibility notes:
 - 9301 (exclude): Exclusion E4 is right. The paper is a differential-equation model of labour productivity (Eqs. 10-27) with simulated projections to 2042. The only data use is a US-based technological-progress curve built from BLS and Gr
 - 9403 (exclude): Exclusion E4 is correct. Section 5.1 says real data collection (WDI, ITU, UNDP, OECD, WGI) 'has not yet been completed' and that every coefficient in Tables 2-7 comes from a 'calibrated synthetic panel: a simulated count
 - 9604 (exclude): Own system-GMM estimation, 29-30 SSA economies and a family-5 outcome (financial inclusion) are fine. The exposure is not ICT. FT is a PCA index of MOB, INT, population density (POD) and population size (POS). Component 
+- 9704 (exclude): Exclusion E1 is correct. The paper analyses one country: five-wave VARHS household panel, 2008-2016, 'more than 2100 rural households from twelve provinces across Vietnam'. The multi-country table (Asian income and inter
 
 ## Corrections by paper
 
@@ -86,3 +87,4 @@ Each item below is a result or heterogeneity entry where the checker found the r
 - **9302**: Direction should be mixed, predominantly positive: Table 4 also prints significant negatives. Model 12 Ln[e-government x internet users] -0.0081*** (0.002); Model 16 Ln[e
 - **9304**: Mobile figures correct (col 1: 0.001** (0.020), -4.94e-06** (0.040); col 2: 0.002*** and -9.86e-06***; col 5: -0.002*). But 'internet terms insignificant' is not fully ri
 - **9501**: Table A4 signs not visible in text extract; direction 'mixed' cannot be checked from the tables; magnitudes and SEs match (0.387* 0.221; 0.072 0.293; 0.251 0.642; 0.649**
+- **9703**: Direction should be mixed/mostly null: Atkinson column is significant negative (-0.00406, p=0.001***); estimates and p-values otherwise as recorded.

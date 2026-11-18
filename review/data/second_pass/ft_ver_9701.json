@@ -1,0 +1,19 @@
+[{"idx":"9701","eligibility_ok":true,"eligibility_note":"Own panel FE estimation, 109 countries 2001-2014, internet/broadband/mobile on Gini (family 4), plus World Bank income-group splits.",
+"sample_corrections":{},
+"results":[
+{"n":1,"verdict":"confirmed","correction":"","quote":"InternetUse -0.030* 0.016 (Table 3, GiniNet)"},
+{"n":2,"verdict":"confirmed","correction":"","quote":"InternetUse -0.036** 0.014 (Table 3, GiniMarket)"},
+{"n":3,"verdict":"confirmed","correction":"","quote":"Broadband 0.107*** 0.022 (Table 3, GiniNet)"},
+{"n":4,"verdict":"confirmed","correction":"","quote":"Broadband 0.133*** 0.033 (Table 3, GiniMarket)"},
+{"n":5,"verdict":"confirmed","correction":"","quote":"Mobile -0.015** 0.005 (Table 3, GiniNet)"},
+{"n":6,"verdict":"confirmed","correction":"","quote":"Mobile -0.012** 0.005 (Table 3, GiniMarket)"},
+{"n":7,"verdict":"confirmed","correction":"Middle income = World Bank upper-middle only.","quote":"Broad-band 0.169** 0.060 (Table 6a, Middle income)"},
+{"n":8,"verdict":"confirmed","correction":"","quote":"Mobile -0.029*** 0.005 (Table 6b, Middle income)"}],
+"heterogeneity":[
+{"n":1,"verdict":"confirmed","correction":"","quote":"Among middle- and high-income countries, increases in Broadband has a positive effect on income inequality, but the effect is barely detectable among low-income"},
+{"n":2,"verdict":"confirmed","correction":"Table 5: GiniNet Broadband -0.189 (p=0.098) at 25th, +0.161 (p=0.024) at 75th.","quote":"Among the least developed economies, the marginal effect of Broadband is somewhat negative."},
+{"n":3,"verdict":"confirmed","correction":"","quote":"Higher levels of Urban dampens the marginal effect of Broadband in both models."}],
+"income_group_results":"confirmed","income_group_note":"Table 6a/6b values match; low and lower-middle pooled (41 countries); 41+31+37=109.",
+"risk_of_bias":{"overall":"agree","confounding_reverse_causation":"agree: one-year lags only, no instrument or dynamic panel.","exposure_measurement":"agree: per-100 use/subscription proxies, mobile max 215.5.","selection_of_countries_years":"agree: unbalanced 830 obs, SWIID-driven coverage, short span.","outcome_measurement":"agree: mean of 100 SWIID imputations, uncertainty ignored.","specification":"agree: quadratic GDP, many interactions, collinearity admitted and quadratic dropped in splits.","selective_reporting":"agree: only some interactions reported; plausible but not verified against footnotes.","why":"Standard FE panel with Driscoll-Kraay SEs, but 'effect'/'impact' language and lags only for simultaneity; serious is defensible (borderline moderate)."},
+"causal_language":"mixed","reverse_causality_addressed":"partly",
+"problems":"Minor: results horizon labelled contemporaneous but regressors are lagged one year. Intro says 107 countries, elsewhere 109 (noted by extractor, confirmed). No invented content found."}]

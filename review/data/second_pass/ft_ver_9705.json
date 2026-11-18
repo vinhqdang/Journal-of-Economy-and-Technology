@@ -1,0 +1,35 @@
+[
+ {
+  "idx": "9705",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation (FE, FE with interactions, IV-2SLS, GMM); exposure mobile subscriptions and internet users; 40 low and lower-middle income countries, an explicit low vs lower-middle comparison via a dummy; outcome poverty headcount (family 4).",
+  "sample_corrections": {},
+  "results": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "MCSy,c ¡0.007 [0.03] − 0.002 [0.03] ... ¡0.002 [0.00] (Table 3); IV ¡0.19 [0.02] ¡0.13 [0.01] ¡0.18 [0.04] ¡0.17 [0.01] ¡0.23 [0.04] (Table 5)"},
+   {"n": 2, "verdict": "confirmed", "correction": "Direction negative overall; FE spec 3 is +0.005 and spec 5/10 are -0.008/-0.02, so FE is mixed in significance. Bolding lost, per-cell significance unreadable.", "quote": "IUy,c 0.005 ¡0.11 − 0.008 ... ¡0.12 ¡0.07 ¡0.03 − 0.02 (Table 3); IV ¡0.18 ¡0.12 ¡0.13 ¡0.16 ¡0.18 (Table 5)"},
+   {"n": 3, "verdict": "confirmed", "correction": "GMM MCS and IU coefficients match IV; minor differences exist only in MCS spec 4 SE (0.02 vs 0.01) and spec 3 Low dummy.", "quote": "MCSy,c ¡0.19 ¡0.13 ¡0.17 ¡0.17 ¡0.23 [0.02] [0.01] [0.04] [0.02] [0.04] (Table 6)"},
+   {"n": 4, "verdict": "confirmed", "correction": "", "quote": "[MCSy,c* GDP_PPP_pcy,c] ¡0.04 [0.01] ¡0.09 [0.02]; [IUy,c* GDP_PPP_pcy,c] ¡0.11 [0.02] ¡0.006 [0.00] (Table 4)"},
+   {"n": 5, "verdict": "confirmed", "correction": "", "quote": "[MCSy,c* HCIy,c] ¡0.08 [0.02] ¡0.10 [0.03]; [IUy,c* HCIy,c] ¡0.17 [0.04] ¡0.12 [0.03]; net effects − 0.064, − 0.275, − 0.3835 (Table 4)"}
+  ],
+  "heterogeneity": [
+   {"n": 1, "verdict": "confirmed", "correction": "", "quote": "In 4 out of 10 specifications we have obtained positive and significant coefficients ... in remaining 6 equations the Lowy,c is returned as insignificant (p.10-11)"},
+   {"n": 2, "verdict": "confirmed", "correction": "", "quote": "in only 3 out of 8 specifications reported in Table 4, net effects were feasible to calculate (p.12)"},
+   {"n": 3, "verdict": "confirmed", "correction": "", "quote": "coefficients standing by all interaction terms in specification FE_I(1)-FE_I(8) are negative and statistically significant ... poverty trap effect (p.11)"}
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Only a Low dummy in pooled regressions; no subsample estimates by income group. High and upper-middle not in sample.",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: country FE only and GDP per capita as sole instrument violates the exclusion restriction, with causal language used.",
+   "exposure_measurement": "agree: standard ITU subscriptions and internet-user share, adequate proxies for exposure.",
+   "selection_of_countries_years": "agree: countries chosen by data availability, excluding islands and conflict areas; poverty interpolated and observation counts vary 187-776 despite 'strongly balanced'.",
+   "outcome_measurement": "too_harsh: the $5.50 headcount is a standard World Bank series; interpolation is a weakness but moderate is more fitting than serious (Table 2 mean 75.9 vs ~34% in 2019 is an oddity but not shown to be an error).",
+   "specification": "agree: many ad hoc regressor subsets, mixed observation counts, no clear preferred model; Table 3 gives no SE type (Table 4-6 say robust).",
+   "selective_reporting": "agree: net effects only where signs fit expectations, and text claims all interactions significant while bolding is unreadable.",
+   "why": "Serious overall is right because causal claims rest on FE plus an invalid single instrument; the outcome domain alone would be moderate."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "none material. Record is consistent with the text. Minor: GMM Table 6 obs for spec 2 is 766 vs 776 in IV; Table 6 MCS spec 4 R2 0.16 vs 0.17 in Table 5."
+ }
+]

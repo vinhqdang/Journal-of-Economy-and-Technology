@@ -19228,5 +19228,717 @@
    "corrections": [],
    "problems": "No invented numbers found. All four Table 10 FT coefficients and SEs match. Minor: the record's Eq. 14 / Table 8 mention is fine, but Table 8 prints MOB comp1 as 0.668 while Eq. 14 prints 0.688, a typo in the paper. Minus signs print as '2' in the converted text, which the record handles correctly. The exposure_measure field in the record is accurate but understates how much the index is demographic. Recommend flipping the decision from include to exclude (exposure not ICT) or flagging it as borderline."
   }
+ },
+ {
+  "idx": "9701",
+  "title": "ICT and income inequality: a cross-national perspective",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Panel of 109 countries, 2001-2014, own FE estimation of internet, broadband and mobile on Gini indices (family 4), with income-group splits.",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "fixed broadband",
+   "mobile telephony"
+  ],
+  "exposure_measure": "ITU internet users per 100, fixed broadband subscriptions per 100, mobile subscriptions per 100; lagged one year",
+  "sample": {
+   "n_economies": "109",
+   "economies_or_groups": "109 countries, all development levels and regions",
+   "income_groups_covered": "high, upper-middle, lower-middle, low (low and lower-middle pooled)",
+   "years": "2001-2014",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Two-way fixed effects with Driscoll-Kraay standard errors",
+   "identification": "none",
+   "key_controls_fixed_effects": "Country and year FE; ln GDP pc and square, female LFP, urbanisation, birth rate, population 65+, governance indicators, secondary enrolment, health expenditure share; regressors lagged 1 year"
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Gini net (post-tax) ~ InternetUse (per 100, lagged)",
+    "direction": "negative",
+    "estimate": "-0.030*",
+    "uncertainty": "s.e. 0.016 (Driscoll-Kraay)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, InternetUse row, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini market ~ InternetUse",
+    "direction": "negative",
+    "estimate": "-0.036**",
+    "uncertainty": "s.e. 0.014",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini net ~ Broadband (fixed per 100)",
+    "direction": "positive",
+    "estimate": "0.107***",
+    "uncertainty": "s.e. 0.022",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini market ~ Broadband",
+    "direction": "positive",
+    "estimate": "0.133***",
+    "uncertainty": "s.e. 0.033",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini net ~ Mobile (subs per 100)",
+    "direction": "negative",
+    "estimate": "-0.015**",
+    "uncertainty": "s.e. 0.005",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini market ~ Mobile",
+    "direction": "negative",
+    "estimate": "-0.012**",
+    "uncertainty": "s.e. 0.005",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, p.201"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini net, middle-income subsample, Broadband",
+    "direction": "positive",
+    "estimate": "0.169**",
+    "uncertainty": "s.e. 0.060",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6a p.208"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini market, middle-income, Mobile",
+    "direction": "negative",
+    "estimate": "-0.029***",
+    "uncertainty": "s.e. 0.005",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6b p.209"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Broadband raises Gini in middle- and high-income subsamples, barely detectable in low income; Mobile reduces Gini mainly in middle-income; InternetUse mostly insignificant in splits",
+    "threshold_value": "none",
+    "evidence": "Tables 6a-6b, pp.208-210"
+   },
+   {
+    "moderator": "income group",
+    "finding": "Marginal effect of Broadband on Gini turns from negative at 25th percentile GDP pc to positive at 75th",
+    "threshold_value": "none",
+    "evidence": "Table 5, p.206; text p.207"
+   },
+   {
+    "moderator": "institutions",
+    "finding": "ICT effects conditional on urbanisation, stability, governance, rule of law",
+    "threshold_value": "none",
+    "evidence": "Table 5, Section 4.2, pp.203-207"
+   }
+  ],
+  "income_group_results": {
+   "high": "Broadband +0.080*** (GiniNet), +0.126*** (GiniMarket); Internet and Mobile insignificant",
+   "upper_middle": "Broadband +0.169**/+0.190***; Mobile -0.032***/-0.029***; Internet n.s.",
+   "lower_middle": "pooled with low: Broadband n.s.; Mobile -0.014*/-0.011*; Internet n.s. (GiniNet), -0.091* (GiniMarket)",
+   "low": "pooled with lower-middle (41 countries)"
+  },
+  "n_specifications_reported": "about 10 (baseline, 3 interaction sets x 2 DVs, 3 splits x 2 DVs)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "One-year lags only; no instrument, causal-sounding language; inequality could drive adoption",
+    "evidence": "Section 3, p.198: 'lagged one year to guard against simultaneity bias'"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Subscription/use per 100 are standard but crude proxies; mobile subs exceed 100 per 100",
+    "evidence": "Table 1, p.199"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Unbalanced panel, 830 obs from 109 countries over 14 years because of SWIID coverage; short span",
+    "evidence": "Section 3, p.198"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "SWIID imputed Gini, mean of 100 imputations; imputation error ignored",
+    "evidence": "Section 3, p.198"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Quadratic GDP, many interactions chosen post hoc; collinearity noted; split-sample drops quadratic",
+    "evidence": "fn5 p.211; Section 4.3 p.207"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only interactions with substantive implications reported; other controls tried and dropped",
+    "evidence": "fn3, fn5, fn6 p.211"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Text says 107 countries in the introduction, 109 elsewhere. Table 2 Hausman p-value 0.011 for GiniMarket. Coefficients on Gini points per 1 unit of ICT per 100. No injected instructions found.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 1
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 8
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel FE estimation, 109 countries 2001-2014, internet/broadband/mobile on Gini (family 4), plus World Bank income-group splits.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "Minor: results horizon labelled contemporaneous but regressors are lagged one year. Intro says 107 countries, elsewhere 109 (noted by extractor, confirmed). No invented content found."
+  }
+ },
+ {
+  "idx": "9702",
+  "title": "ICT, gender inequality, and income inequality: a panel data analysis across countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative cross-country panel (86 economies, 2013-2016) estimating ICT (mobile, internet, fixed broadband) effects on gender inequality and, via mediation, on Gini income inequality (family 4).",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "mobile telephony",
+   "internet",
+   "fixed broadband"
+  ],
+  "exposure_measure": "Latent ICT construct (PLS) from mobile subscriptions per 100, % individuals using internet, fixed broadband subscriptions per 100 (Network Readiness Index reports); Table 1, p.715",
+  "sample": {
+   "n_economies": "86 (text also says 85 in Limitations, p.722)",
+   "economies_or_groups": "Appendix list p.723: e.g. Albania, Bangladesh, Ethiopia, Germany, US, Uganda, Vietnam",
+   "income_groups_covered": "mixed (high through low; developed vs developing contrast in post hoc)",
+   "years": "2013-2016",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "PLS path modelling, cross-lagged evolution model, four waves (T1-T4) with separate path coefficients per year; bootstrapped 5000; multigroup analysis across time",
+   "identification": "none",
+   "key_controls_fixed_effects": "Income inequality: GDP per capita (log), adult literacy, remittances, HDI. Gender inequality: democracy index, urban population growth, voice and accountability. No fixed effects."
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Gini index (income inequality); indirect effect of ICT via gender inequality (mediation)",
+    "direction": "negative",
+    "estimate": "T1 -0.737; T2 -0.006; T3 -0.005; T4 -0.004 (standardized path coefficients)",
+    "uncertainty": "p-values 0.000; 0.091; 0.095; 0.099",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.720: 'ICT (T1) -> Gender inequality (T1) -> Income inequality (T1) -0.737 0.000'. Only T1 is significant at 5%; T2-T4 are at 10% only, yet text says 'significant mediation across all four time periods' (p.716)"
+   },
+   {
+    "family": 4,
+    "indicator": "Gender inequality index (GII), effect of ICT (ICT is not linked directly to Gini)",
+    "direction": "negative",
+    "estimate": "T1 -0.834; T2 -0.030; T3 -0.017; T4 -0.021",
+    "uncertainty": "p = 0.000; 0.067; 0.054; 0.088",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, p.717; text 'ICT significantly reduces gender inequality ... for all time periods' though T2-T4 p>0.05"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini index, effect of gender inequality (not ICT)",
+    "direction": "positive",
+    "estimate": "T1 0.883; T2 0.210; T3 0.098; T4 0.141",
+    "uncertainty": "p = 0.000; 0.027; 0.001; 0.004",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, p.717"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Development status (higher for developed) moderates gender inequality -> Gini effect only in T3 (0.076, p=0.008); T1 0.133 p=0.179; T2 0.093 p=0.179; T4 0.053 p=0.118. Moderation is of gender-Gini link, not ICT effect. Authors read it as stronger link in developed countries.",
+    "threshold_value": "none",
+    "evidence": "Table 5, p.721; text p.717 'positive and significant moderation only for T3'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported separately; only continuous development-status moderator",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "2 (main PLS model and moderation model)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language (ICT 'impact', 'institutional enabler', policy advice to invest in ICT) but separate within-year paths; no country effects, instruments or lagged identification despite 'cross-lagged' label; reverse causation unaddressed.",
+    "evidence": "Fig. 2, Table 2, p.717; Discussion p.719-722"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Composite of mobile, internet, broadband captures ICT adoption reasonably, but weights and construct reliability not reported; authors concede ICT dimensions not fully captured.",
+    "evidence": "Table 1 p.715; Limitations p.722"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only four years (2013-2016); countries chosen by data availability; panel attrition acknowledged; 86 vs 85 inconsistency.",
+    "evidence": "Section 3 p.713-714; Limitations p.722"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "World Bank Gini and UNDP GII are standard but Gini is sparse and interpolated across countries/years; Gini described on 0-1 scale. Poor within-country comparability not discussed.",
+    "evidence": "Table 1, p.715"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "PLS with separate per-year coefficients, standardized betas with large T1 versus T2-T4 gap (-0.834 vs -0.030) suggest unstable or scale-driven estimates; ICT not in the Gini equation; different controls per equation; very high carry-over coefficients (~0.99) imply near-collinear waves.",
+    "evidence": "Tables 2 and 3, p.717-719"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Interprets p of 0.054-0.099 as significant ('significant ... for all time periods'); mediation called significant at p=0.09-0.099; H1b and H2b non-support explained away. Hypotheses reported transparently in Table 6.",
+    "evidence": "Section 4 p.716; Table 4 p.720; Table 6 p.721"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Standardized PLS path coefficients are not elasticities; no direct ICT -> Gini coefficient is reported, only indirect via gender inequality. Table 3 contains apparent typos (e.g. '0.0991 < 0.994'), and the text cites 'Table 4' for the post hoc results (is Table 5) and 'H2b' where H1b is meant (p.719). No output or productivity outcome. No instructions embedded in text.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 4
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own PLS estimation, ICT (mobile, internet, broadband) exposure, 86 economies, Gini outcome (family 4). Weakly eligible: ICT is linked to Gini only indirectly via gender inequality, and the income-group moderation concerns the gender-Gini link, not ICT.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "n_economies": "86 in abstract and data section; Limitations say 'we limited the number of countries in our research to 85' (p.722) - record already flags this"
+   },
+   "corrections": [],
+   "problems": "No invented numbers found. All table values match the text. Result 3 (and result 2, which is labelled family 4) are not ICT effects on Gini; only result 1 is an ICT-Gini estimate and it is an indirect mediation effect."
+  }
+ },
+ {
+  "idx": "9703",
+  "title": "ICT dynamics for gender inclusive intermediary education: minimum poverty and inequality thresholds in developing countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Own system-GMM estimation of ICT indicators on gender parity in school enrolment (family 5) in 57 developing countries; exposure and sample criteria met.",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "mobile telephony",
+   "internet",
+   "broadband"
+  ],
+  "exposure_measure": "Six indicators: internet access in schools (GITR index), use of virtual social networks (GITR index), internet users per 100, fixed broadband per 100, % persons with PC, mobile subscriptions per 100; interacted with Gini, Atkinson, Palma ratio, poverty headcount (national lines)",
+  "sample": {
+   "n_economies": "57",
+   "economies_or_groups": "57 developing countries (Table 2 list), Asia, Africa, Latin America, E. Europe",
+   "income_groups_covered": "mixed (low and middle income; text says 'developing'; no per-group split, Table 2 income levels not shown in text)",
+   "years": "2012-2016",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Interactive system GMM (Roodman-type, lagged dependent variable), 33 instruments",
+   "identification": "other",
+   "key_controls_fixed_effects": "Lagged DV, remittances/GDP, time effects; inequality or poverty term and ICT x inequality interaction"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Gender parity index, gross primary+secondary enrolment; internet access in school",
+    "direction": "mixed",
+    "estimate": "Table 4 col1 (Gini): ICT 0.0309; Gini x ICT -0.0550; threshold 0.5618; poverty col4: ICT 0.0128, Poverty x ICT -0.00038, threshold 33.6842; Atkinson col: ICT -0.0190",
+    "uncertainty": "p=0.002 (Gini col); p=0.000 (poverty col); p=0.000 (Atkinson col, marked **)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.13: 'ICT in school 0.0309 (0.002)***'; 'Gini x ICTschool -0.0550 (0.007)***'"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; use of virtual social network",
+    "direction": "mixed",
+    "estimate": "Table 4: Network 0.0074 (Gini col), 0.0026 (Atkinson), 0.00474 (Palma), -0.0032 (poverty)",
+    "uncertainty": "p=0.436, 0.035, 0.000, 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.13; Palma threshold 9.1153 lies outside sample range (max 8.4098, p.12)"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; internet penetration",
+    "direction": "null",
+    "estimate": "Table 5: Internet 0.0004 (Gini), 0.00012, 0.000286 (Palma), 0.000035",
+    "uncertainty": "p=0.143, 0.575, 0.019, 0.767",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.14; only Palma col significant, threshold 3.3766"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; fixed broadband",
+    "direction": "mixed",
+    "estimate": "Table 5: BroadB 0.00056, -0.00406, 0.00035, 0.000256",
+    "uncertainty": "p=0.799, 0.001, 0.453, 0.434",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.14; no valid threshold",
+    "direction_first_pass": "null"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; personal computers",
+    "direction": "positive",
+    "estimate": "Table 6: Computer 0.000899 (Gini), 0.00012 (Atk), 0.00024 (Palma), 0.00039 (Poverty); thresholds 0.4781, 3.5294, 17.7272",
+    "uncertainty": "p=0.000, 0.245, 0.000, 0.038",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.15: 'Computer 0.000899 (0.000)***'"
+   },
+   {
+    "family": 5,
+    "indicator": "GPI; mobile phone penetration",
+    "direction": "null",
+    "estimate": "Table 6: Mobile 0.0001, 0.0002, -0.00007, -0.00004",
+    "uncertainty": "p=0.167, 0.605, 0.017, 0.261",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.15; all thresholds na"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Inequality (Gini, Palma) and poverty dampen ICT effect on gender parity; interaction mostly negative for school internet, computers; critical thresholds reported",
+    "threshold_value": "Gini 0.5618 (school internet), 0.4781 (PCs); poverty 33.6842 (school internet), 17.7272 (PCs); Palma 3.3766 (internet), 3.5294 (PCs)",
+    "evidence": "Abstract, p.2; Tables 4-6"
+   }
+  ],
+  "income_group_results": {
+   "high": "not applicable (developing only)",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "48 (6 ICT x 4 inequality/poverty measures x 2 tables of 8... ie 6 x 4 = 24 regressions)",
+  "headline_is_preferred_specification": "no",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language and thresholds; only internal GMM instruments, few controls (remittances only), Sargan rejects in several columns, AR(1) p near 0.09",
+    "evidence": "Tables 4-6 Sargan/Hansen rows"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mixed survey-index (GITR) and WDI measures; PC variable and school internet are weak proxies; text describes Table 3 label inconsistently",
+    "evidence": "Table 1, p.8"
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 5 years (2012-2016), unbalanced, 57 countries chosen by data availability; N=285 with 33 instruments",
+    "evidence": "Sec 3.2, p.9; Table 4 foot"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Gross enrolment GPI measures parity not quality; values above 1 possible",
+    "evidence": "Table 1, p.8"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "24 ICT x moderator specifications, thresholds computed only where signs fit hypotheses; Fisher stats huge, near-unit-root lagged DV coefficients (up to 1.005)",
+    "evidence": "Tables 4-6; p.12"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Thresholds reported only for hypotheses-consistent columns; text says models 'valid overwhelmingly' though Sargan p<0.05 in many; abstract highlights favourable results",
+    "evidence": "p.11-12; abstract"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (working paper version of single-author-network research with templated design; threshold computed from point estimates without uncertainty)",
+  "notes": "Poverty/inequality are moderators, not outcomes; outcome is family 5 (schooling parity). Table 3 notes mislabel PALM as poverty headcount and POV blank; Table 2 referred to as summary stats and correlation numbering inconsistent. Table 4 Palma threshold 9.1153 exceeds sample max and abstract does not claim it. Some stars in Table 4 inconsistent with printed p. No instructions embedded in text.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 3
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 5,
+    "corrected": 1
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own dynamic system-GMM estimation, ICT/internet/broadband/mobile exposure, 57 economies, outcome is schooling gender parity (family 5). Poverty/inequality are moderators only.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "income_groups_covered": "Developing countries only (mixed low/lower-middle/upper-middle); no income-group split. Note the 5-period panel gives N=285 observations."
+   },
+   "corrections": [
+    {
+     "n": 4,
+     "verdict": "corrected",
+     "correction": "Direction should be mixed/mostly null: Atkinson column is significant negative (-0.00406, p=0.001***); estimates and p-values otherwise as recorded.",
+     "quote": "Fixed Broadband 0.00056 (0.799) -0.00406 (0.001)*** 0.00035 (0.453) 0.000256 (0.434)"
+    }
+   ],
+   "problems": "Minor: record says 'Some stars in Table 4 inconsistent with printed p' (true, e.g. Atkinson 0.000 marked **; Palma 0.004 '* **'). n_specifications_reported field is garbled (24 regressions, 3 tables). Table 3 mislabels POV as blank. Record's Table 4 ICT direction labels fine."
+  }
+ },
+ {
+  "idx": "9704",
+  "title": "Is the internet penetration pro-poor? Evidence from a panel data analysis",
+  "fulltext_decision": "exclude",
+  "exclusion_reason": "E1",
+  "decision_rationale": "Quantitative study of household internet use and income/poverty, but the sample is a single economy (rural Vietnam, VARHS household panel 2008-2016), failing the 10-economy / income-group-comparison requirement for non-AI technology.",
+  "stream": "not applicable",
+  "technology": [
+   "not applicable"
+  ],
+  "exposure_measure": "not applicable",
+  "sample": {
+   "n_economies": "not applicable",
+   "economies_or_groups": "not applicable",
+   "income_groups_covered": "not applicable",
+   "years": "not applicable",
+   "unit": "not applicable"
+  },
+  "design": {
+   "estimator": "not applicable",
+   "identification": "not applicable",
+   "key_controls_fixed_effects": "not applicable"
+  },
+  "results": [],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not applicable",
+   "lower_middle": "not applicable",
+   "low": "not applicable"
+  },
+  "n_specifications_reported": "not applicable",
+  "headline_is_preferred_specification": "not applicable",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "exposure_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selection_of_countries_years": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "outcome_measurement": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   },
+   "selective_reporting": {
+    "rating": "not applicable",
+    "why": "not applicable",
+    "evidence": "not applicable"
+   }
+  },
+  "overall_risk_of_bias": "not applicable",
+  "venue_quality_concern": "none",
+  "notes": "Evidence: Section 3.1 'five-wave panel data extracted from the Vietnam Access to Resources Household Survey'; abstract. Outcomes would be family 4 (poverty). No instructions embedded in text.",
+  "quote_check": {
+   "verified": 0,
+   "checked": 0
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {},
+   "heterogeneity": {},
+   "eligibility_ok": false,
+   "eligibility_note": "Exclusion E1 is correct. The paper analyses one country: five-wave VARHS household panel, 2008-2016, 'more than 2100 rural households from twelve provinces across Vietnam'. The multi-country table (Asian income and internet penetration, 2008-2021) is descriptive only, with no estimation on it. There is no explicit income-group comparison across economies. The only heterogeneity is poor vs non-poor households inside Vietnam. Fails the 10-economy / income-group criterion.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "none. Record correctly excluded; the notes and rationale match the text (single economy, VARHS 2008-2016, poverty outcome)."
+  }
+ },
+ {
+  "idx": "9705",
+  "title": "Harnessing digital technologies for poverty reduction. Evidence for low-income and lower-middle income countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Own panel estimation (FE, FE with interactions, IV-2SLS, GMM) on 40 low and lower-middle income countries, 1990-2019. Exposure is mobile cellular subscriptions and internet users; outcome is the $5.50/day poverty headcount ratio (family 4).",
+  "stream": "H",
+  "technology": [
+   "mobile telephony",
+   "internet"
+  ],
+  "exposure_measure": "Mobile-cellular subscriptions per 100 inhabitants (MCS) and share of individuals using the internet (IU); both logged (Table 1, Table 3 note 'all values are logged'). ICT goods and ICT services imports are included as controls.",
+  "sample": {
+   "n_economies": "40",
+   "economies_or_groups": "13 low-income and 27 lower-middle-income countries (Table A1)",
+   "income_groups_covered": "low, lower-middle",
+   "years": "1990-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Country fixed effects (10 specs, Table 3); FE with MCS/IU x GDP per capita and x Human Capital Index interactions (8 specs, Table 4); IV-2SLS (Table 5) and GMM (Table 6) with GDP per capita as the sole instrument for MCS or IU",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "Country FE plus a Low-income dummy; controls vary by specification (GDP per capita, primary/secondary enrolment, vulnerable/self-employment, youth employment, ICT goods and services imports, economic freedom, HCI). Regressors are mixed and matched across specifications."
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Poverty headcount ratio at $5.50/day (log), effect of mobile subscriptions (MCS)",
+    "direction": "negative",
+    "estimate": "FE: -0.007 (spec 1), -0.002 (spec 2), -0.002 (spec 6); IV-2SLS: -0.19 (spec 1), -0.13, -0.18, -0.17, -0.23 (spec 5)",
+    "uncertainty": "SE in brackets: FE [0.03], [0.03], [0.00]; IV [0.02], [0.01], [0.04], [0.01], [0.04]. FE coefficients are not marked significant in the FE table; IV ones are described as significant.",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 MCS row; Table 5 MCS row, p.10 and p.12. 'results for two selected ICT indicators ... if instrumented with gross per capita income are negative and significant in all cases'"
+   },
+   {
+    "family": 4,
+    "indicator": "Poverty headcount ratio at $5.50/day (log), effect of internet users (IU)",
+    "direction": "negative",
+    "estimate": "FE: -0.11 (spec 4), -0.12 (spec 7), -0.07 (spec 8), -0.03 (spec 9), mixed/insignificant in others (+0.005 spec 3); IV-2SLS: -0.18, -0.12, -0.13, -0.16, -0.18",
+    "uncertainty": "SE in brackets: FE [0.02], [0.04], [0.00], [0.00]; IV [0.02], [0.01], [0.03], [0.01], [0.02]",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3 IU row; Table 5 IU row, pp.10, 12. 'access to Internet network ... enhances drops in poverty rates'"
+   },
+   {
+    "family": 4,
+    "indicator": "Poverty headcount, GMM with GDP per capita as instrument for MCS or IU",
+    "direction": "negative",
+    "estimate": "MCS -0.19, -0.13, -0.17, -0.17, -0.23; IU -0.18, -0.12, -0.13, -0.16, -0.18",
+    "uncertainty": "SE [0.02], [0.01], [0.04], [0.02], [0.04]; [0.02], [0.01], [0.03], [0.01], [0.02]",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6, p.13. Virtually identical to the IV-2SLS columns."
+   },
+   {
+    "family": 4,
+    "indicator": "Poverty headcount, ICT x GDP per capita interaction (FE)",
+    "direction": "negative",
+    "estimate": "MCS x GDP: -0.04 and -0.09; IU x GDP: -0.11 and -0.006. Unconditional MCS/IU coefficients in these columns are positive (MCS +0.34, +0.69; IU +0.85, +0.69)",
+    "uncertainty": "SE [0.01], [0.02]; [0.02], [0.00]",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 FE_I(1),(2),(5),(6), p.11. Net effects are 'n.a.' because the unconditional ICT effect has the wrong sign."
+   },
+   {
+    "family": 4,
+    "indicator": "Poverty headcount, ICT x Human Capital Index interaction (FE)",
+    "direction": "negative",
+    "estimate": "MCS x HCI: -0.08, -0.10; IU x HCI: -0.17, -0.12. Net effects of HCI -0.064, -0.275, -0.3835 in three specs",
+    "uncertainty": "SE [0.02], [0.03]; [0.04], [0.03]",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 FE_I(3),(4),(7),(8), p.11"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Low-income dummy is positive and significant in only 4 of 10 FE specs and insignificant in the other 6; the authors conclude low-income countries are 'not discriminated'. No separate subsample estimates by income group were run.",
+    "threshold_value": "none",
+    "evidence": "Table 3 Low row and p.10-11"
+   },
+   {
+    "moderator": "human capital",
+    "finding": "Interactions of ICT with HCI are negative and significant, read as larger poverty reduction at higher human capital. Net effects are computed in only 3 of 8 specs.",
+    "threshold_value": "none (thresholds reported as 'Negative synergy' or n.a.)",
+    "evidence": "Table 4, p.11"
+   },
+   {
+    "moderator": "other",
+    "finding": "Interactions of ICT with GDP per capita are negative and significant, read as a 'poverty trap' in which low income impedes the ICT effect. The unconditional ICT coefficient is positive in those columns.",
+    "threshold_value": "none",
+    "evidence": "Table 4, p.11. 'in materially relatively poorer countries the potential effects of ICT deployment on poverty reduction is impeded'"
+   }
+  ],
+  "income_group_results": {
+   "high": "not applicable (not in sample)",
+   "upper_middle": "not applicable (not in sample)",
+   "lower_middle": "pooled with low-income; 27 countries; no separate estimate",
+   "low": "pooled with lower-middle; 13 countries; only a Low dummy (positive in 4 of 10 FE specs)"
+  },
+  "n_specifications_reported": "about 36 (10 FE, 8 FE-interaction, 10 IV-2SLS, 10 GMM)",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Country FE only. The sole instrument is GDP per capita, which affects poverty directly, so the exclusion restriction fails. In IV and GMM GDP is 'omitted' from the second stage, so its direct effect is pushed into the ICT coefficient. The GMM table repeats the IV numbers almost exactly and no GMM details (lags, AR tests, instrument counts) are given. Causal language is used.",
+    "evidence": "Tables 5-6 notes; p.12 'GDP_PPP_pc used to instrument MCS and IU'"
+   },
+   "exposure_measurement": {
+    "rating": "low",
+    "why": "Standard ITU mobile subscriptions per 100 and internet-user share. Subscriptions can exceed 100 and do not capture use quality.",
+    "evidence": "Table 1; Table 2 (MCS max 154.7)"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "40 countries chosen by income class and data availability. Small island states, conflict-affected countries and economies with gaps were dropped. Poverty is linearly interpolated, and the panel is described as balanced although observation counts vary from 187 to 776.",
+    "evidence": "Section 3, p.4; Table 2 note; Table 3 obs row"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Poverty headcount at $5.50/day (2011 PPP) is linearly interpolated between sparse survey years. The Table 2 mean of 75.9 and min/max of 2-100 look odd for an average of 34% in 2019 (p.5). Interpolation creates artificial smoothness and inflates serial correlation.",
+    "evidence": "Table 2 note; p.5"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Many specifications with different regressor subsets and different observation counts (187-776). Most coefficients are insignificant or have unexpected signs (economic freedom positive, HCI insignificant). No joint model with both MCS and IU in most columns, and no clear preferred specification. Hausman tests reject RE in most cases but the FE tables report no clustering information.",
+    "evidence": "Tables 3-6"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Net effects reported only where signs fit expectations ('to avoid drawing misleading conclusions'). Text states that all interaction coefficients are negative and significant, while Table 4 shows some interaction columns with positive unconditional effects. Some Table 3 FE coefficients for ICT are insignificant yet the text says both ICT indicators 'demonstrate the negative relationship'.",
+    "evidence": "p.11-12; Table 3, Table 4 notes"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Typographical oddities: Table 5-6 notes say 'omitted' for GDP; decimal commas in Table 5-6 Low row; Table A3 caption says 1990-2021 and Fig. A1 caption says 1990-2021 while the text says 1990-2019; text cites 'Table A2' for correlations (it is Table A3). Table 3 note says bold marks significance at 5% but bolding is lost in the text extraction, so significance cannot be read per cell. Poverty is the dependent variable in logs, so coefficients are elasticities of the headcount ratio with respect to ICT. Outcome is poverty (family 4). School enrolment and vulnerable employment are controls, not outcomes. No instruction-like text found in the paper.",
+  "quote_check": {
+   "verified": 2,
+   "checked": 4
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 5
+   },
+   "heterogeneity": {
+    "confirmed": 3
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (FE, FE with interactions, IV-2SLS, GMM); exposure mobile subscriptions and internet users; 40 low and lower-middle income countries, an explicit low vs lower-middle comparison via a dummy; outcome poverty headcount (family 4).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [],
+   "problems": "none material. Record is consistent with the text. Minor: GMM Table 6 obs for spec 2 is 766 vs 776 in IV; Table 6 MCS spec 4 R2 0.16 vs 0.17 in Table 5."
+  }
  }
 ]
