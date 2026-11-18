@@ -1358,5 +1358,93 @@
   "tested_formally": false,
   "note": "Weaker effect in less advanced economies attributed to infrastructure and institutions; asserted, not tested",
   "idx": "1580"
+ },
+ {
+  "id": "9501-H1",
+  "moderator_type": "income_group",
+  "direction": "dampens",
+  "tested_formally": false,
+  "note": "Inequality-reducing effect of the digital economy significant only in lower-middle (with low) income countries; subsamples",
+  "idx": "9501"
+ },
+ {
+  "id": "9501-H2",
+  "moderator_type": "trade_openness",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Globalisation weakens the inequality-reducing effect; marginal effect significant over a range of globalisation values",
+  "idx": "9501"
+ },
+ {
+  "id": "9502-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "Stage dependence: positive association below an estimated internet-access threshold, negative above",
+  "idx": "9502"
+ },
+ {
+  "id": "9701-H1",
+  "moderator_type": "income_group",
+  "direction": "mixed",
+  "tested_formally": false,
+  "note": "Broadband raises the Gini coefficient in middle- and high-income subsamples, mobile reduces it mainly in middle income; split samples",
+  "idx": "9701"
+ },
+ {
+  "id": "9701-H2",
+  "moderator_type": "income_group",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "Marginal effect of broadband on the Gini coefficient turns from negative at low GDP per capita to positive at high",
+  "idx": "9701"
+ },
+ {
+  "id": "9701-H3",
+  "moderator_type": "institutions_governance",
+  "direction": "mixed",
+  "tested_formally": true,
+  "note": "ICT effects conditional on urbanisation, stability, governance and rule of law",
+  "idx": "9701"
+ },
+ {
+  "id": "9702-H1",
+  "moderator_type": "not_a_moderator",
+  "direction": "unclear",
+  "tested_formally": false,
+  "note": "Development status moderates the gender-inequality to Gini link, not the effect of ICT",
+  "idx": "9702"
+ },
+ {
+  "id": "9703-H1",
+  "moderator_type": "other_country_characteristic",
+  "direction": "dampens",
+  "tested_formally": true,
+  "note": "Inequality and poverty dampen the ICT effect on gender parity in education; critical thresholds reported",
+  "idx": "9703"
+ },
+ {
+  "id": "9705-H1",
+  "moderator_type": "income_group",
+  "direction": "null",
+  "tested_formally": false,
+  "note": "Low-income dummy significant in 4 of 10 specifications; no separate subsample estimates",
+  "idx": "9705"
+ },
+ {
+  "id": "9705-H2",
+  "moderator_type": "human_capital",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "ICT by human capital interaction read as larger poverty reduction at higher human capital",
+  "idx": "9705"
+ },
+ {
+  "id": "9705-H3",
+  "moderator_type": "other_country_characteristic",
+  "direction": "amplifies",
+  "tested_formally": true,
+  "note": "ICT by GDP per capita interaction read as larger poverty reduction at higher income",
+  "idx": "9705"
  }
 ]
