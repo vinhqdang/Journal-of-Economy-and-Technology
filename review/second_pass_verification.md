@@ -10,8 +10,8 @@
 
 ## Full-text records (papers still included or excluded after this check)
 
-- Included records checked: 88. Results: confirmed 492, corrected 34, unverifiable 5. Heterogeneity items: confirmed 152, corrected 18.
-- The checker's view of the overall risk-of-bias rating: agree 77, too lenient 4, too harsh 7. The ratings in the record were not changed; the differences are listed below for a human to settle.
+- Included records checked: 90. Results: confirmed 506, corrected 34, unverifiable 6. Heterogeneity items: confirmed 155, corrected 18.
+- The checker's view of the overall risk-of-bias rating: agree 79, too lenient 4, too harsh 7. The ratings in the record were not changed; the differences are listed below for a human to settle.
 
 | Paper | Record says | Checker says |
 |---|---|---|
@@ -84,3 +84,4 @@ Each item below is a result or heterogeneity entry where the checker found the r
 - **9203**: Direction is mixed across specifications, not negative: Table 8 Model 2 prints a positive significant coefficient 0.05*** (.010) and Model 6 prints -0.037 (0.028). Negati
 - **9302**: Direction should be mixed, predominantly positive: Table 4 also prints significant negatives. Model 12 Ln[e-government x internet users] -0.0081*** (0.002); Model 16 Ln[e
 - **9304**: Mobile figures correct (col 1: 0.001** (0.020), -4.94e-06** (0.040); col 2: 0.002*** and -9.86e-06***; col 5: -0.002*). But 'internet terms insignificant' is not fully ri
+- **9501**: Table A4 signs not visible in text extract; direction 'mixed' cannot be checked from the tables; magnitudes and SEs match (0.387* 0.221; 0.072 0.293; 0.251 0.642; 0.649**

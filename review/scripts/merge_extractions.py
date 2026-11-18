@@ -40,9 +40,14 @@ def evidence_strings(r):
     return out
 
 recs = []
-for p in sorted(glob.glob(f"{SP}/extract/out_*.json")):
+for p in sorted(glob.glob(f"{SP}/extract/out_*.json")) + sorted(glob.glob(f"{SP}/r5/out_*.json")):
     recs += json.load(open(p))
 seen = {}
+# records already in extraction.json are kept when their batch output is no longer on disk
+_prev = os.path.join(ROOT, "review/data/extraction.json")
+if os.path.exists(_prev):
+    for r in json.load(open(_prev)):
+        seen[r["idx"]] = r
 for r in recs:
     seen[r["idx"]] = r
 recs = sorted(seen.values(), key=lambda r: int(r["idx"]))
@@ -51,7 +56,10 @@ for r in recs:
     a = adj.get(r["idx"])
     if a:
         r["fulltext_decision"], r["exclusion_reason"], r["decision_rationale"] = a["decision"], a["reason"], a["note"]
-    txt = norm(open(f"{SP}/txt/{r['idx']}.txt", encoding="utf-8", errors="ignore").read())
+    _tp = f"{SP}/txt/{r['idx']}.txt"
+    if not os.path.exists(_tp):
+        continue                                # keep the earlier quote check for records whose text is no longer on disk
+    txt = norm(open(_tp, encoding="utf-8", errors="ignore").read())
     n = g = 0
     for s in evidence_strings(r):
         for pat in PAT:

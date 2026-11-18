@@ -1,10 +1,10 @@
 # Preliminary extraction summary (machine-extracted, re-checked by a second model run and, on a random sample, by the author by hand; see data/human_check.md)
 
-**Read this first.** These records were extracted from the 132 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **68% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 132 of 256 papers sent to full-text assessment have been read.
+**Read this first.** These records were extracted from the 134 full texts obtained so far, using the frozen extraction form. Every extracted result carries a page or table locator and a short quote. An automated check found that **68% of the quotes appear verbatim in the source text** (PDF layout, tables and paraphrase explain part of the gap); papers where fewer than 80% of quotes could be matched are flagged *needs human check*. Nothing here is pooled and nothing is a conclusion yet. Only 134 of 256 papers sent to full-text assessment have been read.
 
-## Full-text assessment outcome (n = 132 read)
+## Full-text assessment outcome (n = 134 read)
 
-- Included: 88  |  excluded: 43  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
+- Included: 90  |  excluded: 43  |  context only: 1  |  wrong document retrieved: 0 (to be re-retrieved)
 - Reasons for exclusion: E1 14, E2 5, E3 1, E4 23 (E1 single or fewer than 10 economies, E2 exposure not eligible, E4 conceptual, review, theory or no own estimates)
 - Post-merge adjustments are listed with reasons in `data/adjustments.json`.
 - About a third of the papers that looked eligible on the abstract failed at full text. The same attrition should be expected for the papers not yet read.
@@ -98,9 +98,11 @@
 | 9303 | 2008 | H | ICT | 18 | 1993-2002 | critical | needs human check |
 | 9304 | 2020 | H | mobile telephony; internet | 25 in text and abs | 1980-2014 (five  | serious | needs human check |
 | 9305 | 2013 | H | ICT in general | 45 | 1994-2007 | moderate | needs human check |
-| 9401 | 2024 | AI | artificial intelligence; frontier technology readi | 48 listed (Table A | 2007-2020 | critical | needs human check |
+| 9401 | 2024 | H | artificial intelligence; frontier technology readi | 48 listed (Table A | 2007-2020 | critical | needs human check |
 | 9402 | 2022 | H | ICT in general | 25 | 2017 (cross-sect | serious | ok |
 | 9404 | 2025 | AI | artificial intelligence | 5 | 2012-2023 | serious | needs human check |
+| 9501 | 2024 | H | ICT in general; internet and broadband | 97 (27 developed,  | 2010-2020 | serious | needs human check |
+| 9502 | 2027 | H | internet | 28 | 2010-2025 | moderate | ok |
 
 ## Direction of reported results by outcome family
 
@@ -108,35 +110,35 @@ Counts of reported results (a paper can contribute several), not of papers, and 
 
 | Family | Positive | Mixed | Null | Negative |
 |---|---|---|---|---|
-| 1. Output and productivity | 154 | 45 | 41 | 26 |
-| 2. Structural change | 13 | 0 | 5 | 15 |
-| 3. Labour market | 33 | 9 | 16 | 14 |
-| 4. Poverty and distribution | 24 | 9 | 7 | 16 |
-| 5. Living standards beyond income | 42 | 15 | 13 | 13 |
+| 1. Output and productivity | 157 | 46 | 40 | 23 |
+| 2. Structural change | 14 | 0 | 5 | 14 |
+| 3. Labour market | 34 | 9 | 16 | 14 |
+| 4. Poverty and distribution | 25 | 12 | 10 | 22 |
+| 5. Living standards beyond income | 43 | 15 | 13 | 13 |
 | 6. Resource cost | 6 | 3 | 6 | 5 |
 
 ## Risk of bias (adapted ROBINS-I-style tool, 6 domains)
 
 | Domain | Low | Moderate | Serious | Critical |
 |---|---|---|---|---|
-| confounding reverse causation | 0 | 15 | 65 | 7 |
-| exposure measurement | 5 | 55 | 25 | 3 |
-| selection of countries years | 2 | 55 | 31 | 0 |
-| outcome measurement | 21 | 51 | 15 | 1 |
-| specification and researcher degrees of freedom | 0 | 33 | 53 | 2 |
-| selective reporting | 8 | 61 | 16 | 3 |
+| confounding reverse causation | 0 | 15 | 67 | 7 |
+| exposure measurement | 5 | 57 | 25 | 3 |
+| selection of countries years | 2 | 57 | 31 | 0 |
+| outcome measurement | 22 | 52 | 15 | 1 |
+| specification and researcher degrees of freedom | 0 | 35 | 53 | 2 |
+| selective reporting | 9 | 62 | 16 | 3 |
 | confounding reverse causality | 0 | 0 | 1 | 0 |
 
-Overall: low 0, moderate 10, serious 67, critical 11. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
+Overall: low 0, moderate 11, serious 68, critical 11. The weakest domain is confounding and reverse causation: most studies treat adoption as exogenous.
 
-Venue check: 37 of 88 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
+Venue check: 37 of 90 included papers were flagged for a possible venue-quality concern (for example unfamiliar journals or working-paper series). This is a screening flag, not a finding, and needs a proper check against journal lists.
 
 ## Heterogeneity reported
 
-Moderators examined (counts of findings): other 82, income group 39, human capital 16, institutions 13, infrastructure 12, sector structure 8.
+Moderators examined (counts of findings): other 84, income group 40, human capital 16, institutions 13, infrastructure 12, sector structure 8.
 
-44 of 88 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
+45 of 90 included papers report at least one income-group-specific result. Before any synthesis these need to be read against each other by a human, because the estimates are on different scales and the income groupings are defined differently.
 
 ## Papers flagged for human check
 
-Quotes could not be fully matched for: 45, 57, 68, 71, 126, 174, 217, 245, 269, 276, 302, 320, 323, 341, 358, 393, 408, 750, 755, 879, 952, 988, 1013, 1026, 1031, 1438, 1469, 1494, 1526, 1670, 9001, 9105, 9201, 9204, 9302, 9303, 9304, 9305, 9401, 9404. Borderline eligibility: 1495, 913, 878, 1026 (number of economies or exposure or outcome family does not clearly meet the criteria; a human decision is needed).
+Quotes could not be fully matched for: 45, 57, 68, 71, 126, 174, 217, 245, 269, 276, 302, 320, 323, 341, 358, 393, 408, 750, 755, 879, 952, 988, 1013, 1026, 1031, 1438, 1469, 1494, 1526, 1670, 9001, 9105, 9201, 9204, 9302, 9303, 9304, 9305, 9401, 9404, 9501. Borderline eligibility: 1495, 913, 878, 1026 (number of economies or exposure or outcome family does not clearly meet the criteria; a human decision is needed).

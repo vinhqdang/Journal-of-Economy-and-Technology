@@ -18355,5 +18355,351 @@
    "corrections": [],
    "problems": "No invented or mixed-up content found; every extracted number checked against Tables 11, 13 and 14 and the text. Additional text-versus-table inconsistencies: (a) the conclusion says AI-to-poverty causality (Table 12) while DOLS says AI reduces poverty and CS-ARDL says it raises poverty; (b) the text says 'R-squared values for all the models ... exceed 50%' which holds (min 0.58, 0.59); (c) Table 13 col 3 ECT is -0.192 while other columns are below -1, and the text lists it; (d) the poverty text for DOLS describes positive INSTG/ECOG coefficients as 'positively influence poverty reduction', which misreads the sign; (e) Table 14 col 8 ΔLAI x GEF '-0.039* (0.000)' has an implausible SE. Record's note that Table 2 PCA text says '3.31%, 1.16%...' (p. 4738 text) versus Table 2 proportion 0.5512 is correct; the 'ITU data' note is in Table 2's source line."
   }
+ },
+ {
+  "idx": "9501",
+  "title": "Does the digital economy development improve or exacerbate income inequality? International evidence",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of 97 economies (2010-2020) with its own estimation; exposure is a composite digital economy index built mainly from internet, broadband and mobile indicators; outcome is income inequality (family 4).",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "internet and broadband",
+   "mobile telephony"
+  ],
+  "exposure_measure": "Digital Economy Development Index (DEDI): entropy-weighted composite of 31 indicators (fixed broadband and mobile subscriptions, internet users, bandwidth, 3G/4G coverage, connectivity prices, e-government, R&D, patents, ICT exports, human capital index); entered in logs (Table 1, Section 4.4). Index also includes non-ICT items (R&D, patents, human capital, high-tech exports).",
+  "sample": {
+   "n_economies": "97 (27 developed, 70 developing)",
+   "economies_or_groups": "Countries listed in Table A3, split into high, upper-middle and lower-middle (with low-income merged)",
+   "income_groups_covered": "high, upper-middle, lower-middle (low-income merged into lower-middle; Table A3 lists no separate low-income group)",
+   "years": "2010-2020",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Country and year fixed effects with robust SEs (Models 1-2, 4-9); IV-2SLS (Model 3); interaction (marginal effect) model with globalization (KOF)",
+   "identification": "instrument",
+   "key_controls_fixed_effects": "ln human capital (life expectancy), ln unemployment, ln GDP per capita, ln trade, ln private credit, ln financial development; country and year FE (Model 3 IV reports no country FE)"
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "ln Gini of market income (SWIID, GINIMK), all 97 countries, FE country only",
+    "direction": "negative",
+    "estimate": "lnDEDI 0.011 (sign not visible in the text extract; authors state DEDI reduces inequality)",
+    "uncertainty": "SE 0.005, ** (p<0.05)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 Model (1), p.4025; 'DEDI significantly negatively affects income disparity'"
+   },
+   {
+    "family": 4,
+    "indicator": "ln Gini market income, country and year FE",
+    "direction": "negative",
+    "estimate": "lnDEDI 0.008 (sign not visible in extract)",
+    "uncertainty": "SE 0.004, * (p<0.1)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 Model (2), p.4025"
+   },
+   {
+    "family": 4,
+    "indicator": "ln Gini market income, IV-2SLS (lnTELE1984 x CSG)",
+    "direction": "negative",
+    "estimate": "lnDEDI 0.534 (sign not visible in extract); about 50 times the FE estimate",
+    "uncertainty": "SE 0.144, *** (p<0.01)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4 Model (3), p.4025; first-stage coefficient 0.023 (0.005), Table A.2"
+   },
+   {
+    "family": 4,
+    "indicator": "ln Gini, interaction with globalization (GLDF)",
+    "direction": "mixed",
+    "estimate": "lnDEDI 0.030 (4), 0.027 (5), 0.008 (6); lnDEDI x GLDF 0.0003 (signs not visible)",
+    "uncertainty": "SE 0.009***, 0.010***, 0.004*; interaction SE 0.0002 *",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.4026; 'globalization weakens the influence of DEDI on promoting equality'"
+   },
+   {
+    "family": 4,
+    "indicator": "ln Gini market income, high-income subsample",
+    "direction": "null",
+    "estimate": "lnDEDI 0.001",
+    "uncertainty": "SE 0.006, not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6 Model (7), p.4028"
+   },
+   {
+    "family": 4,
+    "indicator": "ln Gini market income, upper-middle-income subsample",
+    "direction": "null",
+    "estimate": "lnDEDI 0.006",
+    "uncertainty": "SE 0.013, not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6 Model (8), p.4028"
+   },
+   {
+    "family": 4,
+    "indicator": "ln Gini market income, lower-middle (and low) income subsample",
+    "direction": "negative",
+    "estimate": "lnDEDI 0.013 (sign not visible in extract)",
+    "uncertainty": "SE 0.005, ** (p<0.05)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6 Model (9), p.4028; 'for LMICs, DEDI is prone to improve income disparity'"
+   },
+   {
+    "family": 4,
+    "indicator": "Income share of top 10 percent, all countries",
+    "direction": "negative",
+    "estimate": "lnDEDI 2.659 (sign not visible; text says DEDI reduces top-10 share)",
+    "uncertainty": "SE 1.129, **",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7 Model (10), p.4029; High-income 3.162*** (0.772), UMIC 0.900 (1.575), LMIC 3.731* (1.950)"
+   },
+   {
+    "family": 4,
+    "indicator": "Income share of bottom 10 percent, all countries",
+    "direction": "null",
+    "estimate": "lnDEDI 0.121",
+    "uncertainty": "SE 0.167, not significant",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8 Model (11), p.4029; high-income 0.573** (0.251) increase, UMIC 0.517* (0.290) described as a decrease"
+   },
+   {
+    "family": 4,
+    "indicator": "Gini after taxes and transfers (GINISP), robustness, all countries and groups",
+    "direction": "mixed",
+    "estimate": "lnDEDI 0.387* (all), 0.072 (HIC), 0.251 (UMIC), 0.649*** (LMIC); signs not visible",
+    "uncertainty": "SE 0.221, 0.293, 0.642, 0.206",
+    "horizon": "contemporaneous",
+    "evidence": "Table A4, p.4037; magnitudes are in Gini points and not comparable to the log specifications"
+   },
+   {
+    "family": 5,
+    "indicator": "Human capital index (schooling and returns), mechanism test",
+    "direction": "positive",
+    "estimate": "lnDEDI 0.141 all; 0.305** UMIC",
+    "uncertainty": "SE 0.079*; 0.135",
+    "horizon": "contemporaneous",
+    "evidence": "Table 11 Model (14), p.4031"
+   },
+   {
+    "family": 3,
+    "indicator": "Service employment share, unemployment benefit and ALMP coverage (mechanism tests)",
+    "direction": "positive",
+    "estimate": "lnDEDI 2.913** (services employment, all); 0.954* (benefit/ALMP coverage, all)",
+    "uncertainty": "SE 1.323; 0.516",
+    "horizon": "contemporaneous",
+    "evidence": "Tables 9-10, pp.4030-4031"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "income group",
+    "finding": "Inequality-reducing effect significant only in lower-middle (plus low) income countries; not significant in high and upper-middle income",
+    "threshold_value": "none",
+    "evidence": "Table 6, p.4028; 'DEDI is prone to improve income disparity' in LMICs"
+   },
+   {
+    "moderator": "other",
+    "finding": "Globalization (KOF) weakens the inequality-reducing effect of DEDI; marginal effect significant for globalization values 25.33 to 90.33",
+    "threshold_value": "none",
+    "evidence": "Table 5 and Figure 9, pp.4025-4027"
+   }
+  ],
+  "income_group_results": {
+   "high": "null for Gini (0.001, SE 0.006); raises bottom-10 share, lowers top-10 share",
+   "upper_middle": "null for Gini (0.006, SE 0.013)",
+   "lower_middle": "inequality reduced (0.013**, SE 0.005); low-income merged into this group",
+   "low": "not separately estimated (merged with lower-middle)"
+  },
+  "n_specifications_reported": "about 12 main models for the Gini outcome plus mechanism and robustness tables",
+  "headline_is_preferred_specification": "unclear",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('DEDI reduces inequality'). FE are the main design. The IV (1984 fixed telephone lines x government consumption share) has a doubtful exclusion restriction, and the IV estimate (0.534) is about 50 times the FE estimate. The IV model has no country FE. Reverse causality is discussed but not credibly handled.",
+    "evidence": "Section 4.2, p.4018; Table 4 Model (3); Table A.2"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Composite entropy-weighted index mixing ICT diffusion with R&D, patents, trade and a human capital index, which overlaps with controls and the mechanism channels; weights time-varying and not documented. Index construction is ad hoc.",
+    "evidence": "Table 1, Section 4.4, pp.4019-4020"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "97 of 147 countries retained with no stated selection rule; 11 years; low-income countries merged with lower-middle, and the country list shows no low-income country.",
+    "evidence": "Section 4.4, 5.1, Table A3"
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "SWIID model-based Gini estimates (market income) with imputed values and uncertainty not propagated; text calls the Gini 'before taxes and transfers'.",
+    "evidence": "Section 4.1, p.4017"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Many specifications and subgroup splits; log-log Gini regressions with small coefficients; controls partly inconsistent between text and tables (DEPOSIT versus FINANCE, GINIDSP versus GINISP).",
+    "evidence": "Section 4.1, Tables 4-6, A4-A5"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Headline claim of reduced inequality rests on weak significance in FE (p<0.1 with year FE) while the abstract speaks of 'improving' inequality; mechanism tables reported all and by group, but robustness on GINISP is partly different (Table A5 coefficients near zero).",
+    "evidence": "Abstract; Table 4 Model (2); Table A5"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "The text conversion dropped minus signs in every table, so all coefficient signs are unknown from the table text; directions are taken from the authors' prose (negative effect of DEDI on Gini overall and in LMICs). Inconsistencies: text names GINIDSP in Table 2 but GINISP in robustness; text lists DEPOSIT as a control but tables use FINANCE; Table 4 note says Models (3)-(5) are IV, but only Model (3) is in Table 4. Estimated effects on the Gini are tiny in log terms for FE. Outcome in this paper is inequality (family 4), not output or productivity. No instructions aimed at the reader were found in the text.",
+  "quote_check": {
+   "verified": 1,
+   "checked": 4
+  },
+  "quote_flag": "needs human check",
+  "second_pass": {
+   "results": {
+    "confirmed": 11,
+    "unverifiable": 1
+   },
+   "heterogeneity": {
+    "confirmed": 2
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation, 97 economies 2010-2020, composite ICT/internet/broadband/mobile-based index, income inequality outcome (family 4) plus income-group comparison.",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {},
+   "corrections": [
+    {
+     "n": 10,
+     "verdict": "unverifiable",
+     "correction": "Table A4 signs not visible in text extract; direction 'mixed' cannot be checked from the tables; magnitudes and SEs match (0.387* 0.221; 0.072 0.293; 0.251 0.642; 0.649*** 0.206)",
+     "quote": "lnDEDI 0.387* 0.072 0.251 0.649***"
+    }
+   ],
+   "problems": "Minor: selection_of_countries_years says country list shows no low-income country, but Table A3 lower-middle column contains low-income economies (merged). Table signs are dropped in the text so directions rest on prose; Table 5 interaction recorded as 'mixed' is reasonable (main effect negative, interaction positive per text)."
+  }
+ },
+ {
+  "idx": "9502",
+  "title": "The Kuznets curve in the digital age: Understanding inequality dynamics in Europe",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of household internet access and S80/S20 income inequality in 28 European countries (family 4), meeting the 10-economy rule for non-AI technology.",
+  "stream": "H",
+  "technology": [
+   "internet"
+  ],
+  "exposure_measure": "Households with internet access at home (%), Eurostat isoc_ci_in_h (Table 1)",
+  "sample": {
+   "n_economies": "28",
+   "economies_or_groups": "28 European countries (EU members plus Iceland), listed in Section 3.2",
+   "income_groups_covered": "not reported (European countries; no income-group split)",
+   "years": "2010-2025",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Fixed-effects threshold panel (Hansen-type), one-step difference/system GMM with imposed threshold, semiparametric GAM",
+   "identification": "threshold model",
+   "key_controls_fixed_effects": "Country FE; year FE or trend plus crisis dummies; log GDP per capita PPS and square, GDP growth, tertiary attainment, gender employment gap; alternative control blocks"
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "S80/S20 income quintile share ratio, low-access regime (below 70.78% threshold)",
+    "direction": "positive",
+    "estimate": "0.031 (two-way FE preferred); 0.036 (country FE); 0.029 (country FE + trend/crises); per 1 pp internet access",
+    "uncertainty": "clustered SE 0.017 (p = 0.083) in two-way FE; SE 0.016 (p=0.035); SE 0.017 (p=0.097)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, p.6, row 'Internet access, low regime': 0.031* (0.017)"
+   },
+   {
+    "family": 4,
+    "indicator": "S80/S20, high-access regime (above 70.78%)",
+    "direction": "negative",
+    "estimate": "-0.031 (two-way FE preferred); -0.027; -0.032; per 1 pp",
+    "uncertainty": "clustered SE 0.009 (p = 0.002); SE 0.008; SE 0.009",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, p.6, row 'Internet access, high regime': -0.031*** (0.009); text: 'a 0.31-point decrease above it' per 10 pp"
+   },
+   {
+    "family": 4,
+    "indicator": "S80/S20, dynamic GMM high-access regime",
+    "direction": "mixed",
+    "estimate": "Negative in all six Table 4 models (-0.018 to -0.034), significant in three; low regime not significant (-0.012 to 0.030)",
+    "uncertainty": "robust SE 0.012-0.016 for high-regime; significant in Diff L2-L3, Sys L2-L4, Sys L3-L4",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.7; 'GMM partially supports the inequality-reducing mature-diffusion branch'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Nonlinear stage dependence: positive association below the estimated internet-access threshold (early diffusion), negative above; low branch loses significance when starting year is 2012/2013 and turns negative for 2015-2025",
+    "threshold_value": "70.78% household internet access (95% LR set 70.45-75.29)",
+    "evidence": "Table 2, Sec 4.1 and 4.3, pp.6-7"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 30 FE threshold specifications plus 6 GMM, 2 two-step GMM, GAM and cutoff/early-period checks",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE threshold models have no instrument; GMM uses internal lags with imposed threshold, only partly supportive; authors say results are associations, not causal",
+    "evidence": "Sec 3.1.2, 4.3, 4.4; Table 4"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Household internet access share is a coarse access measure, saturating near 99%; no usage or quality",
+    "evidence": "Table 1"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "28 European countries, all relatively high-income, unbalanced 439 observations; low regime identified by early years; 28 clusters",
+    "evidence": "Sec 3.2; Sec 4.3"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "S80/S20 from Eurostat ilc_di11, harmonized survey measure",
+    "evidence": "Table 1"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Threshold estimated by grid search, many control/time variants; authors report all 30 and multiplicity check",
+    "evidence": "Sec 4.2, Table 3"
+   },
+   "selective_reporting": {
+    "rating": "low",
+    "why": "Reports all coefficients, null/weak GMM results and fragility of low branch",
+    "evidence": "Sec 4.2-4.4"
+   }
+  },
+  "overall_risk_of_bias": "moderate",
+  "venue_quality_concern": "none",
+  "notes": "Outcome is income inequality (family 4) only; no output or productivity outcome. Text states 'we retain the article's fixed-effects threshold framework', suggesting a revised version of an earlier article; no earlier version identified here. Publication dates inside the paper are 2026 with volume year 2027. Only the main text was read to page 9; remaining pages are appendices and references. No instruction-like text found.",
+  "quote_check": {
+   "verified": 4,
+   "checked": 4
+  },
+  "quote_flag": "ok",
+  "second_pass": {
+   "results": {
+    "confirmed": 3
+   },
+   "heterogeneity": {
+    "confirmed": 1
+   },
+   "eligibility_ok": true,
+   "eligibility_note": "Own panel estimation (FE threshold, GMM, GAM); exposure household internet access; 28 European economies (>=10); outcome S80/S20 income inequality (family 4).",
+   "risk_of_bias_overall_opinion": "agree",
+   "sample_corrections": {
+    "years": "2010-2025 confirmed; unbalanced, 439 obs in harmonized core (448 potential); balanced robustness panel 25 countries/400 obs",
+    "income_groups_covered": "no income-group split; all European (EU members plus Iceland), effectively high/upper-middle income only"
+   },
+   "corrections": [],
+   "problems": "none; record's 'serious' confounding rating is slightly harsh given non-causal framing. Record's note that only main text was read is superseded: appendices (Tables A1-G2) consistent with record. Record omits the 2-threshold test (p=0.765), linearity bootstrap p=0.032, and GAM average slopes 0.035/-0.032 (minor)."
+  }
  }
 ]

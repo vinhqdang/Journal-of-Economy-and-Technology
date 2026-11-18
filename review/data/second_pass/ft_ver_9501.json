@@ -1,0 +1,111 @@
+[
+ {
+  "idx": "9501",
+  "eligibility_ok": true,
+  "eligibility_note": "Own panel estimation, 97 economies 2010-2020, composite ICT/internet/broadband/mobile-based index, income inequality outcome (family 4) plus income-group comparison.",
+  "sample_corrections": {},
+  "results": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "DEDI significantly negatively affects income disparity"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "DEDI reduces income inequality"
+   },
+   {
+    "n": 3,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Model (3) demonstrates the result of the two-stage instrumental variable method (IV-2SLS)"
+   },
+   {
+    "n": 4,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "globalization weakens the influence of DEDI on promoting equality"
+   },
+   {
+    "n": 5,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnDEDI 0.001 (0.006)"
+   },
+   {
+    "n": 6,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnDEDI 0.006 (0.013)"
+   },
+   {
+    "n": 7,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "for LMICs, DEDI is prone to improve income disparity"
+   },
+   {
+    "n": 8,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "DEDI significantly reduces the income share of the top 10 %"
+   },
+   {
+    "n": 9,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "DEDI has no significant effects on the share of the bottom 10 % of the population globally"
+   },
+   {
+    "n": 10,
+    "verdict": "unverifiable",
+    "correction": "Table A4 signs not visible in text extract; direction 'mixed' cannot be checked from the tables; magnitudes and SEs match (0.387* 0.221; 0.072 0.293; 0.251 0.642; 0.649*** 0.206)",
+    "quote": "lnDEDI 0.387* 0.072 0.251 0.649***"
+   },
+   {
+    "n": 11,
+    "verdict": "confirmed",
+    "correction": "Table 11 shows all-country 0.141* (0.079); UMIC 0.305** (0.135); matches",
+    "quote": "lnDEDI 0.141* (0.079); UMIC 0.305** (0.135)"
+   },
+   {
+    "n": 12,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "lnDEDI 2.913** (1.323); Table 10 0.954* (0.516)"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "n": 1,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "Table 6 Models (7)-(9): 0.001 (0.006), 0.006 (0.013), 0.013** (0.005)"
+   },
+   {
+    "n": 2,
+    "verdict": "confirmed",
+    "correction": "",
+    "quote": "DEDI significantly promotes income equality when the value of globalization ranges from 25.33 to 90.33"
+   }
+  ],
+  "income_group_results": "confirmed",
+  "income_group_note": "Values match Table 6-8. Low-income merged into lower-middle as stated; Table A3 lower-middle column includes low-income economies (e.g. Liberia, Mozambique, Rwanda, Sierra Leone, Uganda, Togo, South Sudan).",
+  "risk_of_bias": {
+   "overall": "agree",
+   "confounding_reverse_causation": "agree: causal language, IV (1984 telephone lines x CSG) with weak exclusion argument, no country FE in IV, 50x FE estimate",
+   "exposure_measurement": "agree: entropy composite mixes ICT with R&D, patents, human capital",
+   "selection_of_countries_years": "agree: 97 of 147 with no stated rule; but record is wrong that no low-income country is listed",
+   "outcome_measurement": "agree: SWIID market-income Gini, imputed",
+   "specification": "agree: many specs, text/table inconsistencies",
+   "selective_reporting": "agree: headline rests on p<0.1 in FE with year effects",
+   "why": "Causal claims with FE and a questionable IV; serious fits."
+  },
+  "causal_language": "yes",
+  "reverse_causality_addressed": "partly",
+  "problems": "Minor: selection_of_countries_years says country list shows no low-income country, but Table A3 lower-middle column contains low-income economies (merged). Table signs are dropped in the text so directions rest on prose; Table 5 interaction recorded as 'mixed' is reasonable (main effect negative, interaction positive per text)."
+ }
+]
