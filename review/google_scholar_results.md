@@ -29,3 +29,7 @@ Data: `data/scholar_g6_page1.csv`. Of the 10 results, 2 are already included, 1 
 ## Query G5, first page (10 results), pasted by the author on 18 November 2026
 
 Data: `data/scholar_g5_page1.csv`. Of the 10 results, 2 are already included, 1 (Omar and Inaba) was seen in G6 and is not eligible because financial inclusion is its exposure. Five are new and requested (Popowska 2022, Phan 2023, Asongu et al. 2021, Shah and Krishnan 2024, Richmond and Triplett 2018); two are optional (Polloni-Silva et al. 2021, financial inclusion as exposure; Yilmaz and Koyuncu 2018, venue to be judged).
+
+## Query G14, first page (10 results), pasted by the author on 18 November 2026
+
+Data: `data/scholar_g14_page1.csv`. This query looked for existing meta-analyses and reviews, to compare the pooled partial correlation with earlier pooled estimates and to cite the right literature. Five of the ten results are meta-analyses or systematic reviews of ICT and growth or productivity (Stanley et al. 2018; Oloyede et al. 2023; Polak 2017; Stiroh 2005; Foster et al. 2026), two are narrative reviews (Biagi 2013; Cardona et al. 2013) and three are primary studies (Tsachtsiris et al. 2022; Majeed 2018; Gokgoz and Turan 2025). The meta-analyses are comparators, not included studies. Requested: Stanley et al. 2018 and Oloyede et al. 2023; the primary studies and the other meta-analyses are optional.
