@@ -1,0 +1,106 @@
+[
+ {
+  "idx": "9502",
+  "title": "The Kuznets curve in the digital age: Understanding inequality dynamics in Europe",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study of household internet access and S80/S20 income inequality in 28 European countries (family 4), meeting the 10-economy rule for non-AI technology.",
+  "stream": "H",
+  "technology": [
+   "internet"
+  ],
+  "exposure_measure": "Households with internet access at home (%), Eurostat isoc_ci_in_h (Table 1)",
+  "sample": {
+   "n_economies": "28",
+   "economies_or_groups": "28 European countries (EU members plus Iceland), listed in Section 3.2",
+   "income_groups_covered": "not reported (European countries; no income-group split)",
+   "years": "2010-2025",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Fixed-effects threshold panel (Hansen-type), one-step difference/system GMM with imposed threshold, semiparametric GAM",
+   "identification": "threshold model",
+   "key_controls_fixed_effects": "Country FE; year FE or trend plus crisis dummies; log GDP per capita PPS and square, GDP growth, tertiary attainment, gender employment gap; alternative control blocks"
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "S80/S20 income quintile share ratio, low-access regime (below 70.78% threshold)",
+    "direction": "positive",
+    "estimate": "0.031 (two-way FE preferred); 0.036 (country FE); 0.029 (country FE + trend/crises); per 1 pp internet access",
+    "uncertainty": "clustered SE 0.017 (p = 0.083) in two-way FE; SE 0.016 (p=0.035); SE 0.017 (p=0.097)",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, p.6, row 'Internet access, low regime': 0.031* (0.017)"
+   },
+   {
+    "family": 4,
+    "indicator": "S80/S20, high-access regime (above 70.78%)",
+    "direction": "negative",
+    "estimate": "-0.031 (two-way FE preferred); -0.027; -0.032; per 1 pp",
+    "uncertainty": "clustered SE 0.009 (p = 0.002); SE 0.008; SE 0.009",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2, p.6, row 'Internet access, high regime': -0.031*** (0.009); text: 'a 0.31-point decrease above it' per 10 pp"
+   },
+   {
+    "family": 4,
+    "indicator": "S80/S20, dynamic GMM high-access regime",
+    "direction": "mixed",
+    "estimate": "Negative in all six Table 4 models (-0.018 to -0.034), significant in three; low regime not significant (-0.012 to 0.030)",
+    "uncertainty": "robust SE 0.012-0.016 for high-regime; significant in Diff L2-L3, Sys L2-L4, Sys L3-L4",
+    "horizon": "contemporaneous",
+    "evidence": "Table 4, p.7; 'GMM partially supports the inequality-reducing mature-diffusion branch'"
+   }
+  ],
+  "heterogeneity": [
+   {
+    "moderator": "other",
+    "finding": "Nonlinear stage dependence: positive association below the estimated internet-access threshold (early diffusion), negative above; low branch loses significance when starting year is 2012/2013 and turns negative for 2015-2025",
+    "threshold_value": "70.78% household internet access (95% LR set 70.45-75.29)",
+    "evidence": "Table 2, Sec 4.1 and 4.3, pp.6-7"
+   }
+  ],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 30 FE threshold specifications plus 6 GMM, 2 two-step GMM, GAM and cutoff/early-period checks",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE threshold models have no instrument; GMM uses internal lags with imposed threshold, only partly supportive; authors say results are associations, not causal",
+    "evidence": "Sec 3.1.2, 4.3, 4.4; Table 4"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Household internet access share is a coarse access measure, saturating near 99%; no usage or quality",
+    "evidence": "Table 1"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "28 European countries, all relatively high-income, unbalanced 439 observations; low regime identified by early years; 28 clusters",
+    "evidence": "Sec 3.2; Sec 4.3"
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "S80/S20 from Eurostat ilc_di11, harmonized survey measure",
+    "evidence": "Table 1"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "moderate",
+    "why": "Threshold estimated by grid search, many control/time variants; authors report all 30 and multiplicity check",
+    "evidence": "Sec 4.2, Table 3"
+   },
+   "selective_reporting": {
+    "rating": "low",
+    "why": "Reports all coefficients, null/weak GMM results and fragility of low branch",
+    "evidence": "Sec 4.2-4.4"
+   }
+  },
+  "overall_risk_of_bias": "moderate",
+  "venue_quality_concern": "none",
+  "notes": "Outcome is income inequality (family 4) only; no output or productivity outcome. Text states 'we retain the article's fixed-effects threshold framework', suggesting a revised version of an earlier article; no earlier version identified here. Publication dates inside the paper are 2026 with volume year 2027. Only the main text was read to page 9; remaining pages are appendices and references. No instruction-like text found."
+ }
+]

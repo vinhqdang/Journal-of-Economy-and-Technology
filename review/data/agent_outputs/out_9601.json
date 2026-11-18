@@ -1,0 +1,90 @@
+[
+ {
+  "idx": "9601",
+  "title": "A Panel Data Analysis of Determinants of Financial Inclusion in Sub-Saharan Africa (SSA) Countries from 1999 to 2024",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Empirical panel regression where internet users (internet diffusion) is a regressor for financial inclusion (family 5); the paper states 45 SSA countries (Table 5 uses 34 cross-sections), above the 10-economy minimum. Internet is one of several determinants rather than the sole focus, so inclusion is borderline.",
+  "stream": "H",
+  "technology": [
+   "internet"
+  ],
+  "exposure_measure": "USERS: number of internet users (WDI; descriptive mean 11.183, likely per 100 people but unit not stated); also SERVER: secure internet servers",
+  "sample": {
+   "n_economies": "45 stated; 34 cross-sections in Table 5",
+   "economies_or_groups": "Sub-Saharan Africa",
+   "income_groups_covered": "not reported (SSA, mainly low and lower-middle)",
+   "years": "1999-2024 (24 periods in Table 5)",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel least squares, pooled regression (no fixed effects reported)",
+   "identification": "none",
+   "key_controls_fixed_effects": "GDP per capita, inflation, interest rate, Islamic banking dummy, money supply, credit; no country or time effects reported"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Financial inclusion (AFII; depositors with commercial banks per 1000 adults) on internet users",
+    "direction": "positive",
+    "estimate": "0.459388",
+    "uncertainty": "SE 0.07508; t 6.118623; p 0.0000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.11 USERS row: 'USERS 0.459388 0.07508 6.118623 0.0000'"
+   },
+   {
+    "family": 5,
+    "indicator": "Financial inclusion on secure internet servers",
+    "direction": "negative",
+    "estimate": "-4.63 x 10^-6",
+    "uncertainty": "SE 8.59 x 10^-7; t -5.391912; p 0.000",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5, p.11 SERVER row"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not applicable",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "1",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('enhance') with pooled OLS, no fixed effects or instruments; reverse causation and omitted variables unaddressed. Durbin-Watson 0.12 indicates strong residual autocorrelation.",
+    "evidence": "Table 5, p.11"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users unit not defined; secure servers is a weak proxy and is negative.",
+    "evidence": "Sec. 3, p.8"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "45 countries stated but 34 cross-sections and 598 unbalanced obs used; unexplained.",
+    "evidence": "Table 5"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Outcome defined as depositors per 1000 adults in text but labelled AFII in table; mean 21.4 inconsistent with scale of some regressors; inconsistent reporting.",
+    "evidence": "Sec. 3 and Table 5"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Unit root tests run but pooled levels regression estimated anyway; no fixed effects despite stated need for panel methods; R-squared line garbled (1436).",
+    "evidence": "Tables 4-5"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only one specification reported, so little room to judge.",
+    "evidence": "Table 5"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (MDPI journal; internal inconsistencies in tables and variable definitions)",
+  "notes": "Abstract mentions Panel Least Squares and three periods (pre-COVID, COVID, post-COVID) but no period-specific results reported. Table 5 reports pooled results only, though the text says panel methods are needed. Table 2/3 headers use GRO for GDP per capita and ISIC/ISMAIC inconsistently. No instruction-like text found."
+ }
+]

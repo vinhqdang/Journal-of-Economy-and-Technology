@@ -1,0 +1,146 @@
+[
+ {
+  "idx": "9603",
+  "title": "Digital technologies and financial inclusion in Sub-Saharan Africa",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel study (system GMM and IV-Tobit) of ICT indicators (internet, mobile, fixed broadband, fixed telephone, composite) in 43 economies; outcome is financial inclusion (family 5).",
+  "stream": "H",
+  "technology": [
+   "ICT in general",
+   "mobile telephony",
+   "internet or broadband"
+  ],
+  "exposure_measure": "Internet users, fixed broadband, fixed telephone and mobile cellular subscriptions (per 100 people, WDI) and a composite digitalization indicator; each entered separately",
+  "sample": {
+   "n_economies": "43",
+   "economies_or_groups": "43 Sub-Saharan African countries (listed in footnote 1)",
+   "income_groups_covered": "not reported (region-only sample; no income-group split)",
+   "years": "2004-2019",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "System GMM (forward orthogonal deviations, time dummies) as main; IV-Tobit as baseline",
+   "identification": "other",
+   "key_controls_fixed_effects": "FDI, GDP per capita, consumption, savings, inflation, trade; time effects; lagged dependent variable; explanatory variables treated as exogenous; internal (lag-residual) instruments in IV-Tobit"
+  },
+  "results": [
+   {
+    "family": 5,
+    "indicator": "Bank accounts per 100,000 adults (system GMM, internet users)",
+    "direction": "positive",
+    "estimate": "0.0413***",
+    "uncertainty": "SE 0.00235",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col 2, p.11; 'Internet users 0.0413*** (0.00235)'"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank accounts (system GMM, mobile phone)",
+    "direction": "positive",
+    "estimate": "0.0147***",
+    "uncertainty": "SE 0.00125",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col 3, p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank accounts (system GMM, fixed broadband)",
+    "direction": "positive",
+    "estimate": "0.0554***",
+    "uncertainty": "SE 0.0137",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col 4, p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank accounts (system GMM, composite digitalization)",
+    "direction": "positive",
+    "estimate": "0.0431***",
+    "uncertainty": "SE 0.00317",
+    "horizon": "contemporaneous",
+    "evidence": "Table 5 col 5, p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank branches (system GMM, internet users)",
+    "direction": "positive",
+    "estimate": "0.218***",
+    "uncertainty": "SE 0.0228",
+    "horizon": "contemporaneous",
+    "evidence": "Table 6 col 2, p.11"
+   },
+   {
+    "family": 5,
+    "indicator": "ATMs per 100,000 adults (system GMM, internet users)",
+    "direction": "positive",
+    "estimate": "0.639***",
+    "uncertainty": "SE 0.0311",
+    "horizon": "contemporaneous",
+    "evidence": "Table 7 col 2, p.12"
+   },
+   {
+    "family": 5,
+    "indicator": "Financial inclusion index, PCA composite (system GMM, digitalization)",
+    "direction": "positive",
+    "estimate": "0.0447***",
+    "uncertainty": "SE 0.00129",
+    "horizon": "contemporaneous",
+    "evidence": "Table 8 col 5, p.12"
+   },
+   {
+    "family": 5,
+    "indicator": "Bank accounts (IV-Tobit, digitalization)",
+    "direction": "positive",
+    "estimate": "0.0407***",
+    "uncertainty": "SE 0.00438",
+    "horizon": "contemporaneous",
+    "evidence": "Table 2 col 5, p.9"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "about 35 (5 technology measures x 4 outcomes in GMM, 3 outcomes in IV-Tobit)",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('digital technology increases financial inclusion'); GMM with all regressors declared exogenous and only time dummies as instruments; internal IV-Tobit instruments are lags. Reverse causality not credibly handled.",
+    "evidence": "Section 4.2, p.7: 'all our explanatory are treated as exogenous'"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Standard WDI subscription counts, adequate for ICT diffusion; composite indicator construction not detailed.",
+    "evidence": "Section 4.1.2, p.6"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "43 SSA countries chosen by data availability; effective sample falls to 29-37 countries; some countries dropped.",
+    "evidence": "Section 4.1, p.6; Tables 5-8 'Number of id'"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Financial inclusion proxied by supply-side bank accounts, branches and ATMs; mixed units (per 100,000 adults) and min-max normalisation; variables such as deposits and credit are financial depth, not inclusion. Text also states bank-account figures 'per 100,000 people' and 'mobile money subscribers' inconsistently.",
+    "evidence": "Section 4.1.1.1, p.6; Table 1"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "Lagged dependent variable coefficients near or above 1 (1.003, 1.031, 1.050), indicating unit root/non-stationarity; AR(2) and Hansen p-values marginal in places (Table 7); instrument count 24-25; many specifications.",
+    "evidence": "Table 6 col 2; Table 7, p.11-12"
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All reported technology coefficients positive and significant; robustness composite index results reported only partly; credit, deposits and loans outcomes mentioned in text but not tabulated.",
+    "evidence": "Section 5.1 and Section 6, p.12-13"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "none",
+  "notes": "Telecommunications Policy 2022. Digital technology effect is on financial inclusion only; GDP per capita is a control, not an outcome. Dependent variables min-max normalised to 0-1 while coefficients are on different scales across tables. The text states country-count discrepancies (43 countries; 'individuals greater than time series'). No text aimed at the extractor found."
+ }
+]

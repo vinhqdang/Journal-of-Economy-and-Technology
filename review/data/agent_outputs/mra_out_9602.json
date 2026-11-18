@@ -1,0 +1,20 @@
+[
+ {
+  "idx": "9602",
+  "title": "Financial Inclusion, ICT Diffusion and Poverty Reduction: Evidence from Sub-Sahara African Countries",
+  "paper_level": {
+   "estimator_family": "PMG-ARDL",
+   "identification": "none",
+   "reverse_causality_addressed": "no",
+   "causal_language": "yes",
+   "sample_description": "27 SSA countries, 2004-2017, mostly low and lower-middle income",
+   "n_countries_main": "27",
+   "n_obs_main": "324",
+   "technology_measure_main": "Internet penetration and mobile subscriptions per 100 people",
+   "outcome_main": "Household final consumption expenditure per capita (constant 2010 US$), used as poverty proxy",
+   "units_note": "Not stated; authors read positive coefficient as poverty reduction"
+  },
+  "estimates": [],
+  "notes": "Outcome is poverty (household consumption as proxy), not output or productivity; GDP per capita appears only as a control. Eligible exposure and 27 economies, but no output/productivity estimates, so empty estimates list per rule 6."
+ }
+]

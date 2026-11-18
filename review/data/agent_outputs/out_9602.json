@@ -1,0 +1,118 @@
+[
+ {
+  "idx": "9602",
+  "title": "Financial Inclusion, ICT Diffusion and Poverty Reduction: Evidence from Sub-Sahara African Countries",
+  "fulltext_decision": "include",
+  "exclusion_reason": "none",
+  "decision_rationale": "Quantitative panel ARDL (PMG/MG/DFE) on 27 SSA economies; exposures are internet and mobile phone penetration; outcome is household consumption per capita used as poverty proxy (families 4 and 5).",
+  "stream": "H",
+  "technology": [
+   "internet",
+   "mobile telephony"
+  ],
+  "exposure_measure": "Internet penetration (IP) and mobile phone subscriptions (MP), per 100 people (World Bank WDI); financial inclusion proxied by commercial bank branches per 100,000 adults (COM)",
+  "sample": {
+   "n_economies": "27",
+   "economies_or_groups": "27 sub-Saharan African countries (Appendix 1), chosen on data availability",
+   "income_groups_covered": "not reported (SSA only; mostly low and lower-middle, some upper-middle e.g. Botswana, Gabon, Mauritius, South Africa, Namibia)",
+   "years": "2004-2017 (abstract, Section 3.2); conclusion and introduction say 2004-2016",
+   "unit": "country-year"
+  },
+  "design": {
+   "estimator": "Panel ARDL: pooled mean group (PMG, preferred via Hausman), mean group, dynamic fixed effects",
+   "identification": "none",
+   "key_controls_fixed_effects": "Log GDP per capita, inflation; country fixed effects/heterogeneous intercepts"
+  },
+  "results": [
+   {
+    "family": 4,
+    "indicator": "Household final consumption expenditure per capita (poverty proxy) vs internet penetration, PMG long run",
+    "direction": "positive",
+    "estimate": "0.000779***",
+    "uncertainty": "SE 0.000159",
+    "horizon": "long",
+    "evidence": "Table 3, PMG long run, row IP; text p.147: 'internet penetration reduces poverty in the long run'"
+   },
+   {
+    "family": 4,
+    "indicator": "Household consumption per capita vs internet penetration, PMG short run",
+    "direction": "null",
+    "estimate": "-0.00276",
+    "uncertainty": "SE 0.0221",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, PMG short run, row D IP; no stars, yet abstract says significant short-run reduction"
+   },
+   {
+    "family": 4,
+    "indicator": "Household consumption per capita vs mobile phone penetration, PMG long run",
+    "direction": "null",
+    "estimate": "0.000215",
+    "uncertainty": "SE 0.000144",
+    "horizon": "long",
+    "evidence": "Table 3, PMG long run, row MP; text: 'no impact on poverty reduction both short and long run'"
+   },
+   {
+    "family": 4,
+    "indicator": "Household consumption per capita vs mobile phone penetration, PMG short run",
+    "direction": "null",
+    "estimate": "-3.6605",
+    "uncertainty": "SE 0.00178",
+    "horizon": "contemporaneous",
+    "evidence": "Table 3, PMG short run, row D MP; printed -3.6605 with SE 0.00178 and no stars, internally implausible (likely typo)"
+   },
+   {
+    "family": 4,
+    "indicator": "Household consumption per capita vs commercial bank branches (financial inclusion), PMG long run and short run",
+    "direction": "positive",
+    "estimate": "long run 0.00556***; short run 0.0191**",
+    "uncertainty": "SE 0.00125 (long); SE 0.00862 (short)",
+    "horizon": "long",
+    "evidence": "Table 3, PMG rows COM and D COM; text calls short-run effect negative, contradicting positive printed sign"
+   }
+  ],
+  "heterogeneity": [],
+  "income_group_results": {
+   "high": "not reported",
+   "upper_middle": "not reported",
+   "lower_middle": "not reported",
+   "low": "not reported"
+  },
+  "n_specifications_reported": "3 estimators (PMG, MG, DFE); MG and DFE show no significant ICT effects except DFE MP long run 0.000895**",
+  "headline_is_preferred_specification": "yes",
+  "risk_of_bias": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Causal language ('exert a significant reduction in poverty'); PMG ARDL with no instruments; reverse causality (consumption driving internet/bank access) not handled; only two controls",
+    "evidence": "Section 3.1, Table 3"
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet and mobile subscriptions per 100 people are standard; bank branches is a crude financial inclusion proxy",
+    "evidence": "Section 3.2, Table 1 note"
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "27 SSA countries picked on data availability; 14 annual obs per country; period inconsistently reported (2004-2016 vs 2017); obs 351 in Table 1 vs 324 in Table 3",
+    "evidence": "Section 3.2, Appendix 1, Table 3"
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Household final consumption per capita is a living-standard proxy, not a poverty measure; interpretation of positive coefficient as 'poverty reduction' is loose; min value 0 in Table 1 suggests data gaps coded as zero",
+    "evidence": "Section 3.2, Table 1"
+   },
+   "specification_and_researcher_degrees_of_freedom": {
+    "rating": "serious",
+    "why": "PMG imposes long-run homogeneity with T=14; MG/DFE show different results; unit-root tests report variables I(1) yet no cointegration test beyond ECT; lag selection not reported",
+    "evidence": "Sections 3.1, 4.1, Table 3"
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Text and abstract contradict Table 3 (short-run COM sign, short-run IP significance); conclusions emphasise PMG significant results only",
+    "evidence": "Abstract, p.147 vs Table 3"
+   }
+  },
+  "overall_risk_of_bias": "serious",
+  "venue_quality_concern": "possible (low-visibility journal with multiple text-table inconsistencies, typographical errors in specification and variable definitions)",
+  "notes": "Outcome is household consumption per capita (poverty proxy), so classed as family 4 with overlap to family 5. Abstract says IP reduces poverty in the short run but not long run, whereas Table 3 shows IP significant in the long run and not in the short run; conclusion repeats the short-run claim. Text says COM short-run effect is negative but Table 3 shows +0.0191**. Mobile MP short-run coefficient -3.6605 with SE 0.00178 looks like a misprint. Observations 351 (Table 1) vs 324 (Table 3). No instruction-like text found in the paper."
+ }
+]

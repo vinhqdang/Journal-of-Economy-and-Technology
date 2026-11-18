@@ -1,0 +1,20 @@
+[
+ {
+  "idx": "9501",
+  "title": "Does the digital economy development improve or exacerbate income inequality? International evidence",
+  "paper_level": {
+   "estimator_family": "FE",
+   "identification": "other",
+   "reverse_causality_addressed": "partly",
+   "causal_language": "yes",
+   "sample_description": "97 countries (27 developed, 70 developing), 2010-2020",
+   "n_countries_main": "97",
+   "n_obs_main": "1023",
+   "technology_measure_main": "ln DEDI, composite digital economy development index",
+   "outcome_main": "ln Gini of market income (income inequality), not output or productivity",
+   "units_note": "not applicable"
+  },
+  "estimates": [],
+  "notes": "Outcome is income inequality (Gini, top and bottom income shares), not output or productivity, so no estimates are extracted. No text aimed at the extractor was found."
+ }
+]

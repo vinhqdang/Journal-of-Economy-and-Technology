@@ -1,0 +1,20 @@
+[
+ {
+  "idx": "9603",
+  "title": "Digital technologies and financial inclusion in Sub-Saharan Africa",
+  "paper_level": {
+   "estimator_family": "GMM-system",
+   "identification": "internal instruments (GMM lags)",
+   "reverse_causality_addressed": "partly",
+   "causal_language": "yes",
+   "sample_description": "43 Sub-Saharan African countries, 2004-2019",
+   "n_countries_main": "43",
+   "n_obs_main": null,
+   "technology_measure_main": "Internet users, fixed broadband, fixed and mobile subscriptions per 100 people, composite digitalization",
+   "outcome_main": "Financial inclusion (bank accounts, bank branches, ATMs per 100,000 adults; PCA index), not output or productivity",
+   "units_note": "not stated"
+  },
+  "estimates": [],
+  "notes": "Outcome is financial inclusion, not output or productivity; GDP per capita appears only as a control. No estimates extracted. No text aimed at the extractor found."
+ }
+]

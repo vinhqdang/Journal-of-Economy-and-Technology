@@ -1,0 +1,20 @@
+[
+ {
+  "idx": "9601",
+  "title": "A Panel Data Analysis of Determinants of Financial Inclusion in Sub-Saharan Africa (SSA) Countries from 1999 to 2024",
+  "paper_level": {
+   "estimator_family": "OLS",
+   "identification": "none",
+   "reverse_causality_addressed": "no",
+   "causal_language": "yes",
+   "sample_description": "45 SSA countries stated, 34 cross-sections, 1999-2024",
+   "n_countries_main": "34",
+   "n_obs_main": "598",
+   "technology_measure_main": "USERS: number of internet users",
+   "outcome_main": "Financial inclusion (depositors with commercial banks per 1000 adults)",
+   "units_note": "not stated"
+  },
+  "estimates": [],
+  "notes": "Outcome is financial inclusion, not output or productivity (GDP per capita appears only as a regressor), so no estimates are eligible."
+ }
+]

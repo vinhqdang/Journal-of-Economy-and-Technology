@@ -1,0 +1,20 @@
+[
+ {
+  "idx": "9502",
+  "title": "The Kuznets curve in the digital age: Understanding inequality dynamics in Europe",
+  "paper_level": {
+   "estimator_family": "other",
+   "identification": "internal instruments (GMM lags)",
+   "reverse_causality_addressed": "partly",
+   "causal_language": "no",
+   "sample_description": "28 European countries, 2010-2025",
+   "n_countries_main": "28",
+   "n_obs_main": "439",
+   "technology_measure_main": "Households with internet access at home (%)",
+   "outcome_main": "S80/S20 income quintile share ratio",
+   "units_note": "not stated beyond inequality outcome"
+  },
+  "estimates": [],
+  "notes": "Outcome is income inequality (S80/S20), not output or productivity; no GDP or productivity outcome is estimated (GDP per capita is a control). Empty estimates list per instruction."
+ }
+]
