@@ -41,7 +41,7 @@ S = [r"\subsection*{Search blocks (protocol)}", "Four concept blocks were combin
      r"\item \textbf{Block C (outcomes):} growth, productivity, GDP, poverty, inequality, employment, wage*, labor or labour share, structural transformation, financial inclusion, welfare, living standard*, human development.",
      r"\item \textbf{Block D (heterogeneity):} heterogene*, absorptive capacity, complementar*, threshold*, human capital, digital divide, convergence, divergence, technology diffusion, technology adoption, leapfrog*.",
      r"\end{itemize}}", "",
-     r"\subsection*{OpenAlex query as run (2 October 2026)}", r"{\scriptsize\begin{verbatim}"]
+     r"\subsection*{OpenAlex query as run (2 October 2026)}", r"{\fontsize{6.6}{7.6}\selectfont\begin{verbatim}"]
 import textwrap
 S += textwrap.wrap(q, 110) + [r"\end{verbatim}}", "",
       r"\subsection*{Crossref and NBER searches}",

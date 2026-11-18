@@ -23,10 +23,10 @@ def section_table(path, heading):
 def tab(rows, caption, label):
     n = len(rows[0])
     spec = "@{}l" + "r" * (n - 2) + "p{6.4cm}@{}" if n == 4 else "@{}" + "l" * n + "@{}"
-    out = [r"\begin{table}[!ht]\centering\footnotesize", rf"\caption{{{caption}}}\label{{{label}}}", rf"\begin{{tabular}}{{{spec}}}\toprule", " & ".join(esc(c) for c in rows[0]) + r" \\ \midrule"]
+    out = [r"\begin{table}[!ht]\centering\footnotesize", rf"\caption{{{caption}}}\label{{{label}}}", r"\begin{adjustbox}{max width=\linewidth}"+rf"\begin{{tabular}}{{{spec}}}\toprule", " & ".join(esc(c) for c in rows[0]) + r" \\ \midrule"]
     for r in rows[1:]:
         out.append(" & ".join(esc(c) for c in r) + r" \\")
-    out += [r"\bottomrule\end{tabular}\end{table}", ""]
+    out += [r"\bottomrule\end{tabular}\end{adjustbox}\end{table}", ""]
     return "\n".join(out)
 
 L = [r"\subsection*{Variables}", r"\begin{table}[!ht]\centering\footnotesize\caption{World Bank WDI indicators used.}\label{tab:wdi}\begin{tabular}{@{}lll@{}}\toprule Role & Variable & WDI code\\\midrule",

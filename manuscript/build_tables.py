@@ -27,7 +27,7 @@ def estclass(x):
     if "gmm" in e:
         return "GMM"
     if re.search("ardl|coint|fmols|dols|amg|cce|mean group", e):
-        return "ARDL/coint./heterog. panel"
+        return "ARDL, coint., heterog. panel"
     if re.search("fixed|ols|random|pooled|panel", e):
         return "FE/RE/OLS"
     return "Accounting/DEA/other"
