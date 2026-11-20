@@ -36,24 +36,12 @@ L = [r"\subsection*{Variables}", r"\begin{table}[!ht]\centering\footnotesize\cap
      "Control & Trade, \\% of GDP & NE.TRD.GNFS.ZS\\\\", "Moderator & Domestic credit to private sector, \\% of GDP & FS.AST.PRVT.GD.ZS\\\\", "Moderator & Access to electricity, \\% of population & EG.ELC.ACCS.ZS\\\\", "Other & Population, total & SP.POP.TOTL\\\\",
      r"\bottomrule\end{tabular}\end{table}", "",
      r"Income groups follow the World Bank's current classification of 217 economies (25 low, 47 lower-middle, 59 upper-middle and 86 high income; the analysis sample is smaller because of missing data). Aggregates were removed. CO$_2$ emissions per capita could not be retrieved from the API and are not analysed.", ""]
-for head, cap, lab in [("## A1 contemporaneous, internet users, % of population", "Internet use and growth, same period (A1): change in annual growth (pp) per +10 points of users.", "tab:a1net"),
-                       ("## A2 predetermined (previous-period change), internet users, % of population", "Internet use and growth, previous period (A2).", "tab:a2net"),
-                       ("## A1 contemporaneous, fixed broadband subscriptions per 100", "Fixed broadband and growth, same period (A1). Not interpreted: extrapolation from few observations.", "tab:a1bb")]:
-    rows = section_table(os.path.join(A, "results.md"), head)
-    if rows:
-        L.append(tab(rows, cap, lab))
-rows = section_table(os.path.join(A, "results_end2023.md"), "## A1 contemporaneous, mobile subscriptions per 100")
-L.append(tab(rows, "Sensitivity: mobile adoption and growth, same period (A1), sample extended to 2023 (last period 2015--23).", "tab:a1m23"))
-rows = section_table(os.path.join(A, "results_end2023.md"), "## A2 predetermined (previous-period change), mobile subscriptions per 100")
-L.append(tab(rows, "Sensitivity: previous-period specification (A2), sample extended to 2023.", "tab:a2m23"))
 rows = section_table(os.path.join(A, "results.md"), "## A3 dose-response by baseline mobile level (per 100 people at start of period)")
 L.append(tab(rows, "Dose-response (A3): change in annual growth (pp) per +10 mobile subscriptions per 100, by baseline adoption level.", "tab:a3"))
 rows = section_table(os.path.join(A, "results.md"), "## A6 differences inside low and lower-middle income economies (mobile)")
 L.append(tab(rows, "Differences inside low and lower-middle income economies (A6).", "tab:a6"))
 
-for head, cap, lab in [("## Takeoff at 25 mobile subscriptions per 100", "Event study with takeoff at 25 mobile subscriptions per 100 (log GDP per capita $\\times100$; 400 bootstrap draws).", "tab:es25"),
-                       ("## Takeoff at 50 mobile subscriptions per 100", "Event study with takeoff at 50 mobile subscriptions per 100. Samples that fail the pre-trend rule are not interpreted.", "tab:es50"),
-                       ("## Secondary outcomes (takeoff at 10 per 100; only samples that pass the pre-trend rule)", "Event study, secondary outcomes (takeoff at 10 per 100): effects at five and ten years. Rows marked fails do not pass the pre-trend rule and are not interpreted.", "tab:essec")]:
+for head, cap, lab in [("## Secondary outcomes (takeoff at 10 per 100; only samples that pass the pre-trend rule)", "Event study, secondary outcomes (takeoff at 10 per 100): effects at five and ten years. Rows marked fails do not pass the pre-trend rule and are not interpreted.", "tab:essec")]:
     rows = section_table(os.path.join(A, "results_event.md"), head)
     if rows:
         L.append(tab(rows, cap, lab))
