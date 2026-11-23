@@ -37,3 +37,8 @@ Headline rule (one per study): output and productivity family first, otherwise t
 When the group with more than two categories is reported (high, upper-middle, lower-middle, low), record the headline as richest vs poorest and also add the other adjacent pairs as non-headline contrasts.
 
 Output: a JSON list written to the file named in the task. Then a short report: number of studies, contrasts, headline contrasts with both t (or SE) and N available, studies needing the full text.
+
+## New records (full text only)
+
+For records found by the supplementary searches there is no extraction record. First decide full-text eligibility using the criteria in `agent_instructions/screen_chase.md` (include, or exclude with code E1 to E5). For included records also record: stream ("H" or "AI"), technology, outcome families, n_economies, years, estimator, and overall risk of bias (low, moderate, serious, critical) using: low = credible design for the claim; moderate = standard panel design with reasonable controls but exogeneity not established; serious = causal language with no strategy for reverse causation, or a mismatched exposure index; critical = severe problems (implausible magnitudes, very few observations, no controls). Then code the contrasts as above, using the OpenAlex id as idx.
+Output per record: {"idx", "title", "eligibility": "include|exclude", "code", "stream", "technology", "families", "n_economies", "years", "estimator", "risk_of_bias", "contrasts": [ ... objects as above ... ]}.
