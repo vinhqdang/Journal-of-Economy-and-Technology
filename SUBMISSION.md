@@ -58,3 +58,5 @@ Direction agreed with the author: reframe the paper as a **pilot evidence map**,
 6. Single reviewer, no registration: stated in Methods and Limitations; screening decisions verified by the author. Acknowledged.
 7(v). Complete rewrite: done (new title, framing and structure).
 - Files for submission: `manuscript/Anonymous_Manuscript_v2026-11-23-final.pdf`, `manuscript/Title_Page_v2026-11-23-final.pdf` (37 pages).
+- Response letter to the associate editor: `manuscript/Response_to_Editor_v2026-11-23.pdf` (source `manuscript/response_letter.tex`). Submit as a revision of JETECH-D-26-00130 with the anonymous manuscript and the title page.
+

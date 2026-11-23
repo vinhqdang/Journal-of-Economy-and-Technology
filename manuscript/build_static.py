@@ -86,18 +86,18 @@ C = [r"\subsection*{Eligibility}", r"\begin{table}[H]\centering\small\begin{tabu
 open(os.path.join(HERE, "app_criteria.tex"), "w").write("\n".join(C) + "\n")
 
 # ---------------- PRISMA checklist ----------------
-items = [("1", "Title", "Identifies the report type", "Partly", "Title (evidence map)"),
- ("2", "Abstract", "Structured abstract", "Partly", "Abstract"),
- ("3--4", "Rationale, objectives", "Context and explicit questions", "Yes", "Introduction; Section 2"),
- ("5", "Eligibility criteria", "Inclusion and exclusion", "Yes", "Section 3.2; Appendix C"),
- ("6--7", "Sources, search strategy", "Databases, dates, full strategy", "Partly", "Section 3.3; Appendix B; partial"),
+items = [("1", "Title", "Identifies the report type", "Yes", "Title"),
+ ("2", "Abstract", "Structured abstract", "Yes", "Abstract"),
+ ("3--4", "Rationale, objectives", "Context and explicit question", "Yes", "Sections 1--2"),
+ ("5", "Eligibility criteria", "Inclusion and exclusion", "Yes", "Section 3.2; Appendix D"),
+ ("6--7", "Sources, search strategy", "Databases, dates, full strategy", "Partly", "Section 3.3; Appendix C"),
  ("8", "Selection process", "Screening method, reviewers", "Partly", "Section 3.4; one reviewer"),
- ("9--10", "Data collection, items", "Extraction method and items", "Partly", "Section 3.5; Appendix C"),
- ("11, 18", "Risk of bias", "Tool, reviewers, results", "Partly", "Sections 3.6, 4.3; Appendix A"),
- ("12--14", "Effect measures, synthesis", "Measures and methods", "Partly", "Section 3.7; Appendices D, E"),
+ ("9--10", "Data collection, items", "Coding method and items", "Yes", "Section 3.5; Appendix D"),
+ ("11, 18", "Risk of bias", "Tool, reviewers, results", "Partly", "Sections 3.7, 4.3; Appendix A"),
+ ("12--14", "Effect measures, synthesis", "Measures and methods", "Yes", "Section 3.6; Appendices E, F"),
  ("15, 22", "Certainty of evidence", "GRADE or similar", "No", "Not done; see Limitations"),
- ("16--21", "Results", "Flow, studies, bias, synthesis", "Yes", "Section 4; Appendices A, D, E, F"),
- ("23--27", "Discussion, declarations", "Limits, protocol, funding, data", "Partly", "Sections 6--7; Declarations")]
+ ("16--21", "Results", "Flow, studies, bias, synthesis", "Yes", "Section 4; Appendices A, B"),
+ ("23--27", "Discussion, declarations", "Limits, protocol, funding, data", "Partly", "Sections 5--6; Declarations")]
 P = [r"{\scriptsize\begin{longtable}{@{}l p{3.6cm} p{4.2cm} l p{4.6cm}@{}}", r"\caption{PRISMA 2020 checklist: where each item is reported. Section numbers refer to this paper.}\label{tab:prismacheck}\\",
      r"\toprule Item & Topic & Requirement & Reported & Where \\ \midrule \endfirsthead", r"\toprule Item & Topic & Requirement & Reported & Where \\ \midrule \endhead", r"\bottomrule \endfoot"]
 for it in items:

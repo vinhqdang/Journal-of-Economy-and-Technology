@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}\usepackage{enumitem,parskip}
+\usepackage[hidelinks]{hyperref}
+\newenvironment{comment}{\par\medskip\noindent\begin{minipage}{\textwidth}\itshape}{\end{minipage}\par\smallskip}
+\begin{document}
+
+\noindent\textbf{Journal of Economy and Technology}\\
+Manuscript JETECH-D-26-00130 (revision)\\
+Response to the Associate Editor
+
+\medskip
+\noindent\textbf{Title of the revised manuscript:} Do richer economies gain more from digital technology? A meta-analysis of within-study income comparisons
+
+\medskip
+Dear Associate Editor,
+
+Thank you for the careful assessment of our manuscript and for the clear list of what a resubmission would need. We agree with the main points. The previous version tried to answer whether richer or poorer economies gain more from digital technologies by comparing estimates across studies, on an incomplete search and with an unstable meta-regression. We have rebuilt the paper around a different and, we believe, better-identified question: when primary studies compare richer and poorer economies \emph{within the same design}, which group shows the larger association? We expanded the search towards studies that make such comparisons, coded 363 richer-versus-poorer contrasts from 82 studies, and verified every effect size used in the meta-analysis by hand. The moderator analysis and the macro-panel analysis no longer carry the argument.
+
+The main changes are:
+\begin{itemize}[leftmargin=1.4em,itemsep=2pt]
+\item a new research question, title and structure; the earlier evidence map of 97 studies is kept as context (Section 4.4);
+\item supplementary searches aimed at income comparisons (backward and forward citation searching and a targeted OpenAlex query), which added 67 eligible studies, for 164 in total;
+\item a meta-analysis of within-study contrasts (difference in partial correlations, richer minus poorer, one headline contrast per study, random effects with Hartung--Knapp--Sidik--Jonkman intervals), with a sign test and a set of sensitivity analyses (Section 4.2, Tables 1--2, Figure 2, Appendix B);
+\item author verification of all 44 headline contrasts used in the meta-analysis and of the 22 estimates behind the average association, with no corrections;
+\item a complete rewrite with author--year citations and no internal identifiers.
+\end{itemize}
+
+Our point-by-point responses follow. Section, table and appendix numbers refer to the revised anonymous manuscript.
+
+\section*{1. Completeness of the search}
+\begin{comment}
+The search is critically incomplete (no Scopus, Web of Science or EconLit; most first-page Google Scholar results were missing from the main search), so pooled and moderator estimates are conditional on what was found. Either complete the search or downgrade the quantitative synthesis.
+\end{comment}
+We agree that the original search missed relevant studies. We did not have access to Scopus, Web of Science or EconLit, so we did two things. First, we expanded the search where it matters for the new question. Backward and forward citation searching in OpenAlex from the 32 studies that compare income groups and from the meta-analysis of Stanley et al.\ (2018) yielded 3,595 new records, and an OpenAlex query without a field restriction that combines technology, outcome and income-group terms yielded 2,280 more. After screening, 181 records reporting an income comparison were sought at full text, 82 were read and 67 were eligible (Section 3.3, Section 4.1, Figure 1). Citation searching is well suited to a narrow question of this kind, and it reaches studies that keyword searches miss. Second, the quantitative synthesis no longer rests on the average effect across all studies, which depends on the sample of studies found. The new estimand is a difference \emph{within} each study, which does not require the set of studies to be complete in the same way, although it can still be affected by selective publication. The remaining limits, including the 99 records with an income comparison whose full text we could not obtain, are stated in Section 6.
+
+\section*{2. The meta-regression}
+\begin{comment}
+The meta-regression is unstable (moderator signs flip as studies are added, only 22 headline papers, optimistic clustered standard errors), and the identification-strategy restriction contradicts a hypothesis. The moderator analysis should not occupy a central place.
+\end{comment}
+We agree, and we have removed it from the argument. The hypotheses have been dropped. The pooled average association (a partial correlation of 0.16 from 22 studies) is reported in one paragraph as context for the size of the income differences (Section 4.4). Its sensitivity analyses and the moderator regressions are in Appendix F, where we state that the moderators changed sign as studies were added and are not interpreted. The question of who gains more is now answered with within-study contrasts (Section 4.2), not with moderators across studies.
+
+\section*{3. The macro-panel analysis}
+\begin{comment}
+The four macro-panel designs give contradictory results with no principled preference, and implausible ten-year event-study estimates are still discussed.
+\end{comment}
+We agree. The macro-panel analysis is reduced to one short subsection with one table (Section 4.5). It is used only to illustrate that a single specification cannot settle the question, which is the reason for the within-study approach. The ten-year event-study estimates are no longer reported in the manuscript, and the full results are in the project repository.
+
+\section*{4. Verification of extracted data}
+\begin{comment}
+Extraction relies on AI output that has not been fully verified by a person, and the hand check was not logged, so it cannot be assessed.
+\end{comment}
+We agree that every number used in a pooled estimate must be checked by a person. The author verified against the source tables (a) all 44 headline contrasts used in the meta-analysis (coefficients with their signs, standard errors or $t$ statistics and observations for each group, the comparability of the groups and the direction of the difference) and (b) the 22 estimates behind the average association. No value needed correction. The checks are logged in verification sheets with the table, page and quotation for each value, available in the project repository. Eight contrasts whose source tables are internally inconsistent (for example, $t$ values above 40 without significance stars) are flagged, and the main estimate is reported with and without them (Table 2). We describe the role of language models in screening and coding, and the remaining limits, in Sections 3.4, 3.5 and 6: contrasts that do not enter the meta-analysis were coded once, and no contrast was coded independently by a second person.
+
+\section*{5. Presentation}
+\begin{comment}
+The manuscript is not publication-ready: studies are cited by internal identifiers instead of author and year, and the text contains process-log language.
+\end{comment}
+The manuscript has been rewritten from the beginning for readers. All studies are cited by author and year, internal identifiers have been removed from the text, tables and appendices, and the description of the process is limited to what a reader needs to assess the methods. The included studies are listed with full references in Appendix A (Tables 7 and 8), and all headline contrasts in Appendix B (Table 9).
+
+\section*{6. Single reviewer, registration and model-based adjudication}
+\begin{comment}
+Single reviewer, no registration and model-based adjudication are noted as design choices and flagged under PRISMA 2020.
+\end{comment}
+We report these choices openly. Screening was done with language-model assistance and every screening decision was verified by the author; a blind re-screening of a random sample of 340 records by a separate model run is reported as a check (Section 3.4). The protocol was not registered, and all changes, including the refocusing on within-study contrasts, are listed in Appendix G. Section 6 lists the single reviewer and the lack of registration as limitations, and the PRISMA 2020 checklist (Appendix H) marks the affected items as partly met. We use PRISMA 2020 as a reporting guide and do not claim full compliance.
+
+\section*{7. Expectations for resubmission}
+\begin{comment}
+(i) A substantially expanded search or a reframing; (ii) removal or major rework of the moderator analysis; (iii) a clearer contribution from the panel section or its reduction; (iv) full human verification of all extracted effect sizes; (v) a complete rewrite without internal identifiers or process-log language.
+\end{comment}
+\begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt]
+\item The search was expanded with citation searching and a targeted query (Response 1), and the paper has been reframed around within-study comparisons, which are less sensitive to the completeness of the search than an average across studies.
+\item The moderator analysis was removed from the argument (Response 2).
+\item The panel section was reduced to a short illustration (Response 3).
+\item All effect sizes used in pooled estimates were verified by the author (Response 4).
+\item The manuscript was rewritten (Response 5).
+\end{enumerate}
+
+\medskip
+We believe the revised paper gives a clearer answer to the question in its title: studies that compare richer and poorer economies within the same design do not show that richer economies gain more from digital technologies, and any difference is small relative to the average association. We are grateful for comments that led to this change, and we would be glad to address any further points.
+
+\medskip
+Yours sincerely,\\
+The author
+
+\end{document}
