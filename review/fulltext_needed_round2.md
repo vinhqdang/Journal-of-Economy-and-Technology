@@ -45,16 +45,16 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 15. [include] Digitalization and Tax Equity in the Global Economy: Evidence from a Panel VAR Analysis (2026). Journal of Tax Reform. https://doi.org/10.15826/jtr.2026.12.2.256
 16. [include] Digitization and inclusive growth: Comparative evidence from Africa, Asia, and Europe (2026). Social Sciences & Humanities Open. https://doi.org/10.1016/j.ssaho.2026.103262
 17. [include] The asymmetric effects of medical tourism and information technology on economic growth: evidence from panel quantile regression (2025). The Journal of Economic Asymmetries. https://doi.org/10.1016/j.jeca.2025.e00433
-18. [include] How does digital economy achieve inclusive economic growth with efficiency, equity and green? International evidence (2025). Management of Environmental Quality An International Journal. https://doi.org/10.1108/meq-07-2024-0284
+18. [include] How does digital economy achieve inclusive economic growth with efficiency, equity and green? International evidence (2025). Management of Environmental Quality An International Journal. https://doi.org/10.1108/meq-07-2024-0284  **(received 23 Nov)**
 19. [include] Impact of Digitalization on Sustainable Development: A Comparative Analysis of Developed and Developing Economies (2025). Journal of risk and financial management. https://doi.org/10.3390/jrfm18070359
 20. [include] Bridging the digital–environmental nexus: An empirical panel analysis of ICT, CO2 emissions, and growth in developing nations (2025). Journal of Digital Economy. https://doi.org/10.1016/j.jdec.2025.06.004
 21. [include] Digital Economy and Environmental Sustainability: Analysis of Cross-Country Coordination (2025). Sustainability. https://doi.org/10.3390/su17051840
 22. [include] COMPARATIVE MODELING OF THE RATE OF DIGITALIZATION OF THE ECONOMIES OF DEVELOPED AND DEVELOPING COUNTRIES (2025). EKONOMIKA I UPRAVLENIE PROBLEMY RESHENIYA. https://doi.org/10.36871/ek.up.p.r.2025.11.14.012
 23. [include] Digital Technology's Impact on Service Sector Productivity and Modernization (2025). REGIONOLOGY. https://doi.org/10.15507/10.15507/2413-1407.129.033.202503.386-405
-24. [include] Two digital divides and income inequality: a global perspective (2025). Journal of Applied Economics. https://doi.org/10.1080/15140326.2025.2568247
+24. [include] Two digital divides and income inequality: a global perspective (2025). Journal of Applied Economics. https://doi.org/10.1080/15140326.2025.2568247  **(received 23 Nov)**
 25. [include] E-participation as a driver of economic growth: a cross-country study (2025). Applied Economics. https://doi.org/10.1080/00036846.2025.2464821
 26. [include] Impacts of Digital Infrastructure and Renewable Energy on CO2 Emission Intensity: Evidence from 217 Countries (2025). International Journal of Energy Economics and Policy. https://doi.org/10.32479/ijeep.19562
-27. [include] Robots and firm reshoring (2025). Industry and Innovation. https://doi.org/10.1080/13662716.2025.2495758
+27. [include] Robots and firm reshoring (2025). Industry and Innovation. https://doi.org/10.1080/13662716.2025.2495758  **(received 23 Nov)**
 28. [include] The role of Fintech and financial inclusion in the economic development of countries: A comparative analysis (2025). Banks and Bank Systems. https://doi.org/10.21511/bbs.20(1).2025.20
 29. [include] The Impact of Mobile Broadband and Internet Bandwidth on Human Development—A Comparative Analysis of Developing and Developed Countries (2024). Journal of the Knowledge Economy. https://doi.org/10.1007/s13132-023-01711-0  **(received 23 Nov)**
 30. [include] Strengthening economic resilience through ICT during the COVID-19 pandemic: evidence from 100 countries (2024). Discover Sustainability. https://doi.org/10.1007/s43621-024-00729-x  **(received 23 Nov)**
@@ -74,7 +74,7 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 44. [include] Impact of ICT diffusion on the interaction of growth and its volatility: Evidence from cross-country analysis (2022). Cogent Business & Management. https://doi.org/10.1080/23311975.2022.2054530
 45. [include] The impact of the digital economy on economic growth: The case of OECD countries (2022). RAM. Revista de Administração Mackenzie. https://doi.org/10.1590/1678-6971/eramd220029.en
 46. [include] A Multi-Country Empirical Study of ICT-Induced Productivity Variances by Economic Magnitude and Industry (2022). Information Resources Management Journal. https://doi.org/10.4018/irmj.298976
-47. [include] The Influence of Internet Penetration on Poverty and Income Inequality (2022). SAGE Open. https://doi.org/10.1177/21582440221116104
+47. [include] The Influence of Internet Penetration on Poverty and Income Inequality (2022). SAGE Open. https://doi.org/10.1177/21582440221116104  **(received 23 Nov)**
 48. [include] ICT and Economic Resilience during COVID-19: Cross-Country Analysis (2022). Sustainability. https://doi.org/10.3390/su142215109
 49. [include] GMM Analyses of the Effects of Digital Services Trade on Economic Growth of Low, Middle and High Income Countries (2022). Asian Journal of Economics Business and Accounting. https://doi.org/10.9734/ajeba/2022/v22i1830643
 50. [include] The Role of Information and Communication Technology in Human Development: A Global Longitudinal Study (2022). International Journal of Mobile Communications. https://doi.org/10.1504/ijmc.2024.138780
@@ -120,7 +120,7 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 90. [include] An Effect of FDI and ICT on Economic Growth in Developed and Developing Countries (2007). 무역학회지. https://openalex.org/W2102361072
 91. [maybe] Digital Technology and Economic Growth in Middle-Income Countries: NRI Panel Analysis with Egypt Policy Applications (2026). المجلة العلمية للدراسات والبحوث المالية والتجارية. https://doi.org/10.21608/cfdj.2026.474043.2495
 92. [maybe] Assessing the Impact of Internet Usage on Economic Growth: A Panel Data Analysis of Developed and Developing Countries (2001-2024) (2026). SSRN Electronic Journal. https://doi.org/10.2139/ssrn.6152328
-93. [maybe] Artificial intelligence, technological innovation, and regulatory quality for low-carbon energy transition: comparative evidence across income groups (2026). Carbon Balance and Management. https://doi.org/10.1186/s13021-026-00497-3
+93. [maybe] Artificial intelligence, technological innovation, and regulatory quality for low-carbon energy transition: comparative evidence across income groups (2026). Carbon Balance and Management. https://doi.org/10.1186/s13021-026-00497-3  **(received 23 Nov)**
 94. [maybe] Structural drivers of greenhouse gas emissions and decarbonisation pathways across income groups in Asia (2026). Sustainable Chemistry for Climate Action. https://doi.org/10.1016/j.scca.2026.100249
 95. [maybe] Institutional Quality, Digitalization, And Environmental Pressure: Evidence On Greenhouse Gas Emissions From Developing Economies (2026). DOAJ (DOAJ: Directory of Open Access Journals). https://openalex.org/W7214508417
 96. [maybe] Does digital financial inclusion promote female employment? – Evidence from countries along the Belt and Road (2026). Journal of the Asia Pacific Economy. https://doi.org/10.1080/13547860.2026.2757662
@@ -129,7 +129,7 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 99. [maybe] Do Remittances, FDI, and Digitalization Drive Household Welfare in Asian Developing Countries? The Moderating Role of Regulatory Quality (2025). International Journal of Business and Technology Management. https://doi.org/10.55057/ijbtm.2025.7.11.23
 100. [maybe] Can Fintech Development Contribute to Mitigating the Greenhouse Effect? A Global Perspective (2025). IEEE Transactions on Engineering Management. https://doi.org/10.1109/tem.2025.3564950
 101. [maybe] Unlocking the power of solar photovoltaics and ICT trade on income inequality across developed and developing economic spectrum (2024). Solar Energy. https://doi.org/10.1016/j.solener.2024.112558
-102. [maybe] Does Digitalization Moderate the Link Between Innovation and Economic Growth? A Two-Step Difference GMM Analysis of Developed and Developing Countries (2024). Journal of the Knowledge Economy. https://doi.org/10.1007/s13132-024-01963-4
+102. [maybe] Does Digitalization Moderate the Link Between Innovation and Economic Growth? A Two-Step Difference GMM Analysis of Developed and Developing Countries (2024). Journal of the Knowledge Economy. https://doi.org/10.1007/s13132-024-01963-4  **(received 23 Nov)**
 103. [maybe] Digital Finance and Carbon Emission with Mediating Role of Consumption Structure: A Comparative Study Between Developed and Developing Countries (2024). Foundation University Journal of Business & Economics. https://doi.org/10.33897/fujbe.v9i2.947
 104. [maybe] Exploring the nexus of decent work, financial inclusion, and economic growth: A study aligned with SDG 8 (2024). Sustainable Futures. https://doi.org/10.1016/j.sftr.2024.100213
 105. [maybe] Information technology and outbound tourism: A cross‐country analysis (2024). International Social Science Journal. https://doi.org/10.1111/issj.12534
