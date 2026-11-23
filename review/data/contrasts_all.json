@@ -3086,7 +3086,9 @@
   "evidence": "Table 8 (growth), ICT index: high col 4 (0.094, SE 0.032), low col 12 (0.158, SE 0.028); Observations 628 / 224",
   "needs_fulltext": false,
   "notes": "Headline: composite ICT index, GDP per capita growth, high vs low income (richest vs poorest). Robust SE. No formal difference test. Middle-income pools upper and lower middle. 45 HIC, 58 MIC, 20 LIC, 2002-2017.",
-  "source": "included (main search)"
+  "source": "included (main search)",
+  "verify_status": "confirmed",
+  "plausibility_flag": false
  },
  {
   "idx": "9105",
@@ -3974,7 +3976,9 @@
   "evidence": "Table 7 (advanced, n=791) col 2: \u0394ln kIT 0.064** (SE 0.024); Table 6 (EDE, n=1583) col 2: 0.019* (SE 0.011)",
   "needs_fulltext": false,
   "notes": "Only the advanced-sample range is in the record, so point values are null. Direction from the text (\"slightly higher in advanced\"). Conference Board grouping, not World Bank. Full text not available. Headline column 2 (vulnerable employment share); other columns coded as non-headline contrasts. Sample 1997-2017 per text.",
-  "source": "included (main search)"
+  "source": "included (main search)",
+  "verify_status": "confirmed",
+  "plausibility_flag": false
  },
  {
   "idx": "268",
@@ -9821,7 +9825,9 @@
   "needs_fulltext": false,
   "notes": "Headline: DI, richest vs poorest income group, the study's main digital measure. No formal difference test. AR(2) and Hansen tests reported. Outcome combines output and distribution/employment components, coded families 1 and 4.",
   "source": "new (citation or income-group search)",
-  "risk_of_bias": "moderate"
+  "risk_of_bias": "moderate",
+  "verify_status": "confirmed",
+  "plausibility_flag": false
  },
  {
   "idx": "W3037677780",
@@ -9935,7 +9941,9 @@
   "needs_fulltext": false,
   "notes": "Headline: mobile broadband, the paper's main contrast (the mobile broadband result for developing countries is the abstract's headline). Baseline dynamic GMM; no formal difference test; developed effect not significant, developing effect significant. Opposite signs. Tables 6-7 (HDI dimensions) and Table 4-5 robustness not coded.",
   "source": "new (citation or income-group search)",
-  "risk_of_bias": "moderate"
+  "risk_of_bias": "moderate",
+  "verify_status": "confirmed",
+  "plausibility_flag": false
  },
  {
   "idx": "W4391261834",
@@ -10239,7 +10247,9 @@
   "needs_fulltext": false,
   "notes": "Headline: GDI, high vs low income by the authors' GDP per capita threshold. Point estimates are almost equal (the groups differ mainly in significance); no interaction or difference test. Regressions include GDP per capita, economic freedom and population density (not coded). Cross-sectional data, so 'n_obs' equals the number of countries. Environmental SDG goals are part of the outcome.",
   "source": "new (citation or income-group search)",
-  "risk_of_bias": "serious"
+  "risk_of_bias": "serious",
+  "verify_status": "confirmed",
+  "plausibility_flag": false
  },
  {
   "idx": "W7220417523",
