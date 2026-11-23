@@ -1,0 +1,101 @@
+[
+ {
+  "idx": "9305",
+  "study": "Dedrick et al. 2013",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "developed-developing",
+  "richer": "developed (26 economies, IMF)",
+  "poorer": "developing (19 economies)",
+  "d": -0.0531,
+  "se": 0.0826
+ },
+ {
+  "idx": "29",
+  "study": "Edquist et al. 2021",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "OECD-nonOECD",
+  "richer": "OECD",
+  "poorer": "non-OECD",
+  "d": 0.0008,
+  "se": 0.0847
+ },
+ {
+  "idx": "1580",
+  "study": "Gonzales 2023",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "advanced (>USD 10,000) vs less advanced",
+  "richer": "advanced economies",
+  "poorer": "less advanced economies",
+  "d": 0.0694,
+  "se": 0.082
+ },
+ {
+  "idx": "9203",
+  "study": "Kumari and Singh 2024",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high income (58 countries)",
+  "poorer": "low income (27 countries)",
+  "d": -0.0181,
+  "se": 0.0524
+ },
+ {
+  "idx": "9106",
+  "study": "Mensah 2023",
+  "family": 1,
+  "design": "interaction",
+  "comparison": "developed-developing (interaction)",
+  "richer": "developed (HIC + UMIC)",
+  "poorer": "developing (LIC + LMIC)",
+  "d": -0.0053,
+  "se": 0.0012
+ },
+ {
+  "idx": "9102",
+  "study": "Samariya et al. 2026",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high income",
+  "poorer": "lower-middle income",
+  "d": -0.1741,
+  "se": 0.1185
+ },
+ {
+  "idx": "341",
+  "study": "Sultanova and Naser 2026",
+  "family": 2,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high + upper-middle income",
+  "poorer": "low + lower-middle income",
+  "d": -0.0013,
+  "se": 0.0572
+ },
+ {
+  "idx": "276",
+  "study": "Tian and Zhang 2025",
+  "family": 5,
+  "design": "split-sample",
+  "comparison": "developed-developing",
+  "richer": "developed",
+  "poorer": "developing",
+  "d": 0.1586,
+  "se": 0.0592
+ },
+ {
+  "idx": "245",
+  "study": "Wang and Ren 2023",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high income (239 obs)",
+  "poorer": "low income (16 obs)",
+  "d": 0.2789,
+  "se": 0.2863
+ }
+]
