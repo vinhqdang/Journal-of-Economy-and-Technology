@@ -60,3 +60,10 @@ Direction agreed with the author: reframe the paper as a **pilot evidence map**,
 - Files for submission: `manuscript/Anonymous_Manuscript_v2026-11-23-final.pdf`, `manuscript/Title_Page_v2026-11-23-final.pdf` (37 pages).
 - Response letter to the associate editor: `manuscript/Response_to_Editor_v2026-11-23.pdf` (source `manuscript/response_letter.tex`). Submit as a revision of JETECH-D-26-00130 with the anonymous manuscript and the title page.
 
+## Revision submitted (23 Nov 2026, author-confirmed)
+- Submitted as a revision of JETECH-D-26-00130.
+- Files: `manuscript/submission_revision/Manuscript_LaTeX_v2026-11-23.zip` (single `manuscript.tex` and four PNG figures), `manuscript/submission_revision/Manuscript_changes_marked_v2026-11-23.pdf` (changes against the 20 Oct 2026 submission, commit 255e0ff), `manuscript/submission_revision/Response_to_Editor_v2026-11-23.pdf`, `manuscript/submission_revision/Title_Page_v2026-11-23-final.pdf`.
+- Title: Do richer economies gain more from digital technology? A meta-analysis of within-study income comparisons. Keywords: digital technology; artificial intelligence; income level; meta-analysis; productivity.
+- Rebuild the package with `manuscript/build_revision_package.sh` after `manuscript/build_submission.py`.
+- Next step: wait for the editor's decision or reviewer comments and record them here. Open points reviewers may raise: no Scopus, Web of Science or EconLit; single reviewer with model-assisted screening and coding; no independent second coder of the contrasts.
+
