@@ -1,15 +1,15 @@
-source contrasts_all.json; studies with a contrast 71; contrasts 216; headline 71; df = N - 10
-headline directions: {'no clear difference': 3, 'opposite signs': 10, 'poorer larger': 24, 'richer larger': 29, 'unclear': 5}
-sign test richer vs poorer larger: 29 vs 24, two-sided p = 0.58
-All headline contrasts: k=33 mean diff PCC +0.018 [-0.116, +0.152] p=0.78 I2=99%
-Output and productivity (family 1): k=20 mean diff PCC -0.040 [-0.072, -0.007] p=0.02 I2=45%
-Split-sample only: k=31 mean diff PCC +0.020 [-0.197, +0.238] p=0.85 I2=99%
-World Bank income groups only: k=18 mean diff PCC -0.008 [-0.078, +0.063] p=0.82 I2=71%
+source contrasts_all.json; studies with a contrast 75; contrasts 262; headline 75; df = N - 10
+headline directions: {'no clear difference': 3, 'opposite signs': 10, 'poorer larger': 26, 'richer larger': 31, 'unclear': 5}
+sign test richer vs poorer larger: 31 vs 26, two-sided p = 0.60
+All headline contrasts: k=39 mean diff PCC +0.005 [-0.112, +0.122] p=0.94 I2=99%
+Output and productivity (family 1): k=23 mean diff PCC -0.039 [-0.076, -0.002] p=0.04 I2=55%
+Split-sample only: k=37 mean diff PCC +0.005 [-0.181, +0.192] p=0.95 I2=99%
+World Bank income groups only: k=21 mean diff PCC -0.024 [-0.093, +0.045] p=0.48 I2=74%
 Difference formally tested: k=5 mean diff PCC -0.007 [-0.080, +0.065] p=0.80 I2=62%
-Excluding contrasts flagged as implausible or unverifiable: k=25 mean diff PCC -0.007 [-0.062, +0.048] p=0.79 I2=76%
-Output family, excluding flagged: k=16 mean diff PCC -0.036 [-0.069, -0.003] p=0.04 I2=34%
+Excluding contrasts flagged as implausible or unverifiable: k=30 mean diff PCC -0.016 [-0.066, +0.035] p=0.53 I2=76%
+Output family, excluding flagged: k=19 mean diff PCC -0.038 [-0.080, +0.003] p=0.07 I2=51%
 Verified against the full text and not flagged: k=19 mean diff PCC -0.016 [-0.084, +0.053] p=0.64 I2=80%
-Excluding studies rated critical: k=33 mean diff PCC +0.018 [-0.116, +0.152] p=0.78 I2=99%
-Included studies from the main search: k=9 mean diff PCC +0.010 [-0.047, +0.066] p=0.70 I2=33%
-New studies from the supplementary searches: k=24 mean diff PCC +0.015 [-0.228, +0.259] p=0.90 I2=99%
-Missing N imputed at the median (331): k=49 mean diff PCC +0.004 [-0.094, +0.103] p=0.93 I2=99%
+Excluding studies rated critical: k=39 mean diff PCC +0.005 [-0.112, +0.122] p=0.94 I2=99%
+Included studies from the main search: k=12 mean diff PCC -0.016 [-0.087, +0.055] p=0.63 I2=62%
+New studies from the supplementary searches: k=27 mean diff PCC +0.011 [-0.213, +0.235] p=0.92 I2=99%
+Missing N imputed at the median (331): k=54 mean diff PCC +0.006 [-0.085, +0.096] p=0.90 I2=98%

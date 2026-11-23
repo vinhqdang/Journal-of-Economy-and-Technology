@@ -1012,5 +1012,88 @@
   "estimator": "two-step System GMM with FD x DI interaction",
   "risk_of_bias": "moderate",
   "study": "Gulalai et al. 2026"
+ },
+ {
+  "idx": "W3037677780",
+  "title": "Is it an institution, digital or social inclusion that matters for inclusive growth? A panel data analysis",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "digital inclusion index (internet users, broadband subscriptions, mobile users; min-max composite)",
+  "families": [
+   1,
+   4
+  ],
+  "n_economies": 83,
+  "years": "2010-2017",
+  "estimator": "two-step system GMM (dynamic panel), estimated separately by WB income group",
+  "risk_of_bias": "moderate",
+  "study": "Aslam et al. 2020"
+ },
+ {
+  "idx": "W4391261834",
+  "title": "The Impact of Mobile Broadband and Internet Bandwidth on Human Development\u2014A Comparative Analysis of Developing and Developed Countries",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "mobile broadband, internet bandwidth, mobile basic and fixed broadband basic subscriptions",
+  "families": [
+   5
+  ],
+  "n_economies": 180,
+  "years": "2010-2017",
+  "estimator": "two-step system GMM (dynamic panel, HDI lag), estimated separately for developing (121) and developed (59) countries",
+  "risk_of_bias": "moderate",
+  "study": "Bala 2024"
+ },
+ {
+  "idx": "W4405947039",
+  "title": "Strengthening economic resilience through ICT during the COVID-19 pandemic: evidence from 100 countries",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "UNCTAD ICT index (fixed broadband, mobile subscriptions, secure servers), and its interaction with COVID-19 incidence",
+  "families": [
+   1
+  ],
+  "n_economies": 100,
+  "years": "2017-2022",
+  "estimator": "two-step system GMM with IV-GMM robustness; split by ICT intensity (developing 40, developed 60)",
+  "risk_of_bias": "moderate",
+  "study": "Bilal et al. 2024"
+ },
+ {
+  "idx": "W7154603549",
+  "title": "Building a sustainable and innovative world in the digital age: A cross-country study",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "Global Digitalization Index (GDI)",
+  "families": [
+   5,
+   6
+  ],
+  "n_economies": 75,
+  "years": "2024 (cross-section)",
+  "estimator": "cross-sectional OLS linear regression, split by GDP per capita threshold (20,000 USD)",
+  "risk_of_bias": "serious",
+  "study": "P\u00e9rez et al. 2026"
+ },
+ {
+  "idx": "W7220417523",
+  "title": "Impacts of the digital economy on industrial employment and CO2 emissions: a comparison between developed and developing countries",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "ICT goods imports relative to total merchandise imports (log)",
+  "families": [
+   3,
+   6
+  ],
+  "n_economies": 15,
+  "years": "2000-2021",
+  "estimator": "two-step system GMM (SYS-GMM), 3-equation system, estimated separately for 7 developed and 8 developing countries",
+  "risk_of_bias": "serious",
+  "study": "Hcine et al. 2026"
  }
 ]

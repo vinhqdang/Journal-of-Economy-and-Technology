@@ -99,6 +99,39 @@
   "se": 0.2863
  },
  {
+  "idx": "9105",
+  "study": "Appiah-Otoo and Song 2021",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high income",
+  "poorer": "low income",
+  "d": -0.2425,
+  "se": 0.0715
+ },
+ {
+  "idx": "268",
+  "study": "Erumban 2024",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "developed-developing (Conference Board grouping)",
+  "richer": "advanced economies (38)",
+  "poorer": "emerging and developing economies (80)",
+  "d": 0.0515,
+  "se": 0.0435
+ },
+ {
+  "idx": "9501",
+  "study": "Wang and Shen 2024",
+  "family": 4,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high income",
+  "poorer": "lower-middle income (low merged)",
+  "d": -0.1628,
+  "se": 0.0757
+ },
+ {
   "idx": "W1972440450",
   "study": "Farhadi et al. 2012",
   "family": 1,
@@ -361,5 +394,38 @@
   "poorer": "developing economies",
   "d": -0.1225,
   "se": 0.0369
+ },
+ {
+  "idx": "W3037677780",
+  "study": "Aslam et al. 2020",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high-income countries (HYCs)",
+  "poorer": "low-income countries (LYCs)",
+  "d": 0.1347,
+  "se": 0.1103
+ },
+ {
+  "idx": "W4391261834",
+  "study": "Bala 2024",
+  "family": 5,
+  "design": "split-sample",
+  "comparison": "developed-developing",
+  "richer": "developed countries",
+  "poorer": "developing countries",
+  "d": -0.1412,
+  "se": 0.0574
+ },
+ {
+  "idx": "W7154603549",
+  "study": "P\u00e9rez et al. 2026",
+  "family": 5,
+  "design": "split-sample",
+  "comparison": "income level (GDP per capita threshold 20,000 USD)",
+  "richer": "high-income countries (GDP per capita above 20,000 USD)",
+  "poorer": "low-income countries (GDP per capita below 20,000 USD)",
+  "d": -0.0679,
+  "se": 0.2237
  }
 ]
