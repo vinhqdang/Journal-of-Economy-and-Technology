@@ -1095,5 +1095,97 @@
   "estimator": "two-step system GMM (SYS-GMM), 3-equation system, estimated separately for 7 developed and 8 developing countries",
   "risk_of_bias": "serious",
   "study": "Hcine et al. 2026"
+ },
+ {
+  "idx": "W4292097993",
+  "title": "The Influence of Internet Penetration on Poverty and Income Inequality",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "internet users; fixed broadband; mobile subscriptions",
+  "families": [
+   4
+  ],
+  "n_economies": 86,
+  "years": "2005-2020",
+  "estimator": "two-step robust system GMM (Sys-GMM), linear model (Model 1)",
+  "risk_of_bias": "serious",
+  "study": "Afzal et al. 2022"
+ },
+ {
+  "idx": "W4395462470",
+  "title": "Does Digitalization Moderate the Link Between Innovation and Economic Growth? A Two-Step Difference GMM Analysis of Developed and Developing Countries",
+  "eligibility": "exclude",
+  "code": "E2",
+  "stream": null,
+  "technology": null,
+  "families": null,
+  "n_economies": null,
+  "years": null,
+  "estimator": null,
+  "risk_of_bias": null,
+  "study": "Medhioub and Boujelb\u00e8ne 2024"
+ },
+ {
+  "idx": "W4409497942",
+  "title": "How does digital economy achieve inclusive economic growth with efficiency, equity and green? International evidence",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "digital economy index (lndigital)",
+  "families": [
+   1
+  ],
+  "n_economies": 98,
+  "years": "2000-2020",
+  "estimator": "dynamic panel GMM (Table 6 does not label DIF/SYS; system GMM assumed as preferred benchmark)",
+  "risk_of_bias": "serious",
+  "study": "Dong and Xu 2025"
+ },
+ {
+  "idx": "W4414941228",
+  "title": "Two digital divides and income inequality: a global perspective",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "ICT digital divide index (IDI)",
+  "families": [
+   4
+  ],
+  "n_economies": 97,
+  "years": "2008-2016",
+  "estimator": "panel fixed-effects regression with quadratic IDI (country-specific FE and time effects)",
+  "risk_of_bias": "serious",
+  "study": "Zhang et al. 2025"
+ },
+ {
+  "idx": "W4409924645",
+  "title": "Robots and firm reshoring",
+  "eligibility": "exclude",
+  "code": "E1",
+  "stream": null,
+  "technology": null,
+  "families": null,
+  "n_economies": null,
+  "years": null,
+  "estimator": null,
+  "risk_of_bias": null,
+  "study": "Calatayud and Barrachina 2025"
+ },
+ {
+  "idx": "W7203738349",
+  "title": "Artificial intelligence, technological innovation, and regulatory quality for low-carbon energy transition: comparative evidence across income groups",
+  "eligibility": "exclude",
+  "code": "E3",
+  "stream": "AI",
+  "technology": "artificial intelligence (AI)",
+  "families": [
+   6
+  ],
+  "n_economies": 50,
+  "years": "2002-2019",
+  "estimator": "two-way fixed effects (Table 7); 2SLS IV robustness (Table 8) not coded",
+  "risk_of_bias": "moderate",
+  "study": "Pala et al. 2026"
  }
 ]

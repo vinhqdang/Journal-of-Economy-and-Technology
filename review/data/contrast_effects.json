@@ -427,5 +427,38 @@
   "poorer": "low-income countries (GDP per capita below 20,000 USD)",
   "d": -0.0679,
   "se": 0.2237
+ },
+ {
+  "idx": "W4292097993",
+  "study": "Afzal et al. 2022",
+  "family": 4,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high-income countries",
+  "poorer": "lower-middle and low-income countries",
+  "d": 0.022,
+  "se": 0.0677
+ },
+ {
+  "idx": "W4409497942",
+  "study": "Dong and Xu 2025",
+  "family": 1,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high-income level",
+  "poorer": "low-income level",
+  "d": 0.0348,
+  "se": 0.118
+ },
+ {
+  "idx": "W4414941228",
+  "study": "Zhang et al. 2025",
+  "family": 4,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high-income countries",
+  "poorer": "low-income and lower-middle-income countries",
+  "d": 0.2003,
+  "se": 0.0799
  }
 ]

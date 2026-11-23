@@ -271,5 +271,26 @@
   "corrections": {},
   "plausibility_flag": false,
   "comment": "Table 6 model 7 (n=36): GDI 0.219*** (0.080); model 8 (n=36): 0.183** (0.081). Matches. Caveat: 'low-income' is GDPpc<20,000 USD (includes middle income); cross-section, tiny n; groups differ in other coefficients."
+ },
+ {
+  "idx": "W4292097993",
+  "status": "confirmed",
+  "corrections": {},
+  "plausibility_flag": false,
+  "comment": "Text p.9: Model 1 Table 4 Internet users b=-0.0027*** SE 0.0010 (high income); Table 6 b=-0.0419* SE 0.0245 (lower-middle and low). Checked by the lead analyst."
+ },
+ {
+  "idx": "W4409497942",
+  "status": "confirmed",
+  "corrections": {},
+  "plausibility_flag": false,
+  "comment": "Table 6 lndigital 0.052*** (2.643) high, 0.009* (1.677) middle, 0.003 (0.502) low; t in parentheses. Checked by the lead analyst."
+ },
+ {
+  "idx": "W4414941228",
+  "status": "confirmed",
+  "corrections": {},
+  "plausibility_flag": false,
+  "comment": "Table 6 IDI 1.681** (0.825) low and lower-middle, -1.883** (0.909) upper-middle, -1.287 (0.880) high; quadratic term in the model. Checked by the lead analyst."
  }
 ]
