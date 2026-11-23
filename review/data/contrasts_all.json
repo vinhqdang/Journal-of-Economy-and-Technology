@@ -294,7 +294,7 @@
   "needs_fulltext": false,
   "notes": "Difference test (chi2 = 0.34, not significant) is followed for direction. FE values: developed 0.103 (0.027), developing 0.137 (0.032). Developing group is IMF classification and includes lower-middle economies.",
   "source": "included (main search)",
-  "verify_status": "no_fulltext",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -333,7 +333,7 @@
   "needs_fulltext": false,
   "notes": "Headline is the specification with mobile broadband control (text p.269). Point estimates similar; no difference test. Full-sample country counts 36 OECD and 46 non-OECD; subsample counts not reported.",
   "source": "included (main search)",
-  "verify_status": "no_fulltext",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -409,7 +409,7 @@
   "needs_fulltext": false,
   "notes": "Preferred specification not stated in the text extract; system GMM chosen because it is the estimator in the keywords. Threshold is an ad hoc USD 10,000 cut. 1580.txt holds only figures, so full-text tables were not available.",
   "source": "included (main search)",
-  "verify_status": "no_fulltext",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -707,7 +707,7 @@
   "needs_fulltext": false,
   "notes": "Coefficients and SEs as printed (SE in brackets, labelled std dev in the table). n_obs are descriptive-table observation counts (58x20 and 27x20), not regression N. Middle income excluded. No difference test.",
   "source": "included (main search)",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": true
  },
  {
@@ -931,7 +931,7 @@
   "needs_fulltext": false,
   "notes": "Reference (richer) effect is the main term; developing effect = 0.0510 + 0.0395 = 0.0905 (derived, not reported). Developing = LIC+LMIC, developed = HIC+UMIC (the paper's definition).",
   "source": "included (main search)",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -1710,7 +1710,7 @@
   "needs_fulltext": false,
   "notes": "Low-income countries excluded for data gaps. No interaction or difference test. Pooled and RE estimates in Table 3 not coded.",
   "source": "included (main search)",
-  "verify_status": "no_fulltext",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -1860,7 +1860,7 @@
   "needs_fulltext": false,
   "notes": "Concentration is higher-is-worse, so the negative (diversifying) coefficient is a benefit and the sign is reversed in the direction code. Income groups are pooled pairs. No difference test.",
   "source": "included (main search)",
-  "verify_status": "no_fulltext",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -1936,7 +1936,7 @@
   "needs_fulltext": false,
   "notes": "Developed/developing criterion not stated; no formal interaction. Text says developed effect is significant at 10%, table shows **; table coded.",
   "source": "included (main search)",
-  "verify_status": "no_fulltext",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -1975,7 +1975,7 @@
   "needs_fulltext": false,
   "notes": "Table reports t-statistics in parentheses (SE not printed). Low-income group has 16 observations. No formal difference test.",
   "source": "included (main search)",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": true
  },
  {
@@ -3087,7 +3087,7 @@
   "needs_fulltext": false,
   "notes": "Headline: composite ICT index, GDP per capita growth, high vs low income (richest vs poorest). Robust SE. No formal difference test. Middle-income pools upper and lower middle. 45 HIC, 58 MIC, 20 LIC, 2002-2017.",
   "source": "included (main search)",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -3977,7 +3977,7 @@
   "needs_fulltext": false,
   "notes": "Only the advanced-sample range is in the record, so point values are null. Direction from the text (\"slightly higher in advanced\"). Conference Board grouping, not World Bank. Full text not available. Headline column 2 (vulnerable employment share); other columns coded as non-headline contrasts. Sample 1997-2017 per text.",
   "source": "included (main search)",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -4423,8 +4423,8 @@
   "needs_fulltext": false,
   "notes": "Table 6 minus signs are lost in the extracted text (Table 4 also prints 0.011** while the text says DEDI reduces inequality). The negative sign for lower-middle income is taken from the authors' statement that DEDI improves inequality there; signs for high and upper-middle cannot be verified from the text. Gini: lower is better, so direction is coded in benefit terms. No formal difference test. Group N: 451 high, 287 upper-middle, 285 lower-middle (Table 6); the N values in Tables 7-9 are for mechanism tests, not coded. Headline: high vs lower-middle (low merged). Only the lower-middle effect is significant; in benefit terms the poorer group is larger. Previously coded as opposite signs; changed because the high-income sign is not verifiable.",
   "source": "included (main search)",
-  "verify_status": "unverifiable",
-  "plausibility_flag": true
+  "verify_status": "author_confirmed",
+  "plausibility_flag": false
  },
  {
   "idx": "9501",
@@ -4648,7 +4648,7 @@
   "notes": "Separate GMM per income group; stars as printed (legend not in extracted text). Obs and country groups from Table 2. Richer/poorer pair chosen from the four-group table; headline is high vs low.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -5258,7 +5258,7 @@
   "notes": "Developed (Table 9) and developing (Table 10) subsamples; LGDP level regression; stars as printed. Headline = composite ICT PCA index (main ICT measure). Emerging/BRICS and European subsamples are not income-ordered pairs and are not coded. Country counts not extracted.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -5298,7 +5298,7 @@
   "notes": "Baseline FE model 1 in each group. Stars from table notes (*** 1%, ** 5%, * 10%). No formal difference test. Income groups from authors' World Bank classification.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -5414,7 +5414,7 @@
   "notes": "Richer = lower-middle income, poorer = low income (only two groups in the table). Robustness column with inflation: low 0.0110 (0.0178), n=184; lower-middle -0.0187 (0.00737)**, n=296. Country counts not extracted.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -5454,7 +5454,7 @@
   "notes": "Headline = SYS-GMM (column 3) as the dynamic specification addressing endogeneity; judgement call. Developing-country effect is the sum of the two coefficients and is not reported, so left null. Interaction coefficient 0.896 (SE 0.366), p<0.05.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "moderate",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -5570,7 +5570,7 @@
   "notes": "CO2 is lower-is-better: estimates are reported on the emissions scale; direction is coded in benefit terms (richer larger = more negative coefficient for developed than for developing). Headline = composite ICT index. Country counts not extracted.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -5800,7 +5800,7 @@
   "notes": "Coefficients are reported on the emissions scale (lower is better); direction coded in benefit terms (absolute reduction in CO2). t-statistics in parentheses as printed. Headline = mobile, high vs low income. Patents, R&D, TFP and publications are not ICT measures and are not coded.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -6410,7 +6410,7 @@
   "notes": "Gini is lower-is-better: richer larger means digitalization reduces inequality more in advanced economies (benefit coding). Observations and countries from the table footer (540/30; 630/35).",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": true
  },
  {
@@ -6678,8 +6678,8 @@
   "notes": "Minus signs are lost in the extracted table text for some cells, so signs cannot be verified from the extract; the abstract states digitalization reduces inequality in both groups. Values recorded as printed (GOV1 = first governance specification, judgement call). Fixed broadband and FDI x digitalization rows not coded.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "unverifiable",
-  "plausibility_flag": true
+  "verify_status": "author_confirmed",
+  "plausibility_flag": false
  },
  {
   "idx": "W4382619307",
@@ -6718,7 +6718,7 @@
   "notes": "Separate regressions by income group (low-income is the reference in the pooled model). Gig-economy emissions by income (Table 3-4 text) are not coded because stratified coefficients are not cleanly extracted. Country counts not extracted; N shown is observations.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -6872,7 +6872,7 @@
   "notes": "Headline ICT measure chosen as FBS; main ICT measures not ranked by authors. Stars only, no t or p values. LIC text (p.15) reports FBS 0.76 OLS and IUI 0.02 GMM, which differs from table; table values used. Table note assigns * to 1% and ** to 5%. No formal difference test.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": true
  },
  {
@@ -7292,7 +7292,7 @@
   "idx": "W4401400262",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -7408,7 +7408,7 @@
   "idx": "W4402708095",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -7562,7 +7562,7 @@
   "idx": "W4409688222",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -7830,7 +7830,7 @@
   "idx": "W7135239303",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "critical",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": true
  },
  {
@@ -7984,7 +7984,7 @@
   "notes": "Table 4 prints SEs in brackets although the note says parentheses; read as SEs. No interaction or Chow test. Full-sample DFIF = 0.0318**.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -8062,7 +8062,7 @@
   "notes": "Only income-group split in the study; no formal difference test. Significance stars in Table 7 are garbled; levels taken from the text (1%).",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -8140,7 +8140,7 @@
   "notes": "AI coefficient in productivity model. No test of equality reported. Middle-income group coded in non-headline rows.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -8332,7 +8332,7 @@
   "notes": "Advanced/emerging split is the authors' own classification. Authors state no formal interaction test was run.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "moderate",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -8942,7 +8942,7 @@
   "notes": "Gini is lower-is-better: b_rich -0.12 means internet slightly lowers inequality in high-income countries, b_poor +0.16 raises it in low-income countries; direction coded in benefit terms. Groups split at 2019 median GDP per capita ($12,706). Formal test is the interaction in col (3): p = 0.459.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -9248,7 +9248,7 @@
   "notes": "Benefit coding (inequality reduction): ICT index raises Gini in developed countries and lowers it in developing ones, so poorer group has the larger benefit. Developing-country star (*) is inconsistent with its SE (0.0258); read as printed. Observation counts from GMM table (FE table gives 805 / 2116).",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "moderate",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": true
  },
  {
@@ -9326,7 +9326,7 @@
   "notes": "Variables standardised. Text says internet raises GDP in HICs and lowers it in UMCs, but both FE coefficients in the tables are negative; table values used. Country counts per group not stated (900 and 1125 obs over 25 years).",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -9594,7 +9594,7 @@
   "notes": "SEs not reported (t-statistics in parentheses). The 'Chow inspection' row (-1.277*, t -1.71) is a between-group test statistic, not a coefficient difference; the authors report the groups differ significantly. Country counts not stated.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -9786,7 +9786,7 @@
   "notes": "Table 9 is garbled in text extraction; values checked against the rendered page. No test of equality reported; the authors describe the interaction as stronger in developing economies. Hansen p = 0.37 (developing) and 0.403 (high-income); AR(2) 0.25 and 0.503.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": true
  },
  {
@@ -9826,7 +9826,7 @@
   "notes": "Headline: DI, richest vs poorest income group, the study's main digital measure. No formal difference test. AR(2) and Hansen tests reported. Outcome combines output and distribution/employment components, coded families 1 and 4.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -9942,7 +9942,7 @@
   "notes": "Headline: mobile broadband, the paper's main contrast (the mobile broadband result for developing countries is the abstract's headline). Baseline dynamic GMM; no formal difference test; developed effect not significant, developing effect significant. Opposite signs. Tables 6-7 (HDI dimensions) and Table 4-5 robustness not coded.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "moderate",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -10248,7 +10248,7 @@
   "notes": "Headline: GDI, high vs low income by the authors' GDP per capita threshold. Point estimates are almost equal (the groups differ mainly in significance); no interaction or difference test. Regressions include GDP per capita, economic freedom and population density (not coded). Cross-sectional data, so 'n_obs' equals the number of countries. Environmental SDG goals are part of the outcome.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -10364,7 +10364,7 @@
   "notes": "Outcome lower is better; direction on benefit (-b). Only stars and SE reported, no t-statistic. Same specification in all groups. Observations 569/359/357 per the table notes and text. Pair: high-income vs lower-middle/low (richest vs poorest).",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -11392,7 +11392,7 @@
   "notes": "Outcome higher is better (benefit = b). Only t-statistics reported, no SE. Country counts by group not reported (98 countries in full sample). No interaction or difference test reported. Pair: high-income vs low-income (richest vs poorest).",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -11508,7 +11508,7 @@
   "notes": "Outcome Gini: lower is better, benefit = -b. Only SE reported, no t-statistic. Sample sizes from Table 6. Quadratic IDI term (IDIsq) is non-linear and not coded as a separate contrast; its signs also differ across groups (-0.229 low, 0.216 UM, 0.055 high). Pair: high-income vs low/lower-middle (richest vs poorest).",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -12954,7 +12954,7 @@
   "notes": "Dependent variable is the gender gap (male minus female LFPR), so a negative coefficient narrows the gap (benefit); direction coded on benefit = -b. Group N only; group country counts not stated (full sample 19 G20 countries). Minus signs are absent from the txt5 extraction: b is negative only where the text states a negative effect, otherwise null. Headline: fixed broadband is the only indicator significant in the full sample and the paper's stated overall conclusion; high vs lower-middle is richest vs poorest. Signs and values checked against the rendered Table 2 by the lead analyst.",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious",
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "plausibility_flag": false
  },
  {
@@ -13677,7 +13677,7 @@
   "needs_fulltext": false,
   "notes": "Outcome is a growth rate of CO2; lower emissions is the benefit, so sign reversed for benefit coding. The ICT coefficients for the LMI and LI columns are in Table VII, which is not present in the extracted text (blank table body), so all numbers are null. The text gives the ICT effect only for the full sample (insignificant). Its statements on LMI and LI concern institutional quality and GDP, not ICT. Direction unclear. Group sizes not stated. Only pair available (LMI vs LI), so headline. Judgement: outcome family 6 because CO2 is named in the family definition; ICT measure is mobile and internet use, so exposure is eligible. Implausible: coefficients with t above 50 carry no significance stars; the full-sample MCS is -1.328 (0.001) without stars. Flagged. Checked by the lead analyst.",
   "plausibility_flag": true,
-  "verify_status": "confirmed",
+  "verify_status": "author_confirmed",
   "source": "new (citation or income-group search)",
   "risk_of_bias": "serious"
  },

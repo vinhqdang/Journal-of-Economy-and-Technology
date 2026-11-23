@@ -25,7 +25,7 @@ L.append(r"\midrule " + row("AI and automation", [c for c in C if stream(c) == "
 L.append(row(r"\textbf{All}", C))
 L += [r"\bottomrule\end{tabular}\end{table}", ""]
 open(os.path.join(HERE, "tab_cdirs.tex"), "w").write("\n".join(L))
-lab = {"All headline contrasts": "All headline contrasts", "Excluding contrasts flagged as implausible or unverifiable": "Excluding contrasts flagged as implausible or unverifiable",
+lab = {"All headline contrasts": "All headline contrasts", "Excluding contrasts flagged as implausible": "Excluding contrasts flagged as implausible",
        "Verified against the full text and not flagged": "Checked against the full text and not flagged", "Output and productivity (family 1)": "Output and productivity",
        "Output family, excluding flagged": "Output and productivity, excluding flagged", "Split-sample only": "Split-sample designs only",
        "World Bank income groups only": "World Bank income groups only", "Difference formally tested": "Difference formally tested in the study",
@@ -49,7 +49,7 @@ for y, e in enumerate(es):
 ax.set_yticks(range(len(es))); ax.set_yticklabels([short(e["idx"]) + f" [{e['family']}]" for e in es], fontsize=6)
 ax.axvline(0, color="grey", lw=0.6, ls=":")
 rr = {r["label"]: r for r in R["rows"]}
-for j, (k, txt) in enumerate([("Excluding contrasts flagged as implausible or unverifiable", "Pooled, excluding flagged"), ("Output and productivity (family 1)", "Pooled, output family")]):
+for j, (k, txt) in enumerate([("Excluding contrasts flagged as implausible", "Pooled, excluding flagged"), ("Output and productivity (family 1)", "Pooled, output family")]):
     r = rr[k]; y = len(es) + 1 + j
     ax.fill([r["lo"], r["mu"], r["hi"], r["mu"]], [y, y + 0.35, y, y - 0.35], color="#c55a11")
     ax.text(0.98, y, txt, transform=ax.get_yaxis_transform(), ha="right", va="center", fontsize=7)
@@ -58,7 +58,7 @@ ax.set_xlabel("Difference in partial correlation, richer minus poorer (95% CI)",
 plt.tight_layout(); plt.savefig(os.path.join(HERE, "fig_cforest.png"), dpi=200); plt.close()
 # appendix table
 L = [r"{\scriptsize\setlength{\tabcolsep}{3pt}\begin{longtable}{@{}p{3.0cm} p{0.4cm} p{3.3cm} p{3.7cm} p{1.8cm} p{2.9cm}@{}}",
-     r"\caption{Headline within-study income contrasts. Fam.: outcome family (1 output and productivity, 2 structural change, 3 labour market, 4 poverty and distribution, 5 living standards, 6 resource cost). $d$: difference in partial correlations, richer minus poorer, in benefit terms; $\dagger$ flagged as implausible or unverifiable.}\label{tab:capp}\\",
+     r"\caption{Headline within-study income contrasts. Fam.: outcome family (1 output and productivity, 2 structural change, 3 labour market, 4 poverty and distribution, 5 living standards, 6 resource cost). $d$: difference in partial correlations, richer minus poorer, in benefit terms; $\dagger$ flagged as implausible.}\label{tab:capp}\\",
      r"\toprule Study & Fam. & Technology & Groups (richer vs poorer) & Direction & $d$ [95\% CI]\\\midrule\endfirsthead", r"\toprule Study & Fam. & Technology & Groups (richer vs poorer) & Direction & $d$ [95\% CI]\\\midrule\endhead", r"\bottomrule\endfoot"]
 for c in sorted(C, key=lambda c: short(c["idx"]).lower()):
     e = E.get(c["idx"])

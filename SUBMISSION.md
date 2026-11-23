@@ -46,15 +46,15 @@ Direction agreed with the author: reframe the paper as a **pilot evidence map**,
 - Supplementary searches: OpenAlex citation searching from 33 studies and a targeted OpenAlex income-group query (5,875 new records; 1,759 screened; 181 with income comparisons; 82 full texts read; 67 eligible). Full texts supplied by the author are listed in `review/data/fulltext_received.csv`.
 - 82 studies with contrasts (363 contrasts); 44 headline contrasts with effect sizes. Results in `review/contrast_pilot.md` and `review/contrast_pilot_output.txt`.
 - Risk of bias of the 67 added studies re-rated on the original scale (`review/data/rob_new.json`): moderate 6, serious 56, critical 5.
-- PDFs: `manuscript/Anonymous_Manuscript_v2026-11-23-income-contrasts.pdf`, `manuscript/Title_Page_v2026-11-23-income-contrasts.pdf`, `manuscript/Full_Manuscript_v2026-11-23-income-contrasts.pdf` (37 pages).
+- PDFs: `manuscript/Anonymous_Manuscript_v2026-11-23-final.pdf`, `manuscript/Title_Page_v2026-11-23-final.pdf`, `manuscript/Full_Manuscript_v2026-11-23-final.pdf` (37 pages).
 - Still open: an independent human second coder for the analysed contrasts; title and keywords to be changed in the submission system.
 
 ## Status of the associate editor's points (23 Nov 2026)
 1. Search: expanded with citation searching and a targeted OpenAlex query; Scopus, Web of Science and EconLit still not available (stated in Limitations). Partly addressed.
 2. Moderator analysis: removed from the main text; the average association is context only; regressions in the appendix and not interpreted. Addressed.
 3. Macro-panel: reduced to one short subsection and one table; ten-year event-study estimates not discussed. Addressed.
-4. Human verification of effect sizes: the 22 average-association estimates were checked by the author (no corrections). The 44 headline income contrasts were checked by a model run only; sheet for the author: `review/verification/contrast_verification_sheet.pdf` (and `.csv`). Open.
+4. Human verification of effect sizes: the 22 average-association estimates and all 44 headline income contrasts were verified by the author against the source tables (23 Nov 2026), no corrections. Addressed.
 5. Author-year citations, no internal IDs, no process-log language: internal IDs removed from the amendments appendix; text rewritten. Addressed.
 6. Single reviewer, no registration: stated in Methods and Limitations; screening decisions verified by the author. Acknowledged.
 7(v). Complete rewrite: done (new title, framing and structure).
-
+- Files for submission: `manuscript/Anonymous_Manuscript_v2026-11-23-final.pdf`, `manuscript/Title_Page_v2026-11-23-final.pdf` (37 pages).

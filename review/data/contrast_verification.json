@@ -4,307 +4,351 @@
   "status": "no_fulltext",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "No text. Consistent: z-diff of 0.104 vs 0.125 (SEs .025,.030) gives chi2 about 0.3, matching reported 0.34; no clear difference correct."
+  "comment": "No text. Consistent: z-diff of 0.104 vs 0.125 (SEs .025,.030) gives chi2 about 0.3, matching reported 0.34; no clear difference correct.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "29",
   "status": "no_fulltext",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "No text. Internally consistent (t about 1.7 and 1.9, * stars). Difference 0.006 trivial; direction \"poorer larger\" is point estimate only; no test."
+  "comment": "No text. Internally consistent (t about 1.7 and 1.9, * stars). Difference 0.006 trivial; direction \"poorer larger\" is point estimate only; no test.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "1580",
   "status": "no_fulltext",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Text file holds only figures, no tables. Internal check: 0.299/0.121 t=2.5, 0.265/0.208 t=1.3 consistent with ** and none."
+  "comment": "Text file holds only figures, no tables. Internal check: 0.299/0.121 t=2.5, 0.265/0.208 t=1.3 consistent with ** and none.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "9203",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": true,
-  "comment": "Table 7 GMM: LIC internet 0.001 (0.001); HIC 0.006 (0.007); N from descriptive tables (1160, 540). Flag: stars inconsistent with SEs; EG in levels differs 50x across groups, scale comparability doubtful."
+  "comment": "Table 7 GMM: LIC internet 0.001 (0.001); HIC 0.006 (0.007); N from descriptive tables (1160, 540). Flag: stars inconsistent with SEs; EG in levels differs 50x across groups, scale comparability doubtful.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "9106",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 5 col2: \"Mobile Coverage (all) 0.0510*** (0.0083); x 1(Developing) 0.0395*** (0.0091)\"; Observations 669375, 106 countries. Interaction positive so poorer larger."
+  "comment": "Table 5 col2: \"Mobile Coverage (all) 0.0510*** (0.0083); x 1(Developing) 0.0395*** (0.0091)\"; Observations 669375, 106 countries. Interaction positive so poorer larger.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "9102",
   "status": "no_fulltext",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "No text. Internal check: -0.021/0.011 t=-1.9, 0.006/0.009 t=0.7; opposite signs consistent."
+  "comment": "No text. Internal check: -0.021/0.011 t=-1.9, 0.006/0.009 t=0.7; opposite signs consistent.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "341",
   "status": "no_fulltext",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "No text. Internal: t about -2.1 and -2.0 match ** stars; poorer more negative on concentration (lower better) so poorer larger benefit is correct."
+  "comment": "No text. Internal: t about -2.1 and -2.0 match ** stars; poorer more negative on concentration (lower better) so poorer larger benefit is correct.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "276",
   "status": "no_fulltext",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "No text. Internal: 0.058/0.023 t=2.5 matches **; -0.031/0.034 insignificant; richer larger and opposite signs consistent."
+  "comment": "No text. Internal: 0.058/0.023 t=2.5 matches **; -0.031/0.034 insignificant; richer larger and opposite signs consistent.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "245",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": true,
-  "comment": "Table 16: DE low -6.305 (-1.66), high -0.860*** (-4.45); N 16 / 239 (t in parentheses). Richer less negative so richer larger in benefit terms. Flag: low-income N=16 and coefficient -6.3 implausibly large."
+  "comment": "Table 16: DE low -6.305 (-1.66), high -0.860*** (-4.45); N 16 / 239 (t in parentheses). Richer less negative so richer larger in benefit terms. Flag: low-income N=16 and coefficient -6.3 implausibly large.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W1972440450",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 2 ICT: High 0.11 (0.06)*** Obs 245 Groups 49; Low 0.02 (0.01)* Obs 181 Groups 31. SEs in parentheses. Outcome is ln GDP level, not growth."
+  "comment": "Table 2 ICT: High 0.11 (0.06)*** Obs 245 Groups 49; Low 0.02 (0.01)* Obs 181 Groups 31. SEs in parentheses. Outcome is ln GDP level, not growth.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W2941400825",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 9 ICT PCA 0.234*** (0.0340) Obs 274; Table 10 ICT PCA 0.563*** (0.0592) Obs 458. Pooled OLS levels, SE in parentheses."
+  "comment": "Table 9 ICT PCA 0.234*** (0.0340) Obs 274; Table 10 ICT PCA 0.563*** (0.0592) Obs 458. Pooled OLS levels, SE in parentheses.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W3020839523",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 3 col5 E-govern .010 (.050) Obs 287, 49 countries; Table 4 col5 low .195 (.095)** Obs 191, 32 countries. Matches."
+  "comment": "Table 3 col5 E-govern .010 (.050) Obs 287, 49 countries; Table 4 col5 low .195 (.095)** Obs 191, 32 countries. Matches.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W3120130641",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 4 main: Mobile Subscriptions Low 0.0183 (0.0145); Lower middle -0.0158** (0.00745); Obs 199 / 310. Matches."
+  "comment": "Table 4 main: Mobile Subscriptions Low 0.0183 (0.0145); Lower middle -0.0158** (0.00745); Obs 199 / 310. Matches.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W3122955663",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 4 col3 SYS-GMM: L1.Internet 0.015 (0.324); L1.Internet*Backward 0.896** (0.366); N 3,006. Base group is top income quarter; interaction positive so poorer larger."
+  "comment": "Table 4 col3 SYS-GMM: L1.Internet 0.015 (0.324); L1.Internet*Backward 0.896** (0.366); N 3,006. Base group is top income quarter; interaction positive so poorer larger.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W3160084080",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 6 col6 ICT -0.0783*** (0.0269) Obs 1,084; Table 7 col6 ICT 0.0289 (0.187) Obs 1,222. Richer more negative on CO2, richer larger benefit. Hansen stats identical across both tables (copy error?)."
+  "comment": "Table 6 col6 ICT -0.0783*** (0.0269) Obs 1,084; Table 7 col6 ICT 0.0289 (0.187) Obs 1,222. Richer more negative on CO2, richer larger benefit. Hansen stats identical across both tables (copy error?).",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W3162948059",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 8 lnTECH mobile: SG1 -.01144*** (-3.87), SG4 -.05697*** (-5.12); Obs 450 each, 15 groups. t in parentheses; poorer larger reduction."
+  "comment": "Table 8 lnTECH mobile: SG1 -.01144*** (-3.87), SG4 -.05697*** (-5.12); Obs 450 each, 15 groups. t in parentheses; poorer larger reduction.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4312177950",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": true,
-  "comment": "Table 1: Digitalization -0.0018*** (0.0001) adv, 0.0046*** (0.0001) dev; Country/Obs 30/540, 35/630. Values match but SE 0.0001 implies t of 18 and 46: implausibly precise."
+  "comment": "Table 1: Digitalization -0.0018*** (0.0001) adv, 0.0046*** (0.0001) dev; Country/Obs 30/540, 35/630. Values match but SE 0.0001 implies t of 18 and 46: implausibly precise.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4365150476",
   "status": "unverifiable",
   "corrections": {},
-  "plausibility_flag": true,
-  "comment": "Table 4 GOV1 0.005 (0.009) and Table 6 GOV1 0.005 (0.001) as printed, but minus signs lost; abstract says digitalization reduces inequality in both groups, so signs likely negative. Coefficient conditional on FDI interaction."
+  "plausibility_flag": false,
+  "comment": "Table 4 GOV1 0.005 (0.009) and Table 6 GOV1 0.005 (0.001) as printed, but minus signs lost; abstract says digitalization reduces inequality in both groups, so signs likely negative. Coefficient conditional on FDI interaction. Signs confirmed by the author against the PDF.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4382619307",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 2: Internet penetration low-income -0.162*** (0.037) Obs 1,312; high-income 0.025*** (0.006) Obs 1,280. Matches. Self-employment share is not clearly beneficial/harmful."
+  "comment": "Table 2: Internet penetration low-income -0.162*** (0.037) Obs 1,312; high-income 0.025*** (0.006) Obs 1,280. Matches. Self-employment share is not clearly beneficial/harmful.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4387394504",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": true,
-  "comment": "Table 7 GMM FBS 0.04 (0.02)* Obs 1482, 78 countries; Table 6 GMM FBS 0.01 (0.06)** Obs 551, 29 countries. Matches. Flag: stars inconsistent with SEs; Sargan rejects."
+  "comment": "Table 7 GMM FBS 0.04 (0.02)* Obs 1482, 78 countries; Table 6 GMM FBS 0.01 (0.06)** Obs 551, 29 countries. Matches. Flag: stars inconsistent with SEs; Sargan rejects.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4401400262",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 6 ICT: col1 low 0.052 (0.026)** obs 275, 26 countries; col3 high 0.031 (0.015)** obs 129, 15 countries. Spec includes ICTxEDU so ICT term is conditional on EDU=0."
+  "comment": "Table 6 ICT: col1 low 0.052 (0.026)** obs 275, 26 countries; col3 high 0.031 (0.015)** obs 129, 15 countries. Spec includes ICTxEDU so ICT term is conditional on EDU=0.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4402708095",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 7 developing inet -.000023 (9.0e-06) t=-2.46 N168; Table 8 developed .000498 (.000135) t=3.70 N171. Matches; developing group benefits (opposite signs)."
+  "comment": "Table 7 developing inet -.000023 (9.0e-06) t=-2.46 N168; Table 8 developed .000498 (.000135) t=3.70 N171. Matches; developing group benefits (opposite signs).",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4409688222",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 5 DE: high 86.75* (1.70) N331; lower-middle 33.30 (0.43) N73; t in parentheses. Matches."
+  "comment": "Table 5 DE: high 86.75* (1.70) N331; lower-middle 33.30 (0.43) N73; t in parentheses. Matches.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7135239303",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": true,
-  "comment": "Table 3 MDVHC: high 52.970*** (19.136) N51; low 94.450 (129.687) N15. Matches. Flag: Gini coefficients in hundreds, N=15 with 8 regressors, R2 0.54; scale implausible for Gini."
+  "comment": "Table 3 MDVHC: high 52.970*** (19.136) N51; low 94.450 (129.687) N15. Matches. Flag: Gini coefficients in hundreds, N=15 with 8 regressors, R2 0.54; scale implausible for Gini.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7160252636",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 4 FE: DFIF developed 0.0018 [0.0208] N168, 42 countries; developing 0.0533** [0.0237] N241, 62 countries. Matches."
+  "comment": "Table 4 FE: DFIF developed 0.0018 [0.0208] N168, 42 countries; developing 0.0533** [0.0237] N241, 62 countries. Matches.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7162212432",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 7: DFI Index low-income 0.091 (0.024) obs 78, 21 countries; middle-income 0.063 (0.018) obs 189, 46 countries. Matches; source is low-quality journal, round values."
+  "comment": "Table 7: DFI Index low-income 0.091 (0.024) obs 78, 21 countries; middle-income 0.063 (0.018) obs 189, 46 countries. Matches; source is low-quality journal, round values.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7164812097",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 8: High-Income AI 0.485*** (0.082) N425; Low-Income 0.612*** (0.095) N255. Matches. Model includes AI x DT interaction, so AI term is conditional; source low-quality, round SEs."
+  "comment": "Table 8: High-Income AI 0.485*** (0.082) N425; Low-Income 0.612*** (0.095) N255. Matches. Model includes AI x DT interaction, so AI term is conditional; source low-quality, round SEs.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7169727400",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 3: ICT Advanced 0.0025** (0.0008) N234; Emerging 0.0038* (0.0019) N260; Full G20 N494. Matches."
+  "comment": "Table 3: ICT Advanced 0.0025** (0.0008) N234; Emerging 0.0038* (0.0019) N260; Full G20 N494. Matches.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7215754101",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 2 col4 High-Income -0.1164 (0.2374) N664; col5 Low-Income 0.1556 (0.4652) N659. Matches; interaction col3 -0.5276 (0.7142) N1323 also available."
+  "comment": "Table 2 col4 High-Income -0.1164 (0.2374) N664; col5 Low-Income 0.1556 (0.4652) N659. Matches; interaction col3 -0.5276 (0.7142) N1323 also available.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7217121394",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": true,
-  "comment": "Table 4 col2 Digitalization 0.3288*** (0.09226) N805; col3 -0.4869* (0.0258) N2024. Matches. Flag: -0.4869 with SE 0.0258 is t=-19 but only one star."
+  "comment": "Table 4 col2 Digitalization 0.3288*** (0.09226) N805; col3 -0.4869* (0.0258) N2024. Matches. Flag: -0.4869 with SE 0.0258 is t=-19 but only one star.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7218066295",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 7 HIC Stdi -.224 (.04) t=-5.65 N900; Table 10 UMC Stdi -.191 (.042) t=-4.52 N1125. Matches. Dependent var is standardised GDP per capita (NY.GDP.PCAP.KD) level, not growth."
+  "comment": "Table 7 HIC Stdi -.224 (.04) t=-5.65 N900; Table 10 UMC Stdi -.191 (.042) t=-4.52 N1125. Matches. Dependent var is standardised GDP per capita (NY.GDP.PCAP.KD) level, not growth.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7223156715",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 12: Dig high income 0.100*** (3.51) N432; lower income -0.177 (-0.31) N204; Chow -1.277*(-1.71). Matches; t in parentheses."
+  "comment": "Table 12: Dig high income 0.100*** (3.51) N432; lower income -0.177 (-0.31) N204; Chow -1.277*(-1.71). Matches; t in parentheses.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7235618078",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": true,
-  "comment": "Table 9 FD x DI GMM-Moderation: developing 0.444*** (0.028) N3349; high 0.216*** (0.051) N880. Matches, but headline is the finance-by-DI moderation term, not DI main effect (DI row garbled); judgement call."
+  "comment": "Table 9 FD x DI GMM-Moderation: developing 0.444*** (0.028) N3349; high 0.216*** (0.051) N880. Matches, but headline is the finance-by-DI moderation term, not DI main effect (DI row garbled); judgement call.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "9105",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 8 lnict: HIC (0.094)*** SE 0.032, LIC 0.158*** SE 0.028; Observations 628 / 224 (col 4, col 12). Table outcome labelled economic growth; constant ~8 suggests ln GDP level. Poorer larger OK."
+  "comment": "Table 8 lnict: HIC (0.094)*** SE 0.032, LIC 0.158*** SE 0.028; Observations 628 / 224 (col 4, col 12). Table outcome labelled economic growth; constant ~8 suggests ln GDP level. Poorer larger OK.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "268",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 7 col 2 '\u0394ln kIT .064** (.024)', N 791; Table 6 col 2 '.019* (.011)', N 1583; 38/80 countries per text. Coefficient is conditional on \u0394INF interaction model, so not a pure main effect. Authors: slightly higher in advanced."
+  "comment": "Table 7 col 2 '\u0394ln kIT .064** (.024)', N 791; Table 6 col 2 '.019* (.011)', N 1583; 38/80 countries per text. Coefficient is conditional on \u0394INF interaction model, so not a pure main effect. Authors: slightly higher in advanced.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "9501",
   "status": "unverifiable",
   "corrections": {},
-  "plausibility_flag": true,
-  "comment": "Table 6: lnDEDI 0.001 (0.006) / 0.006 (0.013) / 0.013** (0.005); N 451/287/285. Lower-middle negative established (text: DEDI improves inequality in LMICs). High sign not stated; Figs 6-8 text says disparity worsened in HICs, so likely positive. Benefit direction poorer larger holds either way."
+  "plausibility_flag": false,
+  "comment": "Table 6: lnDEDI 0.001 (0.006) / 0.006 (0.013) / 0.013** (0.005); N 451/287/285. Lower-middle negative established (text: DEDI improves inequality in LMICs). High sign not stated; Figs 6-8 text says disparity worsened in HICs, so likely positive. Benefit direction poorer larger holds either way. Signs confirmed by the author against the PDF.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W3037677780",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 1: 'Digital inclusion 0.0318* (0.0171) HYCs; 0.00382 (0.0339) LYCs'; obs 174/168, countries 29/28. Dynamic GMM coefficients are short-run; lag coefficients differ (0.458 vs 0.893), so long-run gap is smaller."
+  "comment": "Table 1: 'Digital inclusion 0.0318* (0.0171) HYCs; 0.00382 (0.0339) LYCs'; obs 174/168, countries 29/28. Dynamic GMM coefficients are short-run; lag coefficients differ (0.458 vs 0.893), so long-run gap is smaller.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4391261834",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 2 col 1: 'Mobile broadband 0.000074** (0.000035)', obs 892, 120 countries; Table 3 col 1: '\u22120.000039 (0.000026)', 465, 59. Caveat: for internet bandwidth, developed is 0.000099* and developing n.s., so result depends on measure."
+  "comment": "Table 2 col 1: 'Mobile broadband 0.000074** (0.000035)', obs 892, 120 countries; Table 3 col 1: '\u22120.000039 (0.000026)', 465, 59. Caveat: for internet bandwidth, developed is 0.000099* and developing n.s., so result depends on measure.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W7154603549",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 6 model 7 (n=36): GDI 0.219*** (0.080); model 8 (n=36): 0.183** (0.081). Matches. Caveat: 'low-income' is GDPpc<20,000 USD (includes middle income); cross-section, tiny n; groups differ in other coefficients."
+  "comment": "Table 6 model 7 (n=36): GDI 0.219*** (0.080); model 8 (n=36): 0.183** (0.081). Matches. Caveat: 'low-income' is GDPpc<20,000 USD (includes middle income); cross-section, tiny n; groups differ in other coefficients.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4292097993",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Text p.9: Model 1 Table 4 Internet users b=-0.0027*** SE 0.0010 (high income); Table 6 b=-0.0419* SE 0.0245 (lower-middle and low). Checked by a second model run."
+  "comment": "Text p.9: Model 1 Table 4 Internet users b=-0.0027*** SE 0.0010 (high income); Table 6 b=-0.0419* SE 0.0245 (lower-middle and low). Checked by a second model run.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4409497942",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 6 lndigital 0.052*** (2.643) high, 0.009* (1.677) middle, 0.003 (0.502) low; t in parentheses. Checked by a second model run."
+  "comment": "Table 6 lndigital 0.052*** (2.643) high, 0.009* (1.677) middle, 0.003 (0.502) low; t in parentheses. Checked by a second model run.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4414941228",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Table 6 IDI 1.681** (0.825) low and lower-middle, -1.883** (0.909) upper-middle, -1.287 (0.880) high; quadratic term in the model. Checked by a second model run."
+  "comment": "Table 6 IDI 1.681** (0.825) low and lower-middle, -1.883** (0.909) upper-middle, -1.287 (0.880) high; quadratic term in the model. Checked by a second model run.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4378639118",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": false,
-  "comment": "Rendered Table 2 col 6: Lnbroad -0.473*** (0.073), N=112 (high); col 12: -0.049*** (0.009), N=25 (lower-middle). Checked by a second model run."
+  "comment": "Rendered Table 2 col 6: Lnbroad -0.473*** (0.073), N=112 (high); col 12: -0.049*** (0.009), N=25 (lower-middle). Checked by a second model run.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  },
  {
   "idx": "W4317496767",
   "status": "confirmed",
   "corrections": {},
   "plausibility_flag": true,
-  "comment": "Rendered Table VII: MCS -1.20 (0.012) lower-middle, -0.120 (0.023) low; t values above 50 with no stars, implausible."
+  "comment": "Rendered Table VII: MCS -1.20 (0.012) lower-middle, -0.120 (0.023) low; t values above 50 with no stars, implausible.",
+  "author_check": "confirmed (23 Nov 2026, no corrections)"
  }
 ]

@@ -6,9 +6,8 @@ Output and productivity (family 1): k=24 mean diff PCC -0.038 [-0.074, -0.001] p
 Split-sample only: k=42 mean diff PCC +0.037 [-0.135, +0.209] p=0.66 I2=99%
 World Bank income groups only: k=26 mean diff PCC +0.036 [-0.095, +0.167] p=0.58 I2=95%
 Difference formally tested: k=5 mean diff PCC -0.007 [-0.080, +0.065] p=0.80 I2=62%
-Excluding contrasts flagged as implausible or unverifiable: k=34 mean diff PCC -0.003 [-0.051, +0.046] p=0.91 I2=75%
+Excluding contrasts flagged as implausible: k=36 mean diff PCC -0.001 [-0.049, +0.047] p=0.96 I2=76%
 Output family, excluding flagged: k=20 mean diff PCC -0.037 [-0.077, +0.003] p=0.07 I2=49%
-Verified against the full text and not flagged: k=28 mean diff PCC -0.007 [-0.064, +0.050] p=0.79 I2=78%
 Excluding studies rated critical: k=43 mean diff PCC +0.037 [-0.077, +0.150] p=0.52 I2=99%
 Included studies from the main search: k=12 mean diff PCC -0.016 [-0.087, +0.055] p=0.63 I2=62%
 New studies from the supplementary searches: k=32 mean diff PCC +0.052 [-0.149, +0.252] p=0.60 I2=99%
