@@ -1233,5 +1233,37 @@
   "estimator": "FE or RE (Hausman-selected) with Driscoll-Kraay SE",
   "risk_of_bias": "serious",
   "study": "Yin et al. 2023"
+ },
+ {
+  "idx": "W4409883118",
+  "title": "Can Fintech Development Contribute to Mitigating the Greenhouse Effect? A Global Perspective",
+  "eligibility": "exclude",
+  "code": "E2",
+  "stream": "H",
+  "technology": "Fintech development (World Bank Fintech activity index, 3 subindices: equity investment in Fintech firms, online Fintech credit, digital payments via mobile/internet)",
+  "families": [
+   6
+  ],
+  "n_economies": 124,
+  "years": "2014-2018 (cross-sectional, five-year averages)",
+  "estimator": "Cross-sectional OLS, log-log; Lewbel 2SLS and external-instrument IV as endogeneity check; income-group models estimated separately",
+  "risk_of_bias": "moderate",
+  "study": "Li et al. 2025"
+ },
+ {
+  "idx": "W4317496767",
+  "title": "The Role of ICTs on Innovation Process of Environment and Energy Convergence",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "ICT usage (mobile cellular subscriptions and internet users; the paper labels this variable 'innovation')",
+  "families": [
+   6
+  ],
+  "n_economies": 60,
+  "years": "1991-2019 (unbalanced panel)",
+  "estimator": "Absolute and conditional beta-convergence with lagged dependent variable; pooled OLS and panel quantile regression",
+  "risk_of_bias": "serious",
+  "study": "Azam et al. 2023"
  }
 ]

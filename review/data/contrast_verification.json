@@ -299,5 +299,12 @@
   "corrections": {},
   "plausibility_flag": false,
   "comment": "Rendered Table 2 col 6: Lnbroad -0.473*** (0.073), N=112 (high); col 12: -0.049*** (0.009), N=25 (lower-middle). Checked by the lead analyst."
+ },
+ {
+  "idx": "W4317496767",
+  "status": "confirmed",
+  "corrections": {},
+  "plausibility_flag": true,
+  "comment": "Rendered Table VII: MCS -1.20 (0.012) lower-middle, -0.120 (0.023) low; t values above 50 with no stars, implausible."
  }
 ]

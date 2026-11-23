@@ -471,5 +471,16 @@
   "poorer": "lower-middle-income",
   "d": 0.2749,
   "se": 0.1116
+ },
+ {
+  "idx": "W4317496767",
+  "study": "Azam et al. 2023",
+  "family": 6,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "lower-middle-income",
+  "poorer": "low-income",
+  "d": 0.7942,
+  "se": 0.0351
  }
 ]
