@@ -1265,5 +1265,37 @@
   "estimator": "Absolute and conditional beta-convergence with lagged dependent variable; pooled OLS and panel quantile regression",
   "risk_of_bias": "serious",
   "study": "Azam et al. 2023"
+ },
+ {
+  "idx": "W3157828594",
+  "title": "Digital financial inclusion and sustainable employment: Evidence from countries along the belt and road",
+  "eligibility": "exclude",
+  "code": "E2",
+  "stream": null,
+  "technology": "digital financial inclusion index (IDFI): ATMs, credit bureau coverage, domestic credit, non-bank credit, credit information depth, legal rights, digital payments (weight 0.155)",
+  "families": [
+   3
+  ],
+  "n_economies": 40,
+  "years": "2010-2018",
+  "estimator": "FE; FE+IV (internet penetration IV); system GMM; MG/AMG; threshold model",
+  "risk_of_bias": null,
+  "study": "Geng and He 2021"
+ },
+ {
+  "idx": "W2738229271",
+  "title": "The linear and non-linear impacts of ICT on economic growth, of disaggregate income groups within SSA region",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "ICT: fixed telephone lines, mobile phone subscriptions, internet subscriptions (per 100 inhabitants) and a fixed+mobile composite",
+  "families": [
+   1
+  ],
+  "n_economies": 45,
+  "years": "1990-2014",
+  "estimator": "Pooled Mean Group (PMG) panel ARDL/ECM; MG comparison; Pedroni cointegration",
+  "risk_of_bias": "serious",
+  "study": "Albiman and Sulong 2017"
  }
 ]

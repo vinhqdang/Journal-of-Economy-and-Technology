@@ -1,6 +1,6 @@
-source contrasts_all.json; studies with a contrast 81; contrasts 351; headline 81; df = N - 10
-headline directions: {'no clear difference': 3, 'opposite signs': 12, 'poorer larger': 27, 'richer larger': 34, 'unclear': 5}
-sign test richer vs poorer larger: 34 vs 27, two-sided p = 0.44
+source contrasts_all.json; studies with a contrast 82; contrasts 363; headline 82; df = N - 10
+headline directions: {'no clear difference': 3, 'opposite signs': 12, 'poorer larger': 27, 'richer larger': 35, 'unclear': 5}
+sign test richer vs poorer larger: 35 vs 27, two-sided p = 0.37
 All headline contrasts: k=44 mean diff PCC +0.035 [-0.077, +0.148] p=0.53 I2=99%
 Output and productivity (family 1): k=24 mean diff PCC -0.038 [-0.074, -0.001] p=0.04 I2=53%
 Split-sample only: k=42 mean diff PCC +0.037 [-0.135, +0.209] p=0.66 I2=99%
