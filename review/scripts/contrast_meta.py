@@ -10,13 +10,16 @@ import numpy as np
 from scipy import stats
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 K = int(sys.argv[1]) if len(sys.argv) > 1 else 10
-C = json.load(open(os.path.join(ROOT, "contrasts.json")))
+IMPUTE = None
+src = "contrasts_all.json" if os.path.exists(os.path.join(ROOT, "contrasts_all.json")) else "contrasts.json"
+C = [c for c in json.load(open(os.path.join(ROOT, src))) if c.get("design") != "region"]
 ext = {x["idx"]: x for x in json.load(open(os.path.join(ROOT, "extraction.json")))}
 def tval(b, se, t, p):
     if t is not None: return float(t)
     if b is not None and se not in (None, 0): return float(b) / float(se)
     return None
 def pcc(t, n):
+    if t is not None and not n and IMPUTE: n = IMPUTE
     if t is None or not n: return None
     df = max(int(n) - K, 3); r = t / math.sqrt(t * t + df)
     return r, (1 - r * r) ** 2 / df
@@ -53,7 +56,7 @@ def report(label, rows):
     return r, e
 head = [c for c in C if c.get("headline")]
 studies = sorted({c["idx"] for c in C})
-print(f"studies with a contrast {len(studies)}; contrasts {len(C)}; headline {len(head)}; df = N - {K}")
+print(f"source {src}; studies with a contrast {len(studies)}; contrasts {len(C)}; headline {len(head)}; df = N - {K}")
 dirs = [c["direction"] for c in head]
 nr, npo = dirs.count("richer larger"), dirs.count("poorer larger")
 print("headline directions:", {d: dirs.count(d) for d in sorted(set(dirs))})
@@ -63,7 +66,14 @@ report("Output and productivity (family 1)", [c for c in head if c.get("family")
 report("Split-sample only", [c for c in head if c["design"] == "split-sample"])
 report("World Bank income groups only", [c for c in head if c.get("comparison") == "WB income groups"])
 report("Difference formally tested", [c for c in head if c.get("diff_test_reported")])
-report("Excluding studies rated critical", [c for c in head if ext.get(c["idx"], {}).get("overall_risk_of_bias") != "critical"])
+def rob(c): return ext.get(c["idx"], {}).get("overall_risk_of_bias") or c.get("risk_of_bias")
+report("Excluding studies rated critical", [c for c in head if rob(c) != "critical"])
+report("Included studies from the main search", [c for c in head if c.get("source", "").startswith("included")])
+report("New studies from the supplementary searches", [c for c in head if c.get("source", "").startswith("new")])
+ns = [n for c in head for n in (c.get("n_obs_rich"), c.get("n_obs_poor"), c.get("n_obs_inter")) if n]
+IMPUTE = int(np.median(ns)) if ns else None
+report(f"Missing N imputed at the median ({IMPUTE})", head)
+IMPUTE = None
 if res:
     out = [{"idx": c["idx"], "study": c.get("study"), "family": c.get("family"), "design": c["design"], "comparison": c.get("comparison"),
             "richer": c.get("richer_group"), "poorer": c.get("poorer_group"), "d": round(x[0], 4), "se": round(math.sqrt(x[1]), 4)} for c, x in res[1]]
