@@ -6,6 +6,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 old = json.load(open(os.path.join(ROOT, "contrasts.json")))
 for c in old: c["source"] = "included (main search)"
 studies, new = [], []
+ROB = {x["idx"]: x["overall"] for x in json.load(open(os.path.join(ROOT, "rob_new.json")))} if os.path.exists(os.path.join(ROOT, "rob_new.json")) else {}
 def label(wid):
     for k in range(5):
         try:
@@ -19,10 +20,11 @@ for f in sys.argv[1:]:
     for r in json.load(open(f)):
         lab = label(r["idx"])
         s = {k: r.get(k) for k in ["idx", "title", "eligibility", "code", "stream", "technology", "families", "n_economies", "years", "estimator", "risk_of_bias"]}
+        if r["idx"] in ROB: s["risk_of_bias"] = ROB[r["idx"]]
         s["study"] = lab; studies.append(s)
         if r.get("eligibility") != "include": continue
         for c in r.get("contrasts") or []:
-            c["idx"] = r["idx"]; c["study"] = lab; c["source"] = "new (citation or income-group search)"; c["risk_of_bias"] = r.get("risk_of_bias"); new.append(c)
+            c["idx"] = r["idx"]; c["study"] = lab; c["source"] = "new (citation or income-group search)"; c["risk_of_bias"] = ROB.get(r["idx"], r.get("risk_of_bias")); new.append(c)
 json.dump(old + new, open(os.path.join(ROOT, "contrasts_all.json"), "w"), indent=1)
 json.dump(studies, open(os.path.join(ROOT, "new_studies.json"), "w"), indent=1)
 print("old contrasts", len(old), "new", len(new), "new records", len(studies), "eligible", sum(s["eligibility"] == "include" for s in studies))

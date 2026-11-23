@@ -16,30 +16,31 @@ ROOT = os.path.join(HERE, "..")
 ext = [x for x in json.load(open(os.path.join(ROOT, "review/data/extraction.json"))) if x["fulltext_decision"] == "include"]
 PAL = {"a": "#1f4e79", "b": "#c0504d", "c": "#7f7f7f", "d": "#4f9a5f", "e": "#d98c1f"}
 
-# ---- PRISMA flow ----
-fig, ax = plt.subplots(figsize=(7.2, 8.4)); ax.set_xlim(0, 10); ax.set_ylim(0, 12); ax.axis("off")
+# ---- PRISMA flow: main search (left) and supplementary searches (right) ----
+fig, ax = plt.subplots(figsize=(8.6, 8.2)); ax.set_xlim(0, 12); ax.set_ylim(0, 12.4); ax.axis("off")
 def box(x, y, w, h, txt, fc="#eef3f8"):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.02,rounding_size=0.08", fc=fc, ec="#44546a", lw=0.9))
-    ax.text(x + w / 2, y + h / 2, txt, ha="center", va="center", fontsize=7.4)
+    ax.text(x + w / 2, y + h / 2, txt, ha="center", va="center", fontsize=7.0)
 def arrow(x1, y1, x2, y2):
     ax.annotate("", xy=(x2, y2), xytext=(x1, y1), arrowprops=dict(arrowstyle="->", color="#44546a", lw=0.9))
-box(0.3, 10.6, 4.4, 1.0, "Records identified\nOpenAlex 1,840; Crossref 1,285; NBER 579\n(3,704 before cross-source deduplication)")
-box(5.3, 10.4, 4.4, 1.4, "Not searched: arXiv (attempted), Scopus,\nWeb of Science, EconLit. Google Scholar:\nfirst page of 8 queries (80 results),\n48 of 70 primary-study results new,\n31 read", fc="#f6e9e9")
-box(0.3, 9.0, 4.4, 1.0, "Records after deduplication\n3,612 (92 duplicates removed)")
-box(5.3, 9.0, 4.4, 1.0, "Excluded by automated stage-1 rules\n1,545", fc="#f4f4f4")
-box(0.3, 7.4, 4.4, 1.0, "Read at title level\n2,067")
-box(5.3, 7.4, 4.4, 1.0, "Excluded at title level\n1,611", fc="#f4f4f4")
-box(0.3, 5.8, 4.4, 1.0, "Assessed at abstract level\n456")
-box(5.3, 5.2, 4.4, 2.0, "Excluded at abstract level 121\nDuplicates 8; context 46\nenvironmental-only 22; reviews 9\nsupplementary micro evidence 3", fc="#f4f4f4")
-box(0.3, 4.2, 4.4, 1.0, "Sent to full-text assessment\n247")
-box(5.3, 3.0, 4.4, 1.4, "Not read: no free full text\nor venue judged unreliable\n141 of 247 (about)", fc="#f6e9e9")
-box(0.3, 2.6, 4.4, 1.0, "Full texts read\n143 (106 of the 247, one review,\nfive after re-screening,\n31 from Google Scholar)")
-box(5.3, 1.1, 4.4, 1.4, "Excluded at full text 45\nE1 too few economies 15; E2 exposure 6\nE3 outcome 1; E4 no own estimation 23\nContext only 1", fc="#f4f4f4")
-box(0.3, 1.0, 4.4, 1.0, "Studies included\n97 (80 historical waves, 15 AI, 2 both)", fc="#e6f2e8")
-for y1, y2 in [(10.6, 10.0), (9.0, 8.4), (7.4, 6.8), (5.8, 5.2), (4.2, 3.6), (2.6, 2.0)]:
-    arrow(2.5, y1, 2.5, y2)
-for y in (9.5, 7.9, 6.2, 3.7, 1.8):
-    arrow(4.7, y, 5.3, y if y not in (6.2,) else 6.2)
+ax.text(2.9, 12.25, "Main search (evidence map)", ha="center", fontsize=8, weight="bold")
+ax.text(9.1, 12.25, "Supplementary searches (income contrasts)", ha="center", fontsize=8, weight="bold")
+box(0.3, 10.8, 5.2, 1.2, "OpenAlex 1,840; Crossref 1,285; NBER 579\n3,612 after deduplication\nGoogle Scholar: 8 queries, first page")
+box(0.3, 9.0, 5.2, 1.3, "Excluded by rules 1,545; at title level 1,611;\nat abstract level 121; held as context 88\nSent to full text 247", fc="#f4f4f4")
+box(0.3, 7.2, 5.2, 1.3, "Full texts read 143\n(106 of the 247, 5 after re-screening,\n31 from Google Scholar, 1 review)")
+box(0.3, 5.4, 5.2, 1.3, "Excluded at full text 45 (too few economies 15,\nexposure 6, outcome 1, no own estimation 23)\nContext only 1", fc="#f4f4f4")
+box(0.3, 3.8, 5.2, 1.1, "Included in the evidence map\n97 (80 ICT, 15 AI, 2 both)", fc="#e6f2e8")
+box(6.5, 10.8, 5.2, 1.2, "Citation search from 33 studies: 3,595 new\nOpenAlex income-group query: 2,280 new\n(records already screened removed)")
+box(6.5, 9.0, 5.2, 1.3, "Excluded by rules 4,116\nScreened 1,759; includable or possible 563\nWith an income comparison 181", fc="#f4f4f4")
+box(6.5, 7.2, 5.2, 1.3, "Full texts read 82\n(64 open access, 18 supplied)\nNot obtained 99", fc="#eef3f8")
+box(6.5, 5.4, 5.2, 1.3, "Excluded at full text 15\n(exposure 10, outcome 3, too few economies 2)", fc="#f4f4f4")
+box(6.5, 3.8, 5.2, 1.1, "Eligible studies added\n67 (64 ICT, 3 AI)", fc="#e6f2e8")
+box(2.6, 1.9, 6.8, 1.2, "Studies with a richer-versus-poorer contrast: 82\n(27 from the evidence map, 55 added); 363 contrasts", fc="#e6f2e8")
+box(2.6, 0.2, 6.8, 1.1, "Headline contrasts with an effect size: 44\n(pooled in the meta-analysis)", fc="#e6f2e8")
+for x in (2.9, 9.1):
+    for y1, y2 in [(10.8, 10.3), (9.0, 8.5), (7.2, 6.7), (5.4, 4.9)]:
+        arrow(x, y1, x, y2)
+arrow(2.9, 3.8, 4.5, 3.1); arrow(9.1, 3.8, 7.5, 3.1); arrow(6.0, 1.9, 6.0, 1.3)
 plt.savefig(os.path.join(HERE, "fig_prisma.png"), dpi=170, bbox_inches="tight"); plt.close()
 
 # ---- forest plot of headline estimates ----

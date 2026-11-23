@@ -40,3 +40,12 @@ Direction agreed with the author: reframe the paper as a **pilot evidence map**,
 - Author's check of the 22 headline estimates against the source papers: done, 22 of 22 correct, no corrections. Manuscript now cites 97 studies, compares with Stanley et al. (2018) and Foster et al. (2026), and the prose was rewritten for readers (no process log).
 - Current PDFs: `manuscript/Anonymous_Manuscript_v2026-11-20-evidence-map-r4.pdf`, `manuscript/Title_Page_v2026-11-20-evidence-map-r4.pdf`, `manuscript/Full_Manuscript_v2026-11-20-evidence-map-r4.pdf` (39 pages; appendix of results by family moved out, panel appendix trimmed). Title and the five keywords must be changed in the submission system.
 - The title and keywords in the submission system must be changed to match.
+
+## Revision: within-study income contrasts (23 Nov 2026)
+- The paper was refocused from the pilot evidence map to a meta-analysis of within-study richer-versus-poorer contrasts. New title: "Do richer economies gain more from digital technology? A meta-analysis of within-study income comparisons". Keywords: digital technology; artificial intelligence; income level; meta-analysis; productivity.
+- Supplementary searches: OpenAlex citation searching from 33 studies and a targeted OpenAlex income-group query (5,875 new records; 1,759 screened; 181 with income comparisons; 82 full texts read; 67 eligible). Full texts supplied by the author are listed in `review/data/fulltext_received.csv`.
+- 82 studies with contrasts (363 contrasts); 44 headline contrasts with effect sizes. Results in `review/contrast_pilot.md` and `review/contrast_pilot_output.txt`.
+- Risk of bias of the 67 added studies re-rated on the original scale (`review/data/rob_new.json`): moderate 6, serious 56, critical 5.
+- PDFs: `manuscript/Anonymous_Manuscript_v2026-11-23-income-contrasts.pdf`, `manuscript/Title_Page_v2026-11-23-income-contrasts.pdf`, `manuscript/Full_Manuscript_v2026-11-23-income-contrasts.pdf` (37 pages).
+- Still open: an independent human second coder for the analysed contrasts; title and keywords to be changed in the submission system.
+

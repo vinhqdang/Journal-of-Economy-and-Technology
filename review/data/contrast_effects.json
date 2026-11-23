@@ -281,7 +281,7 @@
   "design": "split-sample",
   "comparison": "WB income groups",
   "richer": "high-income",
-  "poorer": "lower-middle-income (\u4e2d\u4f4e\u6536\u5165)",
+  "poorer": "lower-middle-income",
   "d": 0.0404,
   "se": 0.1373
  },

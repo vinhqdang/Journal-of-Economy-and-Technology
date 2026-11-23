@@ -52,8 +52,10 @@ def report(label, rows):
     e = [(c, effect(c)) for c in rows]; e = [(c, x) for c, x in e if x]
     if len(e) < 2: print(f"{label}: k={len(e)} (too few)"); return None
     r = re_pool([x[0] for _, x in e], [x[1] for _, x in e])
+    RESULTS.append(dict(label=label, **{k: float(v) for k, v in r.items()}))
     print(f"{label}: k={r['k']} mean diff PCC {r['mu']:+.3f} [{r['lo']:+.3f}, {r['hi']:+.3f}] p={r['p']:.2f} I2={100*r['I2']:.0f}%")
     return r, e
+RESULTS = []
 head = [c for c in C if c.get("headline")]
 studies = sorted({c["idx"] for c in C})
 print(f"source {src}; studies with a contrast {len(studies)}; contrasts {len(C)}; headline {len(head)}; df = N - {K}")
@@ -81,3 +83,7 @@ if res:
     out = [{"idx": c["idx"], "study": c.get("study"), "family": c.get("family"), "design": c["design"], "comparison": c.get("comparison"),
             "richer": c.get("richer_group"), "poorer": c.get("poorer_group"), "d": round(x[0], 4), "se": round(math.sqrt(x[1]), 4)} for c, x in res[1]]
     json.dump(out, open(os.path.join(ROOT, "contrast_effects.json"), "w"), indent=1)
+
+json.dump({"n_studies": len(studies), "n_contrasts": len(C), "directions": {d: dirs.count(d) for d in sorted(set(dirs))},
+           "sign_test_p": stats.binomtest(nr, nr + npo).pvalue if nr + npo else None, "rows": RESULTS},
+          open(os.path.join(ROOT, "contrast_results.json"), "w"), indent=1)

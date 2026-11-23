@@ -12,7 +12,7 @@
   "n_economies": 159,
   "years": "2000-2009",
   "estimator": "dynamic panel GMM (Arellano-Bond)",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Farhadi et al. 2012"
  },
  {
@@ -44,7 +44,7 @@
   "n_economies": 36,
   "years": "1985-1993",
   "estimator": "Cobb-Douglas panel production function, GLS random effects",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Dewan and Kraemer 2000"
  },
  {
@@ -60,7 +60,7 @@
   "n_economies": 149,
   "years": "1980-2015",
   "estimator": "OLS, pooled OLS, 2SLS and GMM (panel)",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Majeed and Ayub 2018"
  },
  {
@@ -108,7 +108,7 @@
   "n_economies": 168,
   "years": "2003-2015",
   "estimator": "fixed effects, random effects and Arellano-Bond GMM",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Gul et al. 2020"
  },
  {
@@ -124,7 +124,7 @@
   "n_economies": 65,
   "years": "2010-2017",
   "estimator": "pooled OLS, fixed/random effects and system GMM",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Shafiq and Adeleye 2020"
  },
  {
@@ -156,7 +156,7 @@
   "n_economies": 132,
   "years": "1980-2016",
   "estimator": "pooled OLS and GMM",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Majeed 2018"
  },
  {
@@ -172,7 +172,7 @@
   "n_economies": 60,
   "years": "1989-2018",
   "estimator": "fixed effects with Driscoll-Kraay SE and ICT x energy models",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Milindi and Inglesi\u2010Lotz 2022"
  },
  {
@@ -204,7 +204,7 @@
   "n_economies": 30,
   "years": "2005-2019",
   "estimator": "panel GMM (Arellano-Bond), five models",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Mahdavi and Sojoodi 2021"
  },
  {
@@ -220,7 +220,7 @@
   "n_economies": 79,
   "years": "2005-2019",
   "estimator": "panel VECM and panel Granger causality",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Pradhan et al. 2022"
  },
  {
@@ -236,7 +236,7 @@
   "n_economies": 70,
   "years": "2003-2008",
   "estimator": "pairwise panel Granger causality",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Yousefi 2015"
  },
  {
@@ -252,7 +252,7 @@
   "n_economies": 89,
   "years": "2009-2015",
   "estimator": "two-step system GMM (Arellano-Bond tests)",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Let et al. 2018"
  },
  {
@@ -299,7 +299,7 @@
   "n_economies": 65,
   "years": "2002-2020",
   "estimator": "two-step system GMM and pooled mean group (PMG)",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Nguyen 2022"
  },
  {
@@ -315,7 +315,7 @@
   "n_economies": 81,
   "years": "2010-2019",
   "estimator": "panel spatial-correlation FE and RE-IV2SLS",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Adeleye et al. 2023"
  },
  {
@@ -331,7 +331,7 @@
   "n_economies": 65,
   "years": "2002-2019",
   "estimator": "two-step system GMM (2S-GMM)",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Nguyen 2023"
  },
  {
@@ -378,7 +378,7 @@
   "n_economies": 107,
   "years": "2000-2019",
   "estimator": "system GMM (with OLS and FE comparison); split by income",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Singh and Kumari 2023"
  },
  {
@@ -411,7 +411,7 @@
   "n_economies": 65,
   "years": "2000-2021",
   "estimator": "two-step system GMM",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Parveen et al. 2023"
  },
  {
@@ -459,7 +459,7 @@
   "n_economies": 61,
   "years": "2010-2021",
   "estimator": "dynamic panel GMM",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Zehri et al. 2024"
  },
  {
@@ -539,7 +539,7 @@
   "n_economies": 82,
   "years": "1996-2019",
   "estimator": "panel regression (estimator not stated in extract)",
-  "risk_of_bias": "serious",
+  "risk_of_bias": "critical",
   "study": "Hamka 2025"
  },
  {
@@ -555,7 +555,7 @@
   "n_economies": null,
   "years": "1994-2022",
   "estimator": "pooled OLS with economy and year dummies",
-  "risk_of_bias": "serious",
+  "risk_of_bias": "critical",
   "study": "Yangailo 2025"
  },
  {
@@ -632,7 +632,7 @@
   "n_economies": null,
   "years": "2000-2021",
   "estimator": "panel DSVAR (impulse responses), separate developed and developing models",
-  "risk_of_bias": "serious",
+  "risk_of_bias": "critical",
   "study": "Pasha 2025"
  },
  {
@@ -648,7 +648,7 @@
   "n_economies": 142,
   "years": "2018-2023",
   "estimator": "panel regression by income group (estimator not stated in extract)",
-  "risk_of_bias": "serious",
+  "risk_of_bias": "critical",
   "study": "Liu 2026"
  },
  {
@@ -722,7 +722,7 @@
   "n_economies": 12,
   "years": "2005-2024",
   "estimator": "FE panel (country and year FE), clustered SE; clustering and ML descriptive",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Xing et al. 2026"
  },
  {
@@ -738,7 +738,7 @@
   "n_economies": 104,
   "years": "2011, 2014, 2017, 2021",
   "estimator": "fixed effects (Table 4); system GMM (Table 6)",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Tariq et al. 2026"
  },
  {
@@ -754,7 +754,7 @@
   "n_economies": 67,
   "years": "2011-2021",
   "estimator": "fixed effects with full controls (Table 7); system GMM robustness",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Irfan et al. 2026"
  },
  {
@@ -771,7 +771,7 @@
   "n_economies": 85,
   "years": "2010-2024",
   "estimator": "FE with country and time effects (Tables 4-8); 2SLS robustness",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Haq et al. 2026"
  },
  {
@@ -835,7 +835,7 @@
   "n_economies": 77,
   "years": "2005-2022",
   "estimator": "two-step system GMM (Table 2)",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Pham et al. 2025"
  },
  {
@@ -867,7 +867,7 @@
   "n_economies": 105,
   "years": "2019-2023",
   "estimator": "panel regression with NRI x income dummies (estimator not stated)",
-  "risk_of_bias": "critical",
+  "risk_of_bias": "serious",
   "study": "Rindayati et al. 2026"
  },
  {
@@ -897,7 +897,7 @@
   "n_economies": 58,
   "years": "2000-2022",
   "estimator": "pooled OLS, FE with country-clustered SE, interaction model",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Iqbal et al. 2026"
  },
  {
@@ -977,7 +977,7 @@
   "n_economies": 53,
   "years": "2010-2022",
   "estimator": "two-way FE; mediation, threshold and IV robustness",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Duan et al. 2026"
  },
  {
@@ -1010,7 +1010,7 @@
   "n_economies": 187,
   "years": "not stated (unbalanced panel)",
   "estimator": "two-step System GMM with FD x DI interaction",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Gulalai et al. 2026"
  },
  {
@@ -1027,7 +1027,7 @@
   "n_economies": 83,
   "years": "2010-2017",
   "estimator": "two-step system GMM (dynamic panel), estimated separately by WB income group",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Aslam et al. 2020"
  },
  {
@@ -1059,7 +1059,7 @@
   "n_economies": 100,
   "years": "2017-2022",
   "estimator": "two-step system GMM with IV-GMM robustness; split by ICT intensity (developing 40, developed 60)",
-  "risk_of_bias": "moderate",
+  "risk_of_bias": "serious",
   "study": "Bilal et al. 2024"
  },
  {
@@ -1093,7 +1093,7 @@
   "n_economies": 15,
   "years": "2000-2021",
   "estimator": "two-step system GMM (SYS-GMM), 3-equation system, estimated separately for 7 developed and 8 developing countries",
-  "risk_of_bias": "serious",
+  "risk_of_bias": "critical",
   "study": "Hcine et al. 2026"
  },
  {

@@ -48,5 +48,20 @@ for x in ext:
     doi = CIT[x["idx"]]["doi"] or r["doi"] or ""
     lines.append(" & ".join([refline(x["idx"], x), techs(x), n_econ(x["sample"]), esc(x["overall_risk_of_bias"]), (r"\url{https://doi.org/%s}" % doi.replace("%", r"\%").replace("#", r"\#")) if doi else "n.a."]) + r" \\")
 lines += [r"\end{longtable}", "}"]
+ns = [x for x in json.load(open(os.path.join(ROOT, "review/data/new_studies.json"))) if x["eligibility"] == "include"]
+ns.sort(key=lambda x: key(x["idx"]).lower())
+def tech2(x):
+    t = (" ".join(x["technology"]) if isinstance(x.get("technology"), list) else str(x.get("technology") or "")).lower()
+    out = [k for k, w in [("AI", "artificial|robot|\\bai\\b"), ("ICT", r"\bict\b|digital|telecom|information"), ("Mobile", "mobile|cellular"), ("Internet", "internet|broadband")] if re.search(w, t)]
+    return ", ".join(out) or "Other"
+lines += [r"{\scriptsize", r"\begin{longtable}{@{}p{7.4cm} p{1.3cm} r l p{3.4cm}@{}}",
+          r"\caption{Studies added by the supplementary searches for the analysis of income contrasts (n = %d). Columns as in Table~\ref{tab:included}.}\label{tab:included2}\\" % len(ns),
+          r"\toprule Reference & Technology & Econ. & RoB & DOI \\ \midrule \endfirsthead",
+          r"\toprule Reference & Technology & Econ. & RoB & DOI \\ \midrule \endhead", r"\bottomrule \endfoot"]
+for x in ns:
+    doi = CIT[x["idx"]]["doi"]
+    ne = re.search(r"\d+", str(x.get("n_economies") or "")); ne = ne.group(0) if ne else "n.r."
+    lines.append(" & ".join([refline(x["idx"], x), tech2(x), ne, esc(x.get("risk_of_bias") or ""), (r"\url{https://doi.org/%s}" % doi) if doi else "n.a."]) + r" \\")
+lines += [r"\end{longtable}", "}"]
 open(os.path.join(os.path.dirname(__file__), "appendix_studies.tex"), "w").write("\n".join(lines) + "\n")
 print(len(ext), "studies;", sum(1 for x in ext if not (CIT[x['idx']]['doi'] or rows[x['idx']]['doi'])), "without DOI")

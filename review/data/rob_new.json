@@ -1,0 +1,2079 @@
+[
+ {
+  "idx": "W1972440450",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Arellano-Bond GMM with own lags only; 'impact' language; no external instrument or exogeneity argument."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "PCA index of internet, broadband and mobile penetration; access rates, not quality or use intensity."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "159 countries claimed but 2000-2009 window and group regressions use only 181-258 observations in 31-49 countries."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Real GDP per capita growth from standard national accounts."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Several lag structures and income-group splits; instrument counts (17-43) reported; Hansen p-values acceptable."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Positive ICT effects emphasised; insignificant results in some groups reported but interpreted loosely."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Internal-lag GMM only with causal language; ICT penetration index; subsamples of 31-49 countries with few observations; diagnostics otherwise acceptable."
+ },
+ {
+  "idx": "W2098558680",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Dynamic panel with lagged DV and country effects; causal wording; no external instrument; investment may follow human development."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "IDC ICT spending by category (hardware, software, telecom, internal) is relevant but market-research data, not adoption."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Only 51 countries with largest ICT markets, 1994-2003, then split into high, mid, low income groups."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "HDI components are slow-moving composites; GDP index mechanically linked to income."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Many component-by-group-by-investment regressions with interactions and no preferred specification."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Significant results emphasised; exploratory framing in thesis but conclusions stated generally."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Dynamic fixed-effects model with causal framing, no strategy for reverse causation; 51 largest ICT markets, ten years, many income-group splits."
+ },
+ {
+  "idx": "W2148728397",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "GLS random effects assumes IT capital uncorrelated with country effects; no instruments; output elasticities read causally."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "IT capital stock built from IDC spending with assumed depreciation; end-use computers only, mixed hardware and software."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "36 countries with available data, 1985-1993; developing subsample small; unbalanced coverage by data."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP from Penn World Table, early vintage, with known comparability limits."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Several functional forms and sub-samples; fixed, random and between estimators reported with reasoned choice."
+   },
+   "selective_reporting": {
+    "rating": "low",
+    "why": "Robustness checks shown; insignificant developing-country results reported."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Random-effects production function treats IT capital as exogenous; 36 countries, nine years; developing-country result insignificant and fragile."
+ },
+ {
+  "idx": "W2941400825",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "R&D and energy use as instruments plausibly affect growth directly; Hansen J p=0.001-0.03 in Table 7, claimed valid."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Many ICT proxies; UN e-government indices and PCA composite do not measure a single technology."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "149 countries 1980-2015, but observations fall to 24-128 in regional or GMM samples; coverage uneven."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Standard GDP growth from World Bank data."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "OLS, pooled OLS, 2SLS, GMM across eight ICT measures and regions; no preferred model; sample sizes vary widely."
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Instrument test rejections not acknowledged; abstract says all indicators accelerate growth and results robust."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Instruments (R&D, energy use) are not credibly excluded; Hansen p-values mostly reject yet reported as valid; many indicators and estimators with 'all accelerate growth' conclusion."
+ },
+ {
+  "idx": "W2971516931",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FGLS/PCSE with no instruments or lags argued; 'effects' on human development, though development may drive ICT uptake."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "NRI usage sub-indices of individuals, business, government are composites partly built on executive survey data."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "145 countries, six samples defined by data availability; short period; unbalanced coverage."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "HDI and SPI are slow-moving composites; HDI contains income."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Six samples and several models; robustness with FE/RE and HDI components; no preferred model."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mixed results for developing countries disclosed; focus on positive global result."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Panel FGLS with causal language and no reverse-causation strategy; composite NRI usage indices and HDI/SPI outcomes; samples chosen by data availability."
+ },
+ {
+  "idx": "W3016109291",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Fixed or random effects production function; ICT treated as exogenous input; Hausman picks RE; no instruments."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT investment proxy in Cobb-Douglas form; construction and coverage across countries not fully validated."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "2007-2016; groups split by UN e-government index so subsamples are small and data driven."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita from standard sources."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Groups, combined sample and equality test reported; few alternative specifications."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Equal-elasticity test not rejected and reported; limited sensitivity analysis shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Cobb-Douglas panel regressions with random effects and no strategy for endogeneity; groups defined by EGDI; short 2007-2016 window."
+ },
+ {
+  "idx": "W3020839523",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Internal lags only; authors note reverse causation yet claim productivity effect; no external instrument."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "E-government is a weighted index of web connectivity and online services, not tied to usage or quality of services."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Unbalanced panel (972 and 287 observations in groups), subsamples by income level; availability driven."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Productivity growth is a noisy macro outcome measured with standard data."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Static and dynamic models across income groups; results sensitive (low income insignificant); no preferred model."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Significant results highlighted; low-income insignificance noted; diagnostic details limited."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "FE/RE and Arellano-Bond GMM with growth effects of e-government read causally; lagged instruments only; reverse causation acknowledged but unresolved."
+ },
+ {
+  "idx": "W3120130641",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM with internal lags; growth determinants discussed causally; Hansen p 0.32-0.39 but no external strategy."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mobile subscriptions per 100 is a single access proxy for ICT; subscriptions may exceed users."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "65 low and lower-middle income countries 2010-2017; unbalanced (e.g. 199-510 observations), data driven."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP growth from World Bank, standard."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Pooled OLS, FE, RE and GMM across groups; inconsistent significance across estimators."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mobile result insignificant and reported; limited robustness shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "System GMM with lagged internals, causal framing, mobile subscriptions only as ICT; 65 countries, eight years."
+ },
+ {
+  "idx": "W3122955663",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "System GMM with reported AR(2) and Hansen, lagged internet regressor; internal instruments only, causal wording moderated."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users per 100 captures access only; does not measure speed or use."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "163 countries over 1996-2016; 5-year or annual panel, availability-based but broad."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita growth from World Bank, standard."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "OLS, FE and system GMM compared; income interactions; some lag choices flexible."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mixed significance shown across estimators; GMM emphasised."
+   }
+  },
+  "overall": "moderate",
+  "overall_why": "System GMM with Hansen p 0.35-0.71, instrument counts reported, lagged regressors and theory; exogeneity still not established and internet measure is single penetration rate."
+ },
+ {
+  "idx": "W3160084080",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Uses own lags plus R&D and energy use as instruments; Hansen p=0.01-0.02 in several models, still called valid."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT PCA index and UN online service and e-government indices; composites not matched to emissions mechanism."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "132 countries 1980-2016; subsamples fall to 241 or 598 observations; data driven."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "CO2 emissions per capita standard, though territorial."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Pooled OLS, GMM, several ICT proxies and groups; no preferred model; instrument rejection ignored."
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Instrument rejections not discussed; conclusions about developed-country greening stated confidently."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "GMM instruments (R&D, energy use) not credibly excluded with Hansen rejections in several columns; causal 'greening through ICT' claim; heterogeneous results by group."
+ },
+ {
+  "idx": "W3162948059",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE with DK standard errors; LSDVC alternative; no instruments; technology and emissions jointly determined with income."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT proxied by mobile and internet penetration; other proxies (patents, TFP) are loose measures of technology."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "60 countries 1989-2018 in four income groups; selected by data availability."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "CO2 emissions from standard sources; consumption-based emissions not considered."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Six technology proxies by four income groups with mixed signs; no preferred specification."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mixed and insignificant results shown; ICT stressed in abstract."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Fixed effects with Driscoll-Kraay SE and causal reading of ICT effects on emissions; no strategy for reverse causation; six technology proxies produce mixed results."
+ },
+ {
+  "idx": "W3197991184",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "FE/RE with lagged regressor and association language; simultaneity acknowledged, no instrument."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Ookla median mobile download speed is a technology-specific measure but crowdsourced tests, unrepresentative of users."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "116 countries over 2014-2019, unbalanced; very short T limits FE and lag inference."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Labour productivity (GDP per worker) standard but modest quality for some countries."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "No contemporaneous effect; lagged result chosen; significance at 3.7% and 0.9% for FE and RE."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Null contemporaneous result reported; emphasis on lagged significant result."
+   }
+  },
+  "overall": "moderate",
+  "overall_why": "FE/RE panel with lagged speed and associational wording, short window and no instruments; modest magnitudes and simultaneity acknowledged."
+ },
+ {
+  "idx": "W3210746443",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Arellano-Bond GMM, Sargan p 0.999-1.000 with 77 instruments indicates proliferation; causal conclusions."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "ICT Development Index is a composite with access, use and skills, not matched to environmental pathways."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Income groups 2005-2019 by availability; small groups; balanced status unclear."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Five environmental outcomes from standard sources, mixed quality across income groups."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Five models by three groups, sign differences across outcomes."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Sargan reported as validating instruments; positive results emphasised."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "GMM with Sargan p=0.9991-1.0000 and 77 instruments signals proliferation; causal claim on ICT and emissions; IDI composite."
+ },
+ {
+  "idx": "W4226051916",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Granger causality and VECM read as causal ('stimulate'); no exogenous variation, short time dimension."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT infrastructure index of mobile, internet and broadband; composite access measure."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "2005-2019 developing countries, unbalanced by data; few cross-sections for panel cointegration."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Institutional quality index and growth; constructed WGI indices."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Multiple tests and models; some alternative estimates not shown."
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Robustness estimates 'available on request'; headline long-run results only."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "VECM and Granger causality labelled as stimulating growth; short T, developing-country sample; estimates 'on request'; composite institutional and ICT indices."
+ },
+ {
+  "idx": "W4249502513",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Granger predictability read as causality; lag-dependent results; no exogenous variation."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT expenditure share from WITSA type data; spending is an input measure."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "70 countries 2003-2008 (T=6); low-income group dropped for lack of observations."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP growth per capita from standard sources, short window."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Causality direction changes with lag length and income group; no preferred lag."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mixed results shown across groups; limited sensitivity reporting."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Pairwise panel Granger tests with six annual observations; low-income group dropped; ICT expenditure only; direction of causality unstable across lags."
+ },
+ {
+  "idx": "W4251100442",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM with lagged internals; 'ICT adoption drives productivity'; no external instrument."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mobile broadband prices and penetration; adoption measures limited to access."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "89 countries, 2009-2015 short window; groups split by GNI per capita."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Labour productivity from standard sources."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Groups, price and ICT variables; Sargan reported; instrument count reported."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Insignificant developing result reported; high-income success emphasised."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Two-step system GMM with Sargan and 42 instruments among 89 countries, causal 'drives' language, seven-year window, insignificant developing-country effect."
+ },
+ {
+  "idx": "W4285743969",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE regressions and Granger tests; bidirectional causality between Internet and access found; no instrument."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users per 100 as access measure."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Unbalanced panels of 83 countries with 272 observations for inequality; selection by HEAT data availability."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Health inequality from survey-based HEAT; infrequent surveys, differing across countries."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Several outcomes and robustness subsamples; pooled OLS check."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mostly significant effects reported; robustness shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Fixed-effects country panel with causal Internet-to-health claims; bidirectional causality admitted; only 272 observations for inequality outcome."
+ },
+ {
+  "idx": "W4312177950",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM with internal instruments; PMG imposes long-run homogeneity; Hansen p=0.994 in a model."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users and broadband subscriptions; access measures only."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Balanced panels 2002-2020 of advanced and developing economies; availability-based selection."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Gini coefficient from SWIID-type data, imputed for many countries."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "GMM and PMG with controls changing across tables; U-shape claim."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Opposite effects by group reported; diagnostics partly shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "System GMM and PMG with causal inequality claims; Hansen near 1 in some models; internet and broadband proxies for digitalization."
+ },
+ {
+  "idx": "W4353041393",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "RE-IV2SLS uses model variables as instruments (EC2SLS); exclusion unargued; PSCC-FE assumes exogeneity."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT proxied by internet or mobile penetration; standard access."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "81 EAP and ECA countries 2010-2019, unbalanced; excludes countries with missing data."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita growth from World Bank."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "PSCC-FE and RE-IV2SLS across regions and income groups; interactions."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Leapfrogging evidence selective; limited reporting of diagnostics."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Panel FE and RE-IV2SLS with leapfrogging claims; instruments internal to the model; unbalanced 81-country sample with 10 years."
+ },
+ {
+  "idx": "W4365150476",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM, internal instruments (count equals groups); causal inequality claims; Hansen p=0.72-0.81."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users and fixed broadband as digitalisation proxies."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "30 developed and 35 developing countries 2002-2019; groups by availability."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Gini coefficient with imputed data for many countries."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Six governance variants, one at a time; interactions differ by group."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All main digitalisation estimates significant; weak diagnostics detail."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "System GMM with 30 instruments for 30 countries and causal claims on FDI and digitalisation; Hansen acceptable; short groups."
+ },
+ {
+  "idx": "W4382619307",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE with outcome lead by one year; endogeneity admitted as a limitation; no instruments."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Gig economy proxied by self-employed share of employment, which does not measure platform work."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "185 countries, 5,030 observations 1990-2019; unbalanced; missing excluded."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Total GHG, CO2, methane, nitrous oxide from Climate Watch; aggregated kt not per capita."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Four outcomes, income-group splits; controls limited."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Most digitalisation effects significant and consistent; mixed results across emissions."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "FE regressions with causal claims; gig economy measured by self-employment share; endogeneity acknowledged but untreated; 185 countries."
+ },
+ {
+  "idx": "W4387394504",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM with internal instruments; Sargan p=0.00 and 0.03 reject validity; no external instrument."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Secure servers, internet users, fixed broadband and fixed telephones; access measures."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "30 LICs and 82 HICs after dropping missing-data countries; low-income sample small."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita growth from World Bank."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "OLS, FE and GMM split by income; instrument rejection ignored; many ICT indicators."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Positive ICT effects highlighted; failed tests inadequately addressed."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "System GMM with Sargan p=0.00-0.03 rejecting instruments, causal language, selection by data availability."
+ },
+ {
+  "idx": "W4391539292",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FMOLS/DOLS long-run coefficients read as causal; no instruments; endogeneity not addressed."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Internet users, ICT goods exports (openness) and R&D share are proxies that do not capture digital economy."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "48 countries selected by religion and split into four regions; small subsamples."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP growth from standard sources."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Region-wise DOLS and FMOLS with Kao test; unit root assumptions weak for T=22."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Region differences emphasised; limited robustness."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "FMOLS/DOLS cointegration on 48 Muslim-majority countries in four regions; proxies do not capture digitalisation; no identification."
+ },
+ {
+  "idx": "W4391760486",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM, internal instruments, 61 instruments for 65 countries; Sargan p=0.000-0.008 in some models."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT via mobile or internet measures; access only."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "65 middle-income countries 2000-2021 split by income; availability-driven."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "CO2 and growth outcomes from standard sources."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Two outcomes, groups and controls vary across tables."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Sargan rejection reported but conclusions stay firm."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Two-step system GMM with instrument count 61 for 65 groups and Sargan rejections; causal conclusions on ICT and emissions."
+ },
+ {
+  "idx": "W4392342747",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Threshold panel regressions with endogeneity tests but no strategy; ICT and CO2 jointly determined by income."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT index composite; threshold value of 64,469 suggests scaling problems."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "24 high-income and 30 middle-income countries 1995-2019; data-driven."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Informal economy estimates are model-based; CO2 standard."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "FE, RE, AMG, DOLS and thresholds; unexplained thresholds; inconsistent signs across groups."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Data available on request; limited diagnostics reported."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "FE/RE and threshold panel with informal-sector estimates and implausible threshold scale; endogeneity not resolved; data 'on request'."
+ },
+ {
+  "idx": "W4398139202",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "IV-2SLS with international bandwidth, F>10; exclusion argued only by 'no direct effect' regression."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT development index composite; scope broader than infrastructure."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "65 countries 2007-2019; selected by data availability; 845 observations."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GTFP constructed by window DEA with undesirable outputs; sensitive to specification."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Spatial weights, threshold models, income groups; several variants."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Robustness and mechanism tests reported; mostly positive results."
+   }
+  },
+  "overall": "moderate",
+  "overall_why": "Spatial Durbin with international bandwidth as instrument and standard robustness; DEA-constructed GTFP and composite ICT index, but 65 countries and instrument exclusion debatable."
+ },
+ {
+  "idx": "W4401400262",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "GMM with lagged internals; reverse causality acknowledged; no external instrument."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT skills measure not a direct technology exposure; survey-based."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "61 countries in three income groups, 2010-2021; education quality available for few countries."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP growth from standard sources."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Interaction terms and income groups; instrument details limited."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Positive results across groups; limited failure reporting."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "GMM with lagged instruments for education and ICT skills, causal language; 61 countries 2010-2021, test score data limited."
+ },
+ {
+  "idx": "W4402708095",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "RE panel on STIRPAT form; no instruments; 'reduce emissions' causal claim."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Composite digital economy index with unclear scope."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "8 high-income and 8 upper-middle-income countries; 168-171 observations, data driven."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Agricultural CO2 intensity from FAO data."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "RE chosen by Hausman p=0.12; overall R2 0.02-0.13; limited robustness."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Limited diagnostics shown; results across two groups only."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Random effects on 16 countries with causal wording; tiny sample, no endogeneity strategy; very low overall R2."
+ },
+ {
+  "idx": "W4404639180",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "OLS/REM with no instruments; ICT, FDI, finance and growth jointly determined; causal wording."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT penetration index; scope unclear."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "20 APEC economies, 2000-2020; 400 observations."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP growth standard."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Abstract says OLS, methods say REM with Hausman significant for some groups; unexplained negative ICT sign."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Negative and insignificant results are reported; limited robustness."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Pooled OLS/REM with unclear estimator choice and unexplained negative ICT sign; 20 APEC economies; causal language."
+ },
+ {
+  "idx": "W4408908809",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE/RE with no instruments; digitalisation and growth plausibly co-determined."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet use, fixed broadband and mobile subscriptions."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "EU 2001-2022 versus six BRICS-T countries 2003-2021; BRICS-T group tiny."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP growth from World Bank."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Different estimators in each group chosen by Hausman; few robustness checks."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Differences across groups highlighted; limited sensitivity."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "FE for EU, RE for BRICS-T with six countries; no endogeneity strategy; causal 'influence' of digitalisation."
+ },
+ {
+  "idx": "W4409688222",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE with sequential mediation; endogeneity not addressed; 'significantly enhances'."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Self-built composite digital economy index; scope and weights not validated."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "82 countries; period and balance not stated."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "High-skilled employment from ILO modelled estimates."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Mediation, heterogeneity and robustness tests; low R2 0.04-0.55."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mediated effects not tested formally; positive results throughout."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Panel FE with mediation by sequential regressions and self-constructed digital economy index; causal language and exogenous mediators."
+ },
+ {
+  "idx": "W4409844012",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "No identification strategy described; causal policy claims."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "ICT share of exports or imports is trade composition, not technology adoption."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "82 countries 1996-2019 stated; panel balance and selection not described."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "TFP growth from Penn World Table; no concerns beyond usual."
+   },
+   "specification_researcher_df": {
+    "rating": "critical",
+    "why": "Estimator and tables not clearly described; text appears pasted from unrelated studies; incoherent method section."
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Missing or unclear results tables; claims not traceable to estimates."
+   }
+  },
+  "overall": "critical",
+  "overall_why": "Estimator not stated, text mixes unrelated globalisation and banking passages; ICT trade share proxy; conclusions cannot be trusted from this design."
+ },
+ {
+  "idx": "W4410348556",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Pooled OLS with dummies; no controls or identification; causal policy conclusions."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mobile and internet penetration standard; account ownership available only in survey waves."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "1994-2022 claimed but account ownership exists in few waves; unbalanced; classification by economy type."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP growth from World Bank."
+   },
+   "specification_researcher_df": {
+    "rating": "critical",
+    "why": "No control variables beyond the key regressors; inconsistent windows; results largely from correlation."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Significance emphasised; limited diagnostics."
+   }
+  },
+  "overall": "critical",
+  "overall_why": "Pooled OLS on GDP growth with no controls and sparse financial inclusion data; correlation-based conclusions cannot be trusted."
+ },
+ {
+  "idx": "W4413883965",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Individual probit with region/country FE; internet access self-selected, no instrument or timing; \"could mitigate\" implies causality."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Self-reported individual internet access, a standard but coarse measure of digitalisation."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "123 countries, one wave (2021); subsamples drop to 611-4,924 respondents."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Self-reported reasons for not having an account, conditional on being unbanked; classification of voluntary/involuntary is judgemental."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Several models with differing FE and AIC comparisons; marginal effects fairly consistent."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Internet effect small and significant in most columns; limited discussion of non-significant subgroups."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Single-year Findex cross-section; no strategy for self-selection into internet use; causal-sounding mitigation claims."
+ },
+ {
+  "idx": "W4415102937",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Two-way FE with causal language; IV with historical telephony is asserted to handle reverse causality but no first stage or tests shown."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Composite digital infrastructure index of unclear construction and weights; one-SD effect of 2.85 pp growth is implausibly large."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "65 BRI countries, 2013-2023, balanced; selection by programme membership."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Per capita GDP growth, standard WDI outcome."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Heterogeneity by income tier only; spatial weights and lags not clearly justified."
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "IV estimates claimed but not tabulated; only headline FE tables shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Causal growth claim from FE spatial panel; IV mentioned but never reported; composite infrastructure index; 65 BRI countries."
+ },
+ {
+  "idx": "W4416938886",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Panel DSVAR impulse responses described only verbally; no identification strategy, ordering or lag choice shown."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Digital economy measures unspecified in the text; composite EPI/HDI proxies for sustainability."
+   },
+   "selection_of_countries_years": {
+    "rating": "critical",
+    "why": "No sample of countries, years or N reported; developed/developing split undefined."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "EPI and HDI are constructed indices; EPI methodology changes across editions."
+   },
+   "specification_researcher_df": {
+    "rating": "critical",
+    "why": "No specification, diagnostics or robustness reported."
+   },
+   "selective_reporting": {
+    "rating": "critical",
+    "why": "No tables or coefficients; only narrative claims of positive and significant effects."
+   }
+  },
+  "overall": "critical",
+  "overall_why": "No data, sample, variable construction, model details or results tables; conclusions unverifiable."
+ },
+ {
+  "idx": "W7135239303",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Pooled panel regression of Gini on ICT prices with GDP, urbanisation, literacy; no FE, instrument or timing; causal framing."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "ICT price baskets measure affordability, not the digital divide; results flip sign across income groups with no explanation."
+   },
+   "selection_of_countries_years": {
+    "rating": "critical",
+    "why": "Text says 142 and 169 countries, 2018-2023; table reports 152 observations; subgroup samples tiny."
+   },
+   "outcome_measurement": {
+    "rating": "critical",
+    "why": "Gini variable has min 0 and max 2905, impossible for a 0-100 index; linear interpolation of Gini over six years."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Subgroup models with unexplained sign changes (e.g. +525 vs -407 on same variable); many ad hoc specifications."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mixed significance shown, but few tables and no robustness checks."
+   }
+  },
+  "overall": "critical",
+  "overall_why": "Gini ranges 0-2905 and sample counts conflict (142/169 countries, 152 obs); heavy interpolation; no FE or endogeneity handling."
+ },
+ {
+  "idx": "W7159622763",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Pooled (median) QR with no country effects, instruments or lags; AI innovation and growth plausibly jointly determined."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "AI innovation measured by AI patent applications, which captures invention not adoption; author concedes actual AI use data are unavailable."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "50 countries chosen on AI-patent data availability, 2000-2020; observations vary from 134 to 1,050 across variables."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP growth from WDI."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Many quantile x interaction x subsample models with no preferred specification; sign flips by interaction and tail."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Full results by quantile reported, but selective emphasis on significant tails in abstract."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Pooled quantile regressions without FE or identification; AI patents proxy; data-availability selection; causal language."
+ },
+ {
+  "idx": "W7160162353",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Country and year FE only; authors admit policy endogeneity; short-run sign is positive in inequality yet conclusions imply benefits."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Composite digital readiness index mixing infrastructure and other pillars; scope broader than digital technology use."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Twelve hand-picked economies, 2005-2024; text calls panel balanced and later unbalanced; 12 clusters for SE."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Standard Gini inequality measure, but sparse and varying across sources."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "FE plus clustering and ML groupings used descriptively; clustering results not tied to inference."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Mixed and insignificant results are reported, but weak limitations on small N."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Twelve-country FE panel with composite readiness index; causal policy claims despite acknowledged endogeneity; few clusters."
+ },
+ {
+  "idx": "W7160252636",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE with sys-GMM on only four waves (2011-2021, unequal gaps); internal lags are weak and the growth horizon unclear."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Female digital financial usage index (Tripathi & Rajeev) is constructed from Findex items; reasonable scope."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "Four unevenly spaced waves; 304-408 observations of 104 countries; unbalanced; subsamples of 42 and 62."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita growth."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Different controls across tables; FE and GMM signs differ for some covariates (e.g. FDI)."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Main coefficients significant in most columns; some insignificant results shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Four survey waves; FE and system GMM with constructed female digital finance index; causal growth claims; few time points."
+ },
+ {
+  "idx": "W7162212432",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM with internal lags and 24 instruments on 200 observations of 67 countries; \"robust to endogeneity\" claim is overstated."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Digital financial inclusion index built from Findex-type indicators; coverage uneven."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "67 countries 2011-2021 reduced to 200 observations (of ~737); survey-wave gaps; selection by data availability."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per capita growth."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "FE and GMM reported; headline 0.68 pp per 10 points quoted from preferred model without clear reasons."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Hansen p 0.42; no instrument sensitivity or alternative lag sets shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Causal growth claim from FE and system GMM; only 200 usable GMM observations from 67 countries; index construction opaque."
+ },
+ {
+  "idx": "W7164812097",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "2SLS with AI research funding and infrastructure as instruments; funding plausibly affects productivity directly; F=18.45 identical across outcomes."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "AI adoption index source and construction unclear; firm- and country-level mixing with 50,000 firms drawn on availability."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "85 countries 2010-2024 yet N=1,190 (of 1,275); firm sample selected on availability of AI indicators."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Employment, productivity and sustainable growth from WB/IMF/OECD; sustainable growth poorly defined."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Same N and first-stage F for all three outcomes; large coefficients (0.54) not discussed for plausibility."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Only headline FE/IV tables; no overidentification test shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Causal AI claims; IV (AI research funding) has doubtful exclusion; identical N and F across outcomes; opaque AI measure."
+ },
+ {
+  "idx": "W7164991405",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Hierarchical OLS on country means 2015-2023; no temporal ordering; authors concede ecological fallacy and unmeasured confounding."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Individuals using the internet, standard but with no content or usage-quality information."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Countries with complete WDI/WHO data; collapse of nine years to means."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Suicide mortality from WHO modelled estimates; underreporting and misclassification differ by country and income."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Blocks of controls entered hierarchically; high collinearity among development indicators."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Associational language and limitations stated; some coefficient signs shift with controls."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Ecological country-mean cross-section of suicide mortality on internet use; unmeasured confounding and model-based outcome data."
+ },
+ {
+  "idx": "W7169727400",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "Country FE with Dumitrescu-Hurlin Granger test gives timing information; no instrument; language is mostly associational."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Individuals using the internet, a standard penetration measure."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "19 G20 countries, 1998-2023, balanced; heavy selectivity and only 19 clusters."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP per person employed, constant PPP."
+   },
+   "specification_researcher_df": {
+    "rating": "low",
+    "why": "Diagnostic-driven strategy; development-stage split pre-declared."
+   },
+   "selective_reporting": {
+    "rating": "low",
+    "why": "Full results and diagnostics shown, including non-significant ones."
+   }
+  },
+  "overall": "moderate",
+  "overall_why": "Standard G20 panel with cluster-robust FE and Granger tests; careful associational framing; small N and exogeneity not established."
+ },
+ {
+  "idx": "W7170037884",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Two-step system GMM only; Sargan p 0.93-0.98 in several models and instruments close to number of groups indicate weak diagnostics."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Digitalisation index components not clearly tied to the production function; indices composite."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "77 countries in three income groups, 2005-2022; subgroup sizes small."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP growth from standard sources."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Nine models by group with differing instrument sets; no preferred model."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Diagnostics reported; not-significant digital coefficients are discussed only briefly."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "System GMM with instrument counts near group numbers and Sargan p-values up to 0.98; causal digital transformation claims."
+ },
+ {
+  "idx": "W7172027325",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Cross-sectional OLS (HC3) of enrollment on connectivity; income, education spending and history are omitted confounders; reverse causality unaddressed."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users, fixed broadband and mobile subscriptions as separate access indicators."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "163 countries after listwise deletion; Gini subsample 132; low-income n=15."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Gross tertiary enrollment is standard but can exceed 100 and mixes ages."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Several interaction models and nonparametric tests; relations described as predictive."
+   },
+   "selective_reporting": {
+    "rating": "low",
+    "why": "Limitations stated; all models shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Single-period cross-sectional OLS with few controls; connectivity-tertiary enrollment association with no strategy for confounding."
+ },
+ {
+  "idx": "W7201855904",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "NRI-growth regression with income dummies; estimator, FE and controls unclear; no handling of reverse causation."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "NRI is a broad composite of 46 indicators covering policy, skills and impact, not digital technology adoption."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "105 of 133 countries retained by data completeness; 2019-2023 includes COVID shock; only 5 low-income countries."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP growth in COVID years is highly volatile."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Estimator not stated; income interactions and sub-index choices not justified."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Descriptive results emphasised; limited robustness reported."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Five-year Networked Readiness Index panel with unstated estimator; composite NRI; only five low-income countries."
+ },
+ {
+  "idx": "W7215754101",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Pooled OLS and country FE with cluster SEs; internet penetration treated as exogenous to inequality."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users share, a standard but coarse measure."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Unbalanced panel of 58 countries, 2000-2022, selected by data availability."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Gini series heavily interpolated; the effect is insignificant with only observed Gini values (N=918)."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Several checks; outlier exclusion flips internet coefficient to ns."
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Abstract reports \"robust support\" despite non-robust checks."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "FE panel for Gini/Kuznets with internet interaction; internet effect disappears when only original Gini used, yet claims robust support."
+ },
+ {
+  "idx": "W7217038945",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FMOLS/DOLS are claimed to remove endogeneity, which they only address for cointegrated regressors; causal ICT effect on CO2 asserted."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Fixed telephone, fixed broadband, mobile subscriptions per 100, standard penetration rates."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Asian economies in three income groups, 1990-2016; N=452 and period limited by CO2 data."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "CO2 emissions per capita, standard series."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Separate income-group models and FMOLS/DOLS comparison; EKC turning points vary."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "All main tables shown; selective emphasis on EKC-consistent results."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Asian EKC with FMOLS/DOLS and causal ICT language; no exogenous variation; ICT measures are access counts."
+ },
+ {
+  "idx": "W7217121394",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "System GMM with internal instruments (70/25/19) and acceptable Hansen/AR(2); instruments not argued as excluded; causal language."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users, mobile and broadband penetration separately entered; standard."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "127 countries 2000-2022 unbalanced; developed/developing split."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "SWIID Gini of disposable income is modelled and imputed for many country-years."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Pooled OLS, FE, RE and GMM reported with consistent signs; control sets mostly similar."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Significant ICT effects emphasised; limited discussion of weaker groups."
+   }
+  },
+  "overall": "moderate",
+  "overall_why": "Standard system GMM with Hansen p 0.22-0.83 and instruments below groups; causal language but diagnostics acceptable."
+ },
+ {
+  "idx": "W7218066295",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE with robust SE; internet use and remittances plausibly endogenous to GDP; no lags or instruments."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet users per 100, standard."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "81 countries in two income groups, 1999-2023; only high- and upper-middle-income."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP level (standardised) rather than growth; trending series with no unit-root treatment."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "FE vs RE with Hausman; heteroskedasticity detected, no dynamic checks."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Both income groups shown; limited robustness."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Static FE of GDP on internet use, remittances and tax with causal language; no strategy for endogeneity; standardised variables."
+ },
+ {
+  "idx": "W7221167514",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE/RE and multiple regression of growth on analytics capability; reverse causation and omitted institutions unaddressed."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Data science and business analytics have no standard country-level series; mixed survey, enterprise and composite indicators."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "156 countries, 2,964 observations; 97.8% completeness and 93.6% retention are implausibly high for such indicators."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Growth, productivity and innovation from standard sources, but multiple outcomes with mixed sector data."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Many models and subgroup splits with no preferred specification; large standardised effects."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Descriptive and correlation tables shown; selection of significant subgroup results."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Cross-country \"data science\" capability measure is undefined and survey-based; implausibly complete data; causal growth claims."
+ },
+ {
+  "idx": "W7223156715",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "TWFE with Oster-type bound and 2SLS using 2000 landlines x global broadband; exclusion is arguable but a real strategy."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Digital economy index covers infrastructure, industry and innovation components matching the concept, but weights are subjective."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "53 countries chosen on data availability, 2010-2022."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Innovation-chain and industry-chain convergence index is constructed (coupling-type) and not validated."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Mediation, threshold and IV analyses added; some steps (mediation) rest on exogeneity."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Robustness tables shown; mediation steps sparsely tested."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Constructed outcome and composite exposure indices; IV via historical landlines is arguable; TWFE otherwise standard."
+ },
+ {
+  "idx": "W7224127539",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "OLS by tier and 2SLS using late-1990s fixed-line density, which relates to income and institutions that affect inequality directly."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "AI Adoption Index source and construction not documented; likely composite proxy."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "95 nations with complete data; subsamples by development tier of unknown size."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "National Gini post-tax/transfer from secondary sources; coverage differs."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Chow tests and interactions across tiers with no reported N, first-stage statistics or preferred model."
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Narrative reporting; almost no tables or coefficients."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Cross-section of 95 nations; OLS and 2SLS with historical telephone density (exclusion implausible); no result tables."
+ },
+ {
+  "idx": "W7235618078",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM with internal instruments and an FD x DI interaction treated as endogenous; no external instrument; causal claims."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Digital infrastructure index composite and financial development index constructed from several indicators."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Developing and high-income groups; panel selected on data availability."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Labour productivity (GDP per worker), standard."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Interaction models with several controls; unit-root tests inconsistent with GMM requirement."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Diagnostics said to be satisfactory without full detail of instrument counts."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Two-step system GMM with interaction; causal productivity claims; diagnostics described but instruments limited; composite digital index."
+ },
+ {
+  "idx": "W3037677780",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Two-step system GMM with Hansen p 0.88-0.94 suggests instrument proliferation in small income-group samples; internal lags only."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Digital inclusion is a min-max composite of access indicators; scope matches only access."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "83 countries over 8 years; income-group subsamples small; panel selected by availability."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Inclusive growth index constructed from min-max normalisation and arbitrary weights."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Separate models by income groups; indices combined in different ways."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Diagnostics shown; limited sensitivity."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "System GMM on 83 countries 2010-2017 split by income; Hansen p about 0.9; constructed indices for inclusive growth and digital inclusion."
+ },
+ {
+  "idx": "W4391261834",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "moderate",
+    "why": "Sys-GMM with internal lags, 48 instruments (close to 59 developed groups), Hansen p 0.25-0.77; causal language."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "New mobile broadband and bandwidth measures capture quality, not only penetration, though coverage is limited."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "180 countries, 2010-2017, split into 121 and 59; 8-year window."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "HDI is a constructed, smooth index containing income, which overlaps with controls."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Several alternative ICT measures; controls consistent across models."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Significant results emphasised; diagnostics are shown."
+   }
+  },
+  "overall": "moderate",
+  "overall_why": "Two-step system GMM with HDI lag; 48 instruments and Hansen p 0.25-0.77; reasonable but internal instruments and HDI outcome limit inference."
+ },
+ {
+  "idx": "W4405947039",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Sys-GMM and IV-GMM with internal instruments; COVID cases and deaths and ICT intensity plausibly endogenous; causal \"mitigation\" claim."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "UNCTAD ICT index of broadband, mobile and servers; composite, with penetration focus."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "100 countries, 2017-2022; only three pandemic years; split developing 40 / developed 60 on ICT intensity."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "GDP growth in pandemic years; reported COVID cases and deaths differ greatly in measurement quality."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Interactions and subsamples; Hansen p 0.18-0.29."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Diagnostics shown; focus on significant mitigation effects."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "COVID-period GMM with 2017-2022 data, endogenous case counts and composite ICT index; causal resilience claim."
+ },
+ {
+  "idx": "W7154603549",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Cross-section OLS with GDPpc, economic freedom and density only; no timing or instrument; reverse causality unaddressed."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Global digitalisation index composite not specific to technology use; relation to SDG outcomes confounded by development."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "75 countries chosen on data availability; n=72 for some models; income splits at USD 20,000 with small groups."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "SDG sustainability index and innovation indices are composite and partly mechanically related to income."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Split by arbitrary GDP threshold; effects significant in full but not in subsamples."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Subsample non-significance is shown; no robustness tables."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Cross-sectional OLS on 75 countries with four regressors; composite digitalisation index; subgroup nonsignificance; causal framing."
+ },
+ {
+  "idx": "W7220417523",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "System GMM on 15 countries, internal lags; causal pathways claimed from 7 and 8 country groups."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "ICT imports as digital economy proxy; trade proxies do not capture digitalisation."
+   },
+   "selection_of_countries_years": {
+    "rating": "critical",
+    "why": "7 developed and 8 developing countries, 2000-2021; number of groups too small for GMM."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Industrial employment and CO2 emissions; standard series."
+   },
+   "specification_researcher_df": {
+    "rating": "critical",
+    "why": "Table reports 35/38 instruments against 7/8 groups but ticks \"instruments < groups\"; internally inconsistent diagnostics."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Diagnostics table presented, but contradictory."
+   }
+  },
+  "overall": "critical",
+  "overall_why": "Seven and eight countries with system GMM; instruments (35, 38) exceed groups yet reported as fewer; three-equation causal claims untrustworthy."
+ },
+ {
+  "idx": "W4292097993",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Two-step Sys-GMM only; Sargan p 0.97-0.98 in some columns and no instrument count reduction; causal language."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Internet and mobile penetration per 100; standard."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "86 countries, 2005-2020; unbalanced."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Poverty headcount and Gini are sparse series, heavily interpolated."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Linear, nonlinear and synergy models; few consistent signs."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Many insignificant coefficients reported; text highlights favourable ones."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "System GMM on poverty and Gini with Sargan p up to 0.98; causal technology claims; interpolated outcomes."
+ },
+ {
+  "idx": "W4409497942",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "GMM with internal instruments (AR2 0.41-0.54, Hansen 0.14-0.15); estimator type unlabelled; causal language."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Composite digital economy index across components; may not match scope."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "98 countries, 2000-2020, matched across databases; missing values interpolated."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Inclusive green TFP constructed with SBM-type method with interpolated inputs."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Mediation and moderation steps added without a preferred specification."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Full tables shown; GMM type unspecified."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "GMM on constructed growth outcome with composite digital index and interpolated data; causal claims and moderate diagnostics."
+ },
+ {
+  "idx": "W4414941228",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE with year effects; digital divide treated as exogenous; U-shape and causal mediation claims."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "IDI-based indicators of first and second digital divide are composites with limited cross-country comparability."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "97 countries over 2008-2016; short window and unbalanced panel selected by data availability."
+   },
+   "outcome_measurement": {
+    "rating": "serious",
+    "why": "Gini series sparse and partly interpolated across countries."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Nonlinear models, mediation and moderation tables with limited justification of controls."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Robust SEs only; several effects insignificant."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "FE quadratic for Gini on digital divide indices; short 2008-2016 window and constructed indices; U-shape asserted without identification."
+ },
+ {
+  "idx": "W2977406034",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FMOLS/DOLS and PMG claimed free of endogeneity; no exogenous variation; ICT-CO2 relations differ by region."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "Mobile, fixed telephone and internet penetration per 100; standard."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Several regional panels; countries chosen on availability and unit-root feasibility."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "CO2 emissions per capita, standard series."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Multiple estimators, EKC models by country and region; sign flips across estimators."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Many results shown; interpretation emphasises favourable ICT effects."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Cross-regional ICT-energy-CO2 using FMOLS/DOLS and Driscoll-Kraay; causal ICT claims; mixed signs."
+ },
+ {
+  "idx": "W4378639118",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "FE/RE with Hausman selection; digitalisation treated as exogenous to the gender gap; causal language."
+   },
+   "exposure_measurement": {
+    "rating": "serious",
+    "why": "Composite digitalisation index with different components; scope not specific."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "G20 only, 2006-2021; around 20 countries."
+   },
+   "outcome_measurement": {
+    "rating": "moderate",
+    "why": "Gender gap in labour force participation from ILO modelled estimates."
+   },
+   "specification_researcher_df": {
+    "rating": "moderate",
+    "why": "Interactions and sector regressions; model type switches by Hausman test."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Several models shown; interaction results mixed."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "G20 FE/RE with Driscoll-Kraay SEs; causal gender-gap claims with a composite digitalisation index and only 20 countries."
+ },
+ {
+  "idx": "W4317496767",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "Pooled OLS and panel QR with lagged DV and no country FE; ICT and institutions endogenous."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT proxies at country level; penetration rates."
+   },
+   "selection_of_countries_years": {
+    "rating": "moderate",
+    "why": "Panel of 86 countries selected on data availability; non-normal distributions."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "Per capita CO2 and energy intensity from standard sources."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Absolute and conditional convergence, quantile estimates, and varying variable sets with no preferred model."
+   },
+   "selective_reporting": {
+    "rating": "moderate",
+    "why": "Several quantile estimates shown; selection of significant ones in text."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "Beta-convergence with pooled OLS and lagged DV plus quantile regression; no FE or identification; causal ICT claims."
+ },
+ {
+  "idx": "W2738229271",
+  "domains": {
+   "confounding_reverse_causation": {
+    "rating": "serious",
+    "why": "PMG assumes long-run homogeneity and exogenous regressors; reverse causality unaddressed; causal language."
+   },
+   "exposure_measurement": {
+    "rating": "moderate",
+    "why": "ICT index from several components; coarse."
+   },
+   "selection_of_countries_years": {
+    "rating": "serious",
+    "why": "SSA income groups with small N and short T, selected by data availability."
+   },
+   "outcome_measurement": {
+    "rating": "low",
+    "why": "GDP growth, standard series."
+   },
+   "specification_researcher_df": {
+    "rating": "serious",
+    "why": "Linear and nonlinear models with lag orders varied until coefficients stable; large coefficients at some lag systems."
+   },
+   "selective_reporting": {
+    "rating": "serious",
+    "why": "Cross-dependence, unit-root and alternative-lag results \"available upon request\"; not shown."
+   }
+  },
+  "overall": "serious",
+  "overall_why": "SSA PMG ARDL with many results \"available on request\"; long-run homogeneity and short T; causal ICT claims."
+ }
+]
