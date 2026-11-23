@@ -460,5 +460,16 @@
   "poorer": "low-income and lower-middle-income countries",
   "d": 0.2003,
   "se": 0.0799
+ },
+ {
+  "idx": "W4378639118",
+  "study": "Yin et al. 2023",
+  "family": 3,
+  "design": "split-sample",
+  "comparison": "WB income groups",
+  "richer": "high-income",
+  "poorer": "lower-middle-income",
+  "d": 0.2749,
+  "se": 0.1116
  }
 ]

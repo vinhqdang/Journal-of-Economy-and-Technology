@@ -1187,5 +1187,51 @@
   "estimator": "two-way fixed effects (Table 7); 2SLS IV robustness (Table 8) not coded",
   "risk_of_bias": "moderate",
   "study": "Pala et al. 2026"
+ },
+ {
+  "idx": "W4401436137",
+  "title": "Information technology and outbound tourism: A cross\u2010country analysis",
+  "eligibility": "exclude",
+  "code": "E3",
+  "stream": null,
+  "technology": "Internet and mobile phone usage",
+  "families": null,
+  "n_economies": 126,
+  "years": "2000-2017",
+  "estimator": "pooled OLS, FGLS, PCSE, two-step system GMM (dynamic)",
+  "risk_of_bias": null,
+  "study": "Nguyen et al. 2024"
+ },
+ {
+  "idx": "W2977406034",
+  "title": "Towards cross\u2010regional sustainable development: The nexus between information and communication technology, energy consumption, and CO 2 emissions",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "ICT: fixed telephone and mobile cellular subscriptions",
+  "families": [
+   6
+  ],
+  "n_economies": 73,
+  "years": "1990-2015",
+  "estimator": "Driscoll-Kraay regression; pooled weighted FMOLS; weighted DOLS (panel cointegration, country-specific EKC models)",
+  "risk_of_bias": "serious",
+  "study": "Khan et al. 2019"
+ },
+ {
+  "idx": "W4378639118",
+  "title": "Toward sustainable development: Does digitalization narrow the gender gap in the labor market?",
+  "eligibility": "include",
+  "code": null,
+  "stream": "H",
+  "technology": "digitalization: Internet penetration, mobile cellular, fixed broadband (and interactions with trade and FDI)",
+  "families": [
+   3
+  ],
+  "n_economies": 19,
+  "years": "2006-2021",
+  "estimator": "FE or RE (Hausman-selected) with Driscoll-Kraay SE",
+  "risk_of_bias": "serious",
+  "study": "Yin et al. 2023"
  }
 ]
