@@ -4,24 +4,24 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 
 ## A. Included studies (18)
 
-- [A-1192] Moolio et al. 2026. The Digital Maturity Paradox: The Divergent Impact of Network Readiness and FDI Across Development Tiers. Economies. https://doi.org/10.3390/economies14080320
+- [A-1192] Moolio et al. 2026. The Digital Maturity Paradox: The Divergent Impact of Network Readiness and FDI Across Development Tiers. Economies. https://doi.org/10.3390/economies14080320  **(received 23 Nov)**
 - [A-138] Adeleye et al. 2023. Empirical Analysis of Inclusive Growth, Information and Communication Technology Adoption, and Institutional Quality. Economies. https://doi.org/10.3390/economies11040124
 - [A-1580] Gonzales 2023. Implications of AI innovation on economic growth: a panel data study. Journal of Economic Structures. https://doi.org/10.1186/s40008-023-00307-w
-- [A-268] Erumban 2024. Informality and aggregate labor productivity growth: Does ICT moderate the relationship?. Telecommunications Policy. https://doi.org/10.1016/j.telpol.2023.102681
-- [A-535] Olutimehin et al. 2026. The Economic Value of Agentic AI: A Comparative Analysis of Its Impact on Growth and Business Productivity in Developed and Emerging Economies. Asian Journal of Research in Computer Science. https://doi.org/10.9734/ajrcos/2026/v19i5859
+- [A-268] Erumban 2024. Informality and aggregate labor productivity growth: Does ICT moderate the relationship?. Telecommunications Policy. https://doi.org/10.1016/j.telpol.2023.102681  **(received 23 Nov)**
+- [A-535] Olutimehin et al. 2026. The Economic Value of Agentic AI: A Comparative Analysis of Its Impact on Growth and Business Productivity in Developed and Emerging Economies. Asian Journal of Research in Computer Science. https://doi.org/10.9734/ajrcos/2026/v19i5859  **(received 23 Nov)**
 - [A-707] Banga et al. 2026. Digitalisation and structural change: Evidence from cross-country analysis. Journal of Digital Economy. https://doi.org/10.1016/j.jdec.2026.03.003
 - [A-879] Khan and Altun 2026. AI capability and labor productivity in low- and middle-income countries: An absorptive capacity approach. Technovation. https://doi.org/10.1016/j.technovation.2026.103645
-- [A-9001] Mialon and Nesson 2020. THE ASSOCIATION BETWEEN MOBILE PHONES AND THE RISK OF BRAIN CANCER MORTALITY: A 25‐YEAR CROSS‐COUNTRY ANALYSIS. Contemporary Economic Policy. https://doi.org/10.1111/coep.12456
-- [A-9101] Abdelhak et al. 2026. <scp>ICT</scp>
+- [A-9001] Mialon and Nesson 2020. THE ASSOCIATION BETWEEN MOBILE PHONES AND THE RISK OF BRAIN CANCER MORTALITY: A 25‐YEAR CROSS‐COUNTRY ANALYSIS. Contemporary Economic Policy. https://doi.org/10.1111/coep.12456  **(received 23 Nov)**
+- [A-9101] Abdelhak et al. 2026. <scp>ICT</scp>  **(received 23 Nov)**
                     Infrastructure, Economic Growth and
                     <scp>ASEAN</scp>
                     Income Heterogeneity: A Panel Analysis. Asian-Pacific Economic Literature. https://doi.org/10.1111/apel.70056
 - [A-9102] Samariya et al. 2026. Internet and Economic Growth Across Income Levels: a Panel Data Analysis. Journal of the Knowledge Economy. https://doi.org/10.1007/s13132-026-03136-x
 - [A-9103] Saba and Ngepah 2022. ICT Diffusion, Industrialisation and Economic Growth Nexus: an International Cross-country Analysis. Journal of the Knowledge Economy. https://doi.org/10.1007/s13132-021-00795-w
-- [A-9105] Appiah-Otoo and Song 2021. The impact of ICT on economic growth-Comparing rich and poor countries. Telecommunications Policy. https://doi.org/10.1016/j.telpol.2020.102082
-- [A-9201] Yin and Choi 2023. Does digitalization contribute to lesser income inequality? Evidence from G20 countries. Information Technology for Development. https://doi.org/10.1080/02681102.2022.2123443
+- [A-9105] Appiah-Otoo and Song 2021. The impact of ICT on economic growth-Comparing rich and poor countries. Telecommunications Policy. https://doi.org/10.1016/j.telpol.2020.102082  **(received 23 Nov)**
+- [A-9201] Yin and Choi 2023. Does digitalization contribute to lesser income inequality? Evidence from G20 countries. Information Technology for Development. https://doi.org/10.1080/02681102.2022.2123443  **(received 23 Nov)**
 - [A-9204] Karaman Aksentijević et al. 2021. The Effects of Information and Communication Technology (ICT) Use on Human Development—A Macroeconomic Approach. Economies. https://doi.org/10.3390/economies9030128
-- [A-9501] Wang and Shen 2024. Does the digital economy development improve or exacerbate income inequality? International evidence. Managerial and Decision Economics. https://doi.org/10.1002/mde.4231
+- [A-9501] Wang and Shen 2024. Does the digital economy development improve or exacerbate income inequality? International evidence. Managerial and Decision Economics. https://doi.org/10.1002/mde.4231  **(received 23 Nov)**
 - [A-952] Phuong et al. 2026. Twin Transition and Labor Informality in Asia-Pacific: Threshold Effects and Income-Group Heterogeneity. Economies. https://doi.org/10.3390/economies14090398
 - [A-9701] Richmond and Triplett 2018. ICT and income inequality: a cross-national perspective. International Review of Applied Economics. https://doi.org/10.1080/02692171.2017.1338677
 - [A-9705] Lechman and Popowska 2022. Harnessing digital technologies for poverty reduction. Evidence for low-income and lower-middle income countries. Telecommunications Policy. https://doi.org/10.1016/j.telpol.2022.102313
@@ -32,7 +32,7 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 2. [include] On digital economy development and gender gap in labor force participation: a cross-countries perspective (2026). Digital Economy and Sustainable Development. https://doi.org/10.1007/s44265-026-00083-y
 3. [include] Digital infrastructure as a driver of economic growth: A panel analysis of countries with different income levels (2026). Scientific Bulletin of Mukachevo State University Series “Economics”. https://doi.org/10.52566/msu-econ3.2026.82
 4. [include] Effects of digital economy on economic growth: Evidence from low- and middle-income countries in Africa (2026). DOAJ (DOAJ: Directory of Open Access Journals). https://openalex.org/W7166601564
-5. [include] Impacts of the digital economy on industrial employment and CO2 emissions: a comparison between developed and developing countries (2026). Journal of Economic Structures. https://doi.org/10.1186/s40008-026-00384-7
+5. [include] Impacts of the digital economy on industrial employment and CO2 emissions: a comparison between developed and developing countries (2026). Journal of Economic Structures. https://doi.org/10.1186/s40008-026-00384-7  **(received 23 Nov)**
 6. [include] Impact of income, poverty, and artificial intelligence on financial inclusion (2026). Journal of Financial Economic Policy. https://doi.org/10.1108/jfep-07-2025-0275
 7. [include] Digitalization and energy poverty in Europe: Evidence from arrears, home warmth, and income group differences (2026). Energy Research & Social Science. https://doi.org/10.1016/j.erss.2026.104964
 8. [include] Labor in the digital age: Platformization’s uneven impact in developed and developing economies (2026). Oradea Journal of Business and Economics. https://doi.org/10.47535/1991ojbe225
@@ -40,7 +40,7 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 10. [include] The Effect of Digital Communications on Carbon Emission: A Panel Data Model (2026). BBTA Journal Thoughts on Banking and Finance. https://doi.org/10.64968/bbta.tbf.2025.10.02.03
 11. [include] Digital Transformation and the AI Era: Assessing the Impact of the 4Cs Framework on Economic Productivity across 20 Countries (2026). المجلة العلمية للدراسات والبحوث المالية والتجارية. https://doi.org/10.21608/cfdj.2026.479895.2509
 12. [include] Institutional policies for ICT-driven environmental sustainability in high- and middle-income Asian countries (2026). International Journal of Social Economics. https://doi.org/10.1108/ijse-03-2026-0227
-13. [include] Building a sustainable and innovative world in the digital age: A cross-country study (2026). Journal of Innovation & Knowledge. https://doi.org/10.1016/j.jik.2026.101016
+13. [include] Building a sustainable and innovative world in the digital age: A cross-country study (2026). Journal of Innovation & Knowledge. https://doi.org/10.1016/j.jik.2026.101016  **(received 23 Nov)**
 14. [include] Digital Transformation and Crop Production in Sub-Saharan Africa: Evidence from Dynamic Panel Data Analysis (2026). Asian Journal of Advances in Agricultural Research. https://doi.org/10.9734/ajaar/2026/v26i10764
 15. [include] Digitalization and Tax Equity in the Global Economy: Evidence from a Panel VAR Analysis (2026). Journal of Tax Reform. https://doi.org/10.15826/jtr.2026.12.2.256
 16. [include] Digitization and inclusive growth: Comparative evidence from Africa, Asia, and Europe (2026). Social Sciences & Humanities Open. https://doi.org/10.1016/j.ssaho.2026.103262
@@ -56,8 +56,8 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 26. [include] Impacts of Digital Infrastructure and Renewable Energy on CO2 Emission Intensity: Evidence from 217 Countries (2025). International Journal of Energy Economics and Policy. https://doi.org/10.32479/ijeep.19562
 27. [include] Robots and firm reshoring (2025). Industry and Innovation. https://doi.org/10.1080/13662716.2025.2495758
 28. [include] The role of Fintech and financial inclusion in the economic development of countries: A comparative analysis (2025). Banks and Bank Systems. https://doi.org/10.21511/bbs.20(1).2025.20
-29. [include] The Impact of Mobile Broadband and Internet Bandwidth on Human Development—A Comparative Analysis of Developing and Developed Countries (2024). Journal of the Knowledge Economy. https://doi.org/10.1007/s13132-023-01711-0
-30. [include] Strengthening economic resilience through ICT during the COVID-19 pandemic: evidence from 100 countries (2024). Discover Sustainability. https://doi.org/10.1007/s43621-024-00729-x
+29. [include] The Impact of Mobile Broadband and Internet Bandwidth on Human Development—A Comparative Analysis of Developing and Developed Countries (2024). Journal of the Knowledge Economy. https://doi.org/10.1007/s13132-023-01711-0  **(received 23 Nov)**
+30. [include] Strengthening economic resilience through ICT during the COVID-19 pandemic: evidence from 100 countries (2024). Discover Sustainability. https://doi.org/10.1007/s43621-024-00729-x  **(received 23 Nov)**
 31. [include] Exploring the dual relationship between fintech and financial inclusion in developing countries and their impact on economic growth: Supplement or substitute? (2024). PLoS ONE. https://doi.org/10.1371/journal.pone.0315174
 32. [include] Yeni Çağın Dengeleyicisi? Gelir Eşitsizliği ve Dijitalleşme Arasındaki İlişkiyi Keşfetmek (2024). Sosyal Guvence. https://doi.org/10.21441/sosyalguvence.1507517
 33. [include] How Can Monetary Policy and Digitalization Enhance Economic Productivity Among Oic Members? (2024). Jurnal Middle East and Islamic Studies (MEIS). https://doi.org/10.7454/meis.v11i2.176
@@ -89,7 +89,7 @@ Upload the PDFs in the chat. Part A: included studies whose group-specific stand
 59. [include] Revisiting the Nexus between Digital Economy and Economic Prosperity: Evidence from a Comparative Analysis (2021). Journal of Telecommunications and the Digital Economy. https://doi.org/10.18080/jtde.v9n2.384
 60. [include] Analysis of the impact of information communication technology on economic growth: empirical evidence from Asian countries (2021). Journal of Asian Business and Economic Studies. https://doi.org/10.1108/jabes-07-2020-0082
 61. [include] Socio-Digital Inclusion for Inclusive Growth: Evidences from World Level Data (2021). Pakistan Journal of Social Sciences. https://openalex.org/W7215462829
-62. [include] Is it an institution, digital or social inclusion that matters for inclusive growth? A panel data analysis (2020). Quality & Quantity. https://doi.org/10.1007/s11135-020-01008-3
+62. [include] Is it an institution, digital or social inclusion that matters for inclusive growth? A panel data analysis (2020). Quality & Quantity. https://doi.org/10.1007/s11135-020-01008-3  **(received 23 Nov)**
 63. [include] Impact of Information and Communication Technology (ICT) Investment on different Components of Human Development in Developing Countries (2020). International Review of Management and Business Research. https://doi.org/10.30543/9-4(2020)-11
 64. [include] ICT Diffusion and Economic Growth: A Comparative Study Across Economies (2020). Journal of Economics and Business. https://doi.org/10.31014/aior.1992.03.02.237
 65. [include] The Relationship between Natural Disasters, Education, ICT and Economic Growth:Empirical Evidence from ARDL Bounds Testing Approach (2020). RePEc: Research Papers in Economics. https://doi.org/10.35866/caujed.2020.45.4.005
