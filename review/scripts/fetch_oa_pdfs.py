@@ -1,5 +1,5 @@
 """Download open-access PDFs for a list of study ids via OpenAlex locations.
-Usage: python3 fetch_oa_pdfs.py ids.json outdir   (ids from review/data/study_citations.csv)
+Usage: python3 fetch_oa_pdfs.py ids.json outdir   (study ids from review/data/study_citations.csv or OpenAlex work ids W...)
 Writes outdir/<idx>.pdf and prints a status line per study."""
 import csv, json, os, sys, time, urllib.parse, urllib.request
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -20,11 +20,11 @@ for i in ids:
     p = os.path.join(out, f"{i}.pdf")
     if os.path.exists(p) and os.path.getsize(p) > 20000: print(i, "have"); continue
     r = cit.get(i)
-    if not r: print(i, "no-citation"); continue
-    try: w = work(r)
+    if not r and not i.startswith("W"): print(i, "no-citation"); continue
+    try: w = json.loads(get("https://api.openalex.org/works/" + i)) if i.startswith("W") else work(r)
     except Exception as e: print(i, "openalex-error", e); continue
     urls = []
-    fs = json.load(open(os.path.join(ROOT, "data", "fulltext_status.json"))).get(i) or {}
+    fs = json.load(open(os.path.join(ROOT, "data", "fulltext_status.json"))).get(i) or {} if not i.startswith("W") else {}
     if fs.get("source"): urls.append(fs["source"])
     if w:
         for loc in [w.get("best_oa_location")] + (w.get("locations") or []):
